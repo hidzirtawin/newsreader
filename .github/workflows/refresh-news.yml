@@ -1,9 +1,9 @@
-name: Refresh news editions
+name: Refresh news editions (10 min)
 
 on:
   schedule:
     # Every 15 minutes. GitHub may delay scheduled jobs under load.
-    - cron: '*/15 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
