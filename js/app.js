@@ -1691,7 +1691,10 @@ function refreshCurrentTopic(force = true) {
         if (!polled && token === state.fetchToken) refreshTopic(topic, { token, background: false });
       })
       .finally(() => {
-        if (token === state.fetchToken) setRefreshSpinning(false);
+        if (token === state.fetchToken) {
+          setRefreshSpinning(false);
+          updateStatusLine();
+        }
       });
     return;
   }
