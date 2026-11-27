@@ -702,6 +702,9 @@ const VIDEO_FEEDS = [
   { id: 'yt-sky-news', name: 'Sky News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCoMdktPbSTixAyNGwb-UYkQ', video: true },
   { id: 'yt-france24', name: 'France 24 English', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCQfwfsi5VrQ8yKZ-UWmAEFg', video: true },
   { id: 'yt-pbs', name: 'PBS NewsHour', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC6ZFN9Tx6xh-skXCuRHCDpQ', video: true },
+  { id: 'yt-cbs-news', name: 'CBS News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC8p1vwvWtl6T73JiExfWs1g', video: true },
+  { id: 'yt-fox-news', name: 'Fox News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCXIJgqnII2ZOINSWNOGFThA', video: true },
+
   { id: 'yt-reuters', name: 'Reuters', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UChqUTb7kYRX8-EiaN3XFrSQ', video: true },
   { id: 'yt-bloomberg', name: 'Bloomberg Television', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCIALMKvObZNtJ6AmdCLP7Lg', video: true },
   { id: 'yt-guardian', name: 'The Guardian', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCHpw8xwDNhU9gdohEcJu4aA', video: true },
