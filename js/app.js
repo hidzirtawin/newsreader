@@ -76,6 +76,13 @@ const els = {
   researchSubnav: $('#researchSubnav'),
   researchFormatNav: $('#researchFormatNav'),
   calculatorModal: $('#calculatorModal'),
+  locationModal: $('#locationModal'),
+  openLocationMenuBtn: $('#openLocationMenuBtn'),
+  locationCountrySelect: $('#locationCountrySelect'),
+  locationStatus: $('#locationStatus'),
+  detectLocationBtn: $('#detectLocationBtn'),
+  saveLocationBtn: $('#saveLocationBtn'),
+  closeLocationBtn: $('#closeLocationBtn'),
   calculatorSelect: $('#calculatorSelect'),
   calculatorForm: $('#calculatorForm'),
   calculatorFields: $('#calculatorFields'),
@@ -1370,6 +1377,56 @@ function detectCountryCode() {
   const region = language.split('-')[1];
   if (region && getCountryDesk(region)) return region;
   return 'US';
+}
+
+function openLocationPrompt() {
+  if (!els.locationModal) return;
+  els.locationCountrySelect.innerHTML = COUNTRY_DESKS
+    .map((desk) => `<option value="${esc(desk.code)}">${esc(desk.name)}</option>`)
+    .join('');
+  els.locationCountrySelect.value = state.countryCode || 'US';
+  if (els.locationStatus) els.locationStatus.textContent = '';
+  openModal(els.locationModal);
+}
+
+function saveLocation() {
+  const code = els.locationCountrySelect?.value;
+  if (!getCountryDesk(code)) return;
+  closeModal(els.locationModal);
+  openCountryDesk(code);
+}
+
+async function detectLocation() {
+  const button = els.detectLocationBtn;
+  const status = els.locationStatus;
+  if (!navigator.geolocation) {
+    if (status) status.textContent = 'Location is not available in this browser. Choose your country below.';
+    return;
+  }
+  if (button) button.disabled = true;
+  if (status) status.textContent = 'Checking your location…';
+  navigator.geolocation.getCurrentPosition(async (position) => {
+    try {
+      const { latitude, longitude } = position.coords;
+      const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+      const data = await response.json();
+      const code = String(data.countryCode || '').toUpperCase();
+      const desk = getCountryDesk(code);
+      if (desk) {
+        els.locationCountrySelect.value = desk.code;
+        if (status) status.textContent = `Detected ${desk.name}. Save to use it.`;
+      } else if (status) {
+        status.textContent = 'Could not match your country. Choose it below.';
+      }
+    } catch {
+      if (status) status.textContent = 'Could not look up your country. Choose it below.';
+    } finally {
+      if (button) button.disabled = false;
+    }
+  }, () => {
+    if (button) button.disabled = false;
+    if (status) status.textContent = 'Location permission denied. Choose your country below.';
+  }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
 }
 
 function openCountryDesk(code) {
@@ -3425,6 +3482,10 @@ els.feedList.addEventListener('error', (event) => {
 
 els.topicsBar.addEventListener('click', (event) => {
   if (event.target.closest('[data-country-tab]')) {
+    if (!safeGet('newsreader_country_v1')) {
+      openLocationPrompt();
+      return;
+    }
     openCountryDesk(state.countryCode);
     return;
   }
@@ -3479,6 +3540,11 @@ els.sourceBackBtn.addEventListener('click', () => {
 els.countryDeskSelect?.addEventListener('change', () => {
   openCountryDesk(els.countryDeskSelect.value);
 });
+
+els.saveLocationBtn?.addEventListener('click', saveLocation);
+els.openLocationMenuBtn?.addEventListener('click', openLocationPrompt);
+els.detectLocationBtn?.addEventListener('click', detectLocation);
+els.closeLocationBtn?.addEventListener('click', () => closeModal(els.locationModal));
 
 els.researchCalcBtn?.addEventListener('click', openCalculators);
 

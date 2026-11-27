@@ -530,12 +530,6 @@ export const TOPICS = [
     feeds: ['bbc-news', 'reuters', 'ap', 'cnn', 'aljazeera', 'cna', 'abc-au', 'abc-us', 'guardian-world', 'nyt-world', 'cnbc', 'ars', 'espn', 'variety'],
   },
   {
-    id: 'latest',
-    label: 'LATEST',
-    title: 'Latest',
-    feeds: ['bbc-news', 'reuters', 'ap', 'cnn', 'cna', 'straitstimes-sg', 'aljazeera', 'abc-au', 'abc-us', 'cbs', 'guardian-world', 'fmt', 'scmp', 'cnbc', 'ars', 'espn', 'variety'],
-  },
-  {
     id: 'briefing',
     label: 'BRIEFING',
     title: 'The Briefing',
@@ -580,6 +574,7 @@ export const TOPICS = [
   { id: 'sport-football', label: 'FOOTBALL', title: 'Football', sports: true, feeds: ['bbc-football', 'guardian-football'] },
   { id: 'sport-cricket', label: 'CRICKET', title: 'Cricket', sports: true, feeds: ['bbc-cricket', 'guardian-cricket', 'espncricinfo', 'toi-cricket'] },
   { id: 'sport-rugby-league', label: 'RUGBY LEAGUE', title: 'Rugby League', sports: true, feeds: ['bbc-rugby-league', 'guardian-rugby-league'] },
+  { id: 'sport-afl', label: 'AFL', title: 'AFL', sports: true, feeds: ['afl-official', 'espn-afl', 'zerohanger', 'guardian-afl', 'fox-sports-afl'] },
   { id: 'sport-rugby-union', label: 'RUGBY UNION', title: 'Rugby Union', sports: true, feeds: ['bbc-rugby-union', 'guardian-rugby-union'] },
   { id: 'sport-boxing', label: 'BOXING', title: 'Boxing', sports: true, feeds: ['bbc-boxing', 'guardian-boxing', 'boxingscene', 'boxingnews'] },
   { id: 'sport-mma', label: 'MMA', title: 'MMA', sports: true, feeds: ['bbc-mma', 'guardian-mma', 'sherdog', 'mmafighting'] },
@@ -839,6 +834,32 @@ addFeedsToTopic('us', ['voa-news']);
 addFeedsToTopic('china', ['rfa-news']);
 addFeedsToTopic('politics', ['voa-news']);
 
+FEEDS.push(
+  { id: 'bbc-chinese', name: 'BBC 中文', domain: 'bbc.com', group: '中文', url: 'https://feeds.bbci.co.uk/zhongwen/simp/rss.xml' },
+  { id: 'dw-chinese', name: 'DW 中文', domain: 'dw.com', group: '中文', url: 'https://rss.dw.com/rdf/rss-chi-all' },
+  { id: 'rfi-chinese', name: 'RFI 中文', domain: 'rfi.fr', group: '中文', url: 'https://www.rfi.fr/cn/rss' },
+  { id: 'un-news-chinese', name: '联合国新闻', domain: 'news.un.org', group: '中文', url: 'https://news.un.org/feed/subscribe/zh/news/all/rss.xml' },
+  { id: 'rfa-chinese', name: '自由亚洲电台', domain: 'rfa.org', group: '中文', url: 'https://www.rfa.org/mandarin/rss' },
+);
+
+const CHINESE_TOPIC = {
+  id: 'chinese',
+  label: '中文',
+  title: '中文新闻',
+  feeds: ['bbc-chinese', 'dw-chinese', 'rfi-chinese', 'un-news-chinese', 'rfa-chinese'],
+};
+const chineseWorldIndex = TOPICS.findIndex((topic) => topic.id === 'world');
+TOPICS.splice(chineseWorldIndex === -1 ? TOPICS.length : chineseWorldIndex, 0, CHINESE_TOPIC);
+
+FEEDS.push(
+  { id: 'afl-official', name: 'AFL', domain: 'afl.com.au', group: 'Sport', url: 'https://www.afl.com.au/rss' },
+  { id: 'espn-afl', name: 'ESPN AFL', domain: 'espn.com', group: 'Sport', url: 'https://www.espn.com/espn/rss/afl/news' },
+  { id: 'zerohanger', name: 'Zero Hanger', domain: 'zerohanger.com', group: 'Sport', url: 'https://www.zerohanger.com/feed/' },
+  { id: 'guardian-afl', name: 'The Guardian AFL', domain: 'theguardian.com', group: 'Sport', url: 'https://news.google.com/rss/search?q=site%3Atheguardian.com%2Fsport%2Fafl&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'fox-sports-afl', name: 'Fox Sports AFL', domain: 'foxsports.com.au', group: 'Sport', url: 'https://news.google.com/rss/search?q=site%3Afoxsports.com.au%2Fafl&hl=en-AU&gl=AU&ceid=AU%3Aen', googleNews: true },
+);
+addFeedsToTopic('sports', ['afl-official', 'espn-afl', 'zerohanger', 'guardian-afl', 'fox-sports-afl']);
+
 addFeedsToTopic('world', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'un-news', 'rfi', 'rte', 'africanews', 'the-conversation']);
 addFeedsToTopic('us', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'nypost', 'yahoo-news']);
 addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business', 'investinglive', 'cbs-moneywatch']);
@@ -1023,7 +1044,7 @@ export const COUNTRY_DESKS = COUNTRY_DESK_CONFIG.map((desk) => {
       country: true,
       hiddenFromBar: true,
       noImages: true,
-      limit: 20,
+      limit: 28,
       feeds: [feedId, ...(desk.feeds || [])],
     });
   } else {
@@ -1405,7 +1426,7 @@ export const STORAGE = {
 };
 
 export const FEED_LIMIT = 14;
-export const TOPIC_ARTICLE_LIMIT = 48;
+export const TOPIC_ARTICLE_LIMIT = 72;
 export const LIVE_CACHE_TTL = 10 * 60 * 1000;
 
 export function getFeedById(id) {

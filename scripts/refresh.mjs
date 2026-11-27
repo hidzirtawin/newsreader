@@ -18,7 +18,7 @@ const IMAGE_CACHE = path.join(DATA, 'image-cache.json');
 const PUBLISHER_CACHE = path.join(DATA, 'publisher-url-cache.json');
 const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 const FEED_LIMIT = 18;
-const TOPIC_LIMIT = 42;
+const TOPIC_LIMIT = 60;
 const IMAGE_BUDGET = 130;
 
 function decodeEntities(value = '') {

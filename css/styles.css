@@ -4352,3 +4352,19 @@ body.has-audio-dock .reader-service-frame {
   }
 }
 
+
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.location-modal .form-select {
+  width: 100%;
+}
+
+#locationStatus {
+  min-height: 1.2em;
+}
+
