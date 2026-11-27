@@ -16,26 +16,26 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Regional editions** — Top Stories, Latest, Briefing, World, US, UK, Europe, Middle East, Africa, Latin America, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Science, Entertainment, Politics, Finance and Lifestyle.
 - **Singapore desk** — The Straits Times (Singapore, World, Asia, Business feeds), CNA, Mothership and Berita Harian Singapore.
 - **Malaysia desk** — Berita Harian, New Straits Times, Free Malaysia Today, Utusan Malaysia and Kosmo!.
-- **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Australian and Herald Sun.
+- **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Age, The Examiner, The Nightly, The West Australian, CODE Sports, The Daily Telegraph, The Australian and Herald Sun.
 - **China desk** — South China Morning Post, BBC China, CGTN, Global Times, People's Daily and Sixth Tone.
 - **Russia desk** — The Moscow Times and Meduza (independent) alongside TASS and RT (state-aligned) so readers can compare official and independent accounts.
-- **Briefs desk** — hard-paywalled publishers (NYT, Bloomberg, FT, WSJ, Herald Sun, The Australian) are moved into a clearly labelled Briefs desk so the main feeds contain only stories that open properly. A menu toggle can show briefs in every feed.
+- **Briefs desk** — hard-paywalled publishers (NYT, Bloomberg, FT, WSJ, Herald Sun, The Australian, The West Australian, CODE Sports, The Daily Telegraph) are moved into a clearly labelled Briefs desk so the main feeds contain only stories that open properly. A menu toggle can show briefs in every feed.
 - **Africa and Latin America desks** — BBC Africa, Premium Times, BBC Latin America, Folha de S.Paulo, O Globo, Clarín and La Nación.
 - **Sports desk** — a dedicated sub-navigation for All Sport, Football, Cricket, Rugby League, Rugby Union, Boxing, MMA, Tennis, Formula 1, Golf, NBA and NFL, using BBC Sport, The Guardian, ESPNcricinfo, BoxingScene, Sherdog, Autosport and CBS Sports.
-- **Wider world** — BBC, Reuters, AP, Al Jazeera, CNN, The Washington Post, NBC News, Fox News, USA Today, CBS, LA Times, NPR, CNBC, Bloomberg, The Guardian, Sky News, The Economist, SCMP, Nikkei Asia, The Japan Times, Yonhap, The Diplomat, RNZ, The Times of India, The Indian Express, NDTV, Mint, Arab News, The Jerusalem Post, Der Spiegel, Die Zeit, Corriere della Sera, la Repubblica, El Mundo, El País, Politico Europe, EUobserver, Foreign Policy, Foreign Affairs, Premium Times, Folha de S.Paulo, O Globo, Clarín, La Nación and more.
+- **Wider world** — BBC, Reuters, AP, Al Jazeera, CNN, The Washington Post, NBC News, Fox News, USA Today, CBS, LA Times, NPR, CNBC, Bloomberg, Business Insider, The Guardian, Sky News, The Economist, SCMP, Nikkei Asia, The Japan Times, Yonhap, The Diplomat, RNZ, The Times of India, The Indian Express, NDTV, Mint, Arab News, The Jerusalem Post, Der Spiegel, Die Zeit, Corriere della Sera, la Repubblica, El Mundo, El País, Politico Europe, EUobserver, Foreign Policy, Foreign Affairs, Premium Times, Folha de S.Paulo, O Globo, Clarín, La Nación and more.
 - **Live radio** — 15 news/current-affairs stations from Malaysia, Singapore, Australia, the UK and the US, with a sticky player while you browse.
 - **Podcasts** — a dropdown of 16 popular shows, including *Keluar Sekejap*, *The Daily*, *The Intelligence*, *WSJ What’s News*, *FT News Briefing*, *Big Take*, BBC *Global News Podcast*, *The News Agents*, *Up First*, *ABC News Daily*, *The Decibel*, *ST News Headlines*, *CNA Deep Dive*, *3 Things*, *The Rest Is Politics* and *The Daily Aus*, with a full audio player (seek, ±15s, speed, volume).
 - **Transparent hard-paywall handling** — no blocked or paywalled page is ever opened. If a publication offers no readable or archived copy, Tawin Newsreader shows its publisher brief instead.
 - **More from any publisher** — tap a source name on a story or the *Latest* button in the source library to open that publisher’s latest-first edition inside the app.
 - **Canada desk** — CBC News, CBC Canada, CBC World and The Globe and Mail.
-- **Reading rules** — per-publisher routing through direct links, SMRY, RemovePaywall, UnWall, Freedium, Jina Reader, Archive.is or the Wayback Machine.
+- **Reading rules** — per-publisher routing through direct links, SMRY, RemovePaywall, UnWall, WallHop, Freedium, Jina Reader, Archive.is, Archive.today (archive.ph), Google Translate proxy, PrintFriendly or the Wayback Machine.
 - **Archive locks** — hard-paywall stories are checked against Archive.is in the background. Stories without a snapshot are greyed out and locked; *Hide locked* removes them entirely.
 - **Customisation** — create topics with keywords and chosen sources, add any RSS/Atom feed, reorder/hide tabs, and export all settings as JSON.
 - **PWA** — installable on iOS, Android and desktop, with an offline app shell and bundled editions.
 
-The app tries live feeds first through public CORS proxies. If a publisher or proxy is unavailable, it falls back to the snapshots in `data/news.json` and `data/podcasts.json`.
+Built-in topics refresh from the same-origin edition snapshot and a tiny `data/version.json` marker, so they do not depend on public CORS proxies. Custom topics and custom feeds still use the proxy waterfall when needed.
 
-The default order is **Latest first**. Auto-refresh runs every five minutes while the page is visible and online. It polls only the first six feeds of the active topic (the fastest wires and mastheads), then keeps any new stories in a banner until you choose to apply them. Background refreshes never re-render the page, scroll position or the audio player; manual refresh remains an explicit action.
+The default order is **Latest first**. Auto-refresh runs every five minutes while the page is visible and online. For built-in desks it checks the small same-origin version marker, then downloads the new edition only when it has changed. New stories wait in a banner until you choose to apply them. Background refreshes never re-render the page, scroll position or the audio player; manual refresh remains an explicit action.
 
 ## Run it
 
@@ -70,7 +70,7 @@ The script is safe to run on a schedule (cron, GitHub Actions, etc.). Keep photo
 
 Any static host works: GitHub Pages, Cloudflare Pages, Netlify, Vercel, S3 or Nginx. Publish the repository root.
 
-The included workflow at `.github/workflows/refresh.yml` rebuilds the bundled editions every 30 minutes and commits them back. Enable GitHub Actions write permissions for the repository (or adapt the workflow to publish to your host) so the static snapshot stays fresh between client auto-refresh cycles.
+The included workflow at `.github/workflows/refresh.yml` rebuilds the bundled news editions every 15 minutes and commits them back; `.github/workflows/refresh-podcasts.yml` refreshes podcast feeds every six hours. Enable GitHub Actions write permissions for the repository (or adapt the workflow to publish to your host) so the static snapshot stays fresh between client auto-refresh cycles.
 
 ## Notes on sources
 

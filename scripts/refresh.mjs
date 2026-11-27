@@ -552,6 +552,7 @@ async function main() {
   await mkdir(DATA, { recursive: true });
   const imageCache = JSON.parse(await readFile(IMAGE_CACHE, 'utf8').catch(() => '{}'));
   const publisherCache = JSON.parse(await readFile(PUBLISHER_CACHE, 'utf8').catch(() => '{}'));
+  const previousVersion = JSON.parse(await readFile(path.join(DATA, 'version.json'), 'utf8').catch(() => '{}'));
   const pruneBefore = Date.now() - 30 * 24 * 60 * 60 * 1000;
   for (const [url, entry] of Object.entries(imageCache)) {
     if (!entry || Number(entry.at || 0) < pruneBefore) delete imageCache[url];
@@ -652,6 +653,12 @@ async function main() {
       shows: podcastShows,
     });
   }
+
+  const newsVersion = new Date().toISOString();
+  await writeJson(path.join(DATA, 'version.json'), {
+    news: newsVersion,
+    podcasts: skipPodcasts ? (previousVersion.podcasts || newsVersion) : newsVersion,
+  });
 
   const withImages = Object.values(snapshot).flatMap((entry) => entry.articles).filter((article) => article.imageUrl).length;
   const total = Object.values(snapshot).flatMap((entry) => entry.articles).length;

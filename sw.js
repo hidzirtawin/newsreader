@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v16';
+const VERSION = 'newsreader-v18';
 const SHELL = [
   './',
   './index.html',
@@ -71,24 +71,56 @@ async function proxyReader(request) {
   try {
     const form = await request.formData();
     const target = String(form.get('url') || '');
+    const provider = String(form.get('provider') || 'jina');
     if (!/^https?:\/\//i.test(target)) {
       return new Response('<h1>Invalid article URL</h1>', { status: 400, headers });
     }
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 30000);
-    let upstream;
-    try {
-      upstream = await fetch('https://r.jina.ai/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-        body: new URLSearchParams({ url: target, respondWith: 'html', base: 'final' }).toString(),
-        signal: controller.signal,
-      });
-    } finally {
-      clearTimeout(timer);
+
+    const fetchJina = async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 30000);
+      try {
+        const response = await fetch('https://r.jina.ai/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+          body: new URLSearchParams({ url: target, respondWith: 'html', base: 'final' }).toString(),
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error(`Reader service HTTP ${response.status}`);
+        return await response.text();
+      } finally {
+        clearTimeout(timer);
+      }
+    };
+
+    const fetchWallhop = async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 25000);
+      try {
+        const response = await fetch(`https://wallhop.io/raw/${target}`, {
+          headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' },
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error(`WallHop HTTP ${response.status}`);
+        return await response.text();
+      } finally {
+        clearTimeout(timer);
+      }
+    };
+
+    let html = '';
+    if (provider === 'wallhop') {
+      try {
+        html = await fetchWallhop();
+        const blocked = !html || html.length < 1500 || /(are you a robot|security verification|access denied)/i.test(html.slice(0, 12000));
+        if (blocked) html = await fetchJina();
+      } catch {
+        html = await fetchJina();
+      }
+    } else {
+      html = await fetchJina();
     }
-    if (!upstream.ok) throw new Error(`Reader service HTTP ${upstream.status}`);
-    let html = await upstream.text();
+
     if (!html || html.length < 200) throw new Error('Reader service returned no article');
     html = html
       .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')

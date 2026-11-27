@@ -2,8 +2,8 @@ name: Refresh news editions
 
 on:
   schedule:
-    # Every 30 minutes. GitHub may delay scheduled jobs under load.
-    - cron: '7,37 * * * *'
+    # Every 15 minutes. GitHub may delay scheduled jobs under load.
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -24,13 +24,13 @@ jobs:
           node-version: '22'
 
       - name: Fetch publisher feeds and rebuild editions
-        run: node scripts/refresh.mjs
+        run: node scripts/refresh.mjs --skip-podcasts
 
       - name: Commit refreshed editions
         run: |
           git config user.name "Newsreader Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/news.json data/podcasts.json data/image-cache.json data/publisher-url-cache.json
+          git add data/news.json data/version.json data/image-cache.json data/publisher-url-cache.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

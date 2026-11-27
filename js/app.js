@@ -8,6 +8,7 @@ import {
   LIVE_CACHE_TTL,
   RADIO_STATIONS,
   PODCAST_SHOWS,
+  normalizeDomain,
 } from './config.js';
 import {
   addCustomFeed,
@@ -225,6 +226,7 @@ const state = {
   podcastLoading: false,
   podcastError: '',
   podcastRequest: 0,
+  snapshotVersion: '',
   sourceView: null,
   sourceReturnTopic: '',
   player: { type: '', id: '', playing: false, title: '', kicker: '' },
@@ -847,6 +849,7 @@ function renderReaderService(article) {
     <iframe id="readerServiceFrame" name="readerServiceFrame" title="Article reader" sandbox="allow-same-origin" style="display:none"></iframe>
     <form id="readerServiceForm" method="POST" action="./reader-frame" target="readerServiceFrame" hidden>
       <input type="hidden" name="url" value="${esc(article.url)}">
+      <input type="hidden" name="provider" value="${isWallhopDomain(article.domain) ? 'wallhop' : 'jina'}">
     </form>
   </div>`;
   const frame = document.getElementById('readerServiceFrame');
@@ -1381,6 +1384,85 @@ function hideSourceView() {
   els.sourceViewBar.hidden = true;
 }
 
+async function loadSnapshotVersion() {
+  try {
+    const response = await fetch(`./data/version.json?ts=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data?.news) state.snapshotVersion = data.news;
+  } catch { /* offline or first build */ }
+}
+
+async function pollSnapshotTopic(topic, { token = state.fetchToken, force = false, initial = false } = {}) {
+  if (!topic || topic.custom) return false;
+  try {
+    let version = state.snapshotVersion;
+    if (!version || force) {
+      const versionResponse = await fetch(`./data/version.json?ts=${Date.now()}`, { cache: 'no-store' });
+      if (versionResponse.ok) {
+        const versionData = await versionResponse.json();
+        version = versionData?.news || version;
+      }
+    }
+    if (!force && version && version === state.snapshotVersion) {
+      state.lastAutoPoll = Date.now();
+      if (initial && state.articles.length) updateStatusLine();
+      return true;
+    }
+
+    const response = await fetch(`./data/news.json?ts=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) return false;
+    const snapshot = await response.json();
+    const entry = snapshot?.[topic.id];
+    if (!entry || !Array.isArray(entry.articles)) return false;
+    if (token !== state.fetchToken) return false;
+
+    const incoming = entry.articles
+      .filter((article) => article && article.url && article.title)
+      .map((article) => applyRule({
+        ...article,
+        domain: article.domain || normalizeDomain(article.url),
+        source: article.source || 'News',
+      }));
+    const base = state.pendingArticles || state.articles;
+    const merged = dedupeArticles([...incoming, ...base]);
+    const newCount = Math.max(0, merged.length - state.articles.length);
+    state.snapshotVersion = version || entry.updatedAt || state.snapshotVersion || new Date().toISOString();
+    state.lastAutoPoll = Date.now();
+    state.results = Array.isArray(entry.results) ? entry.results : state.results;
+    state.liveFailed = false;
+
+    if (!state.articles.length && incoming.length) {
+      state.articles = incoming;
+      state.lastUpdated = entry.updatedAt || state.lastUpdated;
+      state.fromSnapshot = true;
+      renderFeed();
+      updateStatusLine();
+      return true;
+    }
+
+    if (newCount > 0) {
+      state.pendingArticles = merged;
+      state.pendingFetchedAt = entry.updatedAt || new Date().toISOString();
+      showPendingStories(newCount);
+      setStatus(`${newCount === 1 ? '1 new story' : `${newCount} new stories`} since your last update · tap the banner to read`, false);
+      return true;
+    }
+
+    if (!state.pendingArticles) {
+      state.articles = merged;
+      state.lastUpdated = entry.updatedAt || state.lastUpdated;
+      state.fromSnapshot = true;
+    }
+    sourceResultsMarkup();
+    updateStatusLine();
+    if (force) showToast('The latest edition is already on screen.');
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function loadTopic(topicId, { forceLive = false } = {}) {
   const topic = getTopic(topicId);
   if (!topic) return;
@@ -1438,14 +1520,17 @@ async function loadTopic(topicId, { forceLive = false } = {}) {
       state.fromSnapshot = true;
       renderFeed();
       updateStatusLine();
-      refreshTopic(topic, { token, background: true });
+      pollSnapshotTopic(topic, { token, initial: true }).then((polled) => {
+        if (!polled && token === state.fetchToken) refreshTopic(topic, { token, background: true });
+      });
       return;
     }
   }
 
   showLoading();
   updateStatusLine();
-  refreshTopic(topic, { token, background: false });
+  const polled = await pollSnapshotTopic(topic, { token, initial: true });
+  if (!polled && token === state.fetchToken) refreshTopic(topic, { token, background: false });
 }
 
 async function refreshTopic(topic, { token = state.fetchToken, background = false } = {}) {
@@ -1598,7 +1683,19 @@ function refreshCurrentTopic(force = true) {
   clearPendingStories();
   state.lastAutoPoll = Date.now();
   scheduleAutoRefresh();
-  refreshTopic(topic, { token: ++state.fetchToken, background: state.articles.length > 0 });
+  const token = ++state.fetchToken;
+  if (!topic.custom) {
+    setRefreshSpinning(true);
+    pollSnapshotTopic(topic, { token, force: true })
+      .then((polled) => {
+        if (!polled && token === state.fetchToken) refreshTopic(topic, { token, background: false });
+      })
+      .finally(() => {
+        if (token === state.fetchToken) setRefreshSpinning(false);
+      });
+    return;
+  }
+  refreshTopic(topic, { token, background: state.articles.length > 0 });
 }
 
 /* ------------------------------------------------------------------ */
@@ -1652,14 +1749,19 @@ async function pollCurrentTopic() {
   if (document.hidden || navigator.onLine === false) return;
   const topic = getTopic(state.topicId);
   if (!topic || topic.type) return;
-  if (!state.articles.length) {
-    refreshTopic(topic, { token: ++state.fetchToken, background: false });
-    return;
-  }
 
-  const token = state.fetchToken;
   state.polling = true;
   try {
+    if (!topic.custom) {
+      const ok = await pollSnapshotTopic(topic, { token: state.fetchToken });
+      if (ok) return;
+    }
+    if (!state.articles.length) {
+      refreshTopic(topic, { token: ++state.fetchToken, background: false });
+      return;
+    }
+
+    const token = state.fetchToken;
     const payload = await fetchTopicArticles(topic, { watchOnly: true });
     if (state.topicId !== topic.id || state.listenMode || token !== state.fetchToken) return;
     if (!payload.articles.length) return;
@@ -1698,6 +1800,7 @@ async function pollCurrentTopic() {
   } finally {
     state.polling = false;
   }
+
 }
 
 function scheduleAutoRefresh() {
@@ -3193,6 +3296,7 @@ if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
 function boot() {
   if (location.hash === '#read') history.replaceState(null, '', location.pathname + location.search);
   loadPublisherUrls();
+  loadSnapshotVersion();
   const settings = getSettings();
   state.sort = settings.sort === 'oldest' ? 'oldest' : 'newest';
   if (settings.sort !== state.sort) saveSettings({ sort: state.sort });

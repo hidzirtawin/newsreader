@@ -9,6 +9,7 @@
 
 import {
   BRIEF_ONLY_DOMAINS,
+  WALLHOP_DOMAINS,
   FEED_LIMIT,
   TOPIC_ARTICLE_LIMIT,
   getFeedById,
@@ -243,7 +244,19 @@ export function buildStrategyUrl(strategy, originalUrl) {
     case 'freedium': return `https://freedium-mirror.cfd/${originalUrl}`;
     case 'reader': return `https://r.jina.ai/${originalUrl}`;
     case 'archive_is': return `https://archive.is/newest/${originalUrl}`;
+    case 'archive_ph': return `https://archive.ph/newest/${originalUrl}`;
     case 'wayback': return `https://web.archive.org/web/*/${originalUrl}`;
+    case 'wallhop': return `https://wallhop.io/raw/${originalUrl}`;
+    case 'printfriendly': return `https://www.printfriendly.com/print?url=${encodeURIComponent(originalUrl)}`;
+    case 'google_translate': {
+      try {
+        const parsed = new URL(originalUrl);
+        const host = parsed.hostname.replace(/\./g, '-');
+        return `https://${host}.translate.goog${parsed.pathname}?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en`;
+      } catch {
+        return originalUrl;
+      }
+    }
     case 'direct':
     default: return originalUrl;
   }
@@ -252,6 +265,11 @@ export function buildStrategyUrl(strategy, originalUrl) {
 export function isBriefOnlyDomain(domainInput) {
   const domain = normalizeDomain(domainInput);
   return BRIEF_ONLY_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`));
+}
+
+export function isWallhopDomain(domainInput) {
+  const domain = normalizeDomain(domainInput);
+  return WALLHOP_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`));
 }
 
 export function applyRule(article) {
@@ -314,6 +332,18 @@ export function applyRule(article) {
   } else if (rule.strategy === 'reader') {
     base.status = 'bypassed';
     base.badge = 'Reader';
+  } else if (rule.strategy === 'wallhop') {
+    base.status = 'bypassed';
+    base.badge = 'WallHop';
+  } else if (rule.strategy === 'google_translate') {
+    base.status = 'bypassed';
+    base.badge = 'Translate';
+  } else if (rule.strategy === 'printfriendly') {
+    base.status = 'bypassed';
+    base.badge = 'Print';
+  } else if (rule.strategy === 'archive_ph') {
+    base.status = 'bypassed';
+    base.badge = 'Archive';
   }
 
   if (briefOnly && base.status !== 'locked') {

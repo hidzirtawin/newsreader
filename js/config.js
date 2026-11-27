@@ -14,7 +14,11 @@ export const STRATEGIES = {
   FREEDIUM: 'freedium',
   READER: 'reader',
   ARCHIVE_IS: 'archive_is',
+  ARCHIVE_PH: 'archive_ph',
   WAYBACK: 'wayback',
+  WALLHOP: 'wallhop',
+  GOOGLE_TRANSLATE: 'google_translate',
+  PRINTFRIENDLY: 'printfriendly',
 };
 
 export const STRATEGY_META = {
@@ -59,6 +63,35 @@ export const STRATEGY_META = {
     badge: 'Reader',
     status: 'bypassed',
     desc: 'Open a text-only reader view of the article with Jina Reader.',
+  },
+  wallhop: {
+    label: 'WallHop',
+    short: 'WallHop',
+    badge: 'WallHop',
+    status: 'bypassed',
+    desc: 'Use WallHop’s cleaned article view, with archive fallbacks.',
+  },
+  archive_ph: {
+    label: 'Archive.today (archive.ph)',
+    short: 'Archive.ph',
+    badge: 'Archive',
+    status: 'checking',
+    desc: 'Open an Archive.today snapshot. Stories without a snapshot are locked.',
+    locks: true,
+  },
+  google_translate: {
+    label: 'Google Translate proxy',
+    short: 'Translate',
+    badge: 'Translate',
+    status: 'bypassed',
+    desc: 'Read through Google’s translated page proxy.',
+  },
+  printfriendly: {
+    label: 'PrintFriendly',
+    short: 'Print',
+    badge: 'Print',
+    status: 'bypassed',
+    desc: 'Open a print-friendly text view.',
   },
   archive_is: {
     label: 'Archive.is',
@@ -174,6 +207,13 @@ export const DEFAULT_RULES = {
   'ndtv.com': { strategy: 'direct', paywall: 'none', label: 'NDTV' },
   'livemint.com': { strategy: 'smry', paywall: 'metered', label: 'Mint' },
   'business-standard.com': { strategy: 'direct', paywall: 'none', label: 'Business Standard' },
+  'businessinsider.com': { strategy: 'removepaywall', paywall: 'soft', label: 'Business Insider' },
+  'theage.com.au': { strategy: 'smry', paywall: 'metered', label: 'The Age' },
+  'examiner.com.au': { strategy: 'direct', paywall: 'none', label: 'The Examiner' },
+  'thewest.com.au': { strategy: 'smry', paywall: 'hard', label: 'The West Australian' },
+  'thenightly.com.au': { strategy: 'direct', paywall: 'none', label: 'The Nightly' },
+  'codesports.com.au': { strategy: 'smry', paywall: 'hard', label: 'CODE Sports' },
+  'dailytelegraph.com.au': { strategy: 'smry', paywall: 'hard', label: 'The Daily Telegraph' },
   'thehill.com': { strategy: 'direct', paywall: 'none', label: 'The Hill' },
   'euronews.com': { strategy: 'direct', paywall: 'none', label: 'Euronews' },
   'taipeitimes.com': { strategy: 'direct', paywall: 'none', label: 'Taipei Times' },
@@ -229,6 +269,21 @@ export const BRIEF_ONLY_DOMAINS = [
   'wsj.com',
   'heraldsun.com.au',
   'theaustralian.com.au',
+  'thewest.com.au',
+  'codesports.com.au',
+  'dailytelegraph.com.au',
+];
+
+// These publishers currently yield full readable text through WallHop.
+export const WALLHOP_DOMAINS = [
+  'nytimes.com',
+  'ft.com',
+  'wsj.com',
+  'telegraph.co.uk',
+  'thetimes.com',
+  'smh.com.au',
+  'theage.com.au',
+  'businessinsider.com',
 ];
 
 export const FEEDS = [
@@ -433,6 +488,15 @@ export const FEEDS = [
   { id: 'mint', name: 'Mint', domain: 'livemint.com', group: 'India', url: 'https://www.livemint.com/rss/news' },
   { id: 'business-standard', name: 'Business Standard', domain: 'business-standard.com', group: 'India', url: 'https://www.business-standard.com/rss/home_page_top_stories.rss' },
 
+  // Additional mastheads
+  { id: 'business-insider', name: 'Business Insider', domain: 'businessinsider.com', group: 'United States', url: 'https://news.google.com/rss/search?q=site%3Abusinessinsider.com+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'the-age', name: 'The Age', domain: 'theage.com.au', group: 'Australia', url: 'https://www.theage.com.au/rss/feed.xml' },
+  { id: 'examiner', name: 'The Examiner', domain: 'examiner.com.au', group: 'Australia', url: 'https://www.examiner.com.au/rss.xml' },
+  { id: 'the-west', name: 'The West Australian', domain: 'thewest.com.au', group: 'Australia', url: 'https://thewest.com.au/rss' },
+  { id: 'the-nightly', name: 'The Nightly', domain: 'thenightly.com.au', group: 'Australia', url: 'https://thenightly.com.au/feed/' },
+  { id: 'code-sports', name: 'CODE Sports', domain: 'codesports.com.au', group: 'Australia', url: 'https://news.google.com/rss/search?q=site%3Acodesports.com.au&hl=en-AU&gl=AU&ceid=AU%3Aen', googleNews: true },
+  { id: 'daily-telegraph', name: 'The Daily Telegraph', domain: 'dailytelegraph.com.au', group: 'Australia', url: 'https://news.google.com/rss/search?q=site%3Adailytelegraph.com.au&hl=en-AU&gl=AU&ceid=AU%3Aen', googleNews: true },
+
 ];
 
 export const TOPICS = [
@@ -458,7 +522,7 @@ export const TOPICS = [
     id: 'briefs',
     label: 'BRIEFS',
     title: 'Publisher Briefs',
-    feeds: ['nyt-world', 'nyt-us', 'nyt-politics', 'nyt-business', 'bloomberg-markets', 'bloomberg-politics', 'ft-home', 'wsj-world', 'herald-sun', 'the-australian'],
+    feeds: ['nyt-world', 'nyt-us', 'nyt-politics', 'nyt-business', 'bloomberg-markets', 'bloomberg-politics', 'ft-home', 'wsj-world', 'herald-sun', 'the-australian', 'the-west', 'code-sports', 'daily-telegraph'],
   },
 
   { id: 'radio', label: 'RADIO', title: 'Live Radio', type: 'radio', feeds: [] },
@@ -471,7 +535,7 @@ export const TOPICS = [
   },
   { id: 'us', label: 'US', title: 'United States', feeds: ['cbs', 'abc-us', 'cnn', 'latimes', 'npr-news', 'nyt-us', 'nyt-politics', 'cnbc'] },
   { id: 'uk', label: 'UK', title: 'United Kingdom', feeds: ['bbc-uk', 'guardian-uk', 'sky-uk', 'bbc-news', 'guardian-world'] },
-  { id: 'australia', label: 'AUSTRALIA', title: 'Australia', feeds: ['abc-au', '7news', 'guardian-au', 'sbs-au', 'smh', 'herald-sun', 'the-australian'] },
+  { id: 'australia', label: 'AUSTRALIA', title: 'Australia', feeds: ['abc-au', '7news', 'guardian-au', 'sbs-au', 'smh', 'the-age', 'examiner', 'the-west', 'the-nightly', 'code-sports', 'daily-telegraph', 'herald-sun', 'the-australian'] },
   { id: 'canada', label: 'CANADA', title: 'Canada', feeds: ['cbc-top', 'cbc-canada', 'cbc-world', 'globe-mail'] },
   { id: 'singapore', label: 'SINGAPORE', title: 'Singapore', feeds: ['straitstimes-sg', 'cna', 'mothership', 'beritaharian-sg'] },
   { id: 'malaysia', label: 'MALAYSIA', title: 'Malaysia', feeds: ['berita-harian', 'nst', 'fmt', 'utusan', 'kosmo'] },
