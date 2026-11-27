@@ -43,6 +43,7 @@ import {
   fetchTopicArticles,
   formatRelativeTime,
   getSnapshotForTopic,
+  isWallhopDomain,
   loadPodcastSnapshot,
 } from './feedService.js';
 import { checkArchive } from './archive.js';
@@ -901,7 +902,7 @@ function renderReaderService(article) {
   });
 
   form.submit();
-  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), 30000);
+  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), 20000);
 }
 
 
@@ -961,8 +962,12 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
   // Free sites: show the full reader service immediately, then upgrade to a
   // styled extraction if the publisher HTML can be parsed in the background.
   if (!archiveOnly && canEmbedReaderService(resolved.url)) {
-    if (navigator.serviceWorker?.controller) renderReaderService(resolved);
-    else renderReaderPlainService(resolved);
+    try {
+      if (navigator.serviceWorker?.controller) renderReaderService(resolved);
+      else renderReaderPlainService(resolved);
+    } catch {
+      renderReaderFallback(resolved, null, { checking: false });
+    }
     return;
   }
 
