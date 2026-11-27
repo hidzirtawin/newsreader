@@ -308,6 +308,7 @@ function badgeLabel(article) {
 }
 
 function badgeMarkup(article, onDark = false) {
+  if (article.video) return '';
   const classes = ['badge', badgeClass(article)];
   if (onDark) classes.push('badge-hero');
   classes.push('badge-action');
@@ -1447,6 +1448,7 @@ function renderMarketPanel(topic) {
     <div class="mkx" id="marketMore" hidden>
       <div><h3>Biggest movers, US stocks</h3><div id="marketMovers"></div></div>
       <div><h3>Economic calendar, US</h3><div id="marketEvents"></div></div>
+      <div class="mkc"><h3>Crypto</h3><div id="marketCrypto"></div></div>
     </div>
   </div>`;
   const ticker = document.getElementById('marketTicker');
@@ -1490,6 +1492,29 @@ function renderMarketPanel(topic) {
         locale: 'en',
         importanceFilter: '0,1',
         countryFilter: 'us',
+      });
+      createTradingViewWidget(document.getElementById('marketCrypto'), 'market-quotes', {
+        width: '100%',
+        height: 360,
+        colorTheme: theme,
+        isTransparent: true,
+        locale: 'en',
+        showSymbolLogo: true,
+        symbolsGroups: [{
+          name: 'Crypto',
+          originalName: 'Crypto',
+          symbols: [
+            { name: 'BITSTAMP:BTCUSD', displayName: 'Bitcoin' },
+            { name: 'BITSTAMP:ETHUSD', displayName: 'Ethereum' },
+            { name: 'BINANCE:SOLUSDT', displayName: 'Solana' },
+            { name: 'BINANCE:XRPUSDT', displayName: 'XRP' },
+            { name: 'BINANCE:BNBUSDT', displayName: 'BNB' },
+            { name: 'BINANCE:DOGEUSDT', displayName: 'Dogecoin' },
+            { name: 'BINANCE:ADAUSDT', displayName: 'Cardano' },
+            { name: 'BINANCE:AVAXUSDT', displayName: 'Avalanche' },
+            { name: 'BINANCE:LINKUSDT', displayName: 'Chainlink' },
+          ],
+        }],
       });
     }
   });

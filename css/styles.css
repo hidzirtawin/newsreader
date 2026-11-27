@@ -595,7 +595,6 @@ a {
 .mkw {
   min-height: 46px;
   padding: 2px 0;
-  pointer-events: none;
 }
 
 .mks {
@@ -648,7 +647,12 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 14px;
   padding: 4px 13px 13px;
-  pointer-events: none;
+}
+
+.mkc {
+  grid-column: 1 / -1;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
 }
 
 .mkx h3 {
