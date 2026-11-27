@@ -1017,7 +1017,7 @@ function canEmbedReaderService(url) {
   }
 }
 
-function renderReaderService(article) {
+async function renderReaderService(article) {
   els.readerStatus.hidden = true;
   els.readerToolbarState.textContent = 'Reader service';
   els.readerNotice.hidden = true;
@@ -1026,75 +1026,70 @@ function renderReaderService(article) {
   const preview = cleanSummary(article.summary) ? `<div class="reader-preview">${textToParagraphs(cleanSummary(article.summary))}</div>` : '';
   els.readerBody.innerHTML = `${preview}<div class="reader-service-shell">
     <div class="reader-service-bar" id="readerServiceStatus">Loading full text</div>
-    <iframe id="readerServiceFrame" name="readerServiceFrame" class="reader-service-iframe" title="Article reader" sandbox="allow-same-origin"></iframe>
-    <form id="readerServiceForm" method="POST" action="./reader-frame" target="readerServiceFrame" hidden>
-      <input type="hidden" name="url" value="${esc(article.url)}">
-      <input type="hidden" name="provider" value="${provider}">
-    </form>
   </div>`;
-  const frame = document.getElementById('readerServiceFrame');
-  const form = document.getElementById('readerServiceForm');
-  const status = document.getElementById('readerServiceStatus');
-  if (!frame || !form || !status) {
-    renderReaderFallback(article, null, { checking: false });
-    return;
-  }
-
+  const token = state.readerToken;
   let settled = false;
   const fail = (message) => {
-    if (settled) return;
+    if (settled || token !== state.readerToken) return;
     settled = true;
     renderReaderFallback(article, null, { checking: false });
     els.readerFallbackText.textContent = message;
   };
-
-  frame.addEventListener('load', () => {
-    if (settled) return;
-    let doc = null;
-    try { doc = frame.contentDocument; } catch { doc = null; }
-    if (!doc || !doc.documentElement || doc.URL === 'about:blank') return;
-
-    const errorHeading = doc.querySelector('h1')?.textContent?.trim() || '';
-    if (/^Reader unavailable$/i.test(errorHeading)) {
-      const detail = doc.querySelector('p')?.textContent?.trim() || '';
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), provider === 'wallhop' ? 28000 : 35000);
+  try {
+    const response = await fetch('./reader-frame', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: new URLSearchParams({ url: article.url, provider }).toString(),
+      signal: controller.signal,
+    });
+    const html = await response.text();
+    if (token !== state.readerToken) return;
+    if (!response.ok) {
+      fail(`Reader service unavailable: HTTP ${response.status}.`);
+      return;
+    }
+    const errorHeading = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '';
+    if (/Reader unavailable/i.test(errorHeading)) {
+      const detail = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1] || '';
       fail(`Reader service unavailable${detail ? `: ${detail}` : '.'}`);
       return;
     }
 
-    try {
-      const html = doc.documentElement.outerHTML;
-      const extraction = extractArticle(html, article.url);
-      const assessment = assessExtraction(extraction);
-      if (extraction && assessment.usable) {
-        settled = true;
-        renderReaderExtraction(extraction, article, assessment);
-        return;
-      }
-
-      const node = doc.querySelector('article, main, [role="main"]') || doc.body;
-      const text = (node?.innerText || '').trim();
-      const lower = text.toLowerCase();
-      const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
-      if (node && text.length >= 400 && !blocked) {
-        settled = true;
-        els.readerStatus.hidden = true;
-        els.readerFallback.hidden = true;
-        els.readerToolbarState.textContent = 'Publisher view';
-        els.readerNotice.hidden = false;
-        els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
-        els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
-        return;
-      }
-      fail('The publisher blocks full-text reading. Only the publisher summary is available.');
-    } catch {
-      fail('The publisher blocks full-text reading. Only the publisher summary is available.');
+    const extraction = extractArticle(html, article.url);
+    const assessment = assessExtraction(extraction);
+    if (extraction && assessment.usable) {
+      settled = true;
+      renderReaderExtraction(extraction, article, assessment);
+      return;
     }
-  });
 
-  form.submit();
-  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), provider === 'wallhop' ? 28000 : 35000);
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const node = doc.querySelector('article, main, [role="main"]') || doc.body;
+    const text = (node?.textContent || '').trim();
+    const lower = text.toLowerCase();
+    const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
+    if (node && text.length >= 400 && !blocked) {
+      settled = true;
+      els.readerStatus.hidden = true;
+      els.readerFallback.hidden = true;
+      els.readerToolbarState.textContent = 'Publisher view';
+      els.readerNotice.hidden = false;
+      els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
+      els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
+      return;
+    }
+    fail('The publisher blocks full-text reading. Only the publisher summary is available.');
+  } catch (error) {
+    if (token !== state.readerToken) return;
+    fail(error?.name === 'AbortError'
+      ? 'The reader service timed out. Try again or read the publisher summary.'
+      : `Reader service unavailable: ${error?.message || 'network error'}.`);
+  } finally {
+    clearTimeout(timer);
+  }
 }
-
 
 function renderReaderPlainService(article) {
   els.readerStatus.hidden = true;

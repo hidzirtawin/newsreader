@@ -33,6 +33,7 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **No paywalled sources** — only free-to-read outlets and the 407 No Wall News sources are listed. There is no Briefs desk and no way to opt into paywalled feeds.
 - **More from any publisher** — tap a source name on a story or the *Latest* button in the source library to open that publisher’s latest-first edition inside the app.
 - **Canada desk** — CBC News, CBC Canada and CBC World.
+- **Public broadcasters** — SVT, NRK, NOS, ERR News, LSM, RTP Notícias, ORF, Tagesschau, ZDFheute, ERT News, Franceinfo, SABC News, KBS World, Voice of America and Radio Free Asia join BBC, ABC, CBC, NPR, PBS, DW, France 24, RFI, RTÉ, RNZ and SBS.
 - **Source Library** — the control centre for every feed: it lists all sources by country, lets you search, enable/disable, open a publisher's latest, add your own RSS feed, and pick sources for custom topics. It stores no articles; it decides what the app may fetch. Disabling a source removes it everywhere without deleting your settings.
 - **More free additions** — Tom's Hardware, 9to5Mac, MacRumors, Lifehacker, Rest of World, Live Science, Inside Climate News, Grist, Deadline, IndieWire, NME, Pitchfork, The A.V. Club, Bon Appétit, NHS England, The Texas Tribune, CalMatters and Honolulu Civil Beat.
 - **Complete outlet directory** — all 407 outlets listed by No Wall News are in the source library, grouped by country, including every local outlet, with search and enable/disable controls.

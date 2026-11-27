@@ -814,6 +814,31 @@ addFeedsToTopic('us', ['texas-tribune', 'calmatters', 'civil-beat']);
 addFeedsToTopic('politics', ['texas-tribune', 'calmatters']);
 addFeedsToTopic('world', ['rest-of-world']);
 
+FEEDS.push(
+  { id: 'svt-nyheter', name: 'SVT Nyheter', domain: 'svt.se', group: 'Europe', url: 'https://www.svt.se/nyheter/rss.xml' },
+  { id: 'nrk', name: 'NRK', domain: 'nrk.no', group: 'Europe', url: 'https://www.nrk.no/toppsaker.rss' },
+  { id: 'nos', name: 'NOS', domain: 'nos.nl', group: 'Europe', url: 'https://feeds.nos.nl/nosnieuwsalgemeen' },
+  { id: 'err-news', name: 'ERR News', domain: 'news.err.ee', group: 'Europe', url: 'https://news.err.ee/rss' },
+  { id: 'lsm', name: 'LSM', domain: 'lsm.lv', group: 'Europe', url: 'https://www.lsm.lv/rss/' },
+  { id: 'rtp-noticias', name: 'RTP Notícias', domain: 'rtp.pt', group: 'Europe', url: 'https://www.rtp.pt/noticias/rss' },
+  { id: 'orf', name: 'ORF', domain: 'orf.at', group: 'Europe', url: 'https://rss.orf.at/news.xml' },
+  { id: 'tagesschau', name: 'Tagesschau', domain: 'tagesschau.de', group: 'Europe', url: 'https://news.google.com/rss/search?q=site%3Atagesschau.de&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'zdfheute', name: 'ZDFheute', domain: 'zdf.de', group: 'Europe', url: 'https://news.google.com/rss/search?q=site%3Azdf.de&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'ert-news', name: 'ERT News', domain: 'ertnews.gr', group: 'Europe', url: 'https://www.ertnews.gr/feed/' },
+  { id: 'franceinfo', name: 'Franceinfo', domain: 'francetvinfo.fr', group: 'Europe', url: 'https://www.francetvinfo.fr/titres.rss' },
+  { id: 'sabc-news', name: 'SABC News', domain: 'sabcnews.com', group: 'Africa', url: 'https://news.google.com/rss/search?q=site%3Asabcnews.com&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'kbs-world', name: 'KBS World', domain: 'world.kbs.co.kr', group: 'Asia', url: 'https://world.kbs.co.kr/rss/rss_news.htm?lang=e' },
+  { id: 'voa-news', name: 'Voice of America', domain: 'voanews.com', group: 'United States', url: 'https://www.voanews.com/api/zq$omekvi_' },
+  { id: 'rfa-news', name: 'Radio Free Asia', domain: 'rfa.org', group: 'Asia', url: 'https://www.rfa.org/english/rss' },
+);
+addFeedsToTopic('europe', ['svt-nyheter', 'nrk', 'nos', 'err-news', 'lsm', 'rtp-noticias', 'orf', 'tagesschau', 'zdfheute', 'ert-news', 'franceinfo']);
+addFeedsToTopic('world', ['kbs-world', 'voa-news', 'rfa-news', 'sabc-news']);
+addFeedsToTopic('africa', ['sabc-news']);
+addFeedsToTopic('asia', ['kbs-world', 'rfa-news']);
+addFeedsToTopic('us', ['voa-news']);
+addFeedsToTopic('china', ['rfa-news']);
+addFeedsToTopic('politics', ['voa-news']);
+
 addFeedsToTopic('world', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'un-news', 'rfi', 'rte', 'africanews', 'the-conversation']);
 addFeedsToTopic('us', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'nypost', 'yahoo-news']);
 addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business', 'investinglive', 'cbs-moneywatch']);
