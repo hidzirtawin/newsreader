@@ -1,3 +1,5 @@
+import { OUTLET_DIRECTORY } from './outletDirectory.js';
+
 /**
  * config.js — static configuration shared by the browser app and the
  * snapshot refresh script.
@@ -1301,6 +1303,13 @@ export const PODCAST_SHOWS = [
     description: 'Australian and global news, made for a younger generation.',
   },
 ];
+
+// Complete No Wall News outlet directory. These are listed in the source
+// library and can be used in custom topics; built-in topics keep their
+// curated feeds so the snapshot refresh stays fast.
+const configuredDomains = new Set(FEEDS.map((feed) => feed.domain).filter(Boolean));
+const directoryFeeds = OUTLET_DIRECTORY.filter((feed) => !configuredDomains.has(feed.domain));
+FEEDS.push(...directoryFeeds);
 
 export const STORAGE = {
   settings: 'newsreader_settings_v1',

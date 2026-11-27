@@ -33,6 +33,7 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Transparent hard-paywall handling** — no blocked or paywalled page is ever opened. If a publication offers no readable or archived copy, Tawin Newsreader shows its publisher brief instead.
 - **More from any publisher** — tap a source name on a story or the *Latest* button in the source library to open that publisher’s latest-first edition inside the app.
 - **Canada desk** — CBC News, CBC Canada and CBC World; The Globe and Mail is kept in Briefs.
+- **Complete outlet directory** — all 407 outlets listed by No Wall News are in the source library, grouped by country, including every local outlet, with search and enable/disable controls.
 - **Your Country desk** — detects the country from the device time zone (with a country picker on every country desk) and shows free local headlines plus international coverage of that country.
 - **Free-to-read model** — like No Wall News, the main feeds prefer outlets whose articles open without a subscription. Hard-paywalled publishers are kept in **BRIEFS** and can be re-enabled with **Include paywalled briefs**.
 - **Find it free** — paste any article link from the menu and route it through the saved publisher rule, WallHop, Jina Reader or an archive copy.
