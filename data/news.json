@@ -1,6 +1,6 @@
 {
   "top": {
-    "updatedAt": "2026-11-27T01:49:11.182Z",
+    "updatedAt": "2026-11-27T01:51:10.231Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -89,6 +89,28 @@
     ],
     "articles": [
       {
+        "id": "art-680864e09595",
+        "title": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
+        "summary": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T01:45:11.000Z"
+      },
+      {
+        "id": "art-656a441bf148",
+        "title": "Trump says the US has ‘close to 50%’ of world’s oil",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/trump-says-the-us-has-close-to-50-of-worlds-oil?traffic_source=rss",
+        "summary": "On a call to soldiers deployed to the Gulf, Donald Trump claimed that the US does not ‘need Middle East oil'.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/trump-oil-thumbnail-1795743787.png?resize=1200%2C675",
+        "pubDate": "2026-11-27T01:44:02.000Z"
+      },
+      {
         "id": "art-5d28a5ddaa27",
         "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
         "source": "CNBC",
@@ -109,6 +131,17 @@
         "summary": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--cN-C0_su--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T013636Z_1_LYNXNPEMAQ03D_RTROPTP_3_CHINA-ECONOMY-INDUSTRIAL-PROFITS.JPG?itok=0U5BRkRn",
         "pubDate": "2026-11-27T01:36:36.000Z"
+      },
+      {
+        "id": "art-db2c5294a5f8",
+        "title": "Clashes halt match as Turkiye football fans raise Palestinian flags",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+        "summary": "Clashes broke out between Georgian police and Turkish club Besiktas supporters during a UEFA match.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/wide-thumb-UEFA-2611-1795743260.png?resize=1920%2C1080&quality=80",
+        "pubDate": "2026-11-27T01:36:23.000Z"
       },
       {
         "id": "art-6d0d821370d9",
@@ -152,17 +185,6 @@
         "url": "https://www.espn.com/nfl/story/_/id/50605070/steelers-owner-disappointed-rodgers-backs-mccarthy",
         "summary": "Steelers owner Art Rooney II reacted to Wednesday's fiery interview from Aaron Rodgers by saying he was \"disappointed in where this went\" with their now-former quarterback, adding he has \"100% confidence in Mike McCarthy.\"",
         "imageUrl": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0121%2Fr1603837_1296x729_16%2D9.jpg",
-        "pubDate": "2026-11-27T01:29:11.000Z"
-      },
-      {
-        "id": "art-680864e09595",
-        "title": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
-        "summary": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
-        "imageUrl": "",
         "pubDate": "2026-11-27T01:29:11.000Z"
       },
       {
@@ -331,17 +353,6 @@
         "pubDate": "2026-11-27T01:03:13.000Z"
       },
       {
-        "id": "art-1d8475ada6dd",
-        "title": "CNA Now: Keppel CEO explains rationale for proposed M1-StarHub merger, plus other news as it happens",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/singapore/cna-now-nov-27-live-blog-6584836",
-        "summary": "Stay on top of the day's biggest stories with CNA Now, which brings you breaking news and major developments from Singapore and around the world.",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--AnhH4wCI--/c_crop,h_1107,w_1969,x_1,y_243/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/24/starhub-m1-combo_5x4a.jpg?itok=xaT5qlv1",
-        "pubDate": "2026-11-27T01:02:11.000Z"
-      },
-      {
         "id": "art-666f43bd7428",
         "title": "Threat from China looms large over Taiwan’s local elections",
         "source": "The Guardian World",
@@ -373,17 +384,6 @@
         "summary": "Networks of plumbers and electricians are scamming people on a large scale, the BBC reveals.",
         "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3451/live/fbe22210-e9cb-11f1-99a1-253766e7ad8b.jpg",
         "pubDate": "2026-11-27T00:58:49.000Z"
-      },
-      {
-        "id": "art-63523d7218be",
-        "title": "Inside Ukraine’s power crisis amid its war with Russia",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/inside-ukraines-power-crisis-amid-its-war-with-russia?traffic_source=rss",
-        "summary": "Electricity and water shortages have become part of daily life in Ukraine’s capital.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795740363.jpg?resize=1920%2C1080&quality=80",
-        "pubDate": "2026-11-27T00:46:19.000Z"
       },
       {
         "id": "art-7dad030c2c6a",
@@ -559,7 +559,7 @@
     ]
   },
   "latest": {
-    "updatedAt": "2026-11-27T01:49:11.296Z",
+    "updatedAt": "2026-11-27T01:51:10.344Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -666,6 +666,28 @@
     ],
     "articles": [
       {
+        "id": "art-17906474746b",
+        "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+        "summary": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
+        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/f85f3d06-275b-4c46-b8cd-a114f49aee37/thumbnail/1200x630/97c5d4c6ecfecc86540bd2159f622b69/ap26330556979279.jpg",
+        "pubDate": "2026-11-27T01:49:54.000Z"
+      },
+      {
+        "id": "art-680864e09595",
+        "title": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
+        "summary": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T01:45:11.000Z"
+      },
+      {
         "id": "art-1f7ca35e31a7",
         "title": "Major storm batters US on Thanksgiving holiday, disrupting flights and power",
         "source": "South China Morning Post",
@@ -675,6 +697,17 @@
         "summary": "A powerful storm disrupted Thanksgiving celebrations for millions of Americans on Thursday, as New York’s famed Macy’s parade was postponed for the first time in its 100-year history. Heavy rain and strong winds from the “Nor-easter” battered the central and e",
         "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/8f32bd54-e03d-4c65-9890-ef1a97af82d0_7a7b416d.jpg?itok=2JQ1BCqb&v=1795743848",
         "pubDate": "2026-11-27T01:44:13.000Z"
+      },
+      {
+        "id": "art-656a441bf148",
+        "title": "Trump says the US has ‘close to 50%’ of world’s oil",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/trump-says-the-us-has-close-to-50-of-worlds-oil?traffic_source=rss",
+        "summary": "On a call to soldiers deployed to the Gulf, Donald Trump claimed that the US does not ‘need Middle East oil'.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/trump-oil-thumbnail-1795743787.png?resize=1200%2C675",
+        "pubDate": "2026-11-27T01:44:02.000Z"
       },
       {
         "id": "art-5d28a5ddaa27",
@@ -697,6 +730,17 @@
         "summary": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--cN-C0_su--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T013636Z_1_LYNXNPEMAQ03D_RTROPTP_3_CHINA-ECONOMY-INDUSTRIAL-PROFITS.JPG?itok=0U5BRkRn",
         "pubDate": "2026-11-27T01:36:36.000Z"
+      },
+      {
+        "id": "art-db2c5294a5f8",
+        "title": "Clashes halt match as Turkiye football fans raise Palestinian flags",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+        "summary": "Clashes broke out between Georgian police and Turkish club Besiktas supporters during a UEFA match.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/wide-thumb-UEFA-2611-1795743260.png?resize=1920%2C1080&quality=80",
+        "pubDate": "2026-11-27T01:36:23.000Z"
       },
       {
         "id": "art-6d0d821370d9",
@@ -751,17 +795,6 @@
         "url": "https://www.espn.com/nfl/story/_/id/50605070/steelers-owner-disappointed-rodgers-backs-mccarthy",
         "summary": "Steelers owner Art Rooney II reacted to Wednesday's fiery interview from Aaron Rodgers by saying he was \"disappointed in where this went\" with their now-former quarterback, adding he has \"100% confidence in Mike McCarthy.\"",
         "imageUrl": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0121%2Fr1603837_1296x729_16%2D9.jpg",
-        "pubDate": "2026-11-27T01:29:11.000Z"
-      },
-      {
-        "id": "art-680864e09595",
-        "title": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
-        "summary": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
-        "imageUrl": "",
         "pubDate": "2026-11-27T01:29:11.000Z"
       },
       {
@@ -886,17 +919,6 @@
         "pubDate": "2026-11-27T01:13:00.000Z"
       },
       {
-        "id": "art-79bb921cb738",
-        "title": "Global news agency AFP reports cyberattack, shuts down content platform",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/27/global-news-agency-afp-reports-cyberattack-shuts-down-content-platform?traffic_source=rss",
-        "summary": "France's cybersecurity chief urges collective action to combat unprecedented threat levels in the nation.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b08c392-1795736466.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T01:07:44.000Z"
-      },
-      {
         "id": "art-666f43bd7428",
         "title": "Threat from China looms large over Taiwan’s local elections",
         "source": "The Guardian World",
@@ -939,28 +961,6 @@
         "summary": "Networks of plumbers and electricians are scamming people on a large scale, the BBC reveals.",
         "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3451/live/fbe22210-e9cb-11f1-99a1-253766e7ad8b.jpg",
         "pubDate": "2026-11-27T00:58:49.000Z"
-      },
-      {
-        "id": "art-238386efec7c",
-        "title": "High school band raises $350K to stay for Macy's Thanksgiving parade",
-        "source": "CBS News",
-        "feedId": "cbs",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
-        "summary": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
-        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/7de482fa-f8b6-4a1d-bbb3-8d30f15aa167/thumbnail/1200x630/814e45e1b718f2712f5cef9f02f77725/gettyimages-2306681635.jpg",
-        "pubDate": "2026-11-27T00:52:28.000Z"
-      },
-      {
-        "id": "art-63523d7218be",
-        "title": "Inside Ukraine’s power crisis amid its war with Russia",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/inside-ukraines-power-crisis-amid-its-war-with-russia?traffic_source=rss",
-        "summary": "Electricity and water shortages have become part of daily life in Ukraine’s capital.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795740363.jpg?resize=1920%2C1080&quality=80",
-        "pubDate": "2026-11-27T00:46:19.000Z"
       },
       {
         "id": "art-7dad030c2c6a",
@@ -1136,7 +1136,7 @@
     ]
   },
   "briefing": {
-    "updatedAt": "2026-11-27T01:49:11.359Z",
+    "updatedAt": "2026-11-27T01:51:10.406Z",
     "results": [
       {
         "feedId": "reuters",
@@ -1252,6 +1252,18 @@
         "summary": "The carry trade, in which investors borrow in currencies like the yen, euro, and dollar, is becoming harder to navigate after delivering strong returns earlier in the year. Bloomberg's Garfield Reynolds discusses how market changes are impacting the strategy's",
         "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i7ec3BhPDrn4/v3/500x-1.webp",
         "pubDate": "2026-11-27T01:40:01.000Z"
+      },
+      {
+        "id": "art-f1b7916c1920",
+        "title": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state",
+        "source": "Herald Sun",
+        "feedId": "herald-sun",
+        "domain": "heraldsun.com.au",
+        "url": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55",
+        "summary": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state Herald Sun",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T01:38:11.000Z",
+        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55"
       },
       {
         "id": "art-0577bb060b68",
@@ -1398,18 +1410,6 @@
         "summary": "Strong winds ripped the roof off a building in Maryland, as an extreme storm began to move up the East Coast on Thanksgiving morning.",
         "imageUrl": "https://s.abcnews.com/images/US/heavy-wind-blows-roof-off-hd-bh-112626_1795708107270_hpMain_4x3t_384.jpg",
         "pubDate": "2026-11-27T00:13:54.000Z"
-      },
-      {
-        "id": "art-f1b7916c1920",
-        "title": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state",
-        "source": "Herald Sun",
-        "feedId": "herald-sun",
-        "domain": "heraldsun.com.au",
-        "url": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55",
-        "summary": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state Herald Sun",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:08:10.000Z",
-        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55"
       },
       {
         "id": "art-5f0bad9317ca",
@@ -1726,7 +1726,7 @@
     ]
   },
   "world": {
-    "updatedAt": "2026-11-27T01:49:11.395Z",
+    "updatedAt": "2026-11-27T01:51:10.442Z",
     "results": [
       {
         "feedId": "bbc-world",
@@ -1819,6 +1819,17 @@
         "pubDate": "2026-11-27T01:44:13.000Z"
       },
       {
+        "id": "art-656a441bf148",
+        "title": "Trump says the US has ‘close to 50%’ of world’s oil",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/trump-says-the-us-has-close-to-50-of-worlds-oil?traffic_source=rss",
+        "summary": "On a call to soldiers deployed to the Gulf, Donald Trump claimed that the US does not ‘need Middle East oil'.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/trump-oil-thumbnail-1795743787.png?resize=1200%2C675",
+        "pubDate": "2026-11-27T01:44:02.000Z"
+      },
+      {
         "id": "art-06c1ba76c92b",
         "title": "Chinese industrial profit rises 16% in January-October",
         "source": "CNA",
@@ -1828,6 +1839,17 @@
         "summary": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--cN-C0_su--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T013636Z_1_LYNXNPEMAQ03D_RTROPTP_3_CHINA-ECONOMY-INDUSTRIAL-PROFITS.JPG?itok=0U5BRkRn",
         "pubDate": "2026-11-27T01:36:36.000Z"
+      },
+      {
+        "id": "art-db2c5294a5f8",
+        "title": "Clashes halt match as Turkiye football fans raise Palestinian flags",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+        "summary": "Clashes broke out between Georgian police and Turkish club Besiktas supporters during a UEFA match.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/wide-thumb-UEFA-2611-1795743260.png?resize=1920%2C1080&quality=80",
+        "pubDate": "2026-11-27T01:36:23.000Z"
       },
       {
         "id": "art-8d709c541c16",
@@ -2141,28 +2163,6 @@
         "pubDate": "2026-11-26T23:37:29.000Z"
       },
       {
-        "id": "art-92bd584fd1f0",
-        "title": "Georgian police clash with Turkiye’s Besiktas fans over Palestinian flag",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/26/georgian-police-clash-with-turkiyes-besiktas-fans-over-palestinian-flag?traffic_source=rss",
-        "summary": "Match between Besiktas and Hapoel Beer-Sheva suspended for 30 minutes after confrontation between fans and police.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b08b161a8463-1795731809.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-26T23:37:17.000Z"
-      },
-      {
-        "id": "art-2f8d6944cc73",
-        "title": "EU leaders unable to agree on budget after over 12 hours of talks: ‘zero results’",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/europe/article/3375966/eu-leaders-unable-agree-budget-after-over-12-hours-talks-zero-results",
-        "summary": "French President Emmanuel Macron set an end-of-year deadline for an agreement on the European Union’s next seven-year budget after the continent’s leaders ruled out any chances for a deal to be reached at their summit on Thursday. The 2028-2034 budget – a stat",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/61eacd9c-03f0-45bc-b578-89247833a487_0947cc15.jpg?itok=0ESMamSB&v=1795736111",
-        "pubDate": "2026-11-26T23:35:18.000Z"
-      },
-      {
         "id": "art-98156cb2db68",
         "title": "Besiktas v Hapoel Beer-Sheva suspended after police enter stands",
         "source": "Reuters",
@@ -2269,7 +2269,7 @@
     ]
   },
   "us": {
-    "updatedAt": "2026-11-27T01:49:11.416Z",
+    "updatedAt": "2026-11-27T01:51:10.464Z",
     "results": [
       {
         "feedId": "cbs",
@@ -2321,6 +2321,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-17906474746b",
+        "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+        "summary": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
+        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/f85f3d06-275b-4c46-b8cd-a114f49aee37/thumbnail/1200x630/97c5d4c6ecfecc86540bd2159f622b69/ap26330556979279.jpg",
+        "pubDate": "2026-11-27T01:49:54.000Z"
+      },
       {
         "id": "art-5d28a5ddaa27",
         "title": "China industrial profits growth surges to a 5-month high of 20.1% in October",
@@ -2388,17 +2399,6 @@
         "pubDate": "2026-11-27T00:39:06.000Z"
       },
       {
-        "id": "art-17906474746b",
-        "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
-        "source": "CBS News",
-        "feedId": "cbs",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
-        "summary": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
-        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/f85f3d06-275b-4c46-b8cd-a114f49aee37/thumbnail/1200x630/97c5d4c6ecfecc86540bd2159f622b69/ap26330556979279.jpg",
-        "pubDate": "2026-11-27T00:38:13.000Z"
-      },
-      {
         "id": "art-03ecb57d2e45",
         "title": "How to protect your packages from porch pirates",
         "source": "CBS News",
@@ -2454,17 +2454,6 @@
         "pubDate": "2026-11-27T00:31:00.000Z"
       },
       {
-        "id": "art-575304501883",
-        "title": "Severe weather this Thanksgiving hits U.S. from California to New York",
-        "source": "CBS News",
-        "feedId": "cbs",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/video/severe-weather-thanksgiving-hits-us-california-new-york/",
-        "summary": "A Thanksgiving nor'easter brought powerful winds that knocked down a tree, crushing a home in Maryland. Major floods hit Virginia and New Jersey and the California coast were hit by king tides. Tom Hanson reports and Scott Padgett has the forecast.",
-        "imageUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/27/6df3082d-4e5f-45c7-bb33-df7ebc5e3c1e/thumbnail/1200x630/0ba99def5707f7e00c572470450b0638/cbsn-fusion-severe-weather-thanksgiving-hits-us-california-new-york-thumbnail.jpg",
-        "pubDate": "2026-11-27T00:27:00.000Z"
-      },
-      {
         "id": "art-a68a354f8f86",
         "title": "Thanksgiving travel nightmare hits airports amid powerful nor'easter",
         "source": "CBS News",
@@ -2473,6 +2462,17 @@
         "url": "https://www.cbsnews.com/video/thanksgiving-travel-nightmare-hits-airports-amid-powerful-noreaster/",
         "summary": "More than 2,000 flights have been delayed this Thanksgiving, and more than 400 were canceled as a powerful nor'easter, Cristian Benavides reports.",
         "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/4dfd71a5-a1fc-44a5-bea5-19b65e28dd3f/thumbnail/1200x630/9560ed63cc5686801d98e1e5a6a421d8/cbsn-fusion-thanksgiving-travel-nightmare-hits-airports-amid-powerful-noreaster-thumbnail.jpg",
+        "pubDate": "2026-11-27T00:27:00.000Z"
+      },
+      {
+        "id": "art-575304501883",
+        "title": "Severe weather this Thanksgiving hits U.S. from California to New York",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/video/severe-weather-thanksgiving-hits-us-california-new-york/",
+        "summary": "A Thanksgiving nor'easter brought powerful winds that knocked down a tree, crushing a home in Maryland. Major floods hit Virginia and New Jersey and the California coast were hit by king tides. Tom Hanson reports and Scott Padgett has the forecast.",
+        "imageUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/27/6df3082d-4e5f-45c7-bb33-df7ebc5e3c1e/thumbnail/1200x630/0ba99def5707f7e00c572470450b0638/cbsn-fusion-severe-weather-thanksgiving-hits-us-california-new-york-thumbnail.jpg",
         "pubDate": "2026-11-27T00:27:00.000Z"
       },
       {
@@ -2788,7 +2788,7 @@
     ]
   },
   "uk": {
-    "updatedAt": "2026-11-27T01:49:11.425Z",
+    "updatedAt": "2026-11-27T01:51:10.472Z",
     "results": [
       {
         "feedId": "bbc-uk",
@@ -3287,7 +3287,7 @@
     ]
   },
   "australia": {
-    "updatedAt": "2026-11-27T01:49:11.440Z",
+    "updatedAt": "2026-11-27T01:51:10.488Z",
     "results": [
       {
         "feedId": "abc-au",
@@ -3334,15 +3334,16 @@
     ],
     "articles": [
       {
-        "id": "art-a68d10f4d35d",
-        "title": "Harry Styles comes to town and Melbourne loses its mind over a pair of red short shorts",
-        "source": "Guardian Australia",
-        "feedId": "guardian-au",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/music/2026/nov/27/popstar-harry-styles-melbourne-red-short-shorts-together-together-tour-australia",
-        "summary": "Everyone was extremely normal about the British pop star walking around in Melbourne this week. One TV reporter, interviewing an eyewitness, asked how Harry smelled As the gold rush tore through Victoria in 1851, it seemed as though there was gold no matter wh",
-        "imageUrl": "https://i.guim.co.uk/img/media/50ab875e7d6b200b7bbf8862a29f17187f306328/164_0_4056_3245/master/4056.jpg?width=140&quality=85&auto=format&fit=max&s=dc18995fe5e427e56cca1e838b1a43fc",
-        "pubDate": "2026-11-27T01:37:37.000Z"
+        "id": "art-f1b7916c1920",
+        "title": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state",
+        "source": "Herald Sun",
+        "feedId": "herald-sun",
+        "domain": "heraldsun.com.au",
+        "url": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55",
+        "summary": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state Herald Sun",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T01:38:11.000Z",
+        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55"
       },
       {
         "id": "art-0577bb060b68",
@@ -3488,18 +3489,6 @@
         "summary": "From cost of living to health, transport and crime, here is a summary of some of the major promises and policies announced by parties ahead of the 2026 Victorian state election Victorian election 2026 guide: what you need to know See all of our Victorian state",
         "imageUrl": "https://i.guim.co.uk/img/media/bcb06f7f36cfeedcde55e81d80bcfacdcf5c2296/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=30dd975dde8fceb6c3260421634a2b0d",
         "pubDate": "2026-11-27T00:08:18.000Z"
-      },
-      {
-        "id": "art-f1b7916c1920",
-        "title": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state",
-        "source": "Herald Sun",
-        "feedId": "herald-sun",
-        "domain": "heraldsun.com.au",
-        "url": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55",
-        "summary": "Victoria’s new political map: The blue, orange and green wave tipped to sweep over the state Herald Sun",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:08:10.000Z",
-        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/state-election/updated-live-hourly-seatbyseat-projections-for-all-88-seats/news-story/2c39bf0624842cf3906f66a7b6de7f55"
       },
       {
         "id": "art-d91c71eb6ead",
@@ -3713,6 +3702,17 @@
         "pubDate": "2026-11-26T21:37:48.000Z"
       },
       {
+        "id": "art-452003268bcd",
+        "title": "Southern and central Australia face summer of heightened bushfire risk and heatwaves",
+        "source": "Guardian Australia",
+        "feedId": "guardian-au",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/environment/2026/nov/27/southern-and-central-australia-face-summer-of-heightened-bushfire-risk-and-heatwaves",
+        "summary": "Fire chiefs say large swathes of the country are at risk from fires driven by high fuel loads, dry soil and hot weather Get our breaking news email , free app or daily news podcast Large parts of southern and central Australia face elevated fire risk this summ",
+        "imageUrl": "https://i.guim.co.uk/img/media/7c233d5a70f62ffe7696a2a33f2be6960a88e27a/58_0_884_707/master/884.jpg?width=140&quality=85&auto=format&fit=max&s=504521c93e59c68ac8a90ea7c953c202",
+        "pubDate": "2026-11-26T21:33:36.000Z"
+      },
+      {
         "id": "art-7a651c14d6d3",
         "title": "'Significant concern' as summer bushfire risk grows",
         "source": "ABC News Australia",
@@ -3757,15 +3757,16 @@
         "pubDate": "2026-11-26T20:29:59.000Z"
       },
       {
-        "id": "art-117726bfa8f2",
-        "title": "Donations to One Nation from two Gina Rinehart associates to be probed by electoral authorities",
-        "source": "Guardian Australia",
-        "feedId": "guardian-au",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/australia-news/2026/nov/27/one-nation-pauline-hanson-gina-rinehart-aec-donations-ntwnfb",
-        "summary": "Exclusive : Australian Electoral Commission to review $1m in donations to Pauline Hanson-led party from Adam Giles and Ian Plimer Get our daily political email , free app or daily news podcast Major donations from close associates of One Nation’s billionaire b",
-        "imageUrl": "https://i.guim.co.uk/img/media/3acb50ab06d64ebbee7ceb9a2e1635d722e3b532/639_0_6385_5110/master/6385.jpg?width=140&quality=85&auto=format&fit=max&s=6179912560ad4e19de8426531494d912",
-        "pubDate": "2026-11-26T14:00:40.000Z"
+        "id": "art-fa9a2df3aaa4",
+        "title": "‘Everyone has an opinion’: The entrepreneur funding a $1m defamation fight against Peter V’landys - SMH.com.au",
+        "source": "The Sydney Morning Herald",
+        "feedId": "smh",
+        "domain": "smh.com.au",
+        "url": "https://www.smh.com.au/sport/racing/everyone-has-an-opinion-the-entrepreneur-funding-a-1m-defamation-fight-against-peter-v-landys-20261127-p61drr.html",
+        "summary": "‘Everyone has an opinion’: The entrepreneur funding a $1m defamation fight against Peter V’landys SMH.com.au",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T18:00:00.000Z",
+        "publisherUrl": "https://www.smh.com.au/sport/racing/everyone-has-an-opinion-the-entrepreneur-funding-a-1m-defamation-fight-against-peter-v-landys-20261127-p61drr.html"
       },
       {
         "id": "art-4d034cc8c7cd",
@@ -3779,6 +3780,17 @@
         "pubDate": "2026-11-26T14:00:37.000Z"
       },
       {
+        "id": "art-aaa8ed56bfe9",
+        "title": "Barrie and Tony’s final Victorian election predictions - Back to Back Barries",
+        "source": "Guardian Australia",
+        "feedId": "guardian-au",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/australia-news/audio/2026/nov/26/barrie-and-tony-final-victorian-election-predictions-back-to-back-barries-live",
+        "summary": "In this sold-out live show at Melbourne’s Capitol theatre, Barrie Cassidy and Tony Barry preview what is being called the most consequential state election in a generation. The Barries examine the latest polls, seats to watch and how Victoria could change on S",
+        "imageUrl": "https://i.guim.co.uk/img/media/c0eafecd02c1544567ad7de41b4ed4fad72e70c4/625_0_3750_3000/master/3750.jpg?width=140&quality=85&auto=format&fit=max&s=e785e235fd456445e2ffbcd1697a642b",
+        "pubDate": "2026-11-26T14:00:36.000Z"
+      },
+      {
         "id": "art-ee88f3597c1c",
         "title": "A welcome chance to apply much-needed disinfecting sunlight",
         "source": "The Australian",
@@ -3789,23 +3801,11 @@
         "imageUrl": "",
         "pubDate": "2026-11-26T11:03:51.000Z",
         "publisherUrl": "https://www.theaustralian.com.au/commentary/a-welcome-chance-to-apply-muchneeded-disinfecting-sunlight/news-story/ef4c83d4b3c6ee030f74ef330335ffdb"
-      },
-      {
-        "id": "art-383ed5db204a",
-        "title": "Labor is on the skids. If there’s a cunning plan, it needs to be unveiled soon - SMH.com.au",
-        "source": "The Sydney Morning Herald",
-        "feedId": "smh",
-        "domain": "smh.com.au",
-        "url": "https://www.smh.com.au/politics/federal/labor-is-on-the-skids-if-there-s-a-cunning-plan-it-needs-to-be-unveiled-soon-20261126-p61hbk.html",
-        "summary": "Labor is on the skids. If there’s a cunning plan, it needs to be unveiled soon SMH.com.au",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T08:00:00.000Z",
-        "publisherUrl": "https://www.smh.com.au/politics/federal/labor-is-on-the-skids-if-there-s-a-cunning-plan-it-needs-to-be-unveiled-soon-20261126-p61hbk.html"
       }
     ]
   },
   "canada": {
-    "updatedAt": "2026-11-27T01:49:11.445Z",
+    "updatedAt": "2026-11-27T01:51:10.492Z",
     "results": [
       {
         "feedId": "cbc-top",
@@ -4302,7 +4302,7 @@
     ]
   },
   "singapore": {
-    "updatedAt": "2026-11-27T01:49:11.452Z",
+    "updatedAt": "2026-11-27T01:51:10.499Z",
     "results": [
       {
         "feedId": "straitstimes-sg",
@@ -4795,7 +4795,7 @@
     ]
   },
   "malaysia": {
-    "updatedAt": "2026-11-27T01:49:11.458Z",
+    "updatedAt": "2026-11-27T01:51:10.506Z",
     "results": [
       {
         "feedId": "berita-harian",
@@ -5026,6 +5026,17 @@
         "summary": "KUALA LUMPUR: Suruhanjaya Pencegahan Rasuah Malaysia (SPRM) dengan tegas menolak dakwaan bahawa ia mengamalkan siasatan guna dua darjat (double standard).",
         "imageUrl": "https://assets.bharian.com.my/images/articles/bh27dajat-o_BHfield_image_listing_featured_v2.var_1795739356.jpg",
         "pubDate": "2026-11-27T08:29:17.000Z"
+      },
+      {
+        "id": "art-8fe7835fb458",
+        "title": "NationGate unaffected by Nvidia's reported server shipment curbs: Analyst",
+        "source": "New Straits Times",
+        "feedId": "nst",
+        "domain": "nst.com.my",
+        "url": "https://www.nst.com.my/business/corporate/2026/11/1586780/nationgate-unaffected-nvidias-reported-server-shipment-curbs",
+        "summary": "KUALA LUMPUR: NationGate Holdings Bhd will not be directly affected by Nvidia's reported server shipment restrictions as it stopped accepting new graphics processing unit (GPU) server orders in the second half of 2025, said CIMB Securities Sdn Bhd.",
+        "imageUrl": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/51AAFE8B030D40BF79E337D13485CAB1_data_0.jpg",
+        "pubDate": "2026-11-27T01:49:48.000Z"
       },
       {
         "id": "art-86027694593d",
@@ -5259,17 +5270,6 @@
         "pubDate": "2026-11-27T01:00:15.000Z"
       },
       {
-        "id": "art-d50dbc529c66",
-        "title": "Infidelity, corruption: what do we tell the children now?",
-        "source": "Free Malaysia Today",
-        "feedId": "fmt",
-        "domain": "freemalaysiatoday.com",
-        "url": "https://www.freemalaysiatoday.com/category/opinion/2026/11/27/infidelity-corruption-what-do-we-tell-the-children-now",
-        "summary": "What do we say at the dinner table when a child looks up from the news and asks: ‘Is that okay?’",
-        "imageUrl": "https://media.freemalaysiatoday.com/v3/2026/11/94fee526-92c0-4690-bf73-cf832dbba0cb-2-Jensen-Huang-Najib-Razak-tile-2511126.jpg",
-        "pubDate": "2026-11-27T01:00:00.000Z"
-      },
-      {
         "id": "art-bc17840c40a2",
         "title": "‘Empat kali suami pengsan masa jual buah’",
         "source": "Kosmo!",
@@ -5294,7 +5294,7 @@
     ]
   },
   "asia": {
-    "updatedAt": "2026-11-27T01:49:11.487Z",
+    "updatedAt": "2026-11-27T01:51:10.535Z",
     "results": [
       {
         "feedId": "cna",
@@ -5358,6 +5358,28 @@
         "pubDate": "2026-11-27T01:44:13.000Z"
       },
       {
+        "id": "art-656a441bf148",
+        "title": "Trump says the US has ‘close to 50%’ of world’s oil",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/trump-says-the-us-has-close-to-50-of-worlds-oil?traffic_source=rss",
+        "summary": "On a call to soldiers deployed to the Gulf, Donald Trump claimed that the US does not ‘need Middle East oil'.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/trump-oil-thumbnail-1795743787.png?resize=1200%2C675",
+        "pubDate": "2026-11-27T01:44:02.000Z"
+      },
+      {
+        "id": "art-b62e73240f73",
+        "title": "Shohei Ohtani voices frustration after difficult season in MLB",
+        "source": "The Japan Times",
+        "feedId": "japan-times",
+        "domain": "japantimes.co.jp",
+        "url": "https://www.japantimes.co.jp/sports/2026/11/27/baseball/mlb/shohei-ohtani-difficult-season/",
+        "summary": "Regarding his intention to continue pitching and batting next season, Ohtani said he and the Dodgers have various plans for his two-way role.",
+        "imageUrl": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/27/576272.jpg",
+        "pubDate": "2026-11-27T01:43:00.000Z"
+      },
+      {
         "id": "art-06c1ba76c92b",
         "title": "Chinese industrial profit rises 16% in January-October",
         "source": "CNA",
@@ -5367,6 +5389,17 @@
         "summary": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--cN-C0_su--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T013636Z_1_LYNXNPEMAQ03D_RTROPTP_3_CHINA-ECONOMY-INDUSTRIAL-PROFITS.JPG?itok=0U5BRkRn",
         "pubDate": "2026-11-27T01:36:36.000Z"
+      },
+      {
+        "id": "art-db2c5294a5f8",
+        "title": "Clashes halt match as Turkiye football fans raise Palestinian flags",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+        "summary": "Clashes broke out between Georgian police and Turkish club Besiktas supporters during a UEFA match.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/wide-thumb-UEFA-2611-1795743260.png?resize=1920%2C1080&quality=80",
+        "pubDate": "2026-11-27T01:36:23.000Z"
       },
       {
         "id": "art-8d709c541c16",
@@ -5519,7 +5552,7 @@
         "domain": "straitstimes.com",
         "url": "https://www.straitstimes.com/asia/se-asia/fire-breaks-out-at-bangkoks-pattavikorn-market",
         "summary": "Bangkok’s Rama 199 Radio Centre confirmed at 6.27am local time that the fire was out.",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/dfa29d15d7e0470342ff9c12aa901f71d30e390acf601ebbe36c298a2a633c6e?t=og",
+        "imageUrl": "",
         "pubDate": "2026-11-27T00:45:00.000Z"
       },
       {
@@ -5732,39 +5765,6 @@
         "pubDate": "2026-11-27T00:00:00.000Z"
       },
       {
-        "id": "art-652f2174d934",
-        "title": "2026 Elections: Be vigilant of cyberattacks ahead of elections: premier",
-        "source": "Taipei Times",
-        "feedId": "taipei-times",
-        "domain": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/27/2003868487",
-        "summary": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:00:00.000Z"
-      },
-      {
-        "id": "art-d02e51b1b79d",
-        "title": "Six people indicted over illegal debt collection, extortion",
-        "source": "Taipei Times",
-        "feedId": "taipei-times",
-        "domain": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/27/2003868488",
-        "summary": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:00:00.000Z"
-      },
-      {
-        "id": "art-f1741f750a29",
-        "title": "MAC watches Shanghai probe amid forum uncertainty",
-        "source": "Taipei Times",
-        "feedId": "taipei-times",
-        "domain": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/27/2003868489",
-        "summary": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:00:00.000Z"
-      },
-      {
         "id": "art-a7e4ae214b02",
         "title": "Japan plans new long-range anti-ship missile to bolster naval build-up",
         "source": "SCMP China",
@@ -5811,7 +5811,7 @@
     ]
   },
   "europe": {
-    "updatedAt": "2026-11-27T01:49:11.504Z",
+    "updatedAt": "2026-11-27T01:51:10.551Z",
     "results": [
       {
         "feedId": "bbc-europe",
@@ -5853,7 +5853,7 @@
     "articles": [
       {
         "id": "art-2cb8399a0701",
-        "title": "New Zealand’s Official Election Results Reveal Hung Parliament",
+        "title": "New Zealand’s Election Results Reveal Rare Hung Parliament",
         "source": "Bloomberg Politics",
         "feedId": "bloomberg-politics",
         "domain": "bloomberg.com",
@@ -6316,7 +6316,7 @@
     ]
   },
   "middle-east": {
-    "updatedAt": "2026-11-27T01:49:11.512Z",
+    "updatedAt": "2026-11-27T01:51:10.559Z",
     "results": [
       {
         "feedId": "bbc-middle-east",
@@ -6367,6 +6367,17 @@
         "pubDate": "2026-11-27T01:47:15.000Z"
       },
       {
+        "id": "art-656a441bf148",
+        "title": "Trump says the US has ‘close to 50%’ of world’s oil",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/trump-says-the-us-has-close-to-50-of-worlds-oil?traffic_source=rss",
+        "summary": "On a call to soldiers deployed to the Gulf, Donald Trump claimed that the US does not ‘need Middle East oil'.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/trump-oil-thumbnail-1795743787.png?resize=1200%2C675",
+        "pubDate": "2026-11-27T01:44:02.000Z"
+      },
+      {
         "id": "art-dd0b67c8949c",
         "title": "Why Eisenkot's bloc is rushing to scrap four laws passed by Netanyahu's coalition - explainer",
         "source": "The Jerusalem Post",
@@ -6376,6 +6387,17 @@
         "summary": "All four laws were passed with delayed start dates or frozen by the High Court, so repealing them now would stop them before they change anything.",
         "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748184",
         "pubDate": "2026-11-27T01:38:46.000Z"
+      },
+      {
+        "id": "art-db2c5294a5f8",
+        "title": "Clashes halt match as Turkiye football fans raise Palestinian flags",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/clashes-halt-match-as-turkiye-football-fans-raise-palestinian-flags?traffic_source=rss",
+        "summary": "Clashes broke out between Georgian police and Turkish club Besiktas supporters during a UEFA match.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/wide-thumb-UEFA-2611-1795743260.png?resize=1920%2C1080&quality=80",
+        "pubDate": "2026-11-27T01:36:23.000Z"
       },
       {
         "id": "art-b83afa957295",
@@ -6539,7 +6561,7 @@
         "domain": "aljazeera.com",
         "url": "https://www.aljazeera.com/news/2026/11/26/israeli-settlers-damage-palestinian-familys-homes-in-west-bank-attack?traffic_source=rss",
         "summary": "The Tubasi family was forced out months ago and has been denied a return by settlers despite an Israeli court order.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/reuters_6b08ac77-1795730551.jpg?resize=1920%2C1440",
+        "imageUrl": "",
         "pubDate": "2026-11-26T23:07:36.000Z"
       },
       {
@@ -6763,28 +6785,6 @@
         "pubDate": "2026-11-26T20:32:43.000Z"
       },
       {
-        "id": "art-719787b0c698",
-        "title": "Mexico seeks US talks about suspected SpaceX debris",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/26/mexico-seeks-us-talks-about-suspected-spacex-debris?traffic_source=rss",
-        "summary": "Mexico concerned as SpaceX ramps up rocket launches from Starbase near border in Texas.",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T20:31:50.000Z"
-      },
-      {
-        "id": "art-49384d3ff025",
-        "title": "Netanyahu’s Case 4000 was doomed years ago, but that does not make it a witch hunt - comment",
-        "source": "The Jerusalem Post",
-        "feedId": "jpost",
-        "domain": "jpost.com",
-        "url": "https://www.jpost.com/israel-news/article-916277",
-        "summary": "Unlike so many commentators who have been telling the public what to think about the Netanyahu case based on what they heard happened, I was there in 2022.",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T20:21:36.000Z"
-      },
-      {
         "id": "art-1fc85f46c817",
         "title": "Hamas political official and wife among eight Palestinians killed in Israeli strikes on Gaza",
         "source": "BBC Middle East",
@@ -6809,7 +6809,7 @@
     ]
   },
   "india": {
-    "updatedAt": "2026-11-27T01:49:11.517Z",
+    "updatedAt": "2026-11-27T01:51:10.564Z",
     "results": [
       {
         "feedId": "bbc-india",
@@ -7296,14 +7296,8 @@
     ]
   },
   "china": {
-    "updatedAt": "2026-11-27T01:49:11.532Z",
+    "updatedAt": "2026-11-27T01:51:10.575Z",
     "results": [
-      {
-        "feedId": "scmp",
-        "name": "South China Morning Post",
-        "ok": true,
-        "count": 18
-      },
       {
         "feedId": "scmp-china",
         "name": "SCMP China",
@@ -7318,7 +7312,7 @@
       },
       {
         "feedId": "cgtn",
-        "name": "CGTN",
+        "name": "CGTN China",
         "ok": true,
         "count": 18
       },
@@ -7343,43 +7337,10 @@
     ],
     "articles": [
       {
-        "id": "art-1f7ca35e31a7",
-        "title": "Major storm batters US on Thanksgiving holiday, disrupting flights and power",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/united-states-canada/article/3375968/major-storm-batters-us-thanksgiving-holiday-disrupting-flights-and-power",
-        "summary": "A powerful storm disrupted Thanksgiving celebrations for millions of Americans on Thursday, as New York’s famed Macy’s parade was postponed for the first time in its 100-year history. Heavy rain and strong winds from the “Nor-easter” battered the central and e",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/8f32bd54-e03d-4c65-9890-ef1a97af82d0_7a7b416d.jpg?itok=2JQ1BCqb&v=1795743848",
-        "pubDate": "2026-11-27T01:44:13.000Z"
-      },
-      {
-        "id": "art-8d709c541c16",
-        "title": "AI is changing child exploitation. Our response must change too",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/opinion/world-opinion/article/3375652/ai-changing-child-exploitation-our-response-must-change-too",
-        "summary": "Artificial intelligence is giving offenders new ways to exploit children. Images of real children can be AI-manipulated into sexual abuse material, while chatbots allow users to rehearse abusive encounters and, in some cases, obtain guidance on grooming. These",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/9ae9a319-7bca-4d69-99ee-342e154005d4_65c69f9c.png?itok=OShxCVoJ&v=1795685352",
-        "pubDate": "2026-11-27T01:30:07.000Z"
-      },
-      {
-        "id": "art-ae914b4bc11f",
-        "title": "Hong Kong couple arrested for allegedly tampering with passport",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3375967/hong-kong-couple-arrested-allegedly-tampering-passport",
-        "summary": "Hong Kong’s Immigration Department has arrested a woman and her boyfriend for allegedly altering a travel document unlawfully after she took to social media to complain about a “manufacturing defect” in her passport that caused Japan’s authorities to deny her ",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/341f355f-a9d5-4d8e-9038-53ce621c203f_c4e9e70d.jpg?itok=mwdU1qUc&v=1795741456",
-        "pubDate": "2026-11-27T01:04:23.000Z"
-      },
-      {
         "id": "art-c886a01bd981",
         "title": "Leading US brain scientist Doris Tsao joins Chinese university that has not been built",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
         "domain": "scmp.com",
         "url": "https://www.scmp.com/news/china/science/article/3375928/leading-us-brain-scientist-doris-y-tsao-joins-chinese-university-has-not-been-built",
         "summary": "After spending most of her life in the United States, leading neuroscientist Cao Ying – better known as Doris Tsao – has decided to leave California’s prestigious UC Berkeley at the peak of her scientific career for a new Chinese research university that has n",
@@ -7399,39 +7360,6 @@
         "publisherUrl": "http://en.people.cn/n3/2026/1127/c90000-20523751.html"
       },
       {
-        "id": "art-9beb2fc0f362",
-        "title": "Hong Kong SMEs urged to upgrade themselves to handle new US tariffs",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3375957/smaller-hong-kong-companies-urged-upgrade-themselves-handle-new-us-tariffs",
-        "summary": "The United States’ threat to impose a fresh round of tariffs on goods from 14 economies including China has sent a renewed wake-up call to smaller Hong Kong companies to upgrade their businesses with technology elements, industry leaders say. The Office of the",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/b34504d6-5bd3-4dfa-8bdb-4a891c024fff_9b9412f9.jpg?itok=FP97JYwV&v=1795700831",
-        "pubDate": "2026-11-27T00:30:05.000Z"
-      },
-      {
-        "id": "art-b3a12905996b",
-        "title": "The ‘Angry Nerds’ campaign exposing red flags in the Philippines’ 2027 budget",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/week-asia/people/article/3375922/angry-nerds-campaign-exposing-red-flags-philippines-2027-budget",
-        "summary": "Just over a year ago, Carlo Ople was making YouTube videos about his two obsessions – trainers and action figures. These days, the 44-year-old former marketing executive uses the same channel to dissect national budgets and political issues, swearing profusely",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/a4b219d9-15a4-4adf-b426-67c2d9b20b6f_38737b82.jpg?itok=DkaFJORP&v=1795686081",
-        "pubDate": "2026-11-27T00:00:19.000Z"
-      },
-      {
-        "id": "art-2f8d6944cc73",
-        "title": "EU leaders unable to agree on budget after over 12 hours of talks: ‘zero results’",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/europe/article/3375966/eu-leaders-unable-agree-budget-after-over-12-hours-talks-zero-results",
-        "summary": "French President Emmanuel Macron set an end-of-year deadline for an agreement on the European Union’s next seven-year budget after the continent’s leaders ruled out any chances for a deal to be reached at their summit on Thursday. The 2028-2034 budget – a stat",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/61eacd9c-03f0-45bc-b578-89247833a487_0947cc15.jpg?itok=0ESMamSB&v=1795736111",
-        "pubDate": "2026-11-26T23:35:18.000Z"
-      },
-      {
         "id": "art-17958f2a10f6",
         "title": "My dad's watch stopped the moment he died - I found it in the ashes of Hong Kong tower fire",
         "source": "BBC China",
@@ -7443,70 +7371,15 @@
         "pubDate": "2026-11-26T23:03:16.000Z"
       },
       {
-        "id": "art-675b290dbc13",
-        "title": "Let’s keep doing lunch: Hong Kong exchange leans towards keeping noon break, sources say",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/business/markets/article/3375915/lets-keep-doing-lunch-hong-kong-exchange-leans-towards-keeping-noon-break-sources-say",
-        "summary": "Lunch is likely to remain on the menu for Hong Kong stock brokers, as the city’s bourse operator leans towards extending trading hours at either end of the day while keeping the market’s traditional mid-day break intact, according to multiple sources. Hong Kon",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/d16b9de7-9af5-4ca6-a2dd-f7f4b3942cae_1df9a86f.jpg?itok=WPniCRmF&v=1795684625",
-        "pubDate": "2026-11-26T23:00:10.000Z"
-      },
-      {
-        "id": "art-2af983f47cff",
-        "title": "Laila Khawaja on how the Jensen Huang saga resets the US-China tech rivalry",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/tech/tech-war/article/3375909/laila-khawaja-how-jensen-huang-saga-resets-us-china-tech-rivalry",
-        "summary": "Laila Khawaja is research director at Gavekal Technologies, the financial services and analytics firm’s tech wing. Before her current role, she worked at Gavekal Fathom China from its founding in 2009, developing broad expertise in China’s corporate landscape.",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/4a0dc809-5469-447c-98b7-233eb6b5b4f0_faa2cfe8.jpg?itok=U_77edhv&v=1795683783",
-        "pubDate": "2026-11-26T22:00:16.000Z"
-      },
-      {
         "id": "art-22c2823e62ff",
         "title": "Roller-coaster fortnight for tech raises urgent questions about AI",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
         "domain": "scmp.com",
         "url": "https://www.scmp.com/opinion/world-opinion/article/3375777/roller-coaster-fortnight-tech-raises-urgent-questions-about-ai",
         "summary": "It has been a bewildering fortnight for technology. Jensen Huang left Nvidia and returned. Anthropic made a blockbuster stock market debut. US tech shares saw a sell-off. Let’s start with Huang, who resigned from Nvidia as president, CEO and board member on No",
         "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/25/b44d668a-0474-4ffb-b89f-b16a8a8ab0c8_6a0aba89.jpg?itok=Yi-1fz61&v=1795604219",
         "pubDate": "2026-11-26T21:30:06.000Z"
-      },
-      {
-        "id": "art-66a1cc90c95b",
-        "title": "UK man convicted of knife rampage on London-bound train",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/europe/article/3375965/uk-man-convicted-knife-rampage-london-bound-train",
-        "summary": "A man who went on the rampage armed with a knife on a London-bound train was on Thursday found guilty of the attempted murder of 14 people. A jury found Anthony Williams, 33, guilty of all 10 counts of attempted murder on the train involving passengers and an ",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/061bfd4f-45f5-4467-b1c2-2bad8dbcc417_be496450.jpg?itok=efanVf3c&v=1795721668",
-        "pubDate": "2026-11-26T19:34:37.000Z"
-      },
-      {
-        "id": "art-1d1cf0cbe2d0",
-        "title": "Spain’s Pablo Hernandez de Cos to succeed Lagarde as European Central Bank chief",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/europe/article/3375963/spains-pablo-hernandez-de-cos-succeed-lagarde-european-central-bank-chief",
-        "summary": "Spain’s Pablo Hernandez de Cos will be the next head of the European Central Bank, taking over from Christine Lagarde, diplomats said on Thursday. His nomination comes at a time of tension on European bond markets and before a series of high-stakes elections i",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/f4b0d127-98b2-4de2-a3b3-55cc0e64f4c5_65ed0846.jpg?itok=Ri4mQ7t0&v=1795713972",
-        "pubDate": "2026-11-26T17:26:17.000Z"
-      },
-      {
-        "id": "art-276364b19c62",
-        "title": "Trump calls GDP figures ‘fake’, demands probe of his own Commerce Department",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/united-states-canada/article/3375962/trump-calls-gdp-figures-fake-demands-probe-his-own-commerce-department",
-        "summary": "US President Donald Trump on Thursday accused his Commerce Department of purposely issuing incorrect economic growth figures before the midterm elections and said he wants to launch an investigation. Trump has repeatedly sought to undermine trust in economic d",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/d2adf705-2006-4ac0-a84d-2ced511f82d3_b4cdcf28.jpg?itok=HvWDorUr&v=1795712802",
-        "pubDate": "2026-11-26T17:06:51.000Z"
       },
       {
         "id": "art-80c874467fc1",
@@ -7521,21 +7394,10 @@
         "publisherUrl": "https://www.globaltimes.cn/page/202611/1375140.shtml"
       },
       {
-        "id": "art-b6b51753653d",
-        "title": "French actor Gerard Depardieu to stand trial for rape after Paris court rejects appeal",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/europe/article/3375961/french-actor-gerard-depardieu-stand-trial-rape-after-paris-court-rejects-appeal",
-        "summary": "Film star ⁠Gerard Depardieu, one of the ⁠leading faces of French cinema, will face trial on charges of raping actress Charlotte Arnould in 2018, after a Paris appeal court on Thursday rejected his bid to avoid having the case tried. Arnould first accused Depar",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/cae33cb8-c748-430b-91ba-e3c676b1dd76_3358b993.jpg?itok=xL8oNS_e&v=1795704354",
-        "pubDate": "2026-11-26T14:45:59.000Z"
-      },
-      {
         "id": "art-31bbcec6fd1f",
         "title": "More than 50% of Americans believe China is winning. So does the rest of the world",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
         "domain": "scmp.com",
         "url": "https://www.scmp.com/news/china/science/article/3375869/more-50-americans-believe-china-winning-so-does-rest-world",
         "summary": "More than half of Americans believe China has already overtaken or will eventually surpass the United States in technology, economic strength and even military power, according to a study based on US public opinion data. The proportions reached 68.8 per cent i",
@@ -7543,32 +7405,10 @@
         "pubDate": "2026-11-26T14:00:08.000Z"
       },
       {
-        "id": "art-24e1132a7433",
-        "title": "Modi questions corporate India on jobs and wages. Will business leaders do more?",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/week-asia/economics/article/3375959/modi-questions-corporate-india-jobs-and-wages-will-business-leaders-do-more",
-        "summary": "Prime Minister Narendra Modi’s observation that Indian companies were failing to create more jobs and raise wages despite government tax breaks has prompted a debate on whether business leaders should heed his call and do more for their workers. Speaking at th",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/675b9446-4517-42bd-8c29-14889eefa02c_e80cf50c.jpg?itok=4NuOI9l3&v=1795701335",
-        "pubDate": "2026-11-26T13:55:39.000Z"
-      },
-      {
-        "id": "art-e0ba8e410655",
-        "title": "German woman abused by priest wins record US$600,000 from Catholic Church",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/world/europe/article/3375958/woman-abused-priest-foster-father-wins-record-us600000-german-church",
-        "summary": "A court in western Germany ordered the archdiocese of Cologne on Thursday to pay a woman €550,000 (US$600,000) in damages for sexual abuse. It is the highest amount a German court has ever awarded to a victim of abuse in the Catholic Church. The previous highe",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/5b21f3e7-4d28-4b43-8349-2cf79e7d3104_f0fdc772.jpg?itok=Ie5_gch_&v=1795701277",
-        "pubDate": "2026-11-26T13:54:38.000Z"
-      },
-      {
         "id": "art-9829db9b610f",
         "title": "China busts cross-border blood smuggling ring over biosecurity fears",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
         "domain": "scmp.com",
         "url": "https://www.scmp.com/news/china/politics/article/3375953/china-busts-cross-border-blood-smuggling-ring-over-biosecurity-fears",
         "summary": "China has cracked down on the smuggling of blood samples from pregnant women, highlighting what authorities describe as a threat to national biosecurity. State broadcaster CCTV reported on Wednesday that Shenzhen Customs anti-smuggling officers had dismantled ",
@@ -7583,7 +7423,7 @@
         "domain": "globaltimes.cn",
         "url": "https://www.globaltimes.cn/page/202611/1375120.shtml",
         "summary": "China's 2030 roadmap targets 6G, computing networks, 'paving way for new industries and growth models' Global Times",
-        "imageUrl": "",
+        "imageUrl": "https://www.globaltimes.cn/Portals/0/attachment/2026/2026-07-28/a49b6428-fcf3-4bef-bf12-98e605ec474d.jpeg",
         "pubDate": "2026-11-26T12:41:00.000Z",
         "publisherUrl": "https://www.globaltimes.cn/page/202611/1375120.shtml"
       },
@@ -7766,26 +7606,117 @@
         "pubDate": "2026-11-26T02:00:42.000Z"
       },
       {
-        "id": "art-05ac806b4abf",
+        "id": "art-bdcdabc50e19",
+        "title": "Pantelis Golitsis: Fostering mutual understanding through comparative philosophy - People's Daily Online",
+        "source": "People's Daily",
+        "feedId": "peoples-daily",
+        "domain": "en.people.cn",
+        "url": "https://en.people.cn/n3/2026/1126/c90000-20523284.html",
+        "summary": "Pantelis Golitsis: Fostering mutual understanding through comparative philosophy People's Daily Online",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T01:24:00.000Z",
+        "publisherUrl": "https://en.people.cn/n3/2026/1126/c90000-20523284.html"
+      },
+      {
+        "id": "art-a885e3daabd5",
         "title": "China urges Japan to destroy abandoned chemical weapons",
-        "source": "CGTN",
+        "source": "CGTN China",
         "feedId": "cgtn",
         "domain": "cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-11-26/China-urges-Japan-to-destroy-abandoned-chemical-weapons-1SnqFQ4FRmw/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+        "url": "https://news.cgtn.com/news/2026-11-26/China-urges-Japan-to-destroy-abandoned-chemical-weapons-1SnqFQ4FRmw/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
         "summary": "China urged Japan to accelerate the destruction of abandoned chemical weapons in China at the 31st Session of the Conference of the States Parties to the Chemical Weapons Convention (CSP-31) in The Hague on Wednesday, stressing that prolonged delays in address",
         "imageUrl": "https://news.cgtn.com/news/2026-11-26/China-urges-Japan-to-destroy-abandoned-chemical-weapons-1SnqFQ4FRmw/img/076887bb70404852b13cf95053027eec/076887bb70404852b13cf95053027eec-250.png",
         "pubDate": "2026-11-26T01:21:06.000Z"
       },
       {
-        "id": "art-252ef111c77c",
-        "title": "Wang Yi urges Netherlands to ensure fair environment for Chinese firms",
-        "source": "CGTN",
+        "id": "art-5cbce120dfb5",
+        "title": "Senior CPC official meets PCC delegation",
+        "source": "CGTN China",
         "feedId": "cgtn",
         "domain": "cgtn.com",
-        "url": "https://news.cgtn.com/news/2026-11-25/Wang-Yi-urges-Netherlands-to-ensure-fair-environment-for-Chinese-firms-1SmNaNsPOa4/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-        "summary": "Chinese Foreign Minister Wang Yi held talks with Dutch Foreign Minister Tom Berendsen in Beijing on Wednesday, calling for expanded bilateral cooperation and a fair, transparent and predictable business environment for Chinese companies in the Netherlands.",
-        "imageUrl": "https://news.cgtn.com/news/2026-11-25/Wang-Yi-urges-Netherlands-to-ensure-fair-environment-for-Chinese-firms-1SmNaNsPOa4/img/ad5a22398d694e36a4d7faad7890c395/ad5a22398d694e36a4d7faad7890c395-250.png",
-        "pubDate": "2026-11-25T14:52:25.000Z"
+        "url": "https://news.cgtn.com/news/2026-11-26/Senior-CPC-official-meets-PCC-delegation-1SnpZ24m4EM/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "Senior Communist Party of China (CPC) official Cai Qi met with a delegation led by Jorge Luis Broche Lorenzo, member of the Secretariat of the Central Committee and head of the Economic Productive Department of the Central Committee of the Communist Party of C",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-26/Senior-CPC-official-meets-PCC-delegation-1SnpZ24m4EM/img/f6bbe4554a124c669570e633cd298bf7/f6bbe4554a124c669570e633cd298bf7-750.png",
+        "pubDate": "2026-11-26T01:19:59.000Z"
+      },
+      {
+        "id": "art-892070da1f26",
+        "title": "China urges Japan to accelerate destruction of abandoned chemical weapons - People's Daily Online",
+        "source": "People's Daily",
+        "feedId": "peoples-daily",
+        "domain": "en.people.cn",
+        "url": "https://en.people.cn/n3/2026/1126/c90000-20523190.html",
+        "summary": "China urges Japan to accelerate destruction of abandoned chemical weapons People's Daily Online",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T00:23:00.000Z",
+        "publisherUrl": "https://en.people.cn/n3/2026/1126/c90000-20523190.html"
+      },
+      {
+        "id": "art-554321820bab",
+        "title": "US trading partners’ patience wears thin as Trump slaps on new tariffs",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/us/economy-trade-business/article/3375819/us-trading-partners-patience-wears-thin-trump-slaps-new-tariffs",
+        "summary": "Major US trading partners and companies on the economic front lines decried US President Donald Trump’s latest tariff salvo on Wednesday, even as they expressed resignation, as his playbook has become more predictable and better telegraphed with repeated use. ",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/bb4152f4-c89a-4eab-9ec1-3ddffeaaebf2_8a96e2ab.jpg?itok=zsbqFKwD&v=1795649422",
+        "pubDate": "2026-11-25T23:30:23.000Z"
+      },
+      {
+        "id": "art-b13fbd076131",
+        "title": "A renovation was meant to improve these Hong Kong homes - it ended in a blaze that killed 168",
+        "source": "BBC China",
+        "feedId": "bbc-china",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.co.uk/news/articles/cqx2wrkyrdn8o?at_medium=RSS&at_campaign=rss",
+        "summary": "A year after one of Hong Kong's deadliest fires, families left behind are still waiting for justice.",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b16/live/b6eddfc0-e8c5-11f1-ac76-db9e97f93d67.jpg",
+        "pubDate": "2026-11-25T23:26:50.000Z"
+      },
+      {
+        "id": "art-23c862e4a5f7",
+        "title": "US federal court blocks new Trump birthright citizenship executive order",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/us/politics/article/3375818/us-federal-court-blocks-new-trump-birthright-citizenship-executive-order",
+        "summary": "A federal judge on Wednesday blocked US President Donald Trump’s latest executive order aimed at restricting birthright citizenship, dealing another setback to his ongoing effort to redefine what it means to be born an American. “Enough is enough,” said Cody W",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/1ac77485-446f-4cb2-b914-bc6e49818765_f99b6928.jpg?itok=P-Hesmi2&v=1795649131",
+        "pubDate": "2026-11-25T23:25:35.000Z"
+      },
+      {
+        "id": "art-9f367aba140b",
+        "title": "Media coverage of Australia-Solomon security deal full of geopolitical calculations",
+        "source": "Global Times",
+        "feedId": "global-times",
+        "domain": "globaltimes.cn",
+        "url": "https://www.globaltimes.cn/page/202611/1375067.shtml",
+        "summary": "Media coverage of Australia-Solomon security deal full of geopolitical calculations Global Times",
+        "imageUrl": "",
+        "pubDate": "2026-11-25T15:21:00.000Z",
+        "publisherUrl": "https://www.globaltimes.cn/page/202611/1375067.shtml"
+      },
+      {
+        "id": "art-5f578ede5de5",
+        "title": "Beijing's 'cloud benches' for the public are also a green bonanza",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/Beijing-s-cloud-benches-for-the-public-are-also-a-green-bonanza--1SmIpW3HPP2/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "Beijing's 'cloud benches' for the public are also a green bonanza",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/Beijing-s-cloud-benches-for-the-public-are-also-a-green-bonanza--1SmIpW3HPP2/img/4aa16d50eab8412d87e884be0fa9a175/4aa16d50eab8412d87e884be0fa9a175-750.png",
+        "pubDate": "2026-11-25T14:49:20.000Z"
+      },
+      {
+        "id": "art-164d11ff7c83",
+        "title": "2026 World Life Science Conference set to kick off in Guangzhou",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/2026-World-Life-Science-Conference-set-to-kick-off-in-Guangzhou-1SmE9kGmv7y/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "2026 World Life Science Conference set to kick off in Guangzhou",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/2026-World-Life-Science-Conference-set-to-kick-off-in-Guangzhou-1SmE9kGmv7y/img/4ec0f73e92a74d7fa09b594cc48a0861/4ec0f73e92a74d7fa09b594cc48a0861-1920.jpeg",
+        "pubDate": "2026-11-25T13:30:18.000Z"
       },
       {
         "id": "art-e7429a6d8751",
@@ -7797,6 +7728,72 @@
         "summary": "Tightening restrictions on cell phone use in schools see China’s students turn to buying and reading “paper short dramas” for their short-drama fix.",
         "imageUrl": "https://cloud.sixthtone.com/image/202611/cd8305bbf40f4f65982e8c5a289aad26.jpg",
         "pubDate": "2026-11-25T13:00:00.000Z"
+      },
+      {
+        "id": "art-0be68e1d772c",
+        "title": "China builds key part for giant 'air battery' in energy storage push",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/China-builds-key-part-for-giant-air-battery-in-energy-storage-push-1SmpT1GxW9O/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "China builds key part for giant 'air battery' in energy storage push",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/China-builds-key-part-for-giant-air-battery-in-energy-storage-push-1SmpT1GxW9O/img/9fd22d16da184f4fb74630829df9dd70/9fd22d16da184f4fb74630829df9dd70-1280.jpeg",
+        "pubDate": "2026-11-25T10:11:29.000Z"
+      },
+      {
+        "id": "art-43b9a700ea6f",
+        "title": "China hails joint spaceflight mission with Pakistan",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/China-hails-joint-spaceflight-mission-with-Pakistan-1SmpakVYUAU/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "The joint flight mission of Chinese and Pakistani astronauts to China's space station Tiangong marks a new milestone in international cooperation under China's manned space program, a Chinese Foreign Ministry spokesperson said Wednesday.",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/China-hails-joint-spaceflight-mission-with-Pakistan-1SmpakVYUAU/img/f40d8878cccc43628c23294cd0d8355f/f40d8878cccc43628c23294cd0d8355f-750.png",
+        "pubDate": "2026-11-25T09:53:35.000Z"
+      },
+      {
+        "id": "art-b85bc6b12cbf",
+        "title": "Lhasa's Old Streets and New Vibes, a Mix of Colors",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/Lhasa-s-Old-Streets-and-New-Vibes-a-Mix-of-Colors--1SkJef0xJuM/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "Publisher Tashi Tsering starts his journey in Shannan, heads to Nyingchi and Xigaze, and eventually returns to Lhasa, where he reveals the colors he has collected along the way and continues to find inspiration for his picture book.",
+        "imageUrl": "https://video.cgtn.com/news/2026-11-25/Lhasa-s-Old-Streets-and-New-Vibes-a-Mix-of-Colors--1SkJef0xJuM/video/wu_1k8932lppjph1mjt4671v59vi8a/wu_1k8932lppjph1mjt4671v59vi8a-1280.jpg",
+        "pubDate": "2026-11-25T09:12:08.000Z"
+      },
+      {
+        "id": "art-2e934b420ec3",
+        "title": "Floral headdress trend brings new life to historic fishing village",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/Floral-headdress-trend-brings-new-life-to-historic-fishing-village-1SmncVzrhkI/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "Wearing floral headdresses has for centuries been a tradition among the women of Xunpu, a small fishing village in Quanzhou, east China's Fujian Province. Today, the practice has become a popular tourist experience, attracting visitors from across China and be",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/Floral-headdress-trend-brings-new-life-to-historic-fishing-village-1SmncVzrhkI/img/17d9e8a9b59544ec91c0cafce9d3b028/17d9e8a9b59544ec91c0cafce9d3b028-1280.jpeg",
+        "pubDate": "2026-11-25T08:44:18.000Z"
+      },
+      {
+        "id": "art-f8a4165667a4",
+        "title": "Mainland urges Taiwan's DPP to abandon 'independence' delusion",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/Mainland-urges-Taiwan-s-DPP-to-abandon-independence-delusion-1SmgbRXXqDK/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "The Democratic Progressive Party (DPP) authorities should recognize the realities of the situation and abandon once and for all their delusion of \"Taiwan independence,\" a mainland spokesperson said on Wednesday.",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/Mainland-urges-Taiwan-s-DPP-to-abandon-independence-delusion-1SmgbRXXqDK/img/89114e237b524db593382866b6010c82/89114e237b524db593382866b6010c82-750.png",
+        "pubDate": "2026-11-25T08:35:33.000Z"
+      },
+      {
+        "id": "art-7b9d08108e29",
+        "title": "How the Hani people shaped a living landscape through coexistence",
+        "source": "CGTN China",
+        "feedId": "cgtn",
+        "domain": "cgtn.com",
+        "url": "https://news.cgtn.com/news/2026-11-25/How-the-Hani-people-shaped-a-living-landscape-through-coexistence-1Smm5EadQRy/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=China",
+        "summary": "Behind this breathtaking scenery of Yuanyang Hani Rice Terraces in Yunnan lies a remarkable story of coexistence – between forests and farmland, people and water, and humans and nature.",
+        "imageUrl": "https://news.cgtn.com/news/2026-11-25/How-the-Hani-people-shaped-a-living-landscape-through-coexistence-1Smm5EadQRy/img/587eea35952343729b6305c2106ccb95/587eea35952343729b6305c2106ccb95-1920.png",
+        "pubDate": "2026-11-25T08:29:09.000Z"
       },
       {
         "id": "art-10c214466ed4",
@@ -7812,7 +7809,7 @@
     ]
   },
   "russia": {
-    "updatedAt": "2026-11-27T01:49:11.541Z",
+    "updatedAt": "2026-11-27T01:51:10.584Z",
     "results": [
       {
         "feedId": "moscow-times",
@@ -8305,7 +8302,7 @@
     ]
   },
   "business": {
-    "updatedAt": "2026-11-27T01:49:11.599Z",
+    "updatedAt": "2026-11-27T01:51:10.642Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -8846,7 +8843,7 @@
     ]
   },
   "technology": {
-    "updatedAt": "2026-11-27T01:49:11.627Z",
+    "updatedAt": "2026-11-27T01:51:10.669Z",
     "results": [
       {
         "feedId": "verge",
@@ -9363,7 +9360,7 @@
     ]
   },
   "ai": {
-    "updatedAt": "2026-11-27T01:49:11.638Z",
+    "updatedAt": "2026-11-27T01:51:10.680Z",
     "results": [
       {
         "feedId": "verge-ai",
@@ -9868,7 +9865,7 @@
     ]
   },
   "sports": {
-    "updatedAt": "2026-11-27T01:49:11.646Z",
+    "updatedAt": "2026-11-27T01:51:10.688Z",
     "results": [
       {
         "feedId": "espn",
@@ -9896,6 +9893,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-680864e09595",
+        "title": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
+        "summary": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T01:45:11.000Z"
+      },
       {
         "id": "art-6d0d821370d9",
         "title": "Follow live: Chiefs take on Bills at Highmark Stadium",
@@ -9927,17 +9935,6 @@
         "url": "https://www.espn.com/nfl/story/_/id/50605070/steelers-owner-disappointed-rodgers-backs-mccarthy",
         "summary": "Steelers owner Art Rooney II reacted to Wednesday's fiery interview from Aaron Rodgers by saying he was \"disappointed in where this went\" with their now-former quarterback, adding he has \"100% confidence in Mike McCarthy.\"",
         "imageUrl": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0121%2Fr1603837_1296x729_16%2D9.jpg",
-        "pubDate": "2026-11-27T01:29:11.000Z"
-      },
-      {
-        "id": "art-680864e09595",
-        "title": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
-        "summary": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
-        "imageUrl": "",
         "pubDate": "2026-11-27T01:29:11.000Z"
       },
       {
@@ -10260,17 +10257,6 @@
         "pubDate": "2026-11-26T17:20:42.000Z"
       },
       {
-        "id": "art-61d2d00673cb",
-        "title": "NBA Cup takeaways: Portland beats San Antonio; LeBron, Maxey inspire Philly",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
-        "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins by the Celtics and Mavericks.",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T17:18:36.000Z"
-      },
-      {
         "id": "art-610bf361987e",
         "title": "Germany's Freigang given 16-month ban over drugs test issues",
         "source": "BBC Sport",
@@ -10357,11 +10343,22 @@
         "summary": "The French side earned their first group win over troubled German giants as Bellingham and Betis also caught the eye Bayern Munich have hit a snagging point, with injuries wracking Vincent Kompany’s squad just as the head coach returns to work following his ow",
         "imageUrl": "https://i.guim.co.uk/img/media/6d0ee4d26f30054dd0f4459a815564b2bc6f36d8/0_0_4977_3981/master/4977.jpg?width=140&quality=85&auto=format&fit=max&s=16c24de476368d066825d316db23281f",
         "pubDate": "2026-11-26T15:00:39.000Z"
+      },
+      {
+        "id": "art-26e188b005c8",
+        "title": "AFLW grand final: gap closes on three-peat chasing Kangaroos as Demons seek upset | Martin Pegan",
+        "source": "The Guardian Sport",
+        "feedId": "guardian-sport",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/sport/blog/2026/nov/27/aflw-grand-final-gap-closes-kangaroos-vs-demons-north-melbourne",
+        "summary": "North Melbourne are out to secure their legacy but in their way stands a confident Melbourne side ready for their biggest test of the season The early chapters of the record books are still being written as the AFLW enters its second decade with North Melbourn",
+        "imageUrl": "https://i.guim.co.uk/img/media/b5bb803f0d16631ff96c24b01b515cfef7030889/1_0_4998_4000/master/4998.jpg?width=140&quality=85&auto=format&fit=max&s=3231b7d7c6a6568ce133388c204d9030",
+        "pubDate": "2026-11-26T14:00:37.000Z"
       }
     ]
   },
   "science": {
-    "updatedAt": "2026-11-27T01:49:11.657Z",
+    "updatedAt": "2026-11-27T01:51:10.700Z",
     "results": [
       {
         "feedId": "sciencedaily",
@@ -10759,14 +10756,14 @@
         "pubDate": "2026-11-25T18:48:33.000Z"
       },
       {
-        "id": "art-f20d10d865c2",
-        "title": "I think this might be the best smart telescope for nebula photography — I'm amazed it's $500 off",
+        "id": "art-38ec0a6e3189",
+        "title": "‘Blade Runner 2099’ cast praise the incredible set designs that brought the sci-fi universe to life: ‘it was all so well-realized’ (interview)",
         "source": "Space.com",
         "feedId": "space",
         "domain": "space.com",
-        "url": "https://www.space.com/stargazing/skywatching-kit/best-smart-telescope-for-nebula-photography-now-500-off",
-        "summary": "I just tested the new Vaonis Vespera Pro 2 and captured some amazing wide-field color astrophotography and now it's $500 cheaper in this black friday telescope deal.",
-        "imageUrl": "https://cdn.mos.cms.futurecdn.net/dfoNQZBjEHoCTsU9VRVJHW-1920-80.jpg",
+        "url": "https://www.space.com/entertainment/space-movies-shows/blade-runner-2099-cast-praise-the-incredible-set-designs-that-brought-the-sci-fi-universe-to-life-it-was-all-so-well-realized-interview",
+        "summary": "'Throwing myself into that, especially after how well Silka crafted the story and script, was something I was totally ready for.'",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/EpwERbzbDTNH5mFmr59JS3-1920-80.jpg",
         "pubDate": "2026-11-25T18:00:00.000Z"
       },
       {
@@ -10860,7 +10857,7 @@
     ]
   },
   "entertainment": {
-    "updatedAt": "2026-11-27T01:49:11.665Z",
+    "updatedAt": "2026-11-27T01:51:10.707Z",
     "results": [
       {
         "feedId": "variety",
@@ -11359,7 +11356,7 @@
     ]
   },
   "politics": {
-    "updatedAt": "2026-11-27T01:49:11.694Z",
+    "updatedAt": "2026-11-27T01:51:10.736Z",
     "results": [
       {
         "feedId": "npr-politics",
@@ -11435,7 +11432,7 @@
       },
       {
         "id": "art-2cb8399a0701",
-        "title": "New Zealand’s Official Election Results Reveal Hung Parliament",
+        "title": "New Zealand’s Election Results Reveal Rare Hung Parliament",
         "source": "Bloomberg Politics",
         "feedId": "bloomberg-politics",
         "domain": "bloomberg.com",
@@ -11876,7 +11873,7 @@
     ]
   },
   "finance": {
-    "updatedAt": "2026-11-27T01:49:11.717Z",
+    "updatedAt": "2026-11-27T01:51:10.760Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -12393,7 +12390,7 @@
     ]
   },
   "lifestyle": {
-    "updatedAt": "2026-11-27T01:49:11.722Z",
+    "updatedAt": "2026-11-27T01:51:10.764Z",
     "results": [
       {
         "feedId": "guardian-life",

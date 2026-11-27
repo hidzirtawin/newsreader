@@ -329,7 +329,7 @@ export const FEEDS = [
 
   // China (English-language)
   { id: 'bbc-china', name: 'BBC China', domain: 'bbc.com', group: 'China', url: 'https://feeds.bbci.co.uk/news/world/asia/china/rss.xml' },
-  { id: 'cgtn', name: 'CGTN', domain: 'cgtn.com', group: 'China', url: 'https://www.cgtn.com/subscribe/rss/section/world.xml' },
+  { id: 'cgtn', name: 'CGTN China', domain: 'cgtn.com', group: 'China', url: 'https://www.cgtn.com/subscribe/rss/section/china.xml' },
   { id: 'global-times', name: 'Global Times', domain: 'globaltimes.cn', group: 'China', url: 'https://news.google.com/rss/search?q=site%3Aglobaltimes.cn&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
   { id: 'peoples-daily', name: "People's Daily", domain: 'en.people.cn', group: 'China', url: 'https://news.google.com/rss/search?q=site%3Aen.people.cn&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
   { id: 'sixth-tone', name: 'Sixth Tone', domain: 'sixthtone.com', group: 'China', url: 'https://www.sixthtone.com/rss' },
@@ -378,7 +378,7 @@ export const TOPICS = [
   { id: 'europe', label: 'EUROPE', title: 'Europe', feeds: ['bbc-europe', 'dw', 'france24', 'euronews', 'el-pais', 'bloomberg-politics'] },
   { id: 'middle-east', label: 'MIDDLE EAST', title: 'Middle East', feeds: ['bbc-middle-east', 'aljazeera', 'arab-news', 'jpost'] },
   { id: 'india', label: 'INDIA', title: 'India', feeds: ['bbc-india', 'indian-express', 'times-of-india'] },
-  { id: 'china', label: 'CHINA', title: 'China', feeds: ['scmp', 'scmp-china', 'bbc-china', 'cgtn', 'global-times', 'peoples-daily', 'sixth-tone'] },
+  { id: 'china', label: 'CHINA', title: 'China', feeds: ['scmp-china', 'bbc-china', 'cgtn', 'global-times', 'peoples-daily', 'sixth-tone'] },
   { id: 'russia', label: 'RUSSIA', title: 'Russia', feeds: ['moscow-times', 'tass', 'meduza', 'rt'] },
   {
     id: 'business',
