@@ -12,14 +12,14 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Strictly latest-first** — the lead story and every card below it are ordered by publication time, newest at the top and older stories at the bottom. There is no editorial reshuffling.
 - **Magazine feed** — lead story, two-column features, compact rows and mid-feed banners. Stories without photos fall back to clean text layouts.
 - **Auto-refresh** — every five minutes the app quietly checks a watch set of high-frequency wires and mastheads. New stories appear in a banner at the top; click it to bring the fresh edition forward without losing your place.
-- **Briefing desk** — Reuters, AP, CNN, The Independent and ABC News US in one readable front page. Hard-paywalled titles sit in the Briefs desk.
+- **Briefing desk** — Reuters, AP, CNN, The Independent and ABC News US in one readable front page.
 - **Regional editions** — Top Stories, Latest, Briefing, Your Country, Video, World, US, UK, Europe, Middle East, Africa, Latin America, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Health, Science, Entertainment, Politics, Finance and Lifestyle. **113 country desks** are available from the Your Country picker, kept out of the main tab strip so the header stays clean.
-- **Singapore desk** — CNA, Mothership and Berita Harian Singapore; The Straits Times is kept in Briefs.
+- **Singapore desk** — CNA, Mothership and Berita Harian Singapore.
 - **Malaysia desk** — Malay Mail, Free Malaysia Today, Berita Harian, New Straits Times, Utusan Malaysia and Kosmo!.
 - **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Age, The Examiner, The Nightly, The West Australian, CODE Sports, The Daily Telegraph, The Australian and Herald Sun.
 - **China desk** — South China Morning Post, BBC China, CGTN, Global Times, People's Daily and Sixth Tone.
 - **Russia desk** — The Moscow Times and Meduza (independent) alongside TASS and RT (state-aligned) so readers can compare official and independent accounts.
-- **Briefs desk** — hard-paywalled publishers (NYT, Bloomberg, FT, WSJ, The Economist, The Times, The Telegraph, The Washington Post, LA Times, The Straits Times, The Globe and Mail, Business Insider, Herald Sun, The Australian, The West Australian, CODE Sports, The Daily Telegraph) are moved into a clearly labelled Briefs desk so the main feeds contain only stories that open properly. A menu toggle can show briefs in every feed.
+- **Free-only edition** — every hard-paywalled or metered publisher (NYT, Bloomberg, FT, WSJ, The Economist, The Times, The Telegraph, The Washington Post, LA Times, The Straits Times, The Globe and Mail, Business Insider, SMH, The Age, SCMP, Nikkei, Herald Sun, The Australian and other News Corp titles) is removed from the source list and feeds. Paywalled stories arriving through country feeds are filtered out. The Briefs desk and the old briefs toggle are gone.
 - **Africa and Latin America desks** — BBC Africa, Premium Times, BBC Latin America, Folha de S.Paulo, O Globo, Clarín and La Nación.
 - **Health desk** — ScienceDaily Health, KFF Health News, WHO, Medical Xpress, News-Medical, Healthline and NPR.
 - **Health Research desk** — 41 journal sources including The Lancet and its specialty titles, BMJ and BMJ Open, PLOS Medicine, PLOS ONE, eLife, Nature Communications, Scientific Reports, NEJM, Nature Medicine, Annals of Internal Medicine, JAMA, CDC, NIH, WHO and KFF. Includes 18 specialty filters, 8 study-format filters (trials, meta-analyses, guidelines, reviews, observational, case reports, basic science), three-line publisher abstracts, and 13 standard medical calculators (BMI, BSA, eGFR, CHA₂DS₂-VASc, HAS-BLED, CURB-65, Wells DVT/PE, qSOFA, MAP, anion gap, corrected calcium, maintenance fluids). Publisher abstracts only; free full-text copies are located through OpenAlex and open in the in-app viewer; the Research desk defaults to studies with a free copy and can switch to all studies with abstracts. Calculators are for education, not medical advice.
@@ -30,15 +30,14 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Live radio** — 22 news/current-affairs stations from Malaysia, Singapore, Australia, the UK, the US, Canada and France, with a sticky player while you browse.
 - **Podcasts** — a dropdown of 16 popular shows, including *Keluar Sekejap*, *The Daily*, *The Intelligence*, *WSJ What’s News*, *FT News Briefing*, *Big Take*, BBC *Global News Podcast*, *The News Agents*, *Up First*, *ABC News Daily*, *The Decibel*, *ST News Headlines*, *CNA Deep Dive*, *3 Things*, *The Rest Is Politics* and *The Daily Aus*, with a full audio player (seek, ±15s, speed, volume).
 - **Headline sorting** — sport stories are kept out of Top Stories, World and the country desks and routed to the Sports desk, so the main news pages stay news-focused.
-- **Transparent hard-paywall handling** — no blocked or paywalled page is ever opened. If a publication offers no readable or archived copy, Tawin Newsreader shows its publisher brief instead.
+- **No paywalled sources** — only free-to-read outlets and the 407 No Wall News sources are listed. There is no Briefs desk and no way to opt into paywalled feeds.
 - **More from any publisher** — tap a source name on a story or the *Latest* button in the source library to open that publisher’s latest-first edition inside the app.
-- **Canada desk** — CBC News, CBC Canada and CBC World; The Globe and Mail is kept in Briefs.
+- **Canada desk** — CBC News, CBC Canada and CBC World.
 - **Complete outlet directory** — all 407 outlets listed by No Wall News are in the source library, grouped by country, including every local outlet, with search and enable/disable controls.
 - **Your Country desk** — detects the country from the device time zone (with a country picker on every country desk) and shows free local headlines plus international coverage of that country.
-- **Free-to-read model** — like No Wall News, the main feeds prefer outlets whose articles open without a subscription. Hard-paywalled publishers are kept in **BRIEFS** and can be re-enabled with **Include paywalled briefs**.
+- **Free-to-read model** — like No Wall News, every listed outlet and every feed is free to read. Paywalled publishers are not included at all.
 - **Find it free** — paste any article link from the menu and route it through the saved publisher rule, WallHop, Jina Reader or an archive copy.
 - **Reading rules** — per-publisher routing through direct links, SMRY, RemovePaywall, UnWall, WallHop, Freedium, Jina Reader, Archive.is, Archive.today (archive.ph), Google Translate proxy, PrintFriendly or the Wayback Machine.
-- **Archive locks** — hard-paywall stories are checked against Archive.is in the background. Stories without a snapshot are greyed out and locked; *Hide locked* removes them entirely.
 - **Customisation** — create topics with keywords and chosen sources, add any RSS/Atom feed, reorder/hide tabs, and export all settings as JSON.
 - **PWA** — installable on iOS, Android and desktop, with an offline app shell and bundled editions.
 

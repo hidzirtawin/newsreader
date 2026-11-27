@@ -10,7 +10,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { FEEDS, PODCAST_SHOWS, TOPICS } from '../js/config.js';
+import { BRIEF_ONLY_DOMAINS, FEEDS, PODCAST_SHOWS, TOPICS, normalizeDomain } from '../js/config.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = path.join(ROOT, 'data');
@@ -258,6 +258,11 @@ function freshArticles(articles) {
 
 const RESEARCH_STUDY_PREFIX = /^\[(articles?|review|research|original research|clinical trial|meta-analysis|guideline|case report|health policy)\]/i;
 const RESEARCH_FRONT_SECTION = /^(editorial|comment|correspondence|perspective|viewpoint|letter|obituary|book review|in focus|spotlight|world report|media watch|department of error|in context|insight|news|newsdesk|correction|corrections)$/i;
+
+function isPaywalledDomain(domainInput) {
+  const domain = normalizeDomain(domainInput);
+  return BRIEF_ONLY_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`));
+}
 
 function isResearchFrontMatter(article) {
   const title = article.title || '';
@@ -723,7 +728,8 @@ async function main() {
       });
     }
     const topicLimit = Number(topic.limit) > 0 ? Math.min(Number(topic.limit), TOPIC_LIMIT) : TOPIC_LIMIT;
-    const researchArticles = topic.research ? topicArticles.filter((article) => !isResearchFrontMatter(article)) : topicArticles;
+    const freeTopicArticles = topicArticles.filter((article) => !isPaywalledDomain(article.domain || article.url));
+    const researchArticles = topic.research ? freeTopicArticles.filter((article) => !isResearchFrontMatter(article)) : freeTopicArticles;
     const articles = balanceBySource(
       freshArticles(dedupe(researchArticles).sort((left, right) => (Date.parse(right.pubDate) || 0) - (Date.parse(left.pubDate) || 0))),
       topicLimit,

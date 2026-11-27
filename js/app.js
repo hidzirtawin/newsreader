@@ -65,7 +65,6 @@ const els = {
   openQuickUrlBtn: $('#openQuickUrlBtn'),
   hideLockedCheckbox: $('#hideLockedCheckbox'),
   autoRefreshCheckbox: $('#autoRefreshCheckbox'),
-  showBriefsCheckbox: $('#showBriefsCheckbox'),
   newStoriesBtn: $('#newStoriesBtn'),
   openRulesBtn: $('#openRulesBtn'),
   openCustomizeBtn: $('#openCustomizeBtn'),
@@ -453,7 +452,7 @@ function isEntertainmentArticle(article) {
 }
 
 function filterTopicCategories(articles, topic) {
-  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'research' || topic?.id === 'briefs') return articles;
+  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'research') return articles;
   return articles.filter((article) => !isSportArticle(article) && !isEntertainmentArticle(article));
 }
 
@@ -2112,7 +2111,7 @@ function sourceResultsMarkup() {
 }
 
 function headlineListMarkup(articles) {
-  const note = `<div class="headline-note"><strong>Free sources first</strong><span>Paywalled briefs hidden · Latest first</span></div>`;
+  const note = `<div class="headline-note"><strong>Free sources only</strong><span>Latest first · No paywalls</span></div>`;
   const rows = articles.map((article, index) => {
     const time = article.pubDate ? formatRelativeTime(article.pubDate) : '';
     const label = cleanSourceLabel(article.source);
@@ -2135,12 +2134,8 @@ function renderFeed() {
   setRefreshSpinning(false);
 
   const allCurated = curateArticles(state.articles, state.sort);
-  const settings = getSettings();
   const activeTopic = getTopic(state.topicId);
-  const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
-  const hadBriefs = allCurated.some((article) => article.briefOnly);
-  const briefFiltered = showBriefs ? allCurated : allCurated.filter((article) => !article.briefOnly);
-  const curated = filterTopicCategories(briefFiltered, activeTopic);
+  const curated = filterTopicCategories(allCurated.filter((article) => !article.briefOnly), activeTopic);
   const visible = state.hideLocked ? curated.filter((article) => article.status !== 'locked') : curated;
   const researchMode = Boolean(activeTopic?.research);
   const researchBase = researchMode
@@ -2152,17 +2147,10 @@ function renderFeed() {
 
   if (!curated.length) {
     els.feedList.hidden = false;
-    if (hadBriefs && !showBriefs) {
-      els.feedList.innerHTML = `<div class="state-container">
-        <h2 class="state-title">Only publisher briefs here</h2>
-        <p class="state-desc">These publishers block full-text reading. Open the <strong>Briefs</strong> desk to read them, or enable <strong>Include paywalled briefs</strong> from the menu.</p>
-      </div>`;
-    } else {
-      els.feedList.innerHTML = `<div class="state-container">
-        <h2 class="state-title">Nothing to show yet</h2>
-        <p class="state-desc">${esc(state.emptyReason || 'No recent stories were found for this topic.')}</p>
-      </div>`;
-    }
+    els.feedList.innerHTML = `<div class="state-container">
+      <h2 class="state-title">Nothing to show yet</h2>
+      <p class="state-desc">${esc(state.emptyReason || 'No recent stories were found for this topic.')}</p>
+    </div>`;
     els.feedUpdateStatus.hidden = true;
     els.feedSourcesDetails.hidden = true;
     return;
@@ -2200,10 +2188,8 @@ function renderFeed() {
 }
 
 function visibleStoryCount() {
-  const settings = getSettings();
-  const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
   const curated = curateArticles(state.articles, state.sort);
-  const briefFiltered = showBriefs ? curated : curated.filter((article) => !article.briefOnly);
+  const briefFiltered = curated.filter((article) => !article.briefOnly);
   const topic = getTopic(state.topicId);
   const filtered = filterTopicCategories(briefFiltered, topic);
   if (!topic?.research) return filtered.length;
@@ -3574,15 +3560,6 @@ els.autoRefreshCheckbox.addEventListener('change', () => {
   showToast(enabled ? 'Auto-refresh on. Checking for new stories every 5 minutes.' : 'Auto-refresh off. Use Refresh headlines to check manually.');
 });
 
-els.showBriefsCheckbox.addEventListener('change', () => {
-  saveSettings({ showBriefs: els.showBriefsCheckbox.checked });
-  renderFeed();
-  updateStatusLine();
-  showToast(els.showBriefsCheckbox.checked
-    ? 'Publisher briefs are now included in every feed.'
-    : 'Publisher briefs are now confined to the Briefs desk.');
-});
-
 els.newStoriesBtn.addEventListener('click', applyPendingStories);
 
 /* ------------------------------------------------------------------ */
@@ -4396,7 +4373,6 @@ function boot() {
   els.feedSortSelect.value = state.sort;
   els.hideLockedCheckbox.checked = state.hideLocked;
   els.autoRefreshCheckbox.checked = Boolean(settings.autoRefresh);
-  els.showBriefsCheckbox.checked = Boolean(settings.showBriefs);
   els.selectRuleStrategy.innerHTML = strategyOptions('direct');
   fillPresets();
   scheduleAutoRefresh();

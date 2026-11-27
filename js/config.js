@@ -282,6 +282,19 @@ export const BRIEF_ONLY_DOMAINS = [
   'washingtonpost.com',
   'latimes.com',
   'businessinsider.com',
+  'smh.com.au',
+  'theage.com.au',
+  'scmp.com',
+  'nikkei.com',
+  'atlantic.com',
+  'theatlantic.com',
+  'wired.com',
+  'foreignaffairs.com',
+  'foreignpolicy.com',
+  'variety.com',
+  'hollywoodreporter.com',
+  'billboard.com',
+  'rollingstone.com',
 ];
 
 // These publishers currently yield full readable text through WallHop.
@@ -528,13 +541,6 @@ export const TOPICS = [
     title: 'The Briefing',
     feeds: ['reuters', 'ap', 'cnn', 'washington-post', 'nyt-world', 'nyt-politics', 'nyt-business', 'economist-latest', 'ft-home', 'wsj-world', 'bloomberg-markets', 'the-times', 'telegraph', 'independent', 'herald-sun', 'the-australian', 'abc-us'],
   },
-  {
-    id: 'briefs',
-    label: 'BRIEFS',
-    title: 'Publisher Briefs',
-    feeds: ['nyt-world', 'nyt-us', 'nyt-politics', 'nyt-business', 'bloomberg-markets', 'bloomberg-politics', 'ft-home', 'wsj-world', 'herald-sun', 'the-australian', 'the-west', 'code-sports', 'daily-telegraph'],
-  },
-
   { id: 'radio', label: 'RADIO', title: 'Live Radio', type: 'radio', feeds: [] },
   { id: 'podcasts', label: 'PODCASTS', title: 'Podcasts', type: 'podcasts', feeds: [] },
   {
@@ -773,6 +779,12 @@ FEEDS.push({
   url: 'https://www.malaymail.com/feed/rss',
 });
 
+FEEDS.push(
+  { id: 'bbc-entertainment', name: 'BBC Entertainment & Arts', domain: 'bbc.com', group: 'Entertainment', url: 'https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml' },
+  { id: 'npr-culture', name: 'NPR Culture', domain: 'npr.org', group: 'Entertainment', url: 'https://www.npr.org/rss/rss.php?id=1008' },
+);
+addFeedsToTopic('entertainment', ['bbc-entertainment', 'npr-culture']);
+
 addFeedsToTopic('world', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'un-news', 'rfi', 'rte', 'africanews', 'the-conversation']);
 addFeedsToTopic('us', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'nypost', 'yahoo-news']);
 addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business', 'investinglive', 'cbs-moneywatch']);
@@ -784,7 +796,6 @@ addFeedsToTopic('africa', ['africanews']);
 addFeedsToTopic('europe', ['rfi', 'rte']);
 addFeedsToTopic('finance', ['benzinga', 'investing-com']);
 addFeedsToTopic('malaysia', ['malay-mail']);
-addFeedsToTopic('briefs', ['washington-post', 'latimes', 'economist-latest', 'telegraph', 'the-times', 'straitstimes-sg', 'globe-mail', 'business-insider']);
 addFeedsToTopic('asia', ['rappler', 'gma-news', 'antara', 'detik', 'khaosod', 'thaiger', 'vnexpress', 'tuoi-tre', 'mainichi', 'nippon', 'korea-times', 'hkfp', 'rthk']);
 addFeedsToTopic('pakistan', ['dawn', 'geo-news', 'express-tribune']);
 addFeedsToTopic('nigeria', ['punch', 'vanguard', 'channels-tv']);
@@ -1311,6 +1322,24 @@ export const PODCAST_SHOWS = [
 const configuredDomains = new Set(FEEDS.map((feed) => feed.domain).filter(Boolean));
 const directoryFeeds = OUTLET_DIRECTORY.filter((feed) => !configuredDomains.has(feed.domain));
 FEEDS.push(...directoryFeeds);
+
+// Free-only edition: remove every hard-paywalled or metered publisher and the
+// Briefs desk. The Briefs filter remains in applyRule for paywalled stories
+// that arrive through Google News country feeds.
+const paywalledDomains = [...BRIEF_ONLY_DOMAINS];
+const isPaywalledFeed = (feed) => {
+  const domain = normalizeDomain(feed.domain);
+  return paywalledDomains.some((item) => domain === item || domain.endsWith(`.${item}`));
+};
+const paywalledFeedIds = new Set(FEEDS.filter(isPaywalledFeed).map((feed) => feed.id));
+for (let index = FEEDS.length - 1; index >= 0; index -= 1) {
+  if (paywalledFeedIds.has(FEEDS[index].id)) FEEDS.splice(index, 1);
+}
+for (const topic of TOPICS) {
+  topic.feeds = (topic.feeds || []).filter((feedId) => !paywalledFeedIds.has(feedId));
+}
+const briefsIndex = TOPICS.findIndex((topic) => topic.id === 'briefs');
+if (briefsIndex >= 0) TOPICS.splice(briefsIndex, 1);
 
 export const STORAGE = {
   settings: 'newsreader_settings_v1',
