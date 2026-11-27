@@ -2042,16 +2042,6 @@ body.video-open {
   margin-bottom: 14px;
 }
 
-.app-reload-section {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid var(--border-color);
-}
-
-.app-reload-section .panel-hint {
-  margin-bottom: 10px;
-}
-
 .modal-footer {
   display: flex;
   align-items: center;

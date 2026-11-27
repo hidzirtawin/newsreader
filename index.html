@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
-  <link rel="stylesheet" href="./css/styles.css?v=49">
+  <link rel="stylesheet" href="./css/styles.css?v=52">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to headlines</a>
@@ -100,6 +100,14 @@
               <circle cx="18" cy="15" r="3"></circle>
             </svg>
             <span>Customize topics</span>
+          </button>
+
+          <button id="reloadAppMenuBtn" class="menu-item-btn" type="button" title="Reload the latest published app version">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21.5 2v6h-6"></path>
+              <path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"></path>
+            </svg>
+            <span>Reload app</span>
           </button>
 
           <button id="exportSettingsBtn" class="menu-item-btn" type="button" title="Export topics, sources and rules as JSON">
@@ -265,13 +273,6 @@
             </div>
           </div>
           <div id="topicsSettingsList" class="settings-list"></div>
-
-          <div class="app-reload-section">
-            <h3 class="panel-title">App update</h3>
-            <p class="panel-hint">Reloads the app and fetches the latest version. Topics, sources and settings are kept.</p>
-            <button type="button" id="reloadAppBtn" class="form-btn form-btn-secondary">Reload app</button>
-            <p id="reloadAppStatus" class="form-hint" role="status" aria-live="polite"></p>
-          </div>
         </section>
 
         <section id="panel-new-topic" class="modal-tab-panel" role="tabpanel" aria-labelledby="tabNewTopic" hidden>
@@ -562,12 +563,12 @@
 
   <script>
     (() => {
-      const button = document.getElementById('reloadAppBtn');
+      const button = document.getElementById('reloadAppMenuBtn');
       if (!button) return;
       button.addEventListener('click', async () => {
-        const status = document.getElementById('reloadAppStatus');
         button.disabled = true;
-        if (status) status.textContent = 'Clearing cached app files…';
+        const label = button.querySelector('span');
+        if (label) label.textContent = 'Reloading…';
         try {
           if ('serviceWorker' in navigator) {
             const registrations = await navigator.serviceWorker.getRegistrations();
@@ -579,7 +580,6 @@
           }
           sessionStorage.removeItem('newsreader_sw_reloaded');
         } catch { /* reload anyway */ }
-        if (status) status.textContent = 'Reloading the latest version…';
         location.replace(`${location.pathname}?reload=${Date.now()}`);
       });
     })();
