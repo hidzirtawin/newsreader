@@ -1,6 +1,6 @@
 {
   "top": {
-    "updatedAt": "2026-11-27T07:03:10.364Z",
+    "updatedAt": "2026-11-27T07:04:37.952Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -88,6 +88,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-572e15e9d227",
+        "title": "Cremation, burial and niche fees to increase from Jan 1, 2027; first hike in over 25 years",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/singapore/cremation-burial-niche-fees-increase-death-ash-scattering-6584701",
+        "summary": "The fee increases have been driven by higher costs amid growing demand for after-death services.",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--MqV18jDN--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2025/07/24/RAY_6971.jpg?itok=aWC-hFux",
+        "pubDate": "2026-11-27T07:00:14.000Z"
+      },
       {
         "id": "art-981d7fc3754d",
         "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
@@ -386,17 +397,6 @@
         "pubDate": "2026-11-27T05:38:09.000Z"
       },
       {
-        "id": "art-01689b4bfcee",
-        "title": "Ex-NSW Liberal MP jailed for two years over rape of 13yo boy",
-        "source": "ABC News Australia",
-        "feedId": "abc-au",
-        "domain": "abc.net.au",
-        "url": "https://www.abc.net.au/news/2026-11-27/former-nsw-liberal-mp-rory-amon-jailed-2-years-rape-13yo-boy/107435644",
-        "summary": "The 13-year-old boy told the NSW Supreme Court the abuse inflicted by Rory Amon had led him \"down a path of self-harm and suffering\".",
-        "imageUrl": "https://live-production.wcms.abc-cdn.net.au/6836176078e6984acf0c78da3f4e1de7?impolicy=wcms_crop_resize&cropH=1767&cropW=3141&xPos=0&yPos=164&width=862&height=485",
-        "pubDate": "2026-11-27T05:36:04.000Z"
-      },
-      {
         "id": "art-bb052517ef52",
         "title": "Erin Patterson launches high court appeal bid over mushroom murder convictions",
         "source": "The Guardian World",
@@ -559,7 +559,7 @@
     ]
   },
   "latest": {
-    "updatedAt": "2026-11-27T07:03:10.470Z",
+    "updatedAt": "2026-11-27T07:04:38.091Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -665,6 +665,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-572e15e9d227",
+        "title": "Cremation, burial and niche fees to increase from Jan 1, 2027; first hike in over 25 years",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/singapore/cremation-burial-niche-fees-increase-death-ash-scattering-6584701",
+        "summary": "The fee increases have been driven by higher costs amid growing demand for after-death services.",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--MqV18jDN--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2025/07/24/RAY_6971.jpg?itok=aWC-hFux",
+        "pubDate": "2026-11-27T07:00:14.000Z"
+      },
       {
         "id": "art-44011e6dacb9",
         "title": "Cremation, burial to cost more from 2027, ash-scattering will be cheaper",
@@ -919,17 +930,6 @@
         "pubDate": "2026-11-27T06:07:33.000Z"
       },
       {
-        "id": "art-a07a9d9c0aff",
-        "title": "Inside Saudi Arabia, Houthi attacks test kingdom's image of security",
-        "source": "BBC News",
-        "feedId": "bbc-news",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.co.uk/news/articles/c6ly7jgv7jzdo?at_medium=RSS&at_campaign=rss",
-        "summary": "Despite the strikes, markets and restaurants in Riyadh remain busy as residents express trust in the government to protect them.",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/56c4/live/551558a0-e96f-11f1-99a1-253766e7ad8b.jpg",
-        "pubDate": "2026-11-27T06:04:51.000Z"
-      },
-      {
         "id": "art-a92e74e7b284",
         "title": "Chinese robotic dog in hi-tech fire suit withstands blaze at 1,000 degrees Celsius",
         "source": "South China Morning Post",
@@ -1136,7 +1136,7 @@
     ]
   },
   "briefing": {
-    "updatedAt": "2026-11-27T07:03:10.531Z",
+    "updatedAt": "2026-11-27T07:04:38.174Z",
     "results": [
       {
         "feedId": "reuters",
@@ -1294,7 +1294,7 @@
         "feedId": "ft-home",
         "domain": "ft.com",
         "url": "https://www.ft.com/content/fedc6392-ad25-43e4-9d9f-20216cbf331e?syn-25a6b1a6=1",
-        "summary": "CSI 300 index jumps more than 4% during afternoon trading",
+        "summary": "CSI 300 index jumps more than 4 per cent in afternoon trading",
         "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fdac698c2-fe48-4cf8-8c12-e606c03ef300.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
         "pubDate": "2026-11-27T06:25:21.000Z"
       },
@@ -1726,7 +1726,7 @@
     ]
   },
   "briefs": {
-    "updatedAt": "2026-11-27T07:03:10.576Z",
+    "updatedAt": "2026-11-27T07:04:38.235Z",
     "results": [
       {
         "feedId": "nyt-world",
@@ -1897,6 +1897,18 @@
         "pubDate": "2026-11-27T06:36:54.000Z"
       },
       {
+        "id": "art-ddf4c65e8e13",
+        "title": "‘Liked what she saw’: Paris raids Aussie label at The Intersection",
+        "source": "The Daily Telegraph",
+        "feedId": "daily-telegraph",
+        "domain": "dailytelegraph.com.au",
+        "url": "https://www.dailytelegraph.com.au/entertainment/sydney-confidential/paris-hilton-hits-iconic-aussie-label-zimmermann-in-paddington-shopping-spree/news-story/43eb3aba3730c08e7b6c92415d4d58c3",
+        "summary": "‘Liked what she saw’: Paris raids Aussie label at The Intersection The Daily Telegraph",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:36:38.000Z",
+        "publisherUrl": "https://www.dailytelegraph.com.au/entertainment/sydney-confidential/paris-hilton-hits-iconic-aussie-label-zimmermann-in-paddington-shopping-spree/news-story/43eb3aba3730c08e7b6c92415d4d58c3"
+      },
+      {
         "id": "art-79e9b0cb5e6b",
         "title": "Kiwis fight back after India's bowlers take aim",
         "source": "The West Australian",
@@ -1971,7 +1983,7 @@
         "feedId": "ft-home",
         "domain": "ft.com",
         "url": "https://www.ft.com/content/fedc6392-ad25-43e4-9d9f-20216cbf331e?syn-25a6b1a6=1",
-        "summary": "CSI 300 index jumps more than 4% during afternoon trading",
+        "summary": "CSI 300 index jumps more than 4 per cent in afternoon trading",
         "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fdac698c2-fe48-4cf8-8c12-e606c03ef300.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
         "pubDate": "2026-11-27T06:25:21.000Z"
       },
@@ -2199,18 +2211,6 @@
         "pubDate": "2026-11-27T00:46:52.000Z"
       },
       {
-        "id": "art-9361c7303d62",
-        "title": "Cops hunt damaged car over fatal hit-and-run",
-        "source": "The Daily Telegraph",
-        "feedId": "daily-telegraph",
-        "domain": "dailytelegraph.com.au",
-        "url": "https://www.dailytelegraph.com.au/newslocal/hills-shire-times/police-release-cctv-of-damaged-car-after-joshua-howard-dies-in-suspected-hitandrun/news-story/ea63010a16de60fcc1ce580abd2f032e",
-        "summary": "Cops hunt damaged car over fatal hit-and-run The Daily Telegraph",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:36:00.000Z",
-        "publisherUrl": "https://www.dailytelegraph.com.au/newslocal/hills-shire-times/police-release-cctv-of-damaged-car-after-joshua-howard-dies-in-suspected-hitandrun/news-story/ea63010a16de60fcc1ce580abd2f032e"
-      },
-      {
         "id": "art-eb3c96ec7511",
         "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving",
         "source": "NYT U.S.",
@@ -2282,7 +2282,7 @@
     ]
   },
   "world": {
-    "updatedAt": "2026-11-27T07:03:10.611Z",
+    "updatedAt": "2026-11-27T07:04:38.284Z",
     "results": [
       {
         "feedId": "bbc-world",
@@ -2352,6 +2352,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-572e15e9d227",
+        "title": "Cremation, burial and niche fees to increase from Jan 1, 2027; first hike in over 25 years",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/singapore/cremation-burial-niche-fees-increase-death-ash-scattering-6584701",
+        "summary": "The fee increases have been driven by higher costs amid growing demand for after-death services.",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--MqV18jDN--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2025/07/24/RAY_6971.jpg?itok=aWC-hFux",
+        "pubDate": "2026-11-27T07:00:14.000Z"
+      },
       {
         "id": "art-48ffee69aead",
         "title": "South Korea repatriates six North Koreans rescued from drifting boat",
@@ -2742,17 +2753,6 @@
         "pubDate": "2026-11-27T04:27:10.000Z"
       },
       {
-        "id": "art-52d5273ba335",
-        "title": "'Proof it happened': Photographers reflect on Duterte's drug war",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/asia/philippines-photographers-reflect-duterte-drug-war-6586721",
-        "summary": "Philippine ex-president Rodrigo Duterte goes on trial at the International Criminal Court (ICC) on Nov 30 for the \"crime against humanity of murder\", over killings that took place between 2011 and 2019.",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--d4qjv8p---/fl_relative,g_south_east,l_mediacorp:cna:watermark:2023-11:afp_watermark_14112023,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/27/duterte_drug_war_.png?itok=UowIlmle",
-        "pubDate": "2026-11-27T04:17:51.000Z"
-      },
-      {
         "id": "art-89fb130bbe05",
         "title": "Christopher Luxon favoured for second term as New Zealand Prime Minister",
         "source": "Reuters",
@@ -2825,7 +2825,7 @@
     ]
   },
   "us": {
-    "updatedAt": "2026-11-27T07:03:10.633Z",
+    "updatedAt": "2026-11-27T07:04:38.313Z",
     "results": [
       {
         "feedId": "cbs",
@@ -3344,7 +3344,7 @@
     ]
   },
   "uk": {
-    "updatedAt": "2026-11-27T07:03:10.641Z",
+    "updatedAt": "2026-11-27T07:04:38.324Z",
     "results": [
       {
         "feedId": "bbc-uk",
@@ -3843,7 +3843,7 @@
     ]
   },
   "australia": {
-    "updatedAt": "2026-11-27T07:03:10.718Z",
+    "updatedAt": "2026-11-27T07:04:38.398Z",
     "results": [
       {
         "feedId": "abc-au",
@@ -4045,6 +4045,18 @@
         "summary": "Elk Range Mining has agreed to pay US$4m (A$6M) to consolidate its Idaho gold project, acquiring 103 claims and buying back a 3% royalty, saving US$200,000 a year as drilling continues near its 290m gold hit.",
         "imageUrl": "https://images.thewest.com.au/publication/C-23222770/4402b83b7cc06229990d445405763bbe80257be2-16x9-x0y75w1440h810.jpg",
         "pubDate": "2026-11-27T06:36:54.000Z"
+      },
+      {
+        "id": "art-ddf4c65e8e13",
+        "title": "‘Liked what she saw’: Paris raids Aussie label at The Intersection",
+        "source": "The Daily Telegraph",
+        "feedId": "daily-telegraph",
+        "domain": "dailytelegraph.com.au",
+        "url": "https://www.dailytelegraph.com.au/entertainment/sydney-confidential/paris-hilton-hits-iconic-aussie-label-zimmermann-in-paddington-shopping-spree/news-story/43eb3aba3730c08e7b6c92415d4d58c3",
+        "summary": "‘Liked what she saw’: Paris raids Aussie label at The Intersection The Daily Telegraph",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:36:38.000Z",
+        "publisherUrl": "https://www.dailytelegraph.com.au/entertainment/sydney-confidential/paris-hilton-hits-iconic-aussie-label-zimmermann-in-paddington-shopping-spree/news-story/43eb3aba3730c08e7b6c92415d4d58c3"
       },
       {
         "id": "art-22265aef7910",
@@ -4326,18 +4338,6 @@
         "publisherUrl": "https://www.dailytelegraph.com.au/newslocal/the-express/jordan-papalii-sentenced-for-dialadealer-drug-offences-after-m4-north-strathfield-bust/news-story/a930a93e35d7eb509a6f2dbb36a367d1"
       },
       {
-        "id": "art-9361c7303d62",
-        "title": "Cops hunt damaged car over fatal hit-and-run",
-        "source": "The Daily Telegraph",
-        "feedId": "daily-telegraph",
-        "domain": "dailytelegraph.com.au",
-        "url": "https://www.dailytelegraph.com.au/newslocal/hills-shire-times/police-release-cctv-of-damaged-car-after-joshua-howard-dies-in-suspected-hitandrun/news-story/ea63010a16de60fcc1ce580abd2f032e",
-        "summary": "Cops hunt damaged car over fatal hit-and-run The Daily Telegraph",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T00:36:00.000Z",
-        "publisherUrl": "https://www.dailytelegraph.com.au/newslocal/hills-shire-times/police-release-cctv-of-damaged-car-after-joshua-howard-dies-in-suspected-hitandrun/news-story/ea63010a16de60fcc1ce580abd2f032e"
-      },
-      {
         "id": "art-b658375a3a07",
         "title": "Lyon set to be axed from Australia’s Test squad; Clayton poised for call-up - SMH.com.au",
         "source": "The Sydney Morning Herald",
@@ -4400,7 +4400,7 @@
     ]
   },
   "canada": {
-    "updatedAt": "2026-11-27T07:03:10.723Z",
+    "updatedAt": "2026-11-27T07:04:38.405Z",
     "results": [
       {
         "feedId": "cbc-top",
@@ -4460,6 +4460,18 @@
         "summary": "Warned to stay home due to hazardous roads, some northern British Columbians strapped on their skates instead Thursday morning, as freezing rain blanketed Fort St. John.",
         "imageUrl": "https://i.cbc.ca/ais/38be422e-b07f-4cff-90f5-d1a6ae14ab86,1795721156091/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3B",
         "pubDate": "2026-11-27T00:23:50.000Z"
+      },
+      {
+        "id": "art-deecfe35387e",
+        "title": "Altria vs. Philip Morris: Which Stock Has More Upside Potential?",
+        "source": "The Globe and Mail",
+        "feedId": "globe-mail",
+        "domain": "theglobeandmail.com",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/PM/pressreleases/9021712/altria-vs-philip-morris-which-stock-has-more-upside-potential/",
+        "summary": "Altria vs. Philip Morris: Which Stock Has More Upside Potential? The Globe and Mail",
+        "imageUrl": "https://www.theglobeandmail.com/pf/resources/assets/meta/twitter-summary-240x240.png?d=1001",
+        "pubDate": "2026-11-27T00:16:11.000Z",
+        "publisherUrl": "https://www.theglobeandmail.com/investing/markets/stocks/PM/pressreleases/9021712/altria-vs-philip-morris-which-stock-has-more-upside-potential/"
       },
       {
         "id": "art-e725fd6905fd",
@@ -4881,23 +4893,11 @@
         "summary": "Brad Pitt and Angelina Jolie have reached a settlement in their contentious dispute over the French winery and estate Château Miraval, where they were wed.",
         "imageUrl": "https://i.cbc.ca/ais/58143663-9c20-41fe-8b83-49a3d5380825,1795651209808/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1600%2C900%29%3B",
         "pubDate": "2026-11-26T00:25:00.000Z"
-      },
-      {
-        "id": "art-8fffb1e7c7de",
-        "title": "Enbridge in talks to sell $1.5-billion pipeline stake to coalition of Indigenous communities",
-        "source": "The Globe and Mail",
-        "feedId": "globe-mail",
-        "domain": "theglobeandmail.com",
-        "url": "https://www.theglobeandmail.com/business/article-enbridge-talks-15-billion-pipeline-coalition-indigenous-communities/",
-        "summary": "Enbridge in talks to sell $1.5-billion pipeline stake to coalition of Indigenous communities The Globe and Mail",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T00:03:30.000Z",
-        "publisherUrl": "https://www.theglobeandmail.com/business/article-enbridge-talks-15-billion-pipeline-coalition-indigenous-communities/"
       }
     ]
   },
   "singapore": {
-    "updatedAt": "2026-11-27T07:03:10.731Z",
+    "updatedAt": "2026-11-27T07:04:38.414Z",
     "results": [
       {
         "feedId": "straitstimes-sg",
@@ -4926,6 +4926,17 @@
     ],
     "articles": [
       {
+        "id": "art-572e15e9d227",
+        "title": "Cremation, burial and niche fees to increase from Jan 1, 2027; first hike in over 25 years",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/singapore/cremation-burial-niche-fees-increase-death-ash-scattering-6584701",
+        "summary": "The fee increases have been driven by higher costs amid growing demand for after-death services.",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--MqV18jDN--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2025/07/24/RAY_6971.jpg?itok=aWC-hFux",
+        "pubDate": "2026-11-27T07:00:14.000Z"
+      },
+      {
         "id": "art-44011e6dacb9",
         "title": "Cremation, burial to cost more from 2027, ash-scattering will be cheaper",
         "source": "The Straits Times · Singapore",
@@ -4935,6 +4946,17 @@
         "summary": "Lower-income households on ComCare or ComLink+ will be eligible for free essential after-death services.",
         "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/0dbece2bcd12e53793126c779ebea309f801d7c9350c452db5269b83a6c0b0db?t=og",
         "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-ce2439cf0943",
+        "title": "PRN Sarawak tanpa penyertaan parti nasional: 44 kerusi mungkin menang tanpa bertanding pada hari penamaan calon?",
+        "source": "Berita Harian (Singapore)",
+        "feedId": "beritaharian-sg",
+        "domain": "beritaharian.sg",
+        "url": "https://www.beritaharian.sg/malaysia/prn-sarawak-tanpa-penyertaan-parti-nasional-44-kerusi-mungkin-menang-tanpa-bertanding-hari-penamaan",
+        "summary": "Pilihan Raya Negeri (PRN) Sarawak ke-13 yang akan diadakan pada 12 Disember dijangka suram, apabila ruang persaingan demokratik dilihat terhad berikutan keputusan parti-parti politik utama yang",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/ec2d3388a639413c17fac7fd3e8472c6aae48cb384acf891f84aef4f0310d56b?t=og",
+        "pubDate": "2026-11-27T06:56:34.000Z"
       },
       {
         "id": "art-48ffee69aead",
@@ -5344,28 +5366,6 @@
         "pubDate": "2026-11-27T03:08:55.000Z"
       },
       {
-        "id": "art-147654059478",
-        "title": "Zelenskyy says Russia preparing new mass strike in coming days",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/world/russia-ukraine-zelenskyy-mass-strike-warning-6585961",
-        "summary": "The warning was the second issued by the Ukraine president this week.",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--_UMRhX2I--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-26T203555Z_1_LYNXNPEMAP1QE_RTROPTP_3_UKRAINE-CRISIS-BRITAIN-DEFENCE.JPG?itok=Zl10Rd5T",
-        "pubDate": "2026-11-27T03:06:45.000Z"
-      },
-      {
-        "id": "art-7eacf6f6fe4a",
-        "title": "Slower real income growth, higher non-PMET unemployment in 2026: MOM advance figures",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/singapore/real-income-growth-slow-non-pmet-unemployment-labour-report-mom-6585161",
-        "summary": "Median monthly incomes of full-time employees rose from S$5,775 last year to S$6,021 this year.",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--6a4tHwUb--/c_crop,h_1125,w_2000,x_0,y_169/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/10/20/_wal8747.jpg?itok=ioLXb8rl",
-        "pubDate": "2026-11-27T03:00:00.000Z"
-      },
-      {
         "id": "art-76f7f8b8eb85",
         "title": "6 men, aged between 24 & 40, including teacher, jailed for having sex with girl, 14, in HK",
         "source": "Mothership",
@@ -5390,7 +5390,7 @@
     ]
   },
   "malaysia": {
-    "updatedAt": "2026-11-27T07:03:10.755Z",
+    "updatedAt": "2026-11-27T07:04:38.424Z",
     "results": [
       {
         "feedId": "berita-harian",
@@ -5645,6 +5645,28 @@
         "pubDate": "2026-11-27T06:58:28.000Z"
       },
       {
+        "id": "art-cef0a009c068",
+        "title": "‘Merisiklah dulu, hantarlah tanda’ – Wan Rosdy balas pantun Tuan Ibrahim",
+        "source": "Utusan Malaysia",
+        "feedId": "utusan",
+        "domain": "utusan.com.my",
+        "url": "https://www.utusan.com.my/nasional/2026/11/merisiklah-dulu-hantarlah-tanda-wan-rosdy-balas-pantun-tuan-ibrahim/?utm_source=rss&utm_medium=rss&utm_campaign=merisiklah-dulu-hantarlah-tanda-wan-rosdy-balas-pantun-tuan-ibrahim",
+        "summary": "KUANTAN: Menteri Besar Pahang, Datuk Seri Wan Rosdy Wan Ismail membalas pantun Datuk Seri Tuan Ibrahim Tuan Man berhubung kemungkinan kerjasama politik antara Perikatan Nasional (PN) dan Barisan Nasional (BN) di negeri ini dengan menyifatkan keadaan semasa mas",
+        "imageUrl": "https://www.utusan.com.my/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-20-at-11.06.58-AM.jpeg",
+        "pubDate": "2026-11-27T06:58:26.000Z"
+      },
+      {
+        "id": "art-2e755bea096a",
+        "title": "Saya okay, tidak kecewa – Jalaluddin",
+        "source": "Utusan Malaysia",
+        "feedId": "utusan",
+        "domain": "utusan.com.my",
+        "url": "https://www.utusan.com.my/nasional/2026/11/saya-okay-tidak-kecewa-jalaluddin/?utm_source=rss&utm_medium=rss&utm_campaign=saya-okay-tidak-kecewa-jalaluddin",
+        "summary": "KUALA PILAH: Pelantikan Menteri Besar Negeri Sembilan merupakan hak prerogatif Yang di-Pertuan Besar Negeri Sembilan, Tuanku Muhriz Tuanku Munawir, selaras dengan peruntukan Undang-Undang Tubuh Kerajaan Negeri Sembilan. Pengerusi UMNO Negeri Sembilan, Datuk Se",
+        "imageUrl": "https://www.utusan.com.my/wp-content/uploads/2026/08/BAru-JALALUDDIN-ALIAS_9-1024x744.jpg?v=1785760134",
+        "pubDate": "2026-11-27T06:58:10.000Z"
+      },
+      {
         "id": "art-ecacaba0bf8b",
         "title": "Liga record setter Simeone's Atletico in pursuit of top two",
         "source": "New Straits Times",
@@ -5843,53 +5865,31 @@
         "pubDate": "2026-11-27T06:11:10.000Z"
       },
       {
-        "id": "art-10ced0880b09",
-        "title": "Malaysian-born UK college co-founder denies involvement in £5m fraud",
-        "source": "Free Malaysia Today",
-        "feedId": "fmt",
-        "domain": "freemalaysiatoday.com",
-        "url": "https://www.freemalaysiatoday.com/category/nation/2026/11/27/malaysian-born-uk-college-co-founder-denies-involvement-in-5m-fraud",
-        "summary": "Yasmin Sarwar tells trial court she had 'no idea' how much students were paying, the BBC reports.",
-        "imageUrl": "https://media.freemalaysiatoday.com/v3/2026/10/8f206795-9443-4c01-afd5-17bdc95f9a8f-cardiff-sixth-form-college-pic-091026.jpg",
-        "pubDate": "2026-11-27T06:09:37.000Z"
-      },
-      {
-        "id": "art-57b538220992",
-        "title": "Zakar dipotong, pundi kencing dibuang selepas hospital silap diagnosis kanser",
-        "source": "Utusan Malaysia",
-        "feedId": "utusan",
-        "domain": "utusan.com.my",
-        "url": "https://www.utusan.com.my/terkini/2026/11/zakar-dipotong-pundi-kencing-dibuang-selepas-hospital-silap-diagnosis-kanser/?utm_source=rss&utm_medium=rss&utm_campaign=zakar-dipotong-pundi-kencing-dibuang-selepas-hospital-silap-diagnosis-kanser",
-        "summary": "STOCKHOLM: Sebuah hospital di Sweden mengakui kesilapan diagnosis sehingga menyebabkan zakar seorang lelaki dipotong, selain pundi kencing dan kelenjar prostatnya dibuang. Kes itu berlaku di Hospital Skaraborg pada 2023, namun hanya didedahkan baru-baru ini. D",
-        "imageUrl": "https://www.utusan.com.my/wp-content/uploads/2026/11/potong-zakar.jpg",
-        "pubDate": "2026-11-27T06:09:08.000Z"
-      },
-      {
-        "id": "art-65471e6b34be",
-        "title": "[VIDEO] Leftenan, kapten TUDM didakwa edar dadah 96.2 kg",
+        "id": "art-40f1d0a433ec",
+        "title": "Dari Kota Singa ke kelab Chelsea",
         "source": "Kosmo!",
         "feedId": "kosmo",
         "domain": "kosmo.com.my",
-        "url": "https://www.kosmo.com.my/2026/11/27/leftenan-kapten-tudm-didakwa-edar-dadah-96-2-kg/?utm_source=rss&utm_medium=rss&utm_campaign=leftenan-kapten-tudm-didakwa-edar-dadah-96-2-kg",
-        "summary": "SHAH ALAM – Tiga pegawai Tentera Udara Diraja Malaysia (TUDM) dan tiga orang awam didakwa di Mahkamah Majistret di sini hari ini atas pertuduhan mengedar dadah methamphetime sebesar 96.2 kilogram minggu lalu. Tiga tertuduh pegawai TUDM itu ialah Leftenan Amir ",
-        "imageUrl": "https://www.kosmo.com.my/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-27-at-10.41.02-AM-1024x682.jpeg?v=1795748527",
-        "pubDate": "2026-11-27T02:48:52.000Z"
+        "url": "https://www.kosmo.com.my/2026/11/27/dari-kota-singa-ke-kelab-chelsea/?utm_source=rss&utm_medium=rss&utm_campaign=dari-kota-singa-ke-kelab-chelsea",
+        "summary": "Hampir 44,000 penonton membanjiri Stadium Wembley di England bagi menyaksikan perlawanan akhir Piala FA Wanita antara Manchester City menentang Brighton pada 31 Mei lalu. Ketika orang lain menyaksikan perlawanan tersebut dari kerusi penonton, seorang wanita be",
+        "imageUrl": "https://www.kosmo.com.my/wp-content/uploads/2026/11/bethany-koh-chelsea-fc-women-football-doctor.jpg",
+        "pubDate": "2026-11-27T03:48:15.000Z"
       },
       {
-        "id": "art-e94fcba65e5c",
-        "title": "Belanjawan 2027 lulus, sindiket dadah TUDM antara tumpuan minggu ini",
+        "id": "art-c914d04806bd",
+        "title": "Tuanku Muhriz tegur Exco, jangan ulang kesilapan lalu",
         "source": "Kosmo!",
         "feedId": "kosmo",
         "domain": "kosmo.com.my",
-        "url": "https://www.kosmo.com.my/2026/11/27/belanjawan-2027-lulus-sindiket-dadah-tudm-antara-tumpuan-minggu-ini/?utm_source=rss&utm_medium=rss&utm_campaign=belanjawan-2027-lulus-sindiket-dadah-tudm-antara-tumpuan-minggu-ini",
-        "summary": "KUALA LUMPUR – Perbahasan Rang Undang-Undang (RUU) Perbekalan (Belanjawan) 2027 peringkat jawatankuasa berakhir semalam selepas berlangsung selama 14 hari dengan penyertaan Ahli Parlimen daripada kedua-dua blok, diakhiri dengan penggulungan Kementerian Belia d",
-        "imageUrl": "https://www.kosmo.com.my/wp-content/uploads/2022/12/PM-SIDANG-KHAS-PARLIMEN001-1024x682.jpeg",
-        "pubDate": "2026-11-27T02:41:42.000Z"
+        "url": "https://www.kosmo.com.my/2026/11/27/tuanku-muhriz-tegur-exco-jangan-ulang-kesilapan-lalu/?utm_source=rss&utm_medium=rss&utm_campaign=tuanku-muhriz-tegur-exco-jangan-ulang-kesilapan-lalu",
+        "summary": "KUALA PILAH – Ahli Majlis Mesyuarat Kerajaan Negeri (Exco) Negeri Sembilan diingatkan supaya sentiasa memahami batas tugas dan bidang kuasa masing-masing bagi mengelakkan tindakan yang boleh menjejaskan keharmonian serta kestabilan pentadbiran negeri. Yang di-",
+        "imageUrl": "https://www.kosmo.com.my/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-27-at-11.40.04-AM.jpeg",
+        "pubDate": "2026-11-27T03:46:14.000Z"
       }
     ]
   },
   "asia": {
-    "updatedAt": "2026-11-27T07:03:10.834Z",
+    "updatedAt": "2026-11-27T07:04:38.505Z",
     "results": [
       {
         "feedId": "cna",
@@ -5965,6 +5965,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-572e15e9d227",
+        "title": "Cremation, burial and niche fees to increase from Jan 1, 2027; first hike in over 25 years",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/singapore/cremation-burial-niche-fees-increase-death-ash-scattering-6584701",
+        "summary": "The fee increases have been driven by higher costs amid growing demand for after-death services.",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--MqV18jDN--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2025/07/24/RAY_6971.jpg?itok=aWC-hFux",
+        "pubDate": "2026-11-27T07:00:14.000Z"
+      },
       {
         "id": "art-7f3cfd1812b7",
         "title": "Invasive clams spread outside Waikato River's controlled area",
@@ -6160,7 +6171,7 @@
         "domain": "straitstimes.com",
         "url": "https://www.straitstimes.com/asia/taiwan-candidates-campaign-for-key-local-elections-on-final-day",
         "summary": "TAIPEI, Nov 27 - Candidates fanned out across Taiwan on Friday, the final day of campaigning for local elections that China will closely follow, even if Beijing has not figured as a major campaign issue.",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/7022b4536f01ad26a99d5ba0180980e5b061325d6001b6392d8a24737daf0262?t=og",
+        "imageUrl": "",
         "pubDate": "2026-11-27T06:12:00.000Z"
       },
       {
@@ -6296,17 +6307,6 @@
         "pubDate": "2026-11-27T05:54:09.000Z"
       },
       {
-        "id": "art-cd471952b637",
-        "title": "Māori electorate results confirmed, Aperahama Edwards extends Te Tai Tokerau lead",
-        "source": "RNZ",
-        "feedId": "rnz",
-        "domain": "rnz.co.nz",
-        "url": "https://www.rnz.co.nz/news/politics_election-2026/2831585/maori-electorate-results-confirmed-aperahama-edwards-extends-te-tai-tokerau-lead",
-        "summary": "Te Pāti Māori will bring five MPs into Parliament, with four overhang seats.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T05:53:58.000Z"
-      },
-      {
         "id": "art-e9f5889a7073",
         "title": "Singapore lifts ban on Hainan goose – can chefs match Hong Kong’s gold standard?",
         "source": "South China Morning Post",
@@ -6430,7 +6430,7 @@
     ]
   },
   "europe": {
-    "updatedAt": "2026-11-27T07:03:10.942Z",
+    "updatedAt": "2026-11-27T07:04:38.651Z",
     "results": [
       {
         "feedId": "bbc-europe",
@@ -6989,7 +6989,7 @@
     ]
   },
   "middle-east": {
-    "updatedAt": "2026-11-27T07:03:10.951Z",
+    "updatedAt": "2026-11-27T07:04:38.662Z",
     "results": [
       {
         "feedId": "bbc-middle-east",
@@ -7482,7 +7482,7 @@
     ]
   },
   "africa": {
-    "updatedAt": "2026-11-27T07:03:10.953Z",
+    "updatedAt": "2026-11-27T07:04:38.665Z",
     "results": [
       {
         "feedId": "bbc-africa",
@@ -7864,7 +7864,7 @@
     ]
   },
   "latin-america": {
-    "updatedAt": "2026-11-27T07:03:10.967Z",
+    "updatedAt": "2026-11-27T07:04:38.683Z",
     "results": [
       {
         "feedId": "bbc-latin-america",
@@ -7899,6 +7899,138 @@
     ],
     "articles": [
       {
+        "id": "art-d383da74aa75",
+        "title": "Lula avalia criar minist�rio com foco em governo digital para centralizar pol�ticas de tecnologia",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-avalia-criar-ministerio-com-foco-em-governo-digital-para-centralizar-politicas-de-tecnologia.shtml",
+        "summary": "O governo do presidente Luiz In�cio Lula da Silva ( PT ) avalia criar um minist�rio com foco em governo digital , que incorporaria fun��es de diferentes minist�rios e secretarias do Executivo federal. Leia mais (11/27/2026 - 04h00)",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/19/17951329486aff8e142ab88_1795132948_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-d824b5bbc891",
+        "title": "Procura por cirurgia nas p�lpebras cresce, e m�dicos alertam sobre riscos",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/equilibrio/2026/11/procura-por-cirurgia-nas-palpebras-cresce-e-medicos-alertam-sobre-riscos.shtml",
+        "summary": "Andrea Holt odiava as bolsas sob os olhos . Ela n�o havia realmente reparado nelas at� completar 40 anos, mas agora n�o conseguia parar de prestar aten��o. Corretivo , botox e cremes hidratantes sofisticados n�o ajudavam. Leia mais (11/27/2026 - 04h00)",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/26/17957124626b0865ce0377f_1795712462_3x2_lg.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-c5dfa70ad261",
+        "title": "Javier Milei y sus medidas, en vivo: el Gobierno logró la media sanción del Presupuesto 2027 y la suspensión de las PASO",
+        "source": "La Nación",
+        "feedId": "lanacion",
+        "domain": "lanacion.com.ar",
+        "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-gobierno-logro-la-media-sancion-del-presupuesto-2027-y-la-nid27112026/",
+        "summary": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionarios",
+        "imageUrl": "https://resizer.glanacion.com/resizer/v2/BIRX2TY7XVCX5IV3SA7LDIMOHE.jpg?auth=8c1f5792b592d0b6714232d963115d8ece51e4b329106905a26fdaa4395aea41&smart=true&width=4160&height=2772",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-9975fd3348f8",
+        "title": "Qué se sabe sobre la fibromialgia, la enfermedad que afecta más a las mujeres",
+        "source": "La Nación",
+        "feedId": "lanacion",
+        "domain": "lanacion.com.ar",
+        "url": "https://www.lanacion.com.ar/sociedad/que-se-sabe-sobre-la-fibromialgia-la-enfermedad-que-afecta-mas-a-las-mujeres-nid27112026/",
+        "summary": "Jorge Tartaglione detalló en LN+ el impacto del diagnóstico en la vida diaria de las pacientes; señaló que el abordaje de esta patología debe ser multidisciplinario para mejorar la calidad de vida",
+        "imageUrl": "https://resizer.glanacion.com/resizer/v2/BWPY26SXI5H5THBAHNQWIWS4RU.jpg?auth=0d94ef04d0555be17db58bc87369f0ef038040c9093b1e58e7ba90e2a357aad6&smart=true&width=1360&height=905",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-c4d6b7afc67f",
+        "title": "Paciente do SUS com linfoma tem sobrevida menor, mesmo com quimioterapia igual � da rede privada",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/equilibrioesaude/2026/11/paciente-do-sus-com-linfoma-tem-sobrevida-menor-mesmo-com-quimioterapia-igual-a-da-rede-privada.shtml",
+        "summary": "Pacientes do SUS com linfoma difuso de grandes c�lulas B, um c�ncer do sangue agressivo do grupo dos linfomas n�o Hodgkin , t�m menos chance de estar vivos cinco anos ap�s o diagn�stico do que os atendidos na rede privada, ainda que comecem o tratamento com o ",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2024/07/01/171987872966834449bb9f4_1719878729_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-c93d7bd56df1",
+        "title": "'N�o acho que possamos mais coexistir com bilion�rios', diz escritora Naomi Klein",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/nao-acho-que-possamos-mais-coexistir-com-bilionarios-diz-escritora-naomi-klein.shtml",
+        "summary": "O capitalismo est� fracassando na tarefa de atender as necessidades b�sicas da humanidade -ao inv�s disso est� nos conduzindo a um precip�cio, com as sociedades totalmente voltadas � busca incessante por lucros. Leia mais (11/27/2026 - 04h00)",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/26/17957262896b089bd1cb8ba_1795726289_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-675ac6d21a9f",
+        "title": "Fundos de participa��es desafiam m� fase e buscam R$ 20 bi para investir em empresas brasileiras",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/fundos-de-participacoes-desafiam-ma-fase-e-buscam-r-20-bi-para-investir-em-empresas-brasileiras.shtml",
+        "summary": "Os fundos que compram participa��es em empresas tentam surfar uma mar� baixa para neg�cios e est�o em busca de recursos para investimentos no Brasil e Am�rica Latina. Somados, eles podem levantar at� R$ 20 bilh�es em capital, segundo fontes do setor. Leia mais",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2024/12/20/17347285166765db4439332_1734728516_3x2_xl.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-ef1ad2ddf2d1",
+        "title": "Romances de 'garota maluca' reacendem debate de r�tulos em livros de mulheres",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/11/romances-de-garota-maluca-reacendem-debate-de-rotulos-em-livros-de-mulheres.shtml",
+        "summary": "Uma mulher de 30 e poucos anos mora no bairro valorizado de uma metr�pole, ocupa um cargo de destaque na �rea de comunica��o, � atraente e tem vida sexual ativa. Leia mais (11/27/2026 - 04h00)",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/23/17954608696b048f05e6884_1795460869_3x2_xl.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-16722aedc12f",
+        "title": "Anti-Netanyahu, Gadi Eisenkot construiu imagem de centrista austero no Ex�rcito de Israel",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mundo/2026/11/anti-netanyahu-gadi-eisenkot-construiu-imagem-de-centrista-austero-no-exercito-de-israel.shtml",
+        "summary": "Em 2015, durante seu segundo e mais longo mandato, Binyamin Netanyahu talvez n�o imaginasse que o homem que promovia a chefe das For�as Armadas poderia destron�-lo na pol�tica em 2026. Gadi Eisenkot pode, al�m disso, colocar o atual premi� sob investiga��o por",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/26/17957350226b08bdeef1492_1795735022_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-e62c28a3a386",
+        "title": "Luciany Aparecida prepara novo romance 'Tinta da Bahia' para julho de 2027",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/walter-porto/2026/11/luciany-aparecida-prepara-novo-romance-tinta-da-bahia-para-julho-de-2027.shtml",
+        "summary": "A Alfaguara marcou para julho de 2027 o lan�amento do aguardado novo romance de Luciany Aparecida , \"Tinta da Bahia\". A autora despontou na cena nacional com \"Mata Doce\" , h� quatro anos, pelo qual venceu o Pr�mio S�o Paulo de Literatura . Leia mais (11/27/202",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/01/28/1769628798697a647e7a587_1769628798_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-fed84ef0282f",
+        "title": "Deusa perfeita e imperfeita, Vera Fischer chega aos 75 anos",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://f5.folha.uol.com.br/colunistas/thiagostivaletti/2026/11/deusa-perfeita-e-imperfeita-vera-fischer-chega-aos-75-anos.shtml",
+        "summary": "Nesta sexta-feira (27), Vera Fischer completa 75 anos. A jovem que foi Miss Blumenau e depois Miss Brasil conquistou seu espa�o pela beleza divina e estonteante numa �poca em que as mulheres eram muito mais objetificadas na TV e sobretudo no cinema , na era da",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/26/17957295866b08a8b264656_1795729586_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
+        "id": "art-7b0dbc79490a",
+        "title": "Data center de R$ 3 bi em Atibaia mobiliza �rg�os federais, enquanto prefeitura nega ter recebido projeto",
+        "source": "Folha de S.Paulo",
+        "feedId": "folha",
+        "domain": "folha.uol.com.br",
+        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/data-center-de-r-3-bi-em-atibaia-mobiliza-orgaos-federais-enquanto-prefeitura-nega-ter-recebido-projeto.shtml",
+        "summary": "Alvo de uma mobiliza��o de moradores de Atibaia (SP), o projeto de instala��o de um data center de R$ 3 bilh�es na cidade j� conta com um contrato de conex�o � rede el�trica e com aval do governo federal para incentivo fiscal �s obras que permitir�o seu abaste",
+        "imageUrl": "https://f.i.uol.com.br/fotografia/2026/04/07/177559405969d56a4b09fb4_1775594059_3x2_rt.jpg",
+        "pubDate": "2026-11-27T07:00:00.000Z"
+      },
+      {
         "id": "art-1e8950b94f7a",
         "title": "Sesión en el Congreso por Reforma Electoral y Presupuesto, EN VIVO: presupuesto 2027 y los proyectos de Milei, voto a voto",
         "source": "La Nación",
@@ -7930,17 +8062,6 @@
         "summary": "]]> Um mundo que não sabia o que era Covid-19, em que o iPhone era o X e em que a Copa do Mundo de futebol coroaria, em poucos dias, a França. Foi essa a última vez em que um jogador americano ganhou o prêmio de MVP (melhor jogador da temporada regular) da NBA",
         "imageUrl": "https://s2-oglobo.glbimg.com/CxPyp-n515mwPO_L-s7k2qPCyZs=/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/s/p/46h5UsRliieqr7fgWOIw/montagem-1795761186577.jpg",
         "pubDate": "2026-11-27T06:34:06.000Z"
-      },
-      {
-        "id": "art-c5dfa70ad261",
-        "title": "Javier Milei y sus medidas, en vivo: el Gobierno logró la media sanción del Presupuesto 2027 y la suspensión de las PASO",
-        "source": "La Nación",
-        "feedId": "lanacion",
-        "domain": "lanacion.com.ar",
-        "url": "https://www.lanacion.com.ar/politica/javier-milei-y-sus-medidas-en-vivo-el-gobierno-logro-la-media-sancion-del-presupuesto-2027-y-la-nid27112026/",
-        "summary": "El minuto a minuto de las decisiones del Presidente, las reacciones de la oposición y las declaraciones de los funcionarios",
-        "imageUrl": "https://resizer.glanacion.com/resizer/v2/BIRX2TY7XVCX5IV3SA7LDIMOHE.jpg?auth=8c1f5792b592d0b6714232d963115d8ece51e4b329106905a26fdaa4395aea41&smart=true&width=4160&height=2772",
-        "pubDate": "2026-11-27T06:32:18.000Z"
       },
       {
         "id": "art-cc985479913b",
@@ -8207,28 +8328,6 @@
         "pubDate": "2026-11-27T06:00:00.000Z"
       },
       {
-        "id": "art-6224b25778a1",
-        "title": "Pasaron las pruebas de fuego del amor, pero se olvidaron de la letra chica: “Ustedes son la pareja que todos envidiamos”",
-        "source": "La Nación",
-        "feedId": "lanacion",
-        "domain": "lanacion.com.ar",
-        "url": "https://www.lanacion.com.ar/lifestyle/pasaron-las-pruebas-de-fuego-del-amor-pero-se-olvidaron-de-la-letra-chica-ustedes-son-la-pareja-que-nid27112026/",
-        "summary": "Se conocieron en un bar de los 90 y parecían perfectos: ¿es bueno nunca discutir?",
-        "imageUrl": "https://resizer.glanacion.com/resizer/v2/KVYQB55GUJFZPOLUCKCBV7WAFI.jpg?auth=c5af102d986c17f2248865c25540c5726d71155bfd270e664ed7ab0f10233025&smart=true&width=2000&height=1333",
-        "pubDate": "2026-11-27T06:00:00.000Z"
-      },
-      {
-        "id": "art-fb9f0fcb8a5d",
-        "title": "Passarela das Cataratas do Igua�u � fechada novamente por cheia de rio",
-        "source": "Folha de S.Paulo",
-        "feedId": "folha",
-        "domain": "folha.uol.com.br",
-        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/passarela-das-cataratas-do-iguacu-e-fechada-novamente-por-cheia-de-rio.shtml",
-        "summary": "A passarela das Cataratas do Igua�u, em Foz do Igua�u (PR), foi fechada novamente nesta quinta-feira (26) devido ao aumento da vaz�o do rio de mesmo nome. A interdi��o preventiva segue protocolos de seguran�a do Parque Nacional do Igua�u. Leia mais (11/27/2026",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T05:44:00.000Z"
-      },
-      {
         "id": "art-3d7a8511d269",
         "title": "Julio, sacerdote, explica cómo se sostiene económicamente un cura: \"Hay dos tipos de cura y, si trabajas en una parroquia, una parte va para tu sustento personal\"",
         "source": "Clarín",
@@ -8238,105 +8337,6 @@
         "summary": "Un párroco con más de diez años en la Iglesia habló en un canal de YouTube sobre el dinero con el que viven los curas y las diferencias que hay entre ellos. También contó cómo se reparte el día entre las misas y la atención a la gente.",
         "imageUrl": "https://www.clarin.com/img/2026/11/25/T6zfo6c6h_1200x630__1.jpg",
         "pubDate": "2026-11-27T05:30:18.000Z"
-      },
-      {
-        "id": "art-6537993447b1",
-        "title": "La Iglesia celebró la aprobación de la ley de Ludopatía en el Senado: “Es un triunfo colectivo de toda la sociedad”",
-        "source": "La Nación",
-        "feedId": "lanacion",
-        "domain": "lanacion.com.ar",
-        "url": "https://www.lanacion.com.ar/politica/la-iglesia-celebro-la-aprobacion-de-la-ley-de-ludopatia-en-el-senado-es-un-triunfo-colectivo-de-toda-nid27112026/",
-        "summary": "La Comisión Episcopal de Pastoral Social destacó el resultado de la votación en la Cámara alta y emitió un comunicado, donde recordó el mensaje del papa León XIV respecto al tema",
-        "imageUrl": "https://resizer.glanacion.com/resizer/v2/PCJBD7DPEVDNHPFS5OELV7QVZQ.jpg?auth=71190d77a7b04d8749fa85b835a0f5ab9a554920bd1e3006a5e98fa088333a45&smart=true&width=2000&height=1333",
-        "pubDate": "2026-11-27T05:15:20.000Z"
-      },
-      {
-        "id": "art-63f989164bc1",
-        "title": "Gabriel Rolón explicó en detalle por qué muchas personas permanecen en parejas que no las hacen felices",
-        "source": "La Nación",
-        "feedId": "lanacion",
-        "domain": "lanacion.com.ar",
-        "url": "https://www.lanacion.com.ar/sociedad/gabriel-rolon-explico-en-detalle-por-que-muchas-personas-permanecen-en-parejas-que-no-las-hacen-nid27112026/",
-        "summary": "En una entrevista exclusiva para LN+, el psicoanalista y escritor propuso una mirada cruda sobre el amor, la muerte y el cómo el deseo produce incomodidad",
-        "imageUrl": "https://resizer.glanacion.com/resizer/v2/R4A4JPT4ZBHCBKKHAIBRWASF3M.jpg?auth=aed5132c0d8048fbdabb9a293a2a38571b7041183e293c5371daade76613796c&smart=true&width=800&height=600",
-        "pubDate": "2026-11-27T05:00:00.000Z"
-      },
-      {
-        "id": "art-58b64898358f",
-        "title": "Cuál es la principal causa de muerte en menores de 5 años, según expertos",
-        "source": "La Nación",
-        "feedId": "lanacion",
-        "domain": "lanacion.com.ar",
-        "url": "https://www.lanacion.com.ar/sociedad/cual-es-la-principal-causa-de-muerte-en-menores-de-5-anos-segun-expertos-nid27112026/",
-        "summary": "En LN+, Jorge Tartaglione, médico cardiólogo, brindó las claves fundamentales para identificar un atragantamiento y detalló las maniobras de primeros auxilios",
-        "imageUrl": "https://resizer.glanacion.com/resizer/v2/ESGIACMF4JAIXFHW7QKSVC3UX4.jpg?auth=4979e8d97bc42ac942fa71c3e8a6c00326f6c980141d8d818ff80fbf19a263fb&smart=true&width=3240&height=2160",
-        "pubDate": "2026-11-27T05:00:00.000Z"
-      },
-      {
-        "id": "art-19024692718b",
-        "title": "Professora morre ap�s tentar salvar alunos no mar em Florian�polis",
-        "source": "Folha de S.Paulo",
-        "feedId": "folha",
-        "domain": "folha.uol.com.br",
-        "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/11/professora-morre-apos-tentar-salvar-alunos-no-mar-em-florianopolis.shtml",
-        "summary": "A professora Mariana Zorzo, de 31 anos, morreu na quarta-feira (25) ap�s seis dias internada em estado grave em consequ�ncia de um afogamento sofrido na praia da Barra da Lagoa, em Florian�polis (SC). Leia mais (11/27/2026 - 01h51)",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:51:00.000Z"
-      },
-      {
-        "id": "art-cd3aba56a3a0",
-        "title": "Fuerte tormenta en EE.UU. empañó los festejos de Acción de Gracias: más de 900.000 usuarios sin luz y miles varados en aeropuertos por vuelos cancelados",
-        "source": "Clarín",
-        "feedId": "clarin",
-        "domain": "clarin.com",
-        "url": "https://www.clarin.com/mundo/fuerte-tormenta-eeuu-empano-festejos-accion-gracias-900000-usuarios-luz-miles-varados-aeropuertos-vuelos-cancelados_0_p6P8Q4WpbM.html",
-        "summary": "El mal clima reinante obligó a aplazar el desfile de Macy’s en Nueva York para el sábado. El principal foco azotó Pensilvania, Virginia y Misuri. Además de causar inundaciones, atrasos y cancelaciones de vuelos a miles de pasajeros.",
-        "imageUrl": "https://www.clarin.com/img/2026/11/27/kCxEHqdLA_1200x630__1.jpg",
-        "pubDate": "2026-11-27T04:40:21.000Z"
-      },
-      {
-        "id": "art-22c4dd81cf2d",
-        "title": "Voltaire, filósofo francés, sobre el valor del día a día: \"El trabajo aleja de nosotros tres grandes males: el aburrimiento, el vicio y la necesidad\"",
-        "source": "Clarín",
-        "feedId": "clarin",
-        "domain": "clarin.com",
-        "url": "https://www.clarin.com/internacional/voltaire-filosofo-frances-valor-dia-dia-trabajo-aleja-grandes-males-aburrimiento-vicio-necesidad_0_gkcQtYq2XZ.html",
-        "summary": "El pensador de la Ilustración dejó una reflexión sobre cómo las actividades cotidianas pueden contribuir a desarrollar disciplina, autonomía y buenos hábitos. Su célebre frase, incluida en una novela publicada en 1759, propone encontrar un propósito mediante e",
-        "imageUrl": "https://www.clarin.com/img/2026/11/26/QMWQs2MTi_1200x630__1.jpg",
-        "pubDate": "2026-11-27T04:32:17.000Z"
-      },
-      {
-        "id": "art-3e700e49a0b3",
-        "title": "Elizabeth Stephens: \"Compaginaba un trabajo de 99 mil dólares con un bebé y el cuidado de mi madre con Alzheimer. Que me despidieran fue un alivio\"",
-        "source": "Clarín",
-        "feedId": "clarin",
-        "domain": "clarin.com",
-        "url": "https://www.clarin.com/estados-unidos/elizabeth-stephens-compaginaba-trabajo-99-mil-dolares-bebe-cuidado-madre-alzheimer-despidieran-alivio_0_AF70vYd7jG.html",
-        "summary": "Una mujer de Texas contó cómo intentó sostener su empleo mientras criaba a su hijo y atendía las necesidades de su mamá. Después de perder su trabajo en marzo de 2026, sintió que podía dejar atrás una rutina que se había vuelto insostenible.",
-        "imageUrl": "https://www.clarin.com/img/2026/11/24/kxKplTG-c_1200x630__1.jpg",
-        "pubDate": "2026-11-27T04:24:17.000Z"
-      },
-      {
-        "id": "art-d83ecc268ee3",
-        "title": "Las personas que sabotean sus relaciones amorosas cuando comienzan a volverse serias no necesariamente tienen miedo al compromiso. La psicología dice que este comportamiento también puede relacionarse con experiencias emocionales adquiridas durante la infancia",
-        "source": "Clarín",
-        "feedId": "clarin",
-        "domain": "clarin.com",
-        "url": "https://www.clarin.com/estados-unidos/personas-sabotean-relaciones-amorosas-comienzan-volverse-necesariamente-miedo-compromiso-psicologia-dice-comportamiento-puede-relacionarse-experiencias-emocionales-adquiridas-infancia_0_2rVGUIymjY.html",
-        "summary": "Qué significa sabotear una relación amorosa justo cuando empieza a volverse seria, según la psicología.",
-        "imageUrl": "https://www.clarin.com/img/2026/10/15/mN2Wd00Tt_1200x630__1.jpg",
-        "pubDate": "2026-11-27T04:06:17.000Z"
-      },
-      {
-        "id": "art-a6b605b2e260",
-        "title": "Singapur está \"en comunicación\" con sus empresas tras restricción de EEUU a chips",
-        "source": "Clarín",
-        "feedId": "clarin",
-        "domain": "clarin.com",
-        "url": "https://www.clarin.com/estados-unidos/singapur-esta-en-comunicacion-con-sus-empresas-tras-restriccion-de-eeuu-a-chips_0_RBLOC0FL1F.html",
-        "summary": "Singapur dialoga con empresas locales tras el refuerzo de controles de EE.UU. sobre chips avanzados de IA de Nvidia por motivos de seguridad. Washington endurece las restricciones a exportaciones hacia China, mientras Nvidia enfrenta escándalos y suspensión te",
-        "imageUrl": "https://www.clarin.com/img/2026/09/03/SdD3Jbupq_1200x630__1.jpg",
-        "pubDate": "2026-11-27T04:00:07.000Z"
       },
       {
         "id": "art-e7960cb79109",
@@ -8363,7 +8363,7 @@
     ]
   },
   "india": {
-    "updatedAt": "2026-11-27T07:03:10.982Z",
+    "updatedAt": "2026-11-27T07:04:38.702Z",
     "results": [
       {
         "feedId": "bbc-india",
@@ -8833,6 +8833,18 @@
         "pubDate": "2026-11-27T00:47:43.000Z"
       },
       {
+        "id": "art-385c2dc922d3",
+        "title": "‘That’s my poison’: Shilpa Shetty reveals her simple pre-meal ritual",
+        "source": "The Indian Express",
+        "feedId": "indian-express",
+        "domain": "indianexpress.com",
+        "url": "https://indianexpress.com/article/lifestyle/food-wine/shilpa-shetty-drinks-ginger-warm-water-before-meals-ayurvedic-digestion-10170761/",
+        "summary": "‘That’s my poison’: Shilpa Shetty reveals her simple pre-meal ritual The Indian Express",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T00:30:54.000Z",
+        "publisherUrl": "https://indianexpress.com/article/lifestyle/food-wine/shilpa-shetty-drinks-ginger-warm-water-before-meals-ayurvedic-digestion-10170761/"
+      },
+      {
         "id": "art-c331218a77ca",
         "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
         "source": "BBC India",
@@ -8854,23 +8866,11 @@
         "imageUrl": "",
         "pubDate": "2026-11-26T14:08:56.000Z",
         "publisherUrl": "https://indianexpress.com/article/world/us-news/ibm-ends-h-1b-green-card-sponsorship-for-most-us-consulting-roles-impact-on-indians-10979852/"
-      },
-      {
-        "id": "art-751b5ac6dbfe",
-        "title": "Dario Amodei hits back at claims Anthropic wants humanity to ‘surrender control’ to AI",
-        "source": "The Indian Express",
-        "feedId": "indian-express",
-        "domain": "indianexpress.com",
-        "url": "https://indianexpress.com/article/technology/artificial-intelligence/anthropic-dario-amodei-rejects-claims-humanity-ai-control-10979503/",
-        "summary": "Dario Amodei hits back at claims Anthropic wants humanity to ‘surrender control’ to AI The Indian Express",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T09:24:11.000Z",
-        "publisherUrl": "https://indianexpress.com/article/technology/artificial-intelligence/anthropic-dario-amodei-rejects-claims-humanity-ai-control-10979503/"
       }
     ]
   },
   "china": {
-    "updatedAt": "2026-11-27T07:03:10.993Z",
+    "updatedAt": "2026-11-27T07:04:38.717Z",
     "results": [
       {
         "feedId": "scmp-china",
@@ -9381,7 +9381,7 @@
     ]
   },
   "russia": {
-    "updatedAt": "2026-11-27T07:03:11.001Z",
+    "updatedAt": "2026-11-27T07:04:38.728Z",
     "results": [
       {
         "feedId": "moscow-times",
@@ -9874,7 +9874,7 @@
     ]
   },
   "business": {
-    "updatedAt": "2026-11-27T07:03:11.057Z",
+    "updatedAt": "2026-11-27T07:04:38.805Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -9951,6 +9951,17 @@
     ],
     "articles": [
       {
+        "id": "art-b012cec5294a",
+        "title": "J.P. Morgan sees luxury sales stagnating in 2027, but which category stands out?",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/economy-news/jp-morgan-sees-luxury-sales-stagnating-in-2027-but-which-category-stands-out-5053029",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEH8D070_L.jpg",
+        "pubDate": "2026-11-27T06:58:16.000Z"
+      },
+      {
         "id": "art-702ef12e1542",
         "title": "FTSE 100 Live: UK Stocks Poised Join Global Stock Rebound",
         "source": "Bloomberg Markets",
@@ -9971,6 +9982,28 @@
         "summary": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year.",
         "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556424-1795181552746-gettyimages-2294015150-aditya-notitle260910_npipj.jpeg?v=1795181613&w=1920&h=1080",
         "pubDate": "2026-11-27T06:50:38.000Z"
+      },
+      {
+        "id": "art-b8364b4969de",
+        "title": "China stocks, yuan rally after Beijing vows stronger market support",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/china-stocks-yuan-rally-after-beijing-vows-stronger-market-support-5053026",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAQ0AQ_L.jpg",
+        "pubDate": "2026-11-27T06:48:37.000Z"
+      },
+      {
+        "id": "art-fcb7e8e1662d",
+        "title": "Bavarian Nordic names new CFO to join by June 2027",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/company-news/bavarian-nordic-names-new-cfo-to-join-by-june-2027-93CH-5053025",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM0M17X_1200_L.jpg",
+        "pubDate": "2026-11-27T06:48:24.000Z"
       },
       {
         "id": "art-b81fdd839fbc",
@@ -10100,7 +10133,7 @@
         "feedId": "ft-home",
         "domain": "ft.com",
         "url": "https://www.ft.com/content/fedc6392-ad25-43e4-9d9f-20216cbf331e?syn-25a6b1a6=1",
-        "summary": "CSI 300 index jumps more than 4% during afternoon trading",
+        "summary": "CSI 300 index jumps more than 4 per cent in afternoon trading",
         "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fdac698c2-fe48-4cf8-8c12-e606c03ef300.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
         "pubDate": "2026-11-27T06:25:21.000Z"
       },
@@ -10127,17 +10160,6 @@
         "pubDate": "2026-11-27T06:22:58.000Z"
       },
       {
-        "id": "art-b4e1b6ce5995",
-        "title": "VeraData Projects 36% Revenue Growth in 2026, Driven by AI-Powered",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/company-news/veradata-projects-36-revenue-growth-in-2026-driven-by-aipowered-donor-science-a-5053003",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/1842298269_M.jpg",
-        "pubDate": "2026-11-27T06:18:35.000Z"
-      },
-      {
         "id": "art-40987cd748a5",
         "title": "Asian Stocks Extend Recovery as AI Trade Rebounds",
         "source": "Bloomberg Markets",
@@ -10147,28 +10169,6 @@
         "summary": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia. Bloomberg TV is live from Sydney and Singapore with Haidi Stroud-Watts and Avril Hong, getting insight and analysis from newsmakers and industry ",
         "imageUrl": "",
         "pubDate": "2026-11-27T06:16:34.000Z"
-      },
-      {
-        "id": "art-eddf6423808a",
-        "title": "Crescent Capital BDC president buys $88,380 in stock",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/insider-trading-news/crescent-capital-bdc-president-buys-88380-in-stock-93CH-5053002",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM431A2_1200_L.jpg",
-        "pubDate": "2026-11-27T06:16:15.000Z"
-      },
-      {
-        "id": "art-cd9f190de071",
-        "title": "Motorola Solutions svp Rajan Naik sells $3.0M in company stock",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/insider-trading-news/motorola-solutions-svp-rajan-naik-sells-30m-in-company-stock-93CH-5053001",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
-        "pubDate": "2026-11-27T06:16:02.000Z"
       },
       {
         "id": "art-cf1fd507c21c",
@@ -10415,7 +10415,7 @@
     ]
   },
   "technology": {
-    "updatedAt": "2026-11-27T07:03:11.083Z",
+    "updatedAt": "2026-11-27T07:04:38.840Z",
     "results": [
       {
         "feedId": "verge",
@@ -10932,7 +10932,7 @@
     ]
   },
   "ai": {
-    "updatedAt": "2026-11-27T07:03:11.093Z",
+    "updatedAt": "2026-11-27T07:04:38.853Z",
     "results": [
       {
         "feedId": "verge-ai",
@@ -11437,7 +11437,7 @@
     ]
   },
   "sports": {
-    "updatedAt": "2026-11-27T07:03:11.102Z",
+    "updatedAt": "2026-11-27T07:04:38.865Z",
     "results": [
       {
         "feedId": "espn",
@@ -11936,7 +11936,7 @@
     ]
   },
   "sport-football": {
-    "updatedAt": "2026-11-27T07:03:11.104Z",
+    "updatedAt": "2026-11-27T07:04:38.868Z",
     "results": [
       {
         "feedId": "bbc-football",
@@ -12307,7 +12307,7 @@
     ]
   },
   "sport-cricket": {
-    "updatedAt": "2026-11-27T07:03:11.113Z",
+    "updatedAt": "2026-11-27T07:04:38.880Z",
     "results": [
       {
         "feedId": "bbc-cricket",
@@ -12800,7 +12800,7 @@
     ]
   },
   "sport-rugby-league": {
-    "updatedAt": "2026-11-27T07:03:11.115Z",
+    "updatedAt": "2026-11-27T07:04:38.883Z",
     "results": [
       {
         "feedId": "bbc-rugby-league",
@@ -13105,7 +13105,7 @@
     ]
   },
   "sport-rugby-union": {
-    "updatedAt": "2026-11-27T07:03:11.117Z",
+    "updatedAt": "2026-11-27T07:04:38.885Z",
     "results": [
       {
         "feedId": "bbc-rugby-union",
@@ -13509,7 +13509,7 @@
     ]
   },
   "sport-boxing": {
-    "updatedAt": "2026-11-27T07:03:11.124Z",
+    "updatedAt": "2026-11-27T07:04:38.894Z",
     "results": [
       {
         "feedId": "bbc-boxing",
@@ -14002,7 +14002,7 @@
     ]
   },
   "sport-mma": {
-    "updatedAt": "2026-11-27T07:03:11.130Z",
+    "updatedAt": "2026-11-27T07:04:38.902Z",
     "results": [
       {
         "feedId": "bbc-mma",
@@ -14119,42 +14119,6 @@
         "pubDate": "2026-11-27T03:27:05.000Z"
       },
       {
-        "id": "art-e243af6c7074",
-        "title": "Josh Hokit offers to save ‘bum’ UFC light heavyweight division, Navajo Stirling responds",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523497/josh-hokit-offers-to-save-bum-ufc-light-heavyweight-division-navajo-stirling-responds",
-        "summary": "Josh Hokit offers to save ‘bum’ UFC light heavyweight division, Navajo Stirling responds MMA Fighting",
-        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305014463.jpg?quality=90&strip=all&crop=0%2C3.23298383543%2C100%2C78.534031413613&w=1200",
-        "pubDate": "2026-11-26T22:00:37.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523497/josh-hokit-offers-to-save-bum-ufc-light-heavyweight-division-navajo-stirling-responds"
-      },
-      {
-        "id": "art-6db624d09b43",
-        "title": "Dricus du Plessis claims UFC shot down Khamzat Chimaev rematch",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523465/dricus-du-plessis-claims-ufc-shot-down-khamzat-chimaev-rematch",
-        "summary": "Dricus du Plessis claims UFC shot down Khamzat Chimaev rematch MMA Fighting",
-        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2230339775.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-        "pubDate": "2026-11-26T20:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523465/dricus-du-plessis-claims-ufc-shot-down-khamzat-chimaev-rematch"
-      },
-      {
-        "id": "art-a9a18ce180b2",
-        "title": "Anything but fighting: Jim Miller loves Thanksgiving",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/videos/523047/anything-but-fighting-jim-miller-loves-thanksgiving",
-        "summary": "Anything but fighting: Jim Miller loves Thanksgiving MMA Fighting",
-        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/jim-ABF-YT.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
-        "pubDate": "2026-11-26T18:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/videos/523047/anything-but-fighting-jim-miller-loves-thanksgiving"
-      },
-      {
         "id": "art-c1419ff4b272",
         "title": "UFC champion Carlos Ulberg and Navajo Stirling’s coach rules out teammates ever fighting",
         "source": "MMA Fighting",
@@ -14165,18 +14129,6 @@
         "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2306347884.jpg?quality=90&strip=all&crop=0%2C4.5697183861552%2C100%2C79.250147201579&w=1200",
         "pubDate": "2026-11-26T16:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523442/ufc-champion-carlos-ulberg-and-navajo-stirlings-coach-rules-out-teammates-ever-fighting"
-      },
-      {
-        "id": "art-2d23db01c8ef",
-        "title": "A Very UFC Thanksgiving: Which fighters best embody our favorite holiday foods?",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523067/a-very-ufc-thanksgiving-which-fighters-best-embody-our-favorite-holiday-foods",
-        "summary": "A Very UFC Thanksgiving: Which fighters best embody our favorite holiday foods? MMA Fighting",
-        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/cover.png?quality=90&strip=all&crop=0%2C0%2C100%2C93.077370564282&w=1200",
-        "pubDate": "2026-11-26T14:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523067/a-very-ufc-thanksgiving-which-fighters-best-embody-our-favorite-holiday-foods"
       },
       {
         "id": "art-eb695342b508",
@@ -14241,7 +14193,7 @@
         "domain": "sherdog.com",
         "url": "https://www.sherdog.com/news/news/Joaquin-Buckley-challenges-former-UFC-champion-to-public-debate-203746",
         "summary": "Joaquin Buckley has called out Rashad Evans , Jason Manly and Brad Tate to a public debate.",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261126041620_buckley_karen_n_word_debate.JPG",
         "pubDate": "2026-11-26T03:34:02.000Z"
       },
       {
@@ -14252,7 +14204,7 @@
         "domain": "sherdog.com",
         "url": "https://www.sherdog.com/news/news/Kevin-Vallejos-eyes-UFC-gold-or-BMF-fight-against-Tommy-McMillen-203745",
         "summary": "Kevin Vallejos wants a title shot, but is also open to fighting unranked Tommy McMillen next.",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261126031230_kevin_vallejos_bmf_tommy_or_ufc_gold.JPG",
         "pubDate": "2026-11-26T03:12:30.000Z"
       },
       {
@@ -14263,7 +14215,7 @@
         "domain": "sherdog.com",
         "url": "https://www.sherdog.com/news/news/MMA-coach-Eddie-Cha-dies-at-53-fighters-pay-tribute-203744",
         "summary": "The mixed martial arts community is mourning the death of coach Eddie Cha.",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261126030718_eddie_cha_RIP.JPG",
         "pubDate": "2026-11-26T03:07:17.000Z"
       },
       {
@@ -14274,7 +14226,7 @@
         "domain": "mmafighting.com",
         "url": "https://www.mmafighting.com/ufc/523375/charges-dismissed-against-anthony-smith-after-july-arrest-smith-releases-statement",
         "summary": "Charges dismissed against Anthony Smith after July arrest; Smith releases statement MMA Fighting",
-        "imageUrl": "",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/07/gettyimages-2212170720.jpg?quality=90&strip=all&crop=0%2C0.68347774896583%2C100%2C78.544394838186&w=1200",
         "pubDate": "2026-11-25T23:56:07.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523375/charges-dismissed-against-anthony-smith-after-july-arrest-smith-releases-statement"
       },
@@ -14301,28 +14253,40 @@
         "pubDate": "2026-11-25T04:41:19.000Z"
       },
       {
-        "id": "art-02050bf549d0",
-        "title": "Morning Report | Josh Hokit admits Ciryl Gane is ‘a nice guy,’ reveals backstage run-in with him after UFC 334",
+        "id": "art-4b1d013245b9",
+        "title": "Raoni Barcelos confident he will fight again after scary collapse: ‘I really want to come back’",
         "source": "MMA Fighting",
         "feedId": "mmafighting",
         "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523123/morning-report-josh-hokit-admits-ciryl-gane-is-a-nice-guy-reveals-backstage-run-in-with-him-after-ufc-334",
-        "summary": "Morning Report | Josh Hokit admits Ciryl Gane is ‘a nice guy,’ reveals backstage run-in with him after UFC 334 MMA Fighting",
+        "url": "https://www.mmafighting.com/ufc/523149/raoni-barcelos-confident-he-will-fight-again-after-scary-collapse-i-really-want-to-come-back",
+        "summary": "Raoni Barcelos confident he will fight again after scary collapse: ‘I really want to come back’ MMA Fighting",
         "imageUrl": "",
-        "pubDate": "2026-11-24T17:17:24.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523123/morning-report-josh-hokit-admits-ciryl-gane-is-a-nice-guy-reveals-backstage-run-in-with-him-after-ufc-334"
+        "pubDate": "2026-11-24T18:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523149/raoni-barcelos-confident-he-will-fight-again-after-scary-collapse-i-really-want-to-come-back"
       },
       {
-        "id": "art-1b848e3934e8",
-        "title": "Christian Lee responds to ONE Championship stripping his welterweight title: ‘I’m far from finished’",
+        "id": "art-4a262d656869",
+        "title": "Matt Brown defends Josh Hokit’s complaints about eye poke in Ciryl Gane fight: ‘A f*cking point deduction at minimum’",
         "source": "MMA Fighting",
         "feedId": "mmafighting",
         "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/one/522934/christian-lee-responds-to-one-championship-stripping-his-welterweight-title-im-far-from-finished",
-        "summary": "Christian Lee responds to ONE Championship stripping his welterweight title: ‘I’m far from finished’ MMA Fighting",
+        "url": "https://www.mmafighting.com/ufc/523076/matt-brown-defends-josh-hokits-complaints-about-eye-poke-in-ciryl-gane-fight-a-fcking-point-deduction-at-minimum",
+        "summary": "Matt Brown defends Josh Hokit’s complaints about eye poke in Ciryl Gane fight: ‘A f*cking point deduction at minimum’ MMA Fighting",
         "imageUrl": "",
-        "pubDate": "2026-11-23T19:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/one/522934/christian-lee-responds-to-one-championship-stripping-his-welterweight-title-im-far-from-finished"
+        "pubDate": "2026-11-24T14:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523076/matt-brown-defends-josh-hokits-complaints-about-eye-poke-in-ciryl-gane-fight-a-fcking-point-deduction-at-minimum"
+      },
+      {
+        "id": "art-e7b6e535d192",
+        "title": "Islam Makhachev says Usman Nurmagomedov-Merab Dvalishvili situation ‘got blown way out of proportion’",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/ufc/523011/islam-makhachev-says-usman-nurmagomedov-merab-dvalishvili-situation-got-blown-way-out-of-proportion",
+        "summary": "Islam Makhachev says Usman Nurmagomedov-Merab Dvalishvili situation ‘got blown way out of proportion’ MMA Fighting",
+        "imageUrl": "",
+        "pubDate": "2026-11-23T17:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523011/islam-makhachev-says-usman-nurmagomedov-merab-dvalishvili-situation-got-blown-way-out-of-proportion"
       },
       {
         "id": "art-66e643300a39",
@@ -14336,6 +14300,30 @@
         "pubDate": "2026-11-23T16:51:48.000Z"
       },
       {
+        "id": "art-885d87de3b8c",
+        "title": "Video: Fighter earns submission with airtight leg scissor choke",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/latest-news/522870/video-fighter-earns-submission-with-airtight-leg-scissor-choke",
+        "summary": "Video: Fighter earns submission with airtight leg scissor choke MMA Fighting",
+        "imageUrl": "",
+        "pubDate": "2026-11-22T22:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/latest-news/522870/video-fighter-earns-submission-with-airtight-leg-scissor-choke"
+      },
+      {
+        "id": "art-1055a6fcea5e",
+        "title": "Umar Nurmagomedov issues first statement since Merab Dvalishvili attack and release from prison",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/ufc/522926/umar-nurmagomedov-issues-first-statement-since-merab-dvalishvili-attack-and-release-from-prison",
+        "summary": "Umar Nurmagomedov issues first statement since Merab Dvalishvili attack and release from prison MMA Fighting",
+        "imageUrl": "",
+        "pubDate": "2026-11-22T18:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/522926/umar-nurmagomedov-issues-first-statement-since-merab-dvalishvili-attack-and-release-from-prison"
+      },
+      {
         "id": "art-df83ff4c516f",
         "title": "Rising star Stirling knocks out Prochazka",
         "source": "BBC MMA",
@@ -14345,6 +14333,18 @@
         "summary": "Rising star Navajo Stirling earns the biggest win of his career as he knocks out former champion Jiri Prochazka in the second round at UFC Qatar.",
         "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0951/live/6d03f150-e5f1-11f1-b1d8-fd34c88a50a0.jpg",
         "pubDate": "2026-11-21T21:51:51.000Z"
+      },
+      {
+        "id": "art-78794ceeb01f",
+        "title": "Dan Hooker confident Alexander Volkanovski can beat Justin Gaethje: ‘That’s a very winnable fight for him’",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/ufc/522470/dan-hooker-confident-alexander-volkanovski-can-beat-justin-gaethje-thats-a-very-winnable-fight-for-him",
+        "summary": "Dan Hooker confident Alexander Volkanovski can beat Justin Gaethje: ‘That’s a very winnable fight for him’ MMA Fighting",
+        "imageUrl": "",
+        "pubDate": "2026-11-21T13:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/522470/dan-hooker-confident-alexander-volkanovski-can-beat-justin-gaethje-thats-a-very-winnable-fight-for-him"
       },
       {
         "id": "art-ca9138931058",
@@ -14448,7 +14448,7 @@
     ]
   },
   "sport-tennis": {
-    "updatedAt": "2026-11-27T07:03:11.132Z",
+    "updatedAt": "2026-11-27T07:04:38.905Z",
     "results": [
       {
         "feedId": "bbc-tennis",
@@ -14863,7 +14863,7 @@
     ]
   },
   "sport-f1": {
-    "updatedAt": "2026-11-27T07:03:11.136Z",
+    "updatedAt": "2026-11-27T07:04:38.911Z",
     "results": [
       {
         "feedId": "bbc-f1",
@@ -15350,7 +15350,7 @@
     ]
   },
   "sport-golf": {
-    "updatedAt": "2026-11-27T07:03:11.138Z",
+    "updatedAt": "2026-11-27T07:04:38.914Z",
     "results": [
       {
         "feedId": "bbc-golf",
@@ -15589,7 +15589,7 @@
     ]
   },
   "sport-nba": {
-    "updatedAt": "2026-11-27T07:03:11.139Z",
+    "updatedAt": "2026-11-27T07:04:38.915Z",
     "results": [
       {
         "feedId": "cbs-nba",
@@ -15800,7 +15800,7 @@
     ]
   },
   "sport-nfl": {
-    "updatedAt": "2026-11-27T07:03:11.139Z",
+    "updatedAt": "2026-11-27T07:04:38.916Z",
     "results": [
       {
         "feedId": "cbs-nfl",
@@ -16000,7 +16000,7 @@
     ]
   },
   "science": {
-    "updatedAt": "2026-11-27T07:03:11.151Z",
+    "updatedAt": "2026-11-27T07:04:38.931Z",
     "results": [
       {
         "feedId": "sciencedaily",
@@ -16499,7 +16499,7 @@
     ]
   },
   "entertainment": {
-    "updatedAt": "2026-11-27T07:03:11.157Z",
+    "updatedAt": "2026-11-27T07:04:38.940Z",
     "results": [
       {
         "feedId": "variety",
@@ -16640,7 +16640,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/music/music-country/miranda-lambert-dallas-cowboys-halftime-show-performance-1235664551/",
         "summary": "The native Texan tackled songs like \"Gunpowder & Lead\" and \"Little Red Wagon\" in her first NFL appearance during the annual Thanksgiving tradition",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/GettyImages-2307050935-2.jpg?w=1600&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-27T00:00:49.000Z"
       },
       {
@@ -16673,7 +16673,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/product-recommendations/lifestyle/shop-lola-blankets-black-friday-sale-get-50-percent-off-1235664228/",
         "summary": "From the bestselling Lola Original to cozy pet beds and even holiday stockings, you can save hundreds on the brand's viral favorites right now",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/Screenshot-2026-11-23-at-3.07.16-PM.png?w=1254&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-26T23:00:00.000Z"
       },
       {
@@ -16794,7 +16794,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/music/music-features/joni-mitchell-hejira-anniversary-1235656052/",
         "summary": "Jamie Lee Curtis, producer Nigel Godrich, Fleet Foxes' Robin Pecknold, and more discuss the road-trip classic",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/joni-mitchell-hejira.jpg?w=1440&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-26T20:23:59.000Z"
       },
       {
@@ -16805,7 +16805,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/music/music-news/wu-tang-clan-nfl-thanksgiving-game-halftime-show-1235664856/",
         "summary": "The New York hip-hop group were joined by Red Hot Chili Peppers' Chad Smith on drums",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/GettyImages-2307026484-1.jpg?w=1600&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-26T20:21:52.000Z"
       },
       {
@@ -16998,7 +16998,7 @@
     ]
   },
   "politics": {
-    "updatedAt": "2026-11-27T07:03:11.188Z",
+    "updatedAt": "2026-11-27T07:04:38.980Z",
     "results": [
       {
         "feedId": "npr-politics",
@@ -17515,7 +17515,7 @@
     ]
   },
   "finance": {
-    "updatedAt": "2026-11-27T07:03:11.210Z",
+    "updatedAt": "2026-11-27T07:04:39.009Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -17568,6 +17568,17 @@
     ],
     "articles": [
       {
+        "id": "art-b012cec5294a",
+        "title": "J.P. Morgan sees luxury sales stagnating in 2027, but which category stands out?",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/economy-news/jp-morgan-sees-luxury-sales-stagnating-in-2027-but-which-category-stands-out-5053029",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEH8D070_L.jpg",
+        "pubDate": "2026-11-27T06:58:16.000Z"
+      },
+      {
         "id": "art-702ef12e1542",
         "title": "FTSE 100 Live: UK Stocks Poised Join Global Stock Rebound",
         "source": "Bloomberg Markets",
@@ -17588,6 +17599,28 @@
         "summary": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year.",
         "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556424-1795181552746-gettyimages-2294015150-aditya-notitle260910_npipj.jpeg?v=1795181613&w=1920&h=1080",
         "pubDate": "2026-11-27T06:50:38.000Z"
+      },
+      {
+        "id": "art-b8364b4969de",
+        "title": "China stocks, yuan rally after Beijing vows stronger market support",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/china-stocks-yuan-rally-after-beijing-vows-stronger-market-support-5053026",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAQ0AQ_L.jpg",
+        "pubDate": "2026-11-27T06:48:37.000Z"
+      },
+      {
+        "id": "art-fcb7e8e1662d",
+        "title": "Bavarian Nordic names new CFO to join by June 2027",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/company-news/bavarian-nordic-names-new-cfo-to-join-by-june-2027-93CH-5053025",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM0M17X_1200_L.jpg",
+        "pubDate": "2026-11-27T06:48:24.000Z"
       },
       {
         "id": "art-b81fdd839fbc",
@@ -17706,7 +17739,7 @@
         "feedId": "ft-home",
         "domain": "ft.com",
         "url": "https://www.ft.com/content/fedc6392-ad25-43e4-9d9f-20216cbf331e?syn-25a6b1a6=1",
-        "summary": "CSI 300 index jumps more than 4% during afternoon trading",
+        "summary": "CSI 300 index jumps more than 4 per cent in afternoon trading",
         "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fdac698c2-fe48-4cf8-8c12-e606c03ef300.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
         "pubDate": "2026-11-27T06:25:21.000Z"
       },
@@ -17733,17 +17766,6 @@
         "pubDate": "2026-11-27T06:22:58.000Z"
       },
       {
-        "id": "art-b4e1b6ce5995",
-        "title": "VeraData Projects 36% Revenue Growth in 2026, Driven by AI-Powered",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/company-news/veradata-projects-36-revenue-growth-in-2026-driven-by-aipowered-donor-science-a-5053003",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/1842298269_M.jpg",
-        "pubDate": "2026-11-27T06:18:35.000Z"
-      },
-      {
         "id": "art-40987cd748a5",
         "title": "Asian Stocks Extend Recovery as AI Trade Rebounds",
         "source": "Bloomberg Markets",
@@ -17753,28 +17775,6 @@
         "summary": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia. Bloomberg TV is live from Sydney and Singapore with Haidi Stroud-Watts and Avril Hong, getting insight and analysis from newsmakers and industry ",
         "imageUrl": "",
         "pubDate": "2026-11-27T06:16:34.000Z"
-      },
-      {
-        "id": "art-eddf6423808a",
-        "title": "Crescent Capital BDC president buys $88,380 in stock",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/insider-trading-news/crescent-capital-bdc-president-buys-88380-in-stock-93CH-5053002",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM431A2_1200_L.jpg",
-        "pubDate": "2026-11-27T06:16:15.000Z"
-      },
-      {
-        "id": "art-cd9f190de071",
-        "title": "Motorola Solutions svp Rajan Naik sells $3.0M in company stock",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/insider-trading-news/motorola-solutions-svp-rajan-naik-sells-30m-in-company-stock-93CH-5053001",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
-        "pubDate": "2026-11-27T06:16:02.000Z"
       },
       {
         "id": "art-cf1fd507c21c",
@@ -18032,7 +18032,7 @@
     ]
   },
   "lifestyle": {
-    "updatedAt": "2026-11-27T07:03:11.215Z",
+    "updatedAt": "2026-11-27T07:04:39.015Z",
     "results": [
       {
         "feedId": "guardian-life",
@@ -18145,7 +18145,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/music/music-country/miranda-lambert-dallas-cowboys-halftime-show-performance-1235664551/",
         "summary": "The native Texan tackled songs like \"Gunpowder & Lead\" and \"Little Red Wagon\" in her first NFL appearance during the annual Thanksgiving tradition",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/GettyImages-2307050935-2.jpg?w=1600&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-27T00:00:49.000Z"
       },
       {
@@ -18167,7 +18167,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/product-recommendations/lifestyle/shop-lola-blankets-black-friday-sale-get-50-percent-off-1235664228/",
         "summary": "From the bestselling Lola Original to cozy pet beds and even holiday stockings, you can save hundreds on the brand's viral favorites right now",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/Screenshot-2026-11-23-at-3.07.16-PM.png?w=1254&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-26T23:00:00.000Z"
       },
       {
@@ -18233,7 +18233,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/music/music-features/joni-mitchell-hejira-anniversary-1235656052/",
         "summary": "Jamie Lee Curtis, producer Nigel Godrich, Fleet Foxes' Robin Pecknold, and more discuss the road-trip classic",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/joni-mitchell-hejira.jpg?w=1440&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-26T20:23:59.000Z"
       },
       {
@@ -18244,7 +18244,7 @@
         "domain": "rollingstone.com",
         "url": "https://www.rollingstone.com/music/music-news/wu-tang-clan-nfl-thanksgiving-game-halftime-show-1235664856/",
         "summary": "The New York hip-hop group were joined by Red Hot Chili Peppers' Chad Smith on drums",
-        "imageUrl": "https://www.rollingstone.com/wp-content/uploads/2026/11/GettyImages-2307026484-1.jpg?w=1600&h=900&crop=1",
+        "imageUrl": "",
         "pubDate": "2026-11-26T20:21:52.000Z"
       },
       {
