@@ -1412,7 +1412,7 @@ async function pollSnapshotTopic(topic, { token = state.fetchToken, force = fals
     if (!force && version && version === state.snapshotVersion) {
       state.lastAutoPoll = Date.now();
       state.lastChecked = Date.now();
-      if (initial && state.articles.length) updateStatusLine();
+      if (state.articles.length) updateStatusLine();
       return true;
     }
 
