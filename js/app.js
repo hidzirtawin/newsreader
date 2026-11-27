@@ -1556,7 +1556,7 @@ function researchListMarkup(articles) {
       <div class="headline-content">
         <h2 class="headline-title">${esc(article.title)}</h2>
         ${summary ? `<p class="research-summary">${esc(summary.slice(0, 240))}</p>` : ''}
-        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">RESEARCH</span></div>
+        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span></div>
       </div>
     </article>`;
   }).join('');

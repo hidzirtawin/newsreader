@@ -900,7 +900,10 @@ const COUNTRY_DESK_CONFIG = [
 const EXISTING_COUNTRY_TOPICS = new Set(['us', 'uk', 'australia', 'canada', 'singapore', 'malaysia', 'india', 'china', 'russia']);
 for (const id of EXISTING_COUNTRY_TOPICS) {
   const topic = TOPICS.find((item) => item.id === id);
-  if (topic) topic.country = true;
+  if (topic) {
+    topic.country = true;
+    topic.hiddenFromBar = true;
+  }
 }
 
 export const COUNTRY_DESKS = COUNTRY_DESK_CONFIG.map((desk) => {

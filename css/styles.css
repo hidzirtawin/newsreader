@@ -705,6 +705,12 @@ a {
 
 .research-subnav {
   margin-top: -4px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.research-subnav .sports-pill {
+  flex: 0 0 auto;
 }
 
 /* Video playback */
