@@ -1,5 +1,5 @@
 /**
- * app.js — UI orchestration for Newsreader.
+ * app.js — UI orchestration for Tawin Newsreader.
  */
 
 import {
@@ -489,7 +489,7 @@ function renderTopicsBar() {
 function updateTopicHeader(topic) {
   state.currentLabel = topic.label;
   els.editorialHeading.textContent = (topic.title || topic.label).toUpperCase();
-  document.title = `${topic.title || topic.label} | Newsreader`;
+  document.title = `${topic.title || topic.label} | Tawin Newsreader`;
   els.feedSortSelect.value = state.sort;
   const listen = topic.type === 'radio' || topic.type === 'podcasts';
   els.editorialActions.hidden = listen;
@@ -2235,7 +2235,7 @@ els.installAppBtn.addEventListener('click', async () => {
 window.addEventListener('appinstalled', () => {
   state.installPrompt = null;
   els.installAppBtn.style.display = 'none';
-  showToast('Newsreader installed.');
+  showToast('Tawin Newsreader installed.');
 });
 
 /* ------------------------------------------------------------------ */

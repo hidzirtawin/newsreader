@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Newsreader">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tawin Newsreader">
   <rect width="512" height="512" rx="112" ry="112" fill="#10b981"/>
   <circle cx="256" cy="256" r="166" fill="#064e3b"/>
-  <path d="M170 342V170l172 172V170" fill="none" stroke="#f0fdf4" stroke-width="42" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M170 170h172M256 170v172" fill="none" stroke="#f0fdf4" stroke-width="42" stroke-linecap="square" stroke-linejoin="miter"/>
 </svg>

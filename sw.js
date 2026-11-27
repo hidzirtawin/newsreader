@@ -1,10 +1,10 @@
 /**
- * Newsreader service worker.
+ * Tawin Newsreader service worker.
  * Keeps the app shell and bundled editions available offline while letting
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v9';
+const VERSION = 'newsreader-v10';
 const SHELL = [
   './',
   './index.html',

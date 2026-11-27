@@ -1,4 +1,4 @@
-# Newsreader
+# Tawin Newsreader
 
 **Live:** <https://hidzirtawin.github.io/newsreader/>
 
@@ -71,7 +71,7 @@ The included workflow at `.github/workflows/refresh.yml` rebuilds the bundled ed
 
 - **The New Paper (Singapore)** stopped publishing in 2021 and no longer offers a working RSS feed, so it is not listed. Singapore coverage uses The Straits Times, CNA, Mothership and Berita Harian Singapore.
 - Some Malaysian publishers no longer expose public RSS. The sources above are the ones that currently return usable feeds. You can add any new feed yourself under **Menu → Customize topics → RSS sources**.
-- Several major mastheads (Herald Sun, The Australian, Reuters, AP, CNN, The Washington Post, NBC News, Fox News, USA Today, The Times, The Telegraph, The Independent, The Sydney Morning Herald and The Globe and Mail) block direct RSS clients. Newsreader uses each publisher's Google News index for those titles, then resolves the link to the publisher URL during `npm run refresh`. Resolved URLs are cached for 30 days. If a live wrapper cannot be resolved, clicking still follows Google's redirect to the publisher.
+- Several major mastheads (Herald Sun, The Australian, Reuters, AP, CNN, The Washington Post, NBC News, Fox News, USA Today, The Times, The Telegraph, The Independent, The Sydney Morning Herald and The Globe and Mail) block direct RSS clients. Tawin Newsreader uses each publisher's Google News index for those titles, then resolves the link to the publisher URL during `npm run refresh`. Resolved URLs are cached for 30 days. If a live wrapper cannot be resolved, clicking still follows Google's redirect to the publisher.
 - Guardian feeds occasionally return HTTP 403 to non-browser clients. The refresh script uses browser-style requests; if a publisher rate-limits you, wait and run `npm run refresh` again.
 - Radio streams belong to their broadcasters and can change without notice. The URLs here are public streams verified at build time.
 - *Keluar Sekejap* is fetched from its official Anchor/Spotify for Podcasters RSS feed.
@@ -85,7 +85,7 @@ The included workflow at `.github/workflows/refresh.yml` rebuilds the bundled ed
 - **Quick URL** — **Menu → Open article URL** routes any link through a chosen tool and can remember that choice per site.
 - **Export** — download topics, custom sources, rules and preferences as JSON.
 
-All preferences live in `localStorage`; nothing is sent to a Newsreader server.
+All preferences live in `localStorage`; nothing is sent to a Tawin Newsreader server.
 
 ## Project structure
 
