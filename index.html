@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10b981">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Newsreader | Fast, Frictionless News</title>
+  <meta name="description" content="A fast, uncluttered news reader with a Flipboard-style magazine layout, live RSS headlines, paywall routing and archive fallbacks.">
+  <meta name="application-name" content="Newsreader">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Newsreader">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to headlines</a>
+
+  <header class="app-header">
+    <div class="header-container">
+      <a class="brand-section" href="./" aria-label="Newsreader home">
+        <span class="brand-logo">
+          <img class="brand-logo-icon" src="./icons/icon.svg" width="32" height="32" alt="" aria-hidden="true">
+        </span>
+        <span class="brand-title">Newsreader</span>
+      </a>
+
+      <div class="header-menu-container">
+        <button id="menuToggleBtn" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="headerMenuDropdown" title="Menu">
+          <svg class="hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+
+        <div id="headerMenuDropdown" class="header-menu-dropdown" aria-hidden="true">
+          <div class="menu-section-header">Controls</div>
+
+          <button id="refreshBtn" class="menu-item-btn" type="button" title="Refresh headlines">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"></path>
+            </svg>
+            <span>Refresh headlines</span>
+          </button>
+
+          <button id="openQuickUrlBtn" class="menu-item-btn" type="button" title="Open or route any article URL">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <span>Open article URL</span>
+          </button>
+
+          <label class="menu-item-toggle" title="Hide paywalled stories with no archive copy">
+            <span class="menu-item-label-group">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="0"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Hide locked</span>
+            </span>
+            <input type="checkbox" id="hideLockedCheckbox" class="menu-checkbox">
+          </label>
+
+          <label class="menu-item-toggle" title="Check for new headlines automatically every few minutes">
+            <span class="menu-item-label-group">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+              <span>Auto-refresh (5 min)</span>
+            </span>
+            <input type="checkbox" id="autoRefreshCheckbox" class="menu-checkbox">
+          </label>
+
+          <div class="menu-divider" role="separator"></div>
+
+          <button id="openRulesBtn" class="menu-item-btn" type="button" title="Manage publisher reading rules">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+            <span>Paywall rules</span>
+          </button>
+
+          <button id="openCustomizeBtn" class="menu-item-btn" type="button" title="Customize topics and RSS sources">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="14" y2="12"></line>
+              <line x1="4" y1="18" x2="10" y2="18"></line>
+              <circle cx="18" cy="15" r="3"></circle>
+            </svg>
+            <span>Customize topics</span>
+          </button>
+
+          <button id="exportSettingsBtn" class="menu-item-btn" type="button" title="Export topics, sources and rules as JSON">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Export settings (JSON)</span>
+          </button>
+
+          <button id="installAppBtn" class="menu-item-btn" type="button" style="display: none;" title="Install Newsreader on this device">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+              <line x1="12" y1="18" x2="12" y2="18.01"></line>
+            </svg>
+            <span>Install app</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <button id="newStoriesBtn" class="new-stories-pill" type="button" hidden></button>
+
+  <main id="mainContent" class="feed-container">
+    <nav class="topics-bar" id="topicsBar" aria-label="News topics"></nav>
+
+    <div class="editorial-header">
+      <div class="editorial-header-text">
+        <h1 class="editorial-heading" id="editorialHeading">TOP STORIES</h1>
+        <div class="editorial-header-line" aria-hidden="true"></div>
+      </div>
+      <div class="editorial-header-actions" id="editorialActions">
+        <label class="visually-hidden" for="feedSortSelect">Sort headlines</label>
+        <div class="sort-select-wrapper">
+          <select id="feedSortSelect" class="sort-select" title="Sort headlines">
+            <option value="newest">Latest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <p id="feedStatus" class="feed-status-line" role="status" aria-live="polite" hidden></p>
+
+    <div id="loadingState" class="state-container" hidden>
+      <div class="state-heading-row">
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <h2 class="state-title">Fetching latest headlines</h2>
+      </div>
+      <p class="state-desc">Reaching publishers for your selected topic…</p>
+      <div class="skeleton-grid" aria-hidden="true">
+        <div class="skeleton-card skeleton-hero"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+
+    <div id="errorState" class="state-container" hidden>
+      <h2 class="state-title state-title-error">Unable to load headlines</h2>
+      <p id="errorMessage" class="state-desc"></p>
+      <button id="retryFeedBtn" type="button" class="btn-icon state-button">Try again</button>
+    </div>
+
+    <div id="filteredEmptyState" class="state-container" hidden>
+      <h2 class="state-title">All headlines are hidden</h2>
+      <p class="state-desc">Hide locked is on, and every headline in this topic is currently marked locked.</p>
+      <button id="showLockedHeadlinesBtn" type="button" class="btn-icon state-button">Show locked headlines</button>
+    </div>
+
+    <section id="feedList" class="feed-list" aria-label="Headlines" hidden></section>
+
+    <p id="feedUpdateStatus" class="feed-update-status" role="status" aria-live="polite" hidden></p>
+    <details id="feedSourcesDetails" class="feed-sources-details" hidden>
+      <summary id="feedSourcesSummary">Sources</summary>
+      <ul id="feedSourcesList" class="feed-sources-list"></ul>
+      <button id="retrySourcesBtn" type="button" class="form-btn form-btn-secondary">Retry sources</button>
+    </details>
+
+    <footer class="app-footer">
+      <span>Newsreader</span>
+      <span class="footer-sep" aria-hidden="true">·</span>
+      <span>Headlines link to their original publishers.</span>
+    </footer>
+  </main>
+
+  <!-- Paywall rules -->
+  <div id="rulesModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="rulesModalTitle" aria-hidden="true" inert>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="rulesModalTitle" class="modal-title">Publisher reading rules</h2>
+        <button id="closeRulesBtn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-intro">Choose how each publisher opens. Rules save on this device and apply immediately.</p>
+
+        <form id="addRuleForm" class="inline-form">
+          <label class="visually-hidden" for="inputRuleDomain">Publisher domain</label>
+          <input type="text" id="inputRuleDomain" class="form-input" placeholder="e.g. wsj.com" autocomplete="off" spellcheck="false" required>
+          <label class="visually-hidden" for="selectRuleStrategy">Reading rule</label>
+          <select id="selectRuleStrategy" class="form-select"></select>
+          <button type="submit" class="form-btn">Save rule</button>
+        </form>
+        <p id="ruleFormError" class="form-error" role="alert" hidden></p>
+
+        <div class="modal-filter-row">
+          <label class="visually-hidden" for="rulesSearch">Filter rules</label>
+          <input type="text" id="rulesSearch" class="form-input" placeholder="Filter publishers or domains…" autocomplete="off">
+          <span id="rulesCount" class="count-badge">0 rules</span>
+        </div>
+
+        <div id="rulesList" class="rules-list"></div>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-footer-left">
+          <button id="resetRulesBtn" class="btn-icon btn-danger" type="button">Reset to defaults</button>
+        </div>
+        <button id="closeRulesDoneBtn" class="btn-icon" type="button">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topics and sources -->
+  <div id="customizeModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="customizeModalTitle" aria-hidden="true" inert>
+    <div class="modal-content modal-content-wide">
+      <div class="modal-header">
+        <h2 id="customizeModalTitle" class="modal-title">Customize Newsreader</h2>
+        <button id="closeCustomizeBtn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-tabs" role="tablist" aria-label="Customize sections">
+        <button type="button" class="modal-tab-btn active" data-panel="topics" role="tab" aria-selected="true" id="tabTopics">Topics bar</button>
+        <button type="button" class="modal-tab-btn" data-panel="new-topic" role="tab" aria-selected="false" id="tabNewTopic">New topic</button>
+        <button type="button" class="modal-tab-btn" data-panel="sources" role="tab" aria-selected="false" id="tabSources">RSS sources</button>
+      </div>
+
+      <div class="modal-body">
+        <section id="panel-topics" class="modal-tab-panel active" role="tabpanel" aria-labelledby="tabTopics">
+          <div class="panel-heading">
+            <div>
+              <h3 class="panel-title">Topics bar</h3>
+              <p class="panel-hint">Choose what appears in the top bar. Reorder with the arrows. Custom topics can be deleted.</p>
+            </div>
+          </div>
+          <div id="topicsSettingsList" class="settings-list"></div>
+        </section>
+
+        <section id="panel-new-topic" class="modal-tab-panel" role="tabpanel" aria-labelledby="tabNewTopic" hidden>
+          <form id="addTopicForm" class="stack-form">
+            <div class="panel-heading">
+              <div>
+                <h3 class="panel-title">Create a topic</h3>
+                <p class="panel-hint">Keywords match headlines and summaries from the sources you choose.</p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="selectTopicPreset">Start from a preset (optional)</label>
+              <select id="selectTopicPreset" class="form-select">
+                <option value="">Choose a preset or write your own…</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="inputTopicLabel">Topic label</label>
+              <input type="text" id="inputTopicLabel" class="form-input" placeholder="e.g. Space &amp; Astronomy" maxlength="28" required>
+              <span class="form-hint">This is the name shown on the tab.</span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="inputTopicKeywords">Keywords and phrases</label>
+              <textarea id="inputTopicKeywords" class="form-input form-textarea" rows="2" placeholder="e.g. SpaceX, NASA, James Webb, astronomy"></textarea>
+              <span class="form-hint">Comma-separated. Leave empty to show everything from the selected sources.</span>
+            </div>
+
+            <div class="form-field">
+              <div class="source-checklist-header">
+                <span class="form-label">Sources to include</span>
+                <div class="source-quick-actions">
+                  <button type="button" id="selectVisibleSourcesBtn" class="text-button">Select visible</button>
+                  <span class="source-action-sep" aria-hidden="true">•</span>
+                  <button type="button" id="clearVisibleSourcesBtn" class="text-button">Clear visible</button>
+                </div>
+              </div>
+              <input type="search" id="topicSourceSearch" class="form-input source-filter-input" placeholder="Filter sources by name or domain…" autocomplete="off">
+              <div id="topicSourceChecklist" class="source-checklist"></div>
+            </div>
+
+            <p id="newTopicError" class="form-error" role="alert" hidden></p>
+
+            <button type="submit" id="newTopicSubmitBtn" class="form-btn form-btn-primary">
+              <span id="newTopicSpinner" class="btn-spinner" hidden aria-hidden="true"></span>
+              <span>Create topic</span>
+            </button>
+          </form>
+        </section>
+
+        <section id="panel-sources" class="modal-tab-panel" role="tabpanel" aria-labelledby="tabSources" hidden>
+          <form id="addSourceForm" class="stack-form compact-form">
+            <div class="panel-heading">
+              <div>
+                <h3 class="panel-title">Add a source</h3>
+                <p class="panel-hint">Paste any public RSS or Atom feed from a publication you trust.</p>
+              </div>
+            </div>
+            <div class="source-form-grid">
+              <div class="form-field">
+                <label class="form-label" for="inputSourceName">Publication name</label>
+                <input type="text" id="inputSourceName" class="form-input" placeholder="e.g. Ars Technica" required>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="inputSourceUrl">Feed URL</label>
+                <input type="url" id="inputSourceUrl" class="form-input" placeholder="https://example.com/feed/" required>
+              </div>
+            </div>
+            <p id="newSourceError" class="form-error" role="alert" hidden></p>
+            <button type="submit" class="form-btn">Add source</button>
+          </form>
+
+          <div class="library-section">
+            <div class="library-header">
+              <div>
+                <h3 class="panel-title">Source library</h3>
+                <p class="panel-hint">Unchecked sources are skipped everywhere. Preferences save on this device.</p>
+              </div>
+              <span id="sourcesCount" class="count-badge">0 sources</span>
+            </div>
+            <input type="search" id="sourceSearch" class="form-input source-filter-input" placeholder="Search the library…" autocomplete="off">
+            <p id="sourceLibraryStatus" class="form-hint" role="status" aria-live="polite"></p>
+            <div id="sourcesCatalog" class="sources-catalog"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-left">
+          <button id="exportSettingsModalBtn" class="btn-icon" type="button">Export JSON</button>
+        </div>
+        <button id="closeCustomizeDoneBtn" class="form-btn" type="button">Save &amp; close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Per-site strategy switcher -->
+  <div id="switcherModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="switcherTitle" aria-hidden="true" inert>
+    <div class="modal-content modal-content-narrow">
+      <div class="modal-header">
+        <div class="switcher-title-group">
+          <span id="switcherFavicon" class="favicon-fallback" aria-hidden="true">N</span>
+          <h2 id="switcherTitle" class="modal-title">Reading rule</h2>
+        </div>
+        <button id="closeSwitcherBtn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="switcher-desc">How should <strong id="switcherDomain">this site</strong> open?</p>
+        <div id="strategyOptionsList" class="strategy-options-list" role="radiogroup" aria-label="Reading rule"></div>
+      </div>
+      <div class="modal-footer">
+        <span id="switcherSavedNote" class="switcher-status-note" role="status" aria-live="polite"></span>
+        <button id="closeSwitcherDoneBtn" class="btn-icon" type="button">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick URL opener -->
+  <div id="quickUrlModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="quickUrlTitle" aria-hidden="true" inert>
+    <div class="modal-content modal-content-narrow">
+      <div class="modal-header">
+        <h2 id="quickUrlTitle" class="modal-title">Open an article</h2>
+        <button id="closeQuickUrlBtn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+      </div>
+      <form id="quickUrlForm" class="modal-body" novalidate>
+        <p class="modal-intro">Paste a link, review the reading tool, then open it.</p>
+
+        <div class="form-field">
+          <label class="form-label" for="inputQuickUrl">Article URL</label>
+          <div class="quick-url-input-box">
+            <input type="url" id="inputQuickUrl" class="form-input" placeholder="https://www.nytimes.com/… or wsj.com/…" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+            <button type="button" id="quickUrlPasteBtn" class="quick-url-inline-btn" title="Paste from clipboard">Paste</button>
+            <button type="button" id="quickUrlClearBtn" class="quick-url-clear-btn" title="Clear" hidden aria-label="Clear URL">&times;</button>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="quickUrlStrategySelect">Open with</label>
+          <select id="quickUrlStrategySelect" class="form-select"></select>
+          <p id="quickUrlHint" class="form-hint">Uses the saved rule for this publisher.</p>
+        </div>
+
+        <div id="quickUrlBanner" class="quick-url-domain-banner" hidden>
+          <div class="quick-url-domain-info">
+            <span id="quickUrlFavicon" class="favicon-fallback" aria-hidden="true">N</span>
+            <span id="quickUrlDomainName">example.com</span>
+            <span id="quickUrlBadge" class="badge badge-free">Free</span>
+          </div>
+          <span id="quickUrlRuleSource" class="quick-url-rule-tag">Default rule</span>
+        </div>
+
+        <div class="checkbox-row">
+          <label class="checkbox-label">
+            <input type="checkbox" id="quickUrlRemember" class="menu-checkbox">
+            <span>Remember this tool for <strong id="quickUrlRememberDomain">this site</strong></span>
+          </label>
+        </div>
+
+        <p id="quickUrlError" class="form-error" role="alert" hidden></p>
+      </form>
+      <div class="modal-footer">
+        <button type="button" id="closeQuickUrlDoneBtn" class="btn-icon">Cancel</button>
+        <button type="submit" form="quickUrlForm" id="quickUrlOpenBtn" class="form-btn form-btn-primary" disabled>Open article</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky live-radio / podcast player -->
+  <div id="audioDock" class="audio-dock" hidden>
+    <button id="dockPlayBtn" class="dock-play" type="button" aria-label="Play">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <div class="dock-info">
+      <span id="dockKicker" class="dock-kicker">Live radio</span>
+      <span id="dockTitle" class="dock-title">Station</span>
+    </div>
+    <span id="dockLive" class="dock-live">Live</span>
+    <div id="dockProgress" class="dock-progress">
+      <span id="dockCurrentTime" class="dock-time">0:00</span>
+      <input id="dockSeek" class="dock-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+      <span id="dockDuration" class="dock-time dock-time-end">0:00</span>
+    </div>
+    <button id="dockBackBtn" class="dock-skip" type="button" aria-label="Back 15 seconds">−15</button>
+    <button id="dockForwardBtn" class="dock-skip" type="button" aria-label="Forward 15 seconds">+15</button>
+    <label class="visually-hidden" for="dockRate">Playback speed</label>
+    <select id="dockRate" class="dock-rate">
+      <option value="1">1×</option>
+      <option value="1.25">1.25×</option>
+      <option value="1.5">1.5×</option>
+      <option value="2">2×</option>
+    </select>
+    <label class="visually-hidden" for="dockVolume">Volume</label>
+    <input id="dockVolume" class="dock-volume" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Volume">
+    <button id="dockCloseBtn" class="dock-close" type="button" aria-label="Close player">&times;</button>
+    <audio id="audioPlayer" preload="none"></audio>
+  </div>
+
+  <div id="appToast" class="toast" role="status" aria-live="polite" hidden>
+    <span id="toastMessage" class="toast-message"></span>
+    <a id="toastActionLink" class="toast-action-btn" target="_blank" rel="noopener noreferrer" hidden>Open article ↗</a>
+  </div>
+
+  <noscript>
+    <div class="noscript">Newsreader needs JavaScript to load headlines.</div>
+  </noscript>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
