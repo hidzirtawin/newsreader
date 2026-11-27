@@ -10,6 +10,7 @@ import {
   COUNTRY_TIMEZONES,
   LIVE_VIDEO_CHANNELS,
   RESEARCH_SPECIALTIES,
+  RESEARCH_FORMATS,
   getCountryDesk,
   RADIO_STATIONS,
   PODCAST_SHOWS,
@@ -73,11 +74,19 @@ const els = {
   topicsBar: $('#topicsBar'),
   sportsSubnav: $('#sportsSubnav'),
   researchSubnav: $('#researchSubnav'),
+  researchFormatNav: $('#researchFormatNav'),
+  calculatorModal: $('#calculatorModal'),
+  calculatorSelect: $('#calculatorSelect'),
+  calculatorForm: $('#calculatorForm'),
+  calculatorFields: $('#calculatorFields'),
+  calculatorResult: $('#calculatorResult'),
+  closeCalculatorBtn: $('#closeCalculatorBtn'),
   editorialHeading: $('#editorialHeading'),
   feedSortSelect: $('#feedSortSelect'),
   countrySelectWrapper: $('#countrySelectWrapper'),
   countryDeskSelect: $('#countryDeskSelect'),
   countryLayoutBtn: $('#countryLayoutBtn'),
+  researchCalcBtn: $('#researchCalcBtn'),
   marketPanel: $('#marketPanel'),
   videoModal: $('#videoModal'),
   videoFrame: $('#videoFrame'),
@@ -235,6 +244,8 @@ const state = {
   countryLayout: 'list',
   marketWidgetKey: '',
   researchSpecialty: 'all',
+  researchFormat: 'all',
+  calculatorId: 'bmi',
   marketMoversLoaded: false,
   marketStatusTimer: null,
   videoOpen: false,
@@ -432,6 +443,11 @@ function cleanSourceLabel(value) {
   const name = String(value || '').trim();
   if (/^ABC News\s*&\s*Headlines/i.test(name)) return 'ABC News Australia';
   if (/^Yahoo News\b/i.test(name)) return 'Yahoo News';
+  if (/^Centers for Disease Control/i.test(name)) return 'CDC';
+  if (/^National Institutes of Health/i.test(name)) return 'NIH';
+  if (/^World Health Organization/i.test(name)) return 'WHO';
+  if (/^Food and Drug Administration/i.test(name)) return 'FDA';
+  if (/^National Health Service/i.test(name)) return 'NHS';
   return name;
 }
 
@@ -1523,6 +1539,39 @@ function matchesResearchSpecialty(article, specialty = activeResearchSpecialty()
   return specialty.keywords.some((keyword) => text.includes(keyword));
 }
 
+function activeResearchFormat() {
+  return RESEARCH_FORMATS.find((item) => item.id === state.researchFormat) || RESEARCH_FORMATS[0];
+}
+
+function matchesResearchFormat(article, format = activeResearchFormat()) {
+  if (!format || format.id === 'all') return true;
+  const text = `${article.title || ''} ${article.summary || ''}`.toLowerCase();
+  return format.keywords.some((keyword) => text.includes(keyword));
+}
+
+function matchesResearchArticle(article) {
+  return matchesResearchSpecialty(article) && matchesResearchFormat(article);
+}
+
+function renderResearchFormatNav(topic = null) {
+  const current = topic || getTopic(state.topicId);
+  const show = Boolean(current?.research);
+  if (!show) {
+    els.researchFormatNav.hidden = true;
+    els.researchFormatNav.innerHTML = '';
+    return;
+  }
+  els.researchFormatNav.innerHTML = RESEARCH_FORMATS.map((item) => (
+    `<button type="button" class="sports-pill${item.id === state.researchFormat ? ' active' : ''}" data-research-format="${esc(item.id)}">${esc(item.label)}</button>`
+  )).join('');
+  els.researchFormatNav.hidden = false;
+  const active = els.researchFormatNav.querySelector('.sports-pill.active');
+  if (active) {
+    const left = active.offsetLeft - (els.researchFormatNav.clientWidth / 2) + (active.clientWidth / 2);
+    els.researchFormatNav.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+  }
+}
+
 function renderResearchNav(topic = null) {
   const current = topic || getTopic(state.topicId);
   const show = Boolean(current?.research);
@@ -1555,12 +1604,297 @@ function researchListMarkup(articles) {
       <span class="headline-rank">${index + 1}</span>
       <div class="headline-content">
         <h2 class="headline-title">${esc(article.title)}</h2>
-        ${summary ? `<p class="research-summary">${esc(summary.slice(0, 240))}</p>` : ''}
-        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span></div>
+        ${summary ? `<p class="research-summary">${esc(summary.slice(0, 320))}</p>` : ''}
+        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span>${activeResearchFormat().id === 'all' ? '' : `<span class="research-tag research-format-tag">${esc(activeResearchFormat().label.toUpperCase())}</span>`}</div>
       </div>
     </article>`;
   }).join('');
   return `${note}<div class="headline-list">${rows}</div><p class="research-disclaimer">Abstracts come from the publisher. Read the full paper before relying on any finding. This is not medical advice.</p>`;
+}
+
+
+const CALCULATORS = [
+  {
+    id: 'bmi',
+    name: 'BMI',
+    fields: [
+      { id: 'weight', label: 'Weight (kg)', type: 'number', value: 70, min: 1, step: 0.1 },
+      { id: 'height', label: 'Height (cm)', type: 'number', value: 170, min: 50, step: 0.1 },
+    ],
+    compute(v) {
+      const weight = Number(v.weight);
+      const height = Number(v.height) / 100;
+      if (!weight || !height) return null;
+      const bmi = weight / (height * height);
+      const detail = bmi < 18.5 ? 'Underweight' : bmi < 25 ? 'Normal weight' : bmi < 30 ? 'Overweight' : 'Obesity';
+      return { value: `${bmi.toFixed(1)} kg/m²`, detail };
+    },
+  },
+  {
+    id: 'bsa',
+    name: 'Body surface area (Du Bois)',
+    fields: [
+      { id: 'weight', label: 'Weight (kg)', type: 'number', value: 70, min: 1, step: 0.1 },
+      { id: 'height', label: 'Height (cm)', type: 'number', value: 170, min: 50, step: 0.1 },
+    ],
+    compute(v) {
+      const weight = Number(v.weight);
+      const height = Number(v.height);
+      if (!weight || !height) return null;
+      const bsa = 0.007184 * Math.pow(height, 0.725) * Math.pow(weight, 0.425);
+      return { value: `${bsa.toFixed(2)} m²`, detail: 'Du Bois formula' };
+    },
+  },
+  {
+    id: 'egfr',
+    name: 'eGFR (CKD-EPI 2021)',
+    fields: [
+      { id: 'age', label: 'Age (years)', type: 'number', value: 50, min: 18, max: 120, step: 1 },
+      { id: 'sex', label: 'Sex', type: 'select', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }] },
+      { id: 'creatinine', label: 'Creatinine (mg/dL)', type: 'number', value: 1, min: 0.1, step: 0.01 },
+    ],
+    compute(v) {
+      const age = Number(v.age);
+      const creatinine = Number(v.creatinine);
+      if (!age || !creatinine) return null;
+      const female = v.sex === 'female';
+      const k = female ? 0.7 : 0.9;
+      const alpha = female ? -0.241 : -0.302;
+      const egfr = 142
+        * Math.pow(Math.min(creatinine / k, 1), alpha)
+        * Math.pow(Math.max(creatinine / k, 1), -1.2)
+        * Math.pow(0.9938, age);
+      const stage = egfr >= 90 ? 'G1' : egfr >= 60 ? 'G2' : egfr >= 45 ? 'G3a' : egfr >= 30 ? 'G3b' : egfr >= 15 ? 'G4' : 'G5';
+      return { value: `${egfr.toFixed(0)} mL/min/1.73m²`, detail: `CKD stage ${stage} · CKD-EPI 2021` };
+    },
+  },
+  {
+    id: 'cha2ds2-vasc',
+    name: 'CHA₂DS₂-VASc',
+    fields: [
+      { id: 'age', label: 'Age (years)', type: 'number', value: 70, min: 18, max: 120, step: 1 },
+      { id: 'sex', label: 'Sex', type: 'select', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }] },
+      { id: 'chf', label: 'Congestive heart failure', type: 'checkbox' },
+      { id: 'hypertension', label: 'Hypertension', type: 'checkbox' },
+      { id: 'diabetes', label: 'Diabetes', type: 'checkbox' },
+      { id: 'stroke', label: 'Prior stroke / TIA / thromboembolism', type: 'checkbox' },
+      { id: 'vascular', label: 'Vascular disease', type: 'checkbox' },
+    ],
+    compute(v) {
+      const age = Number(v.age);
+      let score = 0;
+      if (age >= 75) score += 2;
+      else if (age >= 65) score += 1;
+      if (v.sex === 'female') score += 1;
+      if (v.chf) score += 1;
+      if (v.hypertension) score += 1;
+      if (v.diabetes) score += 1;
+      if (v.stroke) score += 2;
+      if (v.vascular) score += 1;
+      return { value: `${score} / 9`, detail: 'Higher scores mean higher stroke risk; anticoagulation decisions follow current guidelines.' };
+    },
+  },
+  {
+    id: 'has-bled',
+    name: 'HAS-BLED',
+    fields: [
+      { id: 'hypertension', label: 'Uncontrolled hypertension', type: 'checkbox' },
+      { id: 'renal', label: 'Abnormal renal function', type: 'checkbox' },
+      { id: 'liver', label: 'Abnormal liver function', type: 'checkbox' },
+      { id: 'stroke', label: 'Prior stroke', type: 'checkbox' },
+      { id: 'bleeding', label: 'Bleeding history or predisposition', type: 'checkbox' },
+      { id: 'labile', label: 'Labile INR', type: 'checkbox' },
+      { id: 'elderly', label: 'Age > 65', type: 'checkbox' },
+      { id: 'drugs', label: 'Drugs that increase bleeding', type: 'checkbox' },
+      { id: 'alcohol', label: 'Alcohol excess', type: 'checkbox' },
+    ],
+    compute(v) {
+      const score = ['hypertension', 'renal', 'liver', 'stroke', 'bleeding', 'labile', 'elderly', 'drugs', 'alcohol']
+        .reduce((total, key) => total + (v[key] ? 1 : 0), 0);
+      return { value: `${score} / 9`, detail: score >= 3 ? 'High bleeding risk — address modifiable factors.' : 'Lower bleeding risk.' };
+    },
+  },
+  {
+    id: 'curb-65',
+    name: 'CURB-65',
+    fields: [
+      { id: 'confusion', label: 'Confusion', type: 'checkbox' },
+      { id: 'urea', label: 'Urea > 7 mmol/L', type: 'checkbox' },
+      { id: 'rr', label: 'Respiratory rate ≥ 30/min', type: 'checkbox' },
+      { id: 'bp', label: 'SBP < 90 or DBP ≤ 60 mmHg', type: 'checkbox' },
+      { id: 'age', label: 'Age ≥ 65', type: 'checkbox' },
+    ],
+    compute(v) {
+      const score = ['confusion', 'urea', 'rr', 'bp', 'age'].reduce((total, key) => total + (v[key] ? 1 : 0), 0);
+      const detail = score <= 1 ? 'Low severity' : score === 2 ? 'Moderate severity' : 'High severity';
+      return { value: `${score} / 5`, detail: `${detail} · use local pneumonia pathways.` };
+    },
+  },
+  {
+    id: 'wells-dvt',
+    name: 'Wells score — DVT',
+    fields: [
+      { id: 'cancer', label: 'Active cancer', type: 'checkbox' },
+      { id: 'paralysis', label: 'Paralysis, paresis or recent plaster', type: 'checkbox' },
+      { id: 'bedridden', label: 'Bedridden > 3 days or major surgery < 12 weeks', type: 'checkbox' },
+      { id: 'tenderness', label: 'Localised tenderness along deep veins', type: 'checkbox' },
+      { id: 'swollen', label: 'Entire leg swollen', type: 'checkbox' },
+      { id: 'calf', label: 'Calf swelling > 3 cm', type: 'checkbox' },
+      { id: 'edema', label: 'Pitting oedema', type: 'checkbox' },
+      { id: 'collateral', label: 'Collateral superficial veins', type: 'checkbox' },
+      { id: 'previous', label: 'Previous DVT', type: 'checkbox' },
+      { id: 'alternative', label: 'Alternative diagnosis as likely or more likely', type: 'checkbox' },
+    ],
+    compute(v) {
+      let score = ['cancer', 'paralysis', 'bedridden', 'tenderness', 'swollen', 'calf', 'edema', 'collateral', 'previous']
+        .reduce((total, key) => total + (v[key] ? 1 : 0), 0);
+      if (v.alternative) score -= 2;
+      const detail = score <= 0 ? 'Low probability' : score <= 2 ? 'Moderate probability' : 'High probability';
+      return { value: `${score}`, detail };
+    },
+  },
+  {
+    id: 'wells-pe',
+    name: 'Wells score — PE',
+    fields: [
+      { id: 'dvt', label: 'Clinical signs of DVT', type: 'checkbox' },
+      { id: 'likely', label: 'PE most likely diagnosis', type: 'checkbox' },
+      { id: 'hr', label: 'Heart rate > 100/min', type: 'checkbox' },
+      { id: 'immobilisation', label: 'Immobilisation or surgery in past 4 weeks', type: 'checkbox' },
+      { id: 'previous', label: 'Previous DVT / PE', type: 'checkbox' },
+      { id: 'hemoptysis', label: 'Haemoptysis', type: 'checkbox' },
+      { id: 'malignancy', label: 'Active malignancy', type: 'checkbox' },
+    ],
+    compute(v) {
+      let score = 0;
+      if (v.dvt) score += 3;
+      if (v.likely) score += 3;
+      if (v.hr) score += 1.5;
+      if (v.immobilisation) score += 1.5;
+      if (v.previous) score += 1.5;
+      if (v.hemoptysis) score += 1;
+      if (v.malignancy) score += 1;
+      const detail = score < 2 ? 'Low probability' : score <= 6 ? 'Moderate probability' : 'High probability';
+      return { value: `${score}`, detail };
+    },
+  },
+  {
+    id: 'qsofa',
+    name: 'qSOFA',
+    fields: [
+      { id: 'rr', label: 'Respiratory rate ≥ 22/min', type: 'checkbox' },
+      { id: 'sbp', label: 'Systolic BP ≤ 100 mmHg', type: 'checkbox' },
+      { id: 'gcs', label: 'GCS < 15', type: 'checkbox' },
+    ],
+    compute(v) {
+      const score = ['rr', 'sbp', 'gcs'].reduce((total, key) => total + (v[key] ? 1 : 0), 0);
+      return { value: `${score} / 3`, detail: score >= 2 ? 'High risk — assess for sepsis urgently.' : 'Lower risk.' };
+    },
+  },
+  {
+    id: 'map',
+    name: 'Mean arterial pressure',
+    fields: [
+      { id: 'sbp', label: 'Systolic BP (mmHg)', type: 'number', value: 120, min: 40, step: 1 },
+      { id: 'dbp', label: 'Diastolic BP (mmHg)', type: 'number', value: 80, min: 20, step: 1 },
+    ],
+    compute(v) {
+      const sbp = Number(v.sbp);
+      const dbp = Number(v.dbp);
+      if (!sbp || !dbp) return null;
+      const map = (sbp + 2 * dbp) / 3;
+      return { value: `${map.toFixed(0)} mmHg`, detail: map < 65 ? 'MAP < 65 — urgent review.' : 'MAP ≥ 65.' };
+    },
+  },
+  {
+    id: 'anion-gap',
+    name: 'Anion gap',
+    fields: [
+      { id: 'sodium', label: 'Sodium (mmol/L)', type: 'number', value: 140, min: 80, step: 1 },
+      { id: 'chloride', label: 'Chloride (mmol/L)', type: 'number', value: 100, min: 50, step: 1 },
+      { id: 'bicarbonate', label: 'Bicarbonate (mmol/L)', type: 'number', value: 24, min: 2, step: 1 },
+    ],
+    compute(v) {
+      const na = Number(v.sodium);
+      const cl = Number(v.chloride);
+      const hco3 = Number(v.bicarbonate);
+      if (!na || !cl || !hco3) return null;
+      const gap = na - (cl + hco3);
+      return { value: `${gap.toFixed(0)} mmol/L`, detail: 'Typical reference 8–12 mmol/L (without potassium).' };
+    },
+  },
+  {
+    id: 'corrected-calcium',
+    name: 'Corrected calcium',
+    fields: [
+      { id: 'calcium', label: 'Measured calcium (mg/dL)', type: 'number', value: 9, min: 1, step: 0.1 },
+      { id: 'albumin', label: 'Albumin (g/dL)', type: 'number', value: 4, min: 0.5, step: 0.1 },
+    ],
+    compute(v) {
+      const calcium = Number(v.calcium);
+      const albumin = Number(v.albumin);
+      if (!calcium || !albumin) return null;
+      const corrected = calcium + 0.8 * (4 - albumin);
+      return { value: `${corrected.toFixed(1)} mg/dL`, detail: 'Corrected for albumin.' };
+    },
+  },
+  {
+    id: 'maintenance-fluids',
+    name: 'Maintenance fluids (4-2-1)',
+    fields: [
+      { id: 'weight', label: 'Weight (kg)', type: 'number', value: 70, min: 1, step: 0.1 },
+    ],
+    compute(v) {
+      const weight = Number(v.weight);
+      if (!weight) return null;
+      const rate = 4 * Math.min(weight, 10) + 2 * Math.min(Math.max(weight - 10, 0), 10) + Math.max(weight - 20, 0);
+      return { value: `${rate.toFixed(0)} mL/hour`, detail: 'Holliday-Segar 4-2-1 estimate. Adjust in practice.' };
+    },
+  },
+];
+
+function renderCalculator(id) {
+  const calc = CALCULATORS.find((item) => item.id === id) || CALCULATORS[0];
+  state.calculatorId = calc.id;
+  if (els.calculatorSelect) els.calculatorSelect.value = calc.id;
+  if (!els.calculatorFields) return;
+  els.calculatorFields.innerHTML = calc.fields.map((field) => {
+    if (field.type === 'checkbox') {
+      return `<label class="calc-check"><input type="checkbox" name="${esc(field.id)}"><span>${esc(field.label)}</span></label>`;
+    }
+    if (field.type === 'select') {
+      return `<label class="calc-field"><span>${esc(field.label)}</span><select class="form-select" name="${esc(field.id)}">${field.options.map((option) => `<option value="${esc(option.value)}">${esc(option.label)}</option>`).join('')}</select></label>`;
+    }
+    return `<label class="calc-field"><span>${esc(field.label)}</span><input class="form-input" type="number" name="${esc(field.id)}" value="${esc(field.value)}" min="${esc(field.min ?? '')}" max="${esc(field.max ?? '')}" step="${esc(field.step ?? 'any')}"></label>`;
+  }).join('');
+  calculate();
+}
+
+function readCalculatorValues(calc) {
+  const values = {};
+  for (const field of calc.fields) {
+    const input = els.calculatorForm?.elements?.[field.id];
+    values[field.id] = field.type === 'checkbox' ? Boolean(input?.checked) : input?.value;
+  }
+  return values;
+}
+
+function calculate() {
+  const calc = CALCULATORS.find((item) => item.id === state.calculatorId) || CALCULATORS[0];
+  const result = calc.compute(readCalculatorValues(calc));
+  if (!els.calculatorResult) return;
+  els.calculatorResult.innerHTML = result
+    ? `<strong>${esc(result.value)}</strong><span>${esc(result.detail)}</span>`
+    : '<span>Enter the required values.</span>';
+}
+
+function openCalculators() {
+  if (!els.calculatorModal) return;
+  if (els.calculatorSelect) {
+    els.calculatorSelect.innerHTML = CALCULATORS.map((calc) => `<option value="${esc(calc.id)}">${esc(calc.name)}</option>`).join('');
+  }
+  renderCalculator(state.calculatorId);
+  openModal(els.calculatorModal);
 }
 
 function updateTopicHeader(topic) {
@@ -1569,10 +1903,12 @@ function updateTopicHeader(topic) {
   document.title = `${topic.title || topic.label} | Tawin Newsreader`;
   renderMarketPanel(topic);
   renderResearchNav(topic);
+  renderResearchFormatNav(topic);
   els.feedSortSelect.value = state.sort;
   const countryDesk = COUNTRY_DESKS.find((desk) => desk.topic === topic.id) || null;
   if (els.countrySelectWrapper) els.countrySelectWrapper.hidden = !topic.country;
   if (countryDesk && els.countryDeskSelect) els.countryDeskSelect.value = countryDesk.code;
+  if (els.researchCalcBtn) els.researchCalcBtn.hidden = !topic.research;
   if (els.countryLayoutBtn) {
     els.countryLayoutBtn.hidden = !topic.country;
     els.countryLayoutBtn.textContent = state.countryLayout === 'list' ? 'Magazine view' : 'Headlines';
@@ -1696,7 +2032,7 @@ function renderFeed() {
   const visible = state.hideLocked ? curated.filter((article) => article.status !== 'locked') : curated;
   const researchMode = Boolean(activeTopic?.research);
   const researchVisible = researchMode
-    ? visible.filter((article) => matchesResearchSpecialty(article))
+    ? visible.filter((article) => matchesResearchArticle(article))
     : visible;
 
   if (!curated.length) {
@@ -1755,7 +2091,7 @@ function visibleStoryCount() {
   const briefFiltered = showBriefs ? curated : curated.filter((article) => !article.briefOnly);
   const topic = getTopic(state.topicId);
   const filtered = filterTopicCategories(briefFiltered, topic);
-  return topic?.research ? filtered.filter((article) => matchesResearchSpecialty(article)).length : filtered.length;
+  return topic?.research ? filtered.filter((article) => matchesResearchArticle(article)).length : filtered.length;
 }
 
 function updateStatusLine() {
@@ -2968,6 +3304,10 @@ els.sportsSubnav.addEventListener('click', (event) => {
 });
 
 els.researchSubnav?.addEventListener('click', (event) => {
+  if (event.target.closest('[data-open-calculators]')) {
+    openCalculators();
+    return;
+  }
   const pill = event.target.closest('[data-research-specialty]');
   if (!pill) return;
   state.researchSpecialty = pill.dataset.researchSpecialty;
@@ -2976,6 +3316,21 @@ els.researchSubnav?.addEventListener('click', (event) => {
   updateStatusLine();
 });
 
+els.researchFormatNav?.addEventListener('click', (event) => {
+  const pill = event.target.closest('[data-research-format]');
+  if (!pill) return;
+  state.researchFormat = pill.dataset.researchFormat;
+  renderResearchFormatNav(getTopic(state.topicId));
+  renderFeed();
+  updateStatusLine();
+});
+
+els.calculatorSelect?.addEventListener('change', () => renderCalculator(els.calculatorSelect.value));
+els.calculatorForm?.addEventListener('input', calculate);
+els.calculatorForm?.addEventListener('change', calculate);
+els.calculatorForm?.addEventListener('submit', (event) => event.preventDefault());
+els.closeCalculatorBtn?.addEventListener('click', () => closeModal(els.calculatorModal));
+
 els.sourceBackBtn.addEventListener('click', () => {
   loadTopic(state.sourceReturnTopic || state.topicId);
 });
@@ -2983,6 +3338,8 @@ els.sourceBackBtn.addEventListener('click', () => {
 els.countryDeskSelect?.addEventListener('change', () => {
   openCountryDesk(els.countryDeskSelect.value);
 });
+
+els.researchCalcBtn?.addEventListener('click', openCalculators);
 
 els.countryLayoutBtn?.addEventListener('click', () => {
   state.countryLayout = state.countryLayout === 'list' ? 'magazine' : 'list';
@@ -3228,6 +3585,7 @@ function renderTopicsSettings() {
 function renderTopicSourceChecklist() {
   const query = state.newTopicSearch.trim().toLowerCase();
   const feeds = allFeeds().filter((feed) => {
+    if (feed.aggregator) return false;
     if (!query) return true;
     return feed.name.toLowerCase().includes(query) || feed.domain.toLowerCase().includes(query);
   });
@@ -3254,12 +3612,13 @@ function renderSourcesCatalog() {
   const settings = getSettings();
   const disabled = new Set(settings.disabledFeeds);
   const query = state.sourceSearch.trim().toLowerCase();
-  const feeds = allFeeds().filter((feed) => {
+  const catalogFeeds = allFeeds().filter((feed) => !feed.aggregator);
+  const feeds = catalogFeeds.filter((feed) => {
     if (!query) return true;
     return feed.name.toLowerCase().includes(query) || feed.domain.toLowerCase().includes(query);
   });
-  const enabledCount = allFeeds().filter((feed) => !disabled.has(feed.id)).length;
-  els.sourcesCount.textContent = `${enabledCount}/${allFeeds().length} enabled`;
+  const enabledCount = catalogFeeds.filter((feed) => !disabled.has(feed.id)).length;
+  els.sourcesCount.textContent = `${enabledCount}/${catalogFeeds.length} enabled`;
   if (!feeds.length) {
     els.sourcesCatalog.innerHTML = '<p class="source-empty">No sources match that filter.</p>';
     return;

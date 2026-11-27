@@ -916,6 +916,7 @@ export const COUNTRY_DESKS = COUNTRY_DESK_CONFIG.map((desk) => {
     group: desk.name,
     url: `https://news.google.com/rss?gl=${desk.code}&hl=en-US&ceid=${desk.code}:en`,
     googleNews: true,
+    aggregator: true,
   });
   if (!EXISTING_COUNTRY_TOPICS.has(topicId)) {
     TOPICS.push({
@@ -973,6 +974,17 @@ const RESEARCH_FEEDS = [
   { id: 'lancet', name: 'The Lancet', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lancet_current.xml' },
   { id: 'lancet-global', name: 'Lancet Global Health', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/langlo_current.xml' },
   { id: 'lancet-digital', name: 'Lancet Digital Health', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/landig_current.xml' },
+  { id: 'lancet-oncology', name: 'Lancet Oncology', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanonc_current.xml' },
+  { id: 'lancet-neurology', name: 'Lancet Neurology', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/laneur_current.xml' },
+  { id: 'lancet-psychiatry', name: 'Lancet Psychiatry', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanpsy_current.xml' },
+  { id: 'lancet-public-health', name: 'Lancet Public Health', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanpub_current.xml' },
+  { id: 'lancet-diabetes', name: 'Lancet Diabetes & Endocrinology', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/landia_current.xml' },
+  { id: 'lancet-hiv', name: 'Lancet HIV', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanhiv_current.xml' },
+  { id: 'lancet-rheumatology', name: 'Lancet Rheumatology', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanrhe_current.xml' },
+  { id: 'lancet-gastro', name: 'Lancet Gastroenterology & Hepatology', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/langas_current.xml' },
+  { id: 'lancet-child', name: 'Lancet Child & Adolescent Health', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanchi_current.xml' },
+  { id: 'lancet-respiratory', name: 'Lancet Respiratory Medicine', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lanres_current.xml' },
+  { id: 'lancet-infectious', name: 'Lancet Infectious Diseases', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/laninf_current.xml' },
   { id: 'ebiomedicine', name: 'eBioMedicine', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/ebiom_current.xml' },
   { id: 'bmj', name: 'The BMJ', domain: 'bmj.com', group: 'Research', url: 'https://www.bmj.com/rss.xml' },
   { id: 'plos-medicine', name: 'PLOS Medicine', domain: 'journals.plos.org', group: 'Research', url: 'https://journals.plos.org/plosmedicine/feed/atom' },
@@ -998,14 +1010,28 @@ const RESEARCH_TOPIC = {
   research: true,
   limit: 48,
   feeds: [
-    'lancet', 'lancet-global', 'lancet-digital', 'ebiomedicine', 'bmj', 'plos-medicine',
-    'nejm', 'nature-medicine', 'annals-internal-medicine', 'jama', 'cdc-research',
+    'lancet', 'lancet-global', 'lancet-digital', 'lancet-oncology', 'lancet-neurology',
+    'lancet-psychiatry', 'lancet-public-health', 'lancet-diabetes', 'lancet-hiv',
+    'lancet-rheumatology', 'lancet-gastro', 'lancet-child', 'lancet-respiratory',
+    'lancet-infectious', 'ebiomedicine', 'bmj', 'plos-medicine', 'nejm', 'nature-medicine',
+    'annals-internal-medicine', 'jama', 'cdc-research',
     'nih-research', 'bmc-medicine', 'jacc', 'circulation', 'who-news', 'kff-health',
     'medical-xpress', 'sciencedaily', 'mayo-clinic', 'cleveland-clinic', 'medical-news-today',
   ],
 };
 const healthIndex = TOPICS.findIndex((topic) => topic.id === 'health');
 TOPICS.splice(healthIndex === -1 ? TOPICS.length : healthIndex + 1, 0, RESEARCH_TOPIC);
+
+export const RESEARCH_FORMATS = [
+  { id: 'all', label: 'All formats', keywords: [] },
+  { id: 'trials', label: 'Trials', keywords: ['randomised', 'randomized', 'trial', 'phase 2', 'phase 3', 'phase ii', 'phase iii', 'placebo', 'intervention group', 'hazard ratio', 'primary endpoint'] },
+  { id: 'meta', label: 'Meta-analyses', keywords: ['meta-analysis', 'systematic review', 'pooled analysis'] },
+  { id: 'guidelines', label: 'Guidelines', keywords: ['guideline', 'consensus', 'recommendation', 'position statement', 'practice parameter'] },
+  { id: 'reviews', label: 'Reviews', keywords: ['review', 'overview', 'perspective'] },
+  { id: 'observational', label: 'Observational', keywords: ['cohort', 'cross-sectional', 'case-control', 'registry', 'survey', 'population study'] },
+  { id: 'case-reports', label: 'Case reports', keywords: ['case report', 'case series'] },
+  { id: 'basic', label: 'Basic science', keywords: ['mice', 'mouse', 'in vitro', 'cell', 'molecular', 'gene', 'organoid', 'biomarker', 'protein', 'receptor'] },
+];
 
 export const RESEARCH_SPECIALTIES = [
   { id: 'all', label: 'All research', keywords: [] },

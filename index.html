@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
-  <link rel="stylesheet" href="./css/styles.css?v=37">
+  <link rel="stylesheet" href="./css/styles.css?v=38">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to headlines</a>
@@ -140,6 +140,7 @@
     <nav class="topics-bar" id="topicsBar" aria-label="News topics"></nav>
     <nav class="sports-subnav" id="sportsSubnav" aria-label="Sport categories" hidden></nav>
     <nav class="sports-subnav research-subnav" id="researchSubnav" aria-label="Research specialties" hidden></nav>
+    <nav class="sports-subnav research-subnav research-format-nav" id="researchFormatNav" aria-label="Research formats" hidden></nav>
 
     <div class="editorial-header">
       <div class="editorial-header-text">
@@ -147,6 +148,7 @@
         <div class="editorial-header-line" aria-hidden="true"></div>
       </div>
       <div class="editorial-header-actions" id="editorialActions">
+        <button id="researchCalcBtn" class="country-layout-btn" type="button" hidden>Calculators</button>
         <button id="countryLayoutBtn" class="country-layout-btn" type="button" hidden>Magazine view</button>
         <div class="country-select-wrapper" id="countrySelectWrapper" hidden>
           <label class="visually-hidden" for="countryDeskSelect">Country desk</label>
@@ -473,6 +475,24 @@
       </article>
     </div>
   </section>
+
+  <div id="calculatorModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="calculatorTitle" aria-hidden="true" inert>
+    <div class="modal-content calculator-modal">
+      <div class="modal-header">
+        <h2 id="calculatorTitle" class="modal-title">Medical calculators</h2>
+        <button id="closeCalculatorBtn" class="modal-close" type="button" aria-label="Close calculators">&times;</button>
+      </div>
+      <div class="modal-body">
+        <label class="form-label" for="calculatorSelect">Calculator</label>
+        <select id="calculatorSelect" class="form-select"></select>
+        <form id="calculatorForm" class="calc-form">
+          <div id="calculatorFields" class="calc-fields"></div>
+        </form>
+        <div id="calculatorResult" class="calc-result" role="status" aria-live="polite"></div>
+        <p class="calc-disclaimer">For education only. These tools do not replace clinical judgement, local protocols or validated decision support. Do not use them for emergency decision-making.</p>
+      </div>
+    </div>
+  </div>
 
   <div id="videoModal" class="video-modal" hidden>
     <div class="video-modal-backdrop" data-close-video></div>

@@ -1558,5 +1558,49 @@
   "https://www.sciencedaily.com/releases/2026/11/261125045246.htm": {
     "imageUrl": "https://www.sciencedaily.com/images/1920/tired-warehouse-worker.webp",
     "at": 1795774413138
+  },
+  "https://www.cnbc.com/2026/11/27/china-chip-stocks-beijing-market-support.html": {
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108316445-1780531868664-gettyimages-2267522618-Stock_Market.jpeg?v=1780531885&w=1920&h=1080",
+    "at": 1795775055676
+  },
+  "https://www.cnbc.com/2026/11/27/rheinmetall-stock-cmd-guidance-sales.html": {
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108191734-1756364310897-gettyimages-2231659141-_mma9642.jpeg?v=1756364320&w=1920&h=1080",
+    "at": 1795775055852
+  },
+  "https://www.bloomberg.com/news/videos/2026-11-27/rwanda-wins-f1-hosting-rights-in-bet-on-tourism-video": {
+    "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioTTVQE0Eze0/v3/500x-1.webp",
+    "at": 1795775056073
+  },
+  "https://www.channelnewsasia.com/singapore/real-income-growth-slow-non-pmet-unemployment-labour-report-mom-6585161": {
+    "imageUrl": "https://dam.mediacorp.sg/image/upload/s--6PkiMArk--/c_crop,h_1125,w_2000,x_0,y_169/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/10/20/_wal8747.jpg?itok=gH8sf9sT",
+    "at": 1795775056280
+  },
+  "https://www.beritaharian.sg/singapura/rakyat-spura-memerlukan-terima-bantuan-rekod-175j-medifund-sepanjang-tahun-kewangan-lalu": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/7f786243ed7f629530d341a000fd5b96f1aa139816db046ab4ec5e07a59dc10a?t=og",
+    "at": 1795775056319
+  },
+  "https://www.straitstimes.com/asia/south-asia/fleeing-murder-suspect-crashes-into-elephant-in-sri-lanka": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/070fef30021d71a30627778e18779efbf3e518ba114283b4ece02aa4d54e98e4?t=og",
+    "at": 1795775056433
+  },
+  "https://www.straitstimes.com/asia/downfall-of-shanghai-party-chief-opens-route-to-pinnacle-of-politics": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/9d96545eb0c733a5a78cfaec97e43d0eb70c7d931d0b0ac71439546c95b6c3fb?t=og",
+    "at": 1795775056537
+  },
+  "https://www.jpost.com/israel-news/politics-and-diplomacy/article-916257": {
+    "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748130",
+    "at": 1795775057077
+  },
+  "https://www.who.int/news/item/26-11-2026-who-director-general-visits-haiti--announces-usd1-million-in-support-for-critical-hospital-equipment": {
+    "imageUrl": "https://cdn.who.int/media/images/default-source/topics/health-systems-and-interventions/primary-health-care/who-dg-dr-tedros-visit-to-haiti.tmb-1200v.jpg?sfvrsn=ca107c45_1",
+    "at": 1795775059888
+  },
+  "https://www.sciencedaily.com/releases/2026/11/261126063315.htm": {
+    "imageUrl": "https://www.sciencedaily.com/images/1920/success-strength-boost.webp",
+    "at": 1795775060392
+  },
+  "https://www.sciencedaily.com/releases/2026/11/261125045311.htm": {
+    "imageUrl": "https://www.sciencedaily.com/images/1920/man-holding-supplement-capsule.webp",
+    "at": 1795775060438
   }
 }
