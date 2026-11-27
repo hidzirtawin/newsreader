@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T03:05:02.763Z",
+  "updatedAt": "2026-11-27T07:23:48.602Z",
   "shows": [
     {
       "id": "keluar-sekejap",
@@ -1793,6 +1793,18 @@
       "description": "The global business stories that matter, every weekday morning.",
       "episodes": [
         {
+          "id": "art-29a49cddb9ea",
+          "showId": "ft-news-briefing",
+          "showName": "FT News Briefing",
+          "title": "Spain’s election: A turn to the right?",
+          "description": "Madrid says Spain is an economic success story, so why has it been so hard to convince voters? And Pablo Hernández de Cos is set to become the next head of the European Central Bank. Plus, why stock market investors shouldn’t count on the Federal Reserve for relief. Mentioned in this podcast: Angry young men turn against their elders in ‘two Spains’ election Hawkish Fed poised to raise rates despite stock market turm",
+          "pubDate": "2026-11-27T05:00:00.000Z",
+          "duration": 669,
+          "audioUrl": "https://sphinx.acast.com/p/acast/s/ftnewsbriefing/e/6b088d5b184190a8181dab1b/media.mp3",
+          "imageUrl": "https://assets.pippa.io/shows/621e1a5bf5df83377cc948b8/1771582499067-6d97f00e-76d7-4cba-88d5-a1a9d37b4494.jpeg",
+          "link": "https://shows.acast.com/ftnewsbriefing/episodes/spains-election-a-turn-to-the-right"
+        },
+        {
           "id": "art-40e92926f7d1",
           "showId": "ft-news-briefing",
           "showName": "FT News Briefing",
@@ -2211,18 +2223,6 @@
           "audioUrl": "https://sphinx.acast.com/p/acast/s/ftnewsbriefing/e/6ad7f611a25058b22a1460c5/media.mp3",
           "imageUrl": "https://assets.pippa.io/shows/621e1a5bf5df83377cc948b8/1771582499067-6d97f00e-76d7-4cba-88d5-a1a9d37b4494.jpeg",
           "link": "https://shows.acast.com/ftnewsbriefing/episodes/israel-pushes-to-restart-strikes-against-iran"
-        },
-        {
-          "id": "art-434159fc5180",
-          "showId": "ft-news-briefing",
-          "showName": "FT News Briefing",
-          "title": "Can Big Tech calm investors' AI jitters?",
-          "description": "Protests across Europe over the high cost of living have turned increasingly disruptive, investors are racing to buy credit default swaps to protect their portfolios in the event the AI boom unravels, and Big Tech starts releasing their earnings reports this week. Plus, India’s second-richest man will try to pull off the country’s biggest initial public offering and Saudi Arabia has postponed its flagship “Davos in t",
-          "pubDate": "2026-10-20T04:00:00.000Z",
-          "duration": 784,
-          "audioUrl": "https://sphinx.acast.com/p/acast/s/ftnewsbriefing/e/6ad697f4c23d5753120afd96/media.mp3",
-          "imageUrl": "https://assets.pippa.io/shows/621e1a5bf5df83377cc948b8/1771582499067-6d97f00e-76d7-4cba-88d5-a1a9d37b4494.jpeg",
-          "link": "https://shows.acast.com/ftnewsbriefing/episodes/can-big-tech-calm-investors-ai-jitters"
         }
       ]
     },
@@ -2683,6 +2683,18 @@
       "description": "The day’s top stories from BBC correspondents around the world.",
       "episodes": [
         {
+          "id": "art-32219bd7eabc",
+          "showId": "bbc-global-news",
+          "showName": "Global News Podcast",
+          "title": "President Zelensky voices his frustration with the US",
+          "description": "Volodymyr Zelensky tells the BBC that it's up to Donald Trump to decide his own actions and opinions but it was clear that President Putin was an \"aggressor and a killer\" and therefore could not be a friend. The Ukrainian president also says the United States is too focused on the Middle East and it's not pushing Russia hard enough during peace talks. Also: the French actor, Gérard Depardieu, will stand trial for the",
+          "pubDate": "2026-11-27T05:20:00.000Z",
+          "duration": 1573,
+          "audioUrl": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pq5lc7.mp3",
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0pq5lj2.jpg",
+          "link": "http://www.bbc.co.uk/programmes/p0pq5lhm"
+        },
+        {
           "id": "art-4f6f304509b3",
           "showId": "bbc-global-news",
           "showName": "Global News Podcast",
@@ -3101,18 +3113,6 @@
           "audioUrl": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm6qfc.mp3",
           "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0pm6qvg.jpg",
           "link": "http://www.bbc.co.uk/programmes/p0pm6qtr"
-        },
-        {
-          "id": "art-e68141676921",
-          "showId": "bbc-global-news",
-          "showName": "Global News Podcast",
-          "title": "China denies spying on Nvidia boss",
-          "description": "Nvidia says it's investigating CEO's affair with tech executive Alice Huang, as shares in the firm fall in pre-market trading. Also: BBC investigation finds one of Europe’s most powerful drug gangs recruits teenagers from across France to carry out murders and kidnappings. COP31 UN Climate summit gets underway in Turkey, focusing on delivering on past promises. The former Bangladeshi Prime Minister Sheikh Hasina, who",
-          "pubDate": "2026-11-09T15:29:00.000Z",
-          "duration": 1759,
-          "audioUrl": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pm35rk.mp3",
-          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0pm36w4.jpg",
-          "link": "http://www.bbc.co.uk/programmes/p0pm36r2"
         }
       ]
     },
@@ -4908,6 +4908,102 @@
       "description": "Singapore and world headlines from The Straits Times newsroom.",
       "episodes": [
         {
+          "id": "art-f4a67aa0eacf",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 2:31pm NEWS HEADLINES",
+          "description": "2026-11-27 14:31 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T06:53:39.000Z",
+          "duration": 201,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/b51ff71f-c8a2-4c65-bd9f-b50f00718203/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-2-31pm-news-headlines-3"
+        },
+        {
+          "id": "art-ecf6cd682e30",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 2:01pm NEWS HEADLINES",
+          "description": "2026-11-27 14:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T06:23:40.000Z",
+          "duration": 202,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/fdd335d6-3635-48f2-86ef-b50f0069424e/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-2-01pm-news-headlines"
+        },
+        {
+          "id": "art-d1f4e8a4da39",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 1:30pm NEWS HEADLINES",
+          "description": "2026-11-27 13:30 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T05:53:47.000Z",
+          "duration": 223,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/ad4c557e-db57-4d7b-b340-b50f006108f1/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-1-30pm-news-headlines"
+        },
+        {
+          "id": "art-87eb3acb4bde",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 1:01pm NEWS HEADLINES",
+          "description": "2026-11-27 13:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T05:23:31.000Z",
+          "duration": 223,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/afd6be20-85aa-4bd4-9140-b50f0058c68c/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-1-01pm-news-headlines"
+        },
+        {
+          "id": "art-f9e5c7562d54",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 12:31pm NEWS HEADLINES",
+          "description": "2026-11-27 12:31 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T04:53:36.000Z",
+          "duration": 209,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a0924831-653e-4cff-8828-b50f0050881d/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-12-31pm-news-headlines-3"
+        },
+        {
+          "id": "art-9822804ededc",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 12:01pm NEWS HEADLINES",
+          "description": "2026-11-27 12:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T04:23:31.000Z",
+          "duration": 209,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/1ace7834-bbe6-4702-a605-b50f004849dd/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-12-01pm-news-headlines-3"
+        },
+        {
+          "id": "art-2c1d8a21ef8e",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 11:31am NEWS HEADLINES",
+          "description": "2026-11-27 11:31 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T03:53:34.000Z",
+          "duration": 225,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/95d61dee-b8a9-413f-b4c9-b50f00400845/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-11-31am-news-headlines-1"
+        },
+        {
+          "id": "art-8fecbb50b473",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 11:01am NEWS HEADLINES",
+          "description": "2026-11-27 11:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-27T03:23:24.000Z",
+          "duration": 225,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/db52f111-8c36-4731-a1a5-b50f0037c803/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-11-01am-news-headlines-1"
+        },
+        {
           "id": "art-9353c02c18c8",
           "showId": "straits-times-headlines",
           "showName": "ST News Headlines",
@@ -5242,102 +5338,6 @@
           "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/1ae9a5aa-3acf-4915-9890-b50e00378a5d/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
           "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
           "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-11-01am-news-headlines-6"
-        },
-        {
-          "id": "art-960267274431",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 10:33am NEWS HEADLINES",
-          "description": "2026-11-26 10:33 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T02:52:44.000Z",
-          "duration": 211,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/dd92c271-8953-4b0d-8fee-b50e002f4735/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-10-33am-news-headlines-1"
-        },
-        {
-          "id": "art-20e0bc636730",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 10:01am NEWS HEADLINES",
-          "description": "2026-11-26 10:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T02:23:30.000Z",
-          "duration": 211,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/90e08b2b-ec52-4389-9e0f-b50e002703d9/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-10-01am-news-headlines"
-        },
-        {
-          "id": "art-34c47668c3bf",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 9:31am NEWS HEADLINES",
-          "description": "2026-11-26 09:31 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T01:52:35.000Z",
-          "duration": 215,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a55be81c-97cf-4561-b07e-b50e001ec97d/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-9-31am-news-headlines-1"
-        },
-        {
-          "id": "art-10740ab02c6d",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 9:01am NEWS HEADLINES",
-          "description": "2026-11-26 09:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T01:22:38.000Z",
-          "duration": 215,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/b54ea3a2-82aa-42d9-89b8-b50e00168b9c/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-9-01am-news-headlines-5"
-        },
-        {
-          "id": "art-cfbdfff464ff",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 8:32am NEWS HEADLINES",
-          "description": "2026-11-26 08:32 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T00:52:40.000Z",
-          "duration": 225,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/c6ef3ab5-2d6b-40bf-97df-b50e000e53cc/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-8-32am-news-headlines"
-        },
-        {
-          "id": "art-d4796fd44fe7",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 8:01am NEWS HEADLINES",
-          "description": "2026-11-26 08:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T00:22:40.000Z",
-          "duration": 226,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/c17c42d0-136b-44a6-8cf7-b50e00060d52/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-8-01am-news-headlines-4"
-        },
-        {
-          "id": "art-3de97022e38c",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 7:31am NEWS HEADLINES",
-          "description": "2026-11-26 07:31 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-25T23:52:40.000Z",
-          "duration": 228,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/3dd86332-950d-4b53-9128-b50d018954c6/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-7-31am-news-headlines-3"
-        },
-        {
-          "id": "art-38d409355294",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 7:01am NEWS HEADLINES",
-          "description": "2026-11-26 07:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-25T23:22:40.000Z",
-          "duration": 228,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/ce7972fd-082f-4641-8393-b50d01811710/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-7-01am-news-headlines"
         }
       ]
     },
@@ -6688,6 +6688,18 @@
       "description": "Australian and global news, made for a younger generation.",
       "episodes": [
         {
+          "id": "art-536098c5f414",
+          "showId": "the-daily-aus",
+          "showName": "The Daily Aus",
+          "title": "Headlines: NZ election deadlocked",
+          "description": "Today's headlines include: Convicted murderer Erin Patterson is set to launch a last-ditch attempt to appeal her conviction and her sentence in Australia’s top court. The Queensland Court of Appeal has unanimously dismissed former Bachelor star Sam Wood’s attempt - to overturn a decision to keep him in prison. Three weeks after New Zealand went to a federal election, the results have been finalised, showing the previ",
+          "pubDate": "2026-11-27T05:46:00.000Z",
+          "duration": 196,
+          "audioUrl": "https://traffic.megaphone.fm/DAH9500691197.mp3",
+          "imageUrl": "https://megaphone-images.spotifycdn.com/podcasts/0cec7ec8-c787-11f1-8cf4-6b78745bddc6/image/e1a9e6ed3f2b4544c5f44d8fbb6be54f.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "link": "https://feeds.megaphone.fm/e3617386-ea1f-11f1-84bf-ab490f6add76"
+        },
+        {
           "id": "art-793d16db0373",
           "showId": "the-daily-aus",
           "showName": "The Daily Aus",
@@ -7106,18 +7118,6 @@
           "audioUrl": "https://traffic.megaphone.fm/DAH4635036558.mp3",
           "imageUrl": "https://megaphone-images.spotifycdn.com/podcasts/0cec7ec8-c787-11f1-8cf4-6b78745bddc6/image/e1a9e6ed3f2b4544c5f44d8fbb6be54f.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
           "link": "https://feeds.megaphone.fm/66ea2ec2-d815-11f1-9a84-5bf6af81e2f7"
-        },
-        {
-          "id": "art-525a64596fe9",
-          "showId": "the-daily-aus",
-          "showName": "The Daily Aus",
-          "title": "Who gets to move to Australia?",
-          "description": "For years, we’ve heard how Australia doesn’t have enough people working as teachers, nurses and tradies. But what if I told you there’s also not enough swimming coaches, hairdressers and meat inspectors? That’s according to the latest data from Australia’s occupation shortage list, which helps shape which jobs employers can sponsor overseas workers for. In today's podcast, we're breaking down how the list is decided,",
-          "pubDate": "2026-11-03T18:00:00.000Z",
-          "duration": 1146,
-          "audioUrl": "https://traffic.megaphone.fm/DAH1069540947.mp3",
-          "imageUrl": "https://megaphone-images.spotifycdn.com/podcasts/49d7dae4-d74a-11f1-b3bd-7357a2a9322e/image/0740f164ee9a829c08e3ed0164cd49b4.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
-          "link": "https://feeds.megaphone.fm/49d7dae4-d74a-11f1-b3bd-7357a2a9322e"
         }
       ]
     }
