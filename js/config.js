@@ -785,6 +785,35 @@ FEEDS.push(
 );
 addFeedsToTopic('entertainment', ['bbc-entertainment', 'npr-culture']);
 
+FEEDS.push(
+  { id: 'toms-hardware', name: "Tom's Hardware", domain: 'tomshardware.com', group: 'Technology', url: 'https://www.tomshardware.com/feeds/all' },
+  { id: '9to5mac', name: '9to5Mac', domain: '9to5mac.com', group: 'Technology', url: 'https://9to5mac.com/feed/' },
+  { id: 'macrumors', name: 'MacRumors', domain: 'macrumors.com', group: 'Technology', url: 'https://feeds.macrumors.com/MacRumors-All' },
+  { id: 'lifehacker', name: 'Lifehacker', domain: 'lifehacker.com', group: 'Lifestyle', url: 'https://lifehacker.com/rss' },
+  { id: 'rest-of-world', name: 'Rest of World', domain: 'restofworld.org', group: 'Technology', url: 'https://restofworld.org/feed/' },
+  { id: 'live-science', name: 'Live Science', domain: 'livescience.com', group: 'Science', url: 'https://www.livescience.com/feeds/all' },
+  { id: 'inside-climate-news', name: 'Inside Climate News', domain: 'insideclimatenews.org', group: 'Science', url: 'https://insideclimatenews.org/feed/' },
+  { id: 'grist', name: 'Grist', domain: 'grist.org', group: 'Science', url: 'https://grist.org/feed/' },
+  { id: 'deadline', name: 'Deadline', domain: 'deadline.com', group: 'Entertainment', url: 'https://deadline.com/feed/' },
+  { id: 'indiewire', name: 'IndieWire', domain: 'indiewire.com', group: 'Entertainment', url: 'https://www.indiewire.com/feed/' },
+  { id: 'nme', name: 'NME', domain: 'nme.com', group: 'Entertainment', url: 'https://www.nme.com/feed' },
+  { id: 'pitchfork', name: 'Pitchfork', domain: 'pitchfork.com', group: 'Entertainment', url: 'https://pitchfork.com/rss/news/' },
+  { id: 'av-club', name: 'The A.V. Club', domain: 'avclub.com', group: 'Entertainment', url: 'https://www.avclub.com/rss' },
+  { id: 'bon-appetit', name: 'Bon Appétit', domain: 'bonappetit.com', group: 'Lifestyle', url: 'https://www.bonappetit.com/feed/rss' },
+  { id: 'nhs-england', name: 'NHS England', domain: 'england.nhs.uk', group: 'Health', url: 'https://www.england.nhs.uk/feed/' },
+  { id: 'texas-tribune', name: 'The Texas Tribune', domain: 'texastribune.org', group: 'United States', url: 'https://www.texastribune.org/feeds/main/' },
+  { id: 'calmatters', name: 'CalMatters', domain: 'calmatters.org', group: 'United States', url: 'https://calmatters.org/feed/' },
+  { id: 'civil-beat', name: 'Honolulu Civil Beat', domain: 'civilbeat.org', group: 'United States', url: 'https://www.civilbeat.org/feed/' },
+);
+addFeedsToTopic('technology', ['toms-hardware', '9to5mac', 'macrumors', 'rest-of-world']);
+addFeedsToTopic('science', ['live-science', 'inside-climate-news', 'grist']);
+addFeedsToTopic('entertainment', ['deadline', 'indiewire', 'nme', 'pitchfork', 'av-club']);
+addFeedsToTopic('lifestyle', ['lifehacker', 'bon-appetit']);
+addFeedsToTopic('health', ['nhs-england']);
+addFeedsToTopic('us', ['texas-tribune', 'calmatters', 'civil-beat']);
+addFeedsToTopic('politics', ['texas-tribune', 'calmatters']);
+addFeedsToTopic('world', ['rest-of-world']);
+
 addFeedsToTopic('world', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'un-news', 'rfi', 'rte', 'africanews', 'the-conversation']);
 addFeedsToTopic('us', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'nypost', 'yahoo-news']);
 addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business', 'investinglive', 'cbs-moneywatch']);

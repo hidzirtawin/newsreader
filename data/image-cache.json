@@ -2846,5 +2846,25 @@
   "https://investinglive.com/commodities/irgc-navy-commander-says-breaking-the-us-naval-blockade-is-imminent/": {
     "imageUrl": "https://investinglive.com/cms/media/Processed/Categories/featured/2026-11-27_10-05-59-featured-1795791979.jpg?width=960&format=webp",
     "at": 1795816144046
+  },
+  "https://www.cnn.com/2026/11/27/tech/openai-apple-countersuit": {
+    "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1445281649-20261127190319038.jpg?c=16x9&q=w_800,c_fill",
+    "at": 1795816876884
+  },
+  "https://www.theguardian.com/technology/2026/nov/27/hackers-breach-us-air-force-cloud-computing": {
+    "imageUrl": "https://i.guim.co.uk/img/media/b78bd09c92d89960e79cab8a33338868663794eb/171_0_1706_1365/master/1706.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0540f9b74f59c65d1f65a63e5e9ef2f6",
+    "at": 1795816876943
+  },
+  "https://www.ctvnews.ca/politics/article/pm-carney-says-he-will-whip-vote-over-bill-c-39-one-day-after-house-leader-calls-it-a-slam-dunk/": {
+    "imageUrl": "https://www.ctvnews.ca/resizer/v2/CB4TB23S7VFZ5EFMUSMN3AH54A.jpeg?smart=true&auth=e6920fe68077dfefd60ce93bf9a9753d6cdde6e3298a1a0ec2adee4f94200f85&width=1200&height=630",
+    "at": 1795816877050
+  },
+  "https://www.channelnewsasia.com/sport/holders-italy-edge-out-czechs-reach-davis-cup-final-again-6588371": {
+    "imageUrl": "https://dam.mediacorp.sg/image/upload/s--su4rbAy4--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-27T215305Z_1_LYNXNPEMAQ1QV_RTROPTP_3_TENNIS-DAVISCUP.JPG?itok=NDrMFWDv",
+    "at": 1795816877204
+  },
+  "https://nypost.com/2026/11/27/media/nbc-pulls-anti-israel-ad-after-backlash-for-airing-on-saturday-night-live/": {
+    "imageUrl": "https://nypost.com/wp-content/uploads/sites/2/2026/11/150189699-1.jpg?quality=75&strip=all&w=1200",
+    "at": 1795816878233
   }
 }
