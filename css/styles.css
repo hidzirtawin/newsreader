@@ -3735,3 +3735,21 @@ body.has-audio-dock .reader-service-frame {
   color: var(--badge-checking-text);
   border-color: var(--badge-checking-border);
 }
+
+@media (max-width: 700px) {
+  .editorial-header {
+    flex-wrap: wrap;
+  }
+
+  .editorial-header-actions {
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .country-select {
+    max-width: 150px;
+  }
+}
+
