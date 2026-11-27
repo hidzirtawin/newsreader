@@ -328,7 +328,9 @@ async function fetchPageImage(url) {
 async function enrichImages(topics, imageCache) {
   const candidates = [];
   const seen = new Set();
+  const noImageTopics = new Set(TOPICS.filter((topic) => topic.noImages).map((topic) => topic.id));
   for (const topic of topics) {
+    if (noImageTopics.has(topic.id)) continue;
     for (const article of topic.articles.slice(0, 18)) {
       if (article.imageUrl || seen.has(article.url)) continue;
       seen.add(article.url);
@@ -599,9 +601,10 @@ async function main() {
         error: result.error,
       });
     }
+    const topicLimit = Number(topic.limit) > 0 ? Math.min(Number(topic.limit), TOPIC_LIMIT) : TOPIC_LIMIT;
     const articles = balanceBySource(
       freshArticles(dedupe(topicArticles).sort((left, right) => (Date.parse(right.pubDate) || 0) - (Date.parse(left.pubDate) || 0))),
-      TOPIC_LIMIT,
+      topicLimit,
     );
     snapshot[topic.id] = {
       updatedAt: new Date().toISOString(),

@@ -6,6 +6,9 @@ import {
   STRATEGY_META,
   TOPIC_PRESETS,
   LIVE_CACHE_TTL,
+  COUNTRY_DESKS,
+  COUNTRY_TIMEZONES,
+  getCountryDesk,
   RADIO_STATIONS,
   PODCAST_SHOWS,
   normalizeDomain,
@@ -69,6 +72,9 @@ const els = {
   sportsSubnav: $('#sportsSubnav'),
   editorialHeading: $('#editorialHeading'),
   feedSortSelect: $('#feedSortSelect'),
+  countrySelectWrapper: $('#countrySelectWrapper'),
+  countryDeskSelect: $('#countryDeskSelect'),
+  countryLayoutBtn: $('#countryLayoutBtn'),
   sourceViewBar: $('#sourceViewBar'),
   sourceViewName: $('#sourceViewName'),
   sourceBackBtn: $('#sourceBackBtn'),
@@ -216,6 +222,8 @@ const state = {
   newTopicSearch: '',
   sourceSearch: '',
   lastFocus: null,
+  countryCode: '',
+  countryLayout: 'list',
   toastTimer: null,
   toastHideTimer: null,
   listenMode: '',
@@ -1137,13 +1145,42 @@ function renderTopicsBar() {
     return;
   }
   const current = getTopic(state.topicId);
-  els.topicsBar.innerHTML = topics.map((topic) => {
+  const country = getCountryDesk(state.countryCode);
+  const countryActive = Boolean(country && current && current.id === country.topic);
+  const countryPill = country
+    ? `<button type="button" class="topic-pill country-pill${countryActive ? ' active' : ''}" data-country-tab="1" title="Your country: ${esc(country.name)}">YOUR COUNTRY</button>`
+    : '';
+  els.topicsBar.innerHTML = countryPill + topics.map((topic) => {
     const active = topic.id === state.topicId || (topic.id === 'sports' && current?.sports);
     return `<button type="button" class="topic-pill${active ? ' active' : ''}" data-topic="${esc(topic.id)}">${esc(topic.label)}</button>`;
   }).join('');
-  if (!current?.sports && !topics.some((topic) => topic.id === state.topicId)) {
+  if (!current?.sports && !current?.country && !topics.some((topic) => topic.id === state.topicId)) {
     loadTopic(topics[0].id);
   }
+}
+
+function detectCountryCode() {
+  const saved = String(safeGet('newsreader_country_v1') || '').toUpperCase();
+  if (saved && getCountryDesk(saved)) return saved;
+  try {
+    const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const mapped = COUNTRY_TIMEZONES[zone];
+    if (mapped && getCountryDesk(mapped)) return mapped;
+  } catch { /* fall through */ }
+  const language = (navigator.languages?.[0] || navigator.language || '').toUpperCase();
+  const region = language.split('-')[1];
+  if (region && getCountryDesk(region)) return region;
+  return 'US';
+}
+
+function openCountryDesk(code) {
+  const desk = getCountryDesk(code);
+  if (!desk) return;
+  state.countryCode = desk.code;
+  safeSet('newsreader_country_v1', desk.code);
+  if (els.countryDeskSelect) els.countryDeskSelect.value = desk.code;
+  if (state.topicId === desk.topic && !state.sourceView) return;
+  loadTopic(desk.topic);
 }
 
 function renderSportsNav(topic = null) {
@@ -1171,6 +1208,14 @@ function updateTopicHeader(topic) {
   els.editorialHeading.textContent = (topic.title || topic.label).toUpperCase();
   document.title = `${topic.title || topic.label} | Tawin Newsreader`;
   els.feedSortSelect.value = state.sort;
+  const countryDesk = COUNTRY_DESKS.find((desk) => desk.topic === topic.id) || null;
+  if (els.countrySelectWrapper) els.countrySelectWrapper.hidden = !topic.country;
+  if (countryDesk && els.countryDeskSelect) els.countryDeskSelect.value = countryDesk.code;
+  if (els.countryLayoutBtn) {
+    els.countryLayoutBtn.hidden = !topic.country;
+    els.countryLayoutBtn.textContent = state.countryLayout === 'list' ? 'Magazine view' : 'Headlines';
+    els.countryLayoutBtn.title = state.countryLayout === 'list' ? 'Switch to the magazine grid' : 'Switch to the NoWall-style headline list';
+  }
   const listen = topic.type === 'radio' || topic.type === 'podcasts';
   els.editorialActions.hidden = listen;
   renderSportsNav(topic);
@@ -1188,7 +1233,7 @@ function chooseInitialTopic() {
   if (saved) {
     if (topics.some((topic) => topic.id === saved)) return saved;
     const savedTopic = getTopic(saved);
-    if (savedTopic?.sports) return saved;
+    if (savedTopic?.sports || savedTopic?.country) return saved;
   }
   return topics[0].id;
 }
@@ -1256,6 +1301,24 @@ function sourceResultsMarkup() {
   els.feedSourcesDetails.hidden = false;
 }
 
+function headlineListMarkup(articles) {
+  const note = `<div class="headline-note"><strong>Free to read</strong><span>No paywalls · Latest first</span></div>`;
+  const rows = articles.map((article, index) => {
+    const time = article.pubDate ? formatRelativeTime(article.pubDate) : '';
+    const source = article.feedId && getFeed(article.feedId)
+      ? `<button type="button" class="headline-source" data-source-feed="${esc(article.feedId)}">${esc(article.source)}</button>`
+      : `<span class="headline-source is-static">${esc(article.source)}</span>`;
+    return `<article class="news-card headline-row" data-card-id="${esc(article.id)}" data-article-url="${esc(article.url)}">
+      <span class="headline-rank">${index + 1}</span>
+      <div class="headline-content">
+        <h2 class="headline-title">${esc(article.title)}</h2>
+        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span>${article.briefOnly ? '<span class="headline-tag">BRIEF</span>' : ''}</div>
+      </div>
+    </article>`;
+  }).join('');
+  return `${note}<div class="headline-list">${rows}</div>`;
+}
+
 function renderFeed() {
   hideFeedStates();
   setRefreshSpinning(false);
@@ -1292,7 +1355,9 @@ function renderFeed() {
   }
 
   els.feedList.hidden = false;
-  els.feedList.innerHTML = buildLayout(visible);
+  const activeTopic = getTopic(state.topicId);
+  const listMode = Boolean(activeTopic?.country) && state.countryLayout === 'list';
+  els.feedList.innerHTML = listMode ? headlineListMarkup(visible) : buildLayout(visible);
 
   const count = visible.length;
   els.feedUpdateStatus.hidden = false;
@@ -2485,6 +2550,10 @@ els.feedList.addEventListener('error', (event) => {
 }, true);
 
 els.topicsBar.addEventListener('click', (event) => {
+  if (event.target.closest('[data-country-tab]')) {
+    openCountryDesk(state.countryCode);
+    return;
+  }
   const pill = event.target.closest('[data-topic]');
   if (!pill) return;
   if (state.sourceView) {
@@ -2503,6 +2572,19 @@ els.sportsSubnav.addEventListener('click', (event) => {
 
 els.sourceBackBtn.addEventListener('click', () => {
   loadTopic(state.sourceReturnTopic || state.topicId);
+});
+
+els.countryDeskSelect?.addEventListener('change', () => {
+  openCountryDesk(els.countryDeskSelect.value);
+});
+
+els.countryLayoutBtn?.addEventListener('click', () => {
+  state.countryLayout = state.countryLayout === 'list' ? 'magazine' : 'list';
+  safeSet('newsreader_country_layout', state.countryLayout);
+  if (els.countryLayoutBtn) {
+    els.countryLayoutBtn.textContent = state.countryLayout === 'list' ? 'Magazine view' : 'Headlines';
+  }
+  renderFeed();
 });
 
 els.feedSortSelect.addEventListener('change', () => {
@@ -3325,6 +3407,14 @@ function boot() {
   loadPublisherUrls();
   loadSnapshotVersion();
   const settings = getSettings();
+  state.countryCode = detectCountryCode();
+  state.countryLayout = safeGet('newsreader_country_layout') === 'magazine' ? 'magazine' : 'list';
+  if (els.countryDeskSelect) {
+    els.countryDeskSelect.innerHTML = COUNTRY_DESKS
+      .map((desk) => `<option value="${esc(desk.code)}">${esc(desk.name)}</option>`)
+      .join('');
+    els.countryDeskSelect.value = state.countryCode;
+  }
   state.sort = settings.sort === 'oldest' ? 'oldest' : 'newest';
   if (settings.sort !== state.sort) saveSettings({ sort: state.sort });
   state.hideLocked = Boolean(settings.hideLocked);

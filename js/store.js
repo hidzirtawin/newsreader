@@ -245,7 +245,7 @@ export function getVisibleTopics() {
   for (const topic of all) {
     if (!ordered.includes(topic)) ordered.push(topic);
   }
-  return ordered.filter((topic) => !topic.sports && !settings.hiddenTopics.includes(topic.id));
+  return ordered.filter((topic) => !topic.sports && !topic.hiddenFromBar && !settings.hiddenTopics.includes(topic.id));
 }
 
 /* ------------------------------------------------------------------ */

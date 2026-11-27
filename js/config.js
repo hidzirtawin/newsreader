@@ -272,6 +272,14 @@ export const BRIEF_ONLY_DOMAINS = [
   'thewest.com.au',
   'codesports.com.au',
   'dailytelegraph.com.au',
+  'economist.com',
+  'telegraph.co.uk',
+  'thetimes.com',
+  'straitstimes.com',
+  'theglobeandmail.com',
+  'washingtonpost.com',
+  'latimes.com',
+  'businessinsider.com',
 ];
 
 // These publishers currently yield full readable text through WallHop.
@@ -595,6 +603,256 @@ export const TOPIC_PRESETS = [
  * Popular news and current-affairs radio stations with public live streams.
  * Every URL is HTTPS so it can play from a secure static host.
  */
+
+/* ------------------------------------------------------------------ */
+/* Free-to-read country desks and NoWall-style source expansion        */
+/* ------------------------------------------------------------------ */
+
+function addFeedsToTopic(topicId, feedIds) {
+  const topic = TOPICS.find((item) => item.id === topicId);
+  if (!topic) return;
+  topic.feeds = [...new Set([...(topic.feeds || []), ...feedIds])];
+}
+
+function googleSiteFeed(id, name, domain, group) {
+  return {
+    id,
+    name,
+    domain,
+    group,
+    url: `https://news.google.com/rss/search?q=site%3A${encodeURIComponent(domain)}&hl=en-US&gl=US&ceid=US%3Aen`,
+    googleNews: true,
+  };
+}
+
+const FREE_OUTLETS = [
+  googleSiteFeed('pbs-newshour', 'PBS NewsHour', 'pbs.org', 'United States'),
+  googleSiteFeed('newsnation', 'NewsNation', 'newsnationnow.com', 'United States'),
+  googleSiteFeed('semafor', 'Semafor', 'semafor.com', 'United States'),
+  googleSiteFeed('propublica', 'ProPublica', 'propublica.org', 'United States'),
+  googleSiteFeed('nypost', 'New York Post', 'nypost.com', 'United States'),
+  googleSiteFeed('yahoo-news', 'Yahoo News', 'news.yahoo.com', 'United States'),
+  googleSiteFeed('kff-health', 'KFF Health News', 'kffhealthnews.org', 'Health'),
+  googleSiteFeed('who-news', 'WHO', 'who.int', 'Health'),
+  googleSiteFeed('medical-xpress', 'Medical Xpress', 'medicalxpress.com', 'Health'),
+  googleSiteFeed('news-medical', 'News-Medical', 'news-medical.net', 'Health'),
+  googleSiteFeed('healthline', 'Healthline', 'healthline.com', 'Health'),
+  googleSiteFeed('un-news', 'UN News', 'news.un.org', 'World'),
+  googleSiteFeed('rfi', 'RFI', 'rfi.fr', 'Europe'),
+  googleSiteFeed('rte', 'RTÉ News', 'rte.ie', 'Europe'),
+  googleSiteFeed('the-conversation', 'The Conversation', 'theconversation.com', 'World'),
+  googleSiteFeed('the-register', 'The Register', 'theregister.com', 'Technology'),
+  googleSiteFeed('zdnet', 'ZDNET', 'zdnet.com', 'Technology'),
+  googleSiteFeed('cnet', 'CNET', 'cnet.com', 'Technology'),
+  googleSiteFeed('androidauthority', 'Android Authority', 'androidauthority.com', 'Technology'),
+  googleSiteFeed('benzinga', 'Benzinga', 'benzinga.com', 'Business'),
+  googleSiteFeed('investing-com', 'Investing.com', 'investing.com', 'Business'),
+  googleSiteFeed('fox-business', 'Fox Business', 'foxbusiness.com', 'Business'),
+  googleSiteFeed('sky-sports', 'Sky Sports', 'skysports.com', 'Sports'),
+  googleSiteFeed('sporting-news', 'Sporting News', 'sportingnews.com', 'Sports'),
+  googleSiteFeed('yardbarker', 'Yardbarker', 'yardbarker.com', 'Sports'),
+  googleSiteFeed('yahoo-sports', 'Yahoo Sports', 'sports.yahoo.com', 'Sports'),
+  googleSiteFeed('quanta', 'Quanta Magazine', 'quantamagazine.org', 'Science'),
+  googleSiteFeed('science-news', 'Science News', 'sciencenews.org', 'Science'),
+  googleSiteFeed('sciencealert', 'ScienceAlert', 'sciencealert.com', 'Science'),
+  googleSiteFeed('smithsonian', 'Smithsonian', 'smithsonianmag.com', 'Science'),
+  googleSiteFeed('phys-org', 'Phys.org', 'phys.org', 'Science'),
+  googleSiteFeed('new-atlas', 'New Atlas', 'newatlas.com', 'Science'),
+  googleSiteFeed('earth-com', 'Earth.com', 'earth.com', 'Science'),
+  googleSiteFeed('africanews', 'Africanews', 'africanews.com', 'Africa'),
+  googleSiteFeed('dawn', 'Dawn', 'dawn.com', 'Pakistan'),
+  googleSiteFeed('geo-news', 'Geo News', 'geo.tv', 'Pakistan'),
+  googleSiteFeed('express-tribune', 'The Express Tribune', 'tribune.com.pk', 'Pakistan'),
+  googleSiteFeed('punch', 'Punch', 'punchng.com', 'Nigeria'),
+  googleSiteFeed('vanguard', 'Vanguard', 'vanguardngr.com', 'Nigeria'),
+  googleSiteFeed('channels-tv', 'Channels TV', 'channelstv.com', 'Nigeria'),
+  googleSiteFeed('rappler', 'Rappler', 'rappler.com', 'Philippines'),
+  googleSiteFeed('gma-news', 'GMA News', 'gmanetwork.com', 'Philippines'),
+  googleSiteFeed('daily-maverick', 'Daily Maverick', 'dailymaverick.co.za', 'South Africa'),
+  googleSiteFeed('iol', 'IOL', 'iol.co.za', 'South Africa'),
+  googleSiteFeed('thejournal-ie', 'TheJournal.ie', 'thejournal.ie', 'Ireland'),
+  googleSiteFeed('1news', '1News', '1news.co.nz', 'New Zealand'),
+  googleSiteFeed('stuff', 'Stuff', 'stuff.co.nz', 'New Zealand'),
+  googleSiteFeed('antara', 'Antara', 'antaranews.com', 'Indonesia'),
+  googleSiteFeed('detik', 'detikNews', 'detik.com', 'Indonesia'),
+  googleSiteFeed('khaosod', 'Khaosod English', 'khaosodenglish.com', 'Thailand'),
+  googleSiteFeed('thaiger', 'The Thaiger', 'thethaiger.com', 'Thailand'),
+  googleSiteFeed('vnexpress', 'VnExpress International', 'e.vnexpress.net', 'Vietnam'),
+  googleSiteFeed('tuoi-tre', 'Tuoi Tre News', 'tuoitrenews.vn', 'Vietnam'),
+  googleSiteFeed('mainichi', 'Mainichi', 'mainichi.jp', 'Japan'),
+  googleSiteFeed('nippon', 'Nippon.com', 'nippon.com', 'Japan'),
+  googleSiteFeed('korea-times', 'The Korea Times', 'koreatimes.co.kr', 'South Korea'),
+  googleSiteFeed('hkfp', 'Hong Kong Free Press', 'hongkongfp.com', 'Hong Kong'),
+  googleSiteFeed('rthk', 'RTHK', 'rthk.hk', 'Hong Kong'),
+  googleSiteFeed('dutchnews', 'DutchNews', 'dutchnews.nl', 'Netherlands'),
+  googleSiteFeed('nltimes', 'NL Times', 'nltimes.nl', 'Netherlands'),
+  googleSiteFeed('g1', 'g1', 'g1.globo.com', 'Brazil'),
+  googleSiteFeed('mexico-news-daily', 'Mexico News Daily', 'mexiconewsdaily.com', 'Mexico'),
+  googleSiteFeed('kyiv-independent', 'Kyiv Independent', 'kyivindependent.com', 'Ukraine'),
+];
+FEEDS.push(...FREE_OUTLETS);
+
+FEEDS.push({
+  id: 'malay-mail',
+  name: 'Malay Mail',
+  domain: 'malaymail.com',
+  group: 'Malaysia',
+  url: 'https://www.malaymail.com/feed/rss',
+});
+
+addFeedsToTopic('world', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'un-news', 'rfi', 'rte', 'africanews', 'the-conversation']);
+addFeedsToTopic('us', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'nypost', 'yahoo-news']);
+addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business']);
+addFeedsToTopic('technology', ['the-register', 'zdnet', 'cnet', 'androidauthority', 'the-conversation']);
+addFeedsToTopic('science', ['quanta', 'science-news', 'sciencealert', 'smithsonian', 'phys-org', 'new-atlas', 'earth-com']);
+addFeedsToTopic('sports', ['sky-sports', 'sporting-news', 'yardbarker', 'yahoo-sports']);
+addFeedsToTopic('politics', ['propublica', 'semafor']);
+addFeedsToTopic('africa', ['africanews']);
+addFeedsToTopic('europe', ['rfi', 'rte']);
+addFeedsToTopic('finance', ['benzinga', 'investing-com']);
+addFeedsToTopic('malaysia', ['malay-mail']);
+addFeedsToTopic('briefs', ['washington-post', 'latimes', 'economist-latest', 'telegraph', 'the-times', 'straitstimes-sg', 'globe-mail', 'business-insider']);
+addFeedsToTopic('asia', ['rappler', 'gma-news', 'antara', 'detik', 'khaosod', 'thaiger', 'vnexpress', 'tuoi-tre', 'mainichi', 'nippon', 'korea-times', 'hkfp', 'rthk']);
+addFeedsToTopic('pakistan', ['dawn', 'geo-news', 'express-tribune']);
+addFeedsToTopic('nigeria', ['punch', 'vanguard', 'channels-tv']);
+addFeedsToTopic('philippines', ['rappler', 'gma-news']);
+addFeedsToTopic('south-africa', ['daily-maverick', 'iol']);
+addFeedsToTopic('ireland', ['rte', 'thejournal-ie']);
+addFeedsToTopic('new-zealand', ['rnz', '1news', 'stuff']);
+
+const HEALTH_TOPIC = {
+  id: 'health',
+  label: 'HEALTH',
+  title: 'Health',
+  feeds: ['kff-health', 'who-news', 'medical-xpress', 'news-medical', 'healthline', 'npr-news'],
+};
+const scienceIndex = TOPICS.findIndex((topic) => topic.id === 'science');
+TOPICS.splice(scienceIndex === -1 ? TOPICS.length : scienceIndex, 0, HEALTH_TOPIC);
+
+/* Country desks. Existing desks keep their curated local feeds; new desks
+   use the free Google News country edition, then filter out brief-only
+   publishers in the client. */
+const COUNTRY_DESK_CONFIG = [
+  { code: 'MY', name: 'Malaysia', topic: 'malaysia' },
+  { code: 'AU', name: 'Australia', topic: 'australia' },
+  { code: 'US', name: 'United States', topic: 'us' },
+  { code: 'GB', name: 'United Kingdom', topic: 'uk' },
+  { code: 'SG', name: 'Singapore', topic: 'singapore' },
+  { code: 'CA', name: 'Canada', topic: 'canada' },
+  { code: 'IN', name: 'India', topic: 'india' },
+  { code: 'NZ', name: 'New Zealand', feeds: ['rnz', '1news', 'stuff'] },
+  { code: 'IE', name: 'Ireland', feeds: ['rte', 'thejournal-ie'] },
+  { code: 'ID', name: 'Indonesia', feeds: ['antara', 'detik'] },
+  { code: 'PH', name: 'Philippines', feeds: ['rappler', 'gma-news'] },
+  { code: 'TH', name: 'Thailand', feeds: ['khaosod', 'thaiger'] },
+  { code: 'VN', name: 'Vietnam', feeds: ['vnexpress', 'tuoi-tre'] },
+  { code: 'JP', name: 'Japan', feeds: ['japan-times', 'mainichi', 'nippon'] },
+  { code: 'KR', name: 'South Korea', feeds: ['yonhap', 'korea-times'] },
+  { code: 'CN', name: 'China', topic: 'china' },
+  { code: 'HK', name: 'Hong Kong', feeds: ['hkfp', 'rthk'] },
+  { code: 'TW', name: 'Taiwan', feeds: ['taipei-times'] },
+  { code: 'PK', name: 'Pakistan', feeds: ['dawn', 'geo-news', 'express-tribune'] },
+  { code: 'BD', name: 'Bangladesh' },
+  { code: 'LK', name: 'Sri Lanka' },
+  { code: 'NP', name: 'Nepal' },
+  { code: 'ZA', name: 'South Africa', feeds: ['daily-maverick', 'iol'] },
+  { code: 'NG', name: 'Nigeria', feeds: ['punch', 'vanguard', 'channels-tv'] },
+  { code: 'KE', name: 'Kenya' },
+  { code: 'GH', name: 'Ghana' },
+  { code: 'EG', name: 'Egypt' },
+  { code: 'SA', name: 'Saudi Arabia' },
+  { code: 'AE', name: 'United Arab Emirates' },
+  { code: 'IL', name: 'Israel', feeds: ['jpost'] },
+  { code: 'TR', name: 'Turkey' },
+  { code: 'RU', name: 'Russia', topic: 'russia' },
+  { code: 'DE', name: 'Germany', feeds: ['dw', 'spiegel', 'zeit'] },
+  { code: 'FR', name: 'France', feeds: ['france24', 'rfi'] },
+  { code: 'ES', name: 'Spain', feeds: ['el-pais', 'elmundo'] },
+  { code: 'IT', name: 'Italy', feeds: ['corriere', 'repubblica'] },
+  { code: 'NL', name: 'Netherlands', feeds: ['dutchnews', 'nltimes'] },
+  { code: 'BE', name: 'Belgium' },
+  { code: 'CH', name: 'Switzerland' },
+  { code: 'AT', name: 'Austria' },
+  { code: 'SE', name: 'Sweden' },
+  { code: 'NO', name: 'Norway' },
+  { code: 'DK', name: 'Denmark' },
+  { code: 'FI', name: 'Finland' },
+  { code: 'PL', name: 'Poland' },
+  { code: 'PT', name: 'Portugal' },
+  { code: 'GR', name: 'Greece' },
+  { code: 'UA', name: 'Ukraine', feeds: ['kyiv-independent'] },
+  { code: 'BR', name: 'Brazil', feeds: ['folha', 'g1'] },
+  { code: 'MX', name: 'Mexico', feeds: ['mexico-news-daily'] },
+  { code: 'AR', name: 'Argentina', feeds: ['clarin', 'lanacion'] },
+  { code: 'CL', name: 'Chile' },
+  { code: 'CO', name: 'Colombia' },
+  { code: 'PE', name: 'Peru' },
+];
+
+const EXISTING_COUNTRY_TOPICS = new Set(['us', 'uk', 'australia', 'canada', 'singapore', 'malaysia', 'india', 'china', 'russia']);
+for (const id of EXISTING_COUNTRY_TOPICS) {
+  const topic = TOPICS.find((item) => item.id === id);
+  if (topic) topic.country = true;
+}
+
+export const COUNTRY_DESKS = COUNTRY_DESK_CONFIG.map((desk) => {
+  const topicId = desk.topic || `country-${desk.code.toLowerCase()}`;
+  const feedId = `gn-${desk.code.toLowerCase()}`;
+  FEEDS.push({
+    id: feedId,
+    name: `${desk.name} · Google News`,
+    domain: 'news.google.com',
+    group: desk.name,
+    url: `https://news.google.com/rss?gl=${desk.code}&hl=en-US&ceid=${desk.code}:en`,
+    googleNews: true,
+  });
+  if (!EXISTING_COUNTRY_TOPICS.has(topicId)) {
+    TOPICS.push({
+      id: topicId,
+      label: desk.name.toUpperCase(),
+      title: `${desk.name} News`,
+      country: true,
+      hiddenFromBar: true,
+      noImages: true,
+      limit: 20,
+      feeds: [feedId, ...(desk.feeds || [])],
+    });
+  } else {
+    addFeedsToTopic(topicId, [feedId, ...(desk.feeds || [])]);
+  }
+  return { code: desk.code, name: desk.name, topic: topicId };
+});
+
+export const COUNTRY_TIMEZONES = {
+  'Asia/Kuala_Lumpur': 'MY', 'Asia/Kuching': 'MY',
+  'Australia/Melbourne': 'AU', 'Australia/Sydney': 'AU', 'Australia/Brisbane': 'AU',
+  'Australia/Perth': 'AU', 'Australia/Adelaide': 'AU', 'Australia/Hobart': 'AU', 'Australia/Darwin': 'AU',
+  'Pacific/Auckland': 'NZ', 'Asia/Singapore': 'SG', 'Asia/Kolkata': 'IN', 'Asia/Calcutta': 'IN',
+  'Asia/Karachi': 'PK', 'Asia/Dhaka': 'BD', 'Asia/Colombo': 'LK', 'Asia/Kathmandu': 'NP',
+  'Asia/Manila': 'PH', 'Asia/Jakarta': 'ID', 'Asia/Bangkok': 'TH', 'Asia/Ho_Chi_Minh': 'VN',
+  'Asia/Tokyo': 'JP', 'Asia/Seoul': 'KR', 'Asia/Hong_Kong': 'HK', 'Asia/Taipei': 'TW', 'Asia/Shanghai': 'CN',
+  'Europe/London': 'GB', 'Europe/Dublin': 'IE', 'Europe/Paris': 'FR', 'Europe/Berlin': 'DE',
+  'Europe/Madrid': 'ES', 'Europe/Rome': 'IT', 'Europe/Amsterdam': 'NL', 'Europe/Brussels': 'BE',
+  'Europe/Zurich': 'CH', 'Europe/Vienna': 'AT', 'Europe/Stockholm': 'SE', 'Europe/Oslo': 'NO',
+  'Europe/Copenhagen': 'DK', 'Europe/Helsinki': 'FI', 'Europe/Warsaw': 'PL', 'Europe/Lisbon': 'PT',
+  'Europe/Athens': 'GR', 'Europe/Istanbul': 'TR', 'Europe/Kyiv': 'UA', 'Europe/Moscow': 'RU',
+  'America/New_York': 'US', 'America/Chicago': 'US', 'America/Denver': 'US', 'America/Los_Angeles': 'US',
+  'America/Toronto': 'CA', 'America/Vancouver': 'CA', 'America/Edmonton': 'CA', 'America/Halifax': 'CA',
+  'America/Sao_Paulo': 'BR', 'America/Mexico_City': 'MX', 'America/Argentina/Buenos_Aires': 'AR',
+  'America/Santiago': 'CL', 'America/Bogota': 'CO', 'America/Lima': 'PE',
+  'Africa/Johannesburg': 'ZA', 'Africa/Lagos': 'NG', 'Africa/Nairobi': 'KE', 'Africa/Accra': 'GH',
+  'Africa/Cairo': 'EG', 'Asia/Riyadh': 'SA', 'Asia/Dubai': 'AE', 'Asia/Jerusalem': 'IL',
+};
+
+export function getCountryDesk(code) {
+  const upper = String(code || '').toUpperCase();
+  return COUNTRY_DESKS.find((desk) => desk.code === upper) || null;
+}
+
+export function countryTopicId(code) {
+  return getCountryDesk(code)?.topic || '';
+}
+
 export const RADIO_STATIONS = [
   { id: 'bfm-my', name: 'BFM 89.9', region: 'Malaysia', frequency: '89.9 FM', language: 'English', description: 'Business and current affairs', stream: 'https://22253.live.streamtheworld.com/BFM_SC' },
   { id: 'nasional-fm', name: 'Nasional FM', region: 'Malaysia', frequency: '88.5 FM', language: 'Malay', description: 'National news and talk', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/NASIONAL_FM.mp3' },

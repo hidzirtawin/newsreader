@@ -57,7 +57,7 @@
               <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
               <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
             </svg>
-            <span>Open article URL</span>
+            <span>Find it free</span>
           </button>
 
           <label class="menu-item-toggle" title="Hide paywalled stories with no archive copy">
@@ -82,13 +82,13 @@
             <input type="checkbox" id="autoRefreshCheckbox" class="menu-checkbox">
           </label>
 
-          <label class="menu-item-toggle" title="Include publishers that only offer a short brief in the main feeds">
+          <label class="menu-item-toggle" title="Include hard-paywalled publishers in the main feeds. Free-to-read sources are always shown first.">
             <span class="menu-item-label-group">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M4 5h16v14H4z"></path>
                 <path d="M8 9h8M8 13h6M8 17h4"></path>
               </svg>
-              <span>Show briefs in all feeds</span>
+              <span>Include paywalled briefs</span>
             </span>
             <input type="checkbox" id="showBriefsCheckbox" class="menu-checkbox">
           </label>
@@ -146,6 +146,13 @@
         <div class="editorial-header-line" aria-hidden="true"></div>
       </div>
       <div class="editorial-header-actions" id="editorialActions">
+        <button id="countryLayoutBtn" class="country-layout-btn" type="button" hidden>Magazine view</button>
+        <div class="country-select-wrapper" id="countrySelectWrapper" hidden>
+          <label class="visually-hidden" for="countryDeskSelect">Country desk</label>
+          <div class="sort-select-wrapper">
+            <select id="countryDeskSelect" class="sort-select country-select" title="Choose a country"></select>
+          </div>
+        </div>
         <label class="visually-hidden" for="feedSortSelect">Sort headlines</label>
         <div class="sort-select-wrapper">
           <select id="feedSortSelect" class="sort-select" title="Sort headlines">
@@ -386,7 +393,7 @@
   <div id="quickUrlModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="quickUrlTitle" aria-hidden="true" inert>
     <div class="modal-content modal-content-narrow">
       <div class="modal-header">
-        <h2 id="quickUrlTitle" class="modal-title">Open an article</h2>
+        <h2 id="quickUrlTitle" class="modal-title">Find it free</h2>
         <button id="closeQuickUrlBtn" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
       </div>
       <form id="quickUrlForm" class="modal-body" novalidate>
@@ -456,7 +463,7 @@
         <div id="readerFallback" class="reader-fallback" hidden>
           <p id="readerFallbackText" class="reader-fallback-text"></p>
           <div class="reader-fallback-actions">
-            <button id="readerArchiveBtn" type="button" class="form-btn">Try archived copy</button>
+            <button id="readerArchiveBtn" type="button" class="form-btn">Find it free</button>
             <button id="readerRetryBtn" type="button" class="form-btn form-btn-secondary">Try again</button>
           </div>
         </div>
