@@ -9,6 +9,7 @@ import {
   COUNTRY_DESKS,
   COUNTRY_TIMEZONES,
   LIVE_VIDEO_CHANNELS,
+  RESEARCH_SPECIALTIES,
   getCountryDesk,
   RADIO_STATIONS,
   PODCAST_SHOWS,
@@ -71,6 +72,7 @@ const els = {
 
   topicsBar: $('#topicsBar'),
   sportsSubnav: $('#sportsSubnav'),
+  researchSubnav: $('#researchSubnav'),
   editorialHeading: $('#editorialHeading'),
   feedSortSelect: $('#feedSortSelect'),
   countrySelectWrapper: $('#countrySelectWrapper'),
@@ -232,6 +234,7 @@ const state = {
   countryCode: '',
   countryLayout: 'list',
   marketWidgetKey: '',
+  researchSpecialty: 'all',
   marketMoversLoaded: false,
   marketStatusTimer: null,
   videoOpen: false,
@@ -421,7 +424,7 @@ function isEntertainmentArticle(article) {
 }
 
 function filterTopicCategories(articles, topic) {
-  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'briefs') return articles;
+  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'research' || topic?.id === 'briefs') return articles;
   return articles.filter((article) => !isSportArticle(article) && !isEntertainmentArticle(article));
 }
 
@@ -1510,11 +1513,62 @@ function renderMarketPanel(topic) {
   });
 }
 
+function activeResearchSpecialty() {
+  return RESEARCH_SPECIALTIES.find((item) => item.id === state.researchSpecialty) || RESEARCH_SPECIALTIES[0];
+}
+
+function matchesResearchSpecialty(article, specialty = activeResearchSpecialty()) {
+  if (!specialty || specialty.id === 'all') return true;
+  const text = `${article.title || ''} ${article.summary || ''}`.toLowerCase();
+  return specialty.keywords.some((keyword) => text.includes(keyword));
+}
+
+function renderResearchNav(topic = null) {
+  const current = topic || getTopic(state.topicId);
+  const show = Boolean(current?.research);
+  if (!show) {
+    els.researchSubnav.hidden = true;
+    els.researchSubnav.innerHTML = '';
+    return;
+  }
+  els.researchSubnav.innerHTML = RESEARCH_SPECIALTIES.map((item) => (
+    `<button type="button" class="sports-pill${item.id === state.researchSpecialty ? ' active' : ''}" data-research-specialty="${esc(item.id)}">${esc(item.label)}</button>`
+  )).join('');
+  els.researchSubnav.hidden = false;
+  const active = els.researchSubnav.querySelector('.sports-pill.active');
+  if (active) {
+    const left = active.offsetLeft - (els.researchSubnav.clientWidth / 2) + (active.clientWidth / 2);
+    els.researchSubnav.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+  }
+}
+
+function researchListMarkup(articles) {
+  const note = `<div class="headline-note"><strong>Health research</strong><span>Free full text where available · Not medical advice</span></div>`;
+  const rows = articles.map((article, index) => {
+    const time = article.pubDate ? formatRelativeTime(article.pubDate) : '';
+    const label = cleanSourceLabel(article.source);
+    const source = article.feedId && getFeed(article.feedId)
+      ? `<button type="button" class="headline-source" data-source-feed="${esc(article.feedId)}">${esc(label)}</button>`
+      : `<span class="headline-source is-static">${esc(label)}</span>`;
+    const summary = cleanSummary(article.summary);
+    return `<article class="news-card headline-row research-row" data-card-id="${esc(article.id)}" data-article-url="${esc(article.url)}">
+      <span class="headline-rank">${index + 1}</span>
+      <div class="headline-content">
+        <h2 class="headline-title">${esc(article.title)}</h2>
+        ${summary ? `<p class="research-summary">${esc(summary.slice(0, 240))}</p>` : ''}
+        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">RESEARCH</span></div>
+      </div>
+    </article>`;
+  }).join('');
+  return `${note}<div class="headline-list">${rows}</div><p class="research-disclaimer">Abstracts come from the publisher. Read the full paper before relying on any finding. This is not medical advice.</p>`;
+}
+
 function updateTopicHeader(topic) {
   state.currentLabel = topic.label;
   els.editorialHeading.textContent = (topic.title || topic.label).toUpperCase();
   document.title = `${topic.title || topic.label} | Tawin Newsreader`;
   renderMarketPanel(topic);
+  renderResearchNav(topic);
   els.feedSortSelect.value = state.sort;
   const countryDesk = COUNTRY_DESKS.find((desk) => desk.topic === topic.id) || null;
   if (els.countrySelectWrapper) els.countrySelectWrapper.hidden = !topic.country;
@@ -1640,6 +1694,10 @@ function renderFeed() {
   const briefFiltered = showBriefs ? allCurated : allCurated.filter((article) => !article.briefOnly);
   const curated = filterTopicCategories(briefFiltered, activeTopic);
   const visible = state.hideLocked ? curated.filter((article) => article.status !== 'locked') : curated;
+  const researchMode = Boolean(activeTopic?.research);
+  const researchVisible = researchMode
+    ? visible.filter((article) => matchesResearchSpecialty(article))
+    : visible;
 
   if (!curated.length) {
     els.feedList.hidden = false;
@@ -1665,12 +1723,25 @@ function renderFeed() {
     return;
   }
 
+  if (researchMode && !researchVisible.length) {
+    els.feedList.hidden = false;
+    els.feedList.innerHTML = `<div class="state-container">
+      <h2 class="state-title">No ${esc(activeResearchSpecialty().label.toLowerCase())} studies yet</h2>
+      <p class="state-desc">Try <strong>All research</strong> or another specialty.</p>
+    </div>`;
+    els.feedUpdateStatus.hidden = true;
+    return;
+  }
+
   els.feedList.hidden = false;
   const listMode = Boolean(activeTopic?.country) && state.countryLayout === 'list';
   const liveMarkup = activeTopic?.id === 'video' ? liveVideoMarkup() : '';
-  els.feedList.innerHTML = liveMarkup + (listMode ? headlineListMarkup(visible) : buildLayout(visible));
+  const bodyMarkup = researchMode
+    ? researchListMarkup(researchVisible)
+    : listMode ? headlineListMarkup(visible) : buildLayout(visible);
+  els.feedList.innerHTML = liveMarkup + bodyMarkup;
 
-  const count = visible.length;
+  const count = researchMode ? researchVisible.length : visible.length;
   els.feedUpdateStatus.hidden = false;
   els.feedUpdateStatus.textContent = `${count} ${count === 1 ? 'story' : 'stories'}${state.results.length ? ` · ${state.results.filter((result) => result.ok).length} sources` : ''}`;
   sourceResultsMarkup();
@@ -1682,7 +1753,9 @@ function visibleStoryCount() {
   const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
   const curated = curateArticles(state.articles, state.sort);
   const briefFiltered = showBriefs ? curated : curated.filter((article) => !article.briefOnly);
-  return filterTopicCategories(briefFiltered, getTopic(state.topicId)).length;
+  const topic = getTopic(state.topicId);
+  const filtered = filterTopicCategories(briefFiltered, topic);
+  return topic?.research ? filtered.filter((article) => matchesResearchSpecialty(article)).length : filtered.length;
 }
 
 function updateStatusLine() {
@@ -2892,6 +2965,15 @@ els.sportsSubnav.addEventListener('click', (event) => {
   const pill = event.target.closest('[data-sport-topic]');
   if (!pill || pill.dataset.sportTopic === state.topicId) return;
   loadTopic(pill.dataset.sportTopic);
+});
+
+els.researchSubnav?.addEventListener('click', (event) => {
+  const pill = event.target.closest('[data-research-specialty]');
+  if (!pill) return;
+  state.researchSpecialty = pill.dataset.researchSpecialty;
+  renderResearchNav(getTopic(state.topicId));
+  renderFeed();
+  updateStatusLine();
 });
 
 els.sourceBackBtn.addEventListener('click', () => {

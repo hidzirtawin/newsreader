@@ -673,6 +673,40 @@ a {
   }
 }
 
+/* Health research list */
+.research-summary {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.research-tag {
+  padding: 1px 6px;
+  border: 1px solid var(--highlight-green-border);
+  color: var(--highlight-green-dark);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.research-disclaimer {
+  margin: 14px 0 0;
+  padding: 12px 0 2px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.research-subnav {
+  margin-top: -4px;
+}
+
 /* Video playback */
 .news-card.is-video .media::before {
   content: "";

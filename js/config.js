@@ -689,6 +689,9 @@ const FREE_OUTLETS = [
   googleSiteFeed('g1', 'g1', 'g1.globo.com', 'Brazil'),
   googleSiteFeed('mexico-news-daily', 'Mexico News Daily', 'mexiconewsdaily.com', 'Mexico'),
   googleSiteFeed('kyiv-independent', 'Kyiv Independent', 'kyivindependent.com', 'Ukraine'),
+  googleSiteFeed('investinglive', 'investingLive', 'investinglive.com', 'Business'),
+  googleSiteFeed('techradar', 'TechRadar', 'techradar.com', 'Technology'),
+  googleSiteFeed('cbs-moneywatch', 'CBS MoneyWatch', 'cbsnews.com', 'Business'),
 ];
 
 const VIDEO_FEEDS = [
@@ -740,8 +743,8 @@ FEEDS.push({
 
 addFeedsToTopic('world', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'un-news', 'rfi', 'rte', 'africanews', 'the-conversation']);
 addFeedsToTopic('us', ['pbs-newshour', 'newsnation', 'semafor', 'propublica', 'nypost', 'yahoo-news']);
-addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business']);
-addFeedsToTopic('technology', ['the-register', 'zdnet', 'cnet', 'androidauthority', 'the-conversation']);
+addFeedsToTopic('business', ['benzinga', 'investing-com', 'fox-business', 'investinglive', 'cbs-moneywatch']);
+addFeedsToTopic('technology', ['the-register', 'zdnet', 'cnet', 'androidauthority', 'the-conversation', 'techradar']);
 addFeedsToTopic('science', ['quanta', 'science-news', 'sciencealert', 'smithsonian', 'phys-org', 'new-atlas', 'earth-com']);
 addFeedsToTopic('sports', ['sky-sports', 'sporting-news', 'yardbarker', 'yahoo-sports']);
 addFeedsToTopic('politics', ['propublica', 'semafor']);
@@ -758,11 +761,19 @@ addFeedsToTopic('south-africa', ['daily-maverick', 'iol']);
 addFeedsToTopic('ireland', ['rte', 'thejournal-ie']);
 addFeedsToTopic('new-zealand', ['rnz', '1news', 'stuff']);
 
+FEEDS.push({
+  id: 'sciencedaily-health',
+  name: 'ScienceDaily Health',
+  domain: 'sciencedaily.com',
+  group: 'Health',
+  url: 'https://www.sciencedaily.com/rss/health_medicine.xml',
+});
+
 const HEALTH_TOPIC = {
   id: 'health',
   label: 'HEALTH',
   title: 'Health',
-  feeds: ['kff-health', 'who-news', 'medical-xpress', 'news-medical', 'healthline', 'npr-news'],
+  feeds: ['sciencedaily-health', 'kff-health', 'who-news', 'medical-xpress', 'news-medical', 'healthline', 'npr-news'],
 };
 const scienceIndex = TOPICS.findIndex((topic) => topic.id === 'science');
 TOPICS.splice(scienceIndex === -1 ? TOPICS.length : scienceIndex, 0, HEALTH_TOPIC);
@@ -825,6 +836,65 @@ const COUNTRY_DESK_CONFIG = [
   { code: 'CL', name: 'Chile' },
   { code: 'CO', name: 'Colombia' },
   { code: 'PE', name: 'Peru' },
+  { code: 'AF', name: 'Afghanistan' },
+  { code: 'AL', name: 'Albania' },
+  { code: 'DZ', name: 'Algeria' },
+  { code: 'AM', name: 'Armenia' },
+  { code: 'AZ', name: 'Azerbaijan' },
+  { code: 'BY', name: 'Belarus' },
+  { code: 'BO', name: 'Bolivia' },
+  { code: 'BA', name: 'Bosnia and Herzegovina' },
+  { code: 'KH', name: 'Cambodia' },
+  { code: 'CM', name: 'Cameroon' },
+  { code: 'HR', name: 'Croatia' },
+  { code: 'CU', name: 'Cuba' },
+  { code: 'CY', name: 'Cyprus' },
+  { code: 'CZ', name: 'Czechia' },
+  { code: 'CD', name: 'DR Congo' },
+  { code: 'DO', name: 'Dominican Republic' },
+  { code: 'EC', name: 'Ecuador' },
+  { code: 'EE', name: 'Estonia' },
+  { code: 'ET', name: 'Ethiopia' },
+  { code: 'GE', name: 'Georgia' },
+  { code: 'HT', name: 'Haiti' },
+  { code: 'HU', name: 'Hungary' },
+  { code: 'IS', name: 'Iceland' },
+  { code: 'IR', name: 'Iran' },
+  { code: 'IQ', name: 'Iraq' },
+  { code: 'JM', name: 'Jamaica' },
+  { code: 'JO', name: 'Jordan' },
+  { code: 'KZ', name: 'Kazakhstan' },
+  { code: 'KG', name: 'Kyrgyzstan' },
+  { code: 'LV', name: 'Latvia' },
+  { code: 'LB', name: 'Lebanon' },
+  { code: 'LY', name: 'Libya' },
+  { code: 'MT', name: 'Malta' },
+  { code: 'MA', name: 'Morocco' },
+  { code: 'MM', name: 'Myanmar' },
+  { code: 'NA', name: 'Namibia' },
+  { code: 'KP', name: 'North Korea' },
+  { code: 'PS', name: 'Palestine' },
+  { code: 'PY', name: 'Paraguay' },
+  { code: 'PR', name: 'Puerto Rico' },
+  { code: 'QA', name: 'Qatar' },
+  { code: 'RO', name: 'Romania' },
+  { code: 'RW', name: 'Rwanda' },
+  { code: 'SN', name: 'Senegal' },
+  { code: 'RS', name: 'Serbia' },
+  { code: 'SO', name: 'Somalia' },
+  { code: 'SS', name: 'South Sudan' },
+  { code: 'SD', name: 'Sudan' },
+  { code: 'SY', name: 'Syria' },
+  { code: 'TZ', name: 'Tanzania' },
+  { code: 'TT', name: 'Trinidad and Tobago' },
+  { code: 'TN', name: 'Tunisia' },
+  { code: 'UG', name: 'Uganda' },
+  { code: 'UY', name: 'Uruguay' },
+  { code: 'UZ', name: 'Uzbekistan' },
+  { code: 'VE', name: 'Venezuela' },
+  { code: 'YE', name: 'Yemen' },
+  { code: 'ZM', name: 'Zambia' },
+  { code: 'ZW', name: 'Zimbabwe' },
 ];
 
 const EXISTING_COUNTRY_TOPICS = new Set(['us', 'uk', 'australia', 'canada', 'singapore', 'malaysia', 'india', 'china', 'russia']);
@@ -890,6 +960,70 @@ export function getCountryDesk(code) {
 export function countryTopicId(code) {
   return getCountryDesk(code)?.topic || '';
 }
+
+
+/* ------------------------------------------------------------------ */
+/* Health research — No Wall Medicine-style journal desk               */
+/* ------------------------------------------------------------------ */
+
+const RESEARCH_FEEDS = [
+  { id: 'lancet', name: 'The Lancet', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/lancet_current.xml' },
+  { id: 'lancet-global', name: 'Lancet Global Health', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/langlo_current.xml' },
+  { id: 'lancet-digital', name: 'Lancet Digital Health', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/landig_current.xml' },
+  { id: 'ebiomedicine', name: 'eBioMedicine', domain: 'thelancet.com', group: 'Research', url: 'https://www.thelancet.com/rssfeed/ebiom_current.xml' },
+  { id: 'bmj', name: 'The BMJ', domain: 'bmj.com', group: 'Research', url: 'https://www.bmj.com/rss.xml' },
+  { id: 'plos-medicine', name: 'PLOS Medicine', domain: 'journals.plos.org', group: 'Research', url: 'https://journals.plos.org/plosmedicine/feed/atom' },
+  { id: 'nejm', name: 'NEJM', domain: 'nejm.org', group: 'Research', url: 'https://www.nejm.org/action/showFeed?type=etoc&feed=rss&jc=nejm' },
+  { id: 'nature-medicine', name: 'Nature Medicine', domain: 'nature.com', group: 'Research', url: 'https://www.nature.com/nm.rss' },
+  { id: 'annals-internal-medicine', name: 'Annals of Internal Medicine', domain: 'acpjournals.org', group: 'Research', url: 'https://www.acpjournals.org/action/showFeed?type=etoc&feed=rss&jc=aim' },
+  googleSiteFeed('jama', 'JAMA', 'jamanetwork.com', 'Research'),
+  googleSiteFeed('cdc-research', 'CDC', 'cdc.gov', 'Research'),
+  googleSiteFeed('nih-research', 'NIH', 'nih.gov', 'Research'),
+  googleSiteFeed('bmc-medicine', 'BMC Medicine', 'bmcmedicine.biomedcentral.com', 'Research'),
+  googleSiteFeed('jacc', 'JACC', 'jacc.org', 'Research'),
+  googleSiteFeed('circulation', 'Circulation', 'ahajournals.org', 'Research'),
+  googleSiteFeed('mayo-clinic', 'Mayo Clinic', 'mayoclinic.org', 'Research'),
+  googleSiteFeed('cleveland-clinic', 'Cleveland Clinic', 'my.clevelandclinic.org', 'Research'),
+  googleSiteFeed('medical-news-today', 'Medical News Today', 'medicalnewstoday.com', 'Research'),
+];
+FEEDS.push(...RESEARCH_FEEDS);
+
+const RESEARCH_TOPIC = {
+  id: 'research',
+  label: 'RESEARCH',
+  title: 'Health Research',
+  research: true,
+  limit: 48,
+  feeds: [
+    'lancet', 'lancet-global', 'lancet-digital', 'ebiomedicine', 'bmj', 'plos-medicine',
+    'nejm', 'nature-medicine', 'annals-internal-medicine', 'jama', 'cdc-research',
+    'nih-research', 'bmc-medicine', 'jacc', 'circulation', 'who-news', 'kff-health',
+    'medical-xpress', 'sciencedaily', 'mayo-clinic', 'cleveland-clinic', 'medical-news-today',
+  ],
+};
+const healthIndex = TOPICS.findIndex((topic) => topic.id === 'health');
+TOPICS.splice(healthIndex === -1 ? TOPICS.length : healthIndex + 1, 0, RESEARCH_TOPIC);
+
+export const RESEARCH_SPECIALTIES = [
+  { id: 'all', label: 'All research', keywords: [] },
+  { id: 'cardiology', label: 'Cardiology', keywords: ['heart', 'cardiac', 'cardio', 'stroke', 'hypertension', 'cholesterol', 'atrial', 'artery', 'aortic', 'blood pressure'] },
+  { id: 'infectious', label: 'Infectious Disease', keywords: ['infection', 'vaccine', 'virus', 'viral', 'bacterial', 'antimicrobial', 'hiv', 'malaria', 'tuberculosis', 'covid', 'influenza', 'hepatitis', 'sepsis'] },
+  { id: 'oncology', label: 'Oncology', keywords: ['cancer', 'tumour', 'tumor', 'carcinoma', 'chemotherapy', 'immunotherapy', 'metastasis', 'leukemia', 'lymphoma', 'myeloma'] },
+  { id: 'neurology', label: 'Neurology', keywords: ['brain', 'neuro', 'alzheimer', 'parkinson', 'epilepsy', 'multiple sclerosis', 'dementia', 'migraine', 'eeg'] },
+  { id: 'digital', label: 'Digital Health & AI', keywords: ['artificial intelligence', ' ai ', 'machine learning', 'digital', 'telehealth', 'algorithm', 'smartphone', 'wearable', 'large language model'] },
+  { id: 'pediatrics', label: 'Pediatrics', keywords: ['child', 'children', 'infant', 'pediatric', 'paediatric', 'neonatal', 'adolescent'] },
+  { id: 'gastro', label: 'Gastroenterology', keywords: ['gut', 'gastro', 'liver', 'bowel', 'crohn', 'colitis', 'colon', 'colorectal', 'pancrea'] },
+  { id: 'pulmonology', label: 'Pulmonology', keywords: ['lung', 'respiratory', 'asthma', 'copd', 'pulmonary', 'tuberculosis'] },
+  { id: 'endocrinology', label: 'Endocrinology', keywords: ['diabetes', 'insulin', 'thyroid', 'endocrine', 'obesity', 'hormone', 'glucose'] },
+  { id: 'public-health', label: 'Public & Global Health', keywords: ['public health', 'global health', 'policy', 'screening', 'vaccination', 'who', 'inequality', 'low-income', 'population'] },
+  { id: 'psychiatry', label: 'Psychiatry', keywords: ['mental', 'depression', 'anxiety', 'psychiatric', 'schizophrenia', 'bipolar', 'suicide'] },
+  { id: 'geriatrics', label: 'Geriatrics', keywords: ['older', 'elderly', 'frailty', 'geriatric', 'ageing', 'aging', 'dementia'] },
+  { id: 'womens-health', label: "Women's Health", keywords: ['women', 'maternal', 'pregnancy', 'obstetric', 'gynecolog', 'gynaecolog', 'breast', 'endometriosis', 'menopause'] },
+  { id: 'surgery', label: 'Surgery', keywords: ['surgery', 'surgical', 'operation', 'transplant', 'postoperative'] },
+  { id: 'diagnostics', label: 'Diagnostics', keywords: ['diagnostic', 'screening', 'imaging', 'biomarker', 'sensitivity', 'specificity', 'accuracy'] },
+  { id: 'guidelines', label: 'Guidelines', keywords: ['guideline', 'consensus', 'recommendation', 'position statement'] },
+  { id: 'trials', label: 'Trials', keywords: ['randomised', 'randomized', 'trial', 'phase 3', 'phase iii', 'meta-analysis'] },
+];
 
 export const RADIO_STATIONS = [
   { id: 'bfm-my', name: 'BFM 89.9', region: 'Malaysia', frequency: '89.9 FM', language: 'English', description: 'Business and current affairs', stream: 'https://22253.live.streamtheworld.com/BFM_SC' },
