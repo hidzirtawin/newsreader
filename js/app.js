@@ -303,16 +303,24 @@ function badgeMarkup(article, onDark = false) {
   return `<button type="button" class="${classes.join(' ')}" data-badge-for="${esc(article.id)}" data-domain="${esc(article.domain)}" title="Change how ${esc(article.domain)} opens" aria-label="Reading rule: ${esc(badgeLabel(article))}. Change rule for ${esc(article.domain)}.">${esc(badgeLabel(article))}<svg class="badge-caret" viewBox="0 0 10 6" width="8" height="5" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>`;
 }
 
+function cleanSourceLabel(value) {
+  const name = String(value || '').trim();
+  if (/^ABC News\s*&\s*Headlines/i.test(name)) return 'ABC News Australia';
+  if (/^Yahoo News\b/i.test(name)) return 'Yahoo News';
+  return name;
+}
+
 function sourceGroupMarkup(article) {
   const time = formatRelativeTime(article.pubDate);
+  const label = cleanSourceLabel(article.source);
   const source = article.feedId
-    ? `<button type="button" class="news-card-source source-link" data-source-feed="${esc(article.feedId)}" title="More from ${esc(article.source)}">${esc(article.source)}</button>`
-    : `<span class="news-card-source">${esc(article.source)}</span>`;
+    ? `<button type="button" class="news-card-source source-link" data-source-feed="${esc(article.feedId)}" title="More from ${esc(label)}">${esc(label)}</button>`
+    : `<span class="news-card-source">${esc(label)}</span>`;
   return `<div class="source-group">${faviconMarkup(article)}${source}${time ? `<span class="news-card-time" data-pubdate="${esc(article.pubDate)}">${esc(time)}</span>` : ''}</div>`;
 }
 
 function mediaMarkup(article, eager = false) {
-  const label = article.source || 'News';
+  const label = cleanSourceLabel(article.source) || 'News';
   return `<div class="media">
     <span class="media-fallback"><span class="media-fallback-label">${esc(label)}</span><span class="media-fallback-letter">${esc(initialFor(article.source))}</span></span>
     <img src="${esc(article.imageUrl)}" alt="" loading="${eager ? 'eager' : 'lazy'}" decoding="async">
@@ -1305,9 +1313,10 @@ function headlineListMarkup(articles) {
   const note = `<div class="headline-note"><strong>Free to read</strong><span>No paywalls · Latest first</span></div>`;
   const rows = articles.map((article, index) => {
     const time = article.pubDate ? formatRelativeTime(article.pubDate) : '';
+    const label = cleanSourceLabel(article.source);
     const source = article.feedId && getFeed(article.feedId)
-      ? `<button type="button" class="headline-source" data-source-feed="${esc(article.feedId)}">${esc(article.source)}</button>`
-      : `<span class="headline-source is-static">${esc(article.source)}</span>`;
+      ? `<button type="button" class="headline-source" data-source-feed="${esc(article.feedId)}">${esc(label)}</button>`
+      : `<span class="headline-source is-static">${esc(label)}</span>`;
     return `<article class="news-card headline-row" data-card-id="${esc(article.id)}" data-article-url="${esc(article.url)}">
       <span class="headline-rank">${index + 1}</span>
       <div class="headline-content">
