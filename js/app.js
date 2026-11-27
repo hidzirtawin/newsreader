@@ -845,13 +845,14 @@ function renderReaderService(article) {
   els.readerToolbarState.textContent = 'Reader service';
   els.readerNotice.hidden = true;
   els.readerFallback.hidden = true;
+  const provider = isWallhopDomain(article.domain || article.url) ? 'wallhop' : 'jina';
   const preview = cleanSummary(article.summary) ? `<div class="reader-preview">${textToParagraphs(cleanSummary(article.summary))}</div>` : '';
   els.readerBody.innerHTML = `${preview}<div class="reader-service-shell">
     <div class="reader-service-bar" id="readerServiceStatus">Loading full text</div>
     <iframe id="readerServiceFrame" name="readerServiceFrame" title="Article reader" sandbox="allow-same-origin" style="display:none"></iframe>
     <form id="readerServiceForm" method="POST" action="./reader-frame" target="readerServiceFrame" hidden>
       <input type="hidden" name="url" value="${esc(article.url)}">
-      <input type="hidden" name="provider" value="${isWallhopDomain(article.domain) ? 'wallhop' : 'jina'}">
+      <input type="hidden" name="provider" value="${provider}">
     </form>
   </div>`;
   const frame = document.getElementById('readerServiceFrame');
@@ -902,7 +903,7 @@ function renderReaderService(article) {
   });
 
   form.submit();
-  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), 20000);
+  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), provider === 'wallhop' ? 12000 : 20000);
 }
 
 
@@ -959,9 +960,11 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
   state.readerArticle = resolved;
   setReaderHeader(resolved);
 
-  // Free sites: show the full reader service immediately, then upgrade to a
-  // styled extraction if the publisher HTML can be parsed in the background.
-  if (!archiveOnly && canEmbedReaderService(resolved.url)) {
+  // Free sites and WallHop-supported mastheads: show the reader service
+  // immediately, then upgrade to a styled extraction when the HTML parses.
+  // Hard-paywalled publishers that WallHop cannot serve stay on the summary.
+  const wallhop = isWallhopDomain(resolved.domain || resolved.url);
+  if (!archiveOnly && (wallhop || canEmbedReaderService(resolved.url))) {
     try {
       if (navigator.serviceWorker?.controller) renderReaderService(resolved);
       else renderReaderPlainService(resolved);
