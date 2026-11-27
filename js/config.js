@@ -1048,6 +1048,7 @@ const RESEARCH_TOPIC = {
   label: 'RESEARCH',
   title: 'Health Research',
   research: true,
+  hiddenFromBar: true,
   limit: 48,
   feeds: [
     'lancet', 'lancet-global', 'lancet-digital', 'lancet-oncology', 'lancet-neurology',

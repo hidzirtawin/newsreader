@@ -1055,6 +1055,13 @@ function renderReaderService(article) {
     try { doc = frame.contentDocument; } catch { doc = null; }
     if (!doc || !doc.documentElement || doc.URL === 'about:blank') return;
 
+    const errorHeading = doc.querySelector('h1')?.textContent?.trim() || '';
+    if (/^Reader unavailable$/i.test(errorHeading)) {
+      const detail = doc.querySelector('p')?.textContent?.trim() || '';
+      fail(`Reader service unavailable${detail ? `: ${detail}` : '.'}`);
+      return;
+    }
+
     try {
       const html = doc.documentElement.outerHTML;
       const extraction = extractArticle(html, article.url);
@@ -1141,7 +1148,7 @@ function renderReaderFallback(article, extraction, { checking = false } = {}) {
   els.readerRetryBtn.hidden = checking;
 }
 
-async function waitForReaderController(timeoutMs = 3500) {
+async function waitForReaderController(timeoutMs = 8000) {
   if (navigator.serviceWorker?.controller) return true;
   if (!('serviceWorker' in navigator)) return false;
   try {
@@ -1172,9 +1179,16 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
   const wallhop = isWallhopDomain(resolved.domain || resolved.url);
   if (!archiveOnly && (wallhop || canEmbedReaderService(resolved.url))) {
     try {
+      els.readerBody.innerHTML = '<div class="reader-service-shell"><div class="reader-service-bar">Preparing reader…</div></div>';
       const hasController = await waitForReaderController();
-      if (hasController) renderReaderService(resolved);
-      else renderReaderFallback(resolved, null, { checking: false });
+      if (hasController) {
+        renderReaderService(resolved);
+      } else {
+        renderReaderFallback(resolved, null, { checking: false });
+        if (els.readerFallbackText) {
+          els.readerFallbackText.textContent = 'The reader is still starting on this device. Tap Try again in a moment.';
+        }
+      }
     } catch {
       renderReaderFallback(resolved, null, { checking: false });
     }
@@ -4318,19 +4332,17 @@ window.addEventListener('pageshow', checkDueRefresh);
 /* ------------------------------------------------------------------ */
 
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js')
-      .then(async () => {
-        await navigator.serviceWorker.ready;
-        if (!navigator.serviceWorker.controller && !sessionStorage.getItem('newsreader_sw_reloaded')) {
-          sessionStorage.setItem('newsreader_sw_reloaded', '1');
-          if (!state.readerOpen) setTimeout(() => location.reload(), 500);
-        }
-      })
-      .catch((error) => {
-        console.warn('Service worker registration failed', error);
-      });
-  });
+  navigator.serviceWorker.register('./sw.js')
+    .then(async () => {
+      await navigator.serviceWorker.ready;
+      if (!navigator.serviceWorker.controller && !sessionStorage.getItem('newsreader_sw_reloaded')) {
+        sessionStorage.setItem('newsreader_sw_reloaded', '1');
+        if (!state.readerOpen) setTimeout(() => location.reload(), 500);
+      }
+    })
+    .catch((error) => {
+      console.warn('Service worker registration failed', error);
+    });
 }
 
 /* ------------------------------------------------------------------ */

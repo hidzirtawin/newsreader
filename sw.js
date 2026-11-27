@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v46';
+const VERSION = 'newsreader-v48';
 const SHELL = [
   './',
   './index.html',
@@ -22,8 +22,6 @@ const SHELL = [
   './icons/icon-180.png',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './data/news.json',
-  './data/podcasts.json',
 ];
 
 self.addEventListener('install', (event) => {
@@ -124,7 +122,15 @@ async function proxyReader(request) {
         html = await fetchJina();
       }
     } else {
-      html = await fetchJina();
+      try {
+        html = await fetchJina();
+      } catch (jinaError) {
+        try {
+          html = await fetchWallhop();
+        } catch {
+          throw jinaError;
+        }
+      }
     }
 
     if (!html || html.length < 200) throw new Error('Reader service returned no article');
