@@ -230,6 +230,32 @@ function hueFor(text) {
   return hash;
 }
 
+const RETURN_KEY = 'newsreader_return_v1';
+
+function rememberReturnPosition() {
+  if (!state.topicId) return;
+  try {
+    sessionStorage.setItem(RETURN_KEY, JSON.stringify({
+      topicId: state.topicId,
+      scrollY: window.scrollY,
+      at: Date.now(),
+    }));
+  } catch { /* storage may be blocked */ }
+}
+
+function restoreReturnScroll() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(RETURN_KEY) || 'null');
+    if (!saved || saved.topicId !== state.topicId) return;
+    if (Date.now() - Number(saved.at || 0) > 30 * 60 * 1000) {
+      sessionStorage.removeItem(RETURN_KEY);
+      return;
+    }
+    sessionStorage.removeItem(RETURN_KEY);
+    setTimeout(() => window.scrollTo({ top: Number(saved.scrollY) || 0, behavior: 'auto' }), 600);
+  } catch { /* ignore */ }
+}
+
 function faviconMarkup(article) {
   return `<span class="favicon-fallback" style="--fav-hue:${hueFor(article.domain)}" aria-hidden="true">${esc(initialFor(article.source))}</span>`;
 }
@@ -269,7 +295,7 @@ function titleMarkup(article, className) {
   if (article.status === 'locked') {
     return `<span class="${className}">${esc(article.title)}</span>`;
   }
-  return `<a class="${className}" href="${esc(article.targetUrl || article.url)}" target="_blank" rel="noopener noreferrer">${esc(article.title)}</a>`;
+  return `<a class="${className}" href="${esc(article.targetUrl || article.url)}" rel="noopener noreferrer">${esc(article.title)}</a>`;
 }
 
 function lockedHint(article) {
@@ -1367,7 +1393,8 @@ function openArticle(article) {
     showToast('Still checking for an archived copy. Try again in a moment.');
     return;
   }
-  window.open(article.targetUrl || article.url, '_blank', 'noopener,noreferrer');
+  rememberReturnPosition();
+  window.location.assign(article.targetUrl || article.url);
 }
 
 /* ------------------------------------------------------------------ */
@@ -1490,8 +1517,16 @@ els.feedList.addEventListener('click', (event) => {
   if (!card) return;
   const article = findArticle(card.dataset.cardId);
   if (!article) return;
-  if (article.status === 'checking' || article.status === 'locked') {
-    event.preventDefault();
+  const anchor = event.target.closest('a[href]');
+  if (anchor) {
+    if (article.status === 'checking' || article.status === 'locked') {
+      event.preventDefault();
+      openArticle(article);
+    } else {
+      // Let the browser handle a same-tab navigation so Back returns to the feed.
+      if (!(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) rememberReturnPosition();
+    }
+    return;
   }
   openArticle(article);
 });
@@ -1552,6 +1587,7 @@ els.autoRefreshCheckbox.addEventListener('change', () => {
 });
 
 els.newStoriesBtn.addEventListener('click', applyPendingStories);
+els.toastActionLink.addEventListener('click', rememberReturnPosition);
 
 /* ------------------------------------------------------------------ */
 /* Rules modal                                                         */
@@ -2132,30 +2168,14 @@ els.quickUrlForm.addEventListener('submit', async (event) => {
   }
 
   els.quickUrlOpenBtn.disabled = true;
-  let pendingWindow = null;
-  if (strategy === 'archive_is' || strategy === 'wayback') {
-    pendingWindow = window.open('about:blank', '_blank');
-    if (pendingWindow) {
-      try {
-        pendingWindow.document.write('<title>Checking archive…</title><p style="font-family:system-ui,sans-serif;padding:24px">Checking for an archived copy…</p>');
-        pendingWindow.document.close();
-      } catch { /* ignore */ }
-    }
-  }
   try {
     if (strategy === 'archive_is' || strategy === 'wayback') {
       const result = await checkArchive({ url: parsed.href, strategy, domain });
       closeModal(els.quickUrlModal);
       if (result.available && result.archiveUrl) {
-        if (pendingWindow) {
-          pendingWindow.opener = null;
-          pendingWindow.location.href = result.archiveUrl;
-        } else {
-          window.open(result.archiveUrl, '_blank', 'noopener,noreferrer');
-        }
-        showToast(`Opened an archived copy of ${domain}.`);
+        rememberReturnPosition();
+        window.location.assign(result.archiveUrl);
       } else {
-        pendingWindow?.close();
         showToast(`No ${strategy === 'archive_is' ? 'Archive.is' : 'Wayback'} snapshot found for this story.`, {
           href: parsed.href,
           label: 'Open original ↗',
@@ -2165,7 +2185,8 @@ els.quickUrlForm.addEventListener('submit', async (event) => {
     } else {
       const target = buildStrategyUrl(strategy, parsed.href);
       closeModal(els.quickUrlModal);
-      window.open(target, '_blank', 'noopener,noreferrer');
+      rememberReturnPosition();
+      window.location.assign(target);
     }
   } finally {
     els.quickUrlOpenBtn.disabled = false;
@@ -2296,6 +2317,7 @@ function boot() {
   renderTopicsBar();
   if (initial) {
     loadTopic(initial);
+    setTimeout(restoreReturnScroll, 1400);
   } else {
     renderFeed();
   }

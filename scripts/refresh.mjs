@@ -551,6 +551,13 @@ async function main() {
   await mkdir(DATA, { recursive: true });
   const imageCache = JSON.parse(await readFile(IMAGE_CACHE, 'utf8').catch(() => '{}'));
   const publisherCache = JSON.parse(await readFile(PUBLISHER_CACHE, 'utf8').catch(() => '{}'));
+  const pruneBefore = Date.now() - 30 * 24 * 60 * 60 * 1000;
+  for (const [url, entry] of Object.entries(imageCache)) {
+    if (!entry || Number(entry.at || 0) < pruneBefore) delete imageCache[url];
+  }
+  for (const [id, entry] of Object.entries(publisherCache)) {
+    if (!entry || Number(entry.at || 0) < pruneBefore) delete publisherCache[id];
+  }
 
   const usedFeedIds = [...new Set(TOPICS.flatMap((topic) => topic.feeds || []))];
   const feeds = usedFeedIds.map((id) => FEEDS.find((feed) => feed.id === id)).filter(Boolean);

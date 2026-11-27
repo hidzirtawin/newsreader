@@ -446,5 +446,53 @@
   "https://www.theglobeandmail.com/canada/article-ontario-maid-cases-should-refer-police-former-oversight-committee/": {
     "imageUrl": "https://www.theglobeandmail.com/resizer/v2/SNMCQ7SE6VHFNO6TAZCZ4HURFE?auth=e14072b212bb51b48fa189451dd660f06a35326fbadb4a36395d80709e935982&width=1200&height=800&quality=80&smart=true",
     "at": 1795743041037
+  },
+  "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html": {
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108363244-1789497965297-gettyimages-2293419464-vcg111663866789.jpeg?v=1789497999&w=1920&h=1080",
+    "at": 1795744043283
+  },
+  "https://www.independent.co.uk/news/uk/politics/brexit-eu-douglas-alexander-speech-andy-burnham-b3092290.html": {
+    "imageUrl": "https://static.independent.co.uk/2026/11/26/08/828a5de292c2ce0228a33c3fff7bb98aY29udGVudHNlYXJjaGFwaSwxNzk1NzY3NTk3-2.85367745.jpg?width=1200&height=800&crop=1200:800",
+    "at": 1795744043414
+  },
+  "https://www.bloomberg.com/news/videos/2026-11-27/how-volatility-is-undermining-the-carry-trade-video": {
+    "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i7ec3BhPDrn4/v3/500x-1.webp",
+    "at": 1795744043469
+  },
+  "https://www.straitstimes.com/asia/se-asia/the-search-for-vietnams-stolen-pets-at-wet-markets-and-slaughterhouses": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/c26f5386e9d21a5daac408f4534ad592709794a3cfe0afc7b217147d0cc69570?t=og",
+    "at": 1795744043545
+  },
+  "https://tass.com/world/2225609": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494505.jpg",
+    "at": 1795744045031
+  },
+  "https://tass.com/world/2225607": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494501.jpg",
+    "at": 1795744045305
+  },
+  "https://tass.com/economy/2225597": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494497.jpg",
+    "at": 1795744045485
+  },
+  "https://tass.com/world/2225587": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494489.jpg",
+    "at": 1795744045485
+  },
+  "https://tass.com/world/2225589": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494493.jpg",
+    "at": 1795744045486
+  },
+  "https://www.straitstimes.com/business/asean-must-counter-economic-nationalism-with-deeper-integration-wider-partnerships-dpm-gan": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/4e9062161cfd871194ed3020adccf14f690b05f0297b200fe6f2f39b724909cd?t=og",
+    "at": 1795744045555
+  },
+  "https://www.smh.com.au/sport/cricket/lyon-set-to-be-axed-from-australia-s-test-squad-20261127-p61hu7.html": {
+    "imageUrl": "https://static.ffx.io/images/$zoom_0.2850613102518268%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_211%2C$y_101/t_crop_custom/q_86%2Cf_auto/328244825a53932e0e126aa146dc1ea0467bb127",
+    "at": 1795744152056
+  },
+  "https://www.globaltimes.cn/page/202611/1375140.shtml": {
+    "imageUrl": "https://www.globaltimes.cn/Portals/0/attachment/2026/2026-11-04/20515828-37f1-4def-85b1-6e5e8a51a8d1.jpeg",
+    "at": 1795744153028
   }
 }

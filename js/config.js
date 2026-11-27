@@ -137,6 +137,15 @@ export const DEFAULT_RULES = {
   'foxnews.com': { strategy: 'direct', paywall: 'none', label: 'Fox News' },
   'independent.co.uk': { strategy: 'direct', paywall: 'none', label: 'The Independent' },
   'smh.com.au': { strategy: 'smry', paywall: 'metered', label: 'The Sydney Morning Herald' },
+  '7news.com.au': { strategy: 'direct', paywall: 'none', label: '7NEWS' },
+  'cgtn.com': { strategy: 'direct', paywall: 'none', label: 'CGTN' },
+  'globaltimes.cn': { strategy: 'direct', paywall: 'none', label: 'Global Times' },
+  'en.people.cn': { strategy: 'direct', paywall: 'none', label: "People's Daily" },
+  'sixthtone.com': { strategy: 'direct', paywall: 'none', label: 'Sixth Tone' },
+  'themoscowtimes.com': { strategy: 'direct', paywall: 'none', label: 'The Moscow Times' },
+  'tass.com': { strategy: 'direct', paywall: 'none', label: 'TASS' },
+  'meduza.io': { strategy: 'direct', paywall: 'none', label: 'Meduza' },
+  'rt.com': { strategy: 'direct', paywall: 'none', label: 'RT' },
   'thehill.com': { strategy: 'direct', paywall: 'none', label: 'The Hill' },
   'euronews.com': { strategy: 'direct', paywall: 'none', label: 'Euronews' },
   'taipeitimes.com': { strategy: 'direct', paywall: 'none', label: 'Taipei Times' },
@@ -314,6 +323,22 @@ export const FEEDS = [
   { id: 'independent', name: 'The Independent', domain: 'independent.co.uk', group: 'United Kingdom', url: 'https://news.google.com/rss/search?q=site%3Aindependent.co.uk+when%3A2d&hl=en-GB&gl=GB&ceid=GB%3Aen', googleNews: true },
   { id: 'smh', name: 'The Sydney Morning Herald', domain: 'smh.com.au', group: 'Australia', url: 'https://news.google.com/rss/search?q=site%3Asmh.com.au+when%3A2d&hl=en-AU&gl=AU&ceid=AU%3Aen', googleNews: true },
   { id: 'globe-mail', name: 'The Globe and Mail', domain: 'theglobeandmail.com', group: 'Canada', url: 'https://news.google.com/rss/search?q=site%3Atheglobeandmail.com+when%3A2d&hl=en-CA&gl=CA&ceid=CA%3Aen', googleNews: true },
+
+  // Australia
+  { id: '7news', name: '7NEWS', domain: '7news.com.au', group: 'Australia', url: 'https://7news.com.au/news/rss' },
+
+  // China (English-language)
+  { id: 'bbc-china', name: 'BBC China', domain: 'bbc.com', group: 'China', url: 'https://feeds.bbci.co.uk/news/world/asia/china/rss.xml' },
+  { id: 'cgtn', name: 'CGTN', domain: 'cgtn.com', group: 'China', url: 'https://www.cgtn.com/subscribe/rss/section/world.xml' },
+  { id: 'global-times', name: 'Global Times', domain: 'globaltimes.cn', group: 'China', url: 'https://news.google.com/rss/search?q=site%3Aglobaltimes.cn&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'peoples-daily', name: "People's Daily", domain: 'en.people.cn', group: 'China', url: 'https://news.google.com/rss/search?q=site%3Aen.people.cn&hl=en-US&gl=US&ceid=US%3Aen', googleNews: true },
+  { id: 'sixth-tone', name: 'Sixth Tone', domain: 'sixthtone.com', group: 'China', url: 'https://www.sixthtone.com/rss' },
+
+  // Russia (English-language, state and independent)
+  { id: 'moscow-times', name: 'The Moscow Times', domain: 'themoscowtimes.com', group: 'Russia', url: 'https://www.themoscowtimes.com/rss/news' },
+  { id: 'tass', name: 'TASS', domain: 'tass.com', group: 'Russia', url: 'https://tass.com/rss/v2.xml' },
+  { id: 'meduza', name: 'Meduza', domain: 'meduza.io', group: 'Russia', url: 'https://meduza.io/rss/en/all' },
+  { id: 'rt', name: 'RT', domain: 'rt.com', group: 'Russia', url: 'https://www.rt.com/rss/' },
 ];
 
 export const TOPICS = [
@@ -345,7 +370,7 @@ export const TOPICS = [
   },
   { id: 'us', label: 'US', title: 'United States', feeds: ['cbs', 'abc-us', 'cnn', 'latimes', 'npr-news', 'nyt-us', 'nyt-politics', 'cnbc'] },
   { id: 'uk', label: 'UK', title: 'United Kingdom', feeds: ['bbc-uk', 'guardian-uk', 'sky-uk', 'bbc-news', 'guardian-world'] },
-  { id: 'australia', label: 'AUSTRALIA', title: 'Australia', feeds: ['abc-au', 'guardian-au', 'sbs-au', 'herald-sun', 'the-australian'] },
+  { id: 'australia', label: 'AUSTRALIA', title: 'Australia', feeds: ['abc-au', '7news', 'guardian-au', 'sbs-au', 'smh', 'herald-sun', 'the-australian'] },
   { id: 'canada', label: 'CANADA', title: 'Canada', feeds: ['cbc-top', 'cbc-canada', 'cbc-world', 'globe-mail'] },
   { id: 'singapore', label: 'SINGAPORE', title: 'Singapore', feeds: ['straitstimes-sg', 'cna', 'mothership', 'beritaharian-sg'] },
   { id: 'malaysia', label: 'MALAYSIA', title: 'Malaysia', feeds: ['berita-harian', 'nst', 'fmt', 'utusan', 'kosmo'] },
@@ -353,6 +378,8 @@ export const TOPICS = [
   { id: 'europe', label: 'EUROPE', title: 'Europe', feeds: ['bbc-europe', 'dw', 'france24', 'euronews', 'el-pais', 'bloomberg-politics'] },
   { id: 'middle-east', label: 'MIDDLE EAST', title: 'Middle East', feeds: ['bbc-middle-east', 'aljazeera', 'arab-news', 'jpost'] },
   { id: 'india', label: 'INDIA', title: 'India', feeds: ['bbc-india', 'indian-express', 'times-of-india'] },
+  { id: 'china', label: 'CHINA', title: 'China', feeds: ['scmp', 'scmp-china', 'bbc-china', 'cgtn', 'global-times', 'peoples-daily', 'sixth-tone'] },
+  { id: 'russia', label: 'RUSSIA', title: 'Russia', feeds: ['moscow-times', 'tass', 'meduza', 'rt'] },
   {
     id: 'business',
     label: 'BUSINESS',
