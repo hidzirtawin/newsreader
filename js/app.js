@@ -201,6 +201,11 @@ const els = {
   readerFallback: $('#readerFallback'),
   readerFallbackText: $('#readerFallbackText'),
   readerArchiveBtn: $('#readerArchiveBtn'),
+  readerOaBtn: $('#readerOaBtn'),
+  oaModal: $('#oaModal'),
+  oaFrame: $('#oaFrame'),
+  oaTitle: $('#oaTitle'),
+  closeOaBtn: $('#closeOaBtn'),
   readerRetryBtn: $('#readerRetryBtn'),
   audioDock: $('#audioDock'),
   audioPlayer: $('#audioPlayer'),
@@ -344,6 +349,13 @@ function youtubeId(value) {
 
 function isVideoArticle(article) {
   return Boolean(article?.video || youtubeId(article?.url || ''));
+}
+
+function openOa(url, title = 'Free full text') {
+  if (!els.oaModal || !els.oaFrame || !url) return;
+  els.oaFrame.src = url;
+  if (els.oaTitle) els.oaTitle.textContent = title || 'Free full text';
+  openModal(els.oaModal);
 }
 
 function openVideo(article) {
@@ -1107,6 +1119,10 @@ function renderReaderPlainService(article) {
 
 function renderReaderFallback(article, extraction, { checking = false } = {}) {
   els.readerStatus.hidden = true;
+  if (els.readerOaBtn) {
+    els.readerOaBtn.hidden = !article?.oaUrl;
+    if (article?.oaUrl) els.readerOaBtn.dataset.oaUrl = article.oaUrl;
+  }
   els.readerToolbarState.textContent = checking ? 'Checking archive' : 'Publisher summary';
   els.readerNotice.hidden = true;
   els.readerFallback.hidden = false;
@@ -1605,7 +1621,7 @@ function researchListMarkup(articles) {
       <div class="headline-content">
         <h2 class="headline-title">${esc(article.title)}</h2>
         ${summary ? `<p class="research-summary">${esc(summary.slice(0, 320))}</p>` : ''}
-        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span>${activeResearchFormat().id === 'all' ? '' : `<span class="research-tag research-format-tag">${esc(activeResearchFormat().label.toUpperCase())}</span>`}</div>
+        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span>${activeResearchFormat().id === 'all' ? '' : `<span class="research-tag research-format-tag">${esc(activeResearchFormat().label.toUpperCase())}</span>`}${article.oaUrl ? `<button type="button" class="research-oa" data-oa-url="${esc(article.oaUrl)}">Free full text</button>` : ''}</div>
       </div>
     </article>`;
   }).join('');
@@ -3244,6 +3260,15 @@ els.feedList.addEventListener('click', (event) => {
     openSourceView(sourceButton.dataset.sourceFeed);
     return;
   }
+  const oaButton = event.target.closest('[data-oa-url]');
+  if (oaButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    const card = oaButton.closest('[data-card-id]');
+    const article = card ? findArticle(card.dataset.cardId) : null;
+    openOa(oaButton.dataset.oaUrl, article?.title);
+    return;
+  }
   const liveCard = event.target.closest('[data-live-channel]');
   if (liveCard) {
     event.preventDefault();
@@ -4051,6 +4076,15 @@ window.addEventListener('appinstalled', () => {
 
 els.readerBackBtn.addEventListener('click', readerBack);
 els.readerCloseBtn.addEventListener('click', closeReader);
+
+els.readerOaBtn?.addEventListener('click', () => {
+  openOa(els.readerOaBtn.dataset.oaUrl, state.readerArticle?.title);
+});
+
+els.closeOaBtn?.addEventListener('click', () => {
+  if (els.oaFrame) els.oaFrame.src = 'about:blank';
+  closeModal(els.oaModal);
+});
 
 els.readerArchiveBtn.addEventListener('click', () => {
   if (state.readerArticle) loadReaderContent(state.readerArticle, { archiveOnly: true });

@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
-  <link rel="stylesheet" href="./css/styles.css?v=38">
+  <link rel="stylesheet" href="./css/styles.css?v=39">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to headlines</a>
@@ -468,6 +468,7 @@
         <div id="readerFallback" class="reader-fallback" hidden>
           <p id="readerFallbackText" class="reader-fallback-text"></p>
           <div class="reader-fallback-actions">
+            <button id="readerOaBtn" type="button" class="form-btn" hidden>Open free full text</button>
             <button id="readerArchiveBtn" type="button" class="form-btn">Find it free</button>
             <button id="readerRetryBtn" type="button" class="form-btn form-btn-secondary">Try again</button>
           </div>
@@ -475,6 +476,21 @@
       </article>
     </div>
   </section>
+
+  <div id="oaModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="oaTitle" aria-hidden="true" inert>
+    <div class="modal-content oa-modal">
+      <div class="modal-header">
+        <h2 id="oaTitle" class="modal-title">Free full text</h2>
+        <button id="closeOaBtn" class="modal-close" type="button" aria-label="Close free full text">&times;</button>
+      </div>
+      <div class="oa-body">
+        <iframe id="oaFrame" title="Free full text" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <p class="oa-note">Open-access copy located automatically. Publisher terms still apply.</p>
+      </div>
+    </div>
+  </div>
 
   <div id="calculatorModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="calculatorTitle" aria-hidden="true" inert>
     <div class="modal-content calculator-modal">

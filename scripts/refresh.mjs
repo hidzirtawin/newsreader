@@ -158,6 +158,19 @@ function parseFeed(xml, feed) {
     ).slice(0, 260);
     if (/^(null|undefined|none)$/i.test(summary)) summary = '';
     const googleSource = tagValue(block, 'source');
+    let doi = (tagValue(block, 'dc:identifier') || tagValue(block, 'prism:doi') || tagValue(block, 'doi') || '').match(/10\.\d{4,9}\/[^\s,;&]+/)?.[0] || '';
+    if (!doi) {
+      const fromLink = link.match(/10\.\d{4,9}\/[^?#&]+/)?.[0] || '';
+      if (fromLink) doi = fromLink.replace(/[.,;]+$/, '');
+    }
+    if (!doi && /nature\.com\/articles\//.test(link)) {
+      const natureId = link.match(/nature\.com\/articles\/([^/?#]+)/)?.[1];
+      if (natureId) doi = `10.1038/${natureId}`;
+    }
+    if (!doi && /bmj\.com\/content\//.test(link)) {
+      const bmjId = link.match(/bmj\.com\/content\/[^/]+\/([^/?#]+)/)?.[1];
+      if (bmjId) doi = `10.1136/${bmjId}`;
+    }
     articles.push({
       id: hashId(link),
       title: cleanTitle(rawTitle, feed.name),
@@ -167,6 +180,8 @@ function parseFeed(xml, feed) {
       url: link,
       video: Boolean(feed.video) || /youtube\.com\/watch/i.test(link),
       summary,
+      doi,
+      section: tagValue(block, 'prism:section') || tagValue(block, 'section') || '',
       imageUrl: extractImage(block, link),
       pubDate: Number.isFinite(timestamp) ? new Date(timestamp).toISOString() : '',
     });
@@ -231,6 +246,38 @@ function freshArticles(articles) {
     });
   }
   return fresh.length ? fresh : articles;
+}
+
+const RESEARCH_FRONT_TITLE = /^\[(editorial|comment|correspondence|perspectives?|viewpoint|letter|obituary|book review|in focus|spotlight|world report|media watch|department of error)\]/i;
+const RESEARCH_FRONT_SECTION = /^(editorial|comment|correspondence|perspective|viewpoint|letter|obituary|book review|in focus|spotlight|world report|media watch|department of error)$/i;
+
+function isResearchFrontMatter(article) {
+  return RESEARCH_FRONT_TITLE.test(article.title || '') || RESEARCH_FRONT_SECTION.test(article.section || '');
+}
+
+async function resolveResearchOpenAccess(snapshot) {
+  const articles = snapshot?.research?.articles || [];
+  const withDoi = articles.filter((article) => article.doi).slice(0, 60);
+  if (!withDoi.length) return;
+  console.log(`Resolving open-access copies for ${withDoi.length} studies…`);
+  await pool(withDoi, 4, async (article) => {
+    try {
+      const response = await fetch(`https://api.openalex.org/works/https://doi.org/${encodeURIComponent(article.doi)}`, {
+        headers: { 'User-Agent': 'TawinNewsreader/1.0 (https://hidzirtawin.github.io/newsreader/)', Accept: 'application/json' },
+        signal: AbortSignal.timeout(12000),
+      });
+      if (!response.ok) return;
+      const data = await response.json();
+      const openAccess = data.open_access || {};
+      const best = data.best_oa_location || {};
+      article.oaUrl = openAccess.oa_url || best.landing_page_url || best.pdf_url || '';
+      article.oaPdf = best.pdf_url || '';
+      article.oaStatus = openAccess.oa_status || '';
+    } catch {
+      // OpenAlex should never block the edition.
+    }
+  });
+  console.log(`Open access: ${articles.filter((article) => article.oaUrl).length}/${articles.length} studies`);
 }
 
 function balanceBySource(articles, limit) {
@@ -604,8 +651,9 @@ async function main() {
       });
     }
     const topicLimit = Number(topic.limit) > 0 ? Math.min(Number(topic.limit), TOPIC_LIMIT) : TOPIC_LIMIT;
+    const researchArticles = topic.research ? topicArticles.filter((article) => !isResearchFrontMatter(article)) : topicArticles;
     const articles = balanceBySource(
-      freshArticles(dedupe(topicArticles).sort((left, right) => (Date.parse(right.pubDate) || 0) - (Date.parse(left.pubDate) || 0))),
+      freshArticles(dedupe(researchArticles).sort((left, right) => (Date.parse(right.pubDate) || 0) - (Date.parse(left.pubDate) || 0))),
       topicLimit,
     );
     snapshot[topic.id] = {
@@ -615,6 +663,8 @@ async function main() {
     };
     console.log(`${topic.label}: ${articles.length} stories`);
   }
+
+  await resolveResearchOpenAccess(snapshot);
 
   const topicList = Object.entries(snapshot).map(([id, entry]) => ({ id, articles: entry.articles }))
     .filter((entry) => entry.articles.length);
