@@ -1482,5 +1482,37 @@
   "https://tass.com/politics/2225789": {
     "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494555.jpg",
     "at": 1795772977502
+  },
+  "https://www.npr.org/2026/11/27/nx-s1-6047116/morning-news-brief": {
+    "imageUrl": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+    "at": 1795773653486
+  },
+  "https://www.beritaharian.sg/malaysia/4-tahun-pentadbiran-anwar-menyerlah-di-pentas-dunia-tapi-diuji-negara": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/c1d6e911e3de208f2e684b9c418962ce68c818872203ea3af69dab9ce4098ca9?t=og",
+    "at": 1795773654119
+  },
+  "https://www.straitstimes.com/asia/se-asia/lawsuits-wont-affect-googles-investments-in-malaysia-pm": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/f2c0be0bb4dbbfb968868d3474fef71efc063e8f1d1cbcf424bd335dc8fe7469?t=og",
+    "at": 1795773654166
+  },
+  "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test": {
+    "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2021-04-20T214248Z_831728707_RC2XZM9OZX5I_RTRMADP_3_CANADA-QUEBEC-RELIGION-1795727454.jpg?resize=1920%2C1440",
+    "at": 1795773654203
+  },
+  "https://www.straitstimes.com/asia/explainer-rodrigo-dutertes-icc-trial-what-to-know": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/e2eb91e3a7a9f6f394b310294650da70fff75d42b75037e7355f81ffdccd908f?t=og",
+    "at": 1795773654309
+  },
+  "https://www.euronews.com/2026/11/27/footage-shows-skidding-truck-end-up-hanging-between-highway-ramps": {
+    "imageUrl": "https://images.euronews.com/articles/stories/10/01/08/43/1200x675_cmsv2_8d86614d-32b0-5960-ab79-4cd6273c70cb-10010843.jpg",
+    "at": 1795773654411
+  },
+  "https://www.ctvnews.ca/politics/article/slam-dunk-with-our-own-mps-government-house-leader-confident-liberals-will-pass-bill-c-39/": {
+    "imageUrl": "https://www.ctvnews.ca/resizer/v2/N6YZ2FPF4MT4DMUC4YXHB3YO4Q.jpg?smart=true&auth=5368fc421d22daf47f7e329a0dc4ad1893d87778d3b6f78f962970ebe267f3e4&width=1200&height=630",
+    "at": 1795773654833
+  },
+  "https://tass.com/society/2225781": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494559.png",
+    "at": 1795773655981
   }
 }
