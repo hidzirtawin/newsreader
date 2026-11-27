@@ -1335,7 +1335,7 @@ function renderFeed() {
     if (hadBriefs && !showBriefs) {
       els.feedList.innerHTML = `<div class="state-container">
         <h2 class="state-title">Only publisher briefs here</h2>
-        <p class="state-desc">These publishers block full-text reading. Open the <strong>Briefs</strong> desk to read them, or enable <strong>Show briefs in all feeds</strong> from the menu.</p>
+        <p class="state-desc">These publishers block full-text reading. Open the <strong>Briefs</strong> desk to read them, or enable <strong>Include paywalled briefs</strong> from the menu.</p>
       </div>`;
     } else {
       els.feedList.innerHTML = `<div class="state-container">
@@ -2791,10 +2791,10 @@ function orderedAllTopics() {
   const ordered = [];
   for (const id of settings.topicOrder) {
     const topic = byId.get(id);
-    if (topic && !topic.sports && !ordered.includes(topic)) ordered.push(topic);
+    if (topic && !topic.sports && !topic.hiddenFromBar && !ordered.includes(topic)) ordered.push(topic);
   }
   for (const topic of all) {
-    if (!topic.sports && !ordered.includes(topic)) ordered.push(topic);
+    if (!topic.sports && !topic.hiddenFromBar && !ordered.includes(topic)) ordered.push(topic);
   }
   return ordered;
 }

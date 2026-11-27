@@ -13,7 +13,7 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Magazine feed** — lead story, two-column features, compact rows and mid-feed banners. Stories without photos fall back to clean text layouts.
 - **Auto-refresh** — every five minutes the app quietly checks a watch set of high-frequency wires and mastheads. New stories appear in a banner at the top; click it to bring the fresh edition forward without losing your place.
 - **Briefing desk** — Reuters, AP, CNN, The Independent and ABC News US in one readable front page. Hard-paywalled titles sit in the Briefs desk.
-- **Regional editions** — Top Stories, Latest, Briefing, World, US, UK, Europe, Middle East, Africa, Latin America, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Science, Entertainment, Politics, Finance and Lifestyle.
+- **Regional editions** — Top Stories, Latest, Briefing, Your Country, World, US, UK, Europe, Middle East, Africa, Latin America, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Health, Science, Entertainment, Politics, Finance and Lifestyle. **54 country desks** are available from the Your Country picker.
 - **Singapore desk** — CNA, Mothership and Berita Harian Singapore; The Straits Times is kept in Briefs.
 - **Malaysia desk** — Malay Mail, Free Malaysia Today, Berita Harian, New Straits Times, Utusan Malaysia and Kosmo!.
 - **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Age, The Examiner, The Nightly, The West Australian, CODE Sports, The Daily Telegraph, The Australian and Herald Sun.

@@ -157,10 +157,11 @@ function parseFeed(xml, feed) {
       tagValue(block, 'description') || tagValue(block, 'summary') || tagValue(block, 'content:encoded') || tagValue(block, 'content')
     ).slice(0, 260);
     if (/^(null|undefined|none)$/i.test(summary)) summary = '';
+    const googleSource = tagValue(block, 'source');
     articles.push({
       id: hashId(link),
       title: cleanTitle(rawTitle, feed.name),
-      source: feed.name,
+      source: feed.googleNews && googleSource ? googleSource : feed.name,
       feedId: feed.id,
       domain: feed.domain,
       url: link,
