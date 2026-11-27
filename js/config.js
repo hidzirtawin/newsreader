@@ -307,6 +307,7 @@ export const WALLHOP_DOMAINS = [
   'smh.com.au',
   'theage.com.au',
   'businessinsider.com',
+  'aljazeera.com',
 ];
 
 export const FEEDS = [
