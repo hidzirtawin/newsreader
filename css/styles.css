@@ -492,6 +492,289 @@ a {
   flex-shrink: 0;
 }
 
+/* Live video strip */
+.live-video-section {
+  margin: 0 0 18px;
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-app);
+}
+
+.live-video-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.live-video-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: var(--danger);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.14);
+}
+
+.live-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 8px;
+}
+
+.live-video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  padding: 10px 11px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.live-video-card:hover,
+.live-video-card:focus {
+  border-color: var(--highlight-green);
+  background: var(--bg-surface-hover);
+  outline: none;
+}
+
+.live-video-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.live-video-region {
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* TradingView market panel — matches the No Wall News market box */
+.market-panel {
+  margin: 0 0 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--bg-surface);
+  overflow: hidden;
+}
+
+.mkh {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: baseline;
+  padding: 9px 13px 0;
+}
+
+.mkh b {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.mkt-credit {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 0.64rem;
+}
+
+.mkw {
+  min-height: 46px;
+  padding: 2px 0;
+  pointer-events: none;
+}
+
+.mks {
+  white-space: nowrap;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.mks::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #9aa0a6;
+  vertical-align: 1px;
+}
+
+.mks.on::before {
+  background: #1e8e3e;
+  box-shadow: 0 0 0 3px #1e8e3e33;
+}
+
+.mks.pre::before {
+  background: #f29900;
+}
+
+.mkmore {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  background: none;
+  color: var(--highlight-green-dark);
+  font: 600 0.72rem/1 var(--font-ui, inherit);
+  padding: 11px 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mkmore:hover {
+  background: var(--bg-surface-hover);
+}
+
+.mkx {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding: 4px 13px 13px;
+  pointer-events: none;
+}
+
+.mkx h3 {
+  margin: 6px 0 8px;
+  font-size: 0.78rem;
+  color: var(--text-primary);
+}
+
+.market-panel iframe {
+  width: 100% !important;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 820px) {
+  .mkx {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Video playback */
+.news-card.is-video .media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.news-card.is-video .media::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  border-left: 20px solid #fff;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.video-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.84);
+  backdrop-filter: blur(6px);
+}
+
+.video-modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(960px, 96vw);
+  max-height: 94vh;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0b0f0d;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.video-frame-wrap {
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.video-frame-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px 16px;
+  color: #f9fafb;
+}
+
+#videoKicker {
+  color: var(--highlight-green-pastel);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#videoTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.video-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+body.video-open {
+  overflow: hidden;
+}
+
 /* NoWall-style headline list for country desks */
 .headline-note {
   display: flex;

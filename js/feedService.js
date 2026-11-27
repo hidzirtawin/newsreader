@@ -521,6 +521,7 @@ export async function fetchTopicArticles(topic, { onProgress, watchOnly = false 
           feedId: feed.id,
           domain: feed.domain || normalizeDomain(item.link),
           url: item.link,
+          video: Boolean(feed.video) || /youtube\.com\/watch/i.test(item.link),
           summary: item.summary,
           imageUrl: item.imageUrl,
           pubDate: item.pubDate,

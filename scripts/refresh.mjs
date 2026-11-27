@@ -165,6 +165,7 @@ function parseFeed(xml, feed) {
       feedId: feed.id,
       domain: feed.domain,
       url: link,
+      video: Boolean(feed.video) || /youtube\.com\/watch/i.test(link),
       summary,
       imageUrl: extractImage(block, link),
       pubDate: Number.isFinite(timestamp) ? new Date(timestamp).toISOString() : '',

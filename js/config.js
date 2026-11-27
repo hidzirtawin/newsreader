@@ -690,6 +690,44 @@ const FREE_OUTLETS = [
   googleSiteFeed('mexico-news-daily', 'Mexico News Daily', 'mexiconewsdaily.com', 'Mexico'),
   googleSiteFeed('kyiv-independent', 'Kyiv Independent', 'kyivindependent.com', 'Ukraine'),
 ];
+
+const VIDEO_FEEDS = [
+  { id: 'yt-abc-news', name: 'ABC News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCBi2mrWuNuyYy4gbM6fU18Q', video: true },
+  { id: 'yt-bbc-news', name: 'BBC News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC16niRr50-MSBwiO3YDb3RA', video: true },
+  { id: 'yt-aljazeera', name: 'Al Jazeera English', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCNye-wNBqNL5ZzHSJj3l8Bg', video: true },
+  { id: 'yt-dw-news', name: 'DW News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCknLrEdhRCp1aegoMqRaCZg', video: true },
+  { id: 'yt-sky-news', name: 'Sky News', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCoMdktPbSTixAyNGwb-UYkQ', video: true },
+  { id: 'yt-france24', name: 'France 24 English', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCQfwfsi5VrQ8yKZ-UWmAEFg', video: true },
+  { id: 'yt-pbs', name: 'PBS NewsHour', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC6ZFN9Tx6xh-skXCuRHCDpQ', video: true },
+  { id: 'yt-reuters', name: 'Reuters', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UChqUTb7kYRX8-EiaN3XFrSQ', video: true },
+  { id: 'yt-bloomberg', name: 'Bloomberg Television', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCIALMKvObZNtJ6AmdCLP7Lg', video: true },
+  { id: 'yt-guardian', name: 'The Guardian', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCHpw8xwDNhU9gdohEcJu4aA', video: true },
+  { id: 'yt-astro-awani', name: 'Astro Awani', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC5dYmq91e5_g54krpO06NJw', video: true },
+  { id: 'yt-abc-au', name: 'ABC News In-depth', domain: 'youtube.com', group: 'Video', url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCxcrzzhQDj5zKJbXfIscCtg', video: true },
+];
+FEEDS.push(...VIDEO_FEEDS);
+
+const VIDEO_TOPIC = {
+  id: 'video',
+  label: 'VIDEO',
+  title: 'Video News',
+  video: true,
+  limit: 36,
+  feeds: VIDEO_FEEDS.map((feed) => feed.id),
+};
+const videoWorldIndex = TOPICS.findIndex((topic) => topic.id === 'world');
+TOPICS.splice(videoWorldIndex === -1 ? TOPICS.length : videoWorldIndex, 0, VIDEO_TOPIC);
+
+export const LIVE_VIDEO_CHANNELS = [
+  { id: 'live-sky', name: 'Sky News', region: 'United Kingdom', channelId: 'UCoMdktPbSTixAyNGwb-UYkQ' },
+  { id: 'live-aljazeera', name: 'Al Jazeera English', region: 'Qatar', channelId: 'UCNye-wNBqNL5ZzHSJj3l8Bg' },
+  { id: 'live-dw', name: 'DW News', region: 'Germany', channelId: 'UCknLrEdhRCp1aegoMqRaCZg' },
+  { id: 'live-france24', name: 'France 24 English', region: 'France', channelId: 'UCQfwfsi5VrQ8yKZ-UWmAEFg' },
+  { id: 'live-abc', name: 'ABC News', region: 'United States', channelId: 'UCBi2mrWuNuyYy4gbM6fU18Q' },
+  { id: 'live-bloomberg', name: 'Bloomberg TV', region: 'United States', channelId: 'UCIALMKvObZNtJ6AmdCLP7Lg' },
+  { id: 'live-astro', name: 'Astro Awani', region: 'Malaysia', channelId: 'UC5dYmq91e5_g54krpO06NJw' },
+];
+
 FEEDS.push(...FREE_OUTLETS);
 
 FEEDS.push({
@@ -863,16 +901,23 @@ export const RADIO_STATIONS = [
   { id: 'abc-news-radio', name: 'ABC News Radio', region: 'Australia', frequency: 'National', language: 'English', description: 'Rolling news', stream: 'https://abc.streamguys1.com/live/newsradio/icecast.audio' },
   { id: 'sky-news-au', name: 'Sky News Australia Radio', region: 'Australia', frequency: 'National', language: 'English', description: 'News and opinion', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/NOVA_SKYNEWS.mp3' },
   { id: '3aw', name: '3AW 693', region: 'Australia', frequency: '693 AM · Melbourne', language: 'English', description: 'News and talk', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/3AW.mp3' },
+  { id: '2gb', name: '2GB 873', region: 'Australia', frequency: '873 AM · Sydney', language: 'English', description: 'News and talk', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/2GB.mp3' },
+  { id: '6pr', name: '6PR 882', region: 'Australia', frequency: '882 AM · Perth', language: 'English', description: 'News and talk', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/6PR.mp3' },
+  { id: '4bc', name: '4BC 882', region: 'Australia', frequency: '882 AM · Brisbane', language: 'English', description: 'News and talk', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/4BC.mp3' },
 
   { id: 'bbc-ws', name: 'BBC World Service', region: 'United Kingdom', frequency: 'Global', language: 'English', description: 'World news', stream: 'https://stream.live.vc.bbcmedia.co.uk/bbc_world_service' },
   { id: 'lbc-news', name: 'LBC News', region: 'United Kingdom', frequency: 'National', language: 'English', description: 'Rolling UK news', stream: 'https://media-ssl.musicradio.com/LBCNewsUK' },
   { id: 'times-radio', name: 'Times Radio', region: 'United Kingdom', frequency: 'National', language: 'English', description: 'News, analysis and interviews', stream: 'https://times.live.stream.broadcasting.news/stream' },
   { id: 'talksport', name: 'talkSPORT', region: 'United Kingdom', frequency: 'National', language: 'English', description: 'Sports news and talk', stream: 'https://radio.talksport.com/stream' },
+  { id: 'gb-news-radio', name: 'GB News Radio', region: 'United Kingdom', frequency: 'National', language: 'English', description: 'News and opinion', stream: 'https://listen-gbnews.sharp-stream.com/gbnews.mp3' },
+  { id: 'talk-radio', name: 'TalkRadio', region: 'United Kingdom', frequency: 'National', language: 'English', description: 'News and debate', stream: 'https://radio.talkradio.co.uk/stream' },
 
   { id: 'npr', name: 'NPR', region: 'United States', frequency: 'National', language: 'English', description: 'News and culture', stream: 'https://npr-ice.streamguys1.com/live.mp3' },
   { id: 'bloomberg-radio', name: 'Bloomberg Radio', region: 'United States', frequency: '1130 AM · New York', language: 'English', description: 'Business and markets', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/WBBRAMAAC48.aac' },
   { id: 'fox-news-radio', name: 'Fox News Radio', region: 'United States', frequency: 'National', language: 'English', description: 'News and talk', stream: 'https://live.amperwave.net/direct/foxnewsradio-foxnewsradioaac-imc?source=fnr.web' },
   { id: 'msnbc', name: 'MSNBC', region: 'United States', frequency: 'National', language: 'English', description: 'News and analysis', stream: 'https://tunein.cdnstream1.com/3511_96.mp3' },
+  { id: 'rfi-english', name: 'RFI English', region: 'France', frequency: 'Global', language: 'English', description: 'World news from Paris', stream: 'https://rfienanglais64k.ice.infomaniak.ch/rfienanglais-64.mp3' },
+  { id: 'cfrb-1010', name: 'CFRB 1010', region: 'Canada', frequency: '1010 AM · Toronto', language: 'English', description: 'News and talk', stream: 'https://playerservices.streamtheworld.com/api/livestream-redirect/CFRBAM.mp3' },
 ];
 
 export const PODCAST_SHOWS = [

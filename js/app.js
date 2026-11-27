@@ -8,6 +8,7 @@ import {
   LIVE_CACHE_TTL,
   COUNTRY_DESKS,
   COUNTRY_TIMEZONES,
+  LIVE_VIDEO_CHANNELS,
   getCountryDesk,
   RADIO_STATIONS,
   PODCAST_SHOWS,
@@ -75,6 +76,12 @@ const els = {
   countrySelectWrapper: $('#countrySelectWrapper'),
   countryDeskSelect: $('#countryDeskSelect'),
   countryLayoutBtn: $('#countryLayoutBtn'),
+  marketPanel: $('#marketPanel'),
+  videoModal: $('#videoModal'),
+  videoFrame: $('#videoFrame'),
+  videoCloseBtn: $('#videoCloseBtn'),
+  videoKicker: $('#videoKicker'),
+  videoTitle: $('#videoTitle'),
   sourceViewBar: $('#sourceViewBar'),
   sourceViewName: $('#sourceViewName'),
   sourceBackBtn: $('#sourceBackBtn'),
@@ -224,6 +231,10 @@ const state = {
   lastFocus: null,
   countryCode: '',
   countryLayout: 'list',
+  marketWidgetKey: '',
+  marketMoversLoaded: false,
+  marketStatusTimer: null,
+  videoOpen: false,
   toastTimer: null,
   toastHideTimer: null,
   listenMode: '',
@@ -303,6 +314,116 @@ function badgeMarkup(article, onDark = false) {
   return `<button type="button" class="${classes.join(' ')}" data-badge-for="${esc(article.id)}" data-domain="${esc(article.domain)}" title="Change how ${esc(article.domain)} opens" aria-label="Reading rule: ${esc(badgeLabel(article))}. Change rule for ${esc(article.domain)}.">${esc(badgeLabel(article))}<svg class="badge-caret" viewBox="0 0 10 6" width="8" height="5" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>`;
 }
 
+function youtubeId(value) {
+  try {
+    const parsed = new URL(value);
+    if (parsed.hostname === 'youtu.be') return parsed.pathname.replace(/^\//, '').split('/')[0];
+    if (parsed.hostname.endsWith('youtube.com')) {
+      return parsed.searchParams.get('v')
+        || parsed.pathname.match(/\/(?:embed|shorts|live)\/([^/?#]+)/)?.[1]
+        || '';
+    }
+  } catch { /* ignore */ }
+  return '';
+}
+
+function isVideoArticle(article) {
+  return Boolean(article?.video || youtubeId(article?.url || ''));
+}
+
+function openVideo(article) {
+  if (!els.videoModal || !els.videoFrame) {
+    openArticle(article);
+    return;
+  }
+  const id = article.videoId || youtubeId(article.url || '');
+  const liveChannel = article.channelId || '';
+  if (!id && !liveChannel) {
+    openArticle(article);
+    return;
+  }
+  const src = liveChannel
+    ? `https://www.youtube-nocookie.com/embed/live_stream?channel=${encodeURIComponent(liveChannel)}&autoplay=1`
+    : `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
+  els.videoFrame.src = src;
+  els.videoKicker.textContent = article.source || 'Video';
+  els.videoTitle.textContent = article.title || '';
+  els.videoModal.hidden = false;
+  document.body.classList.add('video-open');
+  state.videoOpen = true;
+  els.videoCloseBtn?.focus();
+}
+
+function openLiveVideo(channel) {
+  if (!channel) return;
+  openVideo({
+    title: `${channel.name} · Live`,
+    source: channel.region,
+    channelId: channel.channelId,
+    video: true,
+  });
+}
+
+function closeVideo() {
+  if (!els.videoModal || els.videoModal.hidden) return;
+  els.videoModal.hidden = true;
+  if (els.videoFrame) els.videoFrame.src = 'about:blank';
+  document.body.classList.remove('video-open');
+  state.videoOpen = false;
+}
+
+function liveVideoMarkup() {
+  if (!LIVE_VIDEO_CHANNELS.length) return '';
+  const cards = LIVE_VIDEO_CHANNELS.map((channel) => `<button type="button" class="live-video-card" data-live-channel="${esc(channel.id)}">
+    <span class="live-video-dot" aria-hidden="true"></span>
+    <span class="live-video-name">${esc(channel.name)}</span>
+    <span class="live-video-region">${esc(channel.region)}</span>
+  </button>`).join('');
+  return `<section class="live-video-section" aria-label="Live news channels">
+    <div class="live-video-heading"><span class="live-video-dot" aria-hidden="true"></span> Live now</div>
+    <div class="live-video-grid">${cards}</div>
+  </section>`;
+}
+
+const SPORT_DOMAINS = [
+  'espn.com', 'espn.co.uk', 'cbssports.com', 'skysports.com', 'sportingnews.com',
+  'yardbarker.com', 'si.com', 'theathletic.com', 'foxsports.com', 'nbcsports.com',
+  'bleacherreport.com', 'espncricinfo.com', 'autosport.com', 'boxingscene.com',
+  'sherdog.com', 'mmafighting.com', 'boxingnews.com', 'talksport.com', 'sports.yahoo.com',
+];
+const SPORT_PATH = /(^|\/)(sport|sports|football|soccer|cricket|rugby|boxing|mma|ufc|tennis|golf|formula-1|f1|nba|nfl|mlb|nhl|olympics|world-cup|premier-league|champions-league|afl|nrl|racing)(\/|$)/i;
+const SPORT_TITLE = /\b(football|soccer|cricket|rugby league|rugby union|NRL|AFL|boxing|MMA|UFC|tennis|golf|NBA|NFL|MLB|NHL|Formula One|Formula 1|F1|Grand Prix|World Cup|Premier League|Champions League|Ashes|wicket|heavyweight|bantamweight|featherweight|welterweight|lightweight|middleweight|title fight|Grand Slam|Wimbledon|Ryder Cup|Super Bowl|Stanley Cup|World Series|playoffs|Olympics|Commonwealth Games)\b/i;
+const ENTERTAINMENT_DOMAINS = [
+  'variety.com', 'hollywoodreporter.com', 'billboard.com', 'rollingstone.com',
+  'refinery29.com', 'tmz.com', 'deadline.com', 'ew.com', 'people.com',
+  'usmagazine.com', 'eonline.com', 'vogue.com', 'vanityfair.com', 'rollingstone.com',
+];
+const ENTERTAINMENT_PATH = /(^|\/)(entertainment|celebrity|celebrities|music|film|films|movies|movie|tv|television|culture|arts|awards)(\/|$)/i;
+
+function isSportArticle(article) {
+  const domain = normalizeDomain(article.domain || article.url);
+  if (SPORT_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`))) return true;
+  try {
+    if (SPORT_PATH.test(new URL(article.url).pathname)) return true;
+  } catch { /* ignore */ }
+  return SPORT_TITLE.test(article.title || '');
+}
+
+function isEntertainmentArticle(article) {
+  const domain = normalizeDomain(article.domain || article.url);
+  if (ENTERTAINMENT_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`))) return true;
+  try {
+    return ENTERTAINMENT_PATH.test(new URL(article.url).pathname);
+  } catch {
+    return false;
+  }
+}
+
+function filterTopicCategories(articles, topic) {
+  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'briefs') return articles;
+  return articles.filter((article) => !isSportArticle(article) && !isEntertainmentArticle(article));
+}
+
 function cleanSourceLabel(value) {
   const name = String(value || '').trim();
   if (/^ABC News\s*&\s*Headlines/i.test(name)) return 'ABC News Australia';
@@ -344,6 +465,7 @@ function cardMarkup(article, variant) {
   const hasPhoto = Boolean(article.imageUrl);
   const classes = ['news-card', `flip-${variant}`];
   if (!hasPhoto) classes.push('no-photo');
+  if (article.video) classes.push('is-video');
   if (article.status === 'locked') classes.push('is-locked');
   const onDark = (variant === 'hero' || variant === 'banner') && hasPhoto;
   const articleAttr = `data-card-id="${esc(article.id)}" data-article-url="${esc(article.url)}"`;
@@ -1211,10 +1333,173 @@ function renderSportsNav(topic = null) {
   }
 }
 
+const MARKET_SYMBOLS = [
+  ['AMEX:SPY', 'S&P 500 (SPY)'],
+  ['NASDAQ:QQQ', 'Nasdaq 100 (QQQ)'],
+  ['AMEX:DIA', 'Dow (DIA)'],
+  ['AMEX:IWM', 'Russell 2000 (IWM)'],
+  ['CAPITALCOM:VIX', 'VIX'],
+  ['FRED:DGS10', 'US 10Y yield (daily)'],
+  ['CAPITALCOM:DXY', 'US dollar'],
+  ['FX_IDC:EURUSD', 'EUR/USD'],
+  ['FX_IDC:USDJPY', 'USD/JPY'],
+  ['TVC:USOIL', 'Oil (WTI)'],
+  ['TVC:UKOIL', 'Oil (Brent)'],
+  ['CAPITALCOM:NATURALGAS', 'Natural gas'],
+  ['TVC:GOLD', 'Gold'],
+  ['TVC:SILVER', 'Silver'],
+  ['CAPITALCOM:COPPER', 'Copper'],
+  ['BITSTAMP:BTCUSD', 'Bitcoin'],
+  ['BITSTAMP:ETHUSD', 'Ether'],
+  ['NASDAQ:NVDA', 'Nvidia'],
+  ['NASDAQ:AAPL', 'Apple'],
+  ['NASDAQ:MSFT', 'Microsoft'],
+  ['NASDAQ:AMZN', 'Amazon'],
+  ['NASDAQ:GOOGL', 'Alphabet'],
+  ['NASDAQ:META', 'Meta'],
+  ['NASDAQ:AVGO', 'Broadcom'],
+  ['NASDAQ:TSLA', 'Tesla'],
+  ['NYSE:BRK.B', 'Berkshire'],
+  ['NYSE:JPM', 'JPMorgan'],
+];
+const MARKET_CLOSED = [
+  '2026-11-26', '2026-12-25', '2027-01-01', '2027-01-18', '2027-02-15',
+  '2027-03-26', '2027-05-31', '2027-06-18', '2027-07-05', '2027-09-06',
+  '2027-11-25', '2027-12-24',
+];
+const MARKET_HALF_DAYS = { '2026-11-27': 13, '2026-12-24': 13, '2027-11-26': 13 };
+
+function createTradingViewWidget(container, kind, config) {
+  if (!container) return;
+  container.innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>';
+  const script = document.createElement('script');
+  script.src = `https://s3.tradingview.com/external-embedding/embed-widget-${kind}.js`;
+  script.async = true;
+  script.textContent = JSON.stringify(config);
+  container.firstChild.appendChild(script);
+}
+
+function updateMarketStatus() {
+  const el = document.getElementById('marketStatus');
+  if (!el) return;
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(new Date());
+  const value = (type) => Number((parts.find((part) => part.type === type) || {}).value);
+  const year = value('year');
+  const month = value('month');
+  const day = value('day');
+  const minutes = value('hour') * 60 + value('minute');
+  const dayKey = (offset) => new Date(Date.UTC(year, month - 1, day + offset)).toISOString().slice(0, 10);
+  const isOpenDay = (offset) => {
+    const weekday = new Date(Date.UTC(year, month - 1, day + offset)).getUTCDay();
+    return weekday > 0 && weekday < 6 && !MARKET_CLOSED.includes(dayKey(offset));
+  };
+  const today = isOpenDay(0);
+  const close = (MARKET_HALF_DAYS[dayKey(0)] || 16) * 60;
+  const closeLabel = close === 960 ? '4:00' : '1:00';
+  let text;
+  let stateClass;
+  if (today && minutes >= 570 && minutes < close) {
+    text = `US markets open · close ${closeLabel} PM ET`;
+    stateClass = 'on';
+  } else if (today && minutes >= 240 && minutes < 570) {
+    text = 'Pre-market · opens 9:30 AM ET';
+    stateClass = 'pre';
+  } else {
+    let offset = today && minutes < 570 ? 0 : 1;
+    while (!isOpenDay(offset) && offset < 10) offset += 1;
+    const when = offset === 0 ? 'today' : offset === 1 ? 'tomorrow'
+      : new Date(Date.UTC(year, month - 1, day + offset)).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' });
+    text = `${today && minutes >= close && minutes < 1200 ? 'After hours' : 'US markets closed'} · open ${when} 9:30 AM ET`;
+    stateClass = today && minutes >= close && minutes < 1200 ? 'pre' : 'off';
+  }
+  el.textContent = text;
+  el.className = `mks ${stateClass}`;
+}
+
+function renderMarketPanel(topic) {
+  if (!els.marketPanel) return;
+  if (state.marketStatusTimer) {
+    clearInterval(state.marketStatusTimer);
+    state.marketStatusTimer = null;
+  }
+  const show = topic?.id === 'business';
+  els.marketPanel.hidden = !show;
+  if (!show) {
+    if (state.marketWidgetKey) {
+      els.marketPanel.innerHTML = '';
+      state.marketWidgetKey = '';
+      state.marketMoversLoaded = false;
+    }
+    return;
+  }
+  const theme = window.matchMedia?.('(prefers-color-scheme: dark)')?.matches ? 'dark' : 'light';
+  const key = `business-${theme}`;
+  if (state.marketWidgetKey === key) return;
+  state.marketWidgetKey = key;
+  state.marketMoversLoaded = false;
+  els.marketPanel.innerHTML = `<div class="mkt">
+    <div class="mkh"><b>Markets</b><span class="mks" id="marketStatus"></span><span class="mkt-credit">Data by TradingView</span></div>
+    <div class="mkw" id="marketTicker"></div>
+    <button type="button" class="mkmore" id="marketMoreBtn" aria-expanded="false" aria-controls="marketMore">Top movers &amp; economic calendar ▾</button>
+    <div class="mkx" id="marketMore" hidden>
+      <div><h3>Biggest movers, US stocks</h3><div id="marketMovers"></div></div>
+      <div><h3>Economic calendar, US</h3><div id="marketEvents"></div></div>
+    </div>
+  </div>`;
+  const ticker = document.getElementById('marketTicker');
+  createTradingViewWidget(ticker, 'ticker-tape', {
+    symbols: MARKET_SYMBOLS.map(([proName, title]) => ({ proName, title })),
+    showSymbolLogo: true,
+    isTransparent: true,
+    displayMode: 'adaptive',
+    colorTheme: theme,
+    locale: 'en',
+  });
+  updateMarketStatus();
+  state.marketStatusTimer = setInterval(updateMarketStatus, 60000);
+
+  const button = document.getElementById('marketMoreBtn');
+  const more = document.getElementById('marketMore');
+  button?.addEventListener('click', () => {
+    const open = more.hidden;
+    more.hidden = !open;
+    button.setAttribute('aria-expanded', String(open));
+    button.textContent = open ? 'Hide movers & calendar ▴' : 'Top movers & economic calendar ▾';
+    if (open && !state.marketMoversLoaded) {
+      state.marketMoversLoaded = true;
+      createTradingViewWidget(document.getElementById('marketMovers'), 'hotlists', {
+        colorTheme: theme,
+        dateRange: '1D',
+        exchange: 'US',
+        showChart: false,
+        locale: 'en',
+        isTransparent: true,
+        showSymbolLogo: true,
+        showFloatingTooltip: false,
+        width: '100%',
+        height: 420,
+      });
+      createTradingViewWidget(document.getElementById('marketEvents'), 'events', {
+        colorTheme: theme,
+        isTransparent: true,
+        width: '100%',
+        height: 470,
+        locale: 'en',
+        importanceFilter: '0,1',
+        countryFilter: 'us',
+      });
+    }
+  });
+}
+
 function updateTopicHeader(topic) {
   state.currentLabel = topic.label;
   els.editorialHeading.textContent = (topic.title || topic.label).toUpperCase();
   document.title = `${topic.title || topic.label} | Tawin Newsreader`;
+  renderMarketPanel(topic);
   els.feedSortSelect.value = state.sort;
   const countryDesk = COUNTRY_DESKS.find((desk) => desk.topic === topic.id) || null;
   if (els.countrySelectWrapper) els.countrySelectWrapper.hidden = !topic.country;
@@ -1310,7 +1595,7 @@ function sourceResultsMarkup() {
 }
 
 function headlineListMarkup(articles) {
-  const note = `<div class="headline-note"><strong>Free to read</strong><span>No paywalls · Latest first</span></div>`;
+  const note = `<div class="headline-note"><strong>Free sources first</strong><span>Paywalled briefs hidden · Latest first</span></div>`;
   const rows = articles.map((article, index) => {
     const time = article.pubDate ? formatRelativeTime(article.pubDate) : '';
     const label = cleanSourceLabel(article.source);
@@ -1334,9 +1619,11 @@ function renderFeed() {
 
   const allCurated = curateArticles(state.articles, state.sort);
   const settings = getSettings();
+  const activeTopic = getTopic(state.topicId);
   const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
   const hadBriefs = allCurated.some((article) => article.briefOnly);
-  const curated = showBriefs ? allCurated : allCurated.filter((article) => !article.briefOnly);
+  const briefFiltered = showBriefs ? allCurated : allCurated.filter((article) => !article.briefOnly);
+  const curated = filterTopicCategories(briefFiltered, activeTopic);
   const visible = state.hideLocked ? curated.filter((article) => article.status !== 'locked') : curated;
 
   if (!curated.length) {
@@ -1364,9 +1651,9 @@ function renderFeed() {
   }
 
   els.feedList.hidden = false;
-  const activeTopic = getTopic(state.topicId);
   const listMode = Boolean(activeTopic?.country) && state.countryLayout === 'list';
-  els.feedList.innerHTML = listMode ? headlineListMarkup(visible) : buildLayout(visible);
+  const liveMarkup = activeTopic?.id === 'video' ? liveVideoMarkup() : '';
+  els.feedList.innerHTML = liveMarkup + (listMode ? headlineListMarkup(visible) : buildLayout(visible));
 
   const count = visible.length;
   els.feedUpdateStatus.hidden = false;
@@ -1379,7 +1666,8 @@ function visibleStoryCount() {
   const settings = getSettings();
   const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
   const curated = curateArticles(state.articles, state.sort);
-  return showBriefs ? curated.length : curated.filter((article) => !article.briefOnly).length;
+  const briefFiltered = showBriefs ? curated : curated.filter((article) => !article.briefOnly);
+  return filterTopicCategories(briefFiltered, getTopic(state.topicId)).length;
 }
 
 function updateStatusLine() {
@@ -1957,6 +2245,7 @@ function isEpisodePlaying(id) {
 }
 
 function renderRadioView() {
+  if (els.marketPanel) els.marketPanel.hidden = true;
   state.listenMode = 'radio';
   hideFeedStates();
   setRefreshSpinning(false);
@@ -2004,6 +2293,7 @@ function selectedPodcastShow() {
 }
 
 function renderPodcastsView() {
+  if (els.marketPanel) els.marketPanel.hidden = true;
   state.listenMode = 'podcasts';
   hideFeedStates();
   setRefreshSpinning(false);
@@ -2530,11 +2820,21 @@ els.feedList.addEventListener('click', (event) => {
     openSourceView(sourceButton.dataset.sourceFeed);
     return;
   }
+  const liveCard = event.target.closest('[data-live-channel]');
+  if (liveCard) {
+    event.preventDefault();
+    openLiveVideo(LIVE_VIDEO_CHANNELS.find((channel) => channel.id === liveCard.dataset.liveChannel));
+    return;
+  }
   const card = event.target.closest('[data-card-id]');
   if (!card) return;
   const article = findArticle(card.dataset.cardId);
   if (!article) return;
   if (event.target.closest('a[href]')) event.preventDefault();
+  if (isVideoArticle(article)) {
+    openVideo(article);
+    return;
+  }
   openArticle(article);
 });
 
@@ -3350,8 +3650,17 @@ document.addEventListener('click', (event) => {
   if (!event.target.closest('.header-menu-container')) closeMenu();
 });
 
+els.videoCloseBtn?.addEventListener('click', closeVideo);
+els.videoModal?.addEventListener('click', (event) => {
+  if (event.target === els.videoModal || event.target.closest('[data-close-video]')) closeVideo();
+});
+
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
+  if (state.videoOpen) {
+    closeVideo();
+    return;
+  }
   if (state.readerOpen) {
     closeReader();
     return;
