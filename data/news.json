@@ -1,6 +1,6 @@
 {
   "top": {
-    "updatedAt": "2026-11-27T16:15:24.413Z",
+    "updatedAt": "2026-11-27T16:15:23.949Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -88,6 +88,104 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-dfd720a0c351",
+        "title": "Top 10 things to watch in the stock market on Black Friday",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+        "video": false,
+        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
+        "pubDate": "2026-11-27T15:02:04.000Z"
+      },
+      {
+        "id": "art-5e1a9f2828d1",
+        "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+        "video": false,
+        "summary": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108120789-1742904573651-gettyimages-159129388-72801932.jpeg?v=1758797166&w=1920&h=1080",
+        "pubDate": "2026-11-27T14:52:40.000Z"
+      },
+      {
+        "id": "art-485765afcb8d",
+        "title": "Bills edge Chiefs with last-second field goal in Thanksgiving thriller",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50582828/2026-nfl-buffalo-bills-kansas-city-chiefs-thanksgiving",
+        "video": false,
+        "summary": "The Bills won their seventh straight, snapping the Chiefs' win streak at three in a sloppy, low-scoring game.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:51:34.000Z"
+      },
+      {
+        "id": "art-c27964c9bdb7",
+        "title": "Joe Milton has huge game as Eagles shock Cowboys on Thanksgiving",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
+        "video": false,
+        "summary": "Dallas blew a 21-point lead as Philly made a spectacular comeback with Milton at the helm.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:51:23.000Z"
+      },
+      {
+        "id": "art-d0f3f33fd367",
+        "title": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+        "source": "BBC News",
+        "feedId": "bbc-news",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
+        "video": false,
+        "summary": "Pennsylvania and neighbouring states remain badly affected on Friday after both coasts were lashed with wind and rain.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/318d/live/6be8b890-ea6b-11f1-99b6-a35a62fa4264.jpg",
+        "pubDate": "2026-11-27T14:49:59.000Z"
+      },
+      {
+        "id": "art-ee0ae61dec44",
+        "title": "Best buddy reunion: Pat Surtain II, Jaylen Waddle embracing playing together with the Broncos",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50595313/pat-surtain-ii-jaylen-waddle-broncos-alabama-best-friends",
+        "video": false,
+        "summary": "Surtain and Waddle bonded immediately at Alabama six years ago and have embraced the chance to play together again in Denver on a team with Super Bowl hopes.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:48:24.000Z"
+      },
+      {
+        "id": "art-1143f59021ce",
+        "title": "Haaland ‘happy’ at Man City despite outburst that led to transfer talk",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/sports/2026/11/27/haaland-happy-at-manchester-city-despite-outburst-that-led-to-transfer-talk?traffic_source=rss",
+        "video": false,
+        "summary": "Erling Haaland blasted beleaguered City's form, but ahead of Arsenal test, manager Enzo Maresca says striker is happy.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-21T143650Z_1917729519_UP1EMBL14FDED_RTRMADP_3_SOCCER-ENGLAND-MCI-FUL-1795790000.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:47:40.000Z"
+      },
       {
         "id": "art-7ce82aaf328c",
         "title": "Spain’s Far-Right Era Ended in 1975. Will This Man Change That?",
@@ -300,20 +398,6 @@
         "pubDate": "2026-11-27T14:32:09.000Z"
       },
       {
-        "id": "art-dfd720a0c351",
-        "title": "Top 10 things to watch in the stock market on Black Friday",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
-        "video": false,
-        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:31:12.000Z"
-      },
-      {
         "id": "art-b645f99d3674",
         "title": "Massive comebacks, walk-off wins and plenty of points: An incredible Thanksgiving of NFL football",
         "source": "ESPN",
@@ -342,6 +426,21 @@
         "pubDate": "2026-11-27T14:30:58.000Z"
       },
       {
+        "id": "art-9b02d533408e",
+        "title": "Software giant SAP weighs major job cuts as AI transforms sector, sources say",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/",
+        "video": false,
+        "summary": "Software giant SAP weighs major job cuts as AI transforms sector, sources say Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:26:30.000Z",
+        "publisherUrl": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/"
+      },
+      {
         "id": "art-f0e724c4d868",
         "title": "Victoria's election day arrives, as state appears poised to dump Labor",
         "source": "ABC News Australia",
@@ -354,6 +453,20 @@
         "section": "",
         "imageUrl": "https://live-production.wcms.abc-cdn.net.au/fa864eafbc44015ccb5a784aa0075421?impolicy=wcms_crop_resize&cropH=450&cropW=800&xPos=0&yPos=0&width=862&height=485",
         "pubDate": "2026-11-27T14:25:42.000Z"
+      },
+      {
+        "id": "art-6130e75798de",
+        "title": "Why is Israel celebrating Costa Rica’s ban on Francesca Albanese?",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/why-is-israel-celebrating-costa-ricas-ban-on-francesca-albanese?traffic_source=rss",
+        "video": false,
+        "summary": "Costa Rica is under pressure over its decision to bar the UN expert who has documented Israel's genocidal war on Gaza.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-03-24T091407Z_414780193_RC2WAKAPHKHD_RTRMADP_3_ISRAEL-PALESTINIANS-UN-EXPERT-1788881286.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:17:25.000Z"
       },
       {
         "id": "art-6fafc4c97501",
@@ -382,91 +495,6 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T14:14:36.000Z"
-      },
-      {
-        "id": "art-c94df6fa2ace",
-        "title": "EU leaders fail to break $1.7 trillion budget deadlock as political pressure mounts",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/2026/11/27/eu-budget-2028-2034-deadlock.html",
-        "video": false,
-        "summary": "EU leaders failed to break a deadlock over the bloc’s budget, with talks set to resume in December as a key deadline looms.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108560074-1795783945346-gettyimages-2306396723-Special_European_Council_And_Euro_Summit.jpeg?v=1795784136&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:12:55.000Z"
-      },
-      {
-        "id": "art-df14bd79e8eb",
-        "title": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/",
-        "video": false,
-        "summary": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:11:43.000Z",
-        "publisherUrl": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/"
-      },
-      {
-        "id": "art-34be315e1463",
-        "title": "Indian police rescue dozens of Indonesians, Malaysians from cyber fraud racket​",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/asia/india-police-rescue-indonesians-malaysians-cyber-fraud-6587301",
-        "video": false,
-        "summary": "Lured to India with promises of employment and \"lucrative opportunities\", they were later forced to cheat victims through fake investment schemes, police said.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--teKDaCkE--/c_crop,h_449,w_799,x_1,y_23/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-10T180232Z_2_LYNXNPEMA91R5_RTROPTP_3_CYBER-ATTACK.JPG?itok=XTCq5SEX",
-        "pubDate": "2026-11-27T14:10:00.000Z"
-      },
-      {
-        "id": "art-764fece8f78b",
-        "title": "Dec Donnelly says I'm a Celebrity tension 'became much bigger deal than it should have'",
-        "source": "BBC News",
-        "feedId": "bbc-news",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.co.uk/news/articles/c65y1k8qx7q4o?at_medium=RSS&at_campaign=rss",
-        "video": false,
-        "summary": "The co-hosts discussed tensions that flared between Mariella Frostrup and AJ Odudu on the show.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/90cf/live/ea63a4e0-ea53-11f1-b220-b9f21129b546.jpg",
-        "pubDate": "2026-11-27T14:06:20.000Z"
-      },
-      {
-        "id": "art-7fe4fcda6662",
-        "title": "Palmeiras and Estudiantes meet in clash of power and defiance in Libertadores final",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/sport/palmeiras-and-estudiantes-meet-in-clash-power-and-defiance-in-libertadores-final-6587971",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--MW-1Jw2X--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-27T140602Z_1_LYNXNPEMAQ16S_RTROPTP_3_SOCCER-LIBERTADORES-PAL-ESU-PREVIEW.JPG?itok=1Slzv5W6",
-        "pubDate": "2026-11-27T14:06:02.000Z"
-      },
-      {
-        "id": "art-ee0ae61dec44",
-        "title": "Best buddy reunion: Pat Surtain II, Jaylen Waddle embracing playing together with the Broncos",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50595313/pat-surtain-ii-jaylen-waddle-broncos-alabama-best-friends",
-        "video": false,
-        "summary": "Surtain and Waddle bonded immediately at Alabama six years ago and have embraced the chance to play together again in Denver on a team with Super Bowl hopes.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:04:39.000Z"
       },
       {
         "id": "art-1ed071b8dcba",
@@ -552,34 +580,6 @@
         "section": "",
         "imageUrl": "https://static01.nyt.com/images/2026/11/27/multimedia/27int-taiwan-election-bpwl/27int-taiwan-election-bpwl-mediumSquareAt3X.jpg",
         "pubDate": "2026-11-27T13:33:49.000Z"
-      },
-      {
-        "id": "art-9119870f8b9e",
-        "title": "Why did Georgian police clash with Turkish football fans over Palestine?",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/why-did-georgian-police-clash-with-turkish-football-fans-over-palestine?traffic_source=rss",
-        "video": false,
-        "summary": "Georgia's Interior Ministry says 16 people were detained and three employees injured during clashes.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b096c4023577-1795779648.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:32:55.000Z"
-      },
-      {
-        "id": "art-0b7015f8fc17",
-        "title": "Eisenkot navigates tricky waters as he tests power-sharing with Netanyahu",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/27/eisenkot-navigates-tricky-waters-as-he-tests-power-sharing-with-netanyahu?traffic_source=rss",
-        "video": false,
-        "summary": "Some of his allies are calling for such an arrangement, but it would represent a betrayal of his pre-election promise.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afa3343e7b0-1794782019.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:28:55.000Z"
       },
       {
         "id": "art-638cbae6abd9",
@@ -685,7 +685,7 @@
     ]
   },
   "latest": {
-    "updatedAt": "2026-11-27T16:15:24.732Z",
+    "updatedAt": "2026-11-27T16:15:24.086Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -806,6 +806,132 @@
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
+        "id": "art-dfd720a0c351",
+        "title": "Top 10 things to watch in the stock market on Black Friday",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+        "video": false,
+        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
+        "pubDate": "2026-11-27T15:02:04.000Z"
+      },
+      {
+        "id": "art-74e82b464c4a",
+        "title": "Where to get the latest CBS Mornings Deals",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/video/cbs-mornings-deals-112726-2/",
+        "video": false,
+        "summary": "We have more deals on Black Friday for Day 3 of CBS Mornings Deals' special series, 12 Days of Gifting. Visit cbsdeals.com to take advantage of these exclusive deals today. CBS earns commissions on purchases made through cbsdeals.com.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/7f58dc85-f244-4635-806f-c3714cba7c36/thumbnail/1200x630/e36751a86eba7bfeb09d440783f03e6e/cbsn-fusion-cbs-mornings-deals-112726-2-thumbnail.jpg",
+        "pubDate": "2026-11-27T14:54:26.000Z"
+      },
+      {
+        "id": "art-5e1a9f2828d1",
+        "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+        "video": false,
+        "summary": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108120789-1742904573651-gettyimages-159129388-72801932.jpeg?v=1758797166&w=1920&h=1080",
+        "pubDate": "2026-11-27T14:52:40.000Z"
+      },
+      {
+        "id": "art-485765afcb8d",
+        "title": "Bills edge Chiefs with last-second field goal in Thanksgiving thriller",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50582828/2026-nfl-buffalo-bills-kansas-city-chiefs-thanksgiving",
+        "video": false,
+        "summary": "The Bills won their seventh straight, snapping the Chiefs' win streak at three in a sloppy, low-scoring game.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:51:34.000Z"
+      },
+      {
+        "id": "art-c27964c9bdb7",
+        "title": "Joe Milton has huge game as Eagles shock Cowboys on Thanksgiving",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
+        "video": false,
+        "summary": "Dallas blew a 21-point lead as Philly made a spectacular comeback with Milton at the helm.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:51:23.000Z"
+      },
+      {
+        "id": "art-d0f3f33fd367",
+        "title": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+        "source": "BBC News",
+        "feedId": "bbc-news",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
+        "video": false,
+        "summary": "Pennsylvania and neighbouring states remain badly affected on Friday after both coasts were lashed with wind and rain.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/318d/live/6be8b890-ea6b-11f1-99b6-a35a62fa4264.jpg",
+        "pubDate": "2026-11-27T14:49:59.000Z"
+      },
+      {
+        "id": "art-403bec37e251",
+        "title": "Psychologists in their 80s become influencers doling out comedic life lessons",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/video/psychologists-in-their-80s-become-influencers-doling-out-comedic-life-lessons/",
+        "video": false,
+        "summary": "Dr. Susan Thau and Dr. Sondra Goldstein, a pair of psychologists-turned-influencers in their 80s, are acting out comedy sketches crammed with lessons on how to cope and grow. Jo Ling Kent has more.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/53de1ff5-1a86-4b43-8fff-6a78fd763dc0/thumbnail/1200x630/f1a9bcf7393f323e764a434624fd420f/cbsn-fusion-psychologists-in-their-80s-become-influencers-doling-out-comedic-life-lessons-thumbnail.jpg",
+        "pubDate": "2026-11-27T14:48:57.000Z"
+      },
+      {
+        "id": "art-ee0ae61dec44",
+        "title": "Best buddy reunion: Pat Surtain II, Jaylen Waddle embracing playing together with the Broncos",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50595313/pat-surtain-ii-jaylen-waddle-broncos-alabama-best-friends",
+        "video": false,
+        "summary": "Surtain and Waddle bonded immediately at Alabama six years ago and have embraced the chance to play together again in Denver on a team with Super Bowl hopes.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:48:24.000Z"
+      },
+      {
+        "id": "art-1143f59021ce",
+        "title": "Haaland ‘happy’ at Man City despite outburst that led to transfer talk",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/sports/2026/11/27/haaland-happy-at-manchester-city-despite-outburst-that-led-to-transfer-talk?traffic_source=rss",
+        "video": false,
+        "summary": "Erling Haaland blasted beleaguered City's form, but ahead of Arsenal test, manager Enzo Maresca says striker is happy.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-21T143650Z_1917729519_UP1EMBL14FDED_RTRMADP_3_SOCCER-ENGLAND-MCI-FUL-1795790000.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:47:40.000Z"
+      },
+      {
         "id": "art-17906474746b",
         "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
         "source": "CBS News",
@@ -918,76 +1044,6 @@
         "pubDate": "2026-11-27T14:38:00.000Z"
       },
       {
-        "id": "art-ce53bd06b8e6",
-        "title": "Louisville calls excessive TO but gets ball back for game-winning 3",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/mens-college-basketball/story/_/id/50609831/louisville-calls-extra-gets-ball-back-game-winner",
-        "video": false,
-        "summary": "An excessive timeout rule that left both Louisville and St. John's confused helped the Cardinals stave off a rally and seal the win with a buzzer-beating 3.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:38:00.000Z"
-      },
-      {
-        "id": "art-89c63f5ca697",
-        "title": "Eagles RB Shipley downplays sideline argument with Sirianni: 'Talked it out'",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50608884/will-shipley-brushes-argument-coach-nick-sirianni",
-        "video": false,
-        "summary": "RB Will Shipley likened his sideline argument with coach Nick Sirianni to a Thanksgiving family spat in the wake of the Eagles' dramatic comeback win at Dallas.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:38:00.000Z"
-      },
-      {
-        "id": "art-2bef755ff9a8",
-        "title": "Sources: Man United locks in midfielder Fernandes until 2028",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/soccer/story/_/id/50610575/bruno-fernandes-man-united-brentford",
-        "video": false,
-        "summary": "Manchester United have triggered an extension in Bruno Fernandes' contract, sources have told ESPN, but the midfielder remains a doubt for Brentford's visit to Old Trafford on Saturday.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:38:00.000Z"
-      },
-      {
-        "id": "art-20669b5cbce2",
-        "title": "Steelers owner: Rodgers' 'insubordination can't be tolerated,' backs McCarthy",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50605070/steelers-owner-disappointed-rodgers-backs-mccarthy",
-        "video": false,
-        "summary": "Steelers owner Art Rooney II reacted to Wednesday's fiery interview from Aaron Rodgers by saying he was \"disappointed in where this went\" with their now-former quarterback, adding he has \"100% confidence in Mike McCarthy.\"",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0121%2Fr1603837_1296x729_16%2D9.jpg",
-        "pubDate": "2026-11-27T14:38:00.000Z"
-      },
-      {
-        "id": "art-8ca14c7a3a3b",
-        "title": "Cowboys' Jones backing Schottenheimer despite 'damning setbacks'",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50608969/cowboys-jerry-jones-backs-coach-damning-setbacks",
-        "video": false,
-        "summary": "Jerry Jones said he did not anticipate making immediate changes but still labeled the Cowboys' latest fourth-quarter collapse as a \"damning\" setback.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:38:00.000Z"
-      },
-      {
         "id": "art-a51e4dcd5f80",
         "title": "Here are the 26 best Black Friday laptop deals on products we’ve tested and love",
         "source": "CNN",
@@ -1045,18 +1101,19 @@
         "pubDate": "2026-11-27T14:32:09.000Z"
       },
       {
-        "id": "art-dfd720a0c351",
-        "title": "Top 10 things to watch in the stock market on Black Friday",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+        "id": "art-9b02d533408e",
+        "title": "Software giant SAP weighs major job cuts as AI transforms sector, sources say",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/",
         "video": false,
-        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
+        "summary": "Software giant SAP weighs major job cuts as AI transforms sector, sources say Reuters",
         "doi": "",
         "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:31:12.000Z"
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:26:30.000Z",
+        "publisherUrl": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/"
       },
       {
         "id": "art-f0e724c4d868",
@@ -1115,47 +1172,18 @@
         "pubDate": "2026-11-27T14:19:00.000Z"
       },
       {
-        "id": "art-c94df6fa2ace",
-        "title": "EU leaders fail to break $1.7 trillion budget deadlock as political pressure mounts",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/2026/11/27/eu-budget-2028-2034-deadlock.html",
+        "id": "art-6130e75798de",
+        "title": "Why is Israel celebrating Costa Rica’s ban on Francesca Albanese?",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/why-is-israel-celebrating-costa-ricas-ban-on-francesca-albanese?traffic_source=rss",
         "video": false,
-        "summary": "EU leaders failed to break a deadlock over the bloc’s budget, with talks set to resume in December as a key deadline looms.",
+        "summary": "Costa Rica is under pressure over its decision to bar the UN expert who has documented Israel's genocidal war on Gaza.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108560074-1795783945346-gettyimages-2306396723-Special_European_Council_And_Euro_Summit.jpeg?v=1795784136&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:12:55.000Z"
-      },
-      {
-        "id": "art-df14bd79e8eb",
-        "title": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/",
-        "video": false,
-        "summary": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:11:43.000Z",
-        "publisherUrl": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/"
-      },
-      {
-        "id": "art-764fece8f78b",
-        "title": "Dec Donnelly says I'm a Celebrity tension 'became much bigger deal than it should have'",
-        "source": "BBC News",
-        "feedId": "bbc-news",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.co.uk/news/articles/c65y1k8qx7q4o?at_medium=RSS&at_campaign=rss",
-        "video": false,
-        "summary": "The co-hosts discussed tensions that flared between Mariella Frostrup and AJ Odudu on the show.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/90cf/live/ea63a4e0-ea53-11f1-b220-b9f21129b546.jpg",
-        "pubDate": "2026-11-27T14:06:20.000Z"
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-03-24T091407Z_414780193_RC2WAKAPHKHD_RTRMADP_3_ISRAEL-PALESTINIANS-UN-EXPERT-1788881286.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:17:25.000Z"
       },
       {
         "id": "art-1ed071b8dcba",
@@ -1227,34 +1255,6 @@
         "imageUrl": "",
         "pubDate": "2026-11-27T13:38:43.000Z",
         "publisherUrl": "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/"
-      },
-      {
-        "id": "art-9119870f8b9e",
-        "title": "Why did Georgian police clash with Turkish football fans over Palestine?",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/why-did-georgian-police-clash-with-turkish-football-fans-over-palestine?traffic_source=rss",
-        "video": false,
-        "summary": "Georgia's Interior Ministry says 16 people were detained and three employees injured during clashes.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b096c4023577-1795779648.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:32:55.000Z"
-      },
-      {
-        "id": "art-0b7015f8fc17",
-        "title": "Eisenkot navigates tricky waters as he tests power-sharing with Netanyahu",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/27/eisenkot-navigates-tricky-waters-as-he-tests-power-sharing-with-netanyahu?traffic_source=rss",
-        "video": false,
-        "summary": "Some of his allies are calling for such an arrangement, but it would represent a betrayal of his pre-election promise.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afa3343e7b0-1794782019.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:28:55.000Z"
       },
       {
         "id": "art-048d4ea3fd25",
@@ -1388,7 +1388,7 @@
     ]
   },
   "briefing": {
-    "updatedAt": "2026-11-27T16:15:24.941Z",
+    "updatedAt": "2026-11-27T16:15:24.206Z",
     "results": [
       {
         "feedId": "reuters",
@@ -1566,6 +1566,20 @@
         "pubDate": "2026-11-27T14:44:21.000Z"
       },
       {
+        "id": "art-2d9a12e5436f",
+        "title": "US tech stocks rise in latest market swing",
+        "source": "Financial Times",
+        "feedId": "ft-home",
+        "domain": "ft.com",
+        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
+        "video": false,
+        "summary": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+        "pubDate": "2026-11-27T14:38:51.000Z"
+      },
+      {
         "id": "art-a51e4dcd5f80",
         "title": "Here are the 26 best Black Friday laptop deals on products we’ve tested and love",
         "source": "CNN",
@@ -1638,6 +1652,21 @@
         "publisherUrl": "https://www.washingtonpost.com/style/fashion/2026/11/27/an-exuberant-fashion-subculture-is-flourishing-mountains-afghanistan/"
       },
       {
+        "id": "art-9b02d533408e",
+        "title": "Software giant SAP weighs major job cuts as AI transforms sector, sources say",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/",
+        "video": false,
+        "summary": "Software giant SAP weighs major job cuts as AI transforms sector, sources say Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:26:30.000Z",
+        "publisherUrl": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/"
+      },
+      {
         "id": "art-44e4968e424f",
         "title": "Power Outages, Flood Risks Linger After Storm Wallops East Coast",
         "source": "Bloomberg Markets",
@@ -1650,21 +1679,6 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T14:20:06.000Z"
-      },
-      {
-        "id": "art-df14bd79e8eb",
-        "title": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/",
-        "video": false,
-        "summary": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:11:43.000Z",
-        "publisherUrl": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/"
       },
       {
         "id": "art-a09db77f93b2",
@@ -1741,6 +1755,21 @@
         "publisherUrl": "https://www.thetimes.com/uk/politics/article/dwp-department-for-work-pensions-cyber-n00fcn69z"
       },
       {
+        "id": "art-ed390599b587",
+        "title": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/legal/litigation/airline-norse-atlantics-norwegian-operating-unit-declares-bankruptcy-2026-11-27/",
+        "video": false,
+        "summary": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T13:37:31.000Z",
+        "publisherUrl": "https://www.reuters.com/legal/litigation/airline-norse-atlantics-norwegian-operating-unit-declares-bankruptcy-2026-11-27/"
+      },
+      {
         "id": "art-9c4de7bb8a67",
         "title": "Poland Warns on Tech Debt Flood Before 2027 Eurobond Sales",
         "source": "Bloomberg Markets",
@@ -1810,34 +1839,6 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T13:31:11.000Z"
-      },
-      {
-        "id": "art-ee788953c7ea",
-        "title": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZjF6SXBzRmpCeHczaU9VZnNGczNjcWtlMXNCMUFrTUxfbUViN3cxUXpPbFU0YVRTQzU0aEY5MGdLY1hnU2I1R21jd2tYNnIyLVVLeEtoSEY2WjZKNTE0QkdLWWFzcmkySGFYUWE4Vmh3OVpzLWJ3V25LX18zSUJ4TS1TcExrVFFoUUVvOS13NmF1dUZJWVo1S2hLRlZaNmMzTWh1dDFsTHpXUzlzN2lWQ01sc1VVR0hOUzlZSTJ3?oc=5",
-        "video": false,
-        "summary": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T13:28:56.000Z"
-      },
-      {
-        "id": "art-2d9a12e5436f",
-        "title": "US tech stocks set to jump at open as volatile trading takes hold",
-        "source": "Financial Times",
-        "feedId": "ft-home",
-        "domain": "ft.com",
-        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-        "video": false,
-        "summary": "All-powerful AI trade has been eclipsed by wild swings in a market struggling to price future earnings",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-        "pubDate": "2026-11-27T13:15:41.000Z"
       },
       {
         "id": "art-2e8d84af08df",
@@ -2105,7 +2106,7 @@
     ]
   },
   "briefs": {
-    "updatedAt": "2026-11-27T16:15:25.274Z",
+    "updatedAt": "2026-11-27T16:15:24.422Z",
     "results": [
       {
         "feedId": "nyt-world",
@@ -2307,6 +2308,20 @@
         "pubDate": "2026-11-27T14:44:21.000Z"
       },
       {
+        "id": "art-2d9a12e5436f",
+        "title": "US tech stocks rise in latest market swing",
+        "source": "Financial Times",
+        "feedId": "ft-home",
+        "domain": "ft.com",
+        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
+        "video": false,
+        "summary": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+        "pubDate": "2026-11-27T14:38:51.000Z"
+      },
+      {
         "id": "art-7846d4885790",
         "title": "Thanksgiving Storm Leaves Half a Million Without Power on the East Coast",
         "source": "NYT U.S.",
@@ -2477,20 +2492,6 @@
         "section": "",
         "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/791f61f7ce064a6d860d9bdfa36103c5a4d258c29d02ac7ea7e080218f7a80c7?t=og",
         "pubDate": "2026-11-27T13:28:47.000Z"
-      },
-      {
-        "id": "art-2d9a12e5436f",
-        "title": "US tech stocks set to jump at open as volatile trading takes hold",
-        "source": "Financial Times",
-        "feedId": "ft-home",
-        "domain": "ft.com",
-        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-        "video": false,
-        "summary": "All-powerful AI trade has been eclipsed by wild swings in a market struggling to price future earnings",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-        "pubDate": "2026-11-27T13:15:41.000Z"
       },
       {
         "id": "art-58f3c4fe0044",
@@ -2845,7 +2846,7 @@
     ]
   },
   "video": {
-    "updatedAt": "2026-11-27T16:15:25.297Z",
+    "updatedAt": "2026-11-27T16:15:24.438Z",
     "results": [
       {
         "feedId": "yt-abc-news",
@@ -2933,20 +2934,6 @@
       }
     ],
     "articles": [
-      {
-        "id": "art-e1235d54e584",
-        "title": "Masjid Bandaraya Kuching, Sarawak mempunyai sejarah yang bermula sejak abad ke-19",
-        "source": "Astro Awani",
-        "feedId": "yt-astro-awani",
-        "domain": "youtube.com",
-        "url": "https://www.youtube.com/shorts/pPTMTQthFUI",
-        "video": true,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i1.ytimg.com/vi/pPTMTQthFUI/hqdefault.jpg",
-        "pubDate": "2026-11-27T14:56:08.000Z"
-      },
       {
         "id": "art-90f8bb81c5c3",
         "title": "Holiday shoppers hit the stores on Black Friday",
@@ -3256,6 +3243,20 @@
         "pubDate": "2026-11-27T11:08:48.000Z"
       },
       {
+        "id": "art-7710588d69eb",
+        "title": "The billionaire apocalypse | Astra Taylor and Naomi Klein #DejaVu #Shorts #Podcast",
+        "source": "Al Jazeera English",
+        "feedId": "yt-aljazeera",
+        "domain": "youtube.com",
+        "url": "https://www.youtube.com/shorts/OBsPQoF854w",
+        "video": true,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://i4.ytimg.com/vi/OBsPQoF854w/hqdefault.jpg",
+        "pubDate": "2026-11-27T11:00:22.000Z"
+      },
+      {
         "id": "art-bfaafbb90bc9",
         "title": "Viral cricket catch on motorcycle",
         "source": "DW News",
@@ -3440,7 +3441,7 @@
     ]
   },
   "world": {
-    "updatedAt": "2026-11-27T16:15:25.576Z",
+    "updatedAt": "2026-11-27T16:15:24.645Z",
     "results": [
       {
         "feedId": "bbc-world",
@@ -3579,6 +3580,20 @@
         "pubDate": "2026-11-27T14:49:59.000Z"
       },
       {
+        "id": "art-1143f59021ce",
+        "title": "Haaland ‘happy’ at Man City despite outburst that led to transfer talk",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/sports/2026/11/27/haaland-happy-at-manchester-city-despite-outburst-that-led-to-transfer-talk?traffic_source=rss",
+        "video": false,
+        "summary": "Erling Haaland blasted beleaguered City's form, but ahead of Arsenal test, manager Enzo Maresca says striker is happy.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-21T143650Z_1917729519_UP1EMBL14FDED_RTRMADP_3_SOCCER-ENGLAND-MCI-FUL-1795790000.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:47:40.000Z"
+      },
+      {
         "id": "art-7ce82aaf328c",
         "title": "Spain’s Far-Right Era Ended in 1975. Will This Man Change That?",
         "source": "NYT World",
@@ -3665,6 +3680,21 @@
         "publisherUrl": "https://www.washingtonpost.com/style/fashion/2026/11/27/an-exuberant-fashion-subculture-is-flourishing-mountains-afghanistan/"
       },
       {
+        "id": "art-9b02d533408e",
+        "title": "Software giant SAP weighs major job cuts as AI transforms sector, sources say",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/",
+        "video": false,
+        "summary": "Software giant SAP weighs major job cuts as AI transforms sector, sources say Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:26:30.000Z",
+        "publisherUrl": "https://www.reuters.com/business/world-at-work/sap-seeks-cut-sizeable-number-jobs-sources-say-2026-11-27/"
+      },
+      {
         "id": "art-ebb82cffad59",
         "title": "Indian police rescue 164 Malaysians and Indonesians from Delhi scam ring",
         "source": "South China Morning Post",
@@ -3679,19 +3709,18 @@
         "pubDate": "2026-11-27T14:19:36.000Z"
       },
       {
-        "id": "art-df14bd79e8eb",
-        "title": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/",
+        "id": "art-6130e75798de",
+        "title": "Why is Israel celebrating Costa Rica’s ban on Francesca Albanese?",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/why-is-israel-celebrating-costa-ricas-ban-on-francesca-albanese?traffic_source=rss",
         "video": false,
-        "summary": "Explainer: Black Friday test for retailers as tight budgets meet AI-savvy shoppers Reuters",
+        "summary": "Costa Rica is under pressure over its decision to bar the UN expert who has documented Israel's genocidal war on Gaza.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:11:43.000Z",
-        "publisherUrl": "https://www.reuters.com/business/retail-consumer/black-friday-test-retailers-tight-budgets-meet-ai-savvy-shoppers-2026-11-27/"
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-03-24T091407Z_414780193_RC2WAKAPHKHD_RTRMADP_3_ISRAEL-PALESTINIANS-UN-EXPERT-1788881286.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:17:25.000Z"
       },
       {
         "id": "art-34be315e1463",
@@ -3808,46 +3837,19 @@
         "pubDate": "2026-11-27T13:33:49.000Z"
       },
       {
-        "id": "art-9119870f8b9e",
-        "title": "Why did Georgian police clash with Turkish football fans over Palestine?",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/why-did-georgian-police-clash-with-turkish-football-fans-over-palestine?traffic_source=rss",
-        "video": false,
-        "summary": "Georgia's Interior Ministry says 16 people were detained and three employees injured during clashes.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b096c4023577-1795779648.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:32:55.000Z"
-      },
-      {
-        "id": "art-0b7015f8fc17",
-        "title": "Eisenkot navigates tricky waters as he tests power-sharing with Netanyahu",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/27/eisenkot-navigates-tricky-waters-as-he-tests-power-sharing-with-netanyahu?traffic_source=rss",
-        "video": false,
-        "summary": "Some of his allies are calling for such an arrangement, but it would represent a betrayal of his pre-election promise.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afa3343e7b0-1794782019.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:28:55.000Z"
-      },
-      {
-        "id": "art-c5247e50ceb4",
+        "id": "art-11f4e81bc076",
         "title": "Marseille condemned, risk UEFA punishment after violence mars Europa League tie",
         "source": "RFI",
         "feedId": "rfi",
         "domain": "rfi.fr",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY1NKY08xbE0yMDQ0UTFIMnNjX0NuamNQYkg2SW9tVzNEVnhud29qZWtNd19aekg4UW9DQ09GbkZoaWJBajZPdkJwU2VaQlJ5M3JjNWtqd3BhV1hLLWlFVkNVTHM0U25hMExzYmxvSHFRU1ktV2NBdjFjdHdndV8zOGZicFJIRGtSbnJMZS1wTFZReTVOTXNTZjNBd2duZnBuQ1lFeUFUd3VpNjNQcnFZNkdSTkw2aXM?oc=5",
+        "url": "https://www.rfi.fr/en/sports/20261127-marseille-condemned-risk-uefa-punishment-after-violence-mars-europa-league-tie",
         "video": false,
         "summary": "Marseille condemned, risk UEFA punishment after violence mars Europa League tie RFI",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T12:47:33.000Z"
+        "pubDate": "2026-11-27T12:47:33.000Z",
+        "publisherUrl": "https://www.rfi.fr/en/sports/20261127-marseille-condemned-risk-uefa-punishment-after-violence-mars-europa-league-tie"
       },
       {
         "id": "art-95991b2c9e50",
@@ -4180,7 +4182,7 @@
     ]
   },
   "us": {
-    "updatedAt": "2026-11-27T16:15:25.743Z",
+    "updatedAt": "2026-11-27T16:15:24.802Z",
     "results": [
       {
         "feedId": "cbs",
@@ -4289,6 +4291,62 @@
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
+        "id": "art-dfd720a0c351",
+        "title": "Top 10 things to watch in the stock market on Black Friday",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+        "video": false,
+        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
+        "pubDate": "2026-11-27T15:02:04.000Z"
+      },
+      {
+        "id": "art-74e82b464c4a",
+        "title": "Where to get the latest CBS Mornings Deals",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/video/cbs-mornings-deals-112726-2/",
+        "video": false,
+        "summary": "We have more deals on Black Friday for Day 3 of CBS Mornings Deals' special series, 12 Days of Gifting. Visit cbsdeals.com to take advantage of these exclusive deals today. CBS earns commissions on purchases made through cbsdeals.com.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/7f58dc85-f244-4635-806f-c3714cba7c36/thumbnail/1200x630/e36751a86eba7bfeb09d440783f03e6e/cbsn-fusion-cbs-mornings-deals-112726-2-thumbnail.jpg",
+        "pubDate": "2026-11-27T14:54:26.000Z"
+      },
+      {
+        "id": "art-5e1a9f2828d1",
+        "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+        "video": false,
+        "summary": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108120789-1742904573651-gettyimages-159129388-72801932.jpeg?v=1758797166&w=1920&h=1080",
+        "pubDate": "2026-11-27T14:52:40.000Z"
+      },
+      {
+        "id": "art-403bec37e251",
+        "title": "Psychologists in their 80s become influencers doling out comedic life lessons",
+        "source": "CBS News",
+        "feedId": "cbs",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/video/psychologists-in-their-80s-become-influencers-doling-out-comedic-life-lessons/",
+        "video": false,
+        "summary": "Dr. Susan Thau and Dr. Sondra Goldstein, a pair of psychologists-turned-influencers in their 80s, are acting out comedy sketches crammed with lessons on how to cope and grow. Jo Ling Kent has more.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/53de1ff5-1a86-4b43-8fff-6a78fd763dc0/thumbnail/1200x630/f1a9bcf7393f323e764a434624fd420f/cbsn-fusion-psychologists-in-their-80s-become-influencers-doling-out-comedic-life-lessons-thumbnail.jpg",
+        "pubDate": "2026-11-27T14:48:57.000Z"
+      },
+      {
         "id": "art-17906474746b",
         "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
         "source": "CBS News",
@@ -4388,20 +4446,6 @@
         "publisherUrl": "https://www.cnn.com/cnn-underscored/deals/black-friday-laptop-computer-deals-2026-11-27"
       },
       {
-        "id": "art-ef31a64c526d",
-        "title": "AI shopping agents face huge threats on Black Friday. Here's what to know.",
-        "source": "CBS News",
-        "feedId": "cbs",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/video/ai-shopping-agents-face-huge-threats-on-black-friday-heres-what-to-know/",
-        "video": false,
-        "summary": "Visa is bracing for a battle online among AI shopping agents targeted by fraudulent bots. Ash-har Quraishi has more.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/f6ab33c5-68d8-46d6-9380-789dcf541b55/thumbnail/1200x630/57eb0e445402089290e57f8650751eed/cbsn-fusion-ai-shopping-agents-face-huge-threats-on-black-friday-heres-what-to-know-thumbnail.jpg",
-        "pubDate": "2026-11-27T14:33:47.000Z"
-      },
-      {
         "id": "art-9a6cc45cdac7",
         "title": "Five Big Questions for the 2028 Presidential Race",
         "source": "NYT U.S.",
@@ -4428,48 +4472,6 @@
         "section": "",
         "imageUrl": "https://s.abcnews.com/images/GMA/261127_gma_play1_hpMain_4x3_384.jpg",
         "pubDate": "2026-11-27T14:32:09.000Z"
-      },
-      {
-        "id": "art-dfd720a0c351",
-        "title": "Top 10 things to watch in the stock market on Black Friday",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
-        "video": false,
-        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:31:12.000Z"
-      },
-      {
-        "id": "art-ac78a86c0406",
-        "title": "Investigator says Russia is \"brainwashing\" Ukrainian children at so-called summer camps",
-        "source": "CBS News",
-        "feedId": "cbs",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/video/investigator-says-russia-is-brainwashing-ukrainian-children-at-so-called-summer-camps/",
-        "video": false,
-        "summary": "Since Russia's invasion of Ukraine, many Ukrainian children have ended up at Russian camps where the Ukrainian language is banned and the Russian anthem is played each day. More Sunday on 60 Minutes.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/11/27/cdc6461f-f763-46f4-8d75-c00ce3ae3b8c/thumbnail/1200x630/18b68e202a0c984f0c5565e78ed37fb6/cbsn-fusion-investigator-says-russia-is-brainwashing-ukrainian-children-at-so-called-summer-camps-thumbnail.jpg",
-        "pubDate": "2026-11-27T14:25:03.000Z"
-      },
-      {
-        "id": "art-c94df6fa2ace",
-        "title": "EU leaders fail to break $1.7 trillion budget deadlock as political pressure mounts",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/2026/11/27/eu-budget-2028-2034-deadlock.html",
-        "video": false,
-        "summary": "EU leaders failed to break a deadlock over the bloc’s budget, with talks set to resume in December as a key deadline looms.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108560074-1795783945346-gettyimages-2306396723-Special_European_Council_And_Euro_Summit.jpeg?v=1795784136&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:12:55.000Z"
       },
       {
         "id": "art-e5ba00fba129",
@@ -4887,7 +4889,7 @@
     ]
   },
   "uk": {
-    "updatedAt": "2026-11-27T16:15:25.771Z",
+    "updatedAt": "2026-11-27T16:15:24.831Z",
     "results": [
       {
         "feedId": "bbc-uk",
@@ -4927,6 +4929,20 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-d0f3f33fd367",
+        "title": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+        "source": "BBC News",
+        "feedId": "bbc-news",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
+        "video": false,
+        "summary": "Pennsylvania and neighbouring states remain badly affected on Friday after both coasts were lashed with wind and rain.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/318d/live/6be8b890-ea6b-11f1-99b6-a35a62fa4264.jpg",
+        "pubDate": "2026-11-27T14:49:59.000Z"
+      },
       {
         "id": "art-38d2e44af6ec",
         "title": "'We have no interest in hearing from Huw Edwards', Downing Street says",
@@ -5266,20 +5282,6 @@
         "publisherUrl": "https://www.bbc.co.uk/news/articles/cw4gne8jp73qo"
       },
       {
-        "id": "art-d0f3f33fd367",
-        "title": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
-        "source": "BBC News",
-        "feedId": "bbc-news",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
-        "video": false,
-        "summary": "Pennsylvania and neighbouring states remain badly affected on Friday after both coasts were lashed with wind and rain.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/627c/live/2d067240-ea4b-11f1-b220-b9f21129b546.jpg",
-        "pubDate": "2026-11-27T10:26:28.000Z"
-      },
-      {
         "id": "art-224ca0e3af2b",
         "title": "My self-care ritual is a meal at a fancy restaurant - on my own",
         "source": "BBC News",
@@ -5521,7 +5523,7 @@
     ]
   },
   "australia": {
-    "updatedAt": "2026-11-27T16:15:25.942Z",
+    "updatedAt": "2026-11-27T16:15:25.017Z",
     "results": [
       {
         "feedId": "abc-au",
@@ -6214,7 +6216,7 @@
     ]
   },
   "canada": {
-    "updatedAt": "2026-11-27T16:15:25.958Z",
+    "updatedAt": "2026-11-27T16:15:25.037Z",
     "results": [
       {
         "feedId": "cbc-top",
@@ -6847,7 +6849,7 @@
     ]
   },
   "singapore": {
-    "updatedAt": "2026-11-27T16:15:25.978Z",
+    "updatedAt": "2026-11-27T16:15:25.062Z",
     "results": [
       {
         "feedId": "straitstimes-sg",
@@ -7120,6 +7122,20 @@
         "pubDate": "2026-11-27T13:10:00.000Z"
       },
       {
+        "id": "art-4227ec0dbedc",
+        "title": "Poland signs contract with Palantir worth $300 million over 5 years",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/business/poland-signs-contract-palantir-worth-300-million-over-5-years-6587816",
+        "video": false,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--ZdHPGX9S--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/one-cms/images/2021-06/business_1.png?itok=npguKy4y",
+        "pubDate": "2026-11-27T13:08:38.000Z"
+      },
+      {
         "id": "art-4306deb1b635",
         "title": "Death toll in Pakistan building collapse rises to eight",
         "source": "CNA",
@@ -7174,20 +7190,6 @@
         "section": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--xjotB2m3--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T122516Z_1_LYNXNPEMAQ10K_RTROPTP_3_SPORT-TENNIS-ATP.JPG?itok=cUYy3ZM2",
         "pubDate": "2026-11-27T12:25:16.000Z"
-      },
-      {
-        "id": "art-1e8885509b24",
-        "title": "India's Modi to revive parliament expansion bill tied to women's quota, sources say",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/asia/indias-modi-revive-parliament-expansion-bill-tied-womens-quota-sources-say-6587726",
-        "video": false,
-        "summary": "India's parliament does not reserve any seats for women and the bill will test Modi's political strength after a series of protests and setbacks.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--ejPpApsK--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T114014Z_1_LYNXNPEMAQ0WE_RTROPTP_3_INDIA-POLITICS.JPG?itok=oRBNu4NL",
-        "pubDate": "2026-11-27T12:23:00.000Z"
       },
       {
         "id": "art-0fa9bc7229f4",
@@ -7477,7 +7479,7 @@
     ]
   },
   "malaysia": {
-    "updatedAt": "2026-11-27T16:15:26.009Z",
+    "updatedAt": "2026-11-27T16:15:25.100Z",
     "results": [
       {
         "feedId": "berita-harian",
@@ -8120,7 +8122,7 @@
     ]
   },
   "asia": {
-    "updatedAt": "2026-11-27T16:15:26.336Z",
+    "updatedAt": "2026-11-27T16:15:25.537Z",
     "results": [
       {
         "feedId": "cna",
@@ -8289,6 +8291,20 @@
         "pubDate": "2026-11-27T20:15:00.000Z"
       },
       {
+        "id": "art-1143f59021ce",
+        "title": "Haaland ‘happy’ at Man City despite outburst that led to transfer talk",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/sports/2026/11/27/haaland-happy-at-manchester-city-despite-outburst-that-led-to-transfer-talk?traffic_source=rss",
+        "video": false,
+        "summary": "Erling Haaland blasted beleaguered City's form, but ahead of Arsenal test, manager Enzo Maresca says striker is happy.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-21T143650Z_1917729519_UP1EMBL14FDED_RTRMADP_3_SOCCER-ENGLAND-MCI-FUL-1795790000.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:47:40.000Z"
+      },
+      {
         "id": "art-795e857f7b47",
         "title": "Hong Kong completes ‘historic’ overhaul of colonial-era laws 7 months early",
         "source": "South China Morning Post",
@@ -8373,32 +8389,18 @@
         "pubDate": "2026-11-27T14:18:00.000Z"
       },
       {
-        "id": "art-9119870f8b9e",
-        "title": "Why did Georgian police clash with Turkish football fans over Palestine?",
+        "id": "art-6130e75798de",
+        "title": "Why is Israel celebrating Costa Rica’s ban on Francesca Albanese?",
         "source": "Al Jazeera",
         "feedId": "aljazeera",
         "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/why-did-georgian-police-clash-with-turkish-football-fans-over-palestine?traffic_source=rss",
+        "url": "https://www.aljazeera.com/news/2026/11/27/why-is-israel-celebrating-costa-ricas-ban-on-francesca-albanese?traffic_source=rss",
         "video": false,
-        "summary": "Georgia's Interior Ministry says 16 people were detained and three employees injured during clashes.",
+        "summary": "Costa Rica is under pressure over its decision to bar the UN expert who has documented Israel's genocidal war on Gaza.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b096c4023577-1795779648.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:32:55.000Z"
-      },
-      {
-        "id": "art-0b7015f8fc17",
-        "title": "Eisenkot navigates tricky waters as he tests power-sharing with Netanyahu",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/27/eisenkot-navigates-tricky-waters-as-he-tests-power-sharing-with-netanyahu?traffic_source=rss",
-        "video": false,
-        "summary": "Some of his allies are calling for such an arrangement, but it would represent a betrayal of his pre-election promise.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afa3343e7b0-1794782019.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T13:28:55.000Z"
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-03-24T091407Z_414780193_RC2WAKAPHKHD_RTRMADP_3_ISRAEL-PALESTINIANS-UN-EXPERT-1788881286.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:17:25.000Z"
       },
       {
         "id": "art-5c69cd27209d",
@@ -8793,18 +8795,19 @@
         "publisherUrl": "https://e.vnexpress.net/news/news/education/teachers-race-to-master-english-as-vietnam-pushes-for-bilingual-education-5149059.html"
       },
       {
-        "id": "art-06ce17c85743",
+        "id": "art-67dea1c01974",
         "title": "Police officer fined HK$8,000 for dangerous driving as doctors unable to link woman’s death to crash - Hong Kong Free Press HKFP",
         "source": "Hong Kong Free Press HKFP",
         "feedId": "hkfp",
         "domain": "hongkongfp.com",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZEdERTJmdEg2VllKWVAydS1KYWt2VWJnci0xOU9ndjJsWU9ZcllSWDItSHF0UzBNLTBDTkloT3dYdlpHRGZwYzhwVkRmZHFkVWJ0dnVZNDA3MTVoYTdrUU1CNjE2RVRucDBieXU1aG1lc1l1QlJlcEZmZzZXR2NmYzVieHI5cXpGU1JXLU5KeVN6ZTlwUzdVWFRGdE1qU3pzVHFWMWVLbmo3UE8zZmcxU3dYdTh3ZU1SOUFhOFhvUVdlVTEwckFkN3kzc0o?oc=5",
+        "url": "https://hongkongfp.com/2026/11/26/police-officer-fined-hk8000-for-dangerous-driving-as-doctors-unable-to-link-womans-death-to-crash/",
         "video": false,
         "summary": "Police officer fined HK$8,000 for dangerous driving as doctors unable to link woman’s death to crash Hong Kong Free Press HKFP",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-25T23:50:00.000Z"
+        "pubDate": "2026-11-25T23:50:00.000Z",
+        "publisherUrl": "https://hongkongfp.com/2026/11/26/police-officer-fined-hk8000-for-dangerous-driving-as-doctors-unable-to-link-womans-death-to-crash/"
       },
       {
         "id": "art-08581f920734",
@@ -8884,7 +8887,7 @@
     ]
   },
   "europe": {
-    "updatedAt": "2026-11-27T16:15:26.628Z",
+    "updatedAt": "2026-11-27T16:15:25.927Z",
     "results": [
       {
         "feedId": "bbc-europe",
@@ -9425,18 +9428,19 @@
         "pubDate": "2026-11-27T12:52:25.000Z"
       },
       {
-        "id": "art-c5247e50ceb4",
+        "id": "art-11f4e81bc076",
         "title": "Marseille condemned, risk UEFA punishment after violence mars Europa League tie",
         "source": "RFI",
         "feedId": "rfi",
         "domain": "rfi.fr",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY1NKY08xbE0yMDQ0UTFIMnNjX0NuamNQYkg2SW9tVzNEVnhud29qZWtNd19aekg4UW9DQ09GbkZoaWJBajZPdkJwU2VaQlJ5M3JjNWtqd3BhV1hLLWlFVkNVTHM0U25hMExzYmxvSHFRU1ktV2NBdjFjdHdndV8zOGZicFJIRGtSbnJMZS1wTFZReTVOTXNTZjNBd2duZnBuQ1lFeUFUd3VpNjNQcnFZNkdSTkw2aXM?oc=5",
+        "url": "https://www.rfi.fr/en/sports/20261127-marseille-condemned-risk-uefa-punishment-after-violence-mars-europa-league-tie",
         "video": false,
         "summary": "Marseille condemned, risk UEFA punishment after violence mars Europa League tie RFI",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T12:47:33.000Z"
+        "pubDate": "2026-11-27T12:47:33.000Z",
+        "publisherUrl": "https://www.rfi.fr/en/sports/20261127-marseille-condemned-risk-uefa-punishment-after-violence-mars-europa-league-tie"
       },
       {
         "id": "art-416cb1d8aa93",
@@ -9584,7 +9588,7 @@
     ]
   },
   "middle-east": {
-    "updatedAt": "2026-11-27T16:15:26.647Z",
+    "updatedAt": "2026-11-27T16:15:25.946Z",
     "results": [
       {
         "feedId": "bbc-middle-east",
@@ -9683,6 +9687,20 @@
         "pubDate": "2026-11-27T14:52:57.000Z"
       },
       {
+        "id": "art-1143f59021ce",
+        "title": "Haaland ‘happy’ at Man City despite outburst that led to transfer talk",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/sports/2026/11/27/haaland-happy-at-manchester-city-despite-outburst-that-led-to-transfer-talk?traffic_source=rss",
+        "video": false,
+        "summary": "Erling Haaland blasted beleaguered City's form, but ahead of Arsenal test, manager Enzo Maresca says striker is happy.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-21T143650Z_1917729519_UP1EMBL14FDED_RTRMADP_3_SOCCER-ENGLAND-MCI-FUL-1795790000.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:47:40.000Z"
+      },
+      {
         "id": "art-9aefec8b5c92",
         "title": "Death toll in Pakistan building collapse rises to 8 with about 10 missing",
         "source": "Arab News",
@@ -9737,6 +9755,20 @@
         "section": "",
         "imageUrl": "https://assets.maestronewsroom.com/media/shared/wires/ap/20261102/976c251dc65e-Uganda_Somalia_6_3_9--ba275.jpg",
         "pubDate": "2026-11-27T14:19:32.000Z"
+      },
+      {
+        "id": "art-6130e75798de",
+        "title": "Why is Israel celebrating Costa Rica’s ban on Francesca Albanese?",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/why-is-israel-celebrating-costa-ricas-ban-on-francesca-albanese?traffic_source=rss",
+        "video": false,
+        "summary": "Costa Rica is under pressure over its decision to bar the UN expert who has documented Israel's genocidal war on Gaza.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/09/2026-03-24T091407Z_414780193_RC2WAKAPHKHD_RTRMADP_3_ISRAEL-PALESTINIANS-UN-EXPERT-1788881286.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T14:17:25.000Z"
       },
       {
         "id": "art-c888624f1f4e",
@@ -9861,7 +9893,7 @@
         "summary": "Some of his allies are calling for such an arrangement, but it would represent a betrayal of his pre-election promise.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6afa3343e7b0-1794782019.jpg?resize=1920%2C1440",
+        "imageUrl": "",
         "pubDate": "2026-11-27T13:28:55.000Z"
       },
       {
@@ -10145,34 +10177,6 @@
         "pubDate": "2026-11-27T11:33:17.000Z"
       },
       {
-        "id": "art-59205f400da5",
-        "title": "Israeli attacks on women and girls meant ‘to destroy life’ in Gaza: Amnesty",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news/2026/11/27/israeli-attacks-on-women-and-girls-meant-to-destroy-life-in-gaza-amnesty?traffic_source=rss",
-        "video": false,
-        "summary": "Israel seeking 'to prevent births' and destroy Palestinians in Gaza by targeting women and girls, rights group says.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T11:15:03.000Z"
-      },
-      {
-        "id": "art-e590e58c674e",
-        "title": "Tyson Fury’s wife backtracks on claim boxer suffers from schizophrenia",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/tyson-furys-wife-backtracks-on-claim-boxer-suffers-from-schizophrenia?traffic_source=rss",
-        "video": false,
-        "summary": "Paris Fury had claimed mental health diagnosis for Tyson following his 2015 victory over Ukraine's Wladimir Klitschko.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T11:12:58.000Z"
-      },
-      {
         "id": "art-a07a9d9c0aff",
         "title": "Inside Saudi Arabia, Houthi attacks test kingdom's image of security",
         "source": "BBC Middle East",
@@ -10203,7 +10207,7 @@
     ]
   },
   "africa": {
-    "updatedAt": "2026-11-27T16:15:26.654Z",
+    "updatedAt": "2026-11-27T16:15:25.953Z",
     "results": [
       {
         "feedId": "bbc-africa",
@@ -10810,7 +10814,7 @@
     ]
   },
   "latin-america": {
-    "updatedAt": "2026-11-27T16:15:26.672Z",
+    "updatedAt": "2026-11-27T16:15:25.971Z",
     "results": [
       {
         "feedId": "bbc-latin-america",
@@ -11436,7 +11440,7 @@
     ]
   },
   "india": {
-    "updatedAt": "2026-11-27T16:15:26.712Z",
+    "updatedAt": "2026-11-27T16:15:26.010Z",
     "results": [
       {
         "feedId": "bbc-india",
@@ -11946,19 +11950,18 @@
         "pubDate": "2026-11-27T12:42:00.000Z"
       },
       {
-        "id": "art-1535e66e50f6",
+        "id": "art-b7f4a5df7842",
         "title": "‘Spiritual India’: Capturing the many faiths of the country through Briana Blasko’s lens",
         "source": "The Indian Express",
         "feedId": "indian-express",
         "domain": "indianexpress.com",
-        "url": "https://indianexpress.com/photos/lifestyle-gallery/briana-blaskos-spiritual-india-on-view-in-new-delhi-10980651/",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQUdQekp4NjBUbmppUl9DOFIwRlRwRWtRRFlsWEdHd0hHaXBaWnFuN1VHWmg0UGFpT2hTbE51Q1ZUME9rWU5aRWFJWUtPdkFIbTVyZnlPWjluekdRdTYzbHpFNDliSlowa0hONmY2VHExT0t5RUtFYkxRU29vZVh6THB6QzB1b1ZvYnZvcW1pYTNfcmxFaGplclFZcVFzUHZTRThLT0ktZ2c1RWJwVjB1RmVR0gG4AUFVX3lxTFBsUzBSc251cTJkQXNNU2xWbXZBWXRWaHhCMnlHOHlxT0VGRTNFLVlVUE5IbkxRUkVOTjAwUmY0SWZxS3laZmRZVWlhNHRvUE8xM2F3a2tXRjFCTWl6d01SUHlRNEFPbVFrbXRDZmVSd0d6bkRxc3B5MmRaRGxIM1U1M29Lb1BlVEFCdW5Qc3BPb3hBQjhDeWc1blhnMTFoM0w0RmNaZEFEbXpDLUtMLXl2VVFpenZXRW0?oc=5",
         "video": false,
         "summary": "‘Spiritual India’: Capturing the many faiths of the country through Briana Blasko’s lens The Indian Express",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T11:30:29.000Z",
-        "publisherUrl": "https://indianexpress.com/photos/lifestyle-gallery/briana-blaskos-spiritual-india-on-view-in-new-delhi-10980651/"
+        "pubDate": "2026-11-27T11:30:29.000Z"
       },
       {
         "id": "art-f47e272917ca",
@@ -12081,7 +12084,7 @@
     ]
   },
   "china": {
-    "updatedAt": "2026-11-27T16:15:26.745Z",
+    "updatedAt": "2026-11-27T16:15:26.044Z",
     "results": [
       {
         "feedId": "scmp-china",
@@ -12731,7 +12734,7 @@
     ]
   },
   "russia": {
-    "updatedAt": "2026-11-27T16:15:26.776Z",
+    "updatedAt": "2026-11-27T16:15:26.070Z",
     "results": [
       {
         "feedId": "moscow-times",
@@ -13362,7 +13365,7 @@
     ]
   },
   "business": {
-    "updatedAt": "2026-11-27T16:15:27.067Z",
+    "updatedAt": "2026-11-27T16:15:26.298Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -13469,6 +13472,20 @@
     ],
     "articles": [
       {
+        "id": "art-dfd720a0c351",
+        "title": "Top 10 things to watch in the stock market on Black Friday",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+        "video": false,
+        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
+        "pubDate": "2026-11-27T15:02:04.000Z"
+      },
+      {
         "id": "art-b9cab496ee69",
         "title": "Can Russia Ever Change From Within",
         "source": "Bloomberg Markets",
@@ -13481,6 +13498,20 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T14:54:25.000Z"
+      },
+      {
+        "id": "art-5e1a9f2828d1",
+        "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+        "video": false,
+        "summary": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108120789-1742904573651-gettyimages-159129388-72801932.jpeg?v=1758797166&w=1920&h=1080",
+        "pubDate": "2026-11-27T14:52:40.000Z"
       },
       {
         "id": "art-266f0c9c9887",
@@ -13525,6 +13556,20 @@
         "pubDate": "2026-11-27T14:44:21.000Z"
       },
       {
+        "id": "art-2d9a12e5436f",
+        "title": "US tech stocks rise in latest market swing",
+        "source": "Financial Times",
+        "feedId": "ft-home",
+        "domain": "ft.com",
+        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
+        "video": false,
+        "summary": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+        "pubDate": "2026-11-27T14:38:51.000Z"
+      },
+      {
         "id": "art-86c87194c7be",
         "title": "Nvidia Pares Gains on Blackwell Report; Altria Lower | Stock Movers",
         "source": "Bloomberg Markets",
@@ -13551,20 +13596,6 @@
         "section": "",
         "imageUrl": "https://cassette.sphdigital.com.sg/image/businesstimes/8238d78bca36c071aa9bb91a0c4e5789d9682b7e04d9916de918b613a6578476?t=og&f=webp&w=240",
         "pubDate": "2026-11-27T14:32:27.000Z"
-      },
-      {
-        "id": "art-dfd720a0c351",
-        "title": "Top 10 things to watch in the stock market on Black Friday",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
-        "video": false,
-        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:31:12.000Z"
       },
       {
         "id": "art-44e4968e424f",
@@ -13637,19 +13668,18 @@
         "pubDate": "2026-11-27T13:40:21.000Z"
       },
       {
-        "id": "art-f6edfc8bb745",
+        "id": "art-fa65d66542e9",
         "title": "SanDisk Stock Hits Death Cross Despite Nvidia AI Breakthrough - SanDisk (NASDAQ:SNDK)",
         "source": "Benzinga",
         "feedId": "benzinga",
         "domain": "benzinga.com",
-        "url": "https://www.benzinga.com/trading-ideas/technicals/26/11/63668961/sandisk-stock-death-cross",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNejByd1Q5VTZmWHlxY2xSUUdJN2NsaXhleW0wY3BDNXIzUm4zWU0yWDVQUG1fUzZkNkxBSWhpTnJxQmxaOHlNSjBXaEZtQjBkbk9hZm1BdGRrbkc0SXdYOHdBTnNjaWFuYkZNaVRTU0ZfU2NFSHJ2QVhWNTdaclJpa2lrbHU2Z1JwMnFPTXF3aGNfcHBU?oc=5",
         "video": false,
         "summary": "SanDisk Stock Hits Death Cross Despite Nvidia AI Breakthrough - SanDisk (NASDAQ:SNDK) Benzinga",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T13:36:20.000Z",
-        "publisherUrl": "https://www.benzinga.com/trading-ideas/technicals/26/11/63668961/sandisk-stock-death-cross"
+        "pubDate": "2026-11-27T13:36:20.000Z"
       },
       {
         "id": "art-9c4de7bb8a67",
@@ -13704,22 +13734,8 @@
         "summary": "The November sell-off has so far pushed the S&P 500 into a correction. History shows that a correction doesn't always lead to a bear market, or a recession.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/100825740-157559755r.jpg?v=1538672772&w=1920&h=1080",
+        "imageUrl": "",
         "pubDate": "2026-11-27T13:21:56.000Z"
-      },
-      {
-        "id": "art-2d9a12e5436f",
-        "title": "US tech stocks set to jump at open as volatile trading takes hold",
-        "source": "Financial Times",
-        "feedId": "ft-home",
-        "domain": "ft.com",
-        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-        "video": false,
-        "summary": "All-powerful AI trade has been eclipsed by wild swings in a market struggling to price future earnings",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-        "pubDate": "2026-11-27T13:15:41.000Z"
       },
       {
         "id": "art-a3175072d3fa",
@@ -13804,20 +13820,6 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T13:05:02.000Z"
-      },
-      {
-        "id": "art-b9521c3d85f4",
-        "title": "Spain’s election could pull Madrid closer to Trump’s Washington",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/2026/11/27/spain-election-trump-sanchez.html",
-        "video": false,
-        "summary": "Spanish voters head to the polls on Sunday for a snap election that could bring socialist Prime Minister Pedro Sánchez's eight years in power to an end.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T13:00:42.000Z"
       },
       {
         "id": "art-2ae72974c66c",
@@ -13951,19 +13953,18 @@
         "publisherUrl": "https://investinglive.com/news/investinglive-asia-pacific-market-news-kosdaq-jumps-6-7-as-risk-appetite-returns-gold-rebounds/"
       },
       {
-        "id": "art-f48fc96c354c",
+        "id": "art-00029d7248f5",
         "title": "Texas mother, 92, indicted on murder charge in 5-year-old son's 1969 death, police say - CBS News",
         "source": "CBS News",
         "feedId": "cbs-moneywatch",
         "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/texas/news/harriet-evelyn-hall-murder-charge-1969-universal-city-november-2026/",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTUtjOVZoeDVGSDVuQmh5UGw2clUwWUtTWXBWTjVxa1FOUlcxbnpwRDVSc1N2N1hrMi1pd2V4OGpETzU0WlYtYUtRa0MzdHM5cjVsWm5wYXIxNkt6bjRvUTFiMkw1ejdKQkxOUGJHXzNiS1RLTFJIcjBDdmwwUzhJWEt2R20xMkRXOTVQbEhqTnNfSVp2NE13S0dYLUxUUGlkMWZobWVn?oc=5",
         "video": false,
         "summary": "Texas mother, 92, indicted on murder charge in 5-year-old son's 1969 death, police say CBS News",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T01:42:06.000Z",
-        "publisherUrl": "https://www.cbsnews.com/texas/news/harriet-evelyn-hall-murder-charge-1969-universal-city-november-2026/"
+        "pubDate": "2026-11-27T01:42:06.000Z"
       },
       {
         "id": "art-9e6c4c989ed5",
@@ -14069,7 +14070,7 @@
     ]
   },
   "technology": {
-    "updatedAt": "2026-11-27T16:15:27.401Z",
+    "updatedAt": "2026-11-27T16:15:26.428Z",
     "results": [
       {
         "feedId": "verge",
@@ -14610,34 +14611,32 @@
         "pubDate": "2026-11-26T21:26:47.000Z"
       },
       {
-        "id": "art-590a8eb8f535",
+        "id": "art-1f5fec4fd1ac",
         "title": "Today’s NYT Wordle Hints, Answer and Help for Friday, Nov. 27, #1987",
         "source": "CNET",
         "feedId": "cnet",
         "domain": "cnet.com",
-        "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-27-1987/",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSWszVmt0T05YVFpVaFYyZWg5dW1ZQ0JXS1AxUXZEN1ZvckNHSFF4N3RHdlpoWUc2Ym1DYjZDLVNMNXJXWFN0TmJMNE1kTUY2aWp1Mk00WERUendJamRjYUZhVEh5cV9NbzE0N09nVG9qVGR1ZFdNY1AyMUZOY3VGQVQwUQ?oc=5",
         "video": false,
         "summary": "Today’s NYT Wordle Hints, Answer and Help for Friday, Nov. 27, #1987 CNET",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-26T21:00:24.000Z",
-        "publisherUrl": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-27-1987/"
+        "pubDate": "2026-11-26T21:00:24.000Z"
       },
       {
-        "id": "art-a8c3e19925a9",
+        "id": "art-7a7dec16dc06",
         "title": "Today’s NYT Strands Hints, Spangram and Answers for Friday, Nov. 27, #999",
         "source": "CNET",
         "feedId": "cnet",
         "domain": "cnet.com",
-        "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-27-999/",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSWk4cmlqdmdSbHoxM0hCbTVsUVRWSlp1Wng0UVI5TGc5NzdBUzVicXp3ZnQxMy13SDItZms4RzEzT2FIMlU3ejQ0UFFsQXFuQnRKZkVKeWpNRTY1djAwZmdFMVdMZ2hYOE9WbTVSdy1XcG53NkdZWXc0U29WNlM4LWtTdVg1NEdGZUVKbXJqWXdqVGVPWmc?oc=5",
         "video": false,
         "summary": "Today’s NYT Strands Hints, Spangram and Answers for Friday, Nov. 27, #999 CNET",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-26T21:00:24.000Z",
-        "publisherUrl": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-27-999/"
+        "pubDate": "2026-11-26T21:00:24.000Z"
       },
       {
         "id": "art-94305b427e5a",
@@ -14760,7 +14759,7 @@
     ]
   },
   "ai": {
-    "updatedAt": "2026-11-27T16:15:27.441Z",
+    "updatedAt": "2026-11-27T16:15:26.454Z",
     "results": [
       {
         "feedId": "verge-ai",
@@ -15391,7 +15390,7 @@
     ]
   },
   "sports": {
-    "updatedAt": "2026-11-27T16:15:27.513Z",
+    "updatedAt": "2026-11-27T16:15:26.514Z",
     "results": [
       {
         "feedId": "espn",
@@ -15475,7 +15474,35 @@
         "doi": "",
         "section": "",
         "imageUrl": "https://i.guim.co.uk/img/media/7ecfa1d3c15a2d43515bcc17bf3b578e5fb58be0/253_0_6880_5504/master/6880.jpg?width=140&quality=85&auto=format&fit=max&s=ab7f2df396c0a189bbb08a6eecc1df66",
-        "pubDate": "2026-11-27T14:54:09.000Z"
+        "pubDate": "2026-11-27T14:57:42.000Z"
+      },
+      {
+        "id": "art-485765afcb8d",
+        "title": "Bills edge Chiefs with last-second field goal in Thanksgiving thriller",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50582828/2026-nfl-buffalo-bills-kansas-city-chiefs-thanksgiving",
+        "video": false,
+        "summary": "The Bills won their seventh straight, snapping the Chiefs' win streak at three in a sloppy, low-scoring game.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:51:34.000Z"
+      },
+      {
+        "id": "art-c27964c9bdb7",
+        "title": "Joe Milton has huge game as Eagles shock Cowboys on Thanksgiving",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
+        "video": false,
+        "summary": "Dallas blew a 21-point lead as Philly made a spectacular comeback with Milton at the helm.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:51:23.000Z"
       },
       {
         "id": "art-ed47feb3fba6",
@@ -15490,6 +15517,20 @@
         "section": "",
         "imageUrl": "https://sportshub.cbsistatic.com/i/2026/09/08/8c9b2f2a-2dd9-45bb-932a-45e8faf837ef/betmgm-promo-code-september-2026.jpg",
         "pubDate": "2026-11-27T14:49:31.000Z"
+      },
+      {
+        "id": "art-ee0ae61dec44",
+        "title": "Best buddy reunion: Pat Surtain II, Jaylen Waddle embracing playing together with the Broncos",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nfl/story/_/id/50595313/pat-surtain-ii-jaylen-waddle-broncos-alabama-best-friends",
+        "video": false,
+        "summary": "Surtain and Waddle bonded immediately at Alabama six years ago and have embraced the chance to play together again in Denver on a team with Super Bowl hopes.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T14:48:24.000Z"
       },
       {
         "id": "art-89fce0fce75b",
@@ -15856,48 +15897,6 @@
         "pubDate": "2026-11-27T14:05:57.000Z"
       },
       {
-        "id": "art-ee0ae61dec44",
-        "title": "Best buddy reunion: Pat Surtain II, Jaylen Waddle embracing playing together with the Broncos",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50595313/pat-surtain-ii-jaylen-waddle-broncos-alabama-best-friends",
-        "video": false,
-        "summary": "Surtain and Waddle bonded immediately at Alabama six years ago and have embraced the chance to play together again in Denver on a team with Super Bowl hopes.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T14:04:39.000Z"
-      },
-      {
-        "id": "art-b6c017ac4421",
-        "title": "Texas vs. Texas A&M prediction, odds, time: 2026 Rivalry Week Friday picks from proven model",
-        "source": "CBS Sports",
-        "feedId": "cbssports",
-        "domain": "cbssports.com",
-        "url": "https://www.cbssports.com/betting/news/texas-texas-a-m-prediction-odds-time-2026-rivalry-week-friday-picks/",
-        "video": false,
-        "summary": "SportsLine's model revealed best bets for Texas A&M vs. Texas on Friday in the 2026 Lone Star Showdown as part of college football's Rivalry Week",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://sportshub.cbsistatic.com/i/2026/10/16/b5949086-fccd-4c95-9a4e-0fc52676977a/arch-manning-texas-longhorns-imagn-images-1.jpg",
-        "pubDate": "2026-11-27T14:03:38.000Z"
-      },
-      {
-        "id": "art-d0f0cf9f3bcd",
-        "title": "NFL Week 12 picks, odds, best bets: Broncos pile on Steelers' troubles, 49ers cover vs. Seahawks",
-        "source": "CBS Sports",
-        "feedId": "cbssports",
-        "domain": "cbssports.com",
-        "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-odds-best-bets-broncos-steelers-49ers-seahawks/",
-        "video": false,
-        "summary": "Jordan Dajani gives his picks for Week 12 of the 2026 NFL season",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://sportshub.cbsistatic.com/i/2026/11/26/91211359-7038-48cc-84bd-b2cee169f679/nix.jpg",
-        "pubDate": "2026-11-27T13:59:09.000Z"
-      },
-      {
         "id": "art-46cd9b5f5f10",
         "title": "With World Cup and Olympic berths at stake, revamped Canadian women's team could begin new chapter",
         "source": "CBC Sports",
@@ -16048,7 +16047,7 @@
     ]
   },
   "sport-football": {
-    "updatedAt": "2026-11-27T16:15:27.519Z",
+    "updatedAt": "2026-11-27T16:15:26.518Z",
     "results": [
       {
         "feedId": "bbc-football",
@@ -16515,7 +16514,7 @@
     ]
   },
   "sport-cricket": {
-    "updatedAt": "2026-11-27T16:15:27.542Z",
+    "updatedAt": "2026-11-27T16:15:26.537Z",
     "results": [
       {
         "feedId": "bbc-cricket",
@@ -17134,7 +17133,7 @@
     ]
   },
   "sport-rugby-league": {
-    "updatedAt": "2026-11-27T16:15:27.547Z",
+    "updatedAt": "2026-11-27T16:15:26.541Z",
     "results": [
       {
         "feedId": "bbc-rugby-league",
@@ -17517,7 +17516,7 @@
     ]
   },
   "sport-rugby-union": {
-    "updatedAt": "2026-11-27T16:15:27.552Z",
+    "updatedAt": "2026-11-27T16:15:26.545Z",
     "results": [
       {
         "feedId": "bbc-rugby-union",
@@ -18026,7 +18025,7 @@
     ]
   },
   "sport-boxing": {
-    "updatedAt": "2026-11-27T16:15:27.573Z",
+    "updatedAt": "2026-11-27T16:15:26.563Z",
     "results": [
       {
         "feedId": "bbc-boxing",
@@ -18645,7 +18644,7 @@
     ]
   },
   "sport-mma": {
-    "updatedAt": "2026-11-27T16:15:27.590Z",
+    "updatedAt": "2026-11-27T16:15:26.577Z",
     "results": [
       {
         "feedId": "bbc-mma",
@@ -19202,7 +19201,7 @@
     ]
   },
   "sport-tennis": {
-    "updatedAt": "2026-11-27T16:15:27.596Z",
+    "updatedAt": "2026-11-27T16:15:26.582Z",
     "results": [
       {
         "feedId": "bbc-tennis",
@@ -19725,7 +19724,7 @@
     ]
   },
   "sport-f1": {
-    "updatedAt": "2026-11-27T16:15:27.608Z",
+    "updatedAt": "2026-11-27T16:15:26.592Z",
     "results": [
       {
         "feedId": "bbc-f1",
@@ -20338,7 +20337,7 @@
     ]
   },
   "sport-golf": {
-    "updatedAt": "2026-11-27T16:15:27.614Z",
+    "updatedAt": "2026-11-27T16:15:26.597Z",
     "results": [
       {
         "feedId": "bbc-golf",
@@ -20637,7 +20636,7 @@
     ]
   },
   "sport-nba": {
-    "updatedAt": "2026-11-27T16:15:27.616Z",
+    "updatedAt": "2026-11-27T16:15:26.599Z",
     "results": [
       {
         "feedId": "cbs-nba",
@@ -20902,7 +20901,7 @@
     ]
   },
   "sport-nfl": {
-    "updatedAt": "2026-11-27T16:15:27.618Z",
+    "updatedAt": "2026-11-27T16:15:26.601Z",
     "results": [
       {
         "feedId": "cbs-nfl",
@@ -21153,7 +21152,7 @@
     ]
   },
   "health": {
-    "updatedAt": "2026-11-27T16:15:27.636Z",
+    "updatedAt": "2026-11-27T16:15:26.616Z",
     "results": [
       {
         "feedId": "sciencedaily-health",
@@ -21451,7 +21450,7 @@
         "summary": "Study reveals backup electrical signaling system inside the heart muscle News-Medical",
         "doi": "",
         "section": "",
-        "imageUrl": "https://www.news-medical.net/image-handler/picture/2017/1/Anatomy_of_Human_Heart.-Liya_Graphics_5ac9d64765b747899bc4a9ef77468432-620x480.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-26T13:06:00.000Z",
         "publisherUrl": "https://www.news-medical.net/news/20261126/Study-reveals-backup-electrical-signaling-system-inside-the-heart-muscle.aspx"
       },
@@ -21808,7 +21807,7 @@
     ]
   },
   "research": {
-    "updatedAt": "2026-11-27T16:15:27.913Z",
+    "updatedAt": "2026-11-27T16:15:26.939Z",
     "results": [
       {
         "feedId": "lancet",
@@ -22503,10 +22502,7 @@
         "doi": "10.1371/journal.pone.0363891",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-25T14:00:00.000Z",
-        "oaUrl": "",
-        "oaPdf": "",
-        "oaStatus": "gold"
+        "pubDate": "2026-11-25T14:00:00.000Z"
       },
       {
         "id": "art-cbcd1dc26746",
@@ -22638,10 +22634,7 @@
         "doi": "10.1016/j.ebiom.2026.106548",
         "section": "Articles",
         "imageUrl": "",
-        "pubDate": "2026-11-18T15:14:01.000Z",
-        "oaUrl": "",
-        "oaPdf": "",
-        "oaStatus": "gold"
+        "pubDate": "2026-11-18T15:14:01.000Z"
       },
       {
         "id": "art-d3d286586bf8",
@@ -22663,7 +22656,7 @@
     ]
   },
   "science": {
-    "updatedAt": "2026-11-27T16:15:27.981Z",
+    "updatedAt": "2026-11-27T16:15:27.040Z",
     "results": [
       {
         "feedId": "sciencedaily",
@@ -22754,20 +22747,6 @@
         "pubDate": "2026-11-27T15:01:00.000Z"
       },
       {
-        "id": "art-bd41f92fb86a",
-        "title": "Three studies link glyphosate to cancer, contradicting claims of Trump EPA",
-        "source": "The Guardian Science",
-        "feedId": "guardian-science",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/us-news/2026/nov/27/glyphosate-cancer-studies-trump-epa",
-        "video": false,
-        "summary": "Experts say NIH research raises concerns about chemical companies’ influence on US agency’s pesticide division The US government’s top medical research agency has released three new studies linking glyphosate, the world’s most widely used pesticide and an acti",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/92a2cff5fdf21cc523cfbb7f88122e0d0d611937/162_0_2504_2003/master/2504.jpg?width=140&quality=85&auto=format&fit=max&s=f866050081f01a79d06260bfab067e91",
-        "pubDate": "2026-11-27T15:00:13.000Z"
-      },
-      {
         "id": "art-2cc461468cef",
         "title": "Artemis III astronauts meet their spacecraft | Space photo of the day for Nov. 27, 2026",
         "source": "Space.com",
@@ -22794,20 +22773,6 @@
         "section": "",
         "imageUrl": "https://images-assets.nasa.gov/image/jsc2026e415098/jsc2026e415098~large.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint",
         "pubDate": "2026-11-27T14:22:00.000Z"
-      },
-      {
-        "id": "art-337294590f05",
-        "title": "‘I felt a zap race through my body’: what happens when someone is hit by lightning?",
-        "source": "The Guardian Science",
-        "feedId": "guardian-science",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/science/2026/nov/28/what-happens-when-someone-is-hit-by-lightning",
-        "video": false,
-        "summary": "Tens of thousands of people experience strikes each year. What are the effects of a current five times hotter than the sun – and how can you keep safe? Caitlin Thomas recalls knowing that something terrible had happened but not fully understanding what. She an",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/0712db56e03295d6c07281c496004dc1a9a3e665/424_0_4242_3394/master/4242.jpg?width=140&quality=85&auto=format&fit=max&s=715f1bd47683e52557b0086b39d2f952",
-        "pubDate": "2026-11-27T14:00:12.000Z"
       },
       {
         "id": "art-41d04a1ac06c",
@@ -23265,6 +23230,35 @@
         "pubDate": "2026-11-26T13:00:51.000Z"
       },
       {
+        "id": "art-857c941a08a3",
+        "title": "Early Stone Age rock carvings in Scandinavia may have been signposts for hunting grounds",
+        "source": "Phys.org",
+        "feedId": "phys-org",
+        "domain": "phys.org",
+        "url": "https://phys.org/news/2026-11-early-stone-age-scandinavia-signposts.html",
+        "video": false,
+        "summary": "Early Stone Age rock carvings in Scandinavia may have been signposts for hunting grounds Phys.org",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T13:00:05.000Z",
+        "publisherUrl": "https://phys.org/news/2026-11-early-stone-age-scandinavia-signposts.html"
+      },
+      {
+        "id": "art-dad3bf8a9d75",
+        "title": "Young people are having less sex. What's going on? - video",
+        "source": "The Guardian Science",
+        "feedId": "guardian-science",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/science/video/2026/nov/26/young-people-are-having-less-sex-than-ever-whats-going-on-video",
+        "video": false,
+        "summary": "Sex among British adults has slumped in recent decades, with under-45s having half as many monthly encounters as in 1990 and one in three under-25s reporting that they have never had sexual intercourse. To unpick some of the possible reasons behind these decli",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://i.guim.co.uk/img/media/8b0df053bb59e32134457ee3c6b8e69600cc2086/436_0_4384_3508/master/4384.jpg?width=140&quality=85&auto=format&fit=max&s=d8346954646958ba570107f26df56262",
+        "pubDate": "2026-11-26T11:35:55.000Z"
+      },
+      {
         "id": "art-c0522b4ee074",
         "title": "Scientists Sent Miniature Human Brains Into Space to Study Alzheimer's",
         "source": "ScienceAlert",
@@ -23342,7 +23336,7 @@
     ]
   },
   "entertainment": {
-    "updatedAt": "2026-11-27T16:15:27.996Z",
+    "updatedAt": "2026-11-27T16:15:27.073Z",
     "results": [
       {
         "feedId": "variety",
@@ -23967,7 +23961,7 @@
     ]
   },
   "politics": {
-    "updatedAt": "2026-11-27T16:15:28.069Z",
+    "updatedAt": "2026-11-27T16:15:27.228Z",
     "results": [
       {
         "feedId": "npr-politics",
@@ -23978,8 +23972,9 @@
       {
         "feedId": "guardian-politics",
         "name": "The Guardian Politics",
-        "ok": true,
-        "count": 18
+        "ok": false,
+        "count": 0,
+        "error": "HTTP 403"
       },
       {
         "feedId": "cbc-politics",
@@ -24074,34 +24069,6 @@
         "pubDate": "2026-11-27T14:33:04.000Z"
       },
       {
-        "id": "art-827e09c0f850",
-        "title": "DWP ‘cyber incident’ knocks almost all pensions and benefits systems offline",
-        "source": "The Guardian Politics",
-        "feedId": "guardian-politics",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline",
-        "video": false,
-        "summary": "Department for Work and Pensions officials say welfare payments will continue to be made despite huge outage Tell us: have you been affected by the DWP ‘cyber incident’ Almost all pensions and benefits systems in the UK are unavailable after a “cyber incident”",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/0d82e1461d1d579ccc389c5c6840749137a2819f/342_0_3000_2400/master/3000.jpg?width=140&quality=85&auto=format&fit=max&s=b99780f3f8c851e11de0b6d5d913b35c",
-        "pubDate": "2026-11-27T14:28:22.000Z"
-      },
-      {
-        "id": "art-842f86a52543",
-        "title": "UK pensions department hit by ‘serious cyber incident’, minister says – UK politics live",
-        "source": "The Guardian Politics",
-        "feedId": "guardian-politics",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/politics/live/2026/nov/27/department-work-pensions-offline-cyber-incident-rosebank-slapps-latest-news-updates",
-        "video": false,
-        "summary": "Pat McFadden says the government doesn’t believe any personal data has been compromised Tell us: have you been affected by the DWP ‘cyber incident’ According to Downdetector , which tracks online service outages, reports of problems with the government website",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/ecca9af59662e10c267bb8178c969d23ff13ef74/994_0_5006_4004/master/5006.jpg?width=140&quality=85&auto=format&fit=max&s=17d074cb194c2b8bb842d6179de17c6f",
-        "pubDate": "2026-11-27T14:01:55.000Z"
-      },
-      {
         "id": "art-44c0802afd85",
         "title": "How Xi’s party discipline playbook signals strict vetting ahead of the 2027 congress",
         "source": "SCMP China",
@@ -24156,20 +24123,6 @@
         "section": "",
         "imageUrl": "https://i.cbc.ca/ais/8a2ccb81-484b-4e9e-990c-41a5a6a4eaf5,1795732584276/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C900%2C8640%2C4860%29%3B",
         "pubDate": "2026-11-27T13:45:52.000Z"
-      },
-      {
-        "id": "art-b8d5794e03c3",
-        "title": "A third of rough sleepers offered bed or support after Burnham Christmas vow",
-        "source": "The Guardian Politics",
-        "feedId": "guardian-politics",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/society/2026/nov/27/third-rough-sleepers-offered-bed-support-burnham-christmas-vow",
-        "video": false,
-        "summary": "Campaigners accuse ministers of hiding how many offers were turned down as PM hails ‘early progress’ UK politics live – latest updates Just over a third of rough sleepers have been offered a bed or support as a result of Andy Burnham’s pledge to get people off",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/806910e6c3dcb4040cb577313127ddb70baf9c56/560_0_2790_2232/master/2790.jpg?width=140&quality=85&auto=format&fit=max&s=242259adfc6f3fcf859bcc8aa336d080",
-        "pubDate": "2026-11-27T13:28:17.000Z"
       },
       {
         "id": "art-a836964c3536",
@@ -24254,20 +24207,6 @@
         "section": "",
         "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/fcfb83a5-af2a-4d22-a12b-1895ad7c1529_d7045314.jpg?itok=VoF6c2d6&v=1795782705",
         "pubDate": "2026-11-27T12:31:46.000Z"
-      },
-      {
-        "id": "art-dcf9162e5162",
-        "title": "Meta whistleblower calls on Burnham to go further with ban on NDAs",
-        "source": "The Guardian Politics",
-        "feedId": "guardian-politics",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/technology/2026/nov/27/meta-whistleblower-sarah-wynn-williams-calls-on-burnham-to-go-further-with-ban-on-non-disclosure-agreements",
-        "video": false,
-        "summary": "Sarah Wynn-Williams says tech insiders with concerns about AI are being silenced in system reminiscent of George Orwell’s 1984 The Meta whistleblower who made allegations about the social media company’s treatment of teenagers has urged Andy Burnham to go furt",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/f277f364251690f43120ef6a9b54a085d1c66319/245_0_3333_2667/master/3333.jpg?width=140&quality=85&auto=format&fit=max&s=abb01599ec71ca09f5bfeb9f9c7d8865",
-        "pubDate": "2026-11-27T12:30:08.000Z"
       },
       {
         "id": "art-1f32309dc08c",
@@ -24438,20 +24377,6 @@
         "pubDate": "2026-11-27T10:27:13.000Z"
       },
       {
-        "id": "art-ce395d6dd154",
-        "title": "Banks may pass on £1.5bn tax rise to customers, warns Bank of England chief",
-        "source": "The Guardian Politics",
-        "feedId": "guardian-politics",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/business/2026/nov/27/bank-tax-rise-customers-bank-of-england-andrew-bailey",
-        "video": false,
-        "summary": "Big lenders will aim to ‘protect their earnings’ from temporary increase in corporation tax surcharge, says Andrew Bailey Business live – latest updates The governor of the Bank of England has said he fears banks could attempt to pass on the £1.5bn cost of Lab",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/4052a9d7c5a9c1de8842fe2b75cc4143a1c9fa82/830_252_4289_3435/master/4289.jpg?width=140&quality=85&auto=format&fit=max&s=3fce09a4246c730c56a379165ec92dff",
-        "pubDate": "2026-11-27T10:10:29.000Z"
-      },
-      {
         "id": "art-8852bb397a39",
         "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
         "source": "NPR Politics",
@@ -24508,6 +24433,20 @@
         "pubDate": "2026-11-27T09:43:30.000Z"
       },
       {
+        "id": "art-6c144e415d43",
+        "title": "Isabella Weber's Vision for an Affordability Agenda",
+        "source": "Bloomberg Politics",
+        "feedId": "bloomberg-politics",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/videos/2026-11-27/isabella-weber-s-vision-for-an-affordability-agenda-video",
+        "video": false,
+        "summary": "The most important word in politics right now is affordability. It was a winning issue in the midterms for Democrats, and one of the reasons why people across Europe are out in the streets protesting: Food, housing, and energy are getting more expensive by the",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T09:13:04.000Z"
+      },
+      {
         "id": "art-1ccb889e7b23",
         "title": "Supreme Court of Canada rules Quebec's secularism law is constitutionally valid",
         "source": "CBC Politics",
@@ -24520,6 +24459,62 @@
         "section": "",
         "imageUrl": "https://i.cbc.ca/ais/7d90793b-7015-4d10-b4fa-764d2e0acba1,1795719265108/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C312%2C6000%2C3375%29%3B",
         "pubDate": "2026-11-27T09:00:00.000Z"
+      },
+      {
+        "id": "art-1baa9d3d1d97",
+        "title": "This Independent is giving Poilievre's Conservatives the jitters ahead of a crucial byelection",
+        "source": "CBC Politics",
+        "feedId": "cbc-politics",
+        "domain": "cbc.ca",
+        "url": "https://www.cbc.ca/news/politics/brantford-byelection-dave-carrol-independent-conservative-9.7438039?cmp=rss",
+        "video": false,
+        "summary": "The federal riding of Brantford-Brant South has been a Conservative stronghold for most of the last 20 years. But an insurgent Independent candidate who was passed over by leader Pierre Poilievre is trying to stop Tory rule in an upcoming byelection — and ther",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://i.cbc.ca/ais/0f876966-6d9d-4411-ac66-42a589a29ff9,1795738306263/full/max/0/default.jpg?im=Crop%2Crect%3D%281%2C0%2C4238%2C2383%29%3B",
+        "pubDate": "2026-11-27T09:00:00.000Z"
+      },
+      {
+        "id": "art-7e025c336876",
+        "title": "South Africa Top Court Clears Key Hurdles for Health-Plan Revamp",
+        "source": "Bloomberg Politics",
+        "feedId": "bloomberg-politics",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/south-africa-top-court-clears-key-hurdles-for-health-plan-revamp",
+        "video": false,
+        "summary": "South Africa’s top court rejected two challenges to legislation underpinning the government’s planned overhaul of the healthcare system, removing a major legal obstacle to the program.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:58:14.000Z"
+      },
+      {
+        "id": "art-d08ba97b14a3",
+        "title": "China-Cambodia drills: Type 071 warship offloads tanks overseas for the first time",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/china/military/article/3376007/china-cambodia-drills-type-071-warship-offloads-tanks-overseas-first-time",
+        "video": false,
+        "summary": "China has for the first time sent its main battle tanks via an amphibious transport dock to Southeast Asia for a 15-day joint military exercise with Cambodia. The drills began on Wednesday at the Cambodia-China Joint Support and Training Centre, which opened e",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/f97f2796-6750-45f0-8f78-9ec9c19d149b_3f788c6a.jpg?itok=-q2huvda&v=1795761711",
+        "pubDate": "2026-11-27T08:00:16.000Z"
+      },
+      {
+        "id": "art-b4c495a352a7",
+        "title": "Sweden’s Kristersson on Track to Clinch Second Term in Key Vote",
+        "source": "Bloomberg Politics",
+        "feedId": "bloomberg-politics",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/sweden-s-kingmaker-to-face-final-choice-on-backing-kristersson",
+        "video": false,
+        "summary": "Sweden’s Ulf Kristersson is on course to securing a second term as prime minister after most lawmakers from a smaller kingmaker party appeared to be leaning toward backing him.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:48:42.000Z"
       },
       {
         "id": "art-4249fb0d166b",
@@ -24626,7 +24621,7 @@
     ]
   },
   "finance": {
-    "updatedAt": "2026-11-27T16:15:28.130Z",
+    "updatedAt": "2026-11-27T16:15:27.440Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -24691,6 +24686,20 @@
     ],
     "articles": [
       {
+        "id": "art-dfd720a0c351",
+        "title": "Top 10 things to watch in the stock market on Black Friday",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
+        "video": false,
+        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
+        "pubDate": "2026-11-27T15:02:04.000Z"
+      },
+      {
         "id": "art-b9cab496ee69",
         "title": "Can Russia Ever Change From Within",
         "source": "Bloomberg Markets",
@@ -24703,6 +24712,20 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T14:54:25.000Z"
+      },
+      {
+        "id": "art-5e1a9f2828d1",
+        "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+        "video": false,
+        "summary": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108120789-1742904573651-gettyimages-159129388-72801932.jpeg?v=1758797166&w=1920&h=1080",
+        "pubDate": "2026-11-27T14:52:40.000Z"
       },
       {
         "id": "art-1c0729417f14",
@@ -24733,6 +24756,20 @@
         "pubDate": "2026-11-27T14:44:21.000Z"
       },
       {
+        "id": "art-2d9a12e5436f",
+        "title": "US tech stocks rise in latest market swing",
+        "source": "Financial Times",
+        "feedId": "ft-home",
+        "domain": "ft.com",
+        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
+        "video": false,
+        "summary": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+        "pubDate": "2026-11-27T14:38:51.000Z"
+      },
+      {
         "id": "art-86c87194c7be",
         "title": "Nvidia Pares Gains on Blackwell Report; Altria Lower | Stock Movers",
         "source": "Bloomberg Markets",
@@ -24759,20 +24796,6 @@
         "section": "",
         "imageUrl": "https://cassette.sphdigital.com.sg/image/businesstimes/8238d78bca36c071aa9bb91a0c4e5789d9682b7e04d9916de918b613a6578476?t=og&f=webp&w=240",
         "pubDate": "2026-11-27T14:32:27.000Z"
-      },
-      {
-        "id": "art-dfd720a0c351",
-        "title": "Top 10 things to watch in the stock market on Black Friday",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
-        "video": false,
-        "summary": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108556478-1795186653493-108556478-1795186592615-gettyimages-2305474808-US_STOCKS.jpg?v=1795186665&w=1920&h=1080",
-        "pubDate": "2026-11-27T14:31:12.000Z"
       },
       {
         "id": "art-44e4968e424f",
@@ -24831,19 +24854,18 @@
         "pubDate": "2026-11-27T13:40:21.000Z"
       },
       {
-        "id": "art-f6edfc8bb745",
+        "id": "art-fa65d66542e9",
         "title": "SanDisk Stock Hits Death Cross Despite Nvidia AI Breakthrough - SanDisk (NASDAQ:SNDK)",
         "source": "Benzinga",
         "feedId": "benzinga",
         "domain": "benzinga.com",
-        "url": "https://www.benzinga.com/trading-ideas/technicals/26/11/63668961/sandisk-stock-death-cross",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNejByd1Q5VTZmWHlxY2xSUUdJN2NsaXhleW0wY3BDNXIzUm4zWU0yWDVQUG1fUzZkNkxBSWhpTnJxQmxaOHlNSjBXaEZtQjBkbk9hZm1BdGRrbkc0SXdYOHdBTnNjaWFuYkZNaVRTU0ZfU2NFSHJ2QVhWNTdaclJpa2lrbHU2Z1JwMnFPTXF3aGNfcHBU?oc=5",
         "video": false,
         "summary": "SanDisk Stock Hits Death Cross Despite Nvidia AI Breakthrough - SanDisk (NASDAQ:SNDK) Benzinga",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T13:36:20.000Z",
-        "publisherUrl": "https://www.benzinga.com/trading-ideas/technicals/26/11/63668961/sandisk-stock-death-cross"
+        "pubDate": "2026-11-27T13:36:20.000Z"
       },
       {
         "id": "art-9c4de7bb8a67",
@@ -24898,22 +24920,8 @@
         "summary": "The November sell-off has so far pushed the S&P 500 into a correction. History shows that a correction doesn't always lead to a bear market, or a recession.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/100825740-157559755r.jpg?v=1538672772&w=1920&h=1080",
+        "imageUrl": "",
         "pubDate": "2026-11-27T13:21:56.000Z"
-      },
-      {
-        "id": "art-2d9a12e5436f",
-        "title": "US tech stocks set to jump at open as volatile trading takes hold",
-        "source": "Financial Times",
-        "feedId": "ft-home",
-        "domain": "ft.com",
-        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-        "video": false,
-        "summary": "All-powerful AI trade has been eclipsed by wild swings in a market struggling to price future earnings",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb3711a43-730a-49c2-934d-f8bb6229ae1e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-        "pubDate": "2026-11-27T13:15:41.000Z"
       },
       {
         "id": "art-a3175072d3fa",
@@ -25085,34 +25093,6 @@
         "pubDate": "2026-11-27T12:00:22.000Z"
       },
       {
-        "id": "art-5e1a9f2828d1",
-        "title": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
-        "source": "CNBC",
-        "feedId": "cnbc",
-        "domain": "cnbc.com",
-        "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
-        "video": false,
-        "summary": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T11:49:18.000Z"
-      },
-      {
-        "id": "art-dc90e6189530",
-        "title": "French economy shrinks 0.2% in third quarter",
-        "source": "Financial Times",
-        "feedId": "ft-home",
-        "domain": "ft.com",
-        "url": "https://www.ft.com/content/5325ace3-d69a-4686-acb6-2f06de6afd11?syn-25a6b1a6=1",
-        "video": false,
-        "summary": "Quarterly GDP reduction was worse than initially estimated",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb9ec7345-200a-43cb-87a6-3abb9fbf7240.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-        "pubDate": "2026-11-27T11:38:30.000Z"
-      },
-      {
         "id": "art-65ec6749af62",
         "title": "Japanese carmakers’ sales collapse amid China market plunge",
         "source": "Financial Times",
@@ -25195,6 +25175,20 @@
         "section": "",
         "imageUrl": "https://static01.nyt.com/images/2026/11/26/multimedia/26xp-dennys-lmgz/26xp-dennys-lmgz-mediumSquareAt3X.jpg",
         "pubDate": "2026-11-27T10:17:23.000Z"
+      },
+      {
+        "id": "art-b4956b413b6e",
+        "title": "Holiday Deals Are Tempting. Here’s How to Avoid Buyer’s Remorse.",
+        "source": "NYT Business",
+        "feedId": "nyt-business",
+        "domain": "nytimes.com",
+        "url": "https://www.nytimes.com/2026/11/27/business/holiday-shopping-deals-spending.html",
+        "video": false,
+        "summary": "Some deals are too good to be true. Experts suggest doing the math, making lists and avoiding using “buy now, pay later” platforms to make purchases.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T10:03:51.000Z"
       },
       {
         "id": "art-6ebbb6ed649b",
@@ -25285,7 +25279,7 @@
     ]
   },
   "lifestyle": {
-    "updatedAt": "2026-11-27T16:15:28.138Z",
+    "updatedAt": "2026-11-27T16:15:27.454Z",
     "results": [
       {
         "feedId": "guardian-life",
@@ -25904,7 +25898,7 @@
     ]
   },
   "country-nz": {
-    "updatedAt": "2026-11-27T16:15:28.143Z",
+    "updatedAt": "2026-11-27T16:15:27.462Z",
     "results": [
       {
         "feedId": "gn-nz",
@@ -26221,7 +26215,7 @@
     ]
   },
   "country-ie": {
-    "updatedAt": "2026-11-27T16:15:28.145Z",
+    "updatedAt": "2026-11-27T16:15:27.465Z",
     "results": [
       {
         "feedId": "gn-ie",
@@ -26289,18 +26283,19 @@
         "publisherUrl": "https://www.rte.ie/news/2026/1127/1600868-no-time-to-be-scared-22-to-be-honoured-for-bravery/"
       },
       {
-        "id": "art-77f671e40c5a",
+        "id": "art-2a555a37e3f7",
         "title": "'My reality now' - Challenges facing homeless in Sligo - RTE.ie",
         "source": "RTE.ie",
         "feedId": "gn-ie",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BNWxpS29FcjhCajBRTDQ1VldGZzk3Z0d4Q3g0bmVrNjZYZ0ptYllyWWdZcHcwdTg5ZG90SUo3VjY0bk5rbzR1YlFQQXhlYkF2Rjc2UWRuVzJMWjIyOTJaWGdqUmRBd3U4?oc=5",
+        "domain": "rte.ie",
+        "url": "https://www.rte.ie/news/2026/1127/1600834-homeless-sligo/",
         "video": false,
         "summary": "'My reality now' - Challenges facing homeless in Sligo RTE.ie See more headlines and perspectives on Google News",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T07:10:05.000Z"
+        "pubDate": "2026-11-27T07:10:05.000Z",
+        "publisherUrl": "https://www.rte.ie/news/2026/1127/1600834-homeless-sligo/"
       },
       {
         "id": "art-1f87ad7e0aa7",
@@ -26393,18 +26388,19 @@
         "publisherUrl": "https://www.thejournal.ie/readme/eu-bird-vote-7237709-Nov2026/"
       },
       {
-        "id": "art-450a06462c88",
+        "id": "art-a3d0653b9707",
         "title": "Downing Street's dancing TikToker defends visit - BBC",
         "source": "BBC",
         "feedId": "gn-ie",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jTHRPaDhtd3hVZFpNY29IejBENXFfRXFIVDFUYkhuQ0R5NHh0b3JKTW80ay1LekctRzQ1ckpDSWlSWEVNUHZfUVoyaTE1cjljUGhUQzcxLURnamM?oc=5",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.com/news/articles/cwg7l5yv2j73o",
         "video": false,
         "summary": "Downing Street's dancing TikToker defends visit BBC Influencers behaving badly: Andy Burnham’s social media strategy offers reach, but at what cost? The Irish Times Burnham criticised after influencer dances through No 10 RTE.ie Chicken nuggets: is response to",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-25T15:47:11.000Z"
+        "pubDate": "2026-11-25T15:47:11.000Z",
+        "publisherUrl": "https://www.bbc.com/news/articles/cwg7l5yv2j73o"
       },
       {
         "id": "art-86e50b5f168c",
@@ -26544,7 +26540,7 @@
     ]
   },
   "country-id": {
-    "updatedAt": "2026-11-27T16:15:28.147Z",
+    "updatedAt": "2026-11-27T16:15:27.468Z",
     "results": [
       {
         "feedId": "gn-id",
@@ -26567,33 +26563,33 @@
     ],
     "articles": [
       {
-        "id": "art-4b955cf4fd12",
+        "id": "art-51037e9f1f2b",
         "title": "High-Fat Diet Provokes Aberrant Erythropoiesis in IRP1-Deleted Mice, Leading to Paradoxical Improvement of Glucose Tolerance - National Institutes of Health (NIH) | (.gov)",
         "source": "National Institutes of Health (NIH) | (.gov)",
         "feedId": "gn-id",
-        "domain": "pubmed.ncbi.nlm.nih.gov",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/43028213/?utm_source=FeedFetcher&utm_medium=rss&utm_campaign=None&utm_content=0x09UMLZ1ZyMLjbskVJ3kd6MHfZTZyaCGRc7NzobTEJ&fc=None&ff=20261127081922&v=2.20.1.post6+d419cc9",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQRFVsOFBQT0NzX1plMnBuam1OQUo2RmpMejRER0ZDT2Q0MG5qbV9PSUg0S04yclNtb2t6bE1rVG5PSXhqT1IzTEFaS1dYd3lkdHdKUUZkSWhiaGEzY21hTk5CeGU0T3dzZHUyb0p5UzI5LW82aDNFdDd4T09rUFZJc040c2cyUWtTVnhIenczc1FUWTUyd2puZDF6RDJIVXlyVHc4OF9PdzR5QmpkQ0dZelJla2hwUkNSekw3MHB6b1A5OGpqQVUySURJVEpDUy1CODVMM3laMlYySlJzcjdVT3JsQU1MZ0pxUUdmcjZGekdxLXgxUW5LRjdDTVRYZUduVmVEaExsQ1hrMXF1M0pDVnVjU1ExTmIxWTdaNkZ0Yjh1V3BQVDlqLUpB?oc=5",
         "video": false,
         "summary": "High-Fat Diet Provokes Aberrant Erythropoiesis in IRP1-Deleted Mice, Leading to Paradoxical Improvement of Glucose Tolerance National Institutes of Health (NIH) | (.gov)",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T13:53:04.000Z",
-        "publisherUrl": "https://pubmed.ncbi.nlm.nih.gov/43028213/?utm_source=FeedFetcher&utm_medium=rss&utm_campaign=None&utm_content=0x09UMLZ1ZyMLjbskVJ3kd6MHfZTZyaCGRc7NzobTEJ&fc=None&ff=20261127081922&v=2.20.1.post6+d419cc9"
+        "pubDate": "2026-11-27T13:53:04.000Z"
       },
       {
-        "id": "art-6e002bb15625",
+        "id": "art-a185aeda9d0d",
         "title": "Confused about who to vote for in the Victoria election? A guide to key promises made by Labor, the Coalition, Greens and One Nation - The Guardian",
         "source": "The Guardian",
         "feedId": "gn-id",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPUTJUcHd2UlE2MzlVM0tiYkZZVFRDSXBEeEx2QkhsV1dRQWd2SjFTRWFqTUZBX2lUUWV4UGQwbE9rLWZLNWllVlo5VGNQVGtkWTRwUFI1YzVZMG9sUmhoNDFQalNwRnNtLWFuWU9pWEVKd3RxYVY2LUQtVVc4MkphNEFUZmxTWFZxQ1hvbU8yVEpmM2NHcVVQWkJ1cHVqeU1oSHNfNEdEUWt0OUJ5MGRiNUF0ODc4X0ZtQWJoYmdILTF4cUVKbG1xbWZ5bVpUTWprQjVtRVJZbk9WWWtpZVNCYnRzUlhmMmhBdFRuZ0ZpZXlCeGZpMGU2eHJqdjFLMG0wZ1Y2UzdRcw?oc=5",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/australia-news/2026/nov/27/victoria-election-2026-who-to-vote-for-should-policies-summary-state-victorian-vic-labor-liberal-greens-one-nation-ntwnfb",
         "video": false,
         "summary": "Confused about who to vote for in the Victoria election? A guide to key promises made by Labor, the Coalition, Greens and One Nation The Guardian Election promises not enough to fix Victoria's crumbling roads, experts say ABC News & Headlines – Australian Broa",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T12:30:43.000Z"
+        "pubDate": "2026-11-27T12:30:43.000Z",
+        "publisherUrl": "https://www.theguardian.com/australia-news/2026/nov/27/victoria-election-2026-who-to-vote-for-should-policies-summary-state-victorian-vic-labor-liberal-greens-one-nation-ntwnfb"
       },
       {
         "id": "art-005546e36942",
@@ -26611,18 +26607,19 @@
         "publisherUrl": "https://www.bbc.com/news/articles/c6ly7jgv7jzdo"
       },
       {
-        "id": "art-4835e824561f",
+        "id": "art-c492091fc28d",
         "title": "Singapore Talking to US to Keep AI Chip Access, Deputy PM Says - Bloomberg Tax",
         "source": "Bloomberg Tax",
         "feedId": "gn-id",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUHNTUHM0N2s1NmV5WW5TZzJNSHhTdG5jeHQ4bFRkWnZ2OVIxRFRlV01GSzVYY2FBdzBDZENNMUowZFh6aFp2VWlvZkJkdVJPR05pVWlEZThjMXlYeldBaHlNbV9SRl9lWUxTSnhYR0lFcnhEQXNZOFhPN20teUJjOGZuRk5XbzZKX0pMVVJPZzRmaTczV2xudmNYYUUtenUxYlo4eUJvTHlkeWhzU0pycUtR?oc=5",
+        "domain": "news.bloombergtax.com",
+        "url": "https://news.bloombergtax.com/financial-accounting/singapore-talking-to-us-to-keep-ai-chip-access-deputy-pm-says",
         "video": false,
         "summary": "Singapore Talking to US to Keep AI Chip Access, Deputy PM Says Bloomberg Tax Nvidia halts chip shipments to Southeast Asia: Reports The Jakarta Post How Chinese Companies Circumvent Chips Sanctions in Southeast Asia Tempo.co English Metatech: Nvidia H200 suppl",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T05:00:00.000Z"
+        "pubDate": "2026-11-27T05:00:00.000Z",
+        "publisherUrl": "https://news.bloombergtax.com/financial-accounting/singapore-talking-to-us-to-keep-ai-chip-access-deputy-pm-says"
       },
       {
         "id": "art-f6de18aceb75",
@@ -26807,7 +26804,7 @@
     ]
   },
   "country-ph": {
-    "updatedAt": "2026-11-27T16:15:28.148Z",
+    "updatedAt": "2026-11-27T16:15:27.470Z",
     "results": [
       {
         "feedId": "gn-ph",
@@ -26830,49 +26827,46 @@
     ],
     "articles": [
       {
-        "id": "art-369b610a5a80",
+        "id": "art-86050c6172d6",
         "title": "Boatwright debuts strong as Gilas routs Syria in FIBA World Cup qualifiers - Rappler",
         "source": "Rappler",
         "feedId": "gn-ph",
-        "domain": "rappler.com",
-        "url": "https://www.rappler.com/sports/gilas-pilipinas/philippines-syria-fiba-world-cup-asian-qualifiers-november-27-2026/",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWmxxT0k2b19sbkR6OHZrRWcyVXotb1UtUU5qNE15MTBldEhDTWtLTDdlUVh0eHdTMjhfQnAyNzJBbnQxYm02YWhGakQwTHVCOEY1VFBHNG9IUzVZbW5fYmxTNTdIQUtZSnVKQVhjeUtyang3TzdpdW4yb3NyNWVFMDNueTJfbENXMl9xbm9UU3Zld082eXE0VTY5Z3NHbGFvQWZLelV3cUtKdFZ1VTdfRTdfVmk?oc=5",
         "video": false,
         "summary": "Boatwright debuts strong as Gilas routs Syria in FIBA World Cup qualifiers Rappler LIVE: Gilas Pilipinas vs Syria – Fiba Asian Qualifiers 5th window Inquirer.net Cone bullish on loaded Gilas Pilipinas roster SunStar Publishing Inc. Bennie Boatwright embraces p",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T13:59:55.000Z",
-        "publisherUrl": "https://www.rappler.com/sports/gilas-pilipinas/philippines-syria-fiba-world-cup-asian-qualifiers-november-27-2026/"
+        "pubDate": "2026-11-27T13:59:55.000Z"
       },
       {
-        "id": "art-bd876edc8f3d",
+        "id": "art-2a68654893d9",
         "title": "Smart advances AI-powered mobile experiences with 5G - Manila Bulletin",
         "source": "Manila Bulletin",
         "feedId": "gn-ph",
-        "domain": "mb.com.ph",
-        "url": "https://mb.com.ph/2026/11/27/smart-advances-ai-powered-mobile-experiences-with-5g",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNVZFeFBIS1A5UnlUWTgyS0lrbEcxa29pUFlrOEZKSGY1bHNZOWRyTW96MEVOM3FDMGN3VEdnMzczRmpRU3hqaWNTUWlXUHlBaWUzOWFsZ2dabHZ0b0JKaTdiU2NnVS0ycDRKQUlrQllON3QxZGlIUGJuRnVCUmhDMHdyNHNUNllU?oc=5",
         "video": false,
         "summary": "Smart advances AI-powered mobile experiences with 5G Manila Bulletin See more headlines & perspectives on Google News",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T13:35:37.000Z",
-        "publisherUrl": "https://mb.com.ph/2026/11/27/smart-advances-ai-powered-mobile-experiences-with-5g"
+        "pubDate": "2026-11-27T13:35:37.000Z"
       },
       {
-        "id": "art-5a5343a1c36f",
+        "id": "art-bd2b70160e3a",
         "title": "DND: Beijing has no say in PH defense partnerships - Cebu Daily News",
         "source": "Cebu Daily News",
         "feedId": "gn-ph",
-        "domain": "cebudailynews.inquirer.net",
-        "url": "https://cebudailynews.inquirer.net/788742/dnd-beijing-has-no-say-in-ph-defense-partnerships",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONmtMTHR0X1JWMmdBRGNhLWFHOFI1REhKSzVZMkdON195UFdvMlVXbGh3Nmh5UUFBSHA2a1RvcXZlekVCSmRsODhUdm5PXzhqb2N0bGd1MzFyRElQSDdhVEExRWZyTkhKaklFT3ltczlFcmQ2S0JaVW5CWnEyVG12dWNySGtqZ3hiS19wYTNsbzVGUUlWX0HSAZsBQVVfeXFMTWVrMEZwZXNCcHJuYkYyUXNoUDJIVHVLenZoTEplMmdQRTVPYk0ybkNhaHNpVVgtVDltZEZMSUdGN2NyNjZnV0JpOV8zVmdwSHVRbkZaWlhlRFlZU3NzLVotbno4b1hiX2RmMU5VMFoyZGVOZVhlc0ZOWVVJdk5jZU02MFdDRUNKalJMZHBFWDc5YkJOdWphTDJkREk?oc=5",
         "video": false,
         "summary": "DND: Beijing has no say in PH defense partnerships Cebu Daily News DND: PH does not need Beijing’s permission on defense ties Inquirer.net China slams PH-Australia defense pact, calls Japan 'destroyer' of regional peace Philstar.com China warns Australia-Phili",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T12:29:00.000Z",
-        "publisherUrl": "https://cebudailynews.inquirer.net/788742/dnd-beijing-has-no-say-in-ph-defense-partnerships"
+        "pubDate": "2026-11-27T12:29:00.000Z"
       },
       {
         "id": "art-5c69cd27209d",
@@ -27132,7 +27126,7 @@
     ]
   },
   "country-th": {
-    "updatedAt": "2026-11-27T16:15:28.150Z",
+    "updatedAt": "2026-11-27T16:15:27.473Z",
     "results": [
       {
         "feedId": "gn-th",
@@ -27457,7 +27451,7 @@
     ]
   },
   "country-vn": {
-    "updatedAt": "2026-11-27T16:15:28.151Z",
+    "updatedAt": "2026-11-27T16:15:27.475Z",
     "results": [
       {
         "feedId": "gn-vn",
@@ -27722,7 +27716,7 @@
     ]
   },
   "country-jp": {
-    "updatedAt": "2026-11-27T16:15:28.157Z",
+    "updatedAt": "2026-11-27T16:15:27.484Z",
     "results": [
       {
         "feedId": "gn-jp",
@@ -28045,7 +28039,7 @@
     ]
   },
   "country-kr": {
-    "updatedAt": "2026-11-27T16:15:28.160Z",
+    "updatedAt": "2026-11-27T16:15:27.489Z",
     "results": [
       {
         "feedId": "gn-kr",
@@ -28360,7 +28354,7 @@
     ]
   },
   "country-hk": {
-    "updatedAt": "2026-11-27T16:15:28.162Z",
+    "updatedAt": "2026-11-27T16:15:27.492Z",
     "results": [
       {
         "feedId": "gn-hk",
@@ -28533,18 +28527,19 @@
         "publisherUrl": "https://hongkongfp.com/2026/11/26/in-pictures-utterly-exhausting-wang-fuk-court-survivors-mourn-168-victims-on-first-anniversary-of-tragic-blaze/"
       },
       {
-        "id": "art-06ce17c85743",
+        "id": "art-67dea1c01974",
         "title": "Police officer fined HK$8,000 for dangerous driving as doctors unable to link woman’s death to crash - Hong Kong Free Press HKFP",
         "source": "Hong Kong Free Press HKFP",
         "feedId": "hkfp",
         "domain": "hongkongfp.com",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZEdERTJmdEg2VllKWVAydS1KYWt2VWJnci0xOU9ndjJsWU9ZcllSWDItSHF0UzBNLTBDTkloT3dYdlpHRGZwYzhwVkRmZHFkVWJ0dnVZNDA3MTVoYTdrUU1CNjE2RVRucDBieXU1aG1lc1l1QlJlcEZmZzZXR2NmYzVieHI5cXpGU1JXLU5KeVN6ZTlwUzdVWFRGdE1qU3pzVHFWMWVLbmo3UE8zZmcxU3dYdTh3ZU1SOUFhOFhvUVdlVTEwckFkN3kzc0o?oc=5",
+        "url": "https://hongkongfp.com/2026/11/26/police-officer-fined-hk8000-for-dangerous-driving-as-doctors-unable-to-link-womans-death-to-crash/",
         "video": false,
         "summary": "Police officer fined HK$8,000 for dangerous driving as doctors unable to link woman’s death to crash Hong Kong Free Press HKFP",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-25T23:50:00.000Z"
+        "pubDate": "2026-11-25T23:50:00.000Z",
+        "publisherUrl": "https://hongkongfp.com/2026/11/26/police-officer-fined-hk8000-for-dangerous-driving-as-doctors-unable-to-link-womans-death-to-crash/"
       },
       {
         "id": "art-0f5125b109e0",
@@ -28684,7 +28679,7 @@
     ]
   },
   "country-tw": {
-    "updatedAt": "2026-11-27T16:15:28.163Z",
+    "updatedAt": "2026-11-27T16:15:27.495Z",
     "results": [
       {
         "feedId": "gn-tw",
@@ -28991,7 +28986,7 @@
     ]
   },
   "country-pk": {
-    "updatedAt": "2026-11-27T16:15:28.166Z",
+    "updatedAt": "2026-11-27T16:15:27.499Z",
     "results": [
       {
         "feedId": "gn-pk",
@@ -29322,7 +29317,7 @@
     ]
   },
   "country-bd": {
-    "updatedAt": "2026-11-27T16:15:28.167Z",
+    "updatedAt": "2026-11-27T16:15:27.500Z",
     "results": [
       {
         "feedId": "gn-bd",
@@ -29455,7 +29450,7 @@
     ]
   },
   "country-lk": {
-    "updatedAt": "2026-11-27T16:15:28.167Z",
+    "updatedAt": "2026-11-27T16:15:27.500Z",
     "results": [
       {
         "feedId": "gn-lk",
@@ -29588,7 +29583,7 @@
     ]
   },
   "country-np": {
-    "updatedAt": "2026-11-27T16:15:28.167Z",
+    "updatedAt": "2026-11-27T16:15:27.501Z",
     "results": [
       {
         "feedId": "gn-np",
@@ -29721,7 +29716,7 @@
     ]
   },
   "country-za": {
-    "updatedAt": "2026-11-27T16:15:28.169Z",
+    "updatedAt": "2026-11-27T16:15:27.503Z",
     "results": [
       {
         "feedId": "gn-za",
@@ -29744,19 +29739,18 @@
     ],
     "articles": [
       {
-        "id": "art-29497771b329",
+        "id": "art-c731c902c27b",
         "title": "France and Germany want deal by year-end to ‘Le Pen-proof’ next EU budget, Ukraine",
         "source": "Daily Maverick",
         "feedId": "daily-maverick",
         "domain": "dailymaverick.co.za",
-        "url": "https://www.dailymaverick.co.za/article/2026-11-27-france-and-germany-want-deal-by-year-end-to-le-pen-proof-next-eu-budget-and/",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR2x2ZDVDbTE5SmNkYUV6bHBPZ0pVT1FiOWJQaXREdXZZWDg3UmhjQVR0NzdQbFlTWkpndXVISl96MnA1VGNoUHlkMThYTHRGTXhiU1pSZm1EbHJfTmdfOFZqNTBEQkl6Z1B3UG80X3RsbDJRaXhVV05mVnIyUEU5cTRzemhra21SVkdEYV9WRWIwaTNaaENweFV4aXRRM0E3bVZkLWtUYmJPdGpKOFlZOW1OWFRyOWtGV0RXNy05R2ZteXF5Mmc?oc=5",
         "video": false,
         "summary": "France and Germany want deal by year-end to ‘Le Pen-proof’ next EU budget, Ukraine Daily Maverick",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T10:19:01.000Z",
-        "publisherUrl": "https://www.dailymaverick.co.za/article/2026-11-27-france-and-germany-want-deal-by-year-end-to-le-pen-proof-next-eu-budget-and/"
+        "pubDate": "2026-11-27T10:19:01.000Z"
       },
       {
         "id": "art-3bee6d07e0fc",
@@ -30046,7 +30040,7 @@
     ]
   },
   "country-ng": {
-    "updatedAt": "2026-11-27T16:15:28.172Z",
+    "updatedAt": "2026-11-27T16:15:27.509Z",
     "results": [
       {
         "feedId": "gn-ng",
@@ -30377,7 +30371,7 @@
     ]
   },
   "country-ke": {
-    "updatedAt": "2026-11-27T16:15:28.172Z",
+    "updatedAt": "2026-11-27T16:15:27.510Z",
     "results": [
       {
         "feedId": "gn-ke",
@@ -30510,7 +30504,7 @@
     ]
   },
   "country-gh": {
-    "updatedAt": "2026-11-27T16:15:28.173Z",
+    "updatedAt": "2026-11-27T16:15:27.510Z",
     "results": [
       {
         "feedId": "gn-gh",
@@ -30643,7 +30637,7 @@
     ]
   },
   "country-eg": {
-    "updatedAt": "2026-11-27T16:15:28.173Z",
+    "updatedAt": "2026-11-27T16:15:27.510Z",
     "results": [
       {
         "feedId": "gn-eg",
@@ -30776,7 +30770,7 @@
     ]
   },
   "country-sa": {
-    "updatedAt": "2026-11-27T16:15:28.173Z",
+    "updatedAt": "2026-11-27T16:15:27.511Z",
     "results": [
       {
         "feedId": "gn-sa",
@@ -30907,7 +30901,7 @@
     ]
   },
   "country-ae": {
-    "updatedAt": "2026-11-27T16:15:28.173Z",
+    "updatedAt": "2026-11-27T16:15:27.511Z",
     "results": [
       {
         "feedId": "gn-ae",
@@ -31038,7 +31032,7 @@
     ]
   },
   "country-il": {
-    "updatedAt": "2026-11-27T16:15:28.175Z",
+    "updatedAt": "2026-11-27T16:15:27.515Z",
     "results": [
       {
         "feedId": "gn-il",
@@ -31329,7 +31323,7 @@
     ]
   },
   "country-tr": {
-    "updatedAt": "2026-11-27T16:15:28.176Z",
+    "updatedAt": "2026-11-27T16:15:27.515Z",
     "results": [
       {
         "feedId": "gn-tr",
@@ -31460,7 +31454,7 @@
     ]
   },
   "country-de": {
-    "updatedAt": "2026-11-27T16:15:28.184Z",
+    "updatedAt": "2026-11-27T16:15:27.529Z",
     "results": [
       {
         "feedId": "gn-de",
@@ -31777,7 +31771,7 @@
     ]
   },
   "country-fr": {
-    "updatedAt": "2026-11-27T16:15:28.187Z",
+    "updatedAt": "2026-11-27T16:15:27.534Z",
     "results": [
       {
         "feedId": "gn-fr",
@@ -31842,18 +31836,19 @@
         "pubDate": "2026-11-27T13:05:00.000Z"
       },
       {
-        "id": "art-c5247e50ceb4",
+        "id": "art-11f4e81bc076",
         "title": "Marseille condemned, risk UEFA punishment after violence mars Europa League tie",
         "source": "RFI",
         "feedId": "rfi",
         "domain": "rfi.fr",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY1NKY08xbE0yMDQ0UTFIMnNjX0NuamNQYkg2SW9tVzNEVnhud29qZWtNd19aekg4UW9DQ09GbkZoaWJBajZPdkJwU2VaQlJ5M3JjNWtqd3BhV1hLLWlFVkNVTHM0U25hMExzYmxvSHFRU1ktV2NBdjFjdHdndV8zOGZicFJIRGtSbnJMZS1wTFZReTVOTXNTZjNBd2duZnBuQ1lFeUFUd3VpNjNQcnFZNkdSTkw2aXM?oc=5",
+        "url": "https://www.rfi.fr/en/sports/20261127-marseille-condemned-risk-uefa-punishment-after-violence-mars-europa-league-tie",
         "video": false,
         "summary": "Marseille condemned, risk UEFA punishment after violence mars Europa League tie RFI",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T12:47:33.000Z"
+        "pubDate": "2026-11-27T12:47:33.000Z",
+        "publisherUrl": "https://www.rfi.fr/en/sports/20261127-marseille-condemned-risk-uefa-punishment-after-violence-mars-europa-league-tie"
       },
       {
         "id": "art-c9805da31e50",
@@ -32089,7 +32084,7 @@
     ]
   },
   "country-es": {
-    "updatedAt": "2026-11-27T16:15:28.195Z",
+    "updatedAt": "2026-11-27T16:15:27.546Z",
     "results": [
       {
         "feedId": "gn-es",
@@ -32400,7 +32395,7 @@
     ]
   },
   "country-it": {
-    "updatedAt": "2026-11-27T16:15:28.201Z",
+    "updatedAt": "2026-11-27T16:15:27.558Z",
     "results": [
       {
         "feedId": "gn-it",
@@ -32711,7 +32706,7 @@
     ]
   },
   "country-nl": {
-    "updatedAt": "2026-11-27T16:15:28.203Z",
+    "updatedAt": "2026-11-27T16:15:27.561Z",
     "results": [
       {
         "feedId": "gn-nl",
@@ -32807,18 +32802,19 @@
         "publisherUrl": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
       },
       {
-        "id": "art-851141e7f5a4",
+        "id": "art-488fa27b3475",
         "title": "Missile mural appears on Dutch embassy in Moscow - DutchNews.nl",
         "source": "DutchNews.nl",
         "feedId": "dutchnews",
         "domain": "dutchnews.nl",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQzZzYzYwY3JWd1g3SWVzWjl1cVhOb0VwUmp6aW9kSmZfcUEwVVdoa0V3aEZUalAxa2FrTVlFN2RBc3RsVXFRaVdvUzBxY0FuWjlqWUtUTlM3Y3pHUGpiblN5X284ZVlSdjFadlR3T2o5SG9xaHd2UTV2T0luZWQySDNMSmVWMXFpVnc?oc=5",
+        "url": "https://www.dutchnews.nl/2026/11/missile-mural-appears-on-dutch-embassy-in-moscow/",
         "video": false,
         "summary": "Missile mural appears on Dutch embassy in Moscow DutchNews.nl",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T08:32:58.000Z"
+        "pubDate": "2026-11-27T08:32:58.000Z",
+        "publisherUrl": "https://www.dutchnews.nl/2026/11/missile-mural-appears-on-dutch-embassy-in-moscow/"
       },
       {
         "id": "art-a00b69fb9d61",
@@ -33032,138 +33028,20 @@
     ]
   },
   "country-be": {
-    "updatedAt": "2026-11-27T16:15:28.204Z",
+    "updatedAt": "2026-11-27T16:15:27.561Z",
     "results": [
       {
         "feedId": "gn-be",
         "name": "Belgium · Google News",
-        "ok": true,
-        "count": 8
+        "ok": false,
+        "count": 0,
+        "error": "HTTP 429"
       }
     ],
-    "articles": [
-      {
-        "id": "art-5f5413f72423",
-        "title": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power - NBC News",
-        "source": "NBC News",
-        "feedId": "gn-be",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbHZDcGNBblpnR2Zwdy1RRWhBTmhpOTAwRWhNdDJHS1BXNDBsSFVHQml1eHU5NEVrUUM4bVpJN2xBMFdUTXp0VFYtcU1PYTVHS0lBb2ZuOWw3OGZRaEdDSlN3d1o2bU56Q2NBaXlVSTFWaS13bnp4NnhFQ3hhNW4zVlBvRHNUc2VEX2haa1hnQl9xdm5aX1J4RDVhQUk?oc=5",
-        "video": false,
-        "summary": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power NBC News Thanksgiving storm moves to Northeast, brining snow, winds, flooding The Weather Channel 'Huge' storm isn't over yet. Track power outages, forecast USA Today Thanksg",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T13:05:00.000Z"
-      },
-      {
-        "id": "art-3000003c0bb4",
-        "title": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill - Politico",
-        "source": "Politico",
-        "feedId": "gn-be",
-        "domain": "politico.com",
-        "url": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222",
-        "video": false,
-        "summary": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill Politico 70 Connecticut Democratic town chairs urge Murphy, Blumenthal to vote against Schumer Yahoo Progressive Democrats call on Warren, Markey to not support Schumer a",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T12:00:00.000Z",
-        "publisherUrl": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222"
-      },
-      {
-        "id": "art-9fffb1f5f227",
-        "title": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case - CNN",
-        "source": "CNN",
-        "feedId": "gn-be",
-        "domain": "cnn.com",
-        "url": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment",
-        "video": false,
-        "summary": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case CNN Essay | Has the AR-15 Become Too Big to Ban? WSJ Do Americans have a right to own assault rifles? The Economist Supreme Court defers decision on whether to dismiss major gun case SCOTU",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T11:00:16.000Z",
-        "publisherUrl": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment"
-      },
-      {
-        "id": "art-db0fda5754ea",
-        "title": "Democrats won full control of 6 new states. Here's what they plan to do - USA Today",
-        "source": "USA Today",
-        "feedId": "gn-be",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYURUU3RjQ1FxQi1BZmlnQmVrWTIxMm9tZ1ozQkY4Nk9YUVZGWkNvOUY2WnhHQnh5bkRldGRlNTB3NVJGVjN5dWROM1E0TlBDLTctWHhmZU9hTDAxdHN2Nk1vWXlNdTBVSHEzOE5teUVKMWgyYklRZjB1NGlFQ0pxRWMzTlVLTmczRXpCdVVaTllGWXZFWlFZUHpkY01zTjk5Q1VfWkZJdzVTZ2czcXBZdzhNZDNWdw?oc=5",
-        "video": false,
-        "summary": "Democrats won full control of 6 new states. Here's what they plan to do USA Today Democrats will struggle with a state-level revolution The Economist Go Local Or Go Home: Can Dems Take ‘State by State’ Doctrine Into 2028? Newsweek The next fight for democracy ",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T10:05:00.000Z"
-      },
-      {
-        "id": "art-8852bb397a39",
-        "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it - NPR",
-        "source": "NPR",
-        "feedId": "gn-be",
-        "domain": "npr.org",
-        "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
-        "video": false,
-        "summary": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it NPR The Supreme Court is about to take a closer look at Trump’s immigration agenda CNN Justices to consider whether noncitizens who lose asylum status may still obtain green card",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T10:00:00.000Z",
-        "publisherUrl": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
-      },
-      {
-        "id": "art-a00b69fb9d61",
-        "title": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says - AP News",
-        "source": "AP News",
-        "feedId": "gn-be",
-        "domain": "apnews.com",
-        "url": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b",
-        "video": false,
-        "summary": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says AP News See more headlines & perspectives on Google News",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T03:33:00.000Z",
-        "publisherUrl": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b"
-      },
-      {
-        "id": "art-9faffa2b582b",
-        "title": "Trump calls for investigation of GDP data released before midterms - USA Today",
-        "source": "USA Today",
-        "feedId": "gn-be",
-        "domain": "usatoday.com",
-        "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
-        "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T02:44:00.000Z",
-        "publisherUrl": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/"
-      },
-      {
-        "id": "art-238386efec7c",
-        "title": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" - CBS News",
-        "source": "CBS News",
-        "feedId": "gn-be",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
-        "video": false,
-        "summary": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" CBS News Photos: Macy’s Thanksgiving Day Parade History and Wacky Moments The New York Times Macy's Thanksgiving Day Parade postponed to Saturday due to weather",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T16:44:00.000Z",
-        "publisherUrl": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/"
-      }
-    ]
+    "articles": []
   },
   "country-ch": {
-    "updatedAt": "2026-11-27T16:15:28.204Z",
+    "updatedAt": "2026-11-27T16:15:27.562Z",
     "results": [
       {
         "feedId": "gn-ch",
@@ -33294,7 +33172,7 @@
     ]
   },
   "country-at": {
-    "updatedAt": "2026-11-27T16:15:28.204Z",
+    "updatedAt": "2026-11-27T16:15:27.562Z",
     "results": [
       {
         "feedId": "gn-at",
@@ -33425,7 +33303,7 @@
     ]
   },
   "country-se": {
-    "updatedAt": "2026-11-27T16:15:28.204Z",
+    "updatedAt": "2026-11-27T16:15:27.562Z",
     "results": [
       {
         "feedId": "gn-se",
@@ -33556,7 +33434,7 @@
     ]
   },
   "country-no": {
-    "updatedAt": "2026-11-27T16:15:28.205Z",
+    "updatedAt": "2026-11-27T16:15:27.563Z",
     "results": [
       {
         "feedId": "gn-no",
@@ -33687,7 +33565,7 @@
     ]
   },
   "country-dk": {
-    "updatedAt": "2026-11-27T16:15:28.205Z",
+    "updatedAt": "2026-11-27T16:15:27.563Z",
     "results": [
       {
         "feedId": "gn-dk",
@@ -33818,7 +33696,7 @@
     ]
   },
   "country-fi": {
-    "updatedAt": "2026-11-27T16:15:28.205Z",
+    "updatedAt": "2026-11-27T16:15:27.564Z",
     "results": [
       {
         "feedId": "gn-fi",
@@ -33949,7 +33827,7 @@
     ]
   },
   "country-pl": {
-    "updatedAt": "2026-11-27T16:15:28.205Z",
+    "updatedAt": "2026-11-27T16:15:27.564Z",
     "results": [
       {
         "feedId": "gn-pl",
@@ -34080,7 +33958,7 @@
     ]
   },
   "country-pt": {
-    "updatedAt": "2026-11-27T16:15:28.206Z",
+    "updatedAt": "2026-11-27T16:15:27.564Z",
     "results": [
       {
         "feedId": "gn-pt",
@@ -34211,7 +34089,7 @@
     ]
   },
   "country-gr": {
-    "updatedAt": "2026-11-27T16:15:28.206Z",
+    "updatedAt": "2026-11-27T16:15:27.565Z",
     "results": [
       {
         "feedId": "gn-gr",
@@ -34342,7 +34220,7 @@
     ]
   },
   "country-ua": {
-    "updatedAt": "2026-11-27T16:15:28.207Z",
+    "updatedAt": "2026-11-27T16:15:27.566Z",
     "results": [
       {
         "feedId": "gn-ua",
@@ -34447,18 +34325,19 @@
         "publisherUrl": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
       },
       {
-        "id": "art-9f2a5b87d472",
+        "id": "art-419d04c00c66",
         "title": "The controversial Ukrainian website deciding who counts as an enemy of state - The Kyiv Independent",
         "source": "The Kyiv Independent",
         "feedId": "kyiv-independent",
         "domain": "kyivindependent.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZmw2WllYSU1mOTQ2ZFBQWlkzT3pJenI3RnNQQmZQSWY2SjFtVzh3Z2x4YU1NS3RlNWY5VzlWdmk1Qi1YUGpGUWd5RFZOaE9nRVVnRmY3RmUtRTBoXzdjekE3c0FGaXJTSDdDQzFjUzR2RnJaTHBNTHA5UmxsUnV5alFuWDNvLVZEaURoNmJJVjFJNjRMcEZSdlFMOHFabUFUdHVndV9TWms?oc=5",
+        "url": "https://kyivindependent.com/the-controversial-ukrainian-website-deciding-who-counts-as-an-enemy-of-state/",
         "video": false,
         "summary": "The controversial Ukrainian website deciding who counts as an enemy of state The Kyiv Independent",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T09:20:08.000Z"
+        "pubDate": "2026-11-27T09:20:08.000Z",
+        "publisherUrl": "https://kyivindependent.com/the-controversial-ukrainian-website-deciding-who-counts-as-an-enemy-of-state/"
       },
       {
         "id": "art-a00b69fb9d61",
@@ -34598,7 +34477,7 @@
     ]
   },
   "country-br": {
-    "updatedAt": "2026-11-27T16:15:28.207Z",
+    "updatedAt": "2026-11-27T16:15:27.568Z",
     "results": [
       {
         "feedId": "gn-br",
@@ -34742,7 +34621,7 @@
     ]
   },
   "country-mx": {
-    "updatedAt": "2026-11-27T16:15:28.208Z",
+    "updatedAt": "2026-11-27T16:15:27.569Z",
     "results": [
       {
         "feedId": "gn-mx",
@@ -34999,7 +34878,7 @@
     ]
   },
   "country-ar": {
-    "updatedAt": "2026-11-27T16:15:28.214Z",
+    "updatedAt": "2026-11-27T16:15:27.578Z",
     "results": [
       {
         "feedId": "gn-ar",
@@ -35310,7 +35189,7 @@
     ]
   },
   "country-cl": {
-    "updatedAt": "2026-11-27T16:15:28.214Z",
+    "updatedAt": "2026-11-27T16:15:27.578Z",
     "results": [
       {
         "feedId": "gn-cl",
@@ -35441,7 +35320,7 @@
     ]
   },
   "country-co": {
-    "updatedAt": "2026-11-27T16:15:28.214Z",
+    "updatedAt": "2026-11-27T16:15:27.579Z",
     "results": [
       {
         "feedId": "gn-co",
@@ -35572,7 +35451,7 @@
     ]
   },
   "country-pe": {
-    "updatedAt": "2026-11-27T16:15:28.215Z",
+    "updatedAt": "2026-11-27T16:15:27.579Z",
     "results": [
       {
         "feedId": "gn-pe",
@@ -35703,7 +35582,7 @@
     ]
   },
   "country-af": {
-    "updatedAt": "2026-11-27T16:15:28.215Z",
+    "updatedAt": "2026-11-27T16:15:27.580Z",
     "results": [
       {
         "feedId": "gn-af",
@@ -35834,7 +35713,7 @@
     ]
   },
   "country-al": {
-    "updatedAt": "2026-11-27T16:15:28.215Z",
+    "updatedAt": "2026-11-27T16:15:27.580Z",
     "results": [
       {
         "feedId": "gn-al",
@@ -35965,7 +35844,7 @@
     ]
   },
   "country-dz": {
-    "updatedAt": "2026-11-27T16:15:28.215Z",
+    "updatedAt": "2026-11-27T16:15:27.580Z",
     "results": [
       {
         "feedId": "gn-dz",
@@ -36096,138 +35975,20 @@
     ]
   },
   "country-am": {
-    "updatedAt": "2026-11-27T16:15:28.216Z",
+    "updatedAt": "2026-11-27T16:15:27.580Z",
     "results": [
       {
         "feedId": "gn-am",
         "name": "Armenia · Google News",
-        "ok": true,
-        "count": 8
+        "ok": false,
+        "count": 0,
+        "error": "HTTP 429"
       }
     ],
-    "articles": [
-      {
-        "id": "art-5f5413f72423",
-        "title": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power - NBC News",
-        "source": "NBC News",
-        "feedId": "gn-am",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbHZDcGNBblpnR2Zwdy1RRWhBTmhpOTAwRWhNdDJHS1BXNDBsSFVHQml1eHU5NEVrUUM4bVpJN2xBMFdUTXp0VFYtcU1PYTVHS0lBb2ZuOWw3OGZRaEdDSlN3d1o2bU56Q2NBaXlVSTFWaS13bnp4NnhFQ3hhNW4zVlBvRHNUc2VEX2haa1hnQl9xdm5aX1J4RDVhQUk?oc=5",
-        "video": false,
-        "summary": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power NBC News Thanksgiving storm moves to Northeast, brining snow, winds, flooding The Weather Channel 'Huge' storm isn't over yet. Track power outages, forecast USA Today Thanksg",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T13:05:00.000Z"
-      },
-      {
-        "id": "art-3000003c0bb4",
-        "title": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill - Politico",
-        "source": "Politico",
-        "feedId": "gn-am",
-        "domain": "politico.com",
-        "url": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222",
-        "video": false,
-        "summary": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill Politico 70 Connecticut Democratic town chairs urge Murphy, Blumenthal to vote against Schumer Yahoo Progressive Democrats call on Warren, Markey to not support Schumer a",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T12:00:00.000Z",
-        "publisherUrl": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222"
-      },
-      {
-        "id": "art-9fffb1f5f227",
-        "title": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case - CNN",
-        "source": "CNN",
-        "feedId": "gn-am",
-        "domain": "cnn.com",
-        "url": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment",
-        "video": false,
-        "summary": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case CNN Essay | Has the AR-15 Become Too Big to Ban? WSJ Do Americans have a right to own assault rifles? The Economist Supreme Court defers decision on whether to dismiss major gun case SCOTU",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T11:00:16.000Z",
-        "publisherUrl": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment"
-      },
-      {
-        "id": "art-db0fda5754ea",
-        "title": "Democrats won full control of 6 new states. Here's what they plan to do - USA Today",
-        "source": "USA Today",
-        "feedId": "gn-am",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYURUU3RjQ1FxQi1BZmlnQmVrWTIxMm9tZ1ozQkY4Nk9YUVZGWkNvOUY2WnhHQnh5bkRldGRlNTB3NVJGVjN5dWROM1E0TlBDLTctWHhmZU9hTDAxdHN2Nk1vWXlNdTBVSHEzOE5teUVKMWgyYklRZjB1NGlFQ0pxRWMzTlVLTmczRXpCdVVaTllGWXZFWlFZUHpkY01zTjk5Q1VfWkZJdzVTZ2czcXBZdzhNZDNWdw?oc=5",
-        "video": false,
-        "summary": "Democrats won full control of 6 new states. Here's what they plan to do USA Today Democrats will struggle with a state-level revolution The Economist Go Local Or Go Home: Can Dems Take ‘State by State’ Doctrine Into 2028? Newsweek The next fight for democracy ",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T10:05:00.000Z"
-      },
-      {
-        "id": "art-8852bb397a39",
-        "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it - NPR",
-        "source": "NPR",
-        "feedId": "gn-am",
-        "domain": "npr.org",
-        "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
-        "video": false,
-        "summary": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it NPR The Supreme Court is about to take a closer look at Trump’s immigration agenda CNN Justices to consider whether noncitizens who lose asylum status may still obtain green card",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T10:00:00.000Z",
-        "publisherUrl": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
-      },
-      {
-        "id": "art-a00b69fb9d61",
-        "title": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says - AP News",
-        "source": "AP News",
-        "feedId": "gn-am",
-        "domain": "apnews.com",
-        "url": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b",
-        "video": false,
-        "summary": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says AP News See more headlines & perspectives on Google News",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T03:33:00.000Z",
-        "publisherUrl": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b"
-      },
-      {
-        "id": "art-9faffa2b582b",
-        "title": "Trump calls for investigation of GDP data released before midterms - USA Today",
-        "source": "USA Today",
-        "feedId": "gn-am",
-        "domain": "usatoday.com",
-        "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
-        "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T02:44:00.000Z",
-        "publisherUrl": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/"
-      },
-      {
-        "id": "art-238386efec7c",
-        "title": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" - CBS News",
-        "source": "CBS News",
-        "feedId": "gn-am",
-        "domain": "cbsnews.com",
-        "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
-        "video": false,
-        "summary": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" CBS News Photos: Macy’s Thanksgiving Day Parade History and Wacky Moments The New York Times Macy's Thanksgiving Day Parade postponed to Saturday due to weather",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-26T16:44:00.000Z",
-        "publisherUrl": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/"
-      }
-    ]
+    "articles": []
   },
   "country-az": {
-    "updatedAt": "2026-11-27T16:15:28.216Z",
+    "updatedAt": "2026-11-27T16:15:27.581Z",
     "results": [
       {
         "feedId": "gn-az",
@@ -36358,7 +36119,7 @@
     ]
   },
   "country-by": {
-    "updatedAt": "2026-11-27T16:15:28.216Z",
+    "updatedAt": "2026-11-27T16:15:27.581Z",
     "results": [
       {
         "feedId": "gn-by",
@@ -36489,7 +36250,7 @@
     ]
   },
   "country-bo": {
-    "updatedAt": "2026-11-27T16:15:28.216Z",
+    "updatedAt": "2026-11-27T16:15:27.582Z",
     "results": [
       {
         "feedId": "gn-bo",
@@ -36620,7 +36381,7 @@
     ]
   },
   "country-ba": {
-    "updatedAt": "2026-11-27T16:15:28.217Z",
+    "updatedAt": "2026-11-27T16:15:27.582Z",
     "results": [
       {
         "feedId": "gn-ba",
@@ -36751,7 +36512,7 @@
     ]
   },
   "country-kh": {
-    "updatedAt": "2026-11-27T16:15:28.217Z",
+    "updatedAt": "2026-11-27T16:15:27.582Z",
     "results": [
       {
         "feedId": "gn-kh",
@@ -36882,7 +36643,7 @@
     ]
   },
   "country-cm": {
-    "updatedAt": "2026-11-27T16:15:28.217Z",
+    "updatedAt": "2026-11-27T16:15:27.583Z",
     "results": [
       {
         "feedId": "gn-cm",
@@ -37013,7 +36774,7 @@
     ]
   },
   "country-hr": {
-    "updatedAt": "2026-11-27T16:15:28.217Z",
+    "updatedAt": "2026-11-27T16:15:27.583Z",
     "results": [
       {
         "feedId": "gn-hr",
@@ -37144,7 +36905,7 @@
     ]
   },
   "country-cu": {
-    "updatedAt": "2026-11-27T16:15:28.217Z",
+    "updatedAt": "2026-11-27T16:15:27.584Z",
     "results": [
       {
         "feedId": "gn-cu",
@@ -37275,7 +37036,7 @@
     ]
   },
   "country-cy": {
-    "updatedAt": "2026-11-27T16:15:28.218Z",
+    "updatedAt": "2026-11-27T16:15:27.584Z",
     "results": [
       {
         "feedId": "gn-cy",
@@ -37406,7 +37167,7 @@
     ]
   },
   "country-cz": {
-    "updatedAt": "2026-11-27T16:15:28.218Z",
+    "updatedAt": "2026-11-27T16:15:27.584Z",
     "results": [
       {
         "feedId": "gn-cz",
@@ -37512,7 +37273,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -37537,7 +37298,7 @@
     ]
   },
   "country-cd": {
-    "updatedAt": "2026-11-27T16:15:28.218Z",
+    "updatedAt": "2026-11-27T16:15:27.585Z",
     "results": [
       {
         "feedId": "gn-cd",
@@ -37668,7 +37429,7 @@
     ]
   },
   "country-do": {
-    "updatedAt": "2026-11-27T16:15:28.218Z",
+    "updatedAt": "2026-11-27T16:15:27.585Z",
     "results": [
       {
         "feedId": "gn-do",
@@ -37799,7 +37560,7 @@
     ]
   },
   "country-ec": {
-    "updatedAt": "2026-11-27T16:15:28.219Z",
+    "updatedAt": "2026-11-27T16:15:27.586Z",
     "results": [
       {
         "feedId": "gn-ec",
@@ -37905,7 +37666,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -37930,20 +37691,138 @@
     ]
   },
   "country-ee": {
-    "updatedAt": "2026-11-27T16:15:28.219Z",
+    "updatedAt": "2026-11-27T16:15:27.586Z",
     "results": [
       {
         "feedId": "gn-ee",
         "name": "Estonia · Google News",
-        "ok": false,
-        "count": 0,
-        "error": "HTTP 429"
+        "ok": true,
+        "count": 8
       }
     ],
-    "articles": []
+    "articles": [
+      {
+        "id": "art-5f5413f72423",
+        "title": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power - NBC News",
+        "source": "NBC News",
+        "feedId": "gn-ee",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbHZDcGNBblpnR2Zwdy1RRWhBTmhpOTAwRWhNdDJHS1BXNDBsSFVHQml1eHU5NEVrUUM4bVpJN2xBMFdUTXp0VFYtcU1PYTVHS0lBb2ZuOWw3OGZRaEdDSlN3d1o2bU56Q2NBaXlVSTFWaS13bnp4NnhFQ3hhNW4zVlBvRHNUc2VEX2haa1hnQl9xdm5aX1J4RDVhQUk?oc=5",
+        "video": false,
+        "summary": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power NBC News Thanksgiving storm moves to Northeast, brining snow, winds, flooding The Weather Channel 'Huge' storm isn't over yet. Track power outages, forecast USA Today Thanksg",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T13:05:00.000Z"
+      },
+      {
+        "id": "art-3000003c0bb4",
+        "title": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill - Politico",
+        "source": "Politico",
+        "feedId": "gn-ee",
+        "domain": "politico.com",
+        "url": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222",
+        "video": false,
+        "summary": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill Politico 70 Connecticut Democratic town chairs urge Murphy, Blumenthal to vote against Schumer Yahoo Progressive Democrats call on Warren, Markey to not support Schumer a",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T12:00:00.000Z",
+        "publisherUrl": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222"
+      },
+      {
+        "id": "art-9fffb1f5f227",
+        "title": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case - CNN",
+        "source": "CNN",
+        "feedId": "gn-ee",
+        "domain": "cnn.com",
+        "url": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment",
+        "video": false,
+        "summary": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case CNN Essay | Has the AR-15 Become Too Big to Ban? WSJ Do Americans have a right to own assault rifles? The Economist Supreme Court defers decision on whether to dismiss major gun case SCOTU",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T11:00:16.000Z",
+        "publisherUrl": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment"
+      },
+      {
+        "id": "art-db0fda5754ea",
+        "title": "Democrats won full control of 6 new states. Here's what they plan to do - USA Today",
+        "source": "USA Today",
+        "feedId": "gn-ee",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYURUU3RjQ1FxQi1BZmlnQmVrWTIxMm9tZ1ozQkY4Nk9YUVZGWkNvOUY2WnhHQnh5bkRldGRlNTB3NVJGVjN5dWROM1E0TlBDLTctWHhmZU9hTDAxdHN2Nk1vWXlNdTBVSHEzOE5teUVKMWgyYklRZjB1NGlFQ0pxRWMzTlVLTmczRXpCdVVaTllGWXZFWlFZUHpkY01zTjk5Q1VfWkZJdzVTZ2czcXBZdzhNZDNWdw?oc=5",
+        "video": false,
+        "summary": "Democrats won full control of 6 new states. Here's what they plan to do USA Today Democrats will struggle with a state-level revolution The Economist Go Local Or Go Home: Can Dems Take ‘State by State’ Doctrine Into 2028? Newsweek The next fight for democracy ",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T10:05:00.000Z"
+      },
+      {
+        "id": "art-8852bb397a39",
+        "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it - NPR",
+        "source": "NPR",
+        "feedId": "gn-ee",
+        "domain": "npr.org",
+        "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+        "video": false,
+        "summary": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it NPR The Supreme Court is about to take a closer look at Trump’s immigration agenda CNN Justices to consider whether noncitizens who lose asylum status may still obtain green card",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T10:00:00.000Z",
+        "publisherUrl": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
+      },
+      {
+        "id": "art-a00b69fb9d61",
+        "title": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says - AP News",
+        "source": "AP News",
+        "feedId": "gn-ee",
+        "domain": "apnews.com",
+        "url": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b",
+        "video": false,
+        "summary": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says AP News See more headlines & perspectives on Google News",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T03:33:00.000Z",
+        "publisherUrl": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b"
+      },
+      {
+        "id": "art-9faffa2b582b",
+        "title": "Trump calls for investigation of GDP data released before midterms - USA Today",
+        "source": "USA Today",
+        "feedId": "gn-ee",
+        "domain": "usatoday.com",
+        "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
+        "video": false,
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T02:44:00.000Z",
+        "publisherUrl": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/"
+      },
+      {
+        "id": "art-238386efec7c",
+        "title": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" - CBS News",
+        "source": "CBS News",
+        "feedId": "gn-ee",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
+        "video": false,
+        "summary": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" CBS News Photos: Macy’s Thanksgiving Day Parade History and Wacky Moments The New York Times Macy's Thanksgiving Day Parade postponed to Saturday due to weather",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T16:44:00.000Z",
+        "publisherUrl": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/"
+      }
+    ]
   },
   "country-et": {
-    "updatedAt": "2026-11-27T16:15:28.219Z",
+    "updatedAt": "2026-11-27T16:15:27.586Z",
     "results": [
       {
         "feedId": "gn-et",
@@ -38072,7 +37951,7 @@
     ]
   },
   "country-ge": {
-    "updatedAt": "2026-11-27T16:15:28.219Z",
+    "updatedAt": "2026-11-27T16:15:27.587Z",
     "results": [
       {
         "feedId": "gn-ge",
@@ -38178,7 +38057,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -38203,7 +38082,7 @@
     ]
   },
   "country-ht": {
-    "updatedAt": "2026-11-27T16:15:28.220Z",
+    "updatedAt": "2026-11-27T16:15:27.587Z",
     "results": [
       {
         "feedId": "gn-ht",
@@ -38309,7 +38188,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -38334,7 +38213,7 @@
     ]
   },
   "country-hu": {
-    "updatedAt": "2026-11-27T16:15:28.220Z",
+    "updatedAt": "2026-11-27T16:15:27.588Z",
     "results": [
       {
         "feedId": "gn-hu",
@@ -38440,7 +38319,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -38465,7 +38344,7 @@
     ]
   },
   "country-is": {
-    "updatedAt": "2026-11-27T16:15:28.220Z",
+    "updatedAt": "2026-11-27T16:15:27.588Z",
     "results": [
       {
         "feedId": "gn-is",
@@ -38571,7 +38450,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -38596,7 +38475,7 @@
     ]
   },
   "country-ir": {
-    "updatedAt": "2026-11-27T16:15:28.221Z",
+    "updatedAt": "2026-11-27T16:15:27.588Z",
     "results": [
       {
         "feedId": "gn-ir",
@@ -38702,7 +38581,7 @@
         "domain": "usatoday.com",
         "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
         "video": false,
-        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Waa kuwee",
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
         "doi": "",
         "section": "",
         "imageUrl": "",
@@ -38727,7 +38606,7 @@
     ]
   },
   "country-iq": {
-    "updatedAt": "2026-11-27T16:15:28.221Z",
+    "updatedAt": "2026-11-27T16:15:27.589Z",
     "results": [
       {
         "feedId": "gn-iq",
@@ -38858,7 +38737,7 @@
     ]
   },
   "country-jm": {
-    "updatedAt": "2026-11-27T16:15:28.221Z",
+    "updatedAt": "2026-11-27T16:15:27.589Z",
     "results": [
       {
         "feedId": "gn-jm",
@@ -38989,20 +38868,138 @@
     ]
   },
   "country-jo": {
-    "updatedAt": "2026-11-27T16:15:28.221Z",
+    "updatedAt": "2026-11-27T16:15:27.590Z",
     "results": [
       {
         "feedId": "gn-jo",
         "name": "Jordan · Google News",
-        "ok": false,
-        "count": 0,
-        "error": "The operation was aborted due to timeout"
+        "ok": true,
+        "count": 8
       }
     ],
-    "articles": []
+    "articles": [
+      {
+        "id": "art-5f5413f72423",
+        "title": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power - NBC News",
+        "source": "NBC News",
+        "feedId": "gn-jo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbHZDcGNBblpnR2Zwdy1RRWhBTmhpOTAwRWhNdDJHS1BXNDBsSFVHQml1eHU5NEVrUUM4bVpJN2xBMFdUTXp0VFYtcU1PYTVHS0lBb2ZuOWw3OGZRaEdDSlN3d1o2bU56Q2NBaXlVSTFWaS13bnp4NnhFQ3hhNW4zVlBvRHNUc2VEX2haa1hnQl9xdm5aX1J4RDVhQUk?oc=5",
+        "video": false,
+        "summary": "Severe storms upend Thanksgiving travel and leave hundreds of thousands without power NBC News Thanksgiving storm moves to Northeast, brining snow, winds, flooding The Weather Channel 'Huge' storm isn't over yet. Track power outages, forecast USA Today Thanksg",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T13:05:00.000Z"
+      },
+      {
+        "id": "art-3000003c0bb4",
+        "title": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill - Politico",
+        "source": "Politico",
+        "feedId": "gn-jo",
+        "domain": "politico.com",
+        "url": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222",
+        "video": false,
+        "summary": "‘Smack-dab in the center’: Elizabeth Warren is already driving the agenda on Capitol Hill Politico 70 Connecticut Democratic town chairs urge Murphy, Blumenthal to vote against Schumer Yahoo Progressive Democrats call on Warren, Markey to not support Schumer a",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T12:00:00.000Z",
+        "publisherUrl": "https://www.politico.com/news/2026/11/27/elizabeth-warren-senate-power-01184222"
+      },
+      {
+        "id": "art-9fffb1f5f227",
+        "title": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case - CNN",
+        "source": "CNN",
+        "feedId": "gn-jo",
+        "domain": "cnn.com",
+        "url": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment",
+        "video": false,
+        "summary": "Supreme Court to tackle AR-15 bans in blockbuster Second Amendment case CNN Essay | Has the AR-15 Become Too Big to Ban? WSJ Do Americans have a right to own assault rifles? The Economist Supreme Court defers decision on whether to dismiss major gun case SCOTU",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T11:00:16.000Z",
+        "publisherUrl": "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment"
+      },
+      {
+        "id": "art-db0fda5754ea",
+        "title": "Democrats won full control of 6 new states. Here's what they plan to do - USA Today",
+        "source": "USA Today",
+        "feedId": "gn-jo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYURUU3RjQ1FxQi1BZmlnQmVrWTIxMm9tZ1ozQkY4Nk9YUVZGWkNvOUY2WnhHQnh5bkRldGRlNTB3NVJGVjN5dWROM1E0TlBDLTctWHhmZU9hTDAxdHN2Nk1vWXlNdTBVSHEzOE5teUVKMWgyYklRZjB1NGlFQ0pxRWMzTlVLTmczRXpCdVVaTllGWXZFWlFZUHpkY01zTjk5Q1VfWkZJdzVTZ2czcXBZdzhNZDNWdw?oc=5",
+        "video": false,
+        "summary": "Democrats won full control of 6 new states. Here's what they plan to do USA Today Democrats will struggle with a state-level revolution The Economist Go Local Or Go Home: Can Dems Take ‘State by State’ Doctrine Into 2028? Newsweek The next fight for democracy ",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T10:05:00.000Z"
+      },
+      {
+        "id": "art-8852bb397a39",
+        "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it - NPR",
+        "source": "NPR",
+        "feedId": "gn-jo",
+        "domain": "npr.org",
+        "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+        "video": false,
+        "summary": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it NPR The Supreme Court is about to take a closer look at Trump’s immigration agenda CNN Justices to consider whether noncitizens who lose asylum status may still obtain green card",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T10:00:00.000Z",
+        "publisherUrl": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court"
+      },
+      {
+        "id": "art-a00b69fb9d61",
+        "title": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says - AP News",
+        "source": "AP News",
+        "feedId": "gn-jo",
+        "domain": "apnews.com",
+        "url": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b",
+        "video": false,
+        "summary": "Test results from samples taken after Iowa lead detonation are expected soon, EPA says AP News See more headlines & perspectives on Google News",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T03:33:00.000Z",
+        "publisherUrl": "https://apnews.com/article/iowa-detonation-samples-lead-bc178961a973a39834cbe249fd19183b"
+      },
+      {
+        "id": "art-9faffa2b582b",
+        "title": "Trump calls for investigation of GDP data released before midterms - USA Today",
+        "source": "USA Today",
+        "feedId": "gn-jo",
+        "domain": "usatoday.com",
+        "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/",
+        "video": false,
+        "summary": "Trump calls for investigation of GDP data released before midterms USA Today Trump unloads on critics in wide-ranging Thanksgiving Day rant The Hill Trump uses Thanksgiving message to lash out at political foes, immigrants, federal government Reuters Trump spe",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T02:44:00.000Z",
+        "publisherUrl": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-thanksgiving-grievances/92973864007/"
+      },
+      {
+        "id": "art-238386efec7c",
+        "title": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" - CBS News",
+        "source": "CBS News",
+        "feedId": "gn-jo",
+        "domain": "cbsnews.com",
+        "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
+        "video": false,
+        "summary": "Texas band raises $350,000 to stay for delayed Macy's Thanksgiving parade: \"Outpouring of kindness\" CBS News Photos: Macy’s Thanksgiving Day Parade History and Wacky Moments The New York Times Macy's Thanksgiving Day Parade postponed to Saturday due to weather",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T16:44:00.000Z",
+        "publisherUrl": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/"
+      }
+    ]
   },
   "country-kz": {
-    "updatedAt": "2026-11-27T16:15:28.221Z",
+    "updatedAt": "2026-11-27T16:15:27.590Z",
     "results": [
       {
         "feedId": "gn-kz",
@@ -39133,7 +39130,7 @@
     ]
   },
   "country-kg": {
-    "updatedAt": "2026-11-27T16:15:28.222Z",
+    "updatedAt": "2026-11-27T16:15:27.590Z",
     "results": [
       {
         "feedId": "gn-kg",
@@ -39264,7 +39261,7 @@
     ]
   },
   "country-lv": {
-    "updatedAt": "2026-11-27T16:15:28.222Z",
+    "updatedAt": "2026-11-27T16:15:27.591Z",
     "results": [
       {
         "feedId": "gn-lv",
@@ -39393,7 +39390,7 @@
     ]
   },
   "country-lb": {
-    "updatedAt": "2026-11-27T16:15:28.222Z",
+    "updatedAt": "2026-11-27T16:15:27.591Z",
     "results": [
       {
         "feedId": "gn-lb",
@@ -39524,7 +39521,7 @@
     ]
   },
   "country-ly": {
-    "updatedAt": "2026-11-27T16:15:28.222Z",
+    "updatedAt": "2026-11-27T16:15:27.592Z",
     "results": [
       {
         "feedId": "gn-ly",
@@ -39655,7 +39652,7 @@
     ]
   },
   "country-mt": {
-    "updatedAt": "2026-11-27T16:15:28.223Z",
+    "updatedAt": "2026-11-27T16:15:27.592Z",
     "results": [
       {
         "feedId": "gn-mt",
@@ -39786,7 +39783,7 @@
     ]
   },
   "country-ma": {
-    "updatedAt": "2026-11-27T16:15:28.223Z",
+    "updatedAt": "2026-11-27T16:15:27.593Z",
     "results": [
       {
         "feedId": "gn-ma",
@@ -39917,7 +39914,7 @@
     ]
   },
   "country-mm": {
-    "updatedAt": "2026-11-27T16:15:28.223Z",
+    "updatedAt": "2026-11-27T16:15:27.593Z",
     "results": [
       {
         "feedId": "gn-mm",
@@ -40048,7 +40045,7 @@
     ]
   },
   "country-na": {
-    "updatedAt": "2026-11-27T16:15:28.223Z",
+    "updatedAt": "2026-11-27T16:15:27.593Z",
     "results": [
       {
         "feedId": "gn-na",
@@ -40178,7 +40175,7 @@
     ]
   },
   "country-kp": {
-    "updatedAt": "2026-11-27T16:15:28.224Z",
+    "updatedAt": "2026-11-27T16:15:27.594Z",
     "results": [
       {
         "feedId": "gn-kp",
@@ -40309,7 +40306,7 @@
     ]
   },
   "country-ps": {
-    "updatedAt": "2026-11-27T16:15:28.224Z",
+    "updatedAt": "2026-11-27T16:15:27.594Z",
     "results": [
       {
         "feedId": "gn-ps",
@@ -40440,7 +40437,7 @@
     ]
   },
   "country-py": {
-    "updatedAt": "2026-11-27T16:15:28.224Z",
+    "updatedAt": "2026-11-27T16:15:27.594Z",
     "results": [
       {
         "feedId": "gn-py",
@@ -40571,7 +40568,7 @@
     ]
   },
   "country-pr": {
-    "updatedAt": "2026-11-27T16:15:28.224Z",
+    "updatedAt": "2026-11-27T16:15:27.595Z",
     "results": [
       {
         "feedId": "gn-pr",
@@ -40702,7 +40699,7 @@
     ]
   },
   "country-qa": {
-    "updatedAt": "2026-11-27T16:15:28.225Z",
+    "updatedAt": "2026-11-27T16:15:27.595Z",
     "results": [
       {
         "feedId": "gn-qa",
@@ -40833,7 +40830,7 @@
     ]
   },
   "country-ro": {
-    "updatedAt": "2026-11-27T16:15:28.225Z",
+    "updatedAt": "2026-11-27T16:15:27.596Z",
     "results": [
       {
         "feedId": "gn-ro",
@@ -40964,7 +40961,7 @@
     ]
   },
   "country-rw": {
-    "updatedAt": "2026-11-27T16:15:28.225Z",
+    "updatedAt": "2026-11-27T16:15:27.596Z",
     "results": [
       {
         "feedId": "gn-rw",
@@ -41095,7 +41092,7 @@
     ]
   },
   "country-sn": {
-    "updatedAt": "2026-11-27T16:15:28.225Z",
+    "updatedAt": "2026-11-27T16:15:27.596Z",
     "results": [
       {
         "feedId": "gn-sn",
@@ -41226,7 +41223,7 @@
     ]
   },
   "country-rs": {
-    "updatedAt": "2026-11-27T16:15:28.226Z",
+    "updatedAt": "2026-11-27T16:15:27.597Z",
     "results": [
       {
         "feedId": "gn-rs",
@@ -41357,7 +41354,7 @@
     ]
   },
   "country-so": {
-    "updatedAt": "2026-11-27T16:15:28.226Z",
+    "updatedAt": "2026-11-27T16:15:27.597Z",
     "results": [
       {
         "feedId": "gn-so",
@@ -41488,7 +41485,7 @@
     ]
   },
   "country-ss": {
-    "updatedAt": "2026-11-27T16:15:28.226Z",
+    "updatedAt": "2026-11-27T16:15:27.598Z",
     "results": [
       {
         "feedId": "gn-ss",
@@ -41619,7 +41616,7 @@
     ]
   },
   "country-sd": {
-    "updatedAt": "2026-11-27T16:15:28.226Z",
+    "updatedAt": "2026-11-27T16:15:27.598Z",
     "results": [
       {
         "feedId": "gn-sd",
@@ -41750,7 +41747,7 @@
     ]
   },
   "country-sy": {
-    "updatedAt": "2026-11-27T16:15:28.227Z",
+    "updatedAt": "2026-11-27T16:15:27.598Z",
     "results": [
       {
         "feedId": "gn-sy",
@@ -41881,7 +41878,7 @@
     ]
   },
   "country-tz": {
-    "updatedAt": "2026-11-27T16:15:28.227Z",
+    "updatedAt": "2026-11-27T16:15:27.599Z",
     "results": [
       {
         "feedId": "gn-tz",
@@ -42009,7 +42006,7 @@
     ]
   },
   "country-tt": {
-    "updatedAt": "2026-11-27T16:15:28.227Z",
+    "updatedAt": "2026-11-27T16:15:27.599Z",
     "results": [
       {
         "feedId": "gn-tt",
@@ -42140,7 +42137,7 @@
     ]
   },
   "country-tn": {
-    "updatedAt": "2026-11-27T16:15:28.227Z",
+    "updatedAt": "2026-11-27T16:15:27.600Z",
     "results": [
       {
         "feedId": "gn-tn",
@@ -42271,7 +42268,7 @@
     ]
   },
   "country-ug": {
-    "updatedAt": "2026-11-27T16:15:28.228Z",
+    "updatedAt": "2026-11-27T16:15:27.600Z",
     "results": [
       {
         "feedId": "gn-ug",
@@ -42400,7 +42397,7 @@
     ]
   },
   "country-uy": {
-    "updatedAt": "2026-11-27T16:15:28.228Z",
+    "updatedAt": "2026-11-27T16:15:27.600Z",
     "results": [
       {
         "feedId": "gn-uy",
@@ -42531,7 +42528,7 @@
     ]
   },
   "country-uz": {
-    "updatedAt": "2026-11-27T16:15:28.228Z",
+    "updatedAt": "2026-11-27T16:15:27.601Z",
     "results": [
       {
         "feedId": "gn-uz",
@@ -42662,7 +42659,7 @@
     ]
   },
   "country-ve": {
-    "updatedAt": "2026-11-27T16:15:28.228Z",
+    "updatedAt": "2026-11-27T16:15:27.601Z",
     "results": [
       {
         "feedId": "gn-ve",
@@ -42793,7 +42790,7 @@
     ]
   },
   "country-ye": {
-    "updatedAt": "2026-11-27T16:15:28.229Z",
+    "updatedAt": "2026-11-27T16:15:27.602Z",
     "results": [
       {
         "feedId": "gn-ye",
@@ -42924,7 +42921,7 @@
     ]
   },
   "country-zm": {
-    "updatedAt": "2026-11-27T16:15:28.229Z",
+    "updatedAt": "2026-11-27T16:15:27.602Z",
     "results": [
       {
         "feedId": "gn-zm",
@@ -43055,7 +43052,7 @@
     ]
   },
   "country-zw": {
-    "updatedAt": "2026-11-27T16:15:28.229Z",
+    "updatedAt": "2026-11-27T16:15:27.602Z",
     "results": [
       {
         "feedId": "gn-zw",
