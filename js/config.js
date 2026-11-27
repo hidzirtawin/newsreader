@@ -220,6 +220,17 @@ export const DEFAULT_RULES = {
   'theinformation.com': { strategy: 'archive_is', paywall: 'hard', label: 'The Information' },
 };
 
+// Publishers that block full-text readers. They remain available in the Briefs
+// desk, but are kept out of the main feeds unless the reader opts in.
+export const BRIEF_ONLY_DOMAINS = [
+  'nytimes.com',
+  'bloomberg.com',
+  'ft.com',
+  'wsj.com',
+  'heraldsun.com.au',
+  'theaustralian.com.au',
+];
+
 export const FEEDS = [
   { id: 'bbc-news', name: 'BBC News', domain: 'bbc.com', group: 'General', url: 'https://feeds.bbci.co.uk/news/rss.xml' },
   { id: 'bbc-world', name: 'BBC World', domain: 'bbc.com', group: 'World', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
@@ -443,6 +454,13 @@ export const TOPICS = [
     title: 'The Briefing',
     feeds: ['reuters', 'ap', 'cnn', 'washington-post', 'nyt-world', 'nyt-politics', 'nyt-business', 'economist-latest', 'ft-home', 'wsj-world', 'bloomberg-markets', 'the-times', 'telegraph', 'independent', 'herald-sun', 'the-australian', 'abc-us'],
   },
+  {
+    id: 'briefs',
+    label: 'BRIEFS',
+    title: 'Publisher Briefs',
+    feeds: ['nyt-world', 'nyt-us', 'nyt-politics', 'nyt-business', 'bloomberg-markets', 'bloomberg-politics', 'ft-home', 'wsj-world', 'herald-sun', 'the-australian'],
+  },
+
   { id: 'radio', label: 'RADIO', title: 'Live Radio', type: 'radio', feeds: [] },
   { id: 'podcasts', label: 'PODCASTS', title: 'Podcasts', type: 'podcasts', feeds: [] },
   {

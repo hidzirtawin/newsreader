@@ -50,6 +50,7 @@ const DEFAULT_SETTINGS = {
   disabledFeeds: [],
   autoRefresh: true,
   refreshMinutes: 5,
+  showBriefs: false,
 };
 
 export function getSettings() {

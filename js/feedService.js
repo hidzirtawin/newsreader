@@ -8,6 +8,7 @@
  */
 
 import {
+  BRIEF_ONLY_DOMAINS,
   FEED_LIMIT,
   TOPIC_ARTICLE_LIMIT,
   getFeedById,
@@ -248,8 +249,14 @@ export function buildStrategyUrl(strategy, originalUrl) {
   }
 }
 
+export function isBriefOnlyDomain(domainInput) {
+  const domain = normalizeDomain(domainInput);
+  return BRIEF_ONLY_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`));
+}
+
 export function applyRule(article) {
   const rule = getDomainRule(article.domain);
+  const briefOnly = isBriefOnlyDomain(article.domain);
   const base = {
     ...article,
     rule,
@@ -267,8 +274,9 @@ export function applyRule(article) {
     return {
       ...base,
       strategy: 'direct',
-      status: 'free',
-      badge: 'Open',
+      status: briefOnly ? 'bypassed' : 'free',
+      badge: briefOnly ? 'Brief' : 'Open',
+      briefOnly,
       targetUrl: article.url,
       locked: false,
     };
@@ -306,6 +314,12 @@ export function applyRule(article) {
   } else if (rule.strategy === 'reader') {
     base.status = 'bypassed';
     base.badge = 'Reader';
+  }
+
+  if (briefOnly && base.status !== 'locked') {
+    base.briefOnly = true;
+    base.status = 'bypassed';
+    base.badge = 'Brief';
   }
 
   return base;

@@ -629,7 +629,8 @@ async function main() {
   await writeJson(path.join(DATA, 'news.json'), snapshot);
 
   const podcastShows = [];
-  for (const show of PODCAST_SHOWS) {
+  const skipPodcasts = process.env.SKIP_PODCASTS === '1' || process.argv.includes('--skip-podcasts');
+  for (const show of skipPodcasts ? [] : PODCAST_SHOWS) {
     try {
       const response = await fetch(show.feedUrl, {
         headers: { 'User-Agent': USER_AGENT, Accept: '*/*' },
@@ -645,10 +646,12 @@ async function main() {
       podcastShows.push({ ...show, episodes: [] });
     }
   }
-  await writeJson(path.join(DATA, 'podcasts.json'), {
-    updatedAt: new Date().toISOString(),
-    shows: podcastShows,
-  });
+  if (!skipPodcasts) {
+    await writeJson(path.join(DATA, 'podcasts.json'), {
+      updatedAt: new Date().toISOString(),
+      shows: podcastShows,
+    });
+  }
 
   const withImages = Object.values(snapshot).flatMap((entry) => entry.articles).filter((article) => article.imageUrl).length;
   const total = Object.values(snapshot).flatMap((entry) => entry.articles).length;

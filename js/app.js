@@ -56,6 +56,7 @@ const els = {
   openQuickUrlBtn: $('#openQuickUrlBtn'),
   hideLockedCheckbox: $('#hideLockedCheckbox'),
   autoRefreshCheckbox: $('#autoRefreshCheckbox'),
+  showBriefsCheckbox: $('#showBriefsCheckbox'),
   newStoriesBtn: $('#newStoriesBtn'),
   openRulesBtn: $('#openRulesBtn'),
   openCustomizeBtn: $('#openCustomizeBtn'),
@@ -272,6 +273,7 @@ function faviconMarkup(article) {
 }
 
 function badgeClass(article) {
+  if (article.briefOnly) return 'badge-brief';
   if (article.status === 'locked') return 'badge-locked';
   if (article.status === 'checking') return 'badge-checking';
   if (article.status === 'bypassed') return 'badge-bypassed';
@@ -1237,15 +1239,26 @@ function renderFeed() {
   hideFeedStates();
   setRefreshSpinning(false);
 
-  const curated = curateArticles(state.articles, state.sort);
+  const allCurated = curateArticles(state.articles, state.sort);
+  const settings = getSettings();
+  const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
+  const hadBriefs = allCurated.some((article) => article.briefOnly);
+  const curated = showBriefs ? allCurated : allCurated.filter((article) => !article.briefOnly);
   const visible = state.hideLocked ? curated.filter((article) => article.status !== 'locked') : curated;
 
   if (!curated.length) {
     els.feedList.hidden = false;
-    els.feedList.innerHTML = `<div class="state-container">
-      <h2 class="state-title">Nothing to show yet</h2>
-      <p class="state-desc">${esc(state.emptyReason || 'No recent stories were found for this topic.')}</p>
-    </div>`;
+    if (hadBriefs && !showBriefs) {
+      els.feedList.innerHTML = `<div class="state-container">
+        <h2 class="state-title">Only publisher briefs here</h2>
+        <p class="state-desc">These publishers block full-text reading. Open the <strong>Briefs</strong> desk to read them, or enable <strong>Show briefs in all feeds</strong> from the menu.</p>
+      </div>`;
+    } else {
+      els.feedList.innerHTML = `<div class="state-container">
+        <h2 class="state-title">Nothing to show yet</h2>
+        <p class="state-desc">${esc(state.emptyReason || 'No recent stories were found for this topic.')}</p>
+      </div>`;
+    }
     els.feedUpdateStatus.hidden = true;
     els.feedSourcesDetails.hidden = true;
     return;
@@ -2387,6 +2400,15 @@ els.autoRefreshCheckbox.addEventListener('change', () => {
   showToast(enabled ? 'Auto-refresh on. Checking for new stories every 5 minutes.' : 'Auto-refresh off. Use Refresh headlines to check manually.');
 });
 
+els.showBriefsCheckbox.addEventListener('change', () => {
+  saveSettings({ showBriefs: els.showBriefsCheckbox.checked });
+  renderFeed();
+  updateStatusLine();
+  showToast(els.showBriefsCheckbox.checked
+    ? 'Publisher briefs are now included in every feed.'
+    : 'Publisher briefs are now confined to the Briefs desk.');
+});
+
 els.newStoriesBtn.addEventListener('click', applyPendingStories);
 
 /* ------------------------------------------------------------------ */
@@ -3166,6 +3188,7 @@ function boot() {
   els.feedSortSelect.value = state.sort;
   els.hideLockedCheckbox.checked = state.hideLocked;
   els.autoRefreshCheckbox.checked = Boolean(settings.autoRefresh);
+  els.showBriefsCheckbox.checked = Boolean(settings.showBriefs);
   els.selectRuleStrategy.innerHTML = strategyOptions('direct');
   fillPresets();
   scheduleAutoRefresh();

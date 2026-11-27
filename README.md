@@ -12,18 +12,20 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Strictly latest-first** — the lead story and every card below it are ordered by publication time, newest at the top and older stories at the bottom. There is no editorial reshuffling.
 - **Magazine feed** — lead story, two-column features, compact rows and mid-feed banners. Stories without photos fall back to clean text layouts.
 - **Auto-refresh** — every five minutes the app quietly checks a watch set of high-frequency wires and mastheads. New stories appear in a banner at the top; click it to bring the fresh edition forward without losing your place.
-- **Briefing desk** — Reuters, AP, NYT, The Economist, Financial Times, WSJ, Bloomberg, CNN, The Washington Post, The Times, The Telegraph, The Independent, ABC News US, The Australian and Herald Sun in one front page.
+- **Briefing desk** — Reuters, AP, CNN, The Washington Post, The Economist, The Times, The Telegraph, The Independent and ABC News US in one readable front page. Hard-paywalled titles sit in the Briefs desk.
 - **Regional editions** — Top Stories, Latest, Briefing, World, US, UK, Europe, Middle East, Africa, Latin America, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Science, Entertainment, Politics, Finance and Lifestyle.
 - **Singapore desk** — The Straits Times (Singapore, World, Asia, Business feeds), CNA, Mothership and Berita Harian Singapore.
 - **Malaysia desk** — Berita Harian, New Straits Times, Free Malaysia Today, Utusan Malaysia and Kosmo!.
 - **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Australian and Herald Sun.
 - **China desk** — South China Morning Post, BBC China, CGTN, Global Times, People's Daily and Sixth Tone.
 - **Russia desk** — The Moscow Times and Meduza (independent) alongside TASS and RT (state-aligned) so readers can compare official and independent accounts.
+- **Briefs desk** — hard-paywalled publishers (NYT, Bloomberg, FT, WSJ, Herald Sun, The Australian) are moved into a clearly labelled Briefs desk so the main feeds contain only stories that open properly. A menu toggle can show briefs in every feed.
 - **Africa and Latin America desks** — BBC Africa, Premium Times, BBC Latin America, Folha de S.Paulo, O Globo, Clarín and La Nación.
 - **Sports desk** — a dedicated sub-navigation for All Sport, Football, Cricket, Rugby League, Rugby Union, Boxing, MMA, Tennis, Formula 1, Golf, NBA and NFL, using BBC Sport, The Guardian, ESPNcricinfo, BoxingScene, Sherdog, Autosport and CBS Sports.
 - **Wider world** — BBC, Reuters, AP, Al Jazeera, CNN, The Washington Post, NBC News, Fox News, USA Today, CBS, LA Times, NPR, CNBC, Bloomberg, The Guardian, Sky News, The Economist, SCMP, Nikkei Asia, The Japan Times, Yonhap, The Diplomat, RNZ, The Times of India, The Indian Express, NDTV, Mint, Arab News, The Jerusalem Post, Der Spiegel, Die Zeit, Corriere della Sera, la Repubblica, El Mundo, El País, Politico Europe, EUobserver, Foreign Policy, Foreign Affairs, Premium Times, Folha de S.Paulo, O Globo, Clarín, La Nación and more.
 - **Live radio** — 15 news/current-affairs stations from Malaysia, Singapore, Australia, the UK and the US, with a sticky player while you browse.
 - **Podcasts** — a dropdown of 16 popular shows, including *Keluar Sekejap*, *The Daily*, *The Intelligence*, *WSJ What’s News*, *FT News Briefing*, *Big Take*, BBC *Global News Podcast*, *The News Agents*, *Up First*, *ABC News Daily*, *The Decibel*, *ST News Headlines*, *CNA Deep Dive*, *3 Things*, *The Rest Is Politics* and *The Daily Aus*, with a full audio player (seek, ±15s, speed, volume).
+- **Transparent hard-paywall handling** — no blocked or paywalled page is ever opened. If a publication offers no readable or archived copy, Tawin Newsreader shows its publisher brief instead.
 - **More from any publisher** — tap a source name on a story or the *Latest* button in the source library to open that publisher’s latest-first edition inside the app.
 - **Canada desk** — CBC News, CBC Canada, CBC World and The Globe and Mail.
 - **Reading rules** — per-publisher routing through direct links, SMRY, RemovePaywall, UnWall, Freedium, Jina Reader, Archive.is or the Wayback Machine.

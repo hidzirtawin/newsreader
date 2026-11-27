@@ -3585,3 +3585,9 @@ body.has-audio-dock .reader-service-frame {
   color: var(--primary);
   border-color: var(--primary);
 }
+
+.badge-brief {
+  background-color: var(--badge-checking-bg);
+  color: var(--badge-checking-text);
+  border-color: var(--badge-checking-border);
+}
