@@ -1444,10 +1444,9 @@ function renderMarketPanel(topic) {
   els.marketPanel.innerHTML = `<div class="mkt">
     <div class="mkh"><b>Markets</b><span class="mks" id="marketStatus"></span><span class="mkt-credit">Data by TradingView</span></div>
     <div class="mkw" id="marketTicker"></div>
-    <button type="button" class="mkmore" id="marketMoreBtn" aria-expanded="false" aria-controls="marketMore">Top movers &amp; economic calendar ▾</button>
+    <button type="button" class="mkmore" id="marketMoreBtn" aria-expanded="false" aria-controls="marketMore">Top movers &amp; crypto ▾</button>
     <div class="mkx" id="marketMore" hidden>
       <div><h3>Biggest movers, US stocks</h3><div id="marketMovers"></div></div>
-      <div><h3>Economic calendar, US</h3><div id="marketEvents"></div></div>
       <div class="mkc"><h3>Crypto</h3><div id="marketCrypto"></div></div>
     </div>
   </div>`;
@@ -1469,7 +1468,7 @@ function renderMarketPanel(topic) {
     const open = more.hidden;
     more.hidden = !open;
     button.setAttribute('aria-expanded', String(open));
-    button.textContent = open ? 'Hide movers & calendar ▴' : 'Top movers & economic calendar ▾';
+    button.textContent = open ? 'Hide movers & crypto ▴' : 'Top movers & crypto ▾';
     if (open && !state.marketMoversLoaded) {
       state.marketMoversLoaded = true;
       createTradingViewWidget(document.getElementById('marketMovers'), 'hotlists', {
@@ -1483,15 +1482,6 @@ function renderMarketPanel(topic) {
         showFloatingTooltip: false,
         width: '100%',
         height: 420,
-      });
-      createTradingViewWidget(document.getElementById('marketEvents'), 'events', {
-        colorTheme: theme,
-        isTransparent: true,
-        width: '100%',
-        height: 470,
-        locale: 'en',
-        importanceFilter: '0,1',
-        countryFilter: 'us',
       });
       createTradingViewWidget(document.getElementById('marketCrypto'), 'market-quotes', {
         width: '100%',
