@@ -19,6 +19,7 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 - **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Australian and Herald Sun.
 - **China desk** — South China Morning Post, BBC China, CGTN, Global Times, People's Daily and Sixth Tone.
 - **Russia desk** — The Moscow Times and Meduza (independent) alongside TASS and RT (state-aligned) so readers can compare official and independent accounts.
+- **Sports desk** — a dedicated sub-navigation for All Sport, Football, Cricket, Rugby League, Rugby Union, Boxing, MMA, Tennis, Formula 1, Golf, NBA and NFL, using BBC Sport, The Guardian, ESPNcricinfo, BoxingScene, Sherdog, Autosport and CBS Sports.
 - **Wider world** — BBC, Reuters, AP, Al Jazeera, CNN, The Washington Post, NBC News, Fox News, USA Today, CBS, LA Times, NPR, CNBC, Bloomberg, The Guardian, Sky News, The Economist, SCMP, Nikkei Asia, The Japan Times, The Times of India, The Indian Express, Arab News, The Jerusalem Post, Taipei Times, El País and more.
 - **Live radio** — 15 news/current-affairs stations from Malaysia, Singapore, Australia, the UK and the US, with a sticky player while you browse.
 - **Podcasts** — *Keluar Sekejap* episodes from the show's official feed, with a full audio player (seek, ±15s, speed, volume).

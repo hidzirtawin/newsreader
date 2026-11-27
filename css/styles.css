@@ -3025,3 +3025,55 @@ body.has-audio-dock {
     font-size: 0.68rem;
   }
 }
+
+/* Sports sub-navigation */
+.sports-subnav {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 10px 0 11px;
+  border-bottom: 1px solid var(--border-color);
+  scrollbar-width: none;
+}
+
+.sports-subnav::-webkit-scrollbar {
+  display: none;
+}
+
+.sports-pill {
+  flex-shrink: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 5px 9px;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.sports-pill:hover {
+  border-color: var(--highlight-green);
+  color: var(--text-primary);
+}
+
+.sports-pill.active {
+  background: var(--highlight-green);
+  border-color: var(--highlight-green);
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .sports-subnav {
+    padding: 8px 0 9px;
+    gap: 6px;
+  }
+
+  .sports-pill {
+    font-size: 0.6rem;
+    padding: 4px 7px;
+  }
+}

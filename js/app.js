@@ -64,6 +64,7 @@ const els = {
   installAppBtn: $('#installAppBtn'),
 
   topicsBar: $('#topicsBar'),
+  sportsSubnav: $('#sportsSubnav'),
   editorialHeading: $('#editorialHeading'),
   feedSortSelect: $('#feedSortSelect'),
   feedStatus: $('#feedStatus'),
@@ -481,8 +482,29 @@ function renderTopicsBar() {
   els.topicsBar.innerHTML = topics.map((topic) => (
     `<button type="button" class="topic-pill${topic.id === state.topicId ? ' active' : ''}" data-topic="${esc(topic.id)}">${esc(topic.label)}</button>`
   )).join('');
-  if (!topics.some((topic) => topic.id === state.topicId)) {
+  const current = getTopic(state.topicId);
+  if (!current?.sports && !topics.some((topic) => topic.id === state.topicId)) {
     loadTopic(topics[0].id);
+  }
+}
+
+function renderSportsNav(topic = null) {
+  const current = topic || getTopic(state.topicId);
+  const show = current?.id === 'sports' || Boolean(current?.sports);
+  if (!show) {
+    els.sportsSubnav.hidden = true;
+    els.sportsSubnav.innerHTML = '';
+    return;
+  }
+  const items = getAllTopics().filter((item) => item.id === 'sports' || item.sports);
+  els.sportsSubnav.innerHTML = items.map((item) => (
+    `<button type="button" class="sports-pill${item.id === current.id ? ' active' : ''}" data-sport-topic="${esc(item.id)}">${esc(item.id === 'sports' ? 'All sport' : item.label)}</button>`
+  )).join('');
+  els.sportsSubnav.hidden = false;
+  const active = els.sportsSubnav.querySelector('.sports-pill.active');
+  if (active) {
+    const left = active.offsetLeft - (els.sportsSubnav.clientWidth / 2) + (active.clientWidth / 2);
+    els.sportsSubnav.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
   }
 }
 
@@ -493,6 +515,7 @@ function updateTopicHeader(topic) {
   els.feedSortSelect.value = state.sort;
   const listen = topic.type === 'radio' || topic.type === 'podcasts';
   els.editorialActions.hidden = listen;
+  renderSportsNav(topic);
   const active = els.topicsBar.querySelector('.topic-pill.active');
   if (active) {
     const left = active.offsetLeft - (els.topicsBar.clientWidth / 2) + (active.clientWidth / 2);
@@ -504,7 +527,11 @@ function chooseInitialTopic() {
   const topics = getVisibleTopics();
   if (!topics.length) return '';
   const saved = safeGet('newsreader_last_topic');
-  if (saved && topics.some((topic) => topic.id === saved)) return saved;
+  if (saved) {
+    if (topics.some((topic) => topic.id === saved)) return saved;
+    const savedTopic = getTopic(saved);
+    if (savedTopic?.sports) return saved;
+  }
   return topics[0].id;
 }
 
@@ -1553,6 +1580,12 @@ els.topicsBar.addEventListener('click', (event) => {
   loadTopic(pill.dataset.topic);
 });
 
+els.sportsSubnav.addEventListener('click', (event) => {
+  const pill = event.target.closest('[data-sport-topic]');
+  if (!pill || pill.dataset.sportTopic === state.topicId) return;
+  loadTopic(pill.dataset.sportTopic);
+});
+
 els.feedSortSelect.addEventListener('change', () => {
   state.sort = els.feedSortSelect.value === 'oldest' ? 'oldest' : 'newest';
   saveSettings({ sort: state.sort });
@@ -1749,9 +1782,11 @@ function orderedAllTopics() {
   const ordered = [];
   for (const id of settings.topicOrder) {
     const topic = byId.get(id);
-    if (topic && !ordered.includes(topic)) ordered.push(topic);
+    if (topic && !topic.sports && !ordered.includes(topic)) ordered.push(topic);
   }
-  for (const topic of all) if (!ordered.includes(topic)) ordered.push(topic);
+  for (const topic of all) {
+    if (!topic.sports && !ordered.includes(topic)) ordered.push(topic);
+  }
   return ordered;
 }
 
