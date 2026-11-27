@@ -3863,7 +3863,8 @@ function openCustomize(panel = 'topics') {
 
 els.openCustomizeBtn.addEventListener('click', () => openCustomize('topics'));
 els.closeCustomizeBtn.addEventListener('click', () => closeModal(els.customizeModal));
-els.reloadAppBtn?.addEventListener('click', reloadApp);
+// The Reload app button is wired in index.html so it also works when the
+// cached app.js is older than the page.
 els.closeCustomizeDoneBtn.addEventListener('click', () => closeModal(els.customizeModal));
 
 els.tabButtons.forEach((button) => {
