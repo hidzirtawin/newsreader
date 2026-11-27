@@ -1025,7 +1025,7 @@ function renderReaderService(article) {
   const preview = cleanSummary(article.summary) ? `<div class="reader-preview">${textToParagraphs(cleanSummary(article.summary))}</div>` : '';
   els.readerBody.innerHTML = `${preview}<div class="reader-service-shell">
     <div class="reader-service-bar" id="readerServiceStatus">Loading full text</div>
-    <iframe id="readerServiceFrame" name="readerServiceFrame" title="Article reader" sandbox="allow-same-origin" style="display:none"></iframe>
+    <iframe id="readerServiceFrame" name="readerServiceFrame" class="reader-service-iframe" title="Article reader" sandbox="allow-same-origin"></iframe>
     <form id="readerServiceForm" method="POST" action="./reader-frame" target="readerServiceFrame" hidden>
       <input type="hidden" name="url" value="${esc(article.url)}">
       <input type="hidden" name="provider" value="${provider}">
@@ -1084,7 +1084,7 @@ function renderReaderService(article) {
   });
 
   form.submit();
-  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), provider === 'wallhop' ? 12000 : 20000);
+  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), provider === 'wallhop' ? 28000 : 35000);
 }
 
 
@@ -1139,6 +1139,25 @@ function renderReaderFallback(article, extraction, { checking = false } = {}) {
   els.readerRetryBtn.hidden = checking;
 }
 
+async function waitForReaderController(timeoutMs = 3500) {
+  if (navigator.serviceWorker?.controller) return true;
+  if (!('serviceWorker' in navigator)) return false;
+  try {
+    await Promise.race([
+      navigator.serviceWorker.ready,
+      new Promise((resolve) => setTimeout(resolve, timeoutMs)),
+    ]);
+  } catch { /* service worker unavailable */ }
+  if (navigator.serviceWorker.controller) return true;
+  return new Promise((resolve) => {
+    const timer = setTimeout(() => resolve(false), timeoutMs);
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      clearTimeout(timer);
+      resolve(true);
+    }, { once: true });
+  });
+}
+
 async function loadReaderContent(article, { archiveOnly = false } = {}) {
   const token = ++state.readerToken;
   const resolved = resolveReaderArticle(article);
@@ -1151,8 +1170,9 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
   const wallhop = isWallhopDomain(resolved.domain || resolved.url);
   if (!archiveOnly && (wallhop || canEmbedReaderService(resolved.url))) {
     try {
-      if (navigator.serviceWorker?.controller) renderReaderService(resolved);
-      else renderReaderPlainService(resolved);
+      const hasController = await waitForReaderController();
+      if (hasController) renderReaderService(resolved);
+      else renderReaderFallback(resolved, null, { checking: false });
     } catch {
       renderReaderFallback(resolved, null, { checking: false });
     }
