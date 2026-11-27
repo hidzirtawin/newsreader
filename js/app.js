@@ -856,7 +856,7 @@ function assessExtraction(extraction) {
   const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
   return {
     usable: length >= 220 && !blocked,
-    good: length >= 900 && !blocked,
+    good: length >= 600 && !blocked,
     blocked,
     length,
   };
