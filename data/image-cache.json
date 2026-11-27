@@ -1890,5 +1890,37 @@
   "https://www.cbsnews.com/philadelphia/live-updates/live-updates-thanksgiving-day-storm-philadelphia-jersey-shore-flooding-winds/": {
     "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/1e052532-4f5f-467d-95f8-5d8e6311496b/thumbnail/1200x630/7c46775eb5121d89936ca5c0819898d6/vlcsnap-2026-11-26-16h55m25s528.png",
     "at": 1795780878965
+  },
+  "https://www.aljazeera.com/news/2026/11/27/russias-hybrid-war-on-europe-evolving-but-failing-iiss?traffic_source=rss": {
+    "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/afp_6a7334e1b027-1785935073.jpg?resize=1200%2C630",
+    "at": 1795781764505
+  },
+  "https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility?traffic_source=rss": {
+    "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/AP26314321265071-1795775512_bde16a-1795775563.jpg?resize=1200%2C630&quality=80",
+    "at": 1795781764508
+  },
+  "https://www.aljazeera.com/news/2026/11/27/saudi-strike-kills-11-civilians-in-yemens-taiz-houthi-media?traffic_source=rss": {
+    "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b00e8ee5b77-1795221742.jpg?resize=1920%2C1440",
+    "at": 1795781764510
+  },
+  "https://www.cnbc.com/2026/11/27/tech-download-jensen-huang-ai-market.html": {
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108441789-1792586470134-gettyimages-2300709025-AFP_D3XH836.jpeg?v=1795450514&w=1920&h=1080",
+    "at": 1795781764791
+  },
+  "https://www.cnn.com/2026/11/27/politics/supreme-court-ar-15-ban-second-amendment": {
+    "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/2025-03-06t203308z-913210762-mt1usatoday25596982-rtrmadp-3-an-employee-holds-an-ar-15-a-semi-automatic-22-caliber-1.jpg?c=16x9&q=w_800,c_fill",
+    "at": 1795781765659
+  },
+  "https://tass.com/politics/2225917": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494567.jpg",
+    "at": 1795781766824
+  },
+  "https://www.frontiersin.org/articles/10.3389/fmed.2026.1960323": {
+    "imageUrl": "https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/3501F557-CAFA-4218-930C20D1D930C78C/F6FF788E-26D5-4BC5-8CB92EE85A59CA4A/WebsiteWebP_XL-FMED_Main%20Visual_Purple_Website.webp",
+    "at": 1795781770599
+  },
+  "https://www.frontiersin.org/articles/10.3389/fmed.2026.1972558": {
+    "imageUrl": "https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/3501F557-CAFA-4218-930C20D1D930C78C/F6FF788E-26D5-4BC5-8CB92EE85A59CA4A/WebsiteWebP_XL-FMED_Main%20Visual_Purple_Website.webp",
+    "at": 1795781771051
   }
 }
