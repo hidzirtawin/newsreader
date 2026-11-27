@@ -9,6 +9,7 @@ import {
   COUNTRY_DESKS,
   COUNTRY_TIMEZONES,
   LIVE_VIDEO_CHANNELS,
+  LIVE_TV_CHANNELS,
   RESEARCH_SPECIALTIES,
   RESEARCH_FORMATS,
   getCountryDesk,
@@ -252,6 +253,7 @@ const state = {
   researchSpecialty: 'all',
   researchFormat: 'all',
   researchFreeOnly: true,
+  liveTvChannelId: '',
   calculatorId: 'bmi',
   marketMoversLoaded: false,
   marketStatusTimer: null,
@@ -1985,7 +1987,7 @@ function updateTopicHeader(topic) {
     els.countryLayoutBtn.textContent = state.countryLayout === 'list' ? 'Magazine view' : 'Headlines';
     els.countryLayoutBtn.title = state.countryLayout === 'list' ? 'Switch to the magazine grid' : 'Switch to the NoWall-style headline list';
   }
-  const listen = topic.type === 'radio' || topic.type === 'podcasts';
+  const listen = topic.type === 'radio' || topic.type === 'podcasts' || topic.type === 'livetv';
   els.editorialActions.hidden = listen;
   renderSportsNav(topic);
   const active = els.topicsBar.querySelector('.topic-pill.active');
@@ -2367,6 +2369,11 @@ async function loadTopic(topicId, { forceLive = false } = {}) {
   updateTopicHeader(topic);
   closeMenu();
 
+  if (topic.type === 'livetv') {
+    state.listenMode = '';
+    renderLiveTvView();
+    return;
+  }
   if (topic.type === 'radio') {
     state.listenMode = 'radio';
     renderRadioView();
@@ -2743,6 +2750,52 @@ function isRadioPlaying(id) {
 
 function isEpisodePlaying(id) {
   return state.player.type === 'podcast' && state.player.id === id && state.player.playing;
+}
+
+function liveTvChannel() {
+  return LIVE_TV_CHANNELS.find((channel) => channel.id === state.liveTvChannelId) || LIVE_TV_CHANNELS[0];
+}
+
+function openLiveTvChannel(id) {
+  const channel = LIVE_TV_CHANNELS.find((item) => item.id === id);
+  if (!channel) return;
+  state.liveTvChannelId = channel.id;
+  safeSet('newsreader_live_tv_channel', channel.id);
+  renderLiveTvView();
+}
+
+function renderLiveTvView() {
+  if (els.marketPanel) els.marketPanel.hidden = true;
+  hideSourceView();
+  hideFeedStates();
+  state.articles = [];
+  state.results = [];
+  state.listenMode = '';
+  const channel = liveTvChannel();
+  state.liveTvChannelId = channel.id;
+  els.feedList.hidden = false;
+  els.feedStatus.hidden = false;
+  els.feedStatus.textContent = 'LIVE TV · OFFICIAL STREAMS';
+  els.feedUpdateStatus.hidden = true;
+  els.feedSourcesDetails.hidden = true;
+  const cards = LIVE_TV_CHANNELS.map((item) => `<button type="button" class="live-tv-card${item.id === channel.id ? ' active' : ''}" data-live-tv="${esc(item.id)}">
+    <span class="live-tv-initial">${esc(item.name.slice(0, 1))}</span>
+    <span class="live-tv-name">${esc(item.name)}</span>
+    <span class="live-tv-region">${esc(item.region)}</span>
+    <span class="live-tv-live"><span class="live-video-dot" aria-hidden="true"></span> Live</span>
+  </button>`).join('');
+  els.feedList.innerHTML = `<div class="live-tv-view">
+    <div class="live-tv-player-wrap">
+      <iframe id="liveTvFrame" title="${esc(channel.name)} live stream" src="https://www.youtube.com/embed/live_stream?channel=${encodeURIComponent(channel.channelId)}&autoplay=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="live-tv-meta">
+      <span class="live-tv-live"><span class="live-video-dot" aria-hidden="true"></span> Live now</span>
+      <h2>${esc(channel.name)}</h2>
+      <p>${esc(channel.region)} · Official broadcaster stream</p>
+    </div>
+    <div class="live-tv-grid">${cards}</div>
+    <p class="live-tv-note">Official YouTube live streams. Availability depends on the broadcaster; some channels are not live 24/7.</p>
+  </div>`;
 }
 
 function renderRadioView() {
@@ -3319,6 +3372,12 @@ els.feedList.addEventListener('click', (event) => {
     event.preventDefault();
     event.stopPropagation();
     openSourceView(sourceButton.dataset.sourceFeed);
+    return;
+  }
+  const liveTvButton = event.target.closest('[data-live-tv]');
+  if (liveTvButton) {
+    event.preventDefault();
+    openLiveTvChannel(liveTvButton.dataset.liveTv);
     return;
   }
   const oaButton = event.target.closest('[data-oa-url]');
@@ -4284,6 +4343,7 @@ function boot() {
   loadSnapshotVersion();
   const settings = getSettings();
   state.countryCode = detectCountryCode();
+  state.liveTvChannelId = safeGet('newsreader_live_tv_channel') || LIVE_TV_CHANNELS[0].id;
   state.countryLayout = safeGet('newsreader_country_layout') === 'magazine' ? 'magazine' : 'list';
   if (els.countryDeskSelect) {
     els.countryDeskSelect.innerHTML = COUNTRY_DESKS

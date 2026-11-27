@@ -492,6 +492,133 @@ a {
   flex-shrink: 0;
 }
 
+/* Live TV desk */
+.live-tv-view {
+  margin: 0 0 22px;
+}
+
+.live-tv-player-wrap {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--border-color);
+}
+
+.live-tv-player-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.live-tv-meta {
+  padding: 12px 0 16px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.live-tv-meta h2 {
+  margin: 4px 0 2px;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.live-tv-meta p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.live-tv-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--danger);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.live-tv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 8px;
+}
+
+.live-tv-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3px 9px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.live-tv-card:hover,
+.live-tv-card:focus {
+  border-color: var(--highlight-green);
+  outline: none;
+}
+
+.live-tv-card.active {
+  border-color: var(--highlight-green);
+  background: var(--highlight-green-light);
+}
+
+.live-tv-initial {
+  grid-row: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: var(--highlight-green-dark);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.live-tv-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.live-tv-region {
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.live-tv-card .live-tv-live {
+  font-size: 0.58rem;
+}
+
+.live-tv-note {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .live-tv-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .live-tv-player-wrap {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 /* Live video strip */
 .live-video-section {
   margin: 0 0 18px;

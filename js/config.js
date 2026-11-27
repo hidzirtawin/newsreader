@@ -721,6 +721,33 @@ const VIDEO_TOPIC = {
 const videoWorldIndex = TOPICS.findIndex((topic) => topic.id === 'world');
 TOPICS.splice(videoWorldIndex === -1 ? TOPICS.length : videoWorldIndex, 0, VIDEO_TOPIC);
 
+const LIVE_TV_TOPIC = {
+  id: 'live-tv',
+  label: 'LIVE TV',
+  title: 'Live TV',
+  type: 'livetv',
+  feeds: [],
+};
+TOPICS.splice(videoWorldIndex === -1 ? TOPICS.length : videoWorldIndex + 1, 0, LIVE_TV_TOPIC);
+
+export const LIVE_TV_CHANNELS = [
+  { id: 'sky-news', name: 'Sky News', region: 'United Kingdom', channelId: 'UCoMdktPbSTixAyNGwb-UYkQ' },
+  { id: 'al-jazeera', name: 'Al Jazeera English', region: 'Qatar', channelId: 'UCNye-wNBqNL5ZzHSJj3l8Bg' },
+  { id: 'dw-news', name: 'DW News', region: 'Germany', channelId: 'UCknLrEdhRCp1aegoMqRaCZg' },
+  { id: 'france-24', name: 'France 24 English', region: 'France', channelId: 'UCQfwfsi5VrQ8yKZ-UWmAEFg' },
+  { id: 'abc-news', name: 'ABC News', region: 'United States', channelId: 'UCBi2mrWuNuyYy4gbM6fU18Q' },
+  { id: 'nbc-news', name: 'NBC News', region: 'United States', channelId: 'UCeY0bbntWzzVIaj2z3QigXg' },
+  { id: 'cbs-news', name: 'CBS News', region: 'United States', channelId: 'UC8p1vwvWtl6T73JiExfWs1g' },
+  { id: 'cnn', name: 'CNN', region: 'United States', channelId: 'UCupvZG-5ko_eiXAupbDfxWw' },
+  { id: 'fox-news', name: 'Fox News', region: 'United States', channelId: 'UCXIJgqnII2ZOINSWNOGFThA' },
+  { id: 'cnbc', name: 'CNBC', region: 'United States', channelId: 'UCvJJ_dzjViJCoLf5uKUTwoA' },
+  { id: 'bloomberg', name: 'Bloomberg TV', region: 'United States', channelId: 'UCIALMKvObZNtJ6AmdCLP7Lg' },
+  { id: 'bbc-news', name: 'BBC News', region: 'United Kingdom', channelId: 'UC16niRr50-MSBwiO3YDb3RA' },
+  { id: 'reuters', name: 'Reuters', region: 'Global', channelId: 'UChqUTb7kYRX8-EiaN3XFrSQ' },
+  { id: 'pbs', name: 'PBS NewsHour', region: 'United States', channelId: 'UC6ZFN9Tx6xh-skXCuRHCDpQ' },
+  { id: 'astro-awani', name: 'Astro Awani', region: 'Malaysia', channelId: 'UC5dYmq91e5_g54krpO06NJw' },
+];
+
 export const LIVE_VIDEO_CHANNELS = [
   { id: 'live-sky', name: 'Sky News', region: 'United Kingdom', channelId: 'UCoMdktPbSTixAyNGwb-UYkQ' },
   { id: 'live-aljazeera', name: 'Al Jazeera English', region: 'Qatar', channelId: 'UCNye-wNBqNL5ZzHSJj3l8Bg' },
