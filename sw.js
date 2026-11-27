@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v59';
+const VERSION = 'newsreader-v60';
 const SHELL = [
   './',
   './index.html',
@@ -97,6 +97,26 @@ async function proxyReader(request) {
       }
     };
 
+    const fetchJinaViaWallhop = async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 40000);
+      try {
+        const response = await fetch('https://r.jina.ai/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+          body: new URLSearchParams({
+            url: `https://wallhop.io/raw/${target}`,
+            respondWith: 'text',
+          }).toString(),
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error(`Reader service HTTP ${response.status}`);
+        return await response.text();
+      } finally {
+        clearTimeout(timer);
+      }
+    };
+
     const fetchWallhop = async () => {
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 25000);
@@ -117,9 +137,13 @@ async function proxyReader(request) {
       try {
         html = await fetchWallhop();
         const blocked = !html || html.length < 1500 || /(are you a robot|security verification|access denied)/i.test(html.slice(0, 12000));
-        if (blocked) html = await fetchJina();
+        if (blocked) html = await fetchJinaViaWallhop();
       } catch {
-        html = await fetchJina();
+        try {
+          html = await fetchJinaViaWallhop();
+        } catch {
+          html = await fetchJina();
+        }
       }
     } else {
       try {
