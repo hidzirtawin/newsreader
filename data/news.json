@@ -1,6 +1,6 @@
 {
   "top": {
-    "updatedAt": "2026-11-27T08:15:27.254Z",
+    "updatedAt": "2026-11-27T08:30:24.980Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -133,6 +133,28 @@
         "pubDate": "2026-11-27T07:56:00.000Z"
       },
       {
+        "id": "art-30789ff74b48",
+        "title": "New Zealand election results set up tricky talks for conservative incumbent",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
+        "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T07:55:32.000Z"
+      },
+      {
+        "id": "art-0598032a0d5c",
+        "title": "‘Borrowing to make ends meet’: The rising cost of living in Europe",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/borrowing-to-make-ends-meet-the-rising-cost-of-living-in-europe?traffic_source=rss",
+        "summary": "Prices are climbing again across Europe as energy costs surge.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6b09233e37-1795760958_2ee403-1795761015.jpg?resize=1200%2C630&quality=80",
+        "pubDate": "2026-11-27T07:53:59.000Z"
+      },
+      {
         "id": "art-a1912fc0716b",
         "title": "'I wouldn't be here today without you': Student's praise for man who stopped train attacker",
         "source": "BBC News",
@@ -186,18 +208,6 @@
         "summary": "North Melbourne is attempting to create another piece of AFLW history as it tackles Melbourne in the grand final in a bid to make it three straight premierships. Follow live.",
         "imageUrl": "https://live-production.wcms.abc-cdn.net.au/8650bf502ba57f0ad927db72e4165b8e?impolicy=wcms_crop_resize&cropH=2427&cropW=4315&xPos=0&yPos=7&width=862&height=485",
         "pubDate": "2026-11-27T07:44:43.000Z"
-      },
-      {
-        "id": "art-4a9704f0f147",
-        "title": "Gold rebounds from one-year low as AI jitters ease",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/",
-        "summary": "Gold rebounds from one-year low as AI jitters ease Reuters",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:42:09.000Z",
-        "publisherUrl": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/"
       },
       {
         "id": "art-bed4c6c48e35",
@@ -365,28 +375,6 @@
         "pubDate": "2026-11-27T07:26:29.000Z"
       },
       {
-        "id": "art-c27964c9bdb7",
-        "title": "Joe Milton has huge game as Eagles shock Cowboys on Thanksgiving",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
-        "summary": "Dallas blew a 21-point lead as Philly made a spectacular comeback with Milton at the helm.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:26:19.000Z"
-      },
-      {
-        "id": "art-c24d45a42f43",
-        "title": "Sandpapergate forum to investigate Australia-England Ashes Tests",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/sandpapergate-forum-to-investigate-australia-england-ashes-tests?traffic_source=rss",
-        "summary": "Sandpapergate forum scope to cover entire 2017-18 season, including Ashes series, in South Africa allegations follow-up.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2018-01-08T040451Z_773924485_RC1F08E03C40_RTRMADP_3_CRICKET-ASHES-1795759032.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T07:24:45.000Z"
-      },
-      {
         "id": "art-e8ba447e6144",
         "title": "Zelenskyy warns of imminent major Russian attack on Ukraine’s power grid",
         "source": "ABC News (US)",
@@ -407,6 +395,18 @@
         "summary": "SAP is weighing cuts of at least 10,000 jobs as it reshapes its software business around AI, Bloomberg reported.",
         "imageUrl": "https://image.cnbcfm.com/api/v1/image/108120789-1742904573651-gettyimages-159129388-72801932.jpeg?v=1758797166&w=1920&h=1080",
         "pubDate": "2026-11-27T07:15:44.000Z"
+      },
+      {
+        "id": "art-f8f04f793b1b",
+        "title": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/",
+        "summary": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings Reuters",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:58:00.000Z",
+        "publisherUrl": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/"
       },
       {
         "id": "art-bdeb1d8cdbd3",
@@ -559,7 +559,7 @@
     ]
   },
   "latest": {
-    "updatedAt": "2026-11-27T08:15:27.367Z",
+    "updatedAt": "2026-11-27T08:30:25.093Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -666,6 +666,39 @@
     ],
     "articles": [
       {
+        "id": "art-7ab0772a3e73",
+        "title": "MSF to develop common workflows, data-sharing systems for social services overhaul",
+        "source": "The Straits Times · Singapore",
+        "feedId": "straitstimes-sg",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/singapore/community/msf-to-develop-common-workflows-data-sharing-systems-for-social-services-overhaul",
+        "summary": "Agencies will have flexibility to determine their roles within each region, based on capabilities, expertise, and community needs.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/b78325a125fbe474317e37a2d918b0f62b0fbf924528f347aba76ba5b98b4ea8?t=og",
+        "pubDate": "2026-11-27T08:25:00.000Z"
+      },
+      {
+        "id": "art-0991d3665eb7",
+        "title": "Abby Choi ‘not all good’ but nothing can justify ex-in-laws’ ‘brutality’, court hears",
+        "source": "South China Morning Post",
+        "feedId": "scmp",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3376030/abby-choi-not-all-good-nothing-can-justify-ex-laws-brutality-court-hears",
+        "summary": "Slain Hong Kong socialite Abby Choi Tin-fung’s insensitive and inappropriate conduct did not justify her alleged murder and dismemberment at the hands of three of her former in-laws, prosecutors have said as they closed their case in the high-profile trial. De",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/62c0229a-c302-48d4-86fc-65833c694123_63a62037.jpg?itok=Kz0T8YfS&v=1795766654",
+        "pubDate": "2026-11-27T08:16:43.000Z"
+      },
+      {
+        "id": "art-c682e4a0a383",
+        "title": "Rule of law, independence of judiciary, must be protected: Edwin Tong",
+        "source": "The Straits Times · Singapore",
+        "feedId": "straitstimes-sg",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/singapore/courts-crime/rule-of-law-independence-of-judiciary-must-be-protected-edwin-tong",
+        "summary": "The Law Minister said the success of Singapore’s legal system should be measured by whether people get the help they need.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/449cbd3f0884bb9f59d94db8ef1e5c92b507284e2859ef0c7003ebdfad3f71e2?t=og",
+        "pubDate": "2026-11-27T08:12:34.000Z"
+      },
+      {
         "id": "art-2f96f92c7cd7",
         "title": "International child abuse investigations lead to Far North Queensland arrests",
         "source": "ABC News Australia",
@@ -743,6 +776,17 @@
         "pubDate": "2026-11-27T07:55:34.000Z"
       },
       {
+        "id": "art-30789ff74b48",
+        "title": "New Zealand election results set up tricky talks for conservative incumbent",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
+        "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T07:55:32.000Z"
+      },
+      {
         "id": "art-7d3c23705de0",
         "title": "3 taken to hospital after car collision outside ION Orchard mall",
         "source": "The Straits Times · Singapore",
@@ -752,6 +796,17 @@
         "summary": "The accident happened at the junction of Scotts Road and Orchard Road on the night of Nov 26.",
         "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/f8480654074073fa8aca18615cfe12833e6472bf783a63d5a6e3201f87220ea8?t=og",
         "pubDate": "2026-11-27T07:54:00.000Z"
+      },
+      {
+        "id": "art-0598032a0d5c",
+        "title": "‘Borrowing to make ends meet’: The rising cost of living in Europe",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/borrowing-to-make-ends-meet-the-rising-cost-of-living-in-europe?traffic_source=rss",
+        "summary": "Prices are climbing again across Europe as energy costs surge.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6b09233e37-1795760958_2ee403-1795761015.jpg?resize=1200%2C630&quality=80",
+        "pubDate": "2026-11-27T07:53:59.000Z"
       },
       {
         "id": "art-a1912fc0716b",
@@ -807,18 +862,6 @@
         "summary": "North Melbourne is attempting to create another piece of AFLW history as it tackles Melbourne in the grand final in a bid to make it three straight premierships. Follow live.",
         "imageUrl": "https://live-production.wcms.abc-cdn.net.au/8650bf502ba57f0ad927db72e4165b8e?impolicy=wcms_crop_resize&cropH=2427&cropW=4315&xPos=0&yPos=7&width=862&height=485",
         "pubDate": "2026-11-27T07:44:43.000Z"
-      },
-      {
-        "id": "art-4a9704f0f147",
-        "title": "Gold rebounds from one-year low as AI jitters ease",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/",
-        "summary": "Gold rebounds from one-year low as AI jitters ease Reuters",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:42:09.000Z",
-        "publisherUrl": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/"
       },
       {
         "id": "art-bed4c6c48e35",
@@ -887,50 +930,6 @@
         "pubDate": "2026-11-27T07:39:38.000Z"
       },
       {
-        "id": "art-89c63f5ca697",
-        "title": "Eagles RB Shipley downplays sideline argument with Sirianni: 'Talked it out'",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50608884/will-shipley-brushes-argument-coach-nick-sirianni",
-        "summary": "RB Will Shipley likened his sideline argument with coach Nick Sirianni to a Thanksgiving family spat in the wake of the Eagles' dramatic comeback win at Dallas.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:39:38.000Z"
-      },
-      {
-        "id": "art-77f93b862a19",
-        "title": "Bears QB Williams, WR Odunze leaned on chemistry with stunning go-ahead TD",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50608495/qb-caleb-williams-wr-rome-odunze-chemistry-helps-bears-stun-lions",
-        "summary": "QB Caleb Williams and WR Rome Odunze leaned on their chemistry and trust to secure Chicago's ninth win of the season.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:39:38.000Z"
-      },
-      {
-        "id": "art-a00e9dee39d9",
-        "title": "Brazilian footballer arrested in drug trafficking investigation",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/27-11-sv-brazil-footballer-arrested-drug-trafficking-investigation?traffic_source=rss",
-        "summary": "Brazilian footballer David Correa da Fonseca was arrested during a Vasco da Gama training session in Rio de Janeiro.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795764686.jpg?resize=1920%2C1080&quality=80",
-        "pubDate": "2026-11-27T07:32:12.000Z"
-      },
-      {
-        "id": "art-c24d45a42f43",
-        "title": "Sandpapergate forum to investigate Australia-England Ashes Tests",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/sports/2026/11/27/sandpapergate-forum-to-investigate-australia-england-ashes-tests?traffic_source=rss",
-        "summary": "Sandpapergate forum scope to cover entire 2017-18 season, including Ashes series, in South Africa allegations follow-up.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2018-01-08T040451Z_773924485_RC1F08E03C40_RTRMADP_3_CRICKET-ASHES-1795759032.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T07:24:45.000Z"
-      },
-      {
         "id": "art-af1c265c6edd",
         "title": "Polis rakam keterangan Pua berkait minit mesyuarat lembaga pengampunan",
         "source": "Free Malaysia Today",
@@ -975,15 +974,16 @@
         "pubDate": "2026-11-27T07:15:44.000Z"
       },
       {
-        "id": "art-44011e6dacb9",
-        "title": "Cremation, burial to cost more from 2027, ash-scattering will be cheaper",
-        "source": "The Straits Times · Singapore",
-        "feedId": "straitstimes-sg",
-        "domain": "straitstimes.com",
-        "url": "https://www.straitstimes.com/singapore/community/cremation-burial-to-cost-more-from-2027-ash-scattering-will-be-cheaper",
-        "summary": "Lower-income households on ComCare or ComLink+ will be eligible for free essential after-death services.",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/0dbece2bcd12e53793126c779ebea309f801d7c9350c452db5269b83a6c0b0db?t=og",
-        "pubDate": "2026-11-27T07:00:00.000Z"
+        "id": "art-f8f04f793b1b",
+        "title": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/",
+        "summary": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings Reuters",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:58:00.000Z",
+        "publisherUrl": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/"
       },
       {
         "id": "art-bdeb1d8cdbd3",
@@ -1136,7 +1136,7 @@
     ]
   },
   "briefing": {
-    "updatedAt": "2026-11-27T08:15:27.427Z",
+    "updatedAt": "2026-11-27T08:30:25.154Z",
     "results": [
       {
         "feedId": "reuters",
@@ -1243,6 +1243,40 @@
     ],
     "articles": [
       {
+        "id": "art-9207a2e593c5",
+        "title": "US Investors Will Have to Chase Rally: Market Analysis",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/videos/2026-11-27/us-investors-will-have-to-chase-rally-3-minutes-mliv-video",
+        "summary": "Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
+        "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/imndYjXIWBFg/v3/500x-1.webp",
+        "pubDate": "2026-11-27T08:22:28.000Z"
+      },
+      {
+        "id": "art-5fb3c6972bb7",
+        "title": "Qatar’s LNG Export Push Provides Lifeline to South Asian Buyers",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/qatar-s-lng-export-push-provides-lifeline-to-south-asian-buyers",
+        "summary": "Qatar’s efforts to export more liquefied natural gas through the Strait of Hormuz are already saving money for South Asia’s cash-strapped importers of the super-chilled fuel.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:16:09.000Z"
+      },
+      {
+        "id": "art-f1f057c90a4f",
+        "title": "Light flashing from apartment tower as Renegade batter faces up in BBLW match at Junction Oval",
+        "source": "Herald Sun",
+        "feedId": "herald-sun",
+        "domain": "heraldsun.com.au",
+        "url": "https://www.heraldsun.com.au/news/victoria/light-flashing-from-apartment-tower-as-renegade-batter-faces-up-in-bblw-match-at-junction-oval/video/2a3f69bd3dfba3f94f759a70adf1cfaa",
+        "summary": "Light flashing from apartment tower as Renegade batter faces up in BBLW match at Junction Oval Herald Sun",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:00:00.000Z",
+        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/light-flashing-from-apartment-tower-as-renegade-batter-faces-up-in-bblw-match-at-junction-oval/video/2a3f69bd3dfba3f94f759a70adf1cfaa"
+      },
+      {
         "id": "art-e4bbbf9cec2b",
         "title": "US Stocks Set to Bounce as Risk Appetite Returns After Holiday",
         "source": "Bloomberg Markets",
@@ -1286,18 +1320,6 @@
         "summary": "Oil stockpiling will be important factor for the next couple of years, potentially tightening the market and aiding prices even with a projected global surplus, according to Energy Aspects Ltd. (Source: Bloomberg)",
         "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/idVZiTIe2Ax0/v3/500x-1.webp",
         "pubDate": "2026-11-27T07:45:20.000Z"
-      },
-      {
-        "id": "art-4a9704f0f147",
-        "title": "Gold rebounds from one-year low as AI jitters ease",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/",
-        "summary": "Gold rebounds from one-year low as AI jitters ease Reuters",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:42:09.000Z",
-        "publisherUrl": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/"
       },
       {
         "id": "art-c71cc368776b",
@@ -1368,18 +1390,6 @@
         "pubDate": "2026-11-27T07:15:14.000Z"
       },
       {
-        "id": "art-bea049e28b76",
-        "title": "Style-ish dressing: Inside the bold new looks Melbourne fans are wearing to Harry Styles’ concert",
-        "source": "Herald Sun",
-        "feedId": "herald-sun",
-        "domain": "heraldsun.com.au",
-        "url": "https://www.heraldsun.com.au/entertainment/confidential/harry-styles-arrives-in-melbourne-as-thousands-of-fans-prepare-marvel-stadium-fashion-takeover/news-story/ded3ed4beac8b02a7672ab45149902cd",
-        "summary": "Style-ish dressing: Inside the bold new looks Melbourne fans are wearing to Harry Styles’ concert Herald Sun",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:04:17.000Z",
-        "publisherUrl": "https://www.heraldsun.com.au/entertainment/confidential/harry-styles-arrives-in-melbourne-as-thousands-of-fans-prepare-marvel-stadium-fashion-takeover/news-story/ded3ed4beac8b02a7672ab45149902cd"
-      },
-      {
         "id": "art-0b4447eddcff",
         "title": "Indonesia Arrests Three Over Trades in Stock Scrutinized by MSCI",
         "source": "Bloomberg Markets",
@@ -1391,8 +1401,20 @@
         "pubDate": "2026-11-27T06:59:35.000Z"
       },
       {
+        "id": "art-f8f04f793b1b",
+        "title": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/",
+        "summary": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings Reuters",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:58:00.000Z",
+        "publisherUrl": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/"
+      },
+      {
         "id": "art-702ef12e1542",
-        "title": "FTSE 100 Live: UK Stocks Poised Join Global Stock Rebound",
+        "title": "FTSE 100 Live: UK and European Stocks Join Global Rally",
         "source": "Bloomberg Markets",
         "feedId": "bloomberg-markets",
         "domain": "bloomberg.com",
@@ -1411,28 +1433,6 @@
         "summary": "Move comes after some global investors pulled out or scaled back teams in Asian financial hub",
         "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8a645f28-198d-40a2-8fa0-598d158e2630.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
         "pubDate": "2026-11-27T06:47:12.000Z"
-      },
-      {
-        "id": "art-343149636b15",
-        "title": "Vietnam Expects to Sign US Trade Deal to Limit Tariff Hit",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-27/vietnam-expects-to-sign-us-trade-deal-to-limit-tariff-hit",
-        "summary": "Vietnam expects to sign a trade deal with the US that will result in a significantly lower final tariff rate as the two countries inch closer to a reciprocal trade agreement.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:44:25.000Z"
-      },
-      {
-        "id": "art-b11a6a1926a0",
-        "title": "China Will Lead Global Oil Stockpiling in 2027: Energy Aspects",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-27/oil-stockpiling-to-influence-market-in-2027-energy-aspects-says",
-        "summary": "China will lead a global oil stockpiling push that could help tighten markets over the coming year or two, potentially lifting prices even in the face of a projected surplus, according to Energy Aspects Ltd.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:31:45.000Z"
       },
       {
         "id": "art-59e8227dc63f",
@@ -1631,16 +1631,16 @@
         "publisherUrl": "https://www.telegraph.co.uk/news/2026/11/26/military-cannot-track-down-half-veteran-reserves/"
       },
       {
-        "id": "art-90fb3842473f",
-        "title": "Huntingdon train attacker guilty of attempting to murder 14 people",
+        "id": "art-7bb75f1c4590",
+        "title": "Woman killed in gruesome fashion after she walks into plane propeller",
         "source": "The Independent",
         "feedId": "independent",
         "domain": "independent.co.uk",
-        "url": "https://www.independent.co.uk/news/uk/crime/huntingdon-train-attack-anthony-williams-attempted-murder-guilty-verdict-b3092237.html",
-        "summary": "Huntingdon train attacker guilty of attempting to murder 14 people The Independent",
+        "url": "https://www.independent.co.uk/news/world/americas/woman-killed-propeller-plane-alaska-b3092439.html",
+        "summary": "Woman killed in gruesome fashion after she walks into plane propeller The Independent",
         "imageUrl": "",
-        "pubDate": "2026-11-26T21:05:00.000Z",
-        "publisherUrl": "https://www.independent.co.uk/news/uk/crime/huntingdon-train-attack-anthony-williams-attempted-murder-guilty-verdict-b3092237.html"
+        "pubDate": "2026-11-26T20:59:00.000Z",
+        "publisherUrl": "https://www.independent.co.uk/news/world/americas/woman-killed-propeller-plane-alaska-b3092439.html"
       },
       {
         "id": "art-0d1b82c0829b",
@@ -1727,7 +1727,7 @@
     ]
   },
   "briefs": {
-    "updatedAt": "2026-11-27T08:15:27.469Z",
+    "updatedAt": "2026-11-27T08:30:25.196Z",
     "results": [
       {
         "feedId": "nyt-world",
@@ -1810,6 +1810,61 @@
     ],
     "articles": [
       {
+        "id": "art-ef567f3d349c",
+        "title": "Killer cop's alleged abusive history with another ex",
+        "source": "The West Australian",
+        "feedId": "the-west",
+        "domain": "thewest.com.au",
+        "url": "https://thewest.com.au/news/crime/killer-cops-alleged-abusive-history-with-another-ex-c-23223407",
+        "summary": "Beau Lamarre-Condon tried to argue he was of good character before he was found guilty but evidence of abuse from another ex-partner paints a different picture.",
+        "imageUrl": "https://images.thewest.com.au/publication/C-23223407/9ecc7464bec8b829b124ad566b027231a22d8229-16x9-x0y0w1280h720.jpg",
+        "pubDate": "2026-11-27T08:29:30.000Z"
+      },
+      {
+        "id": "art-e919293fa5a2",
+        "title": "Spain heads to polls as crises weigh on socialist PM",
+        "source": "The West Australian",
+        "feedId": "the-west",
+        "domain": "thewest.com.au",
+        "url": "https://thewest.com.au/politics/spain-heads-to-polls-as-crises-weigh-on-socialist-pm-c-23223386",
+        "summary": "Spain is about to make its decision in a snap election that could unseat progressive Prime Minister Pedro Sanchez amid disquiet over housing and immigration.",
+        "imageUrl": "https://images.thewest.com.au/publication/C-23223386/2e6bdb6b4c8f40daf8392c0b533336f603e11843-16x9-x0y0w1280h720.jpg",
+        "pubDate": "2026-11-27T08:26:28.000Z"
+      },
+      {
+        "id": "art-5347f2509a10",
+        "title": "Crown Perth swoops on axed David Jones staff in massive hiring blitz",
+        "source": "The West Australian",
+        "feedId": "the-west",
+        "domain": "thewest.com.au",
+        "url": "https://thewest.com.au/business/workplace-matters/crown-perth-swoops-on-axed-david-jones-staff-in-massive-hiring-blitz-c-23207614",
+        "summary": "Crown Perth is hoping to swoop in on hundreds of axed David Jones staff as it gears up for a busy summer period.",
+        "imageUrl": "https://images.thewest.com.au/publication/C-23207614/8642a7ad26e0a6f0c2792bd31306ac590edcc0ab-16x9-x0y160w4000h2250.jpg",
+        "pubDate": "2026-11-27T08:25:52.000Z"
+      },
+      {
+        "id": "art-9207a2e593c5",
+        "title": "US Investors Will Have to Chase Rally: Market Analysis",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/videos/2026-11-27/us-investors-will-have-to-chase-rally-3-minutes-mliv-video",
+        "summary": "Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
+        "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/imndYjXIWBFg/v3/500x-1.webp",
+        "pubDate": "2026-11-27T08:22:28.000Z"
+      },
+      {
+        "id": "art-5fb3c6972bb7",
+        "title": "Qatar’s LNG Export Push Provides Lifeline to South Asian Buyers",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/qatar-s-lng-export-push-provides-lifeline-to-south-asian-buyers",
+        "summary": "Qatar’s efforts to export more liquefied natural gas through the Strait of Hormuz are already saving money for South Asia’s cash-strapped importers of the super-chilled fuel.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:16:09.000Z"
+      },
+      {
         "id": "art-e69b165d696f",
         "title": "‘Disgusting’: Victoria Barracks plaques dating back to the 1950s trashed as Army is booted out",
         "source": "The Daily Telegraph",
@@ -1844,6 +1899,18 @@
         "pubDate": "2026-11-27T08:05:03.000Z"
       },
       {
+        "id": "art-f1f057c90a4f",
+        "title": "Light flashing from apartment tower as Renegade batter faces up in BBLW match at Junction Oval",
+        "source": "Herald Sun",
+        "feedId": "herald-sun",
+        "domain": "heraldsun.com.au",
+        "url": "https://www.heraldsun.com.au/news/victoria/light-flashing-from-apartment-tower-as-renegade-batter-faces-up-in-bblw-match-at-junction-oval/video/2a3f69bd3dfba3f94f759a70adf1cfaa",
+        "summary": "Light flashing from apartment tower as Renegade batter faces up in BBLW match at Junction Oval Herald Sun",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:00:00.000Z",
+        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/light-flashing-from-apartment-tower-as-renegade-batter-faces-up-in-bblw-match-at-junction-oval/video/2a3f69bd3dfba3f94f759a70adf1cfaa"
+      },
+      {
         "id": "art-407f86d54ba5",
         "title": "Fertiliser giants urges growers with storage to pick up at least 20 per cent of orders early next year",
         "source": "The West Australian",
@@ -1867,7 +1934,7 @@
       },
       {
         "id": "art-eea5dc29488d",
-        "title": "Barrow Island incident: Chevron confirms emergency incident at Gorgon project but says no production impact",
+        "title": "Barrow Island incident: Chevron confirms emergency incident at Gorgon project",
         "source": "The West Australian",
         "feedId": "the-west",
         "domain": "thewest.com.au",
@@ -1951,7 +2018,7 @@
         "domain": "thewest.com.au",
         "url": "https://thewest.com.au/news/police/roe-highway-road-rage-jane-brook-man-charged-over-alleged-maida-vale-assault-on-elderly-driver-c-23223060",
         "summary": "A man has been charged over a shocking road rage incident, where police say he rammed the rear of a vehicle before violently pushing a driver to the ground.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23223060/57acba52ccbe508232145676d01c972529139cf7-16x9-x0y27w2392h1346.jpg?imwidth=1200",
+        "imageUrl": "",
         "pubDate": "2026-11-27T07:42:31.000Z"
       },
       {
@@ -2043,72 +2110,6 @@
         "summary": "VW's smallest EV SUV is the latest to gain an R-Line variant, which not only brings sportier looks but also injects more grunt from the ID. Polo GTI.",
         "imageUrl": "https://images.thewest.com.au/publication/C-23223131/72fc57c62a9783d1e9098f7f3fc921e99447051a-16x9-x0y214w4096h2304.jpg",
         "pubDate": "2026-11-27T07:18:12.000Z"
-      },
-      {
-        "id": "art-3e98a2fec0cd",
-        "title": "What to Know Ahead of Spain’s Snap Election",
-        "source": "Bloomberg Politics",
-        "feedId": "bloomberg-politics",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-27/what-to-know-ahead-of-spain-s-snap-election-video",
-        "summary": "Spain is holding its fifth general election in over a decade after Socialist Prime Minister Pedro Sánchez called a snap vote, arguing that his minority government needs broader support to pass pending reforms. Center-right leader Alberto Núñez Feijóo is biddin",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:15:51.000Z"
-      },
-      {
-        "id": "art-e9764be9fa53",
-        "title": "AI Rally Faces Fresh Test: Nvidia Curbs & Trump Tariffs",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-27/insight-with-haslinda-amin-11-27-2026-video",
-        "summary": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter. The show features prominent leaders spanning the worlds of business, finance, politics an",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:15:14.000Z"
-      },
-      {
-        "id": "art-b6f1e0081f57",
-        "title": "Police call for witnesses after cyclist becomes second death on WA’s Mid West roads in matter of hours",
-        "source": "The West Australian",
-        "feedId": "the-west",
-        "domain": "thewest.com.au",
-        "url": "https://thewest.com.au/news/police/police-call-for-witnesses-after-cyclist-becomes-second-death-on-was-mid-west-roads-in-matter-of-hours-c-23222947",
-        "summary": "A cyclist has become the second road fatality in a matter of hours in WA’s Mid West region, after he colliding with a car on the busy Brand Highway on Thursday evening.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23222947/6db20d07ac376c640f73b93a5f54352fdf6e094f-16x9-x0y0w798h449.jpg",
-        "pubDate": "2026-11-27T07:14:32.000Z"
-      },
-      {
-        "id": "art-9c7aee33f857",
-        "title": "AirAsia axes staff, delays pay as high fuel prices bite",
-        "source": "The West Australian",
-        "feedId": "the-west",
-        "domain": "thewest.com.au",
-        "url": "https://thewest.com.au/business/aviation/airasia-axes-staff-delays-pay-as-high-fuel-prices-bite-c-23223052",
-        "summary": "After posting its third straight quarterly loss, the airline is delaying salary payments in a bid to conserve cash as its Philippine unit cuts jobs.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23223052/3c748195b62f129c8792dabd8dbd741d6e645318-16x9-x0y0w1280h720.jpg",
-        "pubDate": "2026-11-27T07:13:13.000Z"
-      },
-      {
-        "id": "art-75f46d80aa3b",
-        "title": "Another charged in Schoolies assault amid crime outcry",
-        "source": "The West Australian",
-        "feedId": "the-west",
-        "domain": "thewest.com.au",
-        "url": "https://thewest.com.au/news/crime/another-charged-in-schoolies-assault-amid-crime-outcry-c-23223008",
-        "summary": "The alleged assault of a 15-year-old boy has sparked criticism of a state's youth crime crackdown as another teenager is charged over the incident.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23223008/58e6a719ef8da99c11ac476fe71238a4542fd919-16x9-x0y0w1280h720.jpg",
-        "pubDate": "2026-11-27T07:05:41.000Z"
-      },
-      {
-        "id": "art-8d3cdc1cab33",
-        "title": "Families seek justice as Duterte's ICC trial to begin",
-        "source": "The West Australian",
-        "feedId": "the-west",
-        "domain": "thewest.com.au",
-        "url": "https://thewest.com.au/news/crime/families-seek-justice-as-dutertes-icc-trial-to-begin-c-23222995",
-        "summary": "Former Philippine leader Rodrigo Duterte faces court in The Hague over his bloody \"war on drugs\" campaign - a day relatives of victims never thought they'd see.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23222995/7989d0bcb2db386b468295375d675a1e883fa851-16x9-x0y0w1280h720.jpg",
-        "pubDate": "2026-11-27T07:04:39.000Z"
       },
       {
         "id": "art-162ece2e7e67",
@@ -2283,7 +2284,7 @@
     ]
   },
   "world": {
-    "updatedAt": "2026-11-27T08:15:27.504Z",
+    "updatedAt": "2026-11-27T08:30:25.232Z",
     "results": [
       {
         "feedId": "bbc-world",
@@ -2354,6 +2355,28 @@
     ],
     "articles": [
       {
+        "id": "art-079bcba12fa6",
+        "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
+        "source": "NPR News",
+        "feedId": "npr-news",
+        "domain": "npr.org",
+        "url": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
+        "summary": "Eagles QB Joe Milton threw two long touchdowns against the quarterback's former team, the Dallas Cowboys, for the the start of quite a comeback, after being down 31-10 early in the third quarter.",
+        "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5397x3598+0+0/resize/5397x3598!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc7%2Ff5%2Ffbca01ea430fab383dc4cd3b24d4%2Fap26331004503978.jpg",
+        "pubDate": "2026-11-27T08:23:12.000Z"
+      },
+      {
+        "id": "art-0991d3665eb7",
+        "title": "Abby Choi ‘not all good’ but nothing can justify ex-in-laws’ ‘brutality’, court hears",
+        "source": "South China Morning Post",
+        "feedId": "scmp",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3376030/abby-choi-not-all-good-nothing-can-justify-ex-laws-brutality-court-hears",
+        "summary": "Slain Hong Kong socialite Abby Choi Tin-fung’s insensitive and inappropriate conduct did not justify her alleged murder and dismemberment at the hands of three of her former in-laws, prosecutors have said as they closed their case in the high-profile trial. De",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/62c0229a-c302-48d4-86fc-65833c694123_63a62037.jpg?itok=Kz0T8YfS&v=1795766654",
+        "pubDate": "2026-11-27T08:16:43.000Z"
+      },
+      {
         "id": "art-7c9abe3aca8d",
         "title": "Jakarta or Nusantara? State agency U-turn clouds Indonesia’s capital move",
         "source": "South China Morning Post",
@@ -2398,6 +2421,28 @@
         "pubDate": "2026-11-27T07:55:34.000Z"
       },
       {
+        "id": "art-30789ff74b48",
+        "title": "New Zealand election results set up tricky talks for conservative incumbent",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
+        "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T07:55:32.000Z"
+      },
+      {
+        "id": "art-0598032a0d5c",
+        "title": "‘Borrowing to make ends meet’: The rising cost of living in Europe",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/borrowing-to-make-ends-meet-the-rising-cost-of-living-in-europe?traffic_source=rss",
+        "summary": "Prices are climbing again across Europe as energy costs surge.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6b09233e37-1795760958_2ee403-1795761015.jpg?resize=1200%2C630&quality=80",
+        "pubDate": "2026-11-27T07:53:59.000Z"
+      },
+      {
         "id": "art-5bbde65fcfd5",
         "title": "Three Malaysian air force officers charged with trafficking 96.2kg of meth at Selangor airbase",
         "source": "CNA",
@@ -2407,18 +2452,6 @@
         "summary": "Upon conviction, the offence carries the death penalty or life imprisonment and 15 strokes of the cane.",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--KSIdmmEK--/c_crop,h_1125,w_2000,x_0,y_104/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/gavel-12-court-crime-singapore---file-photo-data_0.jpg?itok=VYiXgbqy",
         "pubDate": "2026-11-27T07:48:00.000Z"
-      },
-      {
-        "id": "art-4a9704f0f147",
-        "title": "Gold rebounds from one-year low as AI jitters ease",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/",
-        "summary": "Gold rebounds from one-year low as AI jitters ease Reuters",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:42:09.000Z",
-        "publisherUrl": "https://www.reuters.com/world/india/gold-rebounds-one-year-low-ai-jitters-ease-2026-11-27/"
       },
       {
         "id": "art-a00e9dee39d9",
@@ -2531,15 +2564,16 @@
         "pubDate": "2026-11-27T07:00:00.000Z"
       },
       {
-        "id": "art-9fed66fbcc49",
-        "title": "Exclusive-India's election body website flaw exposing voter data fixed after Reuters findings",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/business/exclusive-indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-findings-6587051",
-        "summary": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--F4CFqpo3--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T065838Z_1_LYNXNPEMAQ0DZ_RTROPTP_3_INDIA-CYBERSECURITY-ELECTION-COMMISSION.JPG?itok=NBCOV7qn",
-        "pubDate": "2026-11-27T06:59:09.000Z"
+        "id": "art-f8f04f793b1b",
+        "title": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/",
+        "summary": "EXCLUSIVE: India's election body website flaw exposing voter data fixed after Reuters findings Reuters",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T06:58:00.000Z",
+        "publisherUrl": "https://www.reuters.com/world/indias-election-body-website-flaw-exposing-voter-data-fixed-after-reuters-2026-11-27/"
       },
       {
         "id": "art-bdeb1d8cdbd3",
@@ -2593,7 +2627,7 @@
         "domain": "aljazeera.com",
         "url": "https://www.aljazeera.com/sports/2026/11/27/french-bulgarian-presidents-slam-marseille-violence-five-fans-in-hospital?traffic_source=rss",
         "summary": "French and Bulgarian presidents slam Marseille fans after violent scenes in UEFA Europa League match with Levski Sofia.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-26T181002Z_789386644_UP1EMBQ1EE05K_RTRMADP_3_SOCCER-EUROPA-OM-LEV-1795759626.jpg?resize=1920%2C1440",
+        "imageUrl": "",
         "pubDate": "2026-11-27T06:37:34.000Z"
       },
       {
@@ -2674,28 +2708,6 @@
         "imageUrl": "",
         "pubDate": "2026-11-27T06:02:00.000Z",
         "publisherUrl": "https://www.reuters.com/business/energy/us-pushed-venezuela-iraq-consider-leaving-opec-sources-say-2026-11-27/"
-      },
-      {
-        "id": "art-a92e74e7b284",
-        "title": "Chinese robotic dog in hi-tech fire suit withstands blaze at 1,000 degrees Celsius",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/article/3375998/chinese-robotic-dog-hi-tech-fire-suit-withstands-blaze-1000-degrees-celsius",
-        "summary": "A robotic dog withstood heat of up to 1,000 degrees Celsius (1,832 Fahrenheit) after it was sent into a blaze in eastern China to test out a new fire-resistant suit, according to state media. The hi-tech suit – made from a special composite fireproof material ",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/e6fa7f86-181c-4a49-9d67-f3667b9db3fe_f709c37c.jpg?itok=bJnG6pDt&v=1795758271",
-        "pubDate": "2026-11-27T06:01:05.000Z"
-      },
-      {
-        "id": "art-f03baaa219c7",
-        "title": "Mad about mara: the DIY dance movement helping young Nigerians escape the daily grind",
-        "source": "The Guardian World",
-        "feedId": "guardian-world",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/world/2026/nov/27/mad-about-mara-the-diy-dance-movement-helping-young-nigerians-escape-the-daily-grind",
-        "summary": "What started as one artist’s response to being cut out of a music video has exploded, becoming a driving force in Nigeria’s cultural landscape As a student in the central Nigerian city of Ilorin, Lawal Habeeb Kola loved staying in his hostel room to produce be",
-        "imageUrl": "https://i.guim.co.uk/img/media/420a704a7b9337bcc84564de8c0db0836d052aac/433_0_5275_4223/master/5275.jpg?width=140&quality=85&auto=format&fit=max&s=558556ddc90089bd8666c299074f9675",
-        "pubDate": "2026-11-27T06:00:56.000Z"
       },
       {
         "id": "art-3367bea84c7c",
@@ -2812,22 +2824,11 @@
         "imageUrl": "",
         "pubDate": "2026-11-26T17:07:00.000Z",
         "publisherUrl": "https://apnews.com/article/france-depardieu-rape-allegations-trial-68a9679a92161ef5b77027aee3fd988a"
-      },
-      {
-        "id": "art-f70baf0ffc8a",
-        "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
-        "source": "NPR News",
-        "feedId": "npr-news",
-        "domain": "npr.org",
-        "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
-        "summary": "As the fast-moving outbreak continues to spread in eastern Congo, fighting between rebels and the army is disrupting efforts to contain the spread of the disease.",
-        "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5760x3840+0+0/resize/5760x3840!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F5c%2Fce%2F2b1557be47b9bc08a682a6d8f98f%2Fap26329472681866.jpg",
-        "pubDate": "2026-11-26T13:47:09.000Z"
       }
     ]
   },
   "us": {
-    "updatedAt": "2026-11-27T08:15:27.526Z",
+    "updatedAt": "2026-11-27T08:30:25.253Z",
     "results": [
       {
         "feedId": "cbs",
@@ -2879,6 +2880,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-079bcba12fa6",
+        "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
+        "source": "NPR News",
+        "feedId": "npr-news",
+        "domain": "npr.org",
+        "url": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
+        "summary": "Eagles QB Joe Milton threw two long touchdowns against the quarterback's former team, the Dallas Cowboys, for the the start of quite a comeback, after being down 31-10 early in the third quarter.",
+        "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5397x3598+0+0/resize/5397x3598!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc7%2Ff5%2Ffbca01ea430fab383dc4cd3b24d4%2Fap26331004503978.jpg",
+        "pubDate": "2026-11-27T08:23:12.000Z"
+      },
       {
         "id": "art-6e0e06b6b957",
         "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
@@ -3076,7 +3088,7 @@
         "domain": "cbsnews.com",
         "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
         "summary": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
-        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/26/7de482fa-f8b6-4a1d-bbb3-8d30f15aa167/thumbnail/1200x630/814e45e1b718f2712f5cef9f02f77725/gettyimages-2306681635.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-27T00:52:28.000Z"
       },
       {
@@ -3300,17 +3312,6 @@
         "pubDate": "2026-11-26T20:32:44.000Z"
       },
       {
-        "id": "art-f70baf0ffc8a",
-        "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
-        "source": "NPR News",
-        "feedId": "npr-news",
-        "domain": "npr.org",
-        "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
-        "summary": "As the fast-moving outbreak continues to spread in eastern Congo, fighting between rebels and the army is disrupting efforts to contain the spread of the disease.",
-        "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5760x3840+0+0/resize/5760x3840!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F5c%2Fce%2F2b1557be47b9bc08a682a6d8f98f%2Fap26329472681866.jpg",
-        "pubDate": "2026-11-26T13:47:09.000Z"
-      },
-      {
         "id": "art-8f372885b6bd",
         "title": "Walmart delivery drones are set to touch down in Los Angeles",
         "source": "Los Angeles Times",
@@ -3346,7 +3347,7 @@
     ]
   },
   "uk": {
-    "updatedAt": "2026-11-27T08:15:27.534Z",
+    "updatedAt": "2026-11-27T08:30:25.262Z",
     "results": [
       {
         "feedId": "bbc-uk",
@@ -3557,17 +3558,6 @@
         "pubDate": "2026-11-27T06:00:56.000Z"
       },
       {
-        "id": "art-61abe77368d2",
-        "title": "Up to 1.4m UK workers risk missing out on zero-hours shake-up, say unions",
-        "source": "Guardian UK",
-        "feedId": "guardian-uk",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/uk-news/2026/nov/27/up-to-1point4-million-uk-workers-risk-missing-out-zero-hours-shake-up",
-        "summary": "Andy Burnham is warned against calls from bosses to water down employment rights legislation Andy Burnham is being warned that 1.4 million workers will be at risk of being stuck in insecure jobs if a forthcoming ban on zero-hours contracts is watered down. The",
-        "imageUrl": "https://i.guim.co.uk/img/media/9d8fe4e1e133840150c64308612a6fd47bd62fb1/683_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=0a64c99a20e7296796ab864ea41a9504",
-        "pubDate": "2026-11-27T06:00:55.000Z"
-      },
-      {
         "id": "art-48ad4aa7f7e8",
         "title": "Lab-houses test indoor air quality to help build UK homes for future",
         "source": "Guardian UK",
@@ -3576,6 +3566,17 @@
         "url": "https://www.theguardian.com/environment/2026/nov/27/lab-houses-test-indoor-air-quality-university-york",
         "summary": "Researchers hope purpose-built structures at University of York will show best ways to reduce harmful pollutants Homes of the future may offer greater protection from outdoor air pollution, according to initial results from two experimental houses . Prof Nicol",
         "imageUrl": "https://i.guim.co.uk/img/media/6cd7c30f4f5722458f74b301c70f575faeb6d827/279_0_1250_1000/master/1250.jpg?width=140&quality=85&auto=format&fit=max&s=8e2cf05f0c9e79a57c943f7c9f7b82ce",
+        "pubDate": "2026-11-27T06:00:55.000Z"
+      },
+      {
+        "id": "art-61abe77368d2",
+        "title": "Up to 1.4m UK workers risk missing out on zero-hours shake-up, say unions",
+        "source": "Guardian UK",
+        "feedId": "guardian-uk",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/uk-news/2026/nov/27/up-to-1point4-million-uk-workers-risk-missing-out-zero-hours-shake-up",
+        "summary": "Andy Burnham is warned against calls from bosses to water down employment rights legislation Andy Burnham is being warned that 1.4 million workers will be at risk of being stuck in insecure jobs if a forthcoming ban on zero-hours contracts is watered down. The",
+        "imageUrl": "https://i.guim.co.uk/img/media/9d8fe4e1e133840150c64308612a6fd47bd62fb1/683_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=0a64c99a20e7296796ab864ea41a9504",
         "pubDate": "2026-11-27T06:00:55.000Z"
       },
       {
@@ -3845,7 +3846,7 @@
     ]
   },
   "australia": {
-    "updatedAt": "2026-11-27T08:15:27.591Z",
+    "updatedAt": "2026-11-27T08:30:25.319Z",
     "results": [
       {
         "feedId": "abc-au",
@@ -3928,6 +3929,72 @@
     ],
     "articles": [
       {
+        "id": "art-ef567f3d349c",
+        "title": "Killer cop's alleged abusive history with another ex",
+        "source": "The West Australian",
+        "feedId": "the-west",
+        "domain": "thewest.com.au",
+        "url": "https://thewest.com.au/news/crime/killer-cops-alleged-abusive-history-with-another-ex-c-23223407",
+        "summary": "Beau Lamarre-Condon tried to argue he was of good character before he was found guilty but evidence of abuse from another ex-partner paints a different picture.",
+        "imageUrl": "https://images.thewest.com.au/publication/C-23223407/9ecc7464bec8b829b124ad566b027231a22d8229-16x9-x0y0w1280h720.jpg",
+        "pubDate": "2026-11-27T08:29:30.000Z"
+      },
+      {
+        "id": "art-e919293fa5a2",
+        "title": "Spain heads to polls as crises weigh on socialist PM",
+        "source": "The West Australian",
+        "feedId": "the-west",
+        "domain": "thewest.com.au",
+        "url": "https://thewest.com.au/politics/spain-heads-to-polls-as-crises-weigh-on-socialist-pm-c-23223386",
+        "summary": "Spain is about to make its decision in a snap election that could unseat progressive Prime Minister Pedro Sanchez amid disquiet over housing and immigration.",
+        "imageUrl": "https://images.thewest.com.au/publication/C-23223386/2e6bdb6b4c8f40daf8392c0b533336f603e11843-16x9-x0y0w1280h720.jpg",
+        "pubDate": "2026-11-27T08:26:28.000Z"
+      },
+      {
+        "id": "art-5347f2509a10",
+        "title": "Crown Perth swoops on axed David Jones staff in massive hiring blitz",
+        "source": "The West Australian",
+        "feedId": "the-west",
+        "domain": "thewest.com.au",
+        "url": "https://thewest.com.au/business/workplace-matters/crown-perth-swoops-on-axed-david-jones-staff-in-massive-hiring-blitz-c-23207614",
+        "summary": "Crown Perth is hoping to swoop in on hundreds of axed David Jones staff as it gears up for a busy summer period.",
+        "imageUrl": "https://images.thewest.com.au/publication/C-23207614/8642a7ad26e0a6f0c2792bd31306ac590edcc0ab-16x9-x0y160w4000h2250.jpg",
+        "pubDate": "2026-11-27T08:25:52.000Z"
+      },
+      {
+        "id": "art-78dddb54363f",
+        "title": "Cricket Australia ends ‘ongoing speculation’ about Cummins captaincy",
+        "source": "The Age",
+        "feedId": "the-age",
+        "domain": "theage.com.au",
+        "url": "https://www.theage.com.au/national/cricket-australia-ends-ongoing-speculation-about-cummins-captaincy-20261121-p61g6h.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+        "summary": "Pat Cummins will lead Australia in the first Test against New Zealand, after Cricket Australia declared he had its “unanimous support” as captain.",
+        "imageUrl": "https://static.ffx.io/images/$width_800%2C$height_450/t_crop_fill/q_86%2Cf_jpg/99304afb66476635094ac9a15eb682e28b971acf",
+        "pubDate": "2026-11-27T08:23:34.000Z"
+      },
+      {
+        "id": "art-c2893a045941",
+        "title": "Sam Wood set to spend Christmas behind bars after third bail refusal",
+        "source": "The Age",
+        "feedId": "the-age",
+        "domain": "theage.com.au",
+        "url": "https://www.theage.com.au/national/sam-wood-set-to-spend-christmas-behind-bars-after-third-bail-refusal-20261127-p61hz7.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+        "summary": "Former reality TV star Sam Wood will likely spend Christmas behind bars after being refused bail for a third straight time over domestic violence charges.",
+        "imageUrl": "https://static.ffx.io/images/$width_800%2C$height_450/t_crop_fill/q_86%2Cf_jpg/28fb3878c5c9601ec54ae76e48ddf51e2e7649e7",
+        "pubDate": "2026-11-27T08:16:50.000Z"
+      },
+      {
+        "id": "art-d1620a910192",
+        "title": "Five of the best Melbourne homes to dine al fresco",
+        "source": "The Age",
+        "feedId": "the-age",
+        "domain": "theage.com.au",
+        "url": "https://www.theage.com.au/property/news/five-of-the-best-melbourne-homes-to-dine-al-fresco-20261127-p61hcj.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+        "summary": "From built-in barbecues to outdoor kitchens and fire pits, here are five of our favourite Melbourne homes for al fresco dining.",
+        "imageUrl": "https://static.ffx.io/images/$zoom_0.7282580095432856%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_103/t_crop_custom/q_86%2Cf_auto/43fa88d941a20786137e0191a2b3db1b58ff4916",
+        "pubDate": "2026-11-27T08:15:00.000Z"
+      },
+      {
         "id": "art-5004b14873a8",
         "title": "Uncle’s heartbreak over teen’s alleged Gold Coast bashing",
         "source": "The Age",
@@ -4006,6 +4073,18 @@
         "pubDate": "2026-11-27T08:05:03.000Z"
       },
       {
+        "id": "art-f1f057c90a4f",
+        "title": "Light flashing from apartment tower as Renegade batter faces up in BBLW match at Junction Oval",
+        "source": "Herald Sun",
+        "feedId": "herald-sun",
+        "domain": "heraldsun.com.au",
+        "url": "https://www.heraldsun.com.au/news/victoria/light-flashing-from-apartment-tower-as-renegade-batter-faces-up-in-bblw-match-at-junction-oval/video/2a3f69bd3dfba3f94f759a70adf1cfaa",
+        "summary": "Light flashing from apartment tower as Renegade batter faces up in BBLW match at Junction Oval Herald Sun",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:00:00.000Z",
+        "publisherUrl": "https://www.heraldsun.com.au/news/victoria/light-flashing-from-apartment-tower-as-renegade-batter-faces-up-in-bblw-match-at-junction-oval/video/2a3f69bd3dfba3f94f759a70adf1cfaa"
+      },
+      {
         "id": "art-09c2d8e7e693",
         "title": "What do Melania and You Can See Everything have in common? More than you might think",
         "source": "The Age",
@@ -4062,7 +4141,7 @@
       },
       {
         "id": "art-eea5dc29488d",
-        "title": "Barrow Island incident: Chevron confirms emergency incident at Gorgon project but says no production impact",
+        "title": "Barrow Island incident: Chevron confirms emergency incident at Gorgon project",
         "source": "The West Australian",
         "feedId": "the-west",
         "domain": "thewest.com.au",
@@ -4135,7 +4214,7 @@
         "domain": "thewest.com.au",
         "url": "https://thewest.com.au/news/police/roe-highway-road-rage-jane-brook-man-charged-over-alleged-maida-vale-assault-on-elderly-driver-c-23223060",
         "summary": "A man has been charged over a shocking road rage incident, where police say he rammed the rear of a vehicle before violently pushing a driver to the ground.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23223060/57acba52ccbe508232145676d01c972529139cf7-16x9-x0y27w2392h1346.jpg?imwidth=1200",
+        "imageUrl": "",
         "pubDate": "2026-11-27T07:42:31.000Z"
       },
       {
@@ -4148,85 +4227,6 @@
         "summary": "Corey Rocchiccioli has been called into Australia’s Test squad for the first time and will press to make his debut in Perth.",
         "imageUrl": "https://images.thewest.com.au/publication/C-23220816/3ee49cd6756d55ddbe943afb2e7dbd036553f06b-16x9-x869y201w4777h2687.jpg",
         "pubDate": "2026-11-27T07:40:22.000Z"
-      },
-      {
-        "id": "art-701dcb5e1059",
-        "title": "Philippine VP Duterte digs in amid impeachment drama",
-        "source": "The West Australian",
-        "feedId": "the-west",
-        "domain": "thewest.com.au",
-        "url": "https://thewest.com.au/politics/philippine-vp-duterte-digs-in-amid-impeachment-drama-c-23223203",
-        "summary": "Quitting is \"out of the question\" for Philippine Vice-President Sara Duterte, who warns a guilty verdict in her trial will come with \"a lot of consequences\".",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23223203/0767a2b4a14ce5aa2266ab51896d8477e4a956c3-16x9-x0y0w1280h720.jpg",
-        "pubDate": "2026-11-27T07:38:39.000Z"
-      },
-      {
-        "id": "art-0577bb060b68",
-        "title": "20,000 cameras, eyes in the sky: $5m police upgrade to track crime as it happens",
-        "source": "Herald Sun",
-        "feedId": "herald-sun",
-        "domain": "heraldsun.com.au",
-        "url": "https://www.heraldsun.com.au/truecrimeaustralia/police-courts-victoria/victoria-police-tracks-offenders-in-real-time-as-5m-live-surveillance-centre-expands/news-story/3c04fa95d3abce6cf58d8fba9b038be5",
-        "summary": "20,000 cameras, eyes in the sky: $5m police upgrade to track crime as it happens Herald Sun",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:36:45.000Z",
-        "publisherUrl": "https://www.heraldsun.com.au/truecrimeaustralia/police-courts-victoria/victoria-police-tracks-offenders-in-real-time-as-5m-live-surveillance-centre-expands/news-story/3c04fa95d3abce6cf58d8fba9b038be5"
-      },
-      {
-        "id": "art-84f61d54ae62",
-        "title": "‘Is the AFL involved?’: Board conspiracy claims rock Dees",
-        "source": "Herald Sun",
-        "feedId": "herald-sun",
-        "domain": "heraldsun.com.au",
-        "url": "https://www.heraldsun.com.au/sport/afl/news/melbourne-board-challenger-peter-lawrence-accuses-the-club-of-running-an-afl-appointee-against-him/news-story/4df84ea3d1ba68e2bf0f2a1b3c0f87b4",
-        "summary": "‘Is the AFL involved?’: Board conspiracy claims rock Dees Herald Sun",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:35:17.000Z",
-        "publisherUrl": "https://www.heraldsun.com.au/sport/afl/news/melbourne-board-challenger-peter-lawrence-accuses-the-club-of-running-an-afl-appointee-against-him/news-story/4df84ea3d1ba68e2bf0f2a1b3c0f87b4"
-      },
-      {
-        "id": "art-4e95a0fb39c6",
-        "title": "Matildas legend enters arena of greatness in milestone match",
-        "source": "ABC News Australia",
-        "feedId": "abc-au",
-        "domain": "abc.net.au",
-        "url": "https://www.abc.net.au/news/2026-11-27/steph-catley-matildas-150-caps/107434880",
-        "summary": "Matildas vice-captain Steph Catley will join an elite group of players in the 150-cap club, as the humble champion solidifies her place among the country's all-time greats.",
-        "imageUrl": "https://live-production.wcms.abc-cdn.net.au/18f66e3e29bdab614665ab541c8f434b?impolicy=wcms_crop_resize&cropH=2384&cropW=4238&xPos=0&yPos=0&width=862&height=485",
-        "pubDate": "2026-11-27T07:31:52.000Z"
-      },
-      {
-        "id": "art-095d4492b638",
-        "title": "Albany Town Square set for Great Southern Ability Festival showcasing talented people living with a disability",
-        "source": "The West Australian",
-        "feedId": "the-west",
-        "domain": "thewest.com.au",
-        "url": "https://thewest.com.au/news/albany-advertiser/albany-town-square-set-for-great-southern-ability-festival-showcasing-talented-people-living-with-a-disability-c-23207411",
-        "summary": "The annual Great Southern Ability Festival is coming to town on Tuesday, December 1 and showcases the talents and skills of those living with a disability.",
-        "imageUrl": "https://images.thewest.com.au/publication/C-23207411/2d1caebfaa45a54c4844c677258a116f3326f68e-16x9-x0y270w5184h2916.jpg",
-        "pubDate": "2026-11-27T07:30:00.000Z"
-      },
-      {
-        "id": "art-93f84b011501",
-        "title": "Boy, 13, killed after being struck by ute in south-west Sydney",
-        "source": "The Age",
-        "feedId": "the-age",
-        "domain": "theage.com.au",
-        "url": "https://www.theage.com.au/national/nsw/boy-13-killed-after-being-struck-by-ute-in-south-west-sydney-20261127-p61hzz.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
-        "summary": "Police are investigating whether the 59-year-old man behind the wheel was driving recklessly before the crash.",
-        "imageUrl": "https://static.ffx.io/images/$zoom_1.0624%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Ce_sharpen:60%2Cf_auto/a02dcfec42dad203dd231eb7206597365022cdb0bc7ef3c892b34cf833268dcf",
-        "pubDate": "2026-11-27T07:28:56.000Z"
-      },
-      {
-        "id": "art-640b302136f8",
-        "title": "North Melbourne vs Melbourne LIVE: Sweaty scenes as muggy conditions greet Roos, Dees for AFLW decider",
-        "source": "The Age",
-        "feedId": "the-age",
-        "domain": "theage.com.au",
-        "url": "https://www.theage.com.au/sport/afl/north-melbourne-vs-melbourne-live-roos-demons-face-off-at-ikon-park-in-the-aflw-grand-final-20261127-p61htc.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
-        "summary": "The Roos are chasing a third-straight premiership while rivals Melbourne Demons believe they can cause the upset in the AFLW grand final at Ikon Park. Follow along live.",
-        "imageUrl": "https://static.ffx.io/images/$zoom_0.1862796833773087%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_51/t_crop_custom/q_86%2Cf_auto/b980f6ffe1e288404c4b05f9df3ff4737012ecaf",
-        "pubDate": "2026-11-27T07:25:15.000Z"
       },
       {
         "id": "art-594e1d7d0ce5",
@@ -4403,7 +4403,7 @@
     ]
   },
   "canada": {
-    "updatedAt": "2026-11-27T08:15:27.596Z",
+    "updatedAt": "2026-11-27T08:30:25.323Z",
     "results": [
       {
         "feedId": "cbc-top",
@@ -4900,7 +4900,7 @@
     ]
   },
   "singapore": {
-    "updatedAt": "2026-11-27T08:15:27.603Z",
+    "updatedAt": "2026-11-27T08:30:25.330Z",
     "results": [
       {
         "feedId": "straitstimes-sg",
@@ -4929,13 +4929,46 @@
     ],
     "articles": [
       {
-        "id": "art-28778564956c",
-        "title": "Bournemouth, Milan lengkapkan kebangkitan Liga Europa, Benfica pula teruk dibelasah",
+        "id": "art-7ab0772a3e73",
+        "title": "MSF to develop common workflows, data-sharing systems for social services overhaul",
+        "source": "The Straits Times · Singapore",
+        "feedId": "straitstimes-sg",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/singapore/community/msf-to-develop-common-workflows-data-sharing-systems-for-social-services-overhaul",
+        "summary": "Agencies will have flexibility to determine their roles within each region, based on capabilities, expertise, and community needs.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/b78325a125fbe474317e37a2d918b0f62b0fbf924528f347aba76ba5b98b4ea8?t=og",
+        "pubDate": "2026-11-27T08:25:00.000Z"
+      },
+      {
+        "id": "art-1120ca28f0f3",
+        "title": "Ceramah kupas pengalaman Yatiman sebagai penulis, pemimpin tahun awal S’pura",
         "source": "Berita Harian (Singapore)",
         "feedId": "beritaharian-sg",
         "domain": "beritaharian.sg",
-        "url": "https://www.beritaharian.sg/sukan/bournemouth-milan-lengkapkan-kebangkitan-liga-europa-benfica-pula-teruk-dibelasah",
-        "summary": "VIGO (Sepanyol): Bournemouth mengekalkan rekod sempurna mereka dalam Liga Europa dengan kebangkitan mengagumkan apabila mereka menewaskan Celta Vigo 2-1 di tempat lawan pada 26 November.",
+        "url": "https://www.beritaharian.sg/bahasa-budaya/ceramah-kupas-pengalaman-yatiman-penulis-pemimpin-tahun-awal-spura",
+        "summary": "Sebagai mantan Setiausaha Parlimen Kanan dan mantan Editor Berita Harian, Encik Yatiman Yusof, mengharungi zaman berliku pada tahun-tahun awal pembentukan Singapura.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/0214639cbb92a29b6df3bf4ae392029e3d05306aef205d165bca96f8b69529bb?t=og",
+        "pubDate": "2026-11-27T08:24:30.000Z"
+      },
+      {
+        "id": "art-c682e4a0a383",
+        "title": "Rule of law, independence of judiciary, must be protected: Edwin Tong",
+        "source": "The Straits Times · Singapore",
+        "feedId": "straitstimes-sg",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/singapore/courts-crime/rule-of-law-independence-of-judiciary-must-be-protected-edwin-tong",
+        "summary": "The Law Minister said the success of Singapore’s legal system should be measured by whether people get the help they need.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/449cbd3f0884bb9f59d94db8ef1e5c92b507284e2859ef0c7003ebdfad3f71e2?t=og",
+        "pubDate": "2026-11-27T08:12:34.000Z"
+      },
+      {
+        "id": "art-9d223cd04c40",
+        "title": "Bournemouth, Milan lengkapkan kebangkitan; Benfica pula dibelasah",
+        "source": "Berita Harian (Singapore)",
+        "feedId": "beritaharian-sg",
+        "domain": "beritaharian.sg",
+        "url": "https://www.beritaharian.sg/sukan/bournemouth-milan-lengkapkan-kebangkitan-benfica-pula-dibelasah",
+        "summary": "VIGO (Sepanyol): Bournemouth mengekalkan rekod sempurna mereka dalam Liga Europa dengan kebangkitan mengagumkan apabila mereka menewaskan Celta Vigo 2-1 di padang lawan pada 26 November.",
         "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/c46eceb345f1e770c7c45733d54ce3683f74a133d146a852174207a850c1432f?t=og",
         "pubDate": "2026-11-27T07:58:00.000Z"
       },
@@ -5101,7 +5134,7 @@
         "domain": "beritaharian.sg",
         "url": "https://www.beritaharian.sg/dunia/lelaki-dakota-didakwa-ugut-bunuh-tiga-pemimpin-islam-as",
         "summary": "WASHINGTON: Seorang lelaki di negeri North Dakota, Amerika Syarikat, berdepan pertuduhan di mahkamah persekutuan selepas didakwa mengeluarkan ugutan bunuh terhadap beberapa pemimpin politik beragama",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/de50a2199368db03136298441456db51106fc882ce0e7edf2f8c9ac810b84b53?t=og",
+        "imageUrl": "",
         "pubDate": "2026-11-27T06:34:40.000Z"
       },
       {
@@ -5112,7 +5145,7 @@
         "domain": "beritaharian.sg",
         "url": "https://www.beritaharian.sg/bahasa-budaya/pendapatan-di-spura-naik-kadar-lebih-perlahan-2026",
         "summary": "Pekerja di Singapura mencatatkan pertumbuhan pendapatan pada 2026, namun pada kadar lebih perlahan, selepas mengambil kira faktor inflasi yang lebih tinggi.",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/b3343eeefff1cff03f1ca63dc71549ccd777d68ec580a14f3ce970ad8f556f83?t=og",
+        "imageUrl": "",
         "pubDate": "2026-11-27T06:33:58.000Z"
       },
       {
@@ -5336,39 +5369,6 @@
         "pubDate": "2026-11-27T04:15:00.000Z"
       },
       {
-        "id": "art-1006c0b67773",
-        "title": "Polar raikan inovasi, cita rasa warisan sempena ulang tahun ke-100",
-        "source": "Berita Harian (Singapore)",
-        "feedId": "beritaharian-sg",
-        "domain": "beritaharian.sg",
-        "url": "https://www.beritaharian.sg/gaya-hidup/polar-raikan-inovasi-cita-rasa-warisan-sempena-ulang-tahun-100",
-        "summary": "Daripada karipap berkulit rangup hingga gulungan kek manis atau Sugar Roll, sajian Polar Puffs & Cakes sudah menjadi sebahagian daripada kenangan zaman kanak-kanak beberapa generasi warga Singapura.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:13:49.000Z"
-      },
-      {
-        "id": "art-6ce0b873445a",
-        "title": "Cooling-off period for prepaid packages, stronger influencer ad oversight among recommendations to better protect consumers",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/singapore/consumer-protection-case-influencer-scalping-prepaid-packages-6586471",
-        "summary": "The Consumer Protection Review Panel released seven recommendations across several areas, including prepayment losses and pressure selling.",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--vMc_jDU3--/c_crop,h_1123,w_1997,x_1,y_288/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/27/consumer_protection_review_panel.jpg?itok=Ke6jhSYL",
-        "pubDate": "2026-11-27T04:07:00.000Z"
-      },
-      {
-        "id": "art-0e26a36027d0",
-        "title": "Mentega belacan, cili kicap: ‘Sudu’ adun perisa Melayu",
-        "source": "Berita Harian (Singapore)",
-        "feedId": "beritaharian-sg",
-        "domain": "beritaharian.sg",
-        "url": "https://www.beritaharian.sg/kaki-makan/pilihan-kaki-makan/mentega-belacan-cili-kicap-sudu-adun-perisa-melayu",
-        "summary": "Aroma belacan, kepedasan sambal tumis dan keharuman rempah sate lazimnya membangkitkan selera apabila menikmati hidangan Melayu ini.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:06:12.000Z"
-      },
-      {
         "id": "art-d931124d68e3",
         "title": "Govt has not confirmed if Nvidia has stopped chip shipments to S'pore: DPM Gan",
         "source": "Mothership",
@@ -5393,7 +5393,7 @@
     ]
   },
   "malaysia": {
-    "updatedAt": "2026-11-27T08:15:27.609Z",
+    "updatedAt": "2026-11-27T08:30:25.337Z",
     "results": [
       {
         "feedId": "berita-harian",
@@ -5427,6 +5427,61 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-9b7a0ea9e0ea",
+        "title": "Ekuinas bimbing 74 syarikat Bumiputera, buka permohonan baharu",
+        "source": "Berita Harian",
+        "feedId": "berita-harian",
+        "domain": "bharian.com.my",
+        "url": "https://www.bharian.com.my/bisnes/usahawan/2026/11/1732802/ekuinas-bimbing-74-syarikat-bumiputera-buka-permohonan-baharu",
+        "summary": "PETALING JAYA: Sebanyak 74 syarikat Bumiputera menerima bimbingan melalui program ILTIZAM Catalyst sejak 2022, termasuk 17 syarikat yang menamatkan kohort tahun ini, menurut Ekuiti Nasional Bhd (Ekuinas).",
+        "imageUrl": "https://assets.bharian.com.my/images/articles/bizh-kuinase_BHfield_image_listing_featured_v2.var_1795767794.jpg",
+        "pubDate": "2026-11-27T16:23:16.000Z"
+      },
+      {
+        "id": "art-a1681c36465c",
+        "title": "Kutipan RM10 bilion setahun bukti Sabah layak terima hak 40 peratus - Madius",
+        "source": "Berita Harian",
+        "feedId": "berita-harian",
+        "domain": "bharian.com.my",
+        "url": "https://www.bharian.com.my/berita/nasional/2026/11/1732800/kutipan-rm10-bilion-setahun-bukti-sabah-layak-terima-hak-40-peratus",
+        "summary": "KOTA KINABALU: Kutipan hasil Kerajaan Persekutuan sebanyak RM10 bilion setahun dari Sabah bagi tempoh 2022 hingga 2024 sewajarnya membolehkan pelaksanaan penuh hak 40 peratus negeri itu mengikut perlembagaan bermula tahun 2027.",
+        "imageUrl": "https://assets.bharian.com.my/images/articles/BH27KUTIP-O_BHfield_image_listing_featured_v2.var_1795767757.jpg",
+        "pubDate": "2026-11-27T16:22:38.000Z"
+      },
+      {
+        "id": "art-89257ac09ab0",
+        "title": "PM arah pelaksanaan Belanjawan 2027 bermula seawal 1 Januari",
+        "source": "Berita Harian",
+        "feedId": "berita-harian",
+        "domain": "bharian.com.my",
+        "url": "https://www.bharian.com.my/berita/nasional/2026/11/1732797/pm-arah-pelaksanaan-belanjawan-2027-bermula-seawal-1-januari",
+        "summary": "Oleh Mohd Iskandar Ibrahim",
+        "imageUrl": "https://assets.bharian.com.my/images/articles/BH27AROH-O_BHfield_image_listing_featured_v2.var_1795767496.jpg",
+        "pubDate": "2026-11-27T16:18:17.000Z"
+      },
+      {
+        "id": "art-aa44762bdc7e",
+        "title": "Mekanik dalam pengawasan POCA dipenjara 2 tahun, sebatan kerana curi motosikal",
+        "source": "Berita Harian",
+        "feedId": "berita-harian",
+        "domain": "bharian.com.my",
+        "url": "https://www.bharian.com.my/berita/nasional/2026/11/1732795/mekanik-dalam-pengawasan-poca-dipenjara-2-tahun-sebatan-kerana-curi",
+        "summary": "BUKIT MERTAJAM: Seorang mekanik yang berada di bawah pengawasan polis mengikut Seksyen 15(4) Akta Pencegahan Jenayah 1959 (POCA) dijatuhi hukuman penjara dua tahun oleh Mahkamah Majistret di sini, hari ini, atas kesalahan mencuri motosikal Honda RXZ, di sini, ",
+        "imageUrl": "https://assets.bharian.com.my/images/articles/BH27POCA-O_BHfield_image_listing_featured_v2.var_1795767460.jpg",
+        "pubDate": "2026-11-27T16:17:41.000Z"
+      },
+      {
+        "id": "art-53df94f13080",
+        "title": "Tak perlu disukai semua orang - Edrie Hashim",
+        "source": "Berita Harian",
+        "feedId": "berita-harian",
+        "domain": "bharian.com.my",
+        "url": "https://www.bharian.com.my/hiburan/selebriti/2026/11/1732793/tak-perlu-disukai-semua-orang-edrie-hashim",
+        "summary": "KUALA LUMPUR: “Kita tak perlu disukai semua orang. Kita cuma perlu disukai orang yang betul.”",
+        "imageUrl": "https://assets.bharian.com.my/images/articles/EdrieSukaLiner_BHfield_image_listing_featured_v2.var_1795767448.jpg",
+        "pubDate": "2026-11-27T16:17:28.000Z"
+      },
       {
         "id": "art-c1d8a622b695",
         "title": "Pemain industri maritim mahu peraturan pencampuran kargo sawit diperjelas",
@@ -5571,59 +5626,15 @@
         "pubDate": "2026-11-27T15:44:51.000Z"
       },
       {
-        "id": "art-f03cb1fc1b1f",
-        "title": "Trump dakwa hampir menang ke atas Iran",
-        "source": "Berita Harian",
-        "feedId": "berita-harian",
-        "domain": "bharian.com.my",
-        "url": "https://www.bharian.com.my/dunia/amerika/2026/11/1732728/trump-dakwa-hampir-menang-ke-atas-iran",
-        "summary": "WASHINGTON: Presiden Amerika Syarikat, Donald Trump, mendakwa kemenangan ke atas Iran semakin hampir.",
-        "imageUrl": "https://assets.bharian.com.my/images/articles/bh27tump-o_BHfield_image_listing_featured_v2.var_1795765139.jpg",
-        "pubDate": "2026-11-27T15:39:00.000Z"
-      },
-      {
-        "id": "art-bd46b023c725",
-        "title": "Banyak kenderaan tindak balas kecemasan dekat KLCC untuk simulasi - polis",
-        "source": "Berita Harian",
-        "feedId": "berita-harian",
-        "domain": "bharian.com.my",
-        "url": "https://www.bharian.com.my/berita/nasional/2026/11/1732726/banyak-kenderaan-tindak-balas-kecemasan-dekat-klcc-untuk-simulasi",
-        "summary": "KUALA LUMPUR: Polis menjelaskan bahawa kehadiran sejumlah besar kenderaan dan anggota pasukan tindak balas kecemasan berhampiran Pusat Konvensyen Kuala Lumpur (KLCC) di sini, malam tadi, adalah sebahagian daripada latihan simulasi kecemasan.",
-        "imageUrl": "https://assets.bharian.com.my/images/articles/BH27TIADASERANG-O_BHfield_image_listing_featured_v2.var_1795765038.jpg",
-        "pubDate": "2026-11-27T15:37:22.000Z"
-      },
-      {
-        "id": "art-e44f04450700",
-        "title": "Pantun Wan Rosdy singgung slogan 'PAS tawan Pahang'",
-        "source": "Berita Harian",
-        "feedId": "berita-harian",
-        "domain": "bharian.com.my",
-        "url": "https://www.bharian.com.my/berita/nasional/2026/11/1732688/pantun-wan-rosdy-singgung-slogan-pas-tawan-pahang",
-        "summary": "KUANTAN: Sidang Dewan Undangan Negeri (DUN) Pahang hari ini bertukar meriah apabila Menteri Besar Pahang membalas pantun Ketua Pembangkang berhubung potensi kerjasama politik antara Perikatan Nasional (PN) dan Barisan Nasional (BN).",
-        "imageUrl": "https://assets.bharian.com.my/images/articles/BH27RISIK-O_BHfield_image_listing_featured_v2.var_1795764672.jpg",
-        "pubDate": "2026-11-27T15:31:13.000Z"
-      },
-      {
-        "id": "art-f31ee561e445",
-        "title": "3 maut selepas bot nelayan tenggelam di luar pantai Iceland",
-        "source": "Berita Harian",
-        "feedId": "berita-harian",
-        "domain": "bharian.com.my",
-        "url": "https://www.bharian.com.my/dunia/eropah/2026/11/1732686/3-maut-selepas-bot-nelayan-tenggelam-di-luar-pantai-iceland",
-        "summary": "COPENHAGEN: Tiga orang maut selepas sebuah bot nelayan karam di luar pantai Iceland, lapor Agensi Berita Jerman (dpa).",
-        "imageUrl": "https://assets.bharian.com.my/images/articles/bh27nell-o_BHfield_image_listing_featured_v2.var_1795764170.jpg",
-        "pubDate": "2026-11-27T15:22:51.000Z"
-      },
-      {
-        "id": "art-8a8945264c77",
-        "title": "Karnival Jom Heboh sasar 300,000 pengunjung ke Stadium Merdeka",
-        "source": "Berita Harian",
-        "feedId": "berita-harian",
-        "domain": "bharian.com.my",
-        "url": "https://www.bharian.com.my/berita/nasional/2026/11/1732684/karnival-jom-heboh-sasar-300000-pengunjung-ke-stadium-merdeka",
-        "summary": "KUALA LUMPUR: Karnival Jom Heboh (KJH) di Stadium Merdeka, Kuala Lumpur, yang berlangsung selama tiga hari bermula hari ini menyasarkan kehadiran lebih 300,000 pengunjung.",
-        "imageUrl": "https://assets.bharian.com.my/images/articles/BHJOMAN-O_BHfield_image_listing_featured_v2.var_1795764557.jpg",
-        "pubDate": "2026-11-27T15:20:55.000Z"
+        "id": "art-7ac812d1743f",
+        "title": "Speedy Tigers look to tame Kookaburras in Sultan Azlan Shah Cup final",
+        "source": "New Straits Times",
+        "feedId": "nst",
+        "domain": "nst.com.my",
+        "url": "https://www.nst.com.my/sports/hockey/2026/11/1587056/speedy-tigers-look-tame-kookaburras-sultan-azlan-shah-cup-final",
+        "summary": "KUALA LUMPUR: Veteran striker Faizal Saari will spearhead Malaysia’s bid for a rare victory over former world and Olympic champions Australia in tomorrow’s Sultan Azlan Shah Cup (SAS Cup) final at the Azlan Shah Stadium in Ipoh.",
+        "imageUrl": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/listing-featured/B96DE3D673EBC328452FE96128C43940_data_0.jpg",
+        "pubDate": "2026-11-27T08:18:42.000Z"
       },
       {
         "id": "art-3e9f400402d3",
@@ -5857,17 +5868,6 @@
         "pubDate": "2026-11-27T07:30:14.000Z"
       },
       {
-        "id": "art-c1dccdad0553",
-        "title": "‘Kata Que dia punya’ – Tayang cincin tunang, Fazura hanya bergurau",
-        "source": "Kosmo!",
-        "feedId": "kosmo",
-        "domain": "kosmo.com.my",
-        "url": "https://www.kosmo.com.my/2026/11/27/kata-que-dia-punya-tayang-cincin-tunang-fazura-hanya-bergurau/?utm_source=rss&utm_medium=rss&utm_campaign=kata-que-dia-punya-tayang-cincin-tunang-fazura-hanya-bergurau",
-        "summary": "KUALA LUMPUR – Pelakon Fazura mengakui tindakan tindakannya menayangkan cincin dalam satu acara hanyalah sekadar gurauan bagi membalas usikan rakan selebriti, Elly Mazlein. Bagi Fazura atau nama lengkapnya Nur Fazura Sharifuddin, 43, situasi tersebut tercetus ",
-        "imageUrl": "https://www.kosmo.com.my/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-27-at-14.45.06-1024x576.jpeg",
-        "pubDate": "2026-11-27T07:29:56.000Z"
-      },
-      {
         "id": "art-af1c265c6edd",
         "title": "Polis rakam keterangan Pua berkait minit mesyuarat lembaga pengampunan",
         "source": "Free Malaysia Today",
@@ -5892,7 +5892,7 @@
     ]
   },
   "asia": {
-    "updatedAt": "2026-11-27T08:15:27.666Z",
+    "updatedAt": "2026-11-27T08:30:25.395Z",
     "results": [
       {
         "feedId": "cna",
@@ -5969,6 +5969,61 @@
     ],
     "articles": [
       {
+        "id": "art-6bce97bbfc65",
+        "title": "Ukraine's Zelenskiy compares Trump's friendship with Putin to friendship with Hitler",
+        "source": "The Straits Times · Asia",
+        "feedId": "straitstimes-asia",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/asia/ukraines-zelenskiy-compares-trumps-friendship-with-putin-to-friendship-with-hitler",
+        "summary": "LONDON, Nov 27 - Ukraine's Volodymyr Zelenskiy said US President Donald Trump calling Russia's Vladimir Putin \\\"my friend\\\" was strange and akin to making the same comment about Adolf Hitler during World War Two.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/5bdc73566f05b22d416a8289ec1d8b3196bf999375512107fb3efcaf3a1d9dac?t=og",
+        "pubDate": "2026-11-27T08:26:57.000Z"
+      },
+      {
+        "id": "art-0cb900107458",
+        "title": "Suzuki to domestically produce rare metal-free EV batteries",
+        "source": "The Japan Times",
+        "feedId": "japan-times",
+        "domain": "japantimes.co.jp",
+        "url": "https://www.japantimes.co.jp/business/2026/11/27/companies/suzuki-rare-metal-free-batteries/",
+        "summary": "By making rare metal-free batteries, the company aims to curb procurement risks for materials for which Japan relies on imports.",
+        "imageUrl": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/27/576368.jpg",
+        "pubDate": "2026-11-27T08:25:00.000Z"
+      },
+      {
+        "id": "art-35b927bd5d81",
+        "title": "Taiwan voters flaunt their political colours ahead of local polls",
+        "source": "The Straits Times · Asia",
+        "feedId": "straitstimes-asia",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/asia/east-asia/taiwan-voters-flaunt-their-political-colours-ahead-of-local-polls",
+        "summary": "People have been designing, making and sharing ribbons to promote their preferred candidate.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/4a0828b3a28450f33963eab2be1ece893e585cf8e927ec28ae773c328db7ceb4?t=og",
+        "pubDate": "2026-11-27T08:21:00.000Z"
+      },
+      {
+        "id": "art-0991d3665eb7",
+        "title": "Abby Choi ‘not all good’ but nothing can justify ex-in-laws’ ‘brutality’, court hears",
+        "source": "South China Morning Post",
+        "feedId": "scmp",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3376030/abby-choi-not-all-good-nothing-can-justify-ex-laws-brutality-court-hears",
+        "summary": "Slain Hong Kong socialite Abby Choi Tin-fung’s insensitive and inappropriate conduct did not justify her alleged murder and dismemberment at the hands of three of her former in-laws, prosecutors have said as they closed their case in the high-profile trial. De",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/62c0229a-c302-48d4-86fc-65833c694123_63a62037.jpg?itok=Kz0T8YfS&v=1795766654",
+        "pubDate": "2026-11-27T08:16:43.000Z"
+      },
+      {
+        "id": "art-8a06a91db1ca",
+        "title": "Shin Min-a says would return for 'The Remarried Empress' Season 2",
+        "source": "Yonhap News",
+        "feedId": "yonhap",
+        "domain": "en.yna.co.kr",
+        "url": "https://en.yna.co.kr/view/AEN20261127007100315",
+        "summary": "SEOUL, Nov. 27 (Yonhap) -- Actor Shin Min-a, who played Empress Navier in the Di...",
+        "imageUrl": "https://img.yna.co.kr/etc/inner/EN/2026/11/27/AEN20261127007100315_01_i_P2.jpg",
+        "pubDate": "2026-11-27T08:13:00.000Z"
+      },
+      {
         "id": "art-7c9abe3aca8d",
         "title": "Jakarta or Nusantara? State agency U-turn clouds Indonesia’s capital move",
         "source": "South China Morning Post",
@@ -6013,6 +6068,17 @@
         "pubDate": "2026-11-27T07:55:34.000Z"
       },
       {
+        "id": "art-30789ff74b48",
+        "title": "New Zealand election results set up tricky talks for conservative incumbent",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
+        "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T07:55:32.000Z"
+      },
+      {
         "id": "art-9e59504fe0e2",
         "title": "Pan-gov't task force on integration of military academies to set sail next week",
         "source": "Yonhap News",
@@ -6033,6 +6099,17 @@
         "summary": "Biosecurity New Zealand has confirmed the presence of Corbicula clams at Atiamuri Hydro Station on the Waikato River.",
         "imageUrl": "",
         "pubDate": "2026-11-27T07:54:50.000Z"
+      },
+      {
+        "id": "art-0598032a0d5c",
+        "title": "‘Borrowing to make ends meet’: The rising cost of living in Europe",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/borrowing-to-make-ends-meet-the-rising-cost-of-living-in-europe?traffic_source=rss",
+        "summary": "Prices are climbing again across Europe as energy costs surge.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6b09233e37-1795760958_2ee403-1795761015.jpg?resize=1200%2C630&quality=80",
+        "pubDate": "2026-11-27T07:53:59.000Z"
       },
       {
         "id": "art-cc3b94eff5db",
@@ -6244,83 +6321,6 @@
         "pubDate": "2026-11-27T07:23:57.000Z"
       },
       {
-        "id": "art-e91f112d9353",
-        "title": "‘Mushroom killer’ appeals case to Australia’s top court: Media",
-        "source": "The Straits Times · Asia",
-        "feedId": "straitstimes-asia",
-        "domain": "straitstimes.com",
-        "url": "https://www.straitstimes.com/asia/australianz/mushroom-killer-appeals-case-to-australias-top-court-media",
-        "summary": "Erin Patterson was in 2025 found guilty of murdering her husband’s parents and aunt in 2023.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:23:00.000Z"
-      },
-      {
-        "id": "art-efe3a2811edd",
-        "title": "U.S. tariff plan has Japan asking questions and pushing back",
-        "source": "The Japan Times",
-        "feedId": "japan-times",
-        "domain": "japantimes.co.jp",
-        "url": "https://www.japantimes.co.jp/business/2026/11/27/trump-tariff-japan/",
-        "summary": "Rates could be taken to 15% on most Japanese goods, from the current 12.5%.",
-        "imageUrl": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/27/576351.jpg",
-        "pubDate": "2026-11-27T07:17:00.000Z"
-      },
-      {
-        "id": "art-a8b432a1d879",
-        "title": "Can the Mecca pact turn its collective defence promise into real support?",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/news-analysis/2026/11/27/can-the-mecca-pact-turn-its-collective-defence-promise-into-real-support?traffic_source=rss",
-        "summary": "Pakistan, Saudi Arabia and Turkiye meet in Islamabad as Houthi attacks on the kingdom continue and Iran talks stay open.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/10/2026-10-05T180138Z_991373647_RC26XNAKWGVB_RTRMADP_3_IRAN-CRISIS-SAUDI-TURKEY-PAKISTAN-1791224096.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T07:16:30.000Z"
-      },
-      {
-        "id": "art-f930727ce337",
-        "title": "China says HIV treatment coverage and success rates hit 95%",
-        "source": "The Straits Times · Asia",
-        "feedId": "straitstimes-asia",
-        "domain": "straitstimes.com",
-        "url": "https://www.straitstimes.com/asia/east-asia/china-says-hiv-treatment-coverage-and-success-rates-hit-95",
-        "summary": "Beijing aims to cut new HIV infections, reduce deaths and keep the overall epidemic at a low level by 2030.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T07:15:00.000Z"
-      },
-      {
-        "id": "art-637d705dba5a",
-        "title": "Hakeem Jeffries has disarmed a progressive revolt, but can he deliver?",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/opinions/2026/11/27/hakeem-jeffries-has-disarmed-a-progressive-revolt-but-can-he-deliver?traffic_source=rss",
-        "summary": "The presumptive House speaker's political pragmatism will be tested by divisions over healthcare, Israel and Iran.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/afp_6b092d045f2c-1795763460.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T07:11:19.000Z"
-      },
-      {
-        "id": "art-0eed4be6925f",
-        "title": "Western sanctions on Israeli settlers serve to shield the Israeli state",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/opinions/2026/11/27/western-sanctions-on-israeli-settlers-serve-to-shield-the-israeli-state?traffic_source=rss",
-        "summary": "The settler takeover in Jericho exposes the inadequacy of sanctions targeting only settlers and their organisations.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/ap_6b080ddbbb307-1795689947.jpg?resize=1920%2C1440",
-        "pubDate": "2026-11-27T07:09:53.000Z"
-      },
-      {
-        "id": "art-b6218064b839",
-        "title": "Malaysian radio station slammed for parodying Islamic prayer in football video",
-        "source": "South China Morning Post",
-        "feedId": "scmp",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/asia/southeast-asia/article/3376013/malaysian-radio-station-slammed-parodying-islamic-prayer-football-video",
-        "summary": "Minister in the Prime Minister’s Department (Religious Affairs) Dr Zulkifli Hasan has urged the management of a private radio station in Malaysia to immediately remove a viral video linking solat (Islamic prayer) to English Premier League football matches and ",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/ec856e4a-377b-477a-9215-b560749fcf2a_a9bd752a.jpg?itok=kZMaPhuh&v=1795763245",
-        "pubDate": "2026-11-27T07:07:32.000Z"
-      },
-      {
         "id": "art-5a2e3a1f2edd",
         "title": "AirAsia PH says flights unaffected as DOLE vows to avert pilots' strike",
         "source": "The Philippine Star",
@@ -6343,6 +6343,17 @@
         "pubDate": "2026-11-27T03:31:00.000Z"
       },
       {
+        "id": "art-125baa3a7231",
+        "title": "Will Taiwan’s referendum bring back nuclear power as chips and AI strain the grid?",
+        "source": "SCMP China",
+        "feedId": "scmp-china",
+        "domain": "scmp.com",
+        "url": "https://www.scmp.com/news/china/politics/article/3375975/will-taiwans-referendum-bring-back-nuclear-power-chips-and-ai-strain-grid",
+        "summary": "Taiwan’s growing demand for electricity to sustain its semiconductor and AI industries has thrust a nuclear power referendum into the spotlight in Saturday’s local elections. The vote could also offer Taiwanese leader William Lai Ching-te a way out of a politi",
+        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/27/75197653-b6d9-4214-8fe6-54189092a771_1750db51.jpg?itok=dKwxFoAM&v=1795748237",
+        "pubDate": "2026-11-27T02:59:14.000Z"
+      },
+      {
         "id": "art-8247b9f4c190",
         "title": "Is the US reviving Subic Bay in the Philippines as an ‘unbranded military base’?",
         "source": "SCMP China",
@@ -6352,17 +6363,6 @@
         "summary": "The United States is quietly transforming Subic Bay in the Philippines back into an “unbranded military base” that could support US operations in both the South China Sea and the Taiwan Strait, according to a Chinese think tank. In a report released on Wednesd",
         "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/82327333-b92b-4fb6-867f-0a0b98beff39_a7ce0e03.jpg?itok=4sCS12CG&v=1795666145",
         "pubDate": "2026-11-27T02:00:13.000Z"
-      },
-      {
-        "id": "art-c886a01bd981",
-        "title": "Leading US brain scientist Doris Tsao joins Chinese university that has not been built",
-        "source": "SCMP China",
-        "feedId": "scmp-china",
-        "domain": "scmp.com",
-        "url": "https://www.scmp.com/news/china/science/article/3375928/leading-us-brain-scientist-doris-y-tsao-joins-chinese-university-has-not-been-built",
-        "summary": "After spending most of her life in the United States, leading neuroscientist Cao Ying – better known as Doris Tsao – has decided to leave California’s prestigious UC Berkeley at the peak of her scientific career for a new Chinese research university that has n",
-        "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/11/26/c58bbe0b-016a-4f5d-a433-6f5740777ae2_1cc4a6cc.jpg?itok=_6N1eouX&v=1795688126",
-        "pubDate": "2026-11-27T01:00:11.000Z"
       },
       {
         "id": "art-99d800ac9f64",
@@ -6433,7 +6433,7 @@
     ]
   },
   "europe": {
-    "updatedAt": "2026-11-27T08:15:27.767Z",
+    "updatedAt": "2026-11-27T08:30:25.497Z",
     "results": [
       {
         "feedId": "bbc-europe",
@@ -6528,6 +6528,83 @@
     ],
     "articles": [
       {
+        "id": "art-262dea5bd2f3",
+        "title": "Nach Tarifeinigung: IG-Metall-Chefin verteidigt Öffnungsklausel im Flächentarif",
+        "source": "Die Zeit",
+        "feedId": "zeit",
+        "domain": "zeit.de",
+        "url": "https://www.zeit.de/news/2026-11/27/ig-metall-chefin-verteidigt-oeffnungsklausel-im-flaechentarif",
+        "summary": "",
+        "imageUrl": "https://img.zeit.de/news/2026-11/27/ig-metall-chefin-verteidigt-oeffnungsklausel-im-flaechentarif-image-group/original__640x360",
+        "pubDate": "2026-11-27T08:21:54.000Z"
+      },
+      {
+        "id": "art-1a0eb0239f26",
+        "title": "Hubschrauber im Einsatz: Auffahrunfall in Sömmerda - 79-Jähriger wird schwer verletzt",
+        "source": "Die Zeit",
+        "feedId": "zeit",
+        "domain": "zeit.de",
+        "url": "https://www.zeit.de/news/2026-11/27/auffahrunfall-in-soemmerda-79-jaehriger-wird-schwer-verletzt",
+        "summary": "",
+        "imageUrl": "https://img.zeit.de/news/2026-11/27/auffahrunfall-in-soemmerda-79-jaehriger-wird-schwer-verletzt-image-group/original__640x360",
+        "pubDate": "2026-11-27T08:20:46.000Z"
+      },
+      {
+        "id": "art-e190618ce939",
+        "title": "Scott McClanahan: »Kochen Emotionen hoch, ist man lächerlich. Aber auch am lebendigsten«",
+        "source": "Die Zeit",
+        "feedId": "zeit",
+        "domain": "zeit.de",
+        "url": "https://www.zeit.de/zeit-magazin/leben/2026-11/scott-mcclanahan-streit-liebe-familie-autor",
+        "summary": "Keiner erzählt so schonungslos und liebevoll von Streit wie Scott McClanahan. Aber warum streiten wir gerade mit denen am heftigsten, die wir am meisten lieben?",
+        "imageUrl": "https://img.zeit.de/zeit-magazin/2026-11/liebsten-anschreien-bild/original__640x360",
+        "pubDate": "2026-11-27T08:18:58.000Z"
+      },
+      {
+        "id": "art-67e08ecea0ea",
+        "title": "France and Germany push for EU budget deal by year-end as far-right rise threatens Ukraine aid",
+        "source": "France 24",
+        "feedId": "france24",
+        "domain": "france24.com",
+        "url": "https://www.france24.com/en/europe/20261127-france-and-germany-push-for-eu-budget-deal-by-year-end-as-far-right-rise-threatens-ukraine-aid",
+        "summary": "As Europe braces itself for a slew of tense elections in 2027, Paris and Berlin are pushing for the European Union to strike a budget deal by December 31 to lock in financial aid for Ukraine. But Thursday's talks in Brussels seem to have done little to build c",
+        "imageUrl": "https://s.france24.com/media/display/dc7e33b4-ea20-11f1-92cc-81bc2b1dcd65/w:1024/p:16x9/2026-11-26T195141Z-1710060570-RC2VVOA3Q7FW-RTRMADP-3-EU-SUMMIT.jpg",
+        "pubDate": "2026-11-27T08:17:02.000Z"
+      },
+      {
+        "id": "art-679fdf784f75",
+        "title": "Organtransplantation: Mit Blaulicht durch den Stau - Polizei rettet Organtransport",
+        "source": "Die Zeit",
+        "feedId": "zeit",
+        "domain": "zeit.de",
+        "url": "https://www.zeit.de/news/2026-11/27/mit-blaulicht-durch-den-stau-polizei-rettet-organtransport",
+        "summary": "",
+        "imageUrl": "https://img.zeit.de/news/2026-11/27/mit-blaulicht-durch-den-stau-polizei-rettet-organtransport-image-group/original__640x360",
+        "pubDate": "2026-11-27T08:16:14.000Z"
+      },
+      {
+        "id": "art-dad8295bfdb7",
+        "title": "Peru: Tonnenweise Drogen durch den Schornstein",
+        "source": "Die Zeit",
+        "feedId": "zeit",
+        "domain": "zeit.de",
+        "url": "https://www.zeit.de/video/2026-11/peru-tonnenweise-drogen-durch-den-schornstein",
+        "summary": "Sackweise Kokain wurde am Donnerstag zur Vernichtung durch Behörden in Peru vorbereitet. Die Nationalpolizei hatte fast 11 Tonnen Rauschgifte beschlagnahmt.",
+        "imageUrl": "https://img.zeit.de/video/2026-11/6408941523112-still/original__640x360",
+        "pubDate": "2026-11-27T08:13:38.000Z"
+      },
+      {
+        "id": "art-9bf32177816c",
+        "title": "3. Partie der Schach-WM: Dritte Partie, drittes Remis",
+        "source": "Die Zeit",
+        "feedId": "zeit",
+        "domain": "zeit.de",
+        "url": "https://www.zeit.de/video/2026-11/schach-weltmeisterschaft-javokhir-sindarov-gukesh-dommaraju-partie-3",
+        "summary": "In der dritten Partie gelingt Schach-Weltmeister Gukesh eine Überraschung gegen Herausforderer Sindarov. Die Videoanalyse",
+        "imageUrl": "https://img.zeit.de/video/2026-11/schach-wm-2026-genf-videoanalyse/original__640x360",
+        "pubDate": "2026-11-27T08:13:36.000Z"
+      },
+      {
         "id": "art-c7b85de1fd04",
         "title": "Fahrbahn wieder frei: Unfälle auf A72 im Erzgebirge - zeitweise Glätte und Stau",
         "source": "Die Zeit",
@@ -6546,8 +6623,19 @@
         "domain": "euronews.com",
         "url": "https://www.euronews.com/video/2026/11/27/russia-moscows-iconic-soviet-era-expo-park-opens-its-20000-square-metre-outdoor-ice-rink",
         "summary": "Moscow's iconic VDNKh exhibition park has opened its vast outdoor ice rink for the winter season on Thursday 26 November 2026, welcoming skaters to 20,000 square metres of ice winding around the complex's landmark Soviet-era fountains.",
-        "imageUrl": "",
+        "imageUrl": "https://images.euronews.com/articles/stories/10/01/06/97/1200x675_cmsv2_30c319b2-ead3-549d-865d-7712e36491a7-10010697.jpg",
         "pubDate": "2026-11-27T08:08:29.000Z"
+      },
+      {
+        "id": "art-b5e6cd18f56f",
+        "title": "“Tribal loyalty” works on right: “Heart on the left” sensitive to racism, antisemitism, human rights",
+        "source": "France 24",
+        "feedId": "france24",
+        "domain": "france24.com",
+        "url": "https://www.france24.com/en/tv-shows/spotlight/20261127-tribal-loyalty-works-on-right-heart-on-the-left-sensitive-to-racism-antisemitism-human-rights",
+        "summary": "As Jordan Bardella denies fresh allegations concerning antisemitic remarks he allegedly made as a teenager/young adult, how much damage could the affair do to Marine Le Pen's presidential prospects? Ana Navarro Pedro, correspondent for Portuguese media, believ",
+        "imageUrl": "https://s.france24.com/media/display/7535d564-ea33-11f1-b481-81bc2b1dcd65/w:1024/p:16x9/EN-20261126-180131-181157-CS.jpg",
+        "pubDate": "2026-11-27T08:07:58.000Z"
       },
       {
         "id": "art-b6ba190217d0",
@@ -6638,17 +6726,6 @@
         "pubDate": "2026-11-27T07:34:41.000Z"
       },
       {
-        "id": "art-225960b8ca2c",
-        "title": "Verjüngung der Flotte: U5 fährt komplett mit neuen Zügen - U9 folgt",
-        "source": "Die Zeit",
-        "feedId": "zeit",
-        "domain": "zeit.de",
-        "url": "https://www.zeit.de/news/2026-11/27/u5-faehrt-komplett-mit-neuen-zuegen-u9-folgt",
-        "summary": "",
-        "imageUrl": "https://img.zeit.de/news/2026-11/27/u5-faehrt-komplett-mit-neuen-zuegen-u9-folgt-image-group/original__640x360",
-        "pubDate": "2026-11-27T07:30:05.000Z"
-      },
-      {
         "id": "art-a2457849fb25",
         "title": "Italy's former police chief rejected mafia inquiry allegations before death",
         "source": "BBC Europe",
@@ -6658,39 +6735,6 @@
         "summary": "The contents of an eight-page letter by Gianni De Gennaro have been revealed days after his body was found at his Tuscany home.",
         "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d573/live/2b6db3a0-e9b8-11f1-8d2a-f5d2aabc11cb.jpg",
         "pubDate": "2026-11-27T07:28:10.000Z"
-      },
-      {
-        "id": "art-b695e101d1d7",
-        "title": "Fußball: Kahn und Matthäus loben Kimmich-Aussagen zu Musiala",
-        "source": "Die Zeit",
-        "feedId": "zeit",
-        "domain": "zeit.de",
-        "url": "https://www.zeit.de/news/2026-11/27/kahn-lobt-kimmich-aussagen-zu-musiala-wichtiges-zeichen",
-        "summary": "",
-        "imageUrl": "https://img.zeit.de/news/2026-11/27/kahn-lobt-kimmich-aussagen-zu-musiala-wichtiges-zeichen-image-group/original__640x360",
-        "pubDate": "2026-11-27T07:27:43.000Z"
-      },
-      {
-        "id": "art-319462c8e30b",
-        "title": "Handel: Kaum Beteiligung am ersten Amazon-Warnstreik in Gera",
-        "source": "Die Zeit",
-        "feedId": "zeit",
-        "domain": "zeit.de",
-        "url": "https://www.zeit.de/news/2026-11/27/kaum-beteiligung-am-ersten-amazon-warnstreik-in-gera",
-        "summary": "",
-        "imageUrl": "https://img.zeit.de/news/2026-11/27/kaum-beteiligung-am-ersten-amazon-warnstreik-in-gera-image-group/original__640x360",
-        "pubDate": "2026-11-27T07:26:51.000Z"
-      },
-      {
-        "id": "art-8cc37564f585",
-        "title": "«Foreign Tongues, Loose Lips»: Rolling Stones: Fünf neue Songs für Grammy-nominiertes Album",
-        "source": "Die Zeit",
-        "feedId": "zeit",
-        "domain": "zeit.de",
-        "url": "https://www.zeit.de/news/2026-11/27/rolling-stones-fuenf-neue-songs-fuer-grammy-nominiertes-album",
-        "summary": "",
-        "imageUrl": "https://img.zeit.de/news/2026-11/27/rolling-stones-fuenf-neue-songs-fuer-grammy-nominiertes-album-image-group/original__640x360",
-        "pubDate": "2026-11-27T07:26:46.000Z"
       },
       {
         "id": "art-3e98a2fec0cd",
@@ -6722,7 +6766,7 @@
         "domain": "repubblica.it",
         "url": "https://www.repubblica.it/cronaca/2026/11/27/news/gianni_de_gennaro_lettera_testo_integrale-425753913/",
         "summary": "Lo scritto dell’ex capo della polizia, lasciato prima di togliersi la vita",
-        "imageUrl": "https://www.repstatic.it/content/nazionale/img/2026/11/27/082900738-c1cffd7c-c4fa-48d4-884e-5ad2c0ea1705.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-27T07:06:59.000Z"
       },
       {
@@ -6757,50 +6801,6 @@
         "summary": "Experten empfehlen, weiterhin kostenlose CO2-Zertifikate zu vergeben. Das wird für Streit sorgen, da der Wirtschaftsflügel der Grünen die Studie beauftragt hat.",
         "imageUrl": "https://img.zeit.de/wirtschaft/2026-11/iw-gutachten-industriepolitik-gruene-bild/original__640x360",
         "pubDate": "2026-11-27T06:54:53.000Z"
-      },
-      {
-        "id": "art-8334e6277db7",
-        "title": "»Glaszeit« von Leh-Wei Liao: Dann stellt sie ihre Gebärmutter auf der Biennale aus",
-        "source": "Die Zeit",
-        "feedId": "zeit",
-        "domain": "zeit.de",
-        "url": "https://www.zeit.de/2026/50/glaszeit-leh-wei-liao-debuetroman-mutterschaft",
-        "summary": "Eine berühmte Künstlerin bereut es, Mutter geworden zu sein – und die Tochter erzählt. Unglaublich, dass dieser fantastische Roman tatsächlich ein Debüt sein soll.",
-        "imageUrl": "https://img.zeit.de/2026/50/dann-stellt-sie-ihre-gebaermutter-auf-der-biennale-aus-bild-2/original__640x360",
-        "pubDate": "2026-11-27T06:53:23.000Z"
-      },
-      {
-        "id": "art-3eaf71dd4269",
-        "title": "Zwiebelsuppe mit Ochsenschwanz: Ankochen gegen die Dunkelheit",
-        "source": "Die Zeit",
-        "feedId": "zeit",
-        "domain": "zeit.de",
-        "url": "https://www.zeit.de/zeit-magazin/wochenmarkt/2026-11/zwiebelsuppe-ochsenschwanz-mandarinen-lorbeer-creme-rezept-wochenmarkt",
-        "summary": "Daheim bleiben, geradezu unvernünftig aufwendig kochen, alle zu sich einbestellen und am Ende noch Lob einheimsen: Im November kann man die Welt einfach draußen lassen.",
-        "imageUrl": "https://img.zeit.de/zeit-magazin/wochenmarkt/2026-11/dinner-zeit-mag-onion-soup7228-copia-bild/original__640x360",
-        "pubDate": "2026-11-27T06:50:24.000Z"
-      },
-      {
-        "id": "art-b4c495a352a7",
-        "title": "Sweden’s Kingmaker to Face Final Choice on Backing Kristersson",
-        "source": "Bloomberg Politics",
-        "feedId": "bloomberg-politics",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-27/sweden-s-kingmaker-to-face-final-choice-on-backing-kristersson",
-        "summary": "Sweden’s kingmaker Center Party remains split ahead of a decision whether to back Ulf Kristersson for a second term as prime minister as recommended by its leader Elisabeth Thand Ringqvist.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:48:42.000Z"
-      },
-      {
-        "id": "art-6a2bb63a3e7c",
-        "title": "Israel's Eisenkot agrees to coalition deal with left-wing Democrats",
-        "source": "France 24",
-        "feedId": "france24",
-        "domain": "france24.com",
-        "url": "https://www.france24.com/en/middle-east/20261127-israel-s-eisenkot-agrees-to-coalition-deal-with-left-wing-democrats",
-        "summary": "Israel's former military chief Gadi Eisenkot on Thursday struck a coalition deal with Yair Golan's left-leaning Democrats, bringing the country's opposition closer to forming a government after no single bloc secured a majority in the October elections.",
-        "imageUrl": "https://s.france24.com/media/display/173042bc-ea1d-11f1-92b3-77d069279b82/w:1024/p:16x9/2026-11-23T134206Z-1084090684-RC2OTOAAPLPQ-RTRMADP-3-ISRAEL-POLITICS-NETANYAHU.jpg",
-        "pubDate": "2026-11-27T06:46:42.000Z"
       },
       {
         "id": "art-4ea050fdfdc2",
@@ -6992,7 +6992,7 @@
     ]
   },
   "middle-east": {
-    "updatedAt": "2026-11-27T08:15:27.775Z",
+    "updatedAt": "2026-11-27T08:30:25.505Z",
     "results": [
       {
         "feedId": "bbc-middle-east",
@@ -7027,9 +7027,20 @@
         "feedId": "jpost",
         "domain": "jpost.com",
         "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-916313",
-        "summary": "Ra’am chairman Mansour Abbas is expected to publicly declare Hamas a terrorist organization over the weekend, meeting a key prerequisite to join Gadi Eisenkot's emerging coalition.",
+        "summary": "National Security Minister Itamar Ben-Gvir accused Abbas of being willing to lie about believing that Hamas is a terrorist organization in order to destroy the State of Israel.",
         "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748200",
         "pubDate": "2026-11-27T09:48:54.000Z"
+      },
+      {
+        "id": "art-32fe20a8a477",
+        "title": "‘Mushroom killer’ appeals case to Australia’s top court: media",
+        "source": "Arab News",
+        "feedId": "arab-news",
+        "domain": "arabnews.com",
+        "url": "https://www.arabnews.com/world/mushroom-killer-appeals-case-to-australias-top-court-media-3014232",
+        "summary": "Erin Patterson, convicted of murdering relatives with poisoned mushrooms, has appealed her conviction and sentence in Australia’s top court. Local media report her case has drawn significant public attention.",
+        "imageUrl": "https://assets.maestronewsroom.com/media/30f6532d-717b-4366-9158-9c455299fcd9/1793326451374-4a8579dcfdd2ff58.jpg",
+        "pubDate": "2026-11-27T08:18:12.000Z"
       },
       {
         "id": "art-95a5c968f186",
@@ -7052,6 +7063,28 @@
         "summary": "Fine, who has claimed Mamdani lied on his citizenship application, has also repeatedly called for the New York City mayor to be stripped of his citizenship.",
         "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/739016",
         "pubDate": "2026-11-27T07:57:59.000Z"
+      },
+      {
+        "id": "art-30789ff74b48",
+        "title": "New Zealand election results set up tricky talks for conservative incumbent",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/new-zealand-election-results-set-up-tricky-talks-for-conservative-incumbent?traffic_source=rss",
+        "summary": "Conservative PM Luxon and populist coalition partners face negotiations with centrist kingmaker.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-27T032401Z_831668121_RC22WOAN8LR8_RTRMADP_3_NEW-ZEALAND-POLITICS-1795762066.jpg?resize=1920%2C1440",
+        "pubDate": "2026-11-27T07:55:32.000Z"
+      },
+      {
+        "id": "art-0598032a0d5c",
+        "title": "‘Borrowing to make ends meet’: The rising cost of living in Europe",
+        "source": "Al Jazeera",
+        "feedId": "aljazeera",
+        "domain": "aljazeera.com",
+        "url": "https://www.aljazeera.com/news/2026/11/27/borrowing-to-make-ends-meet-the-rising-cost-of-living-in-europe?traffic_source=rss",
+        "summary": "Prices are climbing again across Europe as energy costs surge.",
+        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/getty_6b09233e37-1795760958_2ee403-1795761015.jpg?resize=1200%2C630&quality=80",
+        "pubDate": "2026-11-27T07:53:59.000Z"
       },
       {
         "id": "art-a00e9dee39d9",
@@ -7204,7 +7237,7 @@
         "domain": "aljazeera.com",
         "url": "https://www.aljazeera.com/sports/2026/11/27/french-bulgarian-presidents-slam-marseille-violence-five-fans-in-hospital?traffic_source=rss",
         "summary": "French and Bulgarian presidents slam Marseille fans after violent scenes in UEFA Europa League match with Levski Sofia.",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/2026-11-26T181002Z_789386644_UP1EMBQ1EE05K_RTRMADP_3_SOCCER-EUROPA-OM-LEV-1795759626.jpg?resize=1920%2C1440",
+        "imageUrl": "",
         "pubDate": "2026-11-27T06:37:34.000Z"
       },
       {
@@ -7384,17 +7417,6 @@
         "pubDate": "2026-11-27T03:49:08.000Z"
       },
       {
-        "id": "art-fa68dcac011e",
-        "title": "Asian stock markets rise after earlier tech rout",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/economy/2026/11/27/asian-stock-markets-rise-after-earlier-tech-rout?traffic_source=rss",
-        "summary": "Indices in Japan, South Korea, Australia and Hong Kong rise as New Zealand stocks dip on election uncertainty.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T03:42:16.000Z"
-      },
-      {
         "id": "art-4e1062961fd7",
         "title": "Houthi attack on Saudi Arabia’s Jazan refinery kills Nepali worker",
         "source": "Arab News",
@@ -7415,17 +7437,6 @@
         "summary": "Arab states and regional organizations condemned a Daesh-linked attack in Syria's Hasakah that resulted in the deaths of two security personnel and injuries to five others. Saudi Arabia, Jordan, and several other nations expressed solidarity with the Syrian go",
         "imageUrl": "https://assets.maestronewsroom.com/media/30f6532d-717b-4366-9158-9c455299fcd9/1795749173712-9500018b715c7dab.jpg",
         "pubDate": "2026-11-27T03:13:54.000Z"
-      },
-      {
-        "id": "art-39a851830808",
-        "title": "Spain and Morocco under-17 stars target World Cup 2030",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/spain-and-morocco-under-17-stars-target-world-cup-2030?traffic_source=rss",
-        "summary": "Spain and Morocco are two of the co-hosts of the next 2030 World Cup, and they faced off at the under-17 World Cup.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T02:58:48.000Z"
       },
       {
         "id": "art-1f701babee54",
@@ -7461,17 +7472,6 @@
         "pubDate": "2026-11-27T01:38:46.000Z"
       },
       {
-        "id": "art-b83afa957295",
-        "title": "Saudi Arabia records world’s highest growth in inbound tourists since 2019, says minister",
-        "source": "Arab News",
-        "feedId": "arab-news",
-        "domain": "arabnews.com",
-        "url": "https://www.arabnews.com/saudi-arabia/saudi-arabia-records-worlds-highest-growth-in-inbound-tourists-since-2019-says-minister-3014207",
-        "summary": "Saudi Arabia achieved the highest global growth in inbound tourist arrivals since 2019, aiming to attract 150 million visitors annually by 2030, according to Tourism Minister Ahmed Al-Khateeb. The Kingdom exceeded its target of 100 million tourists by 2024, th",
-        "imageUrl": "https://assets.maestronewsroom.com/media/30f6532d-717b-4366-9158-9c455299fcd9/1795742550061-31a3ad6dae639365.jpg",
-        "pubDate": "2026-11-27T01:29:52.000Z"
-      },
-      {
         "id": "art-a5a563c2a3a6",
         "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
         "source": "BBC Middle East",
@@ -7485,7 +7485,7 @@
     ]
   },
   "africa": {
-    "updatedAt": "2026-11-27T08:15:27.777Z",
+    "updatedAt": "2026-11-27T08:30:25.507Z",
     "results": [
       {
         "feedId": "bbc-africa",
@@ -7867,7 +7867,7 @@
     ]
   },
   "latin-america": {
-    "updatedAt": "2026-11-27T08:15:27.785Z",
+    "updatedAt": "2026-11-27T08:30:25.515Z",
     "results": [
       {
         "feedId": "bbc-latin-america",
@@ -8367,7 +8367,7 @@
     ]
   },
   "india": {
-    "updatedAt": "2026-11-27T08:15:27.798Z",
+    "updatedAt": "2026-11-27T08:30:25.528Z",
     "results": [
       {
         "feedId": "bbc-india",
@@ -8408,6 +8408,17 @@
     ],
     "articles": [
       {
+        "id": "art-ac87fdc00583",
+        "title": "'US F-16 forced to retreat’: Iran claims warning shots drove jet away from airspace",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/world/middle-east/us-f-16-forced-to-retreat-iran-claims-warning-shots-drove-fighter-jet-away-from-its-airspace/articleshow/136214661.cms",
+        "summary": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136214743,imgsize-49656.cms",
+        "pubDate": "2026-11-27T08:16:21.000Z"
+      },
+      {
         "id": "art-5830fbb716b0",
         "title": "Millions of wives in South Asia unprotected from marital rape - study",
         "source": "BBC India",
@@ -8419,8 +8430,19 @@
         "pubDate": "2026-11-27T08:13:43.000Z"
       },
       {
+        "id": "art-0772d2595816",
+        "title": "Stock Market LIVE: Sensex slumps 700 pts, Nifty below 25,700; Auto, IT down 1% each",
+        "source": "Business Standard",
+        "feedId": "business-standard",
+        "domain": "business-standard.com",
+        "url": "https://www.business-standard.com/markets/news/stock-market-live-november-27-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-mahanadi-coalfields-share-price-ipo-today-126112700100_1.html",
+        "summary": "Sensex Today | Stock Market LIVE Updates Friday: In the broader markets, the Nifty MidCap 100 and the Nifty SmallCap 100 rose 0.61 per cent and 0.87 per cent, respectively",
+        "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/hp/home-page/2026-11/27/9343/full/1786093515-3082.jpeg",
+        "pubDate": "2026-11-27T08:11:32.000Z"
+      },
+      {
         "id": "art-17051e309797",
-        "title": "Sebi to look into Tata Steel-Apollo APL deal over minority shareholder concerns",
+        "title": "Sebi looks into Tata Steel-Apollo APL deal over minority shareholder concerns",
         "source": "Mint",
         "feedId": "mint",
         "domain": "livemint.com",
@@ -8549,17 +8571,6 @@
         "summary": "Tax filings show the foundation's assets climbed from $828 million at the end of 2020 to $9.2 billion at the end of 2024.",
         "imageUrl": "https://c.ndtvimg.com/2026-11/ctvbcj9c_jensen-huang-with-wife-lori-huang_625x300_13_November_26.jpg?im=FeatureCrop,algorithm=dnn,width=1280,height=720",
         "pubDate": "2026-11-27T07:33:07.000Z"
-      },
-      {
-        "id": "art-0772d2595816",
-        "title": "Stock Market LIVE: Sensex slumps 700 pts, Nifty below 25,700; Nifty IT down 1%",
-        "source": "Business Standard",
-        "feedId": "business-standard",
-        "domain": "business-standard.com",
-        "url": "https://www.business-standard.com/markets/news/stock-market-live-november-27-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-mahanadi-coalfields-share-price-ipo-today-126112700100_1.html",
-        "summary": "Sensex Today | Stock Market LIVE Updates Friday: In the broader markets, the Nifty MidCap 100 and the Nifty SmallCap 100 rose 0.61 per cent and 0.87 per cent, respectively",
-        "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/hp/home-page/2026-11/27/9343/full/1786093515-3082.jpeg",
-        "pubDate": "2026-11-27T07:31:49.000Z"
       },
       {
         "id": "art-d46889b23963",
@@ -8826,17 +8837,6 @@
         "pubDate": "2026-11-27T06:09:36.000Z"
       },
       {
-        "id": "art-c311c5420d99",
-        "title": "RK Family Trust dispute: Supreme Court ends mediation between Rani Kapur, Priya Sachdeva Kapoor; here’s why",
-        "source": "Mint",
-        "feedId": "mint",
-        "domain": "livemint.com",
-        "url": "https://www.livemint.com/news/india/rk-family-trust-dispute-supreme-court-ends-mediation-between-rani-kapur-priya-sachdeva-kapoor-here-s-why-11795758924701.html",
-        "summary": "The Supreme Court has ended mediation in the ₹30,000-crore RK Family Trust dispute after 15 sittings failed to produce a settlement. The court questioned Rani Kapur's demands and advised her to take a practical view, as the inheritance battle heads back to lit",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:06:09.000Z"
-      },
-      {
         "id": "art-39bf977e2159",
         "title": "Sheikh Hasina's planned return puts Bangladesh on edge - and India in a bind",
         "source": "BBC India",
@@ -8874,7 +8874,7 @@
     ]
   },
   "china": {
-    "updatedAt": "2026-11-27T08:15:27.809Z",
+    "updatedAt": "2026-11-27T08:30:25.540Z",
     "results": [
       {
         "feedId": "scmp-china",
@@ -9349,16 +9349,16 @@
         "publisherUrl": "https://en.people.cn/n3/2026/1126/c90000-20523336.html"
       },
       {
-        "id": "art-bdcdabc50e19",
-        "title": "Pantelis Golitsis: Fostering mutual understanding through comparative philosophy - People's Daily Online",
-        "source": "People's Daily",
-        "feedId": "peoples-daily",
-        "domain": "en.people.cn",
-        "url": "https://en.people.cn/n3/2026/1126/c90000-20523284.html",
-        "summary": "Pantelis Golitsis: Fostering mutual understanding through comparative philosophy People's Daily Online",
+        "id": "art-bd8ee91a1d47",
+        "title": "China unveils 2030 roadmap for next-generation networks, eyes 6G rollout and computing power expansion",
+        "source": "Global Times",
+        "feedId": "global-times",
+        "domain": "globaltimes.cn",
+        "url": "https://www.globaltimes.cn/page/202611/1375090.shtml",
+        "summary": "China unveils 2030 roadmap for next-generation networks, eyes 6G rollout and computing power expansion Global Times",
         "imageUrl": "",
-        "pubDate": "2026-11-26T01:24:00.000Z",
-        "publisherUrl": "https://en.people.cn/n3/2026/1126/c90000-20523284.html"
+        "pubDate": "2026-11-26T02:05:00.000Z",
+        "publisherUrl": "https://www.globaltimes.cn/page/202611/1375090.shtml"
       },
       {
         "id": "art-e7429a6d8751",
@@ -9385,7 +9385,7 @@
     ]
   },
   "russia": {
-    "updatedAt": "2026-11-27T08:15:27.817Z",
+    "updatedAt": "2026-11-27T08:30:25.548Z",
     "results": [
       {
         "feedId": "moscow-times",
@@ -9413,6 +9413,61 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-19461939a490",
+        "title": "Nearly 100% of Russian companies face consequences of shadow AI use by employees",
+        "source": "TASS",
+        "feedId": "tass",
+        "domain": "tass.com",
+        "url": "https://tass.com/economy/2225735",
+        "summary": "According to the poll, most enterprises understand the information security risks posed by AI",
+        "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494547.jpg",
+        "pubDate": "2026-11-27T08:26:57.000Z"
+      },
+      {
+        "id": "art-102d42d64953",
+        "title": "Erdogan ratifies Mecca agreement on joint defense between Turkey, Pakistan, Saudi Arabia",
+        "source": "TASS",
+        "feedId": "tass",
+        "domain": "tass.com",
+        "url": "https://tass.com/world/2225731",
+        "summary": "The document envisages mutual military assistance in the event of an external armed attack on any of the parties",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:25:45.000Z"
+      },
+      {
+        "id": "art-b42adb698c74",
+        "title": "Putin trusted by 71% respondents in Russian presidential approval poll",
+        "source": "TASS",
+        "feedId": "tass",
+        "domain": "tass.com",
+        "url": "https://tass.com/society/2225733",
+        "summary": "The survey also showed that 46% of respondents said they approve of the work of the Russian government overall, while 54% said they approve of Prime Minister Mikhail Mishustin’s work",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:24:44.000Z"
+      },
+      {
+        "id": "art-2279ed087489",
+        "title": "Zelensky says residents may flee Kiev ahead of difficult winter",
+        "source": "TASS",
+        "feedId": "tass",
+        "domain": "tass.com",
+        "url": "https://tass.com/world/2225727",
+        "summary": "This is not the first winter like this, according to Vladimir Zelensky",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:23:26.000Z"
+      },
+      {
+        "id": "art-8df98d2c15ee",
+        "title": "Ukraine faces harsh winter, problems with bridges across Dnieper River — Zelensky",
+        "source": "TASS",
+        "feedId": "tass",
+        "domain": "tass.com",
+        "url": "https://tass.com/world/2225729",
+        "summary": "The Ukrainian authorities have repeatedly said that the coming winter could be the harshest in the country’s history",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:22:19.000Z"
+      },
       {
         "id": "art-b292411696d3",
         "title": "Ukrainian drones strike St. Petersburg and three Russian regions, injuring three and disrupting flights",
@@ -9586,19 +9641,8 @@
         "domain": "tass.com",
         "url": "https://tass.com/emergencies/2225643",
         "summary": "A total of 13 people were hospitalized, including a minor",
-        "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494527.jpg",
-        "pubDate": "2026-11-27T05:06:41.000Z"
-      },
-      {
-        "id": "art-7e40b8e40c24",
-        "title": "Victims of EU-Kiev ‘drone coalition’ account for 90% of all civilian casualties — diplomat",
-        "source": "TASS",
-        "feedId": "tass",
-        "domain": "tass.com",
-        "url": "https://tass.com/politics/2225641",
-        "summary": "According to Rodion Miroshnik, there is an agreement between Ukraine and the EU that \"high-tech instruments of killing would be used against civilians and civilian infrastructure\"",
         "imageUrl": "",
-        "pubDate": "2026-11-27T04:50:22.000Z"
+        "pubDate": "2026-11-27T05:06:41.000Z"
       },
       {
         "id": "art-a5ff20bf1795",
@@ -9612,17 +9656,6 @@
         "pubDate": "2026-11-27T04:27:42.000Z"
       },
       {
-        "id": "art-ca81e9fe2fd3",
-        "title": "Trump acknowledges lack of activity near Iran’s presumed nuclear site in Natanz",
-        "source": "TASS",
-        "feedId": "tass",
-        "domain": "tass.com",
-        "url": "https://tass.com/world/2225639",
-        "summary": "The president said that the US \"would absolutely hit Pickaxe Mountain\" if any activities related to Iran's presumed nuclear facility were observed",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:21:42.000Z"
-      },
-      {
         "id": "art-5898ab7d03ee",
         "title": "Iran points finger at US and Israel over deadly Kuwait strike",
         "source": "RT",
@@ -9632,39 +9665,6 @@
         "summary": "Iran has denied responsibility for a drone strike that killed two Italians in Kuwait, suggesting possible US or Israeli involvement Read Full Article at RT.com",
         "imageUrl": "https://mf.b37mrtl.ru/files/2026.11/thumbnail/6b09026e85f54032e6014fd2.jpg",
         "pubDate": "2026-11-27T04:13:55.000Z"
-      },
-      {
-        "id": "art-07eacbcd18be",
-        "title": "Panama-flagged ship with 16 crew sinks off Cuba’s coast — portal",
-        "source": "TASS",
-        "feedId": "tass",
-        "domain": "tass.com",
-        "url": "https://tass.com/emergencies/2225637",
-        "summary": "Separately, Cubavision TV said at least one crew member was killed in the shipwreck",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:07:31.000Z"
-      },
-      {
-        "id": "art-afeb242eb1e8",
-        "title": "At least 4 killed, 8 injured as bus collides with two trucks in Siberia",
-        "source": "TASS",
-        "feedId": "tass",
-        "domain": "tass.com",
-        "url": "https://tass.com/emergencies/2225635",
-        "summary": "The exact number of casualties is still being determined",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T03:50:52.000Z"
-      },
-      {
-        "id": "art-b8695724231c",
-        "title": "Russia open to information security dialogue with West — diplomat",
-        "source": "TASS",
-        "feedId": "tass",
-        "domain": "tass.com",
-        "url": "https://tass.com/politics/2225633",
-        "summary": "Deputy Department Director Ernest Chernukhin said that on certain issues, Russia’s approaches \"are somewhat close to US ones\"",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T03:42:17.000Z"
       },
       {
         "id": "art-2202659446d6",
@@ -9878,7 +9878,7 @@
     ]
   },
   "business": {
-    "updatedAt": "2026-11-27T08:15:27.873Z",
+    "updatedAt": "2026-11-27T08:30:25.599Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -9932,7 +9932,7 @@
         "feedId": "business-times-sg",
         "name": "The Business Times",
         "ok": true,
-        "count": 10
+        "count": 0
       },
       {
         "feedId": "straitstimes-business",
@@ -9954,6 +9954,39 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-93cf1c95a6f1",
+        "title": "‘Not about certification for certification’s sake’: What HR credentials can offer firms and workers",
+        "source": "The Straits Times · Business",
+        "feedId": "straitstimes-business",
+        "domain": "straitstimes.com",
+        "url": "https://www.straitstimes.com/business/not-about-certification-for-certifications-sake-what-hr-credentials-can-offer-firms-and-workers",
+        "summary": "Larger organisations in Singapore must have at least one IHRP-certified HR professional by July 1, 2028.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/e0e0d02e9da10361b310c276a0289cc214632d2cf3d99188e8137e7c359b3c9e?t=og",
+        "pubDate": "2026-11-27T08:25:00.000Z"
+      },
+      {
+        "id": "art-9207a2e593c5",
+        "title": "US Investors Will Have to Chase Rally: Market Analysis",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/videos/2026-11-27/us-investors-will-have-to-chase-rally-3-minutes-mliv-video",
+        "summary": "Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
+        "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/imndYjXIWBFg/v3/500x-1.webp",
+        "pubDate": "2026-11-27T08:22:28.000Z"
+      },
+      {
+        "id": "art-5fb3c6972bb7",
+        "title": "Qatar’s LNG Export Push Provides Lifeline to South Asian Buyers",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/qatar-s-lng-export-push-provides-lifeline-to-south-asian-buyers",
+        "summary": "Qatar’s efforts to export more liquefied natural gas through the Strait of Hormuz are already saving money for South Asia’s cash-strapped importers of the super-chilled fuel.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:16:09.000Z"
+      },
       {
         "id": "art-6e0e06b6b957",
         "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
@@ -10088,7 +10121,7 @@
       },
       {
         "id": "art-702ef12e1542",
-        "title": "FTSE 100 Live: UK Stocks Poised Join Global Stock Rebound",
+        "title": "FTSE 100 Live: UK and European Stocks Join Global Rally",
         "source": "Bloomberg Markets",
         "feedId": "bloomberg-markets",
         "domain": "bloomberg.com",
@@ -10096,17 +10129,6 @@
         "summary": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T06:54:51.000Z"
-      },
-      {
-        "id": "art-b81fdd839fbc",
-        "title": "Japan, Hong Kong banks set to improve in 2027 while Australia deteriorates: Fitch",
-        "source": "The Business Times",
-        "feedId": "business-times-sg",
-        "domain": "businesstimes.com.sg",
-        "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/japan-hong-kong-banks-set-improve-2027-while-australia-deteriorates-fitch",
-        "summary": "The Philippines is the lone emerging market to receive an ‘improving’ call",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/businesstimes/064f89e90d436e25157c459468fd553ee361022a86bd1e80a3a6f1c877aa041f?t=og&f=webp&w=240",
-        "pubDate": "2026-11-27T06:47:45.000Z"
       },
       {
         "id": "art-162ece2e7e67",
@@ -10173,39 +10195,6 @@
         "summary": "Ziemba Insights founder Rachel Ziemba says physical supply risks are a bigger challenge for OPEC+ than managing the oil market as attacks on tankers and energy infrastructure raise concerns about further disruptions. She also discusses risks to diesel supplies",
         "imageUrl": "",
         "pubDate": "2026-11-27T06:22:58.000Z"
-      },
-      {
-        "id": "art-fd4d1990a566",
-        "title": "Huawei Teases AI Chip to Rival Giants SK Hynix, Samsung",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-27/the-china-show-11-27-2026-video",
-        "summary": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy. From politics and policy to tech and trends, Yvonne Man and David Ingles give global investors unique insight, delivering in-depth discussions wi",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:20:34.000Z"
-      },
-      {
-        "id": "art-40987cd748a5",
-        "title": "Asian Stocks Extend Recovery as AI Trade Rebounds",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-27/the-asia-trade-11-27-2026-video",
-        "summary": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia. Bloomberg TV is live from Sydney and Singapore with Haidi Stroud-Watts and Avril Hong, getting insight and analysis from newsmakers and industry ",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:16:34.000Z"
-      },
-      {
-        "id": "art-cf1fd507c21c",
-        "title": "The Rate Bets That Backfired on Hedge Funds In Europe This Year",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-27/the-rate-bets-that-backfired-on-hedge-funds-in-europe-this-year",
-        "summary": "Some of the most popular European trades among hedge funds this year were big-picture bets on spreads narrowing back to their long-term averages. Thanks to soaring oil prices and French political turmoil, many of them backfired.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:15:00.000Z"
       },
       {
         "id": "art-5d28a5ddaa27",
@@ -10307,15 +10296,26 @@
         "pubDate": "2026-11-27T05:00:22.000Z"
       },
       {
-        "id": "art-4e137103e164",
-        "title": "Asean equities in for a ride in 2027; Singapore, Vietnam favoured: JPMorgan",
-        "source": "The Business Times",
-        "feedId": "business-times-sg",
-        "domain": "businesstimes.com.sg",
-        "url": "https://www.businesstimes.com.sg/international/asean/asean-equities-ride-2027-singapore-vietnam-favoured-jpmorgan",
-        "summary": "Impetus to diversify from AI plays, changing energy prices can improve H2 2027 prospects, say analysts",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:19:26.000Z"
+        "id": "art-bfecc1ebe4c0",
+        "title": "Marine Le Pen: the woman who could break the EU",
+        "source": "Financial Times",
+        "feedId": "ft-home",
+        "domain": "ft.com",
+        "url": "https://www.ft.com/content/9bbd926e-ccef-4717-9044-48a23c9353ba?syn-25a6b1a6=1",
+        "summary": "The far-right frontrunner for the French presidency is the biggest populist challenge in the bloc’s history",
+        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fed23bc87-5575-4cf7-91fe-06a23ccdfd9e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+        "pubDate": "2026-11-27T05:00:13.000Z"
+      },
+      {
+        "id": "art-aeba84282c68",
+        "title": "Is the Fed ready for its next fight?",
+        "source": "Financial Times",
+        "feedId": "ft-home",
+        "domain": "ft.com",
+        "url": "https://www.ft.com/content/71ffa69f-2a07-44e4-8305-ae5548b89828?syn-25a6b1a6=1",
+        "summary": "US central bank officials face a three-dimensional tussle over inflation, AI and guidance",
+        "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd485b693-478d-415e-8869-ec9781fbc1d9.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+        "pubDate": "2026-11-27T05:00:13.000Z"
       },
       {
         "id": "art-cad4ceb6975f",
@@ -10340,26 +10340,26 @@
         "pubDate": "2026-11-27T00:02:10.000Z"
       },
       {
-        "id": "art-1d2f1ff5b0df",
-        "title": "Dellia Q3 2026 slides: integration complete, margin recovery eyed for 2027",
+        "id": "art-cf144c3db730",
+        "title": "Vietnamese partners of Trump Organization plan Trump Tower in Hanoi, sources say",
         "source": "Investing.com",
         "feedId": "investing",
         "domain": "investing.com",
-        "url": "https://www.investing.com/news/company-news/dellia-q3-2026-slides-integration-complete-margin-recovery-eyed-for-2027-93CH-5053066",
+        "url": "https://www.investing.com/news/stock-market-news/vietnamese-partners-of-trump-organization-plan-trump-tower-in-hanoi-sources-say-5053107",
         "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3J15O_1200_L.jpg",
-        "pubDate": "2026-11-26T20:58:21.000Z"
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB7Q0U9_M.jpg",
+        "pubDate": "2026-11-26T21:24:57.000Z"
       },
       {
-        "id": "art-d065361f0643",
-        "title": "French preliminary inflation at 3.2% in November",
+        "id": "art-4c2a473ce244",
+        "title": "French economy contracts more than expected in third quarter",
         "source": "Investing.com",
         "feedId": "investing",
         "domain": "investing.com",
-        "url": "https://www.investing.com/news/economy-news/french-preliminary-inflation-at-32-in-november-5053065",
+        "url": "https://www.investing.com/news/economy-news/french-economy-contracts-more-than-expected-in-third-quarter-5053113",
         "summary": "",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAQ0GS_L.jpg",
-        "pubDate": "2026-11-26T20:54:21.000Z"
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAQ0IO_L.jpg",
+        "pubDate": "2026-11-26T21:24:24.000Z"
       },
       {
         "id": "art-98a8d666272a",
@@ -10419,7 +10419,7 @@
     ]
   },
   "technology": {
-    "updatedAt": "2026-11-27T08:15:27.899Z",
+    "updatedAt": "2026-11-27T08:30:25.625Z",
     "results": [
       {
         "feedId": "verge",
@@ -10936,7 +10936,7 @@
     ]
   },
   "ai": {
-    "updatedAt": "2026-11-27T08:15:27.909Z",
+    "updatedAt": "2026-11-27T08:30:25.635Z",
     "results": [
       {
         "feedId": "verge-ai",
@@ -11441,7 +11441,7 @@
     ]
   },
   "sports": {
-    "updatedAt": "2026-11-27T08:15:27.922Z",
+    "updatedAt": "2026-11-27T08:30:25.648Z",
     "results": [
       {
         "feedId": "espn",
@@ -11475,6 +11475,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-ebe19aacb889",
+        "title": "Louisville's buzzer-beater ends St. John's comeback try: Five takeaways from craziest Players Era game to date",
+        "source": "CBS Sports",
+        "feedId": "cbssports",
+        "domain": "cbssports.com",
+        "url": "https://www.cbssports.com/college-basketball/news/louisville-buzzer-beater-st-johns-comeback-players-era-16/",
+        "summary": "Controversy, a near-mega collapse, Rick Pitino vs. his old school and a 3-pointer for the win: Everything to know about what happened in Vegas after dark",
+        "imageUrl": "https://sportshub.cbsistatic.com/i/2026/11/27/ded838cb-0040-4319-b10d-4fabd47e847b/gettyimages-2306505142-1.jpg",
+        "pubDate": "2026-11-27T08:26:22.000Z"
+      },
       {
         "id": "art-320b25d530e9",
         "title": "North Melbourne v Melbourne: 2026 AFLW grand final – live",
@@ -11661,17 +11672,6 @@
         "summary": "A good high press has been the basis for some of the most successful sides in modern football, but what determines whether a press works or fails? And how are the always-adapting Premier League teams exploiting high presses this season?",
         "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae39/live/a021d870-e9ae-11f1-859a-37130cd3a1d7.jpg",
         "pubDate": "2026-11-27T07:17:13.000Z"
-      },
-      {
-        "id": "art-ebe19aacb889",
-        "title": "Louisville's buzzer-beater ends St. John's comeback try: Six takeaways from craziest Players Era game to date",
-        "source": "CBS Sports",
-        "feedId": "cbssports",
-        "domain": "cbssports.com",
-        "url": "https://www.cbssports.com/college-basketball/news/louisville-buzzer-beater-st-johns-comeback-players-era-16/",
-        "summary": "Controversy, a near-mega collapse, Rick Pitino vs. his old school and a 3-pointer for the win: Everything to know about what happened in Vegas after dark",
-        "imageUrl": "https://sportshub.cbsistatic.com/i/2026/11/27/ded838cb-0040-4319-b10d-4fabd47e847b/gettyimages-2306505142-1.jpg",
-        "pubDate": "2026-11-27T07:11:32.000Z"
       },
       {
         "id": "art-893142eae152",
@@ -11940,7 +11940,7 @@
     ]
   },
   "sport-football": {
-    "updatedAt": "2026-11-27T08:15:27.924Z",
+    "updatedAt": "2026-11-27T08:30:25.650Z",
     "results": [
       {
         "feedId": "bbc-football",
@@ -12311,7 +12311,7 @@
     ]
   },
   "sport-cricket": {
-    "updatedAt": "2026-11-27T08:15:27.931Z",
+    "updatedAt": "2026-11-27T08:30:25.658Z",
     "results": [
       {
         "feedId": "bbc-cricket",
@@ -12346,9 +12346,31 @@
         "feedId": "guardian-cricket",
         "domain": "theguardian.com",
         "url": "https://www.theguardian.com/sport/live/2026/nov/27/australia-v-england-third-mens-twenty20-international-live",
-        "summary": "Updates from the T20 clash at The Gabba First ball 6.15pm local/8.15am GMT | Email James Good news from the ground, there were a few umbrellas up in the Brisbane mizzle but it’s a negligible miasma at the moment. The covers are off and the players are heading ",
-        "imageUrl": "https://i.guim.co.uk/img/media/12e09a7250aad2b79dc053f90e66c76d2bc9cf4b/155_0_4015_3213/master/4015.jpg?width=140&quality=85&auto=format&fit=max&s=3365f04f2fd25a93ab43e5403edc58d7",
-        "pubDate": "2026-11-27T08:14:20.000Z"
+        "summary": "Updates from the T20 clash at The Gabba First ball 6.15pm local/8.15am GMT | Email James Spin from both ends to start at the Gabba. Liam Dawson has the second over and removes Marsh with his second ball! Marsh tried to smear into the leg side but an under edge",
+        "imageUrl": "https://i.guim.co.uk/img/media/3c4bc46645bb6c5b965b431e9d3f0cf61b7dc39e/419_0_4022_3218/master/4022.jpg?width=140&quality=85&auto=format&fit=max&s=136aa0534f6dd78032679efa36fb7ffa",
+        "pubDate": "2026-11-27T08:28:10.000Z"
+      },
+      {
+        "id": "art-7cf5ca86083f",
+        "title": "England bowl, Owen and Stanlake come in for Australia",
+        "source": "ESPNcricinfo",
+        "feedId": "espncricinfo",
+        "domain": "espncricinfo.com",
+        "url": "https://www.cricinfo.com/ci/content/story/1564420.html?ex_cid=OTC-RSS",
+        "summary": "Billy Stanlake plays first T20I in seven years as hosts look to bounce back from Carrara mauling",
+        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/425800/425817.jpg",
+        "pubDate": "2026-11-27T08:20:58.000Z"
+      },
+      {
+        "id": "art-64d4533a8dc2",
+        "title": "PCB slashes women's central contracts from 20 to eight",
+        "source": "ESPNcricinfo",
+        "feedId": "espncricinfo",
+        "domain": "espncricinfo.com",
+        "url": "https://www.cricinfo.com/ci/content/story/1564421.html?ex_cid=OTC-RSS",
+        "summary": "The PCB has scrapped Categories D and E altogether for the contracts that will run until the end of June 2027",
+        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/407200/407294.jpg",
+        "pubDate": "2026-11-27T08:20:56.000Z"
       },
       {
         "id": "art-648573d62f91",
@@ -12778,33 +12800,11 @@
         "summary": "Keep up to date with all the player movements ahead of the 2027 women's Tier 1 county season",
         "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/386600/386659.jpg",
         "pubDate": "2026-11-26T11:16:56.000Z"
-      },
-      {
-        "id": "art-6360c9bd84ab",
-        "title": "Hampshire re-sign Amanda-Jade Wellington for 2027 season",
-        "source": "ESPNcricinfo",
-        "feedId": "espncricinfo",
-        "domain": "espncricinfo.com",
-        "url": "https://www.cricinfo.com/ci/content/story/1564307.html?ex_cid=OTC-RSS",
-        "summary": "Australia legspinner took 58 wickets across formats for south-coast club last summer",
-        "imageUrl": "http://p.imgci.com/db/PICTURES/CMS/421400/421402.jpg",
-        "pubDate": "2026-11-26T11:06:38.000Z"
-      },
-      {
-        "id": "art-c33950379ef1",
-        "title": "Moment man on back of motorcycle catches cricket ball with one hand – video",
-        "source": "Guardian Cricket",
-        "feedId": "guardian-cricket",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/sport/video/2026/nov/26/moment-man-on-back-of-motorcycle-catches-cricket-ball-with-one-hand-video",
-        "summary": "A passenger on the back of a motorcycle pulled off an incredible one-handed catch after a cricket ball was smashed for six during the Swat Premier League in Mingora, Pakistan. The man behind the viral catch has been identified as Mehran Khan. Speaking to the B",
-        "imageUrl": "https://i.guim.co.uk/img/media/3b65990a4c0203b8bece38764c7eff29fb0409fd/285_0_1350_1080/master/1350.jpg?width=140&quality=85&auto=format&fit=max&s=fe46f49a9f044445262b9760cb9a0c59",
-        "pubDate": "2026-11-26T11:02:01.000Z"
       }
     ]
   },
   "sport-rugby-league": {
-    "updatedAt": "2026-11-27T08:15:27.933Z",
+    "updatedAt": "2026-11-27T08:30:25.660Z",
     "results": [
       {
         "feedId": "bbc-rugby-league",
@@ -13109,7 +13109,7 @@
     ]
   },
   "sport-rugby-union": {
-    "updatedAt": "2026-11-27T08:15:27.935Z",
+    "updatedAt": "2026-11-27T08:30:25.661Z",
     "results": [
       {
         "feedId": "bbc-rugby-union",
@@ -13125,6 +13125,17 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-38d032a06fe0",
+        "title": "Familiar faces and surprise chances as Ireland face Wallabies",
+        "source": "BBC Rugby Union",
+        "feedId": "bbc-rugby-union",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cwq6e88p619qo?at_medium=RSS&at_campaign=rss",
+        "summary": "Ireland aim to round out a successful November with victory over Australia in what Andy Farrell is treating as a dry-run before next year's World Cup.",
+        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a47/live/e67f7430-ea03-11f1-b49f-2ba5b6e45c6a.jpg",
+        "pubDate": "2026-11-27T08:08:21.000Z"
+      },
       {
         "id": "art-648573d62f91",
         "title": "Sports quiz of the week: champions, finals, goals, arguments and animals",
@@ -13346,17 +13357,6 @@
         "pubDate": "2026-11-24T16:18:40.000Z"
       },
       {
-        "id": "art-13cc8a2a02b2",
-        "title": "Coventry and Worcester express Prem interest on own terms",
-        "source": "BBC Rugby Union",
-        "feedId": "bbc-rugby-union",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cqzjr4gg3mdko?at_medium=RSS&at_campaign=rss",
-        "summary": "Champ clubs Coventry and Warriors confirm interest in Prem places - but not if it puts their clubs at financial risk.",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fee0/live/4199de10-e7f6-11f1-99b6-a35a62fa4264.png",
-        "pubDate": "2026-11-24T11:07:31.000Z"
-      },
-      {
         "id": "art-93c037752818",
         "title": "The Breakdown | North v south: who makes the cut in our fantasy XVs for a hemisphere head-to-head?",
         "source": "Guardian Rugby Union",
@@ -13513,7 +13513,7 @@
     ]
   },
   "sport-boxing": {
-    "updatedAt": "2026-11-27T08:15:27.942Z",
+    "updatedAt": "2026-11-27T08:30:25.668Z",
     "results": [
       {
         "feedId": "bbc-boxing",
@@ -14006,7 +14006,7 @@
     ]
   },
   "sport-mma": {
-    "updatedAt": "2026-11-27T08:15:27.947Z",
+    "updatedAt": "2026-11-27T08:30:25.674Z",
     "results": [
       {
         "feedId": "bbc-mma",
@@ -14123,6 +14123,42 @@
         "pubDate": "2026-11-27T03:27:05.000Z"
       },
       {
+        "id": "art-e243af6c7074",
+        "title": "Josh Hokit offers to save ‘bum’ UFC light heavyweight division, Navajo Stirling responds",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/ufc/523497/josh-hokit-offers-to-save-bum-ufc-light-heavyweight-division-navajo-stirling-responds",
+        "summary": "Josh Hokit offers to save ‘bum’ UFC light heavyweight division, Navajo Stirling responds MMA Fighting",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2305014463.jpg?quality=90&strip=all&crop=0%2C3.23298383543%2C100%2C78.534031413613&w=1200",
+        "pubDate": "2026-11-26T22:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523497/josh-hokit-offers-to-save-bum-ufc-light-heavyweight-division-navajo-stirling-responds"
+      },
+      {
+        "id": "art-6db624d09b43",
+        "title": "Dricus du Plessis claims UFC shot down Khamzat Chimaev rematch",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/ufc/523465/dricus-du-plessis-claims-ufc-shot-down-khamzat-chimaev-rematch",
+        "summary": "Dricus du Plessis claims UFC shot down Khamzat Chimaev rematch MMA Fighting",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2230339775.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "pubDate": "2026-11-26T20:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523465/dricus-du-plessis-claims-ufc-shot-down-khamzat-chimaev-rematch"
+      },
+      {
+        "id": "art-a9a18ce180b2",
+        "title": "Anything but fighting: Jim Miller loves Thanksgiving",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/videos/523047/anything-but-fighting-jim-miller-loves-thanksgiving",
+        "summary": "Anything but fighting: Jim Miller loves Thanksgiving MMA Fighting",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/jim-ABF-YT.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+        "pubDate": "2026-11-26T18:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/videos/523047/anything-but-fighting-jim-miller-loves-thanksgiving"
+      },
+      {
         "id": "art-c1419ff4b272",
         "title": "UFC champion Carlos Ulberg and Navajo Stirling’s coach rules out teammates ever fighting",
         "source": "MMA Fighting",
@@ -14133,6 +14169,18 @@
         "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2306347884.jpg?quality=90&strip=all&crop=0%2C4.5697183861552%2C100%2C79.250147201579&w=1200",
         "pubDate": "2026-11-26T16:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523442/ufc-champion-carlos-ulberg-and-navajo-stirlings-coach-rules-out-teammates-ever-fighting"
+      },
+      {
+        "id": "art-2d23db01c8ef",
+        "title": "A Very UFC Thanksgiving: Which fighters best embody our favorite holiday foods?",
+        "source": "MMA Fighting",
+        "feedId": "mmafighting",
+        "domain": "mmafighting.com",
+        "url": "https://www.mmafighting.com/ufc/523067/a-very-ufc-thanksgiving-which-fighters-best-embody-our-favorite-holiday-foods",
+        "summary": "A Very UFC Thanksgiving: Which fighters best embody our favorite holiday foods? MMA Fighting",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/cover.png?quality=90&strip=all&crop=0%2C0%2C100%2C93.077370564282&w=1200",
+        "pubDate": "2026-11-26T14:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523067/a-very-ufc-thanksgiving-which-fighters-best-embody-our-favorite-holiday-foods"
       },
       {
         "id": "art-eb695342b508",
@@ -14197,7 +14245,7 @@
         "domain": "sherdog.com",
         "url": "https://www.sherdog.com/news/news/Joaquin-Buckley-challenges-former-UFC-champion-to-public-debate-203746",
         "summary": "Joaquin Buckley has called out Rashad Evans , Jason Manly and Brad Tate to a public debate.",
-        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261126041620_buckley_karen_n_word_debate.JPG",
+        "imageUrl": "",
         "pubDate": "2026-11-26T03:34:02.000Z"
       },
       {
@@ -14208,7 +14256,7 @@
         "domain": "sherdog.com",
         "url": "https://www.sherdog.com/news/news/Kevin-Vallejos-eyes-UFC-gold-or-BMF-fight-against-Tommy-McMillen-203745",
         "summary": "Kevin Vallejos wants a title shot, but is also open to fighting unranked Tommy McMillen next.",
-        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261126031230_kevin_vallejos_bmf_tommy_or_ufc_gold.JPG",
+        "imageUrl": "",
         "pubDate": "2026-11-26T03:12:30.000Z"
       },
       {
@@ -14219,7 +14267,7 @@
         "domain": "sherdog.com",
         "url": "https://www.sherdog.com/news/news/MMA-coach-Eddie-Cha-dies-at-53-fighters-pay-tribute-203744",
         "summary": "The mixed martial arts community is mourning the death of coach Eddie Cha.",
-        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261126030718_eddie_cha_RIP.JPG",
+        "imageUrl": "",
         "pubDate": "2026-11-26T03:07:17.000Z"
       },
       {
@@ -14230,7 +14278,7 @@
         "domain": "mmafighting.com",
         "url": "https://www.mmafighting.com/ufc/523375/charges-dismissed-against-anthony-smith-after-july-arrest-smith-releases-statement",
         "summary": "Charges dismissed against Anthony Smith after July arrest; Smith releases statement MMA Fighting",
-        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/07/gettyimages-2212170720.jpg?quality=90&strip=all&crop=0%2C0.68347774896583%2C100%2C78.544394838186&w=1200",
+        "imageUrl": "",
         "pubDate": "2026-11-25T23:56:07.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523375/charges-dismissed-against-anthony-smith-after-july-arrest-smith-releases-statement"
       },
@@ -14257,52 +14305,28 @@
         "pubDate": "2026-11-25T04:41:19.000Z"
       },
       {
-        "id": "art-7de750bd825f",
-        "title": "Israel Adesanya compares City Kickboxing split to bad breakup: ‘I ripped the Band-Aid off’",
+        "id": "art-02050bf549d0",
+        "title": "Morning Report | Josh Hokit admits Ciryl Gane is ‘a nice guy,’ reveals backstage run-in with him after UFC 334",
         "source": "MMA Fighting",
         "feedId": "mmafighting",
         "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523090/israel-adesanya-compares-city-kickboxing-split-to-bad-breakup-i-ripped-the-band-aid-off",
-        "summary": "Israel Adesanya compares City Kickboxing split to bad breakup: ‘I ripped the Band-Aid off’ MMA Fighting",
+        "url": "https://www.mmafighting.com/ufc/523123/morning-report-josh-hokit-admits-ciryl-gane-is-a-nice-guy-reveals-backstage-run-in-with-him-after-ufc-334",
+        "summary": "Morning Report | Josh Hokit admits Ciryl Gane is ‘a nice guy,’ reveals backstage run-in with him after UFC 334 MMA Fighting",
         "imageUrl": "",
-        "pubDate": "2026-11-24T20:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523090/israel-adesanya-compares-city-kickboxing-split-to-bad-breakup-i-ripped-the-band-aid-off"
+        "pubDate": "2026-11-24T17:17:24.000Z",
+        "publisherUrl": "https://www.mmafighting.com/ufc/523123/morning-report-josh-hokit-admits-ciryl-gane-is-a-nice-guy-reveals-backstage-run-in-with-him-after-ufc-334"
       },
       {
-        "id": "art-4b1d013245b9",
-        "title": "Raoni Barcelos confident he will fight again after scary collapse: ‘I really want to come back’",
+        "id": "art-1b848e3934e8",
+        "title": "Christian Lee responds to ONE Championship stripping his welterweight title: ‘I’m far from finished’",
         "source": "MMA Fighting",
         "feedId": "mmafighting",
         "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523149/raoni-barcelos-confident-he-will-fight-again-after-scary-collapse-i-really-want-to-come-back",
-        "summary": "Raoni Barcelos confident he will fight again after scary collapse: ‘I really want to come back’ MMA Fighting",
+        "url": "https://www.mmafighting.com/one/522934/christian-lee-responds-to-one-championship-stripping-his-welterweight-title-im-far-from-finished",
+        "summary": "Christian Lee responds to ONE Championship stripping his welterweight title: ‘I’m far from finished’ MMA Fighting",
         "imageUrl": "",
-        "pubDate": "2026-11-24T18:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523149/raoni-barcelos-confident-he-will-fight-again-after-scary-collapse-i-really-want-to-come-back"
-      },
-      {
-        "id": "art-4a262d656869",
-        "title": "Matt Brown defends Josh Hokit’s complaints about eye poke in Ciryl Gane fight: ‘A f*cking point deduction at minimum’",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523076/matt-brown-defends-josh-hokits-complaints-about-eye-poke-in-ciryl-gane-fight-a-fcking-point-deduction-at-minimum",
-        "summary": "Matt Brown defends Josh Hokit’s complaints about eye poke in Ciryl Gane fight: ‘A f*cking point deduction at minimum’ MMA Fighting",
-        "imageUrl": "",
-        "pubDate": "2026-11-24T14:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523076/matt-brown-defends-josh-hokits-complaints-about-eye-poke-in-ciryl-gane-fight-a-fcking-point-deduction-at-minimum"
-      },
-      {
-        "id": "art-e7b6e535d192",
-        "title": "Islam Makhachev says Usman Nurmagomedov-Merab Dvalishvili situation ‘got blown way out of proportion’",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/523011/islam-makhachev-says-usman-nurmagomedov-merab-dvalishvili-situation-got-blown-way-out-of-proportion",
-        "summary": "Islam Makhachev says Usman Nurmagomedov-Merab Dvalishvili situation ‘got blown way out of proportion’ MMA Fighting",
-        "imageUrl": "",
-        "pubDate": "2026-11-23T17:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/523011/islam-makhachev-says-usman-nurmagomedov-merab-dvalishvili-situation-got-blown-way-out-of-proportion"
+        "pubDate": "2026-11-23T19:00:00.000Z",
+        "publisherUrl": "https://www.mmafighting.com/one/522934/christian-lee-responds-to-one-championship-stripping-his-welterweight-title-im-far-from-finished"
       },
       {
         "id": "art-66e643300a39",
@@ -14316,18 +14340,6 @@
         "pubDate": "2026-11-23T16:51:48.000Z"
       },
       {
-        "id": "art-885d87de3b8c",
-        "title": "Video: Fighter earns submission with airtight leg scissor choke",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/latest-news/522870/video-fighter-earns-submission-with-airtight-leg-scissor-choke",
-        "summary": "Video: Fighter earns submission with airtight leg scissor choke MMA Fighting",
-        "imageUrl": "",
-        "pubDate": "2026-11-22T22:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/latest-news/522870/video-fighter-earns-submission-with-airtight-leg-scissor-choke"
-      },
-      {
         "id": "art-df83ff4c516f",
         "title": "Rising star Stirling knocks out Prochazka",
         "source": "BBC MMA",
@@ -14337,18 +14349,6 @@
         "summary": "Rising star Navajo Stirling earns the biggest win of his career as he knocks out former champion Jiri Prochazka in the second round at UFC Qatar.",
         "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0951/live/6d03f150-e5f1-11f1-b1d8-fd34c88a50a0.jpg",
         "pubDate": "2026-11-21T21:51:51.000Z"
-      },
-      {
-        "id": "art-78794ceeb01f",
-        "title": "Dan Hooker confident Alexander Volkanovski can beat Justin Gaethje: ‘That’s a very winnable fight for him’",
-        "source": "MMA Fighting",
-        "feedId": "mmafighting",
-        "domain": "mmafighting.com",
-        "url": "https://www.mmafighting.com/ufc/522470/dan-hooker-confident-alexander-volkanovski-can-beat-justin-gaethje-thats-a-very-winnable-fight-for-him",
-        "summary": "Dan Hooker confident Alexander Volkanovski can beat Justin Gaethje: ‘That’s a very winnable fight for him’ MMA Fighting",
-        "imageUrl": "",
-        "pubDate": "2026-11-21T13:00:00.000Z",
-        "publisherUrl": "https://www.mmafighting.com/ufc/522470/dan-hooker-confident-alexander-volkanovski-can-beat-justin-gaethje-thats-a-very-winnable-fight-for-him"
       },
       {
         "id": "art-ca9138931058",
@@ -14452,7 +14452,7 @@
     ]
   },
   "sport-tennis": {
-    "updatedAt": "2026-11-27T08:15:27.949Z",
+    "updatedAt": "2026-11-27T08:30:25.676Z",
     "results": [
       {
         "feedId": "bbc-tennis",
@@ -14867,7 +14867,7 @@
     ]
   },
   "sport-f1": {
-    "updatedAt": "2026-11-27T08:15:27.953Z",
+    "updatedAt": "2026-11-27T08:30:25.680Z",
     "results": [
       {
         "feedId": "bbc-f1",
@@ -15354,7 +15354,7 @@
     ]
   },
   "sport-golf": {
-    "updatedAt": "2026-11-27T08:15:27.955Z",
+    "updatedAt": "2026-11-27T08:30:25.682Z",
     "results": [
       {
         "feedId": "bbc-golf",
@@ -15593,7 +15593,7 @@
     ]
   },
   "sport-nba": {
-    "updatedAt": "2026-11-27T08:15:27.956Z",
+    "updatedAt": "2026-11-27T08:30:25.683Z",
     "results": [
       {
         "feedId": "cbs-nba",
@@ -15804,7 +15804,7 @@
     ]
   },
   "sport-nfl": {
-    "updatedAt": "2026-11-27T08:15:27.957Z",
+    "updatedAt": "2026-11-27T08:30:25.684Z",
     "results": [
       {
         "feedId": "cbs-nfl",
@@ -16004,7 +16004,7 @@
     ]
   },
   "science": {
-    "updatedAt": "2026-11-27T08:15:27.968Z",
+    "updatedAt": "2026-11-27T08:30:25.695Z",
     "results": [
       {
         "feedId": "sciencedaily",
@@ -16503,7 +16503,7 @@
     ]
   },
   "entertainment": {
-    "updatedAt": "2026-11-27T08:15:27.974Z",
+    "updatedAt": "2026-11-27T08:30:25.702Z",
     "results": [
       {
         "feedId": "variety",
@@ -17002,7 +17002,7 @@
     ]
   },
   "politics": {
-    "updatedAt": "2026-11-27T08:15:28.003Z",
+    "updatedAt": "2026-11-27T08:30:25.731Z",
     "results": [
       {
         "feedId": "npr-politics",
@@ -17519,7 +17519,7 @@
     ]
   },
   "finance": {
-    "updatedAt": "2026-11-27T08:15:28.025Z",
+    "updatedAt": "2026-11-27T08:30:25.749Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -17555,7 +17555,7 @@
         "feedId": "business-times-sg",
         "name": "The Business Times",
         "ok": true,
-        "count": 10
+        "count": 0
       },
       {
         "feedId": "guardian-business",
@@ -17571,6 +17571,28 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-9207a2e593c5",
+        "title": "US Investors Will Have to Chase Rally: Market Analysis",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/videos/2026-11-27/us-investors-will-have-to-chase-rally-3-minutes-mliv-video",
+        "summary": "Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
+        "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/imndYjXIWBFg/v3/500x-1.webp",
+        "pubDate": "2026-11-27T08:22:28.000Z"
+      },
+      {
+        "id": "art-5fb3c6972bb7",
+        "title": "Qatar’s LNG Export Push Provides Lifeline to South Asian Buyers",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/qatar-s-lng-export-push-provides-lifeline-to-south-asian-buyers",
+        "summary": "Qatar’s efforts to export more liquefied natural gas through the Strait of Hormuz are already saving money for South Asia’s cash-strapped importers of the super-chilled fuel.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T08:16:09.000Z"
+      },
       {
         "id": "art-6e0e06b6b957",
         "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
@@ -17683,7 +17705,7 @@
       },
       {
         "id": "art-702ef12e1542",
-        "title": "FTSE 100 Live: UK Stocks Poised Join Global Stock Rebound",
+        "title": "FTSE 100 Live: UK and European Stocks Join Global Rally",
         "source": "Bloomberg Markets",
         "feedId": "bloomberg-markets",
         "domain": "bloomberg.com",
@@ -17691,17 +17713,6 @@
         "summary": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T06:54:51.000Z"
-      },
-      {
-        "id": "art-b81fdd839fbc",
-        "title": "Japan, Hong Kong banks set to improve in 2027 while Australia deteriorates: Fitch",
-        "source": "The Business Times",
-        "feedId": "business-times-sg",
-        "domain": "businesstimes.com.sg",
-        "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/japan-hong-kong-banks-set-improve-2027-while-australia-deteriorates-fitch",
-        "summary": "The Philippines is the lone emerging market to receive an ‘improving’ call",
-        "imageUrl": "https://cassette.sphdigital.com.sg/image/businesstimes/064f89e90d436e25157c459468fd553ee361022a86bd1e80a3a6f1c877aa041f?t=og&f=webp&w=240",
-        "pubDate": "2026-11-27T06:47:45.000Z"
       },
       {
         "id": "art-162ece2e7e67",
@@ -17757,39 +17768,6 @@
         "summary": "Ziemba Insights founder Rachel Ziemba says physical supply risks are a bigger challenge for OPEC+ than managing the oil market as attacks on tankers and energy infrastructure raise concerns about further disruptions. She also discusses risks to diesel supplies",
         "imageUrl": "",
         "pubDate": "2026-11-27T06:22:58.000Z"
-      },
-      {
-        "id": "art-fd4d1990a566",
-        "title": "Huawei Teases AI Chip to Rival Giants SK Hynix, Samsung",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-27/the-china-show-11-27-2026-video",
-        "summary": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy. From politics and policy to tech and trends, Yvonne Man and David Ingles give global investors unique insight, delivering in-depth discussions wi",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:20:34.000Z"
-      },
-      {
-        "id": "art-40987cd748a5",
-        "title": "Asian Stocks Extend Recovery as AI Trade Rebounds",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/videos/2026-11-27/the-asia-trade-11-27-2026-video",
-        "summary": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia. Bloomberg TV is live from Sydney and Singapore with Haidi Stroud-Watts and Avril Hong, getting insight and analysis from newsmakers and industry ",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:16:34.000Z"
-      },
-      {
-        "id": "art-cf1fd507c21c",
-        "title": "The Rate Bets That Backfired on Hedge Funds In Europe This Year",
-        "source": "Bloomberg Markets",
-        "feedId": "bloomberg-markets",
-        "domain": "bloomberg.com",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-27/the-rate-bets-that-backfired-on-hedge-funds-in-europe-this-year",
-        "summary": "Some of the most popular European trades among hedge funds this year were big-picture bets on spreads narrowing back to their long-term averages. Thanks to soaring oil prices and French political turmoil, many of them backfired.",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T06:15:00.000Z"
       },
       {
         "id": "art-5d28a5ddaa27",
@@ -17924,17 +17902,6 @@
         "pubDate": "2026-11-27T05:00:04.000Z"
       },
       {
-        "id": "art-4e137103e164",
-        "title": "Asean equities in for a ride in 2027; Singapore, Vietnam favoured: JPMorgan",
-        "source": "The Business Times",
-        "feedId": "business-times-sg",
-        "domain": "businesstimes.com.sg",
-        "url": "https://www.businesstimes.com.sg/international/asean/asean-equities-ride-2027-singapore-vietnam-favoured-jpmorgan",
-        "summary": "Impetus to diversify from AI plays, changing energy prices can improve H2 2027 prospects, say analysts",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T04:19:26.000Z"
-      },
-      {
         "id": "art-cad4ceb6975f",
         "title": "Photos: Macy’s Thanksgiving Day Parade History and Wacky Moments",
         "source": "NYT Business",
@@ -17957,15 +17924,37 @@
         "pubDate": "2026-11-27T03:30:23.000Z"
       },
       {
-        "id": "art-d84b61db192d",
-        "title": "Real income growth slows, non-PMET unemployment up: MOM sees signs of Singapore’s labour market moderating",
-        "source": "The Business Times",
-        "feedId": "business-times-sg",
-        "domain": "businesstimes.com.sg",
-        "url": "https://www.businesstimes.com.sg/singapore/real-income-growth-slows-non-pmet-unemployment-mom-sees-signs-singapores-labour-market-moderating",
-        "summary": "But findings point to ‘broadly positive’ outcomes, with inflation-adjusted pay still up 2.2% at the median",
+        "id": "art-73ba92bcafe8",
+        "title": "Nvidia Halts Sales to Southeast Asia as U.S. Tightens China Restrictions",
+        "source": "NYT Business",
+        "feedId": "nyt-business",
+        "domain": "nytimes.com",
+        "url": "https://www.nytimes.com/2026/11/26/business/nvidia-southeast-asia-sales.html",
+        "summary": "The shipping halt, which hit four countries, follows a new U.S. rule that would require licenses for companies in the countries to buy advanced A.I. chips.",
+        "imageUrl": "https://static01.nyt.com/images/2026/11/26/multimedia/26nvidia-SEAsia-wvmq/26nvidia-SEAsia-wvmq-mediumSquareAt3X.jpg",
+        "pubDate": "2026-11-27T02:45:41.000Z"
+      },
+      {
+        "id": "art-92521bde9b9a",
+        "title": "Japan Tobacco Climbs on Potential Imperial Brands Takeover",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-27/japan-tobacco-shares-climb-on-potential-imperial-brands-takeover",
+        "summary": "Japan Tobacco Inc. shares rose on news that it is exploring a potential takeover of Imperial Brands Plc with Altria Group Inc., a move that could help the Japanese cigarette maker fill a large earnings hole left by the recent seizure of its Russian assets.",
         "imageUrl": "",
-        "pubDate": "2026-11-27T03:00:00.000Z"
+        "pubDate": "2026-11-27T00:26:05.000Z"
+      },
+      {
+        "id": "art-696d2fc65b52",
+        "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
+        "source": "CNBC",
+        "feedId": "cnbc",
+        "domain": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
+        "summary": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms.",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T00:22:29.000Z"
       },
       {
         "id": "art-9e6c4c989ed5",
@@ -17979,26 +17968,37 @@
         "pubDate": "2026-11-27T00:02:10.000Z"
       },
       {
-        "id": "art-1d2f1ff5b0df",
-        "title": "Dellia Q3 2026 slides: integration complete, margin recovery eyed for 2027",
-        "source": "Investing.com",
-        "feedId": "investing",
-        "domain": "investing.com",
-        "url": "https://www.investing.com/news/company-news/dellia-q3-2026-slides-integration-complete-margin-recovery-eyed-for-2027-93CH-5053066",
-        "summary": "",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3J15O_1200_L.jpg",
-        "pubDate": "2026-11-26T20:58:21.000Z"
+        "id": "art-8e2af7bb272e",
+        "title": "Gold Rises as Rebound in Tech Stocks Offsets Rate-Hike Concerns",
+        "source": "Bloomberg Markets",
+        "feedId": "bloomberg-markets",
+        "domain": "bloomberg.com",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-26/gold-steadies-as-fed-rate-path-and-ai-stocks-frame-volatile-week",
+        "summary": "Gold rose as a tentative recovery in technology stocks and a weaker US dollar offset the prospect of interest-rate hikes by the Federal Reserve.",
+        "imageUrl": "",
+        "pubDate": "2026-11-26T23:53:35.000Z"
       },
       {
-        "id": "art-d065361f0643",
-        "title": "French preliminary inflation at 3.2% in November",
+        "id": "art-cf144c3db730",
+        "title": "Vietnamese partners of Trump Organization plan Trump Tower in Hanoi, sources say",
         "source": "Investing.com",
         "feedId": "investing",
         "domain": "investing.com",
-        "url": "https://www.investing.com/news/economy-news/french-preliminary-inflation-at-32-in-november-5053065",
+        "url": "https://www.investing.com/news/stock-market-news/vietnamese-partners-of-trump-organization-plan-trump-tower-in-hanoi-sources-say-5053107",
         "summary": "",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAQ0GS_L.jpg",
-        "pubDate": "2026-11-26T20:54:21.000Z"
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB7Q0U9_M.jpg",
+        "pubDate": "2026-11-26T21:24:57.000Z"
+      },
+      {
+        "id": "art-4c2a473ce244",
+        "title": "French economy contracts more than expected in third quarter",
+        "source": "Investing.com",
+        "feedId": "investing",
+        "domain": "investing.com",
+        "url": "https://www.investing.com/news/economy-news/french-economy-contracts-more-than-expected-in-third-quarter-5053113",
+        "summary": "",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAQ0IO_L.jpg",
+        "pubDate": "2026-11-26T21:24:24.000Z"
       },
       {
         "id": "art-f31285075dbe",
@@ -18036,7 +18036,7 @@
     ]
   },
   "lifestyle": {
-    "updatedAt": "2026-11-27T08:15:28.029Z",
+    "updatedAt": "2026-11-27T08:30:25.754Z",
     "results": [
       {
         "feedId": "guardian-life",
