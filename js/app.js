@@ -1280,6 +1280,13 @@ function renderFeed() {
   scheduleArchiveChecks();
 }
 
+function visibleStoryCount() {
+  const settings = getSettings();
+  const showBriefs = settings.showBriefs || state.topicId === 'briefs' || Boolean(state.sourceView);
+  const curated = curateArticles(state.articles, state.sort);
+  return showBriefs ? curated.length : curated.filter((article) => !article.briefOnly).length;
+}
+
 function updateStatusLine() {
   if (state.loading) {
     setStatus('Refreshing live headlines…');
@@ -1289,17 +1296,22 @@ function updateStatusLine() {
     setStatus('');
     return;
   }
+  const stories = visibleStoryCount();
+  if (!stories) {
+    setStatus('');
+    return;
+  }
   const when = state.lastUpdated ? formatRelativeTime(state.lastUpdated) : '';
   if (state.liveFailed) {
     setStatus(`Live refresh incomplete · showing saved headlines${when ? ` (${when})` : ''}`, true);
     return;
   }
   if (state.fromSnapshot) {
-    setStatus(`Saved edition${when ? ` · ${when}` : ''} · ${state.articles.length} stories`);
+    setStatus(`Saved edition${when ? ` · ${when}` : ''} · ${stories} stories`);
     return;
   }
   const okSources = state.results.filter((result) => result.ok).length;
-  setStatus(`Updated ${when || 'just now'} · ${state.articles.length} stories${okSources ? ` · ${okSources} sources` : ''}`);
+  setStatus(`Updated ${when || 'just now'} · ${stories} stories${okSources ? ` · ${okSources} sources` : ''}`);
 }
 
 /* ------------------------------------------------------------------ */
