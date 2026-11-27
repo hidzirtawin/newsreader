@@ -1202,5 +1202,33 @@
   "https://www.jpost.com/israel-news/politics-and-diplomacy/article-916313": {
     "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748200",
     "at": 1795766426164
+  },
+  "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html": {
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108191096-1756261029946-gettyimages-1473813374-mercadosydolares.jpeg?v=1773737787&w=1920&h=1080",
+    "at": 1795767329195
+  },
+  "https://www.beritaharian.sg/sukan/bournemouth-milan-lengkapkan-kebangkitan-liga-europa-benfica-pula-teruk-dibelasah": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/beritaharian/c46eceb345f1e770c7c45733d54ce3683f74a133d146a852174207a850c1432f?t=og",
+    "at": 1795767329285
+  },
+  "https://www.livemint.com/news/sebi-to-look-into-tata-steel-apollo-apl-deal-over-minority-shareholder-concerns-11795765448786.html": {
+    "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/27/600x338/INDIA-SEBI-TRADING-0_1775206410594_1775206422633_1795766288072_lXyB_5ac3991e-3422-4c88-b8de-9af9a61abd4e_jWtJ.JPG",
+    "at": 1795767329572
+  },
+  "https://www.livemint.com/news/hpv-vaccine-cervical-cancer-hpv-vaccination-india-vaccination-drive-gardasil-4-cervavac-union-health-ministry-who-11795751474057.html": {
+    "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/27/600x338/pexels-photo-5234490_1795759183018_O7y3_1795759191245_g0eR_182983fe-79ae-4878-b496-f11d2f811ded_sIsW.jpeg",
+    "at": 1795767329660
+  },
+  "https://tass.com/economy/2225715": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494539.jpg",
+    "at": 1795767332330
+  },
+  "https://tass.com/emergencies/2225719": {
+    "imageUrl": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20261127/1494543.jpg",
+    "at": 1795767332337
+  },
+  "https://www.straitstimes.com/business/malaysia-singapore-can-win-bigger-deals-together-economy-minister-akmal": {
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/850116c04a14fe1a7d8c55da8f216596355f0cc04632e9ab90227f4c5a1c778e?t=og",
+    "at": 1795767332735
   }
 }
