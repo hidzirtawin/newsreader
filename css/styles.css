@@ -3077,3 +3077,10 @@ body.has-audio-dock {
     padding: 4px 7px;
   }
 }
+
+@media (min-width: 721px) {
+  .sports-subnav {
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+}
