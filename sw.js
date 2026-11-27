@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v12';
+const VERSION = 'newsreader-v14';
 const SHELL = [
   './',
   './index.html',
@@ -14,6 +14,7 @@ const SHELL = [
   './js/store.js',
   './js/feedService.js',
   './js/archive.js',
+  './js/vendor/Readability.js',
   './manifest.webmanifest',
   './icons/icon.svg',
   './icons/icon-32.png',
@@ -60,10 +61,64 @@ async function cacheFirst(request) {
   return response;
 }
 
+
+function escapeAttribute(value) {
+  return String(value || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+async function proxyReader(request) {
+  const headers = { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' };
+  try {
+    const form = await request.formData();
+    const target = String(form.get('url') || '');
+    if (!/^https?:\/\//i.test(target)) {
+      return new Response('<h1>Invalid article URL</h1>', { status: 400, headers });
+    }
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 30000);
+    let upstream;
+    try {
+      upstream = await fetch('https://r.jina.ai/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+        body: new URLSearchParams({ url: target, respondWith: 'html', base: 'final' }).toString(),
+        signal: controller.signal,
+      });
+    } finally {
+      clearTimeout(timer);
+    }
+    if (!upstream.ok) throw new Error(`Reader service HTTP ${upstream.status}`);
+    let html = await upstream.text();
+    if (!html || html.length < 200) throw new Error('Reader service returned no article');
+    html = html
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+      .replace(/<script\b[^>]*\/>/gi, '')
+      .replace(/<iframe\b[^>]*>[\s\S]*?<\/iframe>/gi, '');
+    if (!/<base\s/i.test(html)) {
+      html = html.replace(/<head([^>]*)>/i, `<head$1><base href="${escapeAttribute(target)}">`);
+    }
+    return new Response(html, {
+      headers: {
+        ...headers,
+        'Content-Security-Policy': "default-src 'self' https: data: blob:; script-src 'none'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data: blob:; font-src 'self' https: data:; media-src 'self' https:; connect-src 'self' https:; frame-src 'none';",
+      },
+    });
+  } catch (error) {
+    return new Response(`<h1>Reader unavailable</h1><p>${escapeAttribute(error?.message || 'Unknown error')}</p>`, {
+      status: 502,
+      headers,
+    });
+  }
+}
+
 self.addEventListener('fetch', (event) => {
   const { request } = event;
-  if (request.method !== 'GET') return;
   const url = new URL(request.url);
+  if (request.method === 'POST' && url.origin === self.location.origin && url.pathname.endsWith('/reader-frame')) {
+    event.respondWith(proxyReader(request));
+    return;
+  }
+  if (request.method !== 'GET') return;
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === 'navigate') {

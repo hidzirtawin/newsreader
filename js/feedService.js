@@ -213,7 +213,8 @@ function parseFeedText(text, feed) {
     if (!rawTitle || !rawLink) continue;
     const sourceName = tagText(node, ['source']) || feed.name;
     const summaryHtml = tagText(node, ['description', 'summary', 'content', 'content:encoded']);
-    const summary = stripHtml(summaryHtml).slice(0, 260);
+    let summary = stripHtml(summaryHtml).slice(0, 260);
+    if (/^(null|undefined|none)$/i.test(summary)) summary = '';
     const pubDateRaw = tagText(node, ['pubDate', 'published', 'updated', 'dc:date']);
     const parsedDate = Date.parse(pubDateRaw);
     items.push({
@@ -473,6 +474,7 @@ export async function fetchTopicArticles(topic, { onProgress, watchOnly = false 
           id: hashId(item.link),
           title: item.title,
           source: feed.name,
+          feedId: feed.id,
           domain: feed.domain || normalizeDomain(item.link),
           url: item.link,
           summary: item.summary,

@@ -8,21 +8,23 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 
 ## What's inside
 
-- **Same-tab reading** — stories open in the current tab. The browser Back button returns to the feed at the same scroll position and topic, instead of leaving a trail of new tabs.
+- **In-app reader** — stories open in a reader overlay, never in a new tab. It extracts the article text, tries an archived copy when a publisher blocks access, and shows a clearly labelled publisher brief when full text is unavailable. Back returns to the feed at the same scroll position.
 - **Strictly latest-first** — the lead story and every card below it are ordered by publication time, newest at the top and older stories at the bottom. There is no editorial reshuffling.
 - **Magazine feed** — lead story, two-column features, compact rows and mid-feed banners. Stories without photos fall back to clean text layouts.
 - **Auto-refresh** — every five minutes the app quietly checks a watch set of high-frequency wires and mastheads. New stories appear in a banner at the top; click it to bring the fresh edition forward without losing your place.
 - **Briefing desk** — Reuters, AP, NYT, The Economist, Financial Times, WSJ, Bloomberg, CNN, The Washington Post, The Times, The Telegraph, The Independent, ABC News US, The Australian and Herald Sun in one front page.
-- **Regional editions** — Top Stories, Latest, Briefing, World, US, UK, Europe, Middle East, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Science, Entertainment, Politics, Finance and Lifestyle.
+- **Regional editions** — Top Stories, Latest, Briefing, World, US, UK, Europe, Middle East, Africa, Latin America, Asia, India, China, Russia, Australia, Canada, Singapore, Malaysia, Business, Tech, AI, Sports, Science, Entertainment, Politics, Finance and Lifestyle.
 - **Singapore desk** — The Straits Times (Singapore, World, Asia, Business feeds), CNA, Mothership and Berita Harian Singapore.
 - **Malaysia desk** — Berita Harian, New Straits Times, Free Malaysia Today, Utusan Malaysia and Kosmo!.
 - **Australia desk** — ABC News, 7NEWS, Guardian Australia, SBS News, The Sydney Morning Herald, The Australian and Herald Sun.
 - **China desk** — South China Morning Post, BBC China, CGTN, Global Times, People's Daily and Sixth Tone.
 - **Russia desk** — The Moscow Times and Meduza (independent) alongside TASS and RT (state-aligned) so readers can compare official and independent accounts.
+- **Africa and Latin America desks** — BBC Africa, Premium Times, BBC Latin America, Folha de S.Paulo, O Globo, Clarín and La Nación.
 - **Sports desk** — a dedicated sub-navigation for All Sport, Football, Cricket, Rugby League, Rugby Union, Boxing, MMA, Tennis, Formula 1, Golf, NBA and NFL, using BBC Sport, The Guardian, ESPNcricinfo, BoxingScene, Sherdog, Autosport and CBS Sports.
-- **Wider world** — BBC, Reuters, AP, Al Jazeera, CNN, The Washington Post, NBC News, Fox News, USA Today, CBS, LA Times, NPR, CNBC, Bloomberg, The Guardian, Sky News, The Economist, SCMP, Nikkei Asia, The Japan Times, The Times of India, The Indian Express, Arab News, The Jerusalem Post, Taipei Times, El País and more.
+- **Wider world** — BBC, Reuters, AP, Al Jazeera, CNN, The Washington Post, NBC News, Fox News, USA Today, CBS, LA Times, NPR, CNBC, Bloomberg, The Guardian, Sky News, The Economist, SCMP, Nikkei Asia, The Japan Times, Yonhap, The Diplomat, RNZ, The Times of India, The Indian Express, NDTV, Mint, Arab News, The Jerusalem Post, Der Spiegel, Die Zeit, Corriere della Sera, la Repubblica, El Mundo, El País, Politico Europe, EUobserver, Foreign Policy, Foreign Affairs, Premium Times, Folha de S.Paulo, O Globo, Clarín, La Nación and more.
 - **Live radio** — 15 news/current-affairs stations from Malaysia, Singapore, Australia, the UK and the US, with a sticky player while you browse.
-- **Podcasts** — *Keluar Sekejap* episodes from the show's official feed, with a full audio player (seek, ±15s, speed, volume).
+- **Podcasts** — a dropdown of 16 popular shows, including *Keluar Sekejap*, *The Daily*, *The Intelligence*, *WSJ What’s News*, *FT News Briefing*, *Big Take*, BBC *Global News Podcast*, *The News Agents*, *Up First*, *ABC News Daily*, *The Decibel*, *ST News Headlines*, *CNA Deep Dive*, *3 Things*, *The Rest Is Politics* and *The Daily Aus*, with a full audio player (seek, ±15s, speed, volume).
+- **More from any publisher** — tap a source name on a story or the *Latest* button in the source library to open that publisher’s latest-first edition inside the app.
 - **Canada desk** — CBC News, CBC Canada, CBC World and The Globe and Mail.
 - **Reading rules** — per-publisher routing through direct links, SMRY, RemovePaywall, UnWall, Freedium, Jina Reader, Archive.is or the Wayback Machine.
 - **Archive locks** — hard-paywall stories are checked against Archive.is in the background. Stories without a snapshot are greyed out and locked; *Hide locked* removes them entirely.
@@ -31,7 +33,7 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 
 The app tries live feeds first through public CORS proxies. If a publisher or proxy is unavailable, it falls back to the snapshots in `data/news.json` and `data/podcasts.json`.
 
-The default order is **Latest first**. Auto-refresh runs every five minutes while the page is visible and online. It polls only the first six feeds of the active topic (the fastest wires and mastheads), then keeps any new stories in a banner until you choose to apply them, so the page never jumps while you are reading.
+The default order is **Latest first**. Auto-refresh runs every five minutes while the page is visible and online. It polls only the first six feeds of the active topic (the fastest wires and mastheads), then keeps any new stories in a banner until you choose to apply them. Background refreshes never re-render the page, scroll position or the audio player; manual refresh remains an explicit action.
 
 ## Run it
 
@@ -45,7 +47,7 @@ Open <http://localhost:4173>. Any static server works:
 python3 -m http.server 8080
 ```
 
-A local HTTP server is required for the service worker; opening `index.html` directly still loads the app, but PWA install/offline caching will not work.
+A local HTTP server is required for the service worker and the in-app reader proxy; opening `index.html` directly still loads the app, but PWA install/offline caching and the full reader service will not work.
 
 ## Refresh the bundled editions
 

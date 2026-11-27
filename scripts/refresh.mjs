@@ -153,9 +153,10 @@ function parseFeed(xml, feed) {
     if (!rawTitle) continue;
     const dateRaw = tagValue(block, 'pubDate') || tagValue(block, 'published') || tagValue(block, 'updated') || tagValue(block, 'dc:date');
     const timestamp = Date.parse(dateRaw);
-    const summary = cleanText(
+    let summary = cleanText(
       tagValue(block, 'description') || tagValue(block, 'summary') || tagValue(block, 'content:encoded') || tagValue(block, 'content')
     ).slice(0, 260);
+    if (/^(null|undefined|none)$/i.test(summary)) summary = '';
     articles.push({
       id: hashId(link),
       title: cleanTitle(rawTitle, feed.name),

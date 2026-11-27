@@ -36,7 +36,6 @@ import {
 } from './store.js';
 import {
   applyRule,
-  buildStrategyUrl,
   curateArticles,
   dedupeArticles,
   fetchPodcastShow,
@@ -67,6 +66,9 @@ const els = {
   sportsSubnav: $('#sportsSubnav'),
   editorialHeading: $('#editorialHeading'),
   feedSortSelect: $('#feedSortSelect'),
+  sourceViewBar: $('#sourceViewBar'),
+  sourceViewName: $('#sourceViewName'),
+  sourceBackBtn: $('#sourceBackBtn'),
   feedStatus: $('#feedStatus'),
   loadingState: $('#loadingState'),
   errorState: $('#errorState'),
@@ -156,6 +158,23 @@ const els = {
   toastActionLink: $('#toastActionLink'),
 
   editorialActions: $('#editorialActions'),
+  readerView: $('#readerView'),
+  readerBackBtn: $('#readerBackBtn'),
+  readerCloseBtn: $('#readerCloseBtn'),
+  readerToolbarSource: $('#readerToolbarSource'),
+  readerToolbarState: $('#readerToolbarState'),
+  readerProgressBar: $('#readerProgressBar'),
+  readerScroll: $('#readerScroll'),
+  readerKicker: $('#readerKicker'),
+  readerTitle: $('#readerTitle'),
+  readerMeta: $('#readerMeta'),
+  readerNotice: $('#readerNotice'),
+  readerStatus: $('#readerStatus'),
+  readerBody: $('#readerBody'),
+  readerFallback: $('#readerFallback'),
+  readerFallbackText: $('#readerFallbackText'),
+  readerArchiveBtn: $('#readerArchiveBtn'),
+  readerRetryBtn: $('#readerRetryBtn'),
   audioDock: $('#audioDock'),
   audioPlayer: $('#audioPlayer'),
   dockPlayBtn: $('#dockPlayBtn'),
@@ -198,9 +217,15 @@ const state = {
   toastHideTimer: null,
   listenMode: '',
   podcastEpisodes: [],
+  podcastEpisodeMap: {},
+  podcastUpdatedMap: {},
+  podcastShowId: '',
   podcastUpdatedAt: '',
   podcastLoading: false,
   podcastError: '',
+  podcastRequest: 0,
+  sourceView: null,
+  sourceReturnTopic: '',
   player: { type: '', id: '', playing: false, title: '', kicker: '' },
   pendingArticles: null,
   pendingNewCount: 0,
@@ -208,6 +233,12 @@ const state = {
   polling: false,
   autoRefreshTimer: null,
   lastAutoPoll: 0,
+  readerOpen: false,
+  readerToken: 0,
+  readerArticle: null,
+  readerStack: [],
+  publisherUrls: {},
+  publisherUrlsPromise: null,
 };
 
 /* ------------------------------------------------------------------ */
@@ -220,6 +251,11 @@ function esc(value) {
   }[character]));
 }
 
+function cleanSummary(value) {
+  const text = String(value || '').trim();
+  return /^(null|undefined|none)$/i.test(text) ? '' : text;
+}
+
 function initialFor(text) {
   const match = String(text || '').match(/[a-z0-9]/i);
   return match ? match[0].toUpperCase() : 'N';
@@ -229,32 +265,6 @@ function hueFor(text) {
   let hash = 0;
   for (const char of String(text || '')) hash = (hash * 31 + char.charCodeAt(0)) % 360;
   return hash;
-}
-
-const RETURN_KEY = 'newsreader_return_v1';
-
-function rememberReturnPosition() {
-  if (!state.topicId) return;
-  try {
-    sessionStorage.setItem(RETURN_KEY, JSON.stringify({
-      topicId: state.topicId,
-      scrollY: window.scrollY,
-      at: Date.now(),
-    }));
-  } catch { /* storage may be blocked */ }
-}
-
-function restoreReturnScroll() {
-  try {
-    const saved = JSON.parse(sessionStorage.getItem(RETURN_KEY) || 'null');
-    if (!saved || saved.topicId !== state.topicId) return;
-    if (Date.now() - Number(saved.at || 0) > 30 * 60 * 1000) {
-      sessionStorage.removeItem(RETURN_KEY);
-      return;
-    }
-    sessionStorage.removeItem(RETURN_KEY);
-    setTimeout(() => window.scrollTo({ top: Number(saved.scrollY) || 0, behavior: 'auto' }), 600);
-  } catch { /* ignore */ }
 }
 
 function faviconMarkup(article) {
@@ -281,7 +291,10 @@ function badgeMarkup(article, onDark = false) {
 
 function sourceGroupMarkup(article) {
   const time = formatRelativeTime(article.pubDate);
-  return `<div class="source-group">${faviconMarkup(article)}<span class="news-card-source">${esc(article.source)}</span>${time ? `<span class="news-card-time" data-pubdate="${esc(article.pubDate)}">${esc(time)}</span>` : ''}</div>`;
+  const source = article.feedId
+    ? `<button type="button" class="news-card-source source-link" data-source-feed="${esc(article.feedId)}" title="More from ${esc(article.source)}">${esc(article.source)}</button>`
+    : `<span class="news-card-source">${esc(article.source)}</span>`;
+  return `<div class="source-group">${faviconMarkup(article)}${source}${time ? `<span class="news-card-time" data-pubdate="${esc(article.pubDate)}">${esc(time)}</span>` : ''}</div>`;
 }
 
 function mediaMarkup(article, eager = false) {
@@ -314,8 +327,9 @@ function cardMarkup(article, variant) {
   const articleAttr = `data-card-id="${esc(article.id)}" data-article-url="${esc(article.url)}"`;
 
   if (variant === 'hero' || variant === 'banner') {
-    const summary = variant === 'hero' && article.summary
-      ? `<p class="news-card-summary">${esc(article.summary)}</p>` : '';
+    const articleSummary = cleanSummary(article.summary);
+    const summary = variant === 'hero' && articleSummary
+      ? `<p class="news-card-summary">${esc(articleSummary)}</p>` : '';
     return `<article class="${classes.join(' ')}" ${articleAttr}>
       ${hasPhoto ? mediaMarkup(article, true) : ''}
       ${hasPhoto ? '<div class="overlay"></div>' : ''}
@@ -414,6 +428,626 @@ function showToast(message, { href = '', duration = 4200, label = 'Open article 
 }
 
 /* ------------------------------------------------------------------ */
+/* In-app reader                                                       */
+/* ------------------------------------------------------------------ */
+
+const READER_MARKERS = [
+  'subscribe to continue reading',
+  'subscribe to read',
+  'to continue reading this article',
+  'already a subscriber',
+  'sign in to read',
+  'log in to continue',
+  'create a free account to continue',
+  'you have reached your limit',
+  'access denied',
+  'just a moment',
+  'are you a robot',
+  'security systems have detected',
+  'unusual activity on this connection',
+  'enable javascript and cookies',
+  '403 forbidden',
+];
+
+function googleNewsId(url) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.hostname !== 'news.google.com') return '';
+    return parsed.pathname.match(/^\/(?:rss\/)?(?:articles|read)\/([^/]+)/)?.[1] || '';
+  } catch {
+    return '';
+  }
+}
+
+function loadPublisherUrls() {
+  if (!state.publisherUrlsPromise) {
+    state.publisherUrlsPromise = fetch('./data/publisher-url-cache.json', { cache: 'no-cache' })
+      .then((response) => (response.ok ? response.json() : {}))
+      .then((data) => {
+        state.publisherUrls = data && typeof data === 'object' ? data : {};
+        return state.publisherUrls;
+      })
+      .catch(() => ({}));
+  }
+  return state.publisherUrlsPromise;
+}
+
+function resolveReaderArticle(article) {
+  let url = article.url || '';
+  let domain = article.domain || '';
+  if (googleNewsId(url)) {
+    const cached = state.publisherUrls[googleNewsId(url)];
+    if (cached?.url) {
+      url = cached.url;
+      try { domain = new URL(url).hostname.replace(/^www\./, ''); } catch { /* keep */ }
+    }
+  }
+  return { ...article, url, domain };
+}
+
+async function fetchReaderText(url, timeoutMs = 8000) {
+  const proxies = [
+    {
+      build: (target) => `https://api.allorigins.win/get?url=${encodeURIComponent(target)}`,
+      read: async (response) => {
+        const payload = await response.json();
+        if (typeof payload?.contents === 'string') return payload.contents;
+        throw new Error('No contents');
+      },
+      timeoutMs: 8000,
+    },
+    {
+      build: (target) => `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(target)}`,
+      read: (response) => response.text(),
+      timeoutMs: 4000,
+    },
+  ];
+
+  for (const proxy of proxies) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), Math.min(proxy.timeoutMs || timeoutMs, timeoutMs));
+    try {
+      const response = await fetch(proxy.build(url), {
+        signal: controller.signal,
+        headers: { Accept: '*/*' },
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const text = await proxy.read(response);
+      if (text && text.length > 40) return text;
+    } catch {
+      // Try the next proxy.
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  return '';
+}
+
+function readerMetaContent(doc, names) {
+  for (const name of names) {
+    const node = doc.querySelector(`meta[property="${name}"], meta[name="${name}"]`);
+    const value = node?.getAttribute('content');
+    if (value) return value.trim();
+  }
+  return '';
+}
+
+function readJsonLd(doc) {
+  const output = { body: '', title: '', byline: '', description: '', date: '', site: '' };
+  const scripts = [...doc.querySelectorAll('script[type="application/ld+json"]')];
+
+  function walk(node) {
+    if (!node) return;
+    if (Array.isArray(node)) {
+      node.forEach(walk);
+      return;
+    }
+    if (typeof node !== 'object') return;
+    if (typeof node.articleBody === 'string' && node.articleBody.length > output.body.length) output.body = node.articleBody;
+    if (typeof node.text === 'string' && node.text.length > output.body.length && String(node['@type'] || '').includes('Article')) output.body = node.text;
+    if (!output.title && typeof node.headline === 'string') output.title = node.headline;
+    if (!output.byline && typeof node.author === 'string') output.byline = node.author;
+    if (!output.byline && node.author?.name) output.byline = node.author.name;
+    if (!output.description && typeof node.description === 'string') output.description = node.description;
+    if (!output.date && typeof node.datePublished === 'string') output.date = node.datePublished;
+    if (!output.site && typeof node.publisher?.name === 'string') output.site = node.publisher.name;
+    Object.values(node).forEach(walk);
+  }
+
+  for (const script of scripts) {
+    try { walk(JSON.parse(script.textContent)); } catch { /* ignore malformed metadata */ }
+  }
+  return output;
+}
+
+function textToParagraphs(text) {
+  return String(text || '')
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
+    .map((paragraph) => `<p>${esc(paragraph)}</p>`)
+    .join('');
+}
+
+function extractArticle(html, baseUrl) {
+  if (!html) return null;
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  const json = readJsonLd(doc);
+  const meta = {
+    title: readerMetaContent(doc, ['og:title', 'twitter:title']) || doc.title || '',
+    byline: readerMetaContent(doc, ['author', 'article:author']),
+    description: readerMetaContent(doc, ['og:description', 'twitter:description', 'description']),
+    image: readerMetaContent(doc, ['og:image', 'twitter:image']),
+    site: readerMetaContent(doc, ['og:site_name']),
+    date: readerMetaContent(doc, ['article:published_time', 'datePublished']),
+  };
+
+  if (json.body && json.body.length > 700) {
+    return {
+      title: json.title || meta.title,
+      byline: json.byline || meta.byline,
+      siteName: json.site || meta.site,
+      publishedTime: json.date || meta.date,
+      image: meta.image,
+      content: textToParagraphs(json.body),
+      textContent: json.body,
+      textLength: json.body.length,
+      kind: 'jsonld',
+      url: baseUrl,
+    };
+  }
+
+  let readable = null;
+  try {
+    if (typeof window.Readability === 'function') {
+      const clone = new DOMParser().parseFromString(html, 'text/html');
+      readable = new window.Readability(clone, { charThreshold: 60 }).parse();
+    }
+  } catch { /* fall through */ }
+
+  if (readable?.content && (readable.textContent || '').trim().length > 220) {
+    const textContent = (readable.textContent || '').trim();
+    return {
+      title: readable.title || meta.title,
+      byline: readable.byline || meta.byline,
+      siteName: readable.siteName || meta.site,
+      publishedTime: readable.publishedTime || meta.date,
+      image: meta.image,
+      content: readable.content,
+      textContent,
+      textLength: textContent.length,
+      kind: 'reader',
+      url: baseUrl,
+    };
+  }
+
+  const container = doc.querySelector('article, main, [role="main"]') || doc.body;
+  const paragraphs = [...container.querySelectorAll('p')]
+    .map((node) => node.textContent.replace(/\s+/g, ' ').trim())
+    .filter((text) => text.length > 60);
+  const textContent = paragraphs.join('\n\n');
+  if (textContent.length > 120) {
+    return {
+      title: meta.title,
+      byline: meta.byline,
+      siteName: meta.site,
+      publishedTime: meta.date,
+      image: meta.image,
+      content: textToParagraphs(textContent),
+      textContent,
+      textLength: textContent.length,
+      kind: 'fallback',
+      url: baseUrl,
+    };
+  }
+
+  if (meta.description) {
+    return {
+      title: meta.title,
+      byline: meta.byline,
+      siteName: meta.site,
+      publishedTime: meta.date,
+      image: meta.image,
+      content: `<p>${esc(meta.description)}</p>`,
+      textContent: meta.description,
+      textLength: meta.description.length,
+      kind: 'meta',
+      url: baseUrl,
+    };
+  }
+
+  return null;
+}
+
+function assessExtraction(extraction) {
+  if (!extraction) return { usable: false, good: false, blocked: false, length: 0 };
+  const lower = String(extraction.textContent || '').toLowerCase();
+  const length = Number(extraction.textLength) || String(extraction.textContent || '').length;
+  const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
+  return {
+    usable: length >= 220 && !blocked,
+    good: length >= 900 && !blocked,
+    blocked,
+    length,
+  };
+}
+
+async function tryWayback(url) {
+  if (!url || /news\.google\.com/.test(url)) return null;
+  try {
+    const api = `https://archive.org/wayback/available?url=${encodeURIComponent(url)}`;
+    const text = await fetchReaderText(api, 6000);
+    if (!text) return null;
+    const data = JSON.parse(text);
+    const closest = data?.archived_snapshots?.closest;
+    if (!closest?.available || !closest.url) return null;
+    const snapshot = String(closest.url).replace(/^http:/, 'https:');
+    const html = await fetchReaderText(snapshot, 9000);
+    const extraction = extractArticle(html, snapshot);
+    if (!extraction) return null;
+    return { ...extraction, kind: 'archive' };
+  } catch {
+    return null;
+  }
+}
+
+async function tryArchiveIs(url) {
+  if (!url || /news\.google\.com/.test(url)) return null;
+  try {
+    const snapshot = `https://archive.is/newest/${url}`;
+    const html = await fetchReaderText(snapshot, 6000);
+    const extraction = extractArticle(html, snapshot);
+    return extraction ? { ...extraction, kind: 'archive' } : null;
+  } catch {
+    return null;
+  }
+}
+
+async function trySmry(url) {
+  if (!url || /news\.google\.com/.test(url)) return null;
+  try {
+    const target = `https://smry.ai/${url}`;
+    const html = await fetchReaderText(target, 7000);
+    if (!html || /not supported by smry/i.test(html)) return null;
+    const extraction = extractArticle(html, target);
+    if (!extraction) return null;
+    return { ...extraction, kind: 'summary' };
+  } catch {
+    return null;
+  }
+}
+
+function sanitizeReaderHtml(html, baseUrl) {
+  const container = document.createElement('div');
+  container.innerHTML = html || '';
+  container.querySelectorAll('script, style, iframe, frame, object, embed, form, input, button, select, textarea, link, meta, noscript, svg, video, audio, source, track, canvas, nav, footer, aside').forEach((node) => node.remove());
+  container.querySelectorAll('[class*="advert"], [id*="advert"], [class*="newsletter"], [class*="paywall"], [class*="subscribe"]').forEach((node) => node.remove());
+
+  container.querySelectorAll('*').forEach((element) => {
+    for (const attribute of [...element.attributes]) {
+      if (/^on/i.test(attribute.name) || ['style', 'srcset', 'sizes', 'id'].includes(attribute.name)) {
+        element.removeAttribute(attribute.name);
+      }
+    }
+    if (element.tagName === 'A') {
+      let href = element.getAttribute('href') || '';
+      try { href = new URL(href, baseUrl).href; } catch { href = ''; }
+      if (/^https?:/i.test(href)) element.dataset.readerHref = href;
+      element.setAttribute('href', '#');
+      element.removeAttribute('target');
+    }
+    if (element.tagName === 'IMG') {
+      let src = element.getAttribute('src') || element.getAttribute('data-src') || '';
+      try { src = new URL(src, baseUrl).href; } catch { src = ''; }
+      if (!/^https?:/i.test(src) || /(sprite|spacer|pixel|tracking|1x1|avatar|favicon)/i.test(src)) {
+        element.remove();
+        return;
+      }
+      element.setAttribute('src', src);
+      element.setAttribute('loading', 'lazy');
+      element.setAttribute('decoding', 'async');
+      element.removeAttribute('data-src');
+    }
+  });
+
+  container.querySelectorAll('p').forEach((paragraph) => {
+    if (!paragraph.textContent.trim() && !paragraph.querySelector('img')) paragraph.remove();
+  });
+  return container.innerHTML;
+}
+
+function setReaderHeader(article) {
+  const source = article.source || article.domain || 'Reader';
+  els.readerToolbarSource.textContent = source;
+  els.readerToolbarState.textContent = 'Opening…';
+  els.readerKicker.textContent = source.toUpperCase();
+  els.readerTitle.textContent = article.title || 'Article';
+  els.readerMeta.textContent = [article.source, article.pubDate ? formatRelativeTime(article.pubDate) : ''].filter(Boolean).join(' · ');
+  document.title = `${article.title || 'Article'} | Tawin Newsreader`;
+}
+
+function readerLoading(message, keepBody = false) {
+  els.readerToolbarState.textContent = 'Loading';
+  els.readerStatus.hidden = false;
+  els.readerStatus.textContent = message;
+  els.readerNotice.hidden = true;
+  els.readerFallback.hidden = true;
+  if (!keepBody) els.readerBody.innerHTML = '';
+  els.readerProgressBar.style.width = '0%';
+}
+
+function readerDateLabel(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function renderReaderExtraction(extraction, article, assessment) {
+  els.readerStatus.hidden = true;
+  els.readerFallback.hidden = true;
+  els.readerToolbarState.textContent = extraction.kind === 'archive' ? 'Archived copy' : 'Reader view';
+  els.readerTitle.textContent = extraction.title || article.title || 'Article';
+  const byline = extraction.byline && !/^(https?:\/\/|www\.)/i.test(extraction.byline.trim())
+    ? extraction.byline.trim()
+    : '';
+  const meta = [
+    byline,
+    extraction.siteName,
+    readerDateLabel(extraction.publishedTime || article.pubDate),
+  ].filter(Boolean);
+  els.readerMeta.textContent = meta.join(' · ');
+
+  let notice = '';
+  if (extraction.kind === 'archive') notice = 'Archived copy — the publisher page is blocked or paywalled.';
+  else if (extraction.kind === 'summary') notice = 'Reader summary — the full article could not be retrieved from the publisher.';
+  else if (!assessment.good) notice = 'Partial reader view — the publisher is serving truncated content.';
+  if (notice) {
+    els.readerNotice.hidden = false;
+    els.readerNotice.textContent = notice;
+  } else {
+    els.readerNotice.hidden = true;
+  }
+
+  els.readerBody.innerHTML = sanitizeReaderHtml(extraction.content, extraction.url);
+  els.readerScroll.scrollTop = 0;
+  els.readerProgressBar.style.width = '0%';
+  document.title = `${extraction.title || article.title} | Tawin Newsreader`;
+}
+
+const READER_EMBED_BLOCKED = [
+  'nytimes.com',
+  'bloomberg.com',
+  'wsj.com',
+  'ft.com',
+  'heraldsun.com.au',
+  'theaustralian.com.au',
+  'news.google.com',
+];
+
+function canEmbedReaderService(url) {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, '');
+    return !READER_EMBED_BLOCKED.some((domain) => host === domain || host.endsWith(`.${domain}`));
+  } catch {
+    return false;
+  }
+}
+
+function renderReaderService(article) {
+  els.readerStatus.hidden = true;
+  els.readerToolbarState.textContent = 'Reader service';
+  els.readerNotice.hidden = true;
+  els.readerFallback.hidden = true;
+  const preview = cleanSummary(article.summary) ? `<div class="reader-preview">${textToParagraphs(cleanSummary(article.summary))}</div>` : '';
+  els.readerBody.innerHTML = `${preview}<div class="reader-service-shell">
+    <div class="reader-service-bar" id="readerServiceStatus">Loading full text</div>
+    <iframe id="readerServiceFrame" name="readerServiceFrame" title="Article reader" sandbox="allow-same-origin" style="display:none"></iframe>
+    <form id="readerServiceForm" method="POST" action="./reader-frame" target="readerServiceFrame" hidden>
+      <input type="hidden" name="url" value="${esc(article.url)}">
+    </form>
+  </div>`;
+  const frame = document.getElementById('readerServiceFrame');
+  const form = document.getElementById('readerServiceForm');
+  const status = document.getElementById('readerServiceStatus');
+  if (!frame || !form || !status) {
+    renderReaderFallback(article, null, { checking: false });
+    return;
+  }
+
+  let settled = false;
+  const fail = (message) => {
+    if (settled) return;
+    settled = true;
+    renderReaderFallback(article, null, { checking: false });
+    els.readerFallbackText.textContent = message;
+  };
+
+  frame.addEventListener('load', () => {
+    if (settled) return;
+    let doc = null;
+    try { doc = frame.contentDocument; } catch { doc = null; }
+    if (!doc || !doc.documentElement || doc.URL === 'about:blank') return;
+
+    settled = true;
+    const html = doc.documentElement.outerHTML;
+    const extraction = extractArticle(html, article.url);
+    const assessment = assessExtraction(extraction);
+    if (extraction && assessment.usable) {
+      renderReaderExtraction(extraction, article, assessment);
+      return;
+    }
+
+    const node = doc.querySelector('article, main, [role="main"]') || doc.body;
+    const text = (node?.innerText || '').trim();
+    const lower = text.toLowerCase();
+    const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
+    if (node && text.length >= 400 && !blocked) {
+      els.readerStatus.hidden = true;
+      els.readerFallback.hidden = true;
+      els.readerToolbarState.textContent = 'Publisher view';
+      els.readerNotice.hidden = false;
+      els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
+      els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
+      return;
+    }
+    fail('The publisher blocks full-text reading. Only the publisher summary is available.');
+  });
+
+  form.submit();
+  setTimeout(() => fail('The reader service timed out. Try again or read the publisher summary.'), 30000);
+}
+
+
+function renderReaderPlainService(article) {
+  els.readerStatus.hidden = true;
+  els.readerToolbarState.textContent = 'Reader service';
+  els.readerNotice.hidden = false;
+  els.readerNotice.textContent = 'Reader text via Jina Reader, displayed inside Tawin Newsreader. Reload once for the fully formatted reader.';
+  els.readerFallback.hidden = false;
+  els.readerFallbackText.textContent = 'If the reader service does not display the article, try an archived copy or reload.';
+  els.readerArchiveBtn.hidden = false;
+  els.readerRetryBtn.hidden = false;
+  els.readerBody.innerHTML = `<div class="reader-service-shell">
+    <div class="reader-service-bar" id="readerServiceStatus">Loading full text</div>
+    <iframe id="readerTextFrame" name="readerTextFrame" class="reader-service-frame" title="Article text" sandbox="" referrerpolicy="no-referrer"></iframe>
+    <form id="readerTextForm" method="POST" action="https://r.jina.ai/" target="readerTextFrame" hidden>
+      <input type="hidden" name="url" value="${esc(article.url)}">
+      <input type="hidden" name="respondWith" value="text">
+    </form>
+  </div>`;
+  document.getElementById('readerTextForm')?.submit();
+  const frame = document.getElementById('readerTextFrame');
+  const status = document.getElementById('readerServiceStatus');
+  frame?.addEventListener('load', () => {
+    if (status) {
+      status.textContent = 'Full text via reader service';
+      status.classList.add('is-ready');
+    }
+  }, { once: true });
+  els.readerScroll.scrollTop = 0;
+  els.readerProgressBar.style.width = '0%';
+  document.title = `${article.title || 'Article'} | Tawin Newsreader`;
+}
+
+function renderReaderFallback(article, extraction, { checking = false } = {}) {
+  els.readerStatus.hidden = true;
+  els.readerToolbarState.textContent = checking ? 'Checking archive' : 'Publisher summary';
+  els.readerNotice.hidden = true;
+  els.readerFallback.hidden = false;
+  const summary = cleanSummary(article.summary) || (extraction?.textLength < 400 ? extraction?.textContent : '');
+  els.readerBody.innerHTML = summary ? textToParagraphs(summary) : '';
+  els.readerFallbackText.textContent = checking
+    ? 'Only the publisher summary is available so far. Checking for an archived copy of the full article…'
+    : summary
+      ? 'Only the publisher summary is available. The full article is blocked or paywalled, and no archived copy was found.'
+      : 'This publisher blocks full-text reading and no archived copy was found. The headline and source are preserved above.';
+  els.readerArchiveBtn.hidden = checking;
+  els.readerRetryBtn.hidden = checking;
+}
+
+async function loadReaderContent(article, { archiveOnly = false } = {}) {
+  const token = ++state.readerToken;
+  const resolved = resolveReaderArticle(article);
+  state.readerArticle = resolved;
+  setReaderHeader(resolved);
+
+  // Free sites: show the full reader service immediately, then upgrade to a
+  // styled extraction if the publisher HTML can be parsed in the background.
+  if (!archiveOnly && canEmbedReaderService(resolved.url)) {
+    if (navigator.serviceWorker?.controller) renderReaderService(resolved);
+    else renderReaderPlainService(resolved);
+    return;
+  }
+
+  // Paywalled or blocked sites: show the publisher summary immediately.
+  // Archive lookup is deliberately on demand so the reader never stalls.
+  if (!archiveOnly) {
+    renderReaderFallback(resolved, null, { checking: false });
+    return;
+  }
+
+  renderReaderFallback(resolved, null, { checking: true });
+  const archive = await Promise.race([
+    tryWayback(resolved.url),
+    new Promise((resolve) => setTimeout(() => resolve(null), 10000)),
+  ]);
+  if (token !== state.readerToken) return;
+  if (archive) {
+    const archiveAssessment = assessExtraction(archive);
+    if (archiveAssessment.usable) {
+      renderReaderExtraction(archive, resolved, archiveAssessment);
+      return;
+    }
+  }
+
+  const archived = await tryArchiveIs(resolved.url);
+  if (token !== state.readerToken) return;
+  if (archived) {
+    const archivedAssessment = assessExtraction(archived);
+    if (archivedAssessment.usable) {
+      renderReaderExtraction(archived, resolved, archivedAssessment);
+      return;
+    }
+  }
+
+  renderReaderFallback(resolved, null, { checking: false });
+
+}
+
+function openReader(article, { fromLink = false } = {}) {
+  if (!article) return;
+  if (!state.readerOpen) {
+    state.readerOpen = true;
+    state.readerStack = [];
+    state.readerPreviousTitle = document.title;
+    state.readerLastFocus = document.activeElement;
+    document.body.classList.add('reader-open');
+    els.readerView.hidden = false;
+    if (location.hash !== '#read') history.pushState({ reader: true }, '', '#read');
+  }
+  if (fromLink && state.readerArticle) {
+    state.readerStack.push(state.readerArticle);
+  }
+  els.readerScroll.scrollTop = 0;
+  els.readerProgressBar.style.width = '0%';
+  els.readerBody.innerHTML = '';
+  els.readerFallback.hidden = true;
+  els.readerNotice.hidden = true;
+  loadReaderContent(article);
+}
+
+function finalizeReaderClose() {
+  if (!state.readerOpen) return;
+  state.readerOpen = false;
+  state.readerToken += 1;
+  state.readerStack = [];
+  state.readerArticle = null;
+  els.readerView.hidden = true;
+  document.body.classList.remove('reader-open');
+  if (location.hash === '#read') {
+    history.replaceState(null, '', location.pathname + location.search);
+  }
+  document.title = state.readerPreviousTitle || document.title;
+  state.readerLastFocus?.focus?.({ preventScroll: true });
+}
+
+function closeReader() {
+  if (history.state?.reader) history.back();
+  else finalizeReaderClose();
+}
+
+function readerBack() {
+  if (state.readerStack.length) {
+    const previous = state.readerStack.pop();
+    els.readerScroll.scrollTop = 0;
+    loadReaderContent(previous);
+    return;
+  }
+  closeReader();
+}
+
+/* ------------------------------------------------------------------ */
 /* Menu                                                                */
 /* ------------------------------------------------------------------ */
 
@@ -479,10 +1113,11 @@ function renderTopicsBar() {
     els.topicsBar.innerHTML = '<span class="feed-status-line">No topics visible. Open Customize to add one.</span>';
     return;
   }
-  els.topicsBar.innerHTML = topics.map((topic) => (
-    `<button type="button" class="topic-pill${topic.id === state.topicId ? ' active' : ''}" data-topic="${esc(topic.id)}">${esc(topic.label)}</button>`
-  )).join('');
   const current = getTopic(state.topicId);
+  els.topicsBar.innerHTML = topics.map((topic) => {
+    const active = topic.id === state.topicId || (topic.id === 'sports' && current?.sports);
+    return `<button type="button" class="topic-pill${active ? ' active' : ''}" data-topic="${esc(topic.id)}">${esc(topic.label)}</button>`;
+  }).join('');
   if (!current?.sports && !topics.some((topic) => topic.id === state.topicId)) {
     loadTopic(topics[0].id);
   }
@@ -658,10 +1293,74 @@ function updateStatusLine() {
 /* Loading topics                                                      */
 /* ------------------------------------------------------------------ */
 
+async function openSourceView(feedId) {
+  const feed = getFeed(feedId);
+  if (!feed) return;
+  if (!state.sourceView) state.sourceReturnTopic = state.topicId;
+  state.sourceView = { feedId: feed.id, name: feed.name };
+  state.fetchToken += 1;
+  const token = state.fetchToken;
+  clearPendingStories();
+  closeMenu();
+  if (anyModalOpen()) closeAllModals();
+
+  els.sourceViewBar.hidden = false;
+  els.sourceViewName.textContent = feed.name;
+  els.editorialHeading.textContent = feed.name.toUpperCase();
+  els.sportsSubnav.hidden = true;
+  els.feedSourcesDetails.hidden = true;
+  state.currentLabel = feed.name;
+  const previous = state.articles;
+  const fallback = previous.filter((article) => article.feedId === feed.id || article.domain === feed.domain);
+  if (fallback.length) {
+    state.articles = fallback;
+    state.results = [];
+    renderFeed();
+    setStatus(`Showing saved stories from ${feed.name} · updating latest…`);
+  } else {
+    showLoading();
+  }
+
+  try {
+    const payload = await fetchTopicArticles({
+      id: `source-${feed.id}`,
+      label: feed.name,
+      title: feed.name,
+      feeds: [feed.id],
+    });
+    if (token !== state.fetchToken) return;
+    state.articles = payload.articles;
+    state.results = payload.results;
+    state.lastUpdated = payload.fetchedAt || new Date().toISOString();
+    state.fromSnapshot = false;
+    state.liveFailed = false;
+    state.emptyReason = payload.emptyReason || '';
+    renderFeed();
+    setStatus(`Latest from ${feed.name} · ${payload.articles.length} ${payload.articles.length === 1 ? 'story' : 'stories'}`);
+  } catch (error) {
+    if (token !== state.fetchToken) return;
+    const fallback = previous.filter((article) => article.feedId === feed.id || article.domain === feed.domain);
+    if (fallback.length) {
+      state.articles = fallback;
+      state.results = [];
+      renderFeed();
+      setStatus(`Showing saved stories from ${feed.name}`, true);
+    } else {
+      showError(error?.message || `Could not load ${feed.name}.`);
+    }
+  }
+}
+
+function hideSourceView() {
+  state.sourceView = null;
+  els.sourceViewBar.hidden = true;
+}
+
 async function loadTopic(topicId, { forceLive = false } = {}) {
   const topic = getTopic(topicId);
   if (!topic) return;
 
+  hideSourceView();
   state.topicId = topic.id;
   safeSet('newsreader_last_topic', topic.id);
   state.articles = [];
@@ -750,25 +1449,63 @@ async function refreshTopic(topic, { token = state.fetchToken, background = fals
     if (token !== state.fetchToken) return;
     const wasSnapshot = state.fromSnapshot;
     const previousUpdated = state.lastUpdated;
+    const isBackground = background && hadArticles;
+    const mergedResults = mergeSourceResults(previousResults, payload.results);
+    const mergedArticles = dedupeArticles([
+      ...(payload.articles || []),
+      ...(state.pendingArticles || state.articles),
+    ]);
+    const newCount = Math.max(0, mergedArticles.length - state.articles.length);
 
-    state.results = payload.results || [];
-    state.lastUpdated = payload.fetchedAt || new Date().toISOString();
+    state.results = mergedResults;
     state.lastAutoPoll = Date.now();
-    state.fromSnapshot = false;
-    state.liveFailed = false;
     state.emptyReason = payload.emptyReason || '';
+    state.liveFailed = false;
 
-    const okSources = state.results.filter((result) => result.ok).length;
-    const sparseLive = state.results.length > 0 && (
-      okSources < Math.ceil(state.results.length / 2)
+    if (isBackground) {
+      // Never re-render a page the reader is already using. New stories wait in
+      // a banner, and the current scroll position and audio are left untouched.
+      if (!wasSnapshot) state.lastUpdated = payload.fetchedAt || state.lastUpdated;
+      if (newCount > 0) {
+        state.pendingArticles = mergedArticles;
+        state.pendingFetchedAt = payload.fetchedAt || new Date().toISOString();
+        showPendingStories(newCount);
+        setStatus(`${newCount === 1 ? '1 new story' : `${newCount} new stories`} since your last update · tap the banner to read`, false);
+        saveLiveCache(topic.id, {
+          articles: mergedArticles,
+          results: mergedResults,
+          fetchedAt: state.pendingFetchedAt,
+        });
+      } else {
+        if (!state.pendingArticles) state.articles = mergedArticles;
+        if (wasSnapshot) {
+          state.fromSnapshot = true;
+          state.lastUpdated = previousUpdated;
+        }
+        saveLiveCache(topic.id, {
+          articles: mergedArticles,
+          results: mergedResults,
+          fetchedAt: payload.fetchedAt || new Date().toISOString(),
+        });
+        sourceResultsMarkup();
+        updateStatusLine();
+      }
+      return;
+    }
+
+    state.lastUpdated = payload.fetchedAt || new Date().toISOString();
+    state.fromSnapshot = false;
+
+    const okSources = mergedResults.filter((result) => result.ok).length;
+    const sparseLive = mergedResults.length > 0 && (
+      okSources < Math.ceil(mergedResults.length / 2)
       || payload.articles.length < Math.min(18, Math.ceil(state.articles.length * 0.5))
     );
     if (sparseLive && wasSnapshot && hadArticles) {
-      // A partial proxy response should not replace a complete bundled edition.
       state.fromSnapshot = true;
       state.liveFailed = true;
       state.lastUpdated = previousUpdated;
-      state.results = previousResults.length ? previousResults : state.results;
+      state.results = previousResults.length ? previousResults : mergedResults;
       sourceResultsMarkup();
       updateStatusLine();
       return;
@@ -778,7 +1515,7 @@ async function refreshTopic(topic, { token = state.fetchToken, background = fals
       state.articles = payload.articles;
       saveLiveCache(topic.id, {
         articles: payload.articles,
-        results: payload.results,
+        results: mergedResults,
         fetchedAt: state.lastUpdated,
       });
       renderFeed();
@@ -798,8 +1535,10 @@ async function refreshTopic(topic, { token = state.fetchToken, background = fals
       state.liveFailed = true;
       updateStatusLine();
       setRefreshSpinning(false);
-      renderFeed();
-      updateStatusLine();
+      if (!(background && hadArticles)) {
+        renderFeed();
+        updateStatusLine();
+      }
     } else {
       showError(error?.message || 'Live feeds could not be reached.');
       setStatus('');
@@ -808,20 +1547,24 @@ async function refreshTopic(topic, { token = state.fetchToken, background = fals
     if (token === state.fetchToken) {
       state.loading = false;
       setRefreshSpinning(false);
-      if (state.articles.length) updateStatusLine();
+      if (state.articles.length && !state.pendingNewCount) updateStatusLine();
     }
   }
+
 }
 
 function refreshCurrentTopic(force = true) {
+  if (state.sourceView) {
+    openSourceView(state.sourceView.feedId);
+    return;
+  }
   if (state.listenMode === 'radio') {
     renderRadioView();
     showToast('Radio streams are always live. Pick a station to listen.');
     return;
   }
   if (state.listenMode === 'podcasts') {
-    state.fetchToken += 1;
-    loadPodcasts({ force: true });
+    fetchPodcastShowLive(selectedPodcastShow(), { force: true });
     return;
   }
   const topic = getTopic(state.topicId);
@@ -880,7 +1623,7 @@ function mergeSourceResults(previous, incoming) {
 }
 
 async function pollCurrentTopic() {
-  if (state.polling || state.loading || state.listenMode) return;
+  if (state.polling || state.loading || state.listenMode || state.sourceView) return;
   if (document.hidden || navigator.onLine === false) return;
   const topic = getTopic(state.topicId);
   if (!topic || topic.type) return;
@@ -1031,15 +1774,20 @@ function renderRadioView() {
   setStatus(`Live radio · ${RADIO_STATIONS.length} stations · streams open in the player below`);
 }
 
+function selectedPodcastShow() {
+  return PODCAST_SHOWS.find((show) => show.id === state.podcastShowId) || PODCAST_SHOWS[0];
+}
+
 function renderPodcastsView() {
   state.listenMode = 'podcasts';
   hideFeedStates();
   setRefreshSpinning(false);
   els.feedList.hidden = false;
   els.feedSourcesDetails.hidden = true;
-  els.feedUpdateStatus.hidden = !state.podcastEpisodes.length;
   els.editorialActions.hidden = true;
 
+  const show = selectedPodcastShow();
+  state.podcastShowId = show.id;
   const episodes = state.podcastEpisodes.slice(0, 40);
   const episodeCard = (episode) => {
     const playing = isEpisodePlaying(episode.id);
@@ -1048,14 +1796,14 @@ function renderPodcastsView() {
       : '';
     return `<article class="episode-card${playing ? ' playing' : ''}" data-episode-id="${esc(episode.id)}">
       <div class="episode-thumb-wrap">
-        <span class="episode-thumb-fallback" aria-hidden="true">${esc(initialFor(episode.showName || 'Podcast'))}</span>
+        <span class="episode-thumb-fallback" aria-hidden="true">${esc(initialFor(episode.showName || show.name))}</span>
         ${thumb}
       </div>
       <div class="episode-body">
         <h3 class="episode-title">${esc(episode.title)}</h3>
         ${episode.description ? `<p class="episode-desc">${esc(episode.description)}</p>` : ''}
         <div class="episode-meta">
-          <span>${esc(episode.showName || 'Podcast')}</span>
+          <span>${esc(show.name)}</span>
           ${podcastDate(episode.pubDate) ? `<span aria-hidden="true">·</span><span>${esc(podcastDate(episode.pubDate))}</span>` : ''}
           ${shortDuration(episode.duration) ? `<span aria-hidden="true">·</span><span>${esc(shortDuration(episode.duration))}</span>` : ''}
         </div>
@@ -1077,11 +1825,23 @@ function renderPodcastsView() {
     listMarkup = '<div class="listen-empty">No episodes are available yet.</div>';
   }
 
+  const options = PODCAST_SHOWS.map((item) => (
+    `<option value="${esc(item.id)}"${item.id === show.id ? ' selected' : ''}>${esc(item.name)} — ${esc(item.publisher || item.region || '')}</option>`
+  )).join('');
+  const subtitle = [show.hosts, show.publisher, show.region].filter(Boolean).join(' · ');
+
   els.feedList.innerHTML = `<div class="listen-view">
-    <div class="listen-hero">
-      <span class="listen-hero-kicker">Podcast</span>
-      <h2>Keluar Sekejap</h2>
-      <p>Khairy Jamaluddin and Shahril Hamdan on Malaysian politics, policy and current affairs — straight from the show’s own feed.</p>
+    <div class="listen-hero podcast-hero">
+      <span class="listen-hero-kicker">Podcast · ${esc(show.category || show.region || 'Global')}</span>
+      <h2>${esc(show.name)}</h2>
+      <p>${esc(show.description || 'Latest episodes from this podcast.')}</p>
+      <div class="podcast-picker">
+        <label class="podcast-picker-label" for="podcastShowSelect">Choose a podcast</label>
+        <select id="podcastShowSelect" class="podcast-select" data-podcast-show-select aria-label="Choose a podcast">
+          ${options}
+        </select>
+        <span class="podcast-picker-meta">${esc(subtitle)}</span>
+      </div>
     </div>
     <div class="listen-section-head">
       <h3 class="listen-section-title">Latest episodes</h3>
@@ -1095,7 +1855,7 @@ function renderPodcastsView() {
     const updated = state.podcastUpdatedAt ? formatRelativeTime(state.podcastUpdatedAt) : '';
     els.feedUpdateStatus.hidden = false;
     els.feedUpdateStatus.textContent = `${episodes.length} episodes${updated ? ` · updated ${updated}` : ''}`;
-    setStatus(`Keluar Sekejap · ${episodes.length} episodes${updated ? ` · updated ${updated}` : ''}`);
+    setStatus(`${show.name} · ${episodes.length} episodes${updated ? ` · updated ${updated}` : ''}`);
   } else {
     els.feedUpdateStatus.hidden = true;
     setStatus(state.podcastLoading ? 'Refreshing podcast episodes…' : '');
@@ -1110,78 +1870,84 @@ function sortEpisodes(episodes) {
   });
 }
 
+function applyPodcastSelection(showId, { fetch = true } = {}) {
+  const show = PODCAST_SHOWS.find((item) => item.id === showId) || PODCAST_SHOWS[0];
+  state.podcastShowId = show.id;
+  state.podcastEpisodes = sortEpisodes(state.podcastEpisodeMap[show.id] || []);
+  state.podcastUpdatedAt = state.podcastUpdatedMap[show.id] || '';
+  state.podcastLoading = !state.podcastEpisodes.length;
+  state.podcastError = '';
+  safeSet('newsreader_podcast_show', show.id);
+  renderPodcastsView();
+  if (fetch && !state.podcastEpisodes.length) fetchPodcastShowLive(show);
+}
+
+async function fetchPodcastShowLive(show, { force = false } = {}) {
+  if (!show) return;
+  const request = ++state.podcastRequest;
+  if (show.id === state.podcastShowId) {
+    state.podcastLoading = true;
+    state.podcastError = '';
+    renderPodcastsView();
+  }
+  setRefreshSpinning(true);
+  try {
+    const result = await fetchPodcastShow(show);
+    if (request !== state.podcastRequest && !force) return;
+    const episodes = sortEpisodes(result.episodes || []);
+    state.podcastEpisodeMap[show.id] = episodes;
+    state.podcastUpdatedMap[show.id] = result.fetchedAt || new Date().toISOString();
+    savePodcastCache(show.id, {
+      episodes,
+      fetchedAt: result.fetchedAt,
+    });
+    if (show.id === state.podcastShowId) {
+      state.podcastEpisodes = episodes;
+      state.podcastUpdatedAt = state.podcastUpdatedMap[show.id];
+      state.podcastLoading = false;
+      state.podcastError = '';
+      renderPodcastsView();
+    }
+  } catch (error) {
+    if (show.id === state.podcastShowId) {
+      state.podcastLoading = false;
+      state.podcastError = error?.message || 'Podcast feed unavailable';
+      renderPodcastsView();
+      if (state.podcastEpisodes.length) showToast('Podcast refresh failed. Showing saved episodes.');
+    }
+  } finally {
+    if (show.id === state.podcastShowId) setRefreshSpinning(false);
+  }
+}
+
 async function loadPodcasts({ force = false } = {}) {
   state.listenMode = 'podcasts';
-  const token = state.fetchToken;
-  const cacheTtl = 30 * 60 * 1000;
-  let episodes = [];
+  const saved = safeGet('newsreader_podcast_show');
+  const initialShow = PODCAST_SHOWS.find((show) => show.id === saved) || PODCAST_SHOWS[0];
+  state.podcastShowId = initialShow.id;
+  state.podcastEpisodeMap = {};
+  state.podcastUpdatedMap = {};
 
   for (const show of PODCAST_SHOWS) {
     const cached = readPodcastCache(show.id);
-    if (cached && (Date.now() - Number(cached.cachedAt || 0) < cacheTtl)) {
-      episodes.push(...cached.episodes);
+    if (!cached) continue;
+    state.podcastEpisodeMap[show.id] = sortEpisodes(cached.episodes || []);
+    state.podcastUpdatedMap[show.id] = cached.fetchedAt || '';
+  }
+
+  const snapshot = await loadPodcastSnapshot();
+  if (state.listenMode !== 'podcasts') return;
+  for (const item of snapshot?.shows || []) {
+    if (!item?.id || !Array.isArray(item.episodes)) continue;
+    if (!state.podcastEpisodeMap[item.id]?.length) {
+      state.podcastEpisodeMap[item.id] = sortEpisodes(item.episodes);
+      state.podcastUpdatedMap[item.id] = snapshot.updatedAt || '';
     }
   }
 
-  if (episodes.length && !force) {
-    state.podcastEpisodes = sortEpisodes(episodes);
-    state.podcastLoading = false;
-    renderPodcastsView();
-    return;
-  }
-
-  if (!episodes.length) {
-    const snapshot = await loadPodcastSnapshot();
-    if (token !== state.fetchToken) return;
-    const snapshotEpisodes = (snapshot?.shows || []).flatMap((show) => show.episodes || []);
-    if (snapshotEpisodes.length) {
-      episodes = snapshotEpisodes;
-      state.podcastUpdatedAt = snapshot.updatedAt || '';
-    }
-  }
-
-  if (episodes.length) {
-    state.podcastEpisodes = sortEpisodes(episodes);
-    state.podcastLoading = false;
-    renderPodcastsView();
-  } else {
-    state.podcastEpisodes = [];
-    state.podcastLoading = true;
-    renderPodcastsView();
-  }
-
-  state.podcastLoading = !state.podcastEpisodes.length;
-  setRefreshSpinning(true);
-  renderPodcastsView();
-
-  try {
-    const settled = await Promise.allSettled(PODCAST_SHOWS.map((show) => fetchPodcastShow(show)));
-    if (token !== state.fetchToken) return;
-    const results = settled.filter((result) => result.status === 'fulfilled').map((result) => result.value);
-    if (!results.length) {
-      const failure = settled.find((result) => result.status === 'rejected');
-      throw failure?.reason || new Error('Podcast feed unavailable');
-    }
-    const liveEpisodes = results.flatMap((result) => result.episodes || []);
-    results.forEach((result) => {
-      savePodcastCache(result.showId, {
-        episodes: result.episodes,
-        fetchedAt: result.fetchedAt,
-      });
-    });
-    state.podcastEpisodes = sortEpisodes(liveEpisodes);
-    state.podcastUpdatedAt = results[0]?.fetchedAt || new Date().toISOString();
-    state.podcastLoading = false;
-    state.podcastError = '';
-    if (state.listenMode === 'podcasts') renderPodcastsView();
-  } catch (error) {
-    if (token !== state.fetchToken) return;
-    state.podcastLoading = false;
-    state.podcastError = error?.message || 'Podcast feed unavailable';
-    if (state.listenMode === 'podcasts') renderPodcastsView();
-    if (state.podcastEpisodes.length) showToast('Podcast refresh failed. Showing saved episodes.');
-  } finally {
-    if (token === state.fetchToken) setRefreshSpinning(false);
+  applyPodcastSelection(initialShow.id, { fetch: false });
+  if (force || !state.podcastEpisodes.length) {
+    fetchPodcastShowLive(selectedPodcastShow(), { force: true });
   }
 }
 
@@ -1397,8 +2163,13 @@ els.feedList.addEventListener('click', (event) => {
     return;
   }
   if (event.target.closest('[data-retry-podcasts]')) {
-    loadPodcasts({ force: true });
+    fetchPodcastShowLive(selectedPodcastShow(), { force: true });
   }
+});
+
+els.feedList.addEventListener('change', (event) => {
+  const select = event.target.closest('[data-podcast-show-select]');
+  if (select) applyPodcastSelection(select.value);
 });
 
 
@@ -1408,20 +2179,7 @@ function findArticle(id) {
 
 function openArticle(article) {
   if (!article) return;
-  if (article.status === 'locked') {
-    showToast('No archive snapshot is available for this story. The original may be paywalled.', {
-      href: article.url,
-      label: 'Open original ↗',
-      duration: 6000,
-    });
-    return;
-  }
-  if (article.status === 'checking') {
-    showToast('Still checking for an archived copy. Try again in a moment.');
-    return;
-  }
-  rememberReturnPosition();
-  window.location.assign(article.targetUrl || article.url);
+  openReader(article);
 }
 
 /* ------------------------------------------------------------------ */
@@ -1540,22 +2298,23 @@ els.feedList.addEventListener('click', (event) => {
     openSwitcher(badge.dataset.domain);
     return;
   }
+  const sourceButton = event.target.closest('[data-source-feed]');
+  if (sourceButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    openSourceView(sourceButton.dataset.sourceFeed);
+    return;
+  }
   const card = event.target.closest('[data-card-id]');
   if (!card) return;
   const article = findArticle(card.dataset.cardId);
   if (!article) return;
-  const anchor = event.target.closest('a[href]');
-  if (anchor) {
-    if (article.status === 'checking' || article.status === 'locked') {
-      event.preventDefault();
-      openArticle(article);
-    } else {
-      // Let the browser handle a same-tab navigation so Back returns to the feed.
-      if (!(event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) rememberReturnPosition();
-    }
-    return;
-  }
+  if (event.target.closest('a[href]')) event.preventDefault();
   openArticle(article);
+});
+
+els.feedList.addEventListener('auxclick', (event) => {
+  if (event.button === 1 && event.target.closest('[data-card-id] a[href]')) event.preventDefault();
 });
 
 els.feedList.addEventListener('keydown', (event) => {
@@ -1576,7 +2335,12 @@ els.feedList.addEventListener('error', (event) => {
 
 els.topicsBar.addEventListener('click', (event) => {
   const pill = event.target.closest('[data-topic]');
-  if (!pill || pill.dataset.topic === state.topicId) return;
+  if (!pill) return;
+  if (state.sourceView) {
+    loadTopic(pill.dataset.topic);
+    return;
+  }
+  if (pill.dataset.topic === state.topicId) return;
   loadTopic(pill.dataset.topic);
 });
 
@@ -1584,6 +2348,10 @@ els.sportsSubnav.addEventListener('click', (event) => {
   const pill = event.target.closest('[data-sport-topic]');
   if (!pill || pill.dataset.sportTopic === state.topicId) return;
   loadTopic(pill.dataset.sportTopic);
+});
+
+els.sourceBackBtn.addEventListener('click', () => {
+  loadTopic(state.sourceReturnTopic || state.topicId);
 });
 
 els.feedSortSelect.addEventListener('change', () => {
@@ -1620,7 +2388,6 @@ els.autoRefreshCheckbox.addEventListener('change', () => {
 });
 
 els.newStoriesBtn.addEventListener('click', applyPendingStories);
-els.toastActionLink.addEventListener('click', rememberReturnPosition);
 
 /* ------------------------------------------------------------------ */
 /* Rules modal                                                         */
@@ -1862,6 +2629,7 @@ function renderSourcesCatalog() {
         <span class="source-catalog-name">${esc(feed.name)}</span>
         <span class="source-catalog-domain">${esc(feed.domain)}</span>
       </label>
+      <button type="button" class="source-open-btn" data-open-source="${esc(feed.id)}">Latest</button>
       ${feed.custom ? `<button type="button" class="source-remove-btn" data-remove-source="${esc(feed.id)}">Remove</button>` : ''}
     </div>`).join('')}
   `).join('');
@@ -2061,6 +2829,12 @@ els.sourcesCatalog.addEventListener('change', (event) => {
 });
 
 els.sourcesCatalog.addEventListener('click', (event) => {
+  const open = event.target.closest('[data-open-source]');
+  if (open) {
+    closeModal(els.customizeModal);
+    openSourceView(open.dataset.openSource);
+    return;
+  }
   const button = event.target.closest('[data-remove-source]');
   if (!button) return;
   const feed = getFeed(button.dataset.removeSource);
@@ -2204,25 +2978,15 @@ els.quickUrlForm.addEventListener('submit', async (event) => {
 
   els.quickUrlOpenBtn.disabled = true;
   try {
-    if (strategy === 'archive_is' || strategy === 'wayback') {
-      const result = await checkArchive({ url: parsed.href, strategy, domain });
-      closeModal(els.quickUrlModal);
-      if (result.available && result.archiveUrl) {
-        rememberReturnPosition();
-        window.location.assign(result.archiveUrl);
-      } else {
-        showToast(`No ${strategy === 'archive_is' ? 'Archive.is' : 'Wayback'} snapshot found for this story.`, {
-          href: parsed.href,
-          label: 'Open original ↗',
-          duration: 6000,
-        });
-      }
-    } else {
-      const target = buildStrategyUrl(strategy, parsed.href);
-      closeModal(els.quickUrlModal);
-      rememberReturnPosition();
-      window.location.assign(target);
-    }
+    closeModal(els.quickUrlModal);
+    openReader({
+      url: parsed.href,
+      title: `Article on ${domain}`,
+      source: domain,
+      domain,
+      pubDate: '',
+      summary: '',
+    });
   } finally {
     els.quickUrlOpenBtn.disabled = false;
   }
@@ -2273,6 +3037,54 @@ window.addEventListener('appinstalled', () => {
   showToast('Tawin Newsreader installed.');
 });
 
+
+/* ------------------------------------------------------------------ */
+/* Reader events                                                       */
+/* ------------------------------------------------------------------ */
+
+els.readerBackBtn.addEventListener('click', readerBack);
+els.readerCloseBtn.addEventListener('click', closeReader);
+
+els.readerArchiveBtn.addEventListener('click', () => {
+  if (state.readerArticle) loadReaderContent(state.readerArticle, { archiveOnly: true });
+});
+
+els.readerRetryBtn.addEventListener('click', () => {
+  if (state.readerArticle) loadReaderContent(state.readerArticle);
+});
+
+els.readerScroll.addEventListener('scroll', () => {
+  const max = els.readerScroll.scrollHeight - els.readerScroll.clientHeight;
+  const percent = max > 0 ? (els.readerScroll.scrollTop / max) * 100 : 0;
+  els.readerProgressBar.style.width = `${Math.min(100, Math.max(0, percent))}%`;
+}, { passive: true });
+
+els.readerBody.addEventListener('click', (event) => {
+  const link = event.target.closest('[data-reader-href]');
+  if (!link) return;
+  event.preventDefault();
+  const href = link.dataset.readerHref;
+  if (!/^https?:/i.test(href)) return;
+  let host = '';
+  try { host = new URL(href).hostname.replace(/^www\./, ''); } catch { /* ignore */ }
+  openReader({
+    url: href,
+    title: link.textContent.trim() || href,
+    source: host || 'Reader',
+    domain: host,
+    pubDate: '',
+    summary: '',
+  }, { fromLink: true });
+});
+
+els.readerBody.addEventListener('error', (event) => {
+  if (event.target?.tagName === 'IMG') event.target.style.display = 'none';
+}, true);
+
+window.addEventListener('popstate', () => {
+  if (state.readerOpen && !history.state?.reader) finalizeReaderClose();
+});
+
 /* ------------------------------------------------------------------ */
 /* Global events                                                       */
 /* ------------------------------------------------------------------ */
@@ -2289,6 +3101,10 @@ document.addEventListener('click', (event) => {
 
 document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
+  if (state.readerOpen) {
+    closeReader();
+    return;
+  }
   if (anyModalOpen()) {
     closeAllModals();
   } else {
@@ -2322,9 +3138,17 @@ document.addEventListener('visibilitychange', () => {
 
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch((error) => {
-      console.warn('Service worker registration failed', error);
-    });
+    navigator.serviceWorker.register('./sw.js')
+      .then(async () => {
+        await navigator.serviceWorker.ready;
+        if (!navigator.serviceWorker.controller && !sessionStorage.getItem('newsreader_sw_reloaded')) {
+          sessionStorage.setItem('newsreader_sw_reloaded', '1');
+          if (!state.readerOpen) setTimeout(() => location.reload(), 500);
+        }
+      })
+      .catch((error) => {
+        console.warn('Service worker registration failed', error);
+      });
   });
 }
 
@@ -2333,6 +3157,8 @@ if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
 /* ------------------------------------------------------------------ */
 
 function boot() {
+  if (location.hash === '#read') history.replaceState(null, '', location.pathname + location.search);
+  loadPublisherUrls();
   const settings = getSettings();
   state.sort = settings.sort === 'oldest' ? 'oldest' : 'newest';
   if (settings.sort !== state.sort) saveSettings({ sort: state.sort });
@@ -2352,13 +3178,12 @@ function boot() {
   renderTopicsBar();
   if (initial) {
     loadTopic(initial);
-    setTimeout(restoreReturnScroll, 1400);
   } else {
     renderFeed();
   }
 
   setInterval(() => {
-    if (state.listenMode) return;
+    if (state.listenMode || state.sourceView) return;
     updateVisibleTimes();
     if (!state.loading && state.articles.length && !state.pendingNewCount) updateStatusLine();
   }, 60000);
