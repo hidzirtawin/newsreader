@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v25';
+const VERSION = 'newsreader-v26';
 const SHELL = [
   './',
   './index.html',

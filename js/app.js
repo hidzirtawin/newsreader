@@ -440,6 +440,10 @@ function showToast(message, { href = '', duration = 4200, label = 'Open article 
 const READER_MARKERS = [
   'subscribe to continue reading',
   'subscribe to read',
+  'subscribe to unlock',
+  'unlock this article',
+  'try unlimited access',
+  'complete digital access',
   'to continue reading this article',
   'already a subscriber',
   'sign in to read',
