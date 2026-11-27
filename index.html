@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png">
   <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
-  <link rel="stylesheet" href="./css/styles.css?v=48">
+  <link rel="stylesheet" href="./css/styles.css?v=49">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">Skip to headlines</a>
@@ -276,6 +276,13 @@
             </div>
           </div>
           <div id="topicsSettingsList" class="settings-list"></div>
+
+          <div class="app-reload-section">
+            <h3 class="panel-title">App update</h3>
+            <p class="panel-hint">Reloads the app and fetches the latest version. Topics, sources and settings are kept.</p>
+            <button type="button" id="reloadAppBtn" class="form-btn form-btn-secondary">Reload app</button>
+            <p id="reloadAppStatus" class="form-hint" role="status" aria-live="polite"></p>
+          </div>
         </section>
 
         <section id="panel-new-topic" class="modal-tab-panel" role="tabpanel" aria-labelledby="tabNewTopic" hidden>

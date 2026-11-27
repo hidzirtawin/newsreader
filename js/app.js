@@ -129,6 +129,8 @@ const els = {
   closeCustomizeDoneBtn: $('#closeCustomizeDoneBtn'),
   exportSettingsModalBtn: $('#exportSettingsModalBtn'),
   topicsSettingsList: $('#topicsSettingsList'),
+  reloadAppBtn: $('#reloadAppBtn'),
+  reloadAppStatus: $('#reloadAppStatus'),
   tabButtons: $$('.modal-tab-btn'),
   panelTopics: $('#panel-topics'),
   panelNewTopic: $('#panel-new-topic'),
@@ -1311,6 +1313,29 @@ function anyModalOpen() {
 
 function closeAllModals() {
   $$('.modal-overlay.open').forEach((modal) => closeModal(modal));
+}
+
+async function reloadApp() {
+  const button = els.reloadAppBtn;
+  const status = els.reloadAppStatus;
+  if (button) button.disabled = true;
+  if (status) status.textContent = 'Clearing cached app files…';
+  try {
+    if ('serviceWorker' in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map((registration) => registration.unregister()));
+    }
+    if ('caches' in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map((key) => caches.delete(key)));
+    }
+    sessionStorage.removeItem('newsreader_sw_reloaded');
+    if (status) status.textContent = 'Reloading the latest version…';
+  } catch {
+    if (status) status.textContent = 'Reloading…';
+  }
+  const url = `${location.pathname}?reload=${Date.now()}`;
+  setTimeout(() => location.replace(url), 250);
 }
 
 function openModal(modal) {
@@ -3838,6 +3863,7 @@ function openCustomize(panel = 'topics') {
 
 els.openCustomizeBtn.addEventListener('click', () => openCustomize('topics'));
 els.closeCustomizeBtn.addEventListener('click', () => closeModal(els.customizeModal));
+els.reloadAppBtn?.addEventListener('click', reloadApp);
 els.closeCustomizeDoneBtn.addEventListener('click', () => closeModal(els.customizeModal));
 
 els.tabButtons.forEach((button) => {
