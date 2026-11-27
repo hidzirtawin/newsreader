@@ -172,15 +172,15 @@ export const DEFAULT_RULES = {
   'fortune.com': { strategy: 'removepaywall', paywall: 'metered', label: 'Fortune' },
   'medium.com': { strategy: 'freedium', paywall: 'metered', label: 'Medium' },
 
-  // Hard paywalls — archive verification
-  'wsj.com': { strategy: 'archive_is', paywall: 'hard', label: 'The Wall Street Journal' },
-  'bloomberg.com': { strategy: 'archive_is', paywall: 'hard', label: 'Bloomberg' },
-  'ft.com': { strategy: 'archive_is', paywall: 'hard', label: 'Financial Times' },
-  'economist.com': { strategy: 'archive_is', paywall: 'hard', label: 'The Economist' },
+  // Hard paywalls — reader first; archive verification remains available per site
+  'wsj.com': { strategy: 'smry', paywall: 'hard', label: 'The Wall Street Journal' },
+  'bloomberg.com': { strategy: 'smry', paywall: 'hard', label: 'Bloomberg' },
+  'ft.com': { strategy: 'smry', paywall: 'hard', label: 'Financial Times' },
+  'economist.com': { strategy: 'smry', paywall: 'hard', label: 'The Economist' },
+  'telegraph.co.uk': { strategy: 'smry', paywall: 'hard', label: 'The Telegraph' },
+  'thetimes.com': { strategy: 'smry', paywall: 'hard', label: 'The Times' },
   'barrons.com': { strategy: 'archive_is', paywall: 'hard', label: "Barron's" },
   'theinformation.com': { strategy: 'archive_is', paywall: 'hard', label: 'The Information' },
-  'telegraph.co.uk': { strategy: 'archive_is', paywall: 'hard', label: 'The Telegraph' },
-  'thetimes.com': { strategy: 'archive_is', paywall: 'hard', label: 'The Times' },
 };
 
 export const FEEDS = [
