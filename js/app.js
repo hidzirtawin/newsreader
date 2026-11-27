@@ -877,29 +877,34 @@ function renderReaderService(article) {
     try { doc = frame.contentDocument; } catch { doc = null; }
     if (!doc || !doc.documentElement || doc.URL === 'about:blank') return;
 
-    settled = true;
-    const html = doc.documentElement.outerHTML;
-    const extraction = extractArticle(html, article.url);
-    const assessment = assessExtraction(extraction);
-    if (extraction && assessment.usable) {
-      renderReaderExtraction(extraction, article, assessment);
-      return;
-    }
+    try {
+      const html = doc.documentElement.outerHTML;
+      const extraction = extractArticle(html, article.url);
+      const assessment = assessExtraction(extraction);
+      if (extraction && assessment.usable) {
+        settled = true;
+        renderReaderExtraction(extraction, article, assessment);
+        return;
+      }
 
-    const node = doc.querySelector('article, main, [role="main"]') || doc.body;
-    const text = (node?.innerText || '').trim();
-    const lower = text.toLowerCase();
-    const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
-    if (node && text.length >= 400 && !blocked) {
-      els.readerStatus.hidden = true;
-      els.readerFallback.hidden = true;
-      els.readerToolbarState.textContent = 'Publisher view';
-      els.readerNotice.hidden = false;
-      els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
-      els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
-      return;
+      const node = doc.querySelector('article, main, [role="main"]') || doc.body;
+      const text = (node?.innerText || '').trim();
+      const lower = text.toLowerCase();
+      const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
+      if (node && text.length >= 400 && !blocked) {
+        settled = true;
+        els.readerStatus.hidden = true;
+        els.readerFallback.hidden = true;
+        els.readerToolbarState.textContent = 'Publisher view';
+        els.readerNotice.hidden = false;
+        els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
+        els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
+        return;
+      }
+      fail('The publisher blocks full-text reading. Only the publisher summary is available.');
+    } catch {
+      fail('The publisher blocks full-text reading. Only the publisher summary is available.');
     }
-    fail('The publisher blocks full-text reading. Only the publisher summary is available.');
   });
 
   form.submit();
