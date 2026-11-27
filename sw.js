@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v45';
+const VERSION = 'newsreader-v46';
 const SHELL = [
   './',
   './index.html',
@@ -29,7 +29,12 @@ const SHELL = [
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(VERSION);
-    await Promise.allSettled(SHELL.map((path) => cache.add(path)));
+    await Promise.allSettled(SHELL.map(async (path) => {
+      try {
+        const response = await fetch(new Request(path, { cache: 'reload' }));
+        if (response.ok) await cache.put(path, response);
+      } catch { /* keep the old shell when offline */ }
+    }));
     self.skipWaiting();
   })());
 });
