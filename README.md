@@ -1,5 +1,7 @@
 # Newsreader
 
+**Live:** <https://hidzirtawin.github.io/newsreader/>
+
 A fast, static news reader built around a Flipboard-style magazine layout. It brings together regional publishers, live news radio and podcasts in one installable PWA — with no build step and no server-side runtime.
 
 Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.0), but implemented independently for this project.

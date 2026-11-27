@@ -688,7 +688,7 @@ async function refreshTopic(topic, { token = state.fetchToken, background = fals
     state.loading = true;
     updateStatusLine();
     if (state.fromSnapshot) {
-      setStatus(`Saved edition${state.lastUpdated ? ` · ${formatRelativeTime(state.lastUpdated)}` : ''} · refreshing live…`, true);
+      setStatus(`Saved edition${state.lastUpdated ? ` · ${formatRelativeTime(state.lastUpdated)}` : ''} · refreshing live…`);
     }
   }
 
