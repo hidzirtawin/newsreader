@@ -236,6 +236,7 @@ const state = {
   polling: false,
   autoRefreshTimer: null,
   lastAutoPoll: 0,
+  lastChecked: 0,
   readerOpen: false,
   readerToken: 0,
   readerArticle: null,
@@ -1305,16 +1306,17 @@ function updateStatusLine() {
     return;
   }
   const when = state.lastUpdated ? formatRelativeTime(state.lastUpdated) : '';
+  const checked = state.lastChecked ? ` · checked ${formatRelativeTime(state.lastChecked)}` : '';
   if (state.liveFailed) {
     setStatus(`Live refresh incomplete · showing saved headlines${when ? ` (${when})` : ''}`, true);
     return;
   }
   if (state.fromSnapshot) {
-    setStatus(`Saved edition${when ? ` · ${when}` : ''} · ${stories} stories`);
+    setStatus(`Saved edition${when ? ` · ${when}` : ''}${checked} · ${stories} stories`);
     return;
   }
   const okSources = state.results.filter((result) => result.ok).length;
-  setStatus(`Updated ${when || 'just now'} · ${stories} stories${okSources ? ` · ${okSources} sources` : ''}`);
+  setStatus(`Updated ${when || 'just now'}${checked} · ${stories} stories${okSources ? ` · ${okSources} sources` : ''}`);
 }
 
 /* ------------------------------------------------------------------ */
@@ -1397,15 +1399,14 @@ async function pollSnapshotTopic(topic, { token = state.fetchToken, force = fals
   if (!topic || topic.custom) return false;
   try {
     let version = state.snapshotVersion;
-    if (!version || force) {
-      const versionResponse = await fetch(`./data/version.json?ts=${Date.now()}`, { cache: 'no-store' });
-      if (versionResponse.ok) {
-        const versionData = await versionResponse.json();
-        version = versionData?.news || version;
-      }
+    const versionResponse = await fetch(`./data/version.json?ts=${Date.now()}`, { cache: 'no-store' });
+    if (versionResponse.ok) {
+      const versionData = await versionResponse.json();
+      version = versionData?.news || version;
     }
     if (!force && version && version === state.snapshotVersion) {
       state.lastAutoPoll = Date.now();
+      state.lastChecked = Date.now();
       if (initial && state.articles.length) updateStatusLine();
       return true;
     }
@@ -1429,6 +1430,7 @@ async function pollSnapshotTopic(topic, { token = state.fetchToken, force = fals
     const newCount = Math.max(0, merged.length - state.articles.length);
     state.snapshotVersion = version || entry.updatedAt || state.snapshotVersion || new Date().toISOString();
     state.lastAutoPoll = Date.now();
+    state.lastChecked = Date.now();
     state.results = Array.isArray(entry.results) ? entry.results : state.results;
     state.liveFailed = false;
 
@@ -1777,6 +1779,7 @@ async function pollCurrentTopic() {
     if (!state.fromSnapshot) state.lastUpdated = checkedAt;
     state.liveFailed = false;
     state.lastAutoPoll = Date.now();
+    state.lastChecked = Date.now();
 
     if (newCount > 0) {
       state.pendingArticles = merged;
@@ -1814,8 +1817,8 @@ function scheduleAutoRefresh() {
   const minutes = Math.max(1, Number(settings.refreshMinutes) || AUTO_REFRESH_MINUTES);
   state.autoRefreshTimer = setInterval(() => {
     if (document.hidden) return;
-    pollCurrentTopic();
-  }, minutes * 60 * 1000);
+    if (Date.now() - state.lastAutoPoll >= minutes * 60 * 1000) pollCurrentTopic();
+  }, 30000);
 }
 
 function updateVisibleTimes() {
@@ -3264,13 +3267,17 @@ window.addEventListener('online', () => {
 });
 window.addEventListener('offline', () => showToast('You are offline. Saved headlines will remain available.'));
 
-document.addEventListener('visibilitychange', () => {
+function checkDueRefresh() {
   if (document.hidden) return;
   const settings = getSettings();
   if (!settings.autoRefresh) return;
   const minutes = Math.max(1, Number(settings.refreshMinutes) || AUTO_REFRESH_MINUTES);
-  if (Date.now() - state.lastAutoPoll > minutes * 60 * 1000) pollCurrentTopic();
-});
+  if (Date.now() - state.lastAutoPoll >= minutes * 60 * 1000) pollCurrentTopic();
+}
+
+document.addEventListener('visibilitychange', checkDueRefresh);
+window.addEventListener('focus', checkDueRefresh);
+window.addEventListener('pageshow', checkDueRefresh);
 
 /* ------------------------------------------------------------------ */
 /* Service worker                                                      */
