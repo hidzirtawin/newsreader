@@ -294,7 +294,7 @@ export const FEEDS = [
   { id: 'france24', name: 'France 24', domain: 'france24.com', group: 'Europe', url: 'https://www.france24.com/en/rss' },
   { id: 'japan-times', name: 'The Japan Times', domain: 'japantimes.co.jp', group: 'Asia', url: 'https://www.japantimes.co.jp/feed/' },
   { id: 'taipei-times', name: 'Taipei Times', domain: 'taipeitimes.com', group: 'Asia', url: 'https://www.taipeitimes.com/xml/index.rss' },
-  { id: 'indian-express', name: 'The Indian Express', domain: 'indianexpress.com', group: 'India', url: 'https://indianexpress.com/feed/' },
+  { id: 'indian-express', name: 'The Indian Express', domain: 'indianexpress.com', group: 'India', url: 'https://news.google.com/rss/search?q=site%3Aindianexpress.com+when%3A2d&hl=en-IN&gl=IN&ceid=IN%3Aen', googleNews: true },
   { id: 'times-of-india', name: 'The Times of India', domain: 'timesofindia.indiatimes.com', group: 'India', url: 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms' },
   { id: 'arab-news', name: 'Arab News', domain: 'arabnews.com', group: 'Middle East', url: 'https://www.arabnews.com/rss.xml' },
   { id: 'jpost', name: 'The Jerusalem Post', domain: 'jpost.com', group: 'Middle East', url: 'https://www.jpost.com/rss/rssfeedsfrontpage.aspx' },
