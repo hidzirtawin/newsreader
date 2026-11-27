@@ -171,6 +171,14 @@ function parseFeed(xml, feed) {
       const bmjId = link.match(/bmj\.com\/content\/[^/]+\/([^/?#]+)/)?.[1];
       if (bmjId) doi = `10.1136/${bmjId}`;
     }
+    if (!doi && /elifesciences\.org\/articles\//.test(link)) {
+      const elifeId = link.match(/articles\/([^/?#]+)/)?.[1];
+      if (elifeId) doi = `10.7554/eLife.${elifeId}`;
+    }
+    if (!doi && /jmir\.org\/\d+\/\d+\/e\d+/.test(link)) {
+      const jmirId = link.match(/\/e(\d+)/)?.[1];
+      if (jmirId) doi = `10.2196/${jmirId}`;
+    }
     articles.push({
       id: hashId(link),
       title: cleanTitle(rawTitle, feed.name),
@@ -248,11 +256,38 @@ function freshArticles(articles) {
   return fresh.length ? fresh : articles;
 }
 
-const RESEARCH_FRONT_TITLE = /^\[(editorial|comment|correspondence|perspectives?|viewpoint|letter|obituary|book review|in focus|spotlight|world report|media watch|department of error)\]/i;
-const RESEARCH_FRONT_SECTION = /^(editorial|comment|correspondence|perspective|viewpoint|letter|obituary|book review|in focus|spotlight|world report|media watch|department of error)$/i;
+const RESEARCH_STUDY_PREFIX = /^\[(articles?|review|research|original research|clinical trial|meta-analysis|guideline|case report|health policy)\]/i;
+const RESEARCH_FRONT_SECTION = /^(editorial|comment|correspondence|perspective|viewpoint|letter|obituary|book review|in focus|spotlight|world report|media watch|department of error|in context|insight|news|newsdesk|correction|corrections)$/i;
 
 function isResearchFrontMatter(article) {
-  return RESEARCH_FRONT_TITLE.test(article.title || '') || RESEARCH_FRONT_SECTION.test(article.section || '');
+  const title = article.title || '';
+  if (/^\[/.test(title) && !RESEARCH_STUDY_PREFIX.test(title)) return true;
+  return RESEARCH_FRONT_SECTION.test(article.section || '');
+}
+
+async function isOaEmbeddable(url) {
+  if (!url || !/^https?:\/\//i.test(url)) return false;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 12000);
+  try {
+    const response = await fetch(url, {
+      headers: { 'User-Agent': USER_AGENT, Accept: 'text/html,application/pdf,*/*' },
+      redirect: 'follow',
+      signal: controller.signal,
+    });
+    const ok = response.ok;
+    const xfo = (response.headers.get('x-frame-options') || '').toLowerCase();
+    const csp = (response.headers.get('content-security-policy') || '').toLowerCase();
+    try { response.body?.cancel?.(); } catch { /* ignore */ }
+    if (!ok) return false;
+    if (xfo.includes('deny') || xfo.includes('sameorigin')) return false;
+    if (/frame-ancestors[^;]*(none|'self')/.test(csp)) return false;
+    return true;
+  } catch {
+    return false;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 async function resolveResearchOpenAccess(snapshot) {
@@ -270,8 +305,33 @@ async function resolveResearchOpenAccess(snapshot) {
       const data = await response.json();
       const openAccess = data.open_access || {};
       const best = data.best_oa_location || {};
-      article.oaUrl = openAccess.oa_url || best.landing_page_url || best.pdf_url || '';
-      article.oaPdf = best.pdf_url || '';
+      const locations = Array.isArray(data.locations) ? data.locations : [];
+      const candidates = [];
+      const add = (url) => {
+        if (!url || /pubmed\.ncbi\.nlm\.nih\.gov/i.test(url)) return;
+        if (!candidates.includes(url)) candidates.push(url);
+      };
+      // Prefer actual PDF full text; PubMed abstract pages are not full text.
+      for (const location of locations.filter((item) => item.source?.type === 'repository')) {
+        add(location.pdf_url);
+        add(location.landing_page_url);
+      }
+      add(best.pdf_url);
+      add(best.landing_page_url);
+      add(openAccess.oa_url);
+      for (const location of locations) {
+        add(location.pdf_url);
+        add(location.landing_page_url);
+      }
+      let chosen = '';
+      for (const url of candidates.slice(0, 8)) {
+        if (await isOaEmbeddable(url)) {
+          chosen = url;
+          break;
+        }
+      }
+      article.oaUrl = chosen;
+      article.oaPdf = chosen && /\.pdf($|\?)/i.test(chosen) ? chosen : '';
       article.oaStatus = openAccess.oa_status || '';
     } catch {
       // OpenAlex should never block the edition.
@@ -601,6 +661,18 @@ async function writeJson(file, value) {
 
 async function main() {
   await mkdir(DATA, { recursive: true });
+  if (process.argv.includes('--oa-only')) {
+    const snapshot = JSON.parse(await readFile(path.join(DATA, 'news.json'), 'utf8'));
+    const previousVersion = JSON.parse(await readFile(path.join(DATA, 'version.json'), 'utf8').catch(() => '{}'));
+    await resolveResearchOpenAccess(snapshot);
+    await writeJson(path.join(DATA, 'news.json'), snapshot);
+    await writeJson(path.join(DATA, 'version.json'), {
+      news: new Date().toISOString(),
+      podcasts: previousVersion.podcasts || new Date().toISOString(),
+    });
+    console.log('Open-access pass complete.');
+    return;
+  }
   const imageCache = JSON.parse(await readFile(IMAGE_CACHE, 'utf8').catch(() => '{}'));
   const publisherCache = JSON.parse(await readFile(PUBLISHER_CACHE, 'utf8').catch(() => '{}'));
   const previousVersion = JSON.parse(await readFile(path.join(DATA, 'version.json'), 'utf8').catch(() => '{}'));

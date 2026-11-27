@@ -87,6 +87,7 @@ const els = {
   countryDeskSelect: $('#countryDeskSelect'),
   countryLayoutBtn: $('#countryLayoutBtn'),
   researchCalcBtn: $('#researchCalcBtn'),
+  researchFreeBtn: $('#researchFreeBtn'),
   marketPanel: $('#marketPanel'),
   videoModal: $('#videoModal'),
   videoFrame: $('#videoFrame'),
@@ -250,6 +251,7 @@ const state = {
   marketWidgetKey: '',
   researchSpecialty: 'all',
   researchFormat: 'all',
+  researchFreeOnly: true,
   calculatorId: 'bmi',
   marketMoversLoaded: false,
   marketStatusTimer: null,
@@ -1565,6 +1567,30 @@ function matchesResearchFormat(article, format = activeResearchFormat()) {
   return format.keywords.some((keyword) => text.includes(keyword));
 }
 
+const RESEARCH_NEWS_DOMAINS = ['sciencedaily.com', 'medicalxpress.com', 'medicalnewstoday.com', 'kffhealthnews.org'];
+const RESEARCH_PAYWALLED_DOMAINS = [
+  'nejm.org', 'thelancet.com', 'bmj.com', 'nature.com', 'acpjournals.org',
+  'jamanetwork.com', 'jacc.org', 'ahajournals.org',
+];
+
+function isResearchPaywalled(article) {
+  const domain = normalizeDomain(article.domain || article.url);
+  const url = article.url || '';
+  if (domain === 'bmjopen.bmj.com' || domain === 'gh.bmj.com') return false;
+  if (domain === 'thelancet.com' || domain.endsWith('.thelancet.com')) {
+    return !/\/journals\/(ebiom|langlo|landig)\//i.test(url);
+  }
+  if (domain === 'bmj.com' || domain.endsWith('.bmj.com')) return true;
+  if (domain === 'nature.com' || domain.endsWith('.nature.com')) {
+    return !/^10\.1038\/(s41598|s41467)/i.test(article.doi || '');
+  }
+  return RESEARCH_PAYWALLED_DOMAINS.some((item) => domain === item || domain.endsWith(`.${item}`));
+}
+
+function isResearchFree(article) {
+  return Boolean(article.oaUrl) || !isResearchPaywalled(article);
+}
+
 function matchesResearchArticle(article) {
   return matchesResearchSpecialty(article) && matchesResearchFormat(article);
 }
@@ -1607,8 +1633,12 @@ function renderResearchNav(topic = null) {
   }
 }
 
+function cleanResearchTitle(title) {
+  return String(title || '').replace(/^\[(articles?|review|research|original research|clinical trial|meta-analysis|guideline|case report|health policy)\]\s*/i, '');
+}
+
 function researchListMarkup(articles) {
-  const note = `<div class="headline-note"><strong>Health research</strong><span>Free full text where available · Not medical advice</span></div>`;
+  const note = `<div class="headline-note"><strong>Health research</strong><span>${state.researchFreeOnly ? 'Free full-text copies only' : 'All studies · free copies marked'} · Not medical advice</span></div>`;
   const rows = articles.map((article, index) => {
     const time = article.pubDate ? formatRelativeTime(article.pubDate) : '';
     const label = cleanSourceLabel(article.source);
@@ -1619,9 +1649,9 @@ function researchListMarkup(articles) {
     return `<article class="news-card headline-row research-row" data-card-id="${esc(article.id)}" data-article-url="${esc(article.url)}">
       <span class="headline-rank">${index + 1}</span>
       <div class="headline-content">
-        <h2 class="headline-title">${esc(article.title)}</h2>
+        <h2 class="headline-title">${esc(cleanResearchTitle(article.title))}</h2>
         ${summary ? `<p class="research-summary">${esc(summary.slice(0, 320))}</p>` : ''}
-        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span>${activeResearchFormat().id === 'all' ? '' : `<span class="research-tag research-format-tag">${esc(activeResearchFormat().label.toUpperCase())}</span>`}${article.oaUrl ? `<button type="button" class="research-oa" data-oa-url="${esc(article.oaUrl)}">Free full text</button>` : ''}</div>
+        <div class="headline-meta">${source}<span class="headline-sep">·</span><span>${esc(time)}</span><span class="research-tag">${esc(activeResearchSpecialty().id === 'all' ? 'RESEARCH' : activeResearchSpecialty().label.toUpperCase())}</span>${activeResearchFormat().id === 'all' ? '' : `<span class="research-tag research-format-tag">${esc(activeResearchFormat().label.toUpperCase())}</span>`}${article.oaUrl ? `<button type="button" class="research-oa" data-oa-url="${esc(article.oaUrl)}">Free full text</button>` : (isResearchPaywalled(article) ? '<span class="research-tag research-no-oa">Abstract only</span>' : '')}</div>
       </div>
     </article>`;
   }).join('');
@@ -1925,6 +1955,11 @@ function updateTopicHeader(topic) {
   if (els.countrySelectWrapper) els.countrySelectWrapper.hidden = !topic.country;
   if (countryDesk && els.countryDeskSelect) els.countryDeskSelect.value = countryDesk.code;
   if (els.researchCalcBtn) els.researchCalcBtn.hidden = !topic.research;
+  if (els.researchFreeBtn) {
+    els.researchFreeBtn.hidden = !topic.research;
+    els.researchFreeBtn.textContent = state.researchFreeOnly ? 'Free full text' : 'All studies';
+    els.researchFreeBtn.title = state.researchFreeOnly ? 'Show all studies, including ones without a free copy' : 'Show only studies with a free full-text copy';
+  }
   if (els.countryLayoutBtn) {
     els.countryLayoutBtn.hidden = !topic.country;
     els.countryLayoutBtn.textContent = state.countryLayout === 'list' ? 'Magazine view' : 'Headlines';
@@ -2047,9 +2082,12 @@ function renderFeed() {
   const curated = filterTopicCategories(briefFiltered, activeTopic);
   const visible = state.hideLocked ? curated.filter((article) => article.status !== 'locked') : curated;
   const researchMode = Boolean(activeTopic?.research);
-  const researchVisible = researchMode
-    ? visible.filter((article) => matchesResearchArticle(article))
+  const researchBase = researchMode
+    ? visible.filter((article) => matchesResearchArticle(article) && !RESEARCH_NEWS_DOMAINS.includes(normalizeDomain(article.domain || article.url)))
     : visible;
+  const researchVisible = researchMode && state.researchFreeOnly
+    ? researchBase.filter((article) => isResearchFree(article))
+    : researchBase;
 
   if (!curated.length) {
     els.feedList.hidden = false;
@@ -2078,8 +2116,8 @@ function renderFeed() {
   if (researchMode && !researchVisible.length) {
     els.feedList.hidden = false;
     els.feedList.innerHTML = `<div class="state-container">
-      <h2 class="state-title">No ${esc(activeResearchSpecialty().label.toLowerCase())} studies yet</h2>
-      <p class="state-desc">Try <strong>All research</strong> or another specialty.</p>
+      <h2 class="state-title">No free full-text ${esc(activeResearchSpecialty().label.toLowerCase())} studies yet</h2>
+      <p class="state-desc">${state.researchFreeOnly ? 'Switch to <strong>All studies</strong> to see abstracts without a free copy, or try another specialty.' : 'Try <strong>All research</strong> or another specialty.'}</p>
     </div>`;
     els.feedUpdateStatus.hidden = true;
     return;
@@ -2107,7 +2145,10 @@ function visibleStoryCount() {
   const briefFiltered = showBriefs ? curated : curated.filter((article) => !article.briefOnly);
   const topic = getTopic(state.topicId);
   const filtered = filterTopicCategories(briefFiltered, topic);
-  return topic?.research ? filtered.filter((article) => matchesResearchArticle(article)).length : filtered.length;
+  if (!topic?.research) return filtered.length;
+  const research = filtered.filter((article) => matchesResearchArticle(article)
+    && !RESEARCH_NEWS_DOMAINS.includes(normalizeDomain(article.domain || article.url)));
+  return (state.researchFreeOnly ? research.filter((article) => isResearchFree(article)) : research).length;
 }
 
 function updateStatusLine() {
@@ -3365,6 +3406,13 @@ els.countryDeskSelect?.addEventListener('change', () => {
 });
 
 els.researchCalcBtn?.addEventListener('click', openCalculators);
+
+els.researchFreeBtn?.addEventListener('click', () => {
+  state.researchFreeOnly = !state.researchFreeOnly;
+  els.researchFreeBtn.textContent = state.researchFreeOnly ? 'Free full text' : 'All studies';
+  renderFeed();
+  updateStatusLine();
+});
 
 els.countryLayoutBtn?.addEventListener('click', () => {
   state.countryLayout = state.countryLayout === 'list' ? 'magazine' : 'list';
