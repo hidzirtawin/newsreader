@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T21:28:51.464Z",
+  "updatedAt": "2026-11-28T01:59:23.017Z",
   "shows": [
     {
       "id": "keluar-sekejap",
@@ -4908,6 +4908,18 @@
       "description": "Singapore and world headlines from The Straits Times newsroom.",
       "episodes": [
         {
+          "id": "art-4256c1ee4846",
+          "showId": "straits-times-headlines",
+          "showName": "ST News Headlines",
+          "title": "MONEYFM - 9:01am NEWS HEADLINES",
+          "description": "2026-11-28 09:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
+          "pubDate": "2026-11-28T01:24:32.000Z",
+          "duration": 236,
+          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/ec7d95da-e44a-41af-af19-b510001718f9/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
+          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
+          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-9-01am-news-headlines-1"
+        },
+        {
           "id": "art-acd8577cbcc4",
           "showId": "straits-times-headlines",
           "showName": "ST News Headlines",
@@ -5326,18 +5338,6 @@
           "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a815811c-deab-4ae3-b46f-b50e009237e2/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
           "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
           "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-4-31pm-news-headlines"
-        },
-        {
-          "id": "art-75030ba710d8",
-          "showId": "straits-times-headlines",
-          "showName": "ST News Headlines",
-          "title": "MONEYFM - 4:01pm NEWS HEADLINES",
-          "description": "2026-11-26 16:01 Latest News Headlines See omnystudio.com/listener for privacy information.",
-          "pubDate": "2026-11-26T08:22:43.000Z",
-          "duration": 209,
-          "audioUrl": "https://traffic.omny.fm/d/clips/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/e78d9b3b-4a33-4e3a-a9ed-b50e0089f7c5/audio.mp3?utm_source=Podcast&in_playlist=a86dfcac-e7b5-4438-b84b-adcf004aff3b",
-          "imageUrl": "https://www.omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/4e188010-01ce-44a9-bf38-adcf004a366a/a86dfcac-e7b5-4438-b84b-adcf004aff3b/image.jpg?t=1635395658&size=Large",
-          "link": "https://omny.fm/shows/stnews-presented-by-moneyfm/moneyfm-4-01pm-news-headlines-1"
         }
       ]
     },
@@ -6692,8 +6692,8 @@
           "showId": "the-daily-aus",
           "showName": "The Daily Aus",
           "title": "Why are young Aussies skipping the tourist hotspots?",
-          "description": "Want to support The Daily Aus? That's so kind! The best way to do that is to click ‘follow’ on Spotify or Apple and to leave us a five-star review. We would be so grateful. The Daily Aus is a media company focused on delivering accessible and digestible news to young people. We are completely independent. Want more from TDA?Subscribe to The Daily Aus newsletterSubscribe to The Daily Aus’ YouTube Channel Have feedback",
-          "pubDate": "2026-11-27T18:00:00.000Z",
+          "description": "Copy-paste itineraries, packed must-see lists and a growing hunger for something real. More of us are choosing holidays off the beaten track, and the numbers are starting to show it. Today, Zara and Billi sit down with travel journalist and author Nina Karnikowski, who has written about more than 60 countries. They unpack why young travellers are rethinking where they go, how to find authentic experiences when every ",
+          "pubDate": "2026-11-27T22:59:00.000Z",
           "duration": 1312,
           "audioUrl": "https://traffic.megaphone.fm/DAH2904880902.mp3",
           "imageUrl": "https://megaphone-images.spotifycdn.com/podcasts/da3eb390-e9ed-11f1-b58b-a353a4f9fe1d/image/6d280b3b05de54e8fea6d68799ff7154.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
