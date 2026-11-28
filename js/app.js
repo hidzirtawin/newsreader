@@ -1175,40 +1175,21 @@ async function recoverReaderCopy(article, token, statusText = () => {}) {
     }
   }
 
-  statusText('Trying the publisher directly…');
-  const directHtml = await fetchReaderText(article.url, 12000);
-  if (token !== state.readerToken) return false;
-  if (directHtml) {
-    const direct = extractArticle(directHtml, article.url);
-    const assessment = assessExtraction(direct);
-    if (direct && assessment.usable) {
-      renderReaderExtraction(direct, article, assessment);
-      return true;
-    }
-  }
-
-  statusText('Checking archived copies…');
-  const [archive, archived] = await Promise.all([
+  statusText('Looking for a readable copy…');
+  const [directHtml, archive, archived, summary] = await Promise.all([
+    fetchReaderText(article.url, 12000),
     tryWayback(article.url),
     tryArchiveIs(article.url),
+    trySmry(article.url),
   ]);
   if (token !== state.readerToken) return false;
-  for (const candidate of [archive, archived]) {
+
+  const direct = directHtml ? extractArticle(directHtml, article.url) : null;
+  for (const candidate of [direct, archive, archived, summary]) {
     if (!candidate) continue;
     const assessment = assessExtraction(candidate);
     if (assessment.usable) {
       renderReaderExtraction(candidate, article, assessment);
-      return true;
-    }
-  }
-
-  statusText('Trying a summary service…');
-  const summary = await trySmry(article.url);
-  if (token !== state.readerToken) return false;
-  if (summary) {
-    const assessment = assessExtraction(summary);
-    if (assessment.usable) {
-      renderReaderExtraction(summary, article, assessment);
       return true;
     }
   }
