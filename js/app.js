@@ -1196,6 +1196,18 @@ async function recoverReaderCopy(article, token, statusText = () => {}) {
   return false;
 }
 
+function autoRecoverReader(article) {
+  const token = state.readerToken;
+  renderReaderFallback(article, null, { checking: true });
+  recoverReaderCopy(article, token, (message) => {
+    if (els.readerFallback && !els.readerFallback.hidden) els.readerFallbackText.textContent = message;
+  }).then((recovered) => {
+    if (!recovered && token === state.readerToken) {
+      renderReaderFallback(article, null, { checking: false });
+    }
+  });
+}
+
 async function renderReaderService(article) {
   els.readerStatus.hidden = true;
   els.readerToolbarState.textContent = 'Reader service';
@@ -1489,13 +1501,12 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
       if (hasController) {
         renderReaderService(resolved);
       } else {
-        renderReaderFallback(resolved, null, { checking: false });
-        if (els.readerFallbackText) {
-          els.readerFallbackText.textContent = 'The reader is still starting on this device. Tap Try again in a moment.';
-        }
+        // No service worker yet: recover with the same automatic
+        // syndicated/archive/summary chain instead of asking for a tap.
+        autoRecoverReader(resolved);
       }
     } catch {
-      renderReaderFallback(resolved, null, { checking: false });
+      autoRecoverReader(resolved);
     }
     return;
   }
@@ -1503,15 +1514,7 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
   // Paywalled or blocked sites: show the publisher summary immediately,
   // then look for a free syndicated copy or archive automatically.
   if (!archiveOnly) {
-    renderReaderFallback(resolved, null, { checking: true });
-    const token = state.readerToken;
-    recoverReaderCopy(resolved, token, (message) => {
-      if (els.readerFallback && !els.readerFallback.hidden) els.readerFallbackText.textContent = message;
-    }).then((recovered) => {
-      if (!recovered && token === state.readerToken) {
-        renderReaderFallback(resolved, null, { checking: false });
-      }
-    });
+    autoRecoverReader(resolved);
     return;
   }
 
