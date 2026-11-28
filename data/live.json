@@ -3,90 +3,90 @@
     "id": "sky-news",
     "videoId": "53SxFKpbKDE",
     "isLive": true,
-    "at": "2026-11-28T02:42:36.770Z"
+    "at": "2026-11-28T02:49:47.689Z"
   },
   "al-jazeera": {
     "id": "al-jazeera",
     "videoId": "gCNeDWCI0vo",
     "isLive": true,
-    "at": "2026-11-28T02:42:36.983Z"
+    "at": "2026-11-28T02:49:47.564Z"
   },
   "dw-news": {
     "id": "dw-news",
     "videoId": "LuKwFajn37U",
     "isLive": true,
-    "at": "2026-11-28T02:42:36.774Z"
+    "at": "2026-11-28T02:49:47.706Z"
   },
   "france-24": {
     "id": "france-24",
     "videoId": "HvZt-nh9sGg",
     "isLive": true,
-    "at": "2026-11-28T02:42:36.908Z"
+    "at": "2026-11-28T02:49:47.569Z"
   },
   "abc-news": {
     "id": "abc-news",
     "videoId": "d8eOeIS1EFU",
     "isLive": true,
-    "at": "2026-11-28T02:42:37.654Z"
+    "at": "2026-11-28T02:49:48.468Z"
   },
   "nbc-news": {
     "id": "nbc-news",
     "videoId": "0vNukUbpBbU",
     "isLive": true,
-    "at": "2026-11-28T02:42:37.476Z"
+    "at": "2026-11-28T02:49:48.231Z"
   },
   "cbs-news": {
     "id": "cbs-news",
     "videoId": "z1BQg3rAJQc",
-    "isLive": true,
-    "at": "2026-11-28T02:42:37.263Z"
+    "isLive": false,
+    "at": "2026-11-28T02:49:48.038Z"
   },
   "cnn": {
     "id": "cnn",
     "videoId": "W_SDUJKscv8",
     "isLive": true,
-    "at": "2026-11-28T02:42:37.617Z"
+    "at": "2026-11-28T02:49:48.450Z"
   },
   "fox-news": {
     "id": "fox-news",
     "videoId": "wcY4K5CNVx4",
     "isLive": true,
-    "at": "2026-11-28T02:42:38.252Z"
+    "at": "2026-11-28T02:49:48.849Z"
   },
   "cnbc": {
     "id": "cnbc",
     "videoId": "9NyxcX3rhQs",
     "isLive": true,
-    "at": "2026-11-28T02:42:38.468Z"
+    "at": "2026-11-28T02:49:49.136Z"
   },
   "bloomberg": {
     "id": "bloomberg",
     "videoId": "QB5BNdBFujE",
     "isLive": true,
-    "at": "2026-11-28T02:42:38.258Z"
+    "at": "2026-11-28T02:49:49.180Z"
   },
   "bbc-news": {
     "id": "bbc-news",
     "videoId": "jC-lIQDrCdE",
     "isLive": true,
-    "at": "2026-11-28T02:42:38.568Z"
+    "at": "2026-11-28T02:49:49.245Z"
   },
   "reuters": {
     "id": "reuters",
     "videoId": "UjKx31gXXUs",
     "isLive": true,
-    "at": "2026-11-28T02:42:38.990Z"
+    "at": "2026-11-28T02:49:49.545Z"
   },
   "pbs": {
     "id": "pbs",
     "videoId": "beasdZ4SomA",
-    "isLive": true,
-    "at": "2026-11-28T02:42:38.691Z"
+    "isLive": false,
+    "at": "2026-11-28T02:49:49.488Z"
   },
   "astro-awani": {
     "id": "astro-awani",
     "videoId": "T_XPgFFfugs",
     "isLive": true,
-    "at": "2026-11-28T02:42:39.148Z"
+    "at": "2026-11-28T02:49:49.787Z"
   }
 }

@@ -305,7 +305,7 @@ async function resolveLiveTv() {
       });
       const html = await response.text();
       const videoId = html.match(/"videoId":"([^"]+)"/)?.[1] || '';
-      const isLive = /"isLive":true/.test(html) || Boolean(videoId);
+      const isLive = /"isLive":true|"isLiveNow":true/.test(html);
       return { id: channel.id, videoId, isLive, at: new Date().toISOString() };
     } catch {
       return { id: channel.id, videoId: '', isLive: false, at: new Date().toISOString() };

@@ -263,6 +263,9 @@ const state = {
   researchFreeOnly: true,
   liveTvChannelId: '',
   liveTvData: {},
+  liveTvLoading: false,
+  liveTvError: false,
+  liveTvShowLatest: false,
   suppressClickUntil: 0,
   calculatorId: 'bmi',
   marketMoversLoaded: false,
@@ -390,7 +393,7 @@ function openVideo(article) {
   }
   const src = liveChannel
     ? `https://www.youtube-nocookie.com/embed/live_stream?channel=${encodeURIComponent(liveChannel)}&autoplay=1`
-    : `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
+    : `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1`;
   els.videoFrame.src = src;
   els.videoKicker.textContent = article.source || 'Video';
   els.videoTitle.textContent = article.title || '';
@@ -2984,17 +2987,25 @@ function openLiveTvChannel(id) {
   const channel = LIVE_TV_CHANNELS.find((item) => item.id === id);
   if (!channel) return;
   state.liveTvChannelId = channel.id;
+  state.liveTvShowLatest = false;
   safeSet('newsreader_live_tv_channel', channel.id);
   renderLiveTvView();
 }
 
 async function loadLiveTvData() {
+  if (state.liveTvLoading) return;
+  state.liveTvLoading = true;
+  state.liveTvError = false;
   try {
     const response = await fetch(`./data/live.json?ts=${Date.now()}`, { cache: 'no-store' });
-    if (!response.ok) return;
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.liveTvData = await response.json();
+  } catch {
+    state.liveTvError = true;
+  } finally {
+    state.liveTvLoading = false;
     if (getTopic(state.topicId)?.type === 'livetv') renderLiveTvView();
-  } catch { /* keep the fallback live_stream embeds */ }
+  }
 }
 
 function renderLiveTvView() {
@@ -3011,28 +3022,63 @@ function renderLiveTvView() {
   els.feedStatus.textContent = 'LIVE TV · OFFICIAL STREAMS';
   els.feedUpdateStatus.hidden = true;
   els.feedSourcesDetails.hidden = true;
-  const cards = LIVE_TV_CHANNELS.map((item) => `<button type="button" class="live-tv-card${item.id === channel.id ? ' active' : ''}" data-live-tv="${esc(item.id)}">
-    <span class="live-tv-initial">${esc(item.name.slice(0, 1))}</span>
-    <span class="live-tv-name">${esc(item.name)}</span>
-    <span class="live-tv-region">${esc(item.region)}</span>
-    <span class="live-tv-live"><span class="live-video-dot" aria-hidden="true"></span> Live</span>
-  </button>`).join('');
-  const liveInfo = state.liveTvData?.[channel.id];
-  const liveVideoId = liveInfo?.isLive && liveInfo.videoId ? liveInfo.videoId : '';
-  const playerSrc = liveVideoId
-    ? `https://www.youtube.com/embed/${encodeURIComponent(liveVideoId)}?autoplay=1`
-    : `https://www.youtube.com/embed/live_stream?channel=${encodeURIComponent(channel.channelId)}&autoplay=1`;
+
+  const info = state.liveTvData?.[channel.id];
+  const cards = LIVE_TV_CHANNELS.map((item) => {
+    const itemInfo = state.liveTvData?.[item.id];
+    const offAir = itemInfo ? !itemInfo.isLive : false;
+    return `<button type="button" class="live-tv-card${item.id === channel.id ? ' active' : ''}" data-live-tv="${esc(item.id)}">
+      <span class="live-tv-initial">${esc(item.name.slice(0, 1))}</span>
+      <span class="live-tv-name">${esc(item.name)}</span>
+      <span class="live-tv-region">${esc(item.region)}</span>
+      <span class="live-tv-live${offAir ? ' is-off' : ''}"><span class="live-video-dot" aria-hidden="true"></span> ${offAir ? 'Off air' : 'Live'}</span>
+    </button>`;
+  }).join('');
+
+  const isLive = Boolean(info?.isLive && info.videoId);
+  const showLatest = Boolean(state.liveTvShowLatest && info?.videoId);
+  const videoId = isLive || showLatest ? info.videoId : '';
+  const playerSrc = videoId
+    ? `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?autoplay=1&rel=0&playsinline=1`
+    : '';
+  let playerMarkup = '';
+  let metaLabel = '';
+  if (playerSrc) {
+    metaLabel = isLive ? 'Live now' : 'Latest video';
+    playerMarkup = `<div class="live-tv-player-wrap">
+      <iframe id="liveTvFrame" title="${esc(channel.name)} ${isLive ? 'live stream' : 'latest video'}" src="${playerSrc}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+    </div>`;
+  } else if (!info && !state.liveTvError) {
+    playerMarkup = `<div class="live-tv-player-wrap live-tv-unavailable">
+      <span class="live-tv-spinner" aria-hidden="true"></span>
+      <h3>Checking ${esc(channel.name)}…</h3>
+      <p>Looking up the current official stream.</p>
+    </div>`;
+  } else {
+    metaLabel = info ? 'Off air' : 'Status unavailable';
+    const reason = state.liveTvError
+      ? 'Live status could not be checked. Check your connection and try again.'
+      : `${channel.name} is not streaming live right now. This channel does not broadcast 24/7.`;
+    playerMarkup = `<div class="live-tv-player-wrap live-tv-unavailable">
+      <span class="live-tv-unavailable-icon" aria-hidden="true">◉</span>
+      <h3>${state.liveTvError ? 'Live TV is offline' : `${esc(channel.name)} is off air`}</h3>
+      <p>${esc(reason)}</p>
+      <div class="live-tv-actions">
+        <button type="button" class="form-btn" data-live-retry>Check again</button>
+        ${info?.videoId ? '<button type="button" class="form-btn form-btn-secondary" data-live-latest>Play latest video</button>' : ''}
+      </div>
+    </div>`;
+  }
+
   els.feedList.innerHTML = `<div class="live-tv-view">
-    <div class="live-tv-player-wrap">
-      <iframe id="liveTvFrame" title="${esc(channel.name)} live stream" src="${playerSrc}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-    </div>
+    ${playerMarkup}
     <div class="live-tv-meta">
-      <span class="live-tv-live"><span class="live-video-dot" aria-hidden="true"></span> Live now</span>
+      <span class="live-tv-live${metaLabel === 'Live now' ? '' : ' is-off'}"><span class="live-video-dot" aria-hidden="true"></span> ${esc(metaLabel || 'Live')}</span>
       <h2>${esc(channel.name)}</h2>
       <p>${esc(channel.region)} · Official broadcaster stream</p>
     </div>
     <div class="live-tv-grid">${cards}</div>
-    <p class="live-tv-note">Official YouTube live streams. Availability depends on the broadcaster; some channels are not live 24/7.</p>
+    <p class="live-tv-note">Official YouTube live streams. Availability depends on the broadcaster; some channels are not live 24/7. If a stream does not start, pick another channel or tap Check again.</p>
   </div>`;
 }
 
@@ -3616,6 +3662,22 @@ els.feedList.addEventListener('click', (event) => {
     event.preventDefault();
     event.stopPropagation();
     openSourceView(sourceButton.dataset.sourceFeed);
+    return;
+  }
+  if (event.target.closest('[data-live-retry]')) {
+    event.preventDefault();
+    state.liveTvData = state.liveTvData || {};
+    state.liveTvError = false;
+    state.liveTvLoading = false;
+    state.liveTvShowLatest = false;
+    renderLiveTvView();
+    loadLiveTvData();
+    return;
+  }
+  if (event.target.closest('[data-live-latest]')) {
+    event.preventDefault();
+    state.liveTvShowLatest = true;
+    renderLiveTvView();
     return;
   }
   const liveTvButton = event.target.closest('[data-live-tv]');
