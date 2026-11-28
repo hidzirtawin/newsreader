@@ -5,6 +5,7 @@
 import {
   STRATEGY_META,
   TOPIC_PRESETS,
+  BRIEF_ONLY_DOMAINS,
   LIVE_CACHE_TTL,
   COUNTRY_DESKS,
   COUNTRY_TIMEZONES,
@@ -260,6 +261,7 @@ const state = {
   researchFormat: 'all',
   researchFreeOnly: true,
   liveTvChannelId: '',
+  suppressClickUntil: 0,
   calculatorId: 'bmi',
   marketMoversLoaded: false,
   marketStatusTimer: null,
@@ -862,6 +864,49 @@ function assessExtraction(extraction) {
   };
 }
 
+async function findSyndicatedCopy(article) {
+  const title = String(article?.title || '').trim();
+  if (!title) return null;
+  try {
+    const searchUrl = `https://www.bing.com/news/search?q=${encodeURIComponent(title)}&format=rss`;
+    const response = await fetch('./reader-frame', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: new URLSearchParams({ url: searchUrl, provider: 'jina', format: 'text' }).toString(),
+    });
+    if (!response.ok) return null;
+    const xml = await response.text();
+    if (!xml.includes('<rss')) return null;
+    const doc = new DOMParser().parseFromString(xml, 'text/xml');
+    const original = normalizeDomain(article.domain || article.url);
+    const paywalled = (host) => BRIEF_ONLY_DOMAINS.some((item) => host === item || host.endsWith(`.${item}`));
+    const candidates = [];
+    for (const item of doc.querySelectorAll('item')) {
+      const raw = item.querySelector('link')?.textContent?.trim() || '';
+      let target = raw;
+      try {
+        const parsed = new URL(raw);
+        target = parsed.searchParams.get('url') || raw;
+      } catch { /* keep raw */ }
+      if (!/^https?:\/\//i.test(target)) continue;
+      let host = '';
+      try { host = new URL(target).hostname.replace(/^www\./, ''); } catch { continue; }
+      if (!host || host === original || host.endsWith('bing.com') || paywalled(host)) continue;
+      candidates.push({
+        url: target,
+        title: item.querySelector('title')?.textContent?.trim() || title,
+        domain: host,
+        source: host,
+      });
+    }
+    if (!candidates.length) return null;
+    const preferred = ['yahoo.com', 'msn.com', 'theguardian.com', 'apnews.com', 'npr.org', 'pbs.org', 'bbc.com', 'cnn.com', 'aljazeera.com', 'semafor.com'];
+    return candidates.find((candidate) => preferred.some((domain) => candidate.domain === domain || candidate.domain.endsWith(`.${domain}`))) || candidates[0];
+  } catch {
+    return null;
+  }
+}
+
 async function tryWayback(url) {
   if (!url || /news\.google\.com/.test(url)) return null;
   try {
@@ -991,6 +1036,7 @@ function renderReaderExtraction(extraction, article, assessment) {
   let notice = '';
   if (extraction.kind === 'archive') notice = 'Archived copy — the publisher page is blocked or paywalled.';
   else if (extraction.kind === 'summary') notice = 'Reader summary — the full article could not be retrieved from the publisher.';
+  else if (article.syndicatedFrom) notice = `Alternate free copy — ${article.syndicatedFrom}.`;
   else if (!assessment.good) notice = 'Partial reader view — the publisher is serving truncated content.';
   if (notice) {
     els.readerNotice.hidden = false;
@@ -1036,9 +1082,19 @@ async function renderReaderService(article) {
   </div>`;
   const token = state.readerToken;
   let settled = false;
-  const fail = (message) => {
+  const fail = async (message) => {
     if (settled || token !== state.readerToken) return;
     settled = true;
+    if (!article.skipSyndicated) {
+      const status = document.getElementById('readerServiceStatus');
+      if (status) status.textContent = 'Finding another free copy…';
+      const alternate = await findSyndicatedCopy(article);
+      if (token !== state.readerToken) return;
+      if (alternate) {
+        openReader({ ...article, ...alternate, skipSyndicated: true, syndicatedFrom: alternate.domain }, { fromLink: true });
+        return;
+      }
+    }
     renderReaderFallback(article, null, { checking: false });
     els.readerFallbackText.textContent = message;
   };
@@ -3413,6 +3469,12 @@ function reapplyRules() {
 /* ------------------------------------------------------------------ */
 
 els.feedList.addEventListener('click', (event) => {
+  if (Date.now() < state.suppressClickUntil) {
+    event.preventDefault();
+    event.stopPropagation();
+    state.suppressClickUntil = 0;
+    return;
+  }
   const badge = event.target.closest('[data-badge-for]');
   if (badge) {
     event.preventDefault();
@@ -3479,6 +3541,43 @@ els.feedList.addEventListener('error', (event) => {
     image.closest('.media')?.classList.add('image-failed');
   }
 }, true);
+
+let topicSwipe = null;
+
+function isSwipeExcluded(target) {
+  return Boolean(target.closest('.topics-bar, .sports-subnav, .research-subnav, .reader-view, .modal-overlay, .audio-dock, .video-modal, input, select, textarea'));
+}
+
+document.addEventListener('touchstart', (event) => {
+  if (event.touches.length !== 1) { topicSwipe = null; return; }
+  if (state.readerOpen || state.sourceView || state.listenMode || anyModalOpen()) return;
+  if (isSwipeExcluded(event.target)) return;
+  topicSwipe = {
+    x: event.touches[0].clientX,
+    y: event.touches[0].clientY,
+    time: Date.now(),
+  };
+}, { passive: true });
+
+document.addEventListener('touchend', (event) => {
+  if (!topicSwipe) return;
+  const touch = event.changedTouches[0];
+  const dx = touch.clientX - topicSwipe.x;
+  const dy = touch.clientY - topicSwipe.y;
+  const elapsed = Date.now() - topicSwipe.time;
+  topicSwipe = null;
+  if (elapsed > 900 || Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.35) return;
+  const topics = getVisibleTopics();
+  if (!topics.length) return;
+  const index = topics.findIndex((topic) => topic.id === state.topicId);
+  const direction = dx < 0 ? 1 : -1;
+  const next = topics[(Math.max(index, 0) + direction + topics.length) % topics.length];
+  if (!next || next.id === state.topicId) return;
+  event.preventDefault();
+  state.suppressClickUntil = Date.now() + 500;
+  showToast(`${direction > 0 ? 'Next' : 'Previous'}: ${next.label}`, { duration: 1200 });
+  loadTopic(next.id);
+}, { passive: false });
 
 els.topicsBar.addEventListener('click', (event) => {
   if (event.target.closest('[data-country-tab]')) {

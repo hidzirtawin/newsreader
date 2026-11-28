@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v60';
+const VERSION = 'newsreader-v61';
 const SHELL = [
   './',
   './index.html',
@@ -76,6 +76,7 @@ async function proxyReader(request) {
     const form = await request.formData();
     const target = String(form.get('url') || '');
     const provider = String(form.get('provider') || 'jina');
+    const responseFormat = String(form.get('format') || 'html') === 'text' ? 'text' : 'html';
     if (!/^https?:\/\//i.test(target)) {
       return new Response('<h1>Invalid article URL</h1>', { status: 400, headers });
     }
@@ -87,7 +88,7 @@ async function proxyReader(request) {
         const response = await fetch('https://r.jina.ai/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-          body: new URLSearchParams({ url: target, respondWith: 'html', base: 'final' }).toString(),
+          body: new URLSearchParams({ url: target, respondWith: responseFormat, base: 'final' }).toString(),
           signal: controller.signal,
         });
         if (!response.ok) throw new Error(`Reader service HTTP ${response.status}`);
