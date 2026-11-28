@@ -197,6 +197,7 @@ const els = {
   readerView: $('#readerView'),
   readerBackBtn: $('#readerBackBtn'),
   readerCloseBtn: $('#readerCloseBtn'),
+  readerListenBtn: $('#readerListenBtn'),
   readerToolbarSource: $('#readerToolbarSource'),
   readerToolbarState: $('#readerToolbarState'),
   readerProgressBar: $('#readerProgressBar'),
@@ -290,6 +291,11 @@ const state = {
   lastAutoPoll: 0,
   lastChecked: 0,
   readerOpen: false,
+  readerSpeaking: false,
+  readerSpeechText: '',
+  readerSpeechQueue: [],
+  readerSpeechIndex: 0,
+  readerSpeechLang: 'en-US',
   readerToken: 0,
   readerArticle: null,
   readerStack: [],
@@ -1058,6 +1064,7 @@ function renderReaderExtraction(extraction, article, assessment) {
   }
 
   els.readerBody.innerHTML = sanitizeReaderHtml(extraction.content, extraction.url);
+  state.readerSpeechText = extraction.textContent || els.readerBody.innerText || '';
   els.readerScroll.scrollTop = 0;
   els.readerProgressBar.style.width = '0%';
   document.title = `${extraction.title || article.title} | Tawin Newsreader`;
@@ -1089,6 +1096,7 @@ async function renderReaderService(article) {
   els.readerFallback.hidden = true;
   const provider = isWallhopDomain(article.domain || article.url) ? 'wallhop' : 'jina';
   const preview = cleanSummary(article.summary) ? `<div class="reader-preview">${textToParagraphs(cleanSummary(article.summary))}</div>` : '';
+  state.readerSpeechText = cleanSummary(article.summary) || '';
   els.readerBody.innerHTML = `${preview}<div class="reader-service-shell">
     <div class="reader-service-bar" id="readerServiceStatus">Loading full text</div>
   </div>`;
@@ -1208,6 +1216,7 @@ function renderReaderFallback(article, extraction, { checking = false } = {}) {
   els.readerFallback.hidden = false;
   const summary = cleanSummary(article.summary) || (extraction?.textLength < 400 ? extraction?.textContent : '');
   els.readerBody.innerHTML = summary ? textToParagraphs(summary) : '';
+  state.readerSpeechText = summary || els.readerBody.innerText || '';
   els.readerFallbackText.textContent = checking
     ? 'Only the publisher summary is available so far. Checking for an archived copy of the full article…'
     : summary
@@ -1234,6 +1243,89 @@ async function waitForReaderController(timeoutMs = 8000) {
       resolve(true);
     }, { once: true });
   });
+}
+
+function readerSpeechText() {
+  if (els.readerFallback && !els.readerFallback.hidden) {
+    return cleanSummary(state.readerArticle?.summary) || els.readerBody.innerText || '';
+  }
+  return state.readerSpeechText || els.readerBody.innerText || '';
+}
+
+function stopReaderSpeech() {
+  state.readerSpeaking = false;
+  state.readerSpeechQueue = [];
+  state.readerSpeechIndex = 0;
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  if (els.readerListenBtn) {
+    els.readerListenBtn.textContent = 'Listen';
+    els.readerListenBtn.setAttribute('aria-pressed', 'false');
+    els.readerListenBtn.classList.remove('is-speaking');
+  }
+}
+
+function speakNextChunk() {
+  if (!state.readerSpeaking) return;
+  const chunk = state.readerSpeechQueue[state.readerSpeechIndex];
+  if (!chunk) {
+    stopReaderSpeech();
+    return;
+  }
+  const utterance = new SpeechSynthesisUtterance(chunk);
+  utterance.lang = state.readerSpeechLang;
+  utterance.rate = state.readerSpeechLang.startsWith('zh') ? 0.95 : 1;
+  utterance.pitch = 1;
+  const voices = window.speechSynthesis.getVoices?.() || [];
+  const voice = voices.find((item) => item.lang === state.readerSpeechLang)
+    || voices.find((item) => item.lang?.startsWith(state.readerSpeechLang.slice(0, 2)));
+  if (voice) utterance.voice = voice;
+  utterance.onend = () => {
+    if (!state.readerSpeaking) return;
+    state.readerSpeechIndex += 1;
+    speakNextChunk();
+  };
+  utterance.onerror = () => stopReaderSpeech();
+  window.speechSynthesis.speak(utterance);
+}
+
+function startReaderSpeech() {
+  if (!('speechSynthesis' in window)) {
+    showToast('Listening is not available in this browser.');
+    return;
+  }
+  const text = readerSpeechText().replace(/\s+/g, ' ').trim();
+  if (text.length < 30) {
+    showToast('There is not enough text to read aloud.');
+    return;
+  }
+  if (!els.audioPlayer.paused) {
+    els.audioPlayer.pause();
+    state.player.playing = false;
+    updateDockControls();
+  }
+  stopReaderSpeech();
+  state.readerSpeaking = true;
+  state.readerSpeechLang = /[\u3400-\u9fff]/.test(text) ? 'zh-CN' : 'en-US';
+  const sentences = text.match(/[^.!?。！？]+[.!?。！？]?/g) || [text];
+  const chunks = [];
+  let current = '';
+  for (const sentence of sentences) {
+    if ((current + sentence).length > 260 && current) {
+      chunks.push(current.trim());
+      current = sentence;
+    } else {
+      current += sentence;
+    }
+  }
+  if (current.trim()) chunks.push(current.trim());
+  state.readerSpeechQueue = chunks.filter(Boolean);
+  state.readerSpeechIndex = 0;
+  if (els.readerListenBtn) {
+    els.readerListenBtn.textContent = 'Stop';
+    els.readerListenBtn.setAttribute('aria-pressed', 'true');
+    els.readerListenBtn.classList.add('is-speaking');
+  }
+  speakNextChunk();
 }
 
 async function loadReaderContent(article, { archiveOnly = false } = {}) {
@@ -1301,6 +1393,7 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
 
 function openReader(article, { fromLink = false } = {}) {
   if (!article) return;
+  stopReaderSpeech();
   if (!state.readerOpen) {
     state.readerOpen = true;
     state.readerStack = [];
@@ -1323,6 +1416,7 @@ function openReader(article, { fromLink = false } = {}) {
 
 function finalizeReaderClose() {
   if (!state.readerOpen) return;
+  stopReaderSpeech();
   state.readerOpen = false;
   state.readerToken += 1;
   state.readerStack = [];
@@ -4383,6 +4477,11 @@ window.addEventListener('appinstalled', () => {
 
 els.readerBackBtn.addEventListener('click', readerBack);
 els.readerCloseBtn.addEventListener('click', closeReader);
+els.readerListenBtn?.addEventListener('click', () => {
+  if (state.readerSpeaking) stopReaderSpeech();
+  else startReaderSpeech();
+});
+if (els.readerListenBtn && !('speechSynthesis' in window)) els.readerListenBtn.hidden = true;
 
 els.readerOaBtn?.addEventListener('click', () => {
   openOa(els.readerOaBtn.dataset.oaUrl, state.readerArticle?.title);

@@ -3864,6 +3864,45 @@ body.reader-open {
   color: var(--primary);
 }
 
+.reader-listen-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  padding: 7px 11px;
+  border: 1px solid var(--highlight-green-border);
+  background: var(--highlight-green-light);
+  color: var(--highlight-green-dark);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.reader-listen-btn:hover {
+  border-color: var(--primary);
+}
+
+.reader-listen-btn.is-speaking {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .reader-toolbar {
+    gap: 6px;
+    padding: 8px 10px;
+  }
+
+  .reader-listen-btn {
+    min-width: 54px;
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
+}
+
 .reader-toolbar-info {
   display: flex;
   flex-direction: column;
