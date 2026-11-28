@@ -865,7 +865,8 @@ function assessExtraction(extraction) {
 }
 
 async function findSyndicatedCopy(article) {
-  const title = String(article?.title || '').trim();
+  const rawTitle = String(article?.title || '').trim();
+  const title = rawTitle.replace(/^(exclusive|breaking|update|analysis|opinion|watch|video|live)\s*:\s*/i, '').trim();
   if (!title) return null;
   try {
     const searchUrl = `https://www.bing.com/news/search?q=${encodeURIComponent(title)}&format=rss`;
@@ -891,7 +892,7 @@ async function findSyndicatedCopy(article) {
       if (!/^https?:\/\//i.test(target)) continue;
       let host = '';
       try { host = new URL(target).hostname.replace(/^www\./, ''); } catch { continue; }
-      if (!host || host === original || host.endsWith('bing.com') || paywalled(host)) continue;
+      if (!host || host === original || host.endsWith('bing.com') || host === 'msn.com' || host.endsWith('.msn.com') || host === 'usnews.com' || host.endsWith('.usnews.com') || paywalled(host)) continue;
       candidates.push({
         url: target,
         title: item.querySelector('title')?.textContent?.trim() || title,
@@ -900,8 +901,12 @@ async function findSyndicatedCopy(article) {
       });
     }
     if (!candidates.length) return null;
-    const preferred = ['yahoo.com', 'msn.com', 'theguardian.com', 'apnews.com', 'npr.org', 'pbs.org', 'bbc.com', 'cnn.com', 'aljazeera.com', 'semafor.com'];
-    return candidates.find((candidate) => preferred.some((domain) => candidate.domain === domain || candidate.domain.endsWith(`.${domain}`))) || candidates[0];
+    const preferred = ['yahoo.com', 'theguardian.com', 'apnews.com', 'bbc.com', 'cnn.com', 'npr.org', 'pbs.org', 'aljazeera.com', 'semafor.com', 'thehill.com'];
+    for (const domain of preferred) {
+      const match = candidates.find((candidate) => candidate.domain === domain || candidate.domain.endsWith(`.${domain}`));
+      if (match) return match;
+    }
+    return candidates[0];
   } catch {
     return null;
   }
