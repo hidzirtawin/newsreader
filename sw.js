@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v62';
+const VERSION = 'newsreader-v63';
 const SHELL = [
   './',
   './index.html',
@@ -195,7 +195,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (/\/data\/(news|podcasts)\.json$/.test(url.pathname)) {
+  if (/\/data\/(news|podcasts|live)\.json$/.test(url.pathname)) {
     event.respondWith(networkFirst(request));
     return;
   }

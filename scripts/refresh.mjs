@@ -10,7 +10,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { BRIEF_ONLY_DOMAINS, FEEDS, PODCAST_SHOWS, TOPICS, normalizeDomain } from '../js/config.js';
+import { BRIEF_ONLY_DOMAINS, FEEDS, LIVE_TV_CHANNELS, PODCAST_SHOWS, TOPICS, normalizeDomain } from '../js/config.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = path.join(ROOT, 'data');
@@ -293,6 +293,28 @@ async function isOaEmbeddable(url) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+async function resolveLiveTv() {
+  const results = await pool(LIVE_TV_CHANNELS, 4, async (channel) => {
+    try {
+      const response = await fetch(`https://www.youtube.com/channel/${channel.channelId}/live`, {
+        headers: { 'User-Agent': USER_AGENT, Accept: 'text/html,*/*' },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(15000),
+      });
+      const html = await response.text();
+      const videoId = html.match(/"videoId":"([^"]+)"/)?.[1] || '';
+      const isLive = /"isLive":true/.test(html) || Boolean(videoId);
+      return { id: channel.id, videoId, isLive, at: new Date().toISOString() };
+    } catch {
+      return { id: channel.id, videoId: '', isLive: false, at: new Date().toISOString() };
+    }
+  });
+  const live = {};
+  for (const entry of results) if (entry?.id) live[entry.id] = entry;
+  await writeJson(path.join(DATA, 'live.json'), live);
+  console.log(`Live TV: ${Object.values(live).filter((entry) => entry.isLive).length}/${LIVE_TV_CHANNELS.length} channels live`);
 }
 
 async function resolveResearchOpenAccess(snapshot) {
@@ -666,6 +688,10 @@ async function writeJson(file, value) {
 
 async function main() {
   await mkdir(DATA, { recursive: true });
+  if (process.argv.includes('--live-only')) {
+    await resolveLiveTv();
+    return;
+  }
   if (process.argv.includes('--oa-only')) {
     const snapshot = JSON.parse(await readFile(path.join(DATA, 'news.json'), 'utf8'));
     const previousVersion = JSON.parse(await readFile(path.join(DATA, 'version.json'), 'utf8').catch(() => '{}'));
@@ -792,6 +818,8 @@ async function main() {
     news: newsVersion,
     podcasts: skipPodcasts ? (previousVersion.podcasts || newsVersion) : newsVersion,
   });
+
+  await resolveLiveTv();
 
   const withImages = Object.values(snapshot).flatMap((entry) => entry.articles).filter((article) => article.imageUrl).length;
   const total = Object.values(snapshot).flatMap((entry) => entry.articles).length;

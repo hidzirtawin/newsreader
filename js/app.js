@@ -261,6 +261,7 @@ const state = {
   researchFormat: 'all',
   researchFreeOnly: true,
   liveTvChannelId: '',
+  liveTvData: {},
   suppressClickUntil: 0,
   calculatorId: 'bmi',
   marketMoversLoaded: false,
@@ -891,7 +892,13 @@ async function findSyndicatedCopy(article) {
       } catch { /* keep raw */ }
       if (!/^https?:\/\//i.test(target)) continue;
       let host = '';
-      try { host = new URL(target).hostname.replace(/^www\./, ''); } catch { continue; }
+      let targetPath = '';
+      try {
+        const parsedTarget = new URL(target);
+        host = parsedTarget.hostname.replace(/^www\./, '');
+        targetPath = parsedTarget.pathname;
+      } catch { continue; }
+      if (/\/(videos?|watch|podcasts?|live|photos?|galleries?)\//i.test(targetPath)) continue;
       if (!host || host === original || host.endsWith('bing.com') || host === 'msn.com' || host.endsWith('.msn.com') || host === 'usnews.com' || host.endsWith('.usnews.com') || paywalled(host)) continue;
       candidates.push({
         url: target,
@@ -2878,6 +2885,15 @@ function openLiveTvChannel(id) {
   renderLiveTvView();
 }
 
+async function loadLiveTvData() {
+  try {
+    const response = await fetch(`./data/live.json?ts=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) return;
+    state.liveTvData = await response.json();
+    if (getTopic(state.topicId)?.type === 'livetv') renderLiveTvView();
+  } catch { /* keep the fallback live_stream embeds */ }
+}
+
 function renderLiveTvView() {
   if (els.marketPanel) els.marketPanel.hidden = true;
   hideSourceView();
@@ -2898,9 +2914,14 @@ function renderLiveTvView() {
     <span class="live-tv-region">${esc(item.region)}</span>
     <span class="live-tv-live"><span class="live-video-dot" aria-hidden="true"></span> Live</span>
   </button>`).join('');
+  const liveInfo = state.liveTvData?.[channel.id];
+  const liveVideoId = liveInfo?.isLive && liveInfo.videoId ? liveInfo.videoId : '';
+  const playerSrc = liveVideoId
+    ? `https://www.youtube.com/embed/${encodeURIComponent(liveVideoId)}?autoplay=1`
+    : `https://www.youtube.com/embed/live_stream?channel=${encodeURIComponent(channel.channelId)}&autoplay=1`;
   els.feedList.innerHTML = `<div class="live-tv-view">
     <div class="live-tv-player-wrap">
-      <iframe id="liveTvFrame" title="${esc(channel.name)} live stream" src="https://www.youtube.com/embed/live_stream?channel=${encodeURIComponent(channel.channelId)}&autoplay=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      <iframe id="liveTvFrame" title="${esc(channel.name)} live stream" src="${playerSrc}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
     </div>
     <div class="live-tv-meta">
       <span class="live-tv-live"><span class="live-video-dot" aria-hidden="true"></span> Live now</span>
@@ -4501,6 +4522,7 @@ function boot() {
   const settings = getSettings();
   state.countryCode = detectCountryCode();
   state.liveTvChannelId = safeGet('newsreader_live_tv_channel') || LIVE_TV_CHANNELS[0].id;
+  loadLiveTvData();
   state.countryLayout = safeGet('newsreader_country_layout') === 'magazine' ? 'magazine' : 'list';
   if (els.countryDeskSelect) {
     els.countryDeskSelect.innerHTML = COUNTRY_DESKS
