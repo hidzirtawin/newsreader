@@ -465,9 +465,18 @@ function isEntertainmentArticle(article) {
   }
 }
 
+function isVideoNewsUrl(article) {
+  try {
+    return /\/(video|videos)\//i.test(new URL(article.url).pathname);
+  } catch {
+    return false;
+  }
+}
+
 function filterTopicCategories(articles, topic) {
-  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'research') return articles;
-  return articles.filter((article) => !isSportArticle(article) && !isEntertainmentArticle(article));
+  const withoutVideoPages = topic?.video ? articles : articles.filter((article) => !isVideoNewsUrl(article));
+  if (state.sourceView || topic?.sports || topic?.id === 'sports' || topic?.id === 'entertainment' || topic?.id === 'research') return withoutVideoPages;
+  return withoutVideoPages.filter((article) => !isSportArticle(article) && !isEntertainmentArticle(article));
 }
 
 function cleanSourceLabel(value) {
@@ -865,7 +874,7 @@ function assessExtraction(extraction) {
   const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
   return {
     usable: length >= 220 && !blocked,
-    good: length >= 600 && !blocked,
+    good: length >= 500 && !blocked,
     blocked,
     length,
   };
