@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v67';
+const VERSION = 'newsreader-v68';
 const SHELL = [
   './',
   './index.html',
@@ -150,10 +150,17 @@ async function proxyReader(request) {
       try {
         html = await fetchJina();
       } catch (jinaError) {
+        // Jina blocks some domains outright (space.com, Al Jazeera and
+        // others). WallHop can still read them, but its raw endpoint does
+        // not send CORS headers, so route the fetch through Jina instead.
         try {
-          html = await fetchWallhop();
+          html = await fetchJinaViaWallhop();
         } catch {
-          throw jinaError;
+          try {
+            html = await fetchWallhop();
+          } catch {
+            throw jinaError;
+          }
         }
       }
     }
