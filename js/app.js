@@ -891,16 +891,21 @@ async function findSyndicatedCopy(article) {
     const searchUrl = `https://www.bing.com/news/search?q=${encodeURIComponent(title)}&format=rss`;
     let xml = '';
     for (const provider of ['jina', 'jina-wallhop', 'wallhop']) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 7000);
       try {
         const response = await fetch('./reader-frame', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
           body: new URLSearchParams({ url: searchUrl, provider, format: 'text' }).toString(),
+          signal: controller.signal,
         });
         if (!response.ok) continue;
         const text = await response.text();
         if (text.includes('<rss')) { xml = text; break; }
-      } catch { /* try the next provider */ }
+      } catch { /* try the next provider */ } finally {
+        clearTimeout(timer);
+      }
     }
     if (!xml.includes('<rss')) xml = await fetchReaderText(searchUrl, 12000);
     if (!xml.includes('<rss')) return null;
