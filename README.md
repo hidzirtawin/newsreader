@@ -8,7 +8,7 @@ Built in the spirit of [OpenWire](https://github.com/AnsonLai/OpenWire) (AGPL-3.
 
 ## What's inside
 
-- **In-app reader** — stories open in a reader overlay, never in a new tab. It extracts the article text, tries an archived copy when a publisher blocks access, and shows a clearly labelled publisher brief when full text is unavailable. Back returns to the feed at the same scroll position.
+- **In-app reader** — stories open in a reader overlay, never in a new tab. It extracts the article text and recovers automatically when a publisher or reader service fails: it retries another reader provider, remembers the provider that works for each domain, searches for a free syndicated copy, tries the publisher directly, then falls back to an archived copy or summary. No taps or approvals are needed, and Back returns to the feed at the same scroll position.
 - **Strictly latest-first** — the lead story and every card below it are ordered by publication time, newest at the top and older stories at the bottom. There is no editorial reshuffling.
 - **Magazine feed** — lead story, two-column features, compact rows and mid-feed banners. Stories without photos fall back to clean text layouts.
 - **Auto-refresh** — every five minutes the app quietly checks a watch set of high-frequency wires and mastheads. New stories appear in a banner at the top; click it to bring the fresh edition forward without losing your place.

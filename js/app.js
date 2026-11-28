@@ -889,15 +889,31 @@ async function findSyndicatedCopy(article) {
   if (!title) return null;
   try {
     const searchUrl = `https://www.bing.com/news/search?q=${encodeURIComponent(title)}&format=rss`;
-    const response = await fetch('./reader-frame', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-      body: new URLSearchParams({ url: searchUrl, provider: 'jina', format: 'text' }).toString(),
-    });
-    if (!response.ok) return null;
-    const xml = await response.text();
+    let xml = '';
+    for (const provider of ['jina', 'jina-wallhop', 'wallhop']) {
+      try {
+        const response = await fetch('./reader-frame', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+          body: new URLSearchParams({ url: searchUrl, provider, format: 'text' }).toString(),
+        });
+        if (!response.ok) continue;
+        const text = await response.text();
+        if (text.includes('<rss')) { xml = text; break; }
+      } catch { /* try the next provider */ }
+    }
+    if (!xml.includes('<rss')) xml = await fetchReaderText(searchUrl, 12000);
     if (!xml.includes('<rss')) return null;
     const doc = new DOMParser().parseFromString(xml, 'text/xml');
+    const titleWords = (value) => new Set(String(value || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word.length > 3));
+    const wantedWords = titleWords(title);
+    const relatedTitle = (candidate) => {
+      if (wantedWords.size < 2) return true;
+      const candidateWords = titleWords(candidate);
+      let hits = 0;
+      for (const word of wantedWords) if (candidateWords.has(word)) hits += 1;
+      return hits / wantedWords.size >= 0.3;
+    };
     const original = normalizeDomain(article.domain || article.url);
     const paywalled = (host) => BRIEF_ONLY_DOMAINS.some((item) => host === item || host.endsWith(`.${item}`));
     const candidates = [];
@@ -918,9 +934,12 @@ async function findSyndicatedCopy(article) {
       } catch { continue; }
       if (/\/(videos?|watch|podcasts?|live|photos?|galleries?)\//i.test(targetPath)) continue;
       if (!host || host === original || host.endsWith('bing.com') || host === 'msn.com' || host.endsWith('.msn.com') || host === 'usnews.com' || host.endsWith('.usnews.com') || paywalled(host)) continue;
+      const candidateTitle = item.querySelector('title')?.textContent?.trim() || title;
+      if (!relatedTitle(candidateTitle)) continue;
+      if (candidates.some((candidate) => candidate.url === target)) continue;
       candidates.push({
         url: target,
-        title: item.querySelector('title')?.textContent?.trim() || title,
+        title: candidateTitle,
         domain: host,
         source: host,
       });
@@ -1101,12 +1120,101 @@ function canEmbedReaderService(url) {
   }
 }
 
+function readerHost(url) {
+  try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; }
+}
+
+function readerProviderPrefs() {
+  try { return JSON.parse(safeGet('newsreader_reader_prefs') || '{}') || {}; } catch { return {}; }
+}
+
+function getReaderProviderPref(host) {
+  if (!host) return '';
+  const entry = readerProviderPrefs()[host];
+  if (!entry?.provider) return '';
+  if (Date.now() - Number(entry.at || 0) > 3 * 864e5) return '';
+  return entry.provider === 'jina-via-wallhop' ? 'jina-wallhop' : entry.provider;
+}
+
+function setReaderProviderPref(host, provider) {
+  if (!host || !provider) return;
+  try {
+    const prefs = readerProviderPrefs();
+    prefs[host] = { provider, at: Date.now() };
+    const keys = Object.keys(prefs);
+    if (keys.length > 80) {
+      keys.sort((a, b) => Number(prefs[a]?.at || 0) - Number(prefs[b]?.at || 0))
+        .slice(0, keys.length - 80)
+        .forEach((key) => delete prefs[key]);
+    }
+    safeSet('newsreader_reader_prefs', JSON.stringify(prefs));
+  } catch { /* preference is optional */ }
+}
+
+function readerProviderCandidates(article) {
+  const host = readerHost(article.url);
+  const base = isWallhopDomain(article.domain || article.url) ? 'jina-wallhop' : 'jina';
+  return [...new Set([getReaderProviderPref(host) || base, 'jina-wallhop', 'wallhop', 'jina'].filter(Boolean))];
+}
+
+async function recoverReaderCopy(article, token, statusText = () => {}) {
+  if (!article.skipSyndicated) {
+    statusText('Finding another free copy…');
+    const alternate = await findSyndicatedCopy(article);
+    if (token !== state.readerToken) return false;
+    if (alternate) {
+      // Replace the blocked entry rather than stacking it, so Back never
+      // loops through the same automatic recovery.
+      openReader({ ...article, ...alternate, skipSyndicated: true, syndicatedFrom: alternate.domain });
+      return true;
+    }
+  }
+
+  statusText('Trying the publisher directly…');
+  const directHtml = await fetchReaderText(article.url, 12000);
+  if (token !== state.readerToken) return false;
+  if (directHtml) {
+    const direct = extractArticle(directHtml, article.url);
+    const assessment = assessExtraction(direct);
+    if (direct && assessment.usable) {
+      renderReaderExtraction(direct, article, assessment);
+      return true;
+    }
+  }
+
+  statusText('Checking archived copies…');
+  const [archive, archived] = await Promise.all([
+    tryWayback(article.url),
+    tryArchiveIs(article.url),
+  ]);
+  if (token !== state.readerToken) return false;
+  for (const candidate of [archive, archived]) {
+    if (!candidate) continue;
+    const assessment = assessExtraction(candidate);
+    if (assessment.usable) {
+      renderReaderExtraction(candidate, article, assessment);
+      return true;
+    }
+  }
+
+  statusText('Trying a summary service…');
+  const summary = await trySmry(article.url);
+  if (token !== state.readerToken) return false;
+  if (summary) {
+    const assessment = assessExtraction(summary);
+    if (assessment.usable) {
+      renderReaderExtraction(summary, article, assessment);
+      return true;
+    }
+  }
+  return false;
+}
+
 async function renderReaderService(article) {
   els.readerStatus.hidden = true;
   els.readerToolbarState.textContent = 'Reader service';
   els.readerNotice.hidden = true;
   els.readerFallback.hidden = true;
-  const provider = isWallhopDomain(article.domain || article.url) ? 'wallhop' : 'jina';
   const preview = cleanSummary(article.summary) ? `<div class="reader-preview">${textToParagraphs(cleanSummary(article.summary))}</div>` : '';
   state.readerSpeechText = cleanSummary(article.summary) || '';
   els.readerBody.innerHTML = `${preview}<div class="reader-service-shell">
@@ -1114,76 +1222,114 @@ async function renderReaderService(article) {
   </div>`;
   const token = state.readerToken;
   let settled = false;
+  const statusText = (message) => {
+    const status = document.getElementById('readerServiceStatus');
+    if (status) status.textContent = message;
+  };
+
   const fail = async (message) => {
     if (settled || token !== state.readerToken) return;
     settled = true;
-    if (!article.skipSyndicated) {
-      const status = document.getElementById('readerServiceStatus');
-      if (status) status.textContent = 'Finding another free copy…';
-      const alternate = await findSyndicatedCopy(article);
-      if (token !== state.readerToken) return;
-      if (alternate) {
-        openReader({ ...article, ...alternate, skipSyndicated: true, syndicatedFrom: alternate.domain }, { fromLink: true });
-        return;
-      }
-    }
+    const recovered = await recoverReaderCopy(article, token, statusText);
+    if (token !== state.readerToken || recovered) return;
     renderReaderFallback(article, null, { checking: false });
     els.readerFallbackText.textContent = message;
   };
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), provider === 'wallhop' ? 28000 : 35000);
-  try {
-    const response = await fetch('./reader-frame', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-      body: new URLSearchParams({ url: article.url, provider }).toString(),
-      signal: controller.signal,
-    });
-    const html = await response.text();
-    if (token !== state.readerToken) return;
-    if (!response.ok) {
-      fail(`Reader service unavailable: HTTP ${response.status}.`);
-      return;
-    }
-    const errorHeading = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '';
-    if (/Reader unavailable/i.test(errorHeading)) {
-      const detail = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1] || '';
-      fail(`Reader service unavailable${detail ? `: ${detail}` : '.'}`);
-      return;
-    }
 
-    const extraction = extractArticle(html, article.url);
-    const assessment = assessExtraction(extraction);
-    if (extraction && assessment.usable) {
-      settled = true;
-      renderReaderExtraction(extraction, article, assessment);
-      return;
+  const request = async (provider) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), provider.includes('wallhop') ? 45000 : 40000);
+    try {
+      const response = await fetch('./reader-frame', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+        body: new URLSearchParams({ url: article.url, provider }).toString(),
+        signal: controller.signal,
+      });
+      const html = await response.text();
+      const used = response.headers.get('X-Reader-Provider') || provider;
+      return { response, html, used };
+    } finally {
+      clearTimeout(timer);
     }
+  };
 
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const node = doc.querySelector('article, main, [role="main"]') || doc.body;
-    const text = (node?.textContent || '').trim();
-    const lower = text.toLowerCase();
-    const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
-    if (node && text.length >= 400 && !blocked) {
-      settled = true;
-      els.readerStatus.hidden = true;
-      els.readerFallback.hidden = true;
-      els.readerToolbarState.textContent = 'Publisher view';
-      els.readerNotice.hidden = false;
-      els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
-      els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
-      return;
+  const providers = readerProviderCandidates(article).slice(0, 3);
+  let lastMessage = '';
+  let bestExtraction = null;
+  let bestAssessment = null;
+  let bestProvider = '';
+
+  for (let index = 0; index < providers.length; index += 1) {
+    const provider = providers[index];
+    if (index > 0) {
+      statusText('Trying another reader service…');
+      await new Promise((resolve) => setTimeout(resolve, 500));
     }
-    fail('The publisher blocks full-text reading. Only the publisher summary is available.');
-  } catch (error) {
-    if (token !== state.readerToken) return;
-    fail(error?.name === 'AbortError'
-      ? 'The reader service timed out. Try again or read the publisher summary.'
-      : `Reader service unavailable: ${error?.message || 'network error'}.`);
-  } finally {
-    clearTimeout(timer);
+    try {
+      const { response, html, used } = await request(provider);
+      if (token !== state.readerToken) return;
+      if (!response.ok) {
+        lastMessage = `Reader service unavailable: HTTP ${response.status}.`;
+        continue;
+      }
+      const errorHeading = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '';
+      if (/Reader unavailable/i.test(errorHeading)) {
+        const detail = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1] || '';
+        lastMessage = `Reader service unavailable${detail ? `: ${detail}` : '.'}`;
+        continue;
+      }
+
+      const extraction = extractArticle(html, article.url);
+      const assessment = assessExtraction(extraction);
+      if (extraction && assessment.usable) {
+        if (!bestExtraction || assessment.length > bestAssessment.length) {
+          bestExtraction = extraction;
+          bestAssessment = assessment;
+          bestProvider = used;
+        }
+        if (assessment.good) {
+          settled = true;
+          setReaderProviderPref(readerHost(article.url), used);
+          renderReaderExtraction(extraction, article, assessment);
+          return;
+        }
+        continue;
+      }
+
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const node = doc.querySelector('article, main, [role="main"]') || doc.body;
+      const text = (node?.textContent || '').trim();
+      const lower = text.toLowerCase();
+      const blocked = READER_MARKERS.some((marker) => lower.includes(marker));
+      if (node && text.length >= 900 && !blocked) {
+        settled = true;
+        setReaderProviderPref(readerHost(article.url), used);
+        els.readerStatus.hidden = true;
+        els.readerFallback.hidden = true;
+        els.readerToolbarState.textContent = 'Publisher view';
+        els.readerNotice.hidden = false;
+        els.readerNotice.textContent = 'Publisher view inside Tawin Newsreader.';
+        els.readerBody.innerHTML = sanitizeReaderHtml(node.innerHTML, article.url);
+        return;
+      }
+      lastMessage = 'The publisher blocks full-text reading. Only the publisher summary is available.';
+    } catch (error) {
+      if (token !== state.readerToken) return;
+      lastMessage = error?.name === 'AbortError'
+        ? 'The reader service timed out. Try again or read the publisher summary.'
+        : `Reader service unavailable: ${error?.message || 'network error'}.`;
+    }
   }
+
+  if (bestExtraction) {
+    settled = true;
+    setReaderProviderPref(readerHost(article.url), bestProvider || 'jina-wallhop');
+    renderReaderExtraction(bestExtraction, article, bestAssessment);
+    return;
+  }
+
+  await fail(lastMessage || 'The publisher blocks full-text reading. Only the publisher summary is available.');
 }
 
 function renderReaderPlainService(article) {
@@ -1368,10 +1514,18 @@ async function loadReaderContent(article, { archiveOnly = false } = {}) {
     return;
   }
 
-  // Paywalled or blocked sites: show the publisher summary immediately.
-  // Archive lookup is deliberately on demand so the reader never stalls.
+  // Paywalled or blocked sites: show the publisher summary immediately,
+  // then look for a free syndicated copy or archive automatically.
   if (!archiveOnly) {
-    renderReaderFallback(resolved, null, { checking: false });
+    renderReaderFallback(resolved, null, { checking: true });
+    const token = state.readerToken;
+    recoverReaderCopy(resolved, token, (message) => {
+      if (els.readerFallback && !els.readerFallback.hidden) els.readerFallbackText.textContent = message;
+    }).then((recovered) => {
+      if (!recovered && token === state.readerToken) {
+        renderReaderFallback(resolved, null, { checking: false });
+      }
+    });
     return;
   }
 

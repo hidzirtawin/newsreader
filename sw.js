@@ -4,7 +4,7 @@
  * live feeds and streams go straight to the network.
  */
 
-const VERSION = 'newsreader-v68';
+const VERSION = 'newsreader-v69';
 const SHELL = [
   './',
   './index.html',
@@ -134,30 +134,53 @@ async function proxyReader(request) {
     };
 
     let html = '';
-    if (provider === 'wallhop') {
+    let usedProvider = '';
+    if (provider === 'jina-wallhop') {
+      try {
+        html = await fetchJinaViaWallhop();
+        usedProvider = 'jina-via-wallhop';
+      } catch {
+        try {
+          html = await fetchJina();
+          usedProvider = 'jina';
+        } catch {
+          html = await fetchWallhop();
+          usedProvider = 'wallhop';
+        }
+      }
+    } else if (provider === 'wallhop') {
       try {
         html = await fetchWallhop();
+        usedProvider = 'wallhop';
         const blocked = !html || html.length < 1500 || /(are you a robot|security verification|access denied)/i.test(html.slice(0, 12000));
-        if (blocked) html = await fetchJinaViaWallhop();
+        if (blocked) {
+          html = await fetchJinaViaWallhop();
+          usedProvider = 'jina-via-wallhop';
+        }
       } catch {
         try {
           html = await fetchJinaViaWallhop();
+          usedProvider = 'jina-via-wallhop';
         } catch {
           html = await fetchJina();
+          usedProvider = 'jina';
         }
       }
     } else {
       try {
         html = await fetchJina();
+        usedProvider = 'jina';
       } catch (jinaError) {
         // Jina blocks some domains outright (space.com, Al Jazeera and
         // others). WallHop can still read them, but its raw endpoint does
         // not send CORS headers, so route the fetch through Jina instead.
         try {
           html = await fetchJinaViaWallhop();
+          usedProvider = 'jina-via-wallhop';
         } catch {
           try {
             html = await fetchWallhop();
+            usedProvider = 'wallhop';
           } catch {
             throw jinaError;
           }
@@ -176,6 +199,7 @@ async function proxyReader(request) {
     return new Response(html, {
       headers: {
         ...headers,
+        'X-Reader-Provider': usedProvider || provider,
         'Content-Security-Policy': "default-src 'self' https: data: blob:; script-src 'none'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data: blob:; font-src 'self' https: data:; media-src 'self' https:; connect-src 'self' https:; frame-src 'none';",
       },
     });
