@@ -1390,6 +1390,28 @@ export const PODCAST_SHOWS = [
     site: 'https://thedailyaus.com.au',
     description: 'Australian and global news, made for a younger generation.',
   },
+  {
+    id: 'bt-money-hacks',
+    name: 'BT Money Hacks',
+    publisher: 'The Business Times',
+    hosts: 'Howie Lim / Nicole Teo',
+    region: 'Singapore',
+    category: 'Singapore Finance',
+    feedUrl: 'https://omnycontent.com/d/playlist/d9486183-3dd4-4ad6-aebe-a4c1008455d5/5ab1aed8-8fbd-4fcd-b195-abdb0017cbcd/17f01b29-a6d7-411c-b323-abdb0017cbcf/podcast.rss',
+    site: 'https://www.businesstimes.com.sg/podcasts',
+    description: 'Personal finance, investing and money tips from The Business Times.',
+  },
+  {
+    id: 'financial-coconut',
+    name: 'The Financial Coconut',
+    publisher: 'The Financial Coconut',
+    hosts: 'Reggie & Dawn',
+    region: 'Singapore',
+    category: 'Singapore Finance',
+    feedUrl: 'https://feeds.acast.com/public/shows/62ff408997021c0012935e59',
+    site: 'https://www.thefinancialcoconut.com',
+    description: 'Singapore personal finance, retirement, investing and financial wellness.',
+  },
 ];
 
 // Complete No Wall News outlet directory. These are listed in the source
