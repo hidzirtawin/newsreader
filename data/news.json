@@ -1,6 +1,6 @@
 {
   "top": {
-    "updatedAt": "2026-11-28T01:01:34.600Z",
+    "updatedAt": "2026-11-28T01:01:36.284Z",
     "results": [
       {
         "feedId": "bbc-news",
@@ -77,6 +77,90 @@
     ],
     "articles": [
       {
+        "id": "art-92cf3e6dd70f",
+        "title": "How long does it take to get out of shape? Here's what happens when you take a break from exercise",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/wellness/exercise-fitness-break-6569671",
+        "video": false,
+        "summary": "Everyone misses workouts here and there. We asked experts what to expect after a break.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s---cOnkI0b--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/23/sci_exercise_breaks-0.jpg?itok=zRUbjmg1",
+        "pubDate": "2026-11-28T00:16:44.000Z"
+      },
+      {
+        "id": "art-216a1bf065b8",
+        "title": "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nba/story/_/id/50599642/los-angeles-lakers-luka-doncic-walker-kessler-nba",
+        "video": false,
+        "summary": "Doncic's first request when he became a Laker? Get an 'A-list' big man. It took a year, but Kessler is that man in Los Angeles.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-28T00:16:00.000Z"
+      },
+      {
+        "id": "art-23882f3b94f1",
+        "title": "Power Rankings: One player, coach or exec for whom each team is most thankful",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving",
+        "video": false,
+        "summary": "Here's where all 30 teams rank this week -- and the one person each franchise should be thanking most.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-28T00:16:00.000Z"
+      },
+      {
+        "id": "art-7f6f9fd40284",
+        "title": "Why I walked over 200km across Spain in 9 days after burning out at work",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/travel/spain-camino-de-santiago-walk-career-burnout-6562446",
+        "video": false,
+        "summary": "A panic attack and a mid-career crisis led this writer to set off on this long, arduous walk. What did he learn in the end?",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--Of34DyXo--/c_crop,h_1123,w_1997,x_2,y_243/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/20/camino_de_santiago_main.jpg?itok=D-utnlzN",
+        "pubDate": "2026-11-28T00:14:40.000Z"
+      },
+      {
+        "id": "art-541b4fa9defa",
+        "title": "With World Cup qualification at stake, the USWNT has no excuses",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/soccer/story/_/id/50598543/uswnt-womens-world-cup-qualifiers-concacaf",
+        "video": false,
+        "summary": "If the USWNT win, they are in for the 2027 Women's World Cup, but is an upset plausible during Concacaf qualifiers?",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-28T00:14:37.000Z"
+      },
+      {
+        "id": "art-0e2625e24350",
+        "title": "Victorian election 2026 live: voters head to the polls as Coalition seeks to topple Labor – latest news",
+        "source": "The Guardian World",
+        "feedId": "guardian-world",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/australia-news/live/2026/nov/28/victorian-election-live-results-updates-premier-ben-carroll-jess-wilson-warren-pickering-2026-victoria-polls-votes-latest-news-ntwnfb",
+        "video": false,
+        "summary": "Follow live updates today and results tonight as Labor’s Ben Carroll and Liberal leader Jess Wilson seek victory in Victoria’s state election Victorian election 2026 guide: what you need to know Confused about who to vote for? Check the parties’ key promises a",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://i.guim.co.uk/img/media/bb2db059012c85c6edac6613a79e6cc7f16055f1/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=033aba6c79bd77cdb16e282fc8422b86",
+        "pubDate": "2026-11-28T00:12:10.000Z"
+      },
+      {
         "id": "art-4238605d853c",
         "title": "Rihanna atop the charts, Von Miller's breakout and more trends from Texas A&M's last Lone Star Showdown win",
         "source": "ESPN",
@@ -88,7 +172,21 @@
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-28T00:04:14.000Z"
+        "pubDate": "2026-11-28T00:07:37.000Z"
+      },
+      {
+        "id": "art-64e39e968440",
+        "title": "US Black Friday online sales to cross $13 billion, Adobe says",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/business/us-black-friday-online-sales-cross-13-billion-adobe-says-6588836",
+        "video": false,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--5Sl9Q0Zr--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-28T000642Z_1_LYNXNPEMAR006_RTROPTP_3_HOLIDAYSHOPPING-RETAIL-BLACK-FRIDAY-USA.JPG?itok=sTA4CTtu",
+        "pubDate": "2026-11-28T00:06:42.000Z"
       },
       {
         "id": "art-eaf3eeefb78e",
@@ -120,7 +218,7 @@
       },
       {
         "id": "art-a1524421dd08",
-        "title": "Peter Cain resigns from Canberra Liberal Party",
+        "title": "Peter Cain resigns from Canberra Liberals",
         "source": "ABC News Australia",
         "feedId": "abc-au",
         "domain": "abc.net.au",
@@ -131,6 +229,21 @@
         "section": "",
         "imageUrl": "https://live-production.wcms.abc-cdn.net.au/4d2820bf060a4b68bfba529229cef0a8?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=0&width=862&height=485",
         "pubDate": "2026-11-27T23:33:25.000Z"
+      },
+      {
+        "id": "art-d7a47608a2eb",
+        "title": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/",
+        "video": false,
+        "summary": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T23:23:59.000Z",
+        "publisherUrl": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/"
       },
       {
         "id": "art-5f7136ca1184",
@@ -176,7 +289,7 @@
       },
       {
         "id": "art-47929892532f",
-        "title": "A bomb scare ignites 'terrorist' talk in the Territory, but was it justified?",
+        "title": "Bomb scare email distribution blasted as 'irresponsible' by criminologist",
         "source": "ABC News Australia",
         "feedId": "abc-au",
         "domain": "abc.net.au",
@@ -443,34 +556,6 @@
         "pubDate": "2026-11-27T22:34:19.000Z"
       },
       {
-        "id": "art-216a1bf065b8",
-        "title": "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nba/story/_/id/50599642/los-angeles-lakers-luka-doncic-walker-kessler-nba",
-        "video": false,
-        "summary": "Doncic's first request when he became a Laker? Get an 'A-list' big man. It took a year, but Kessler is that man in Los Angeles.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:34:03.000Z"
-      },
-      {
-        "id": "art-23882f3b94f1",
-        "title": "Power Rankings: One player, coach or exec for whom each team is most thankful",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving",
-        "video": false,
-        "summary": "Here's where all 30 teams rank this week -- and the one person each franchise should be thanking most.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:34:03.000Z"
-      },
-      {
         "id": "art-886e23a718c4",
         "title": "Walker wins Australia's first medal of World Cup season",
         "source": "ABC News Australia",
@@ -569,20 +654,6 @@
         "pubDate": "2026-11-27T22:26:27.000Z"
       },
       {
-        "id": "art-b645f99d3674",
-        "title": "Massive comebacks, walk-off wins and plenty of points: An incredible Thanksgiving of NFL football",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50609153/thanksgiving-games-bears-lions-eagles-cowboys-bills-chiefs",
-        "video": false,
-        "summary": "Three go-ahead scores in the final minute? Two comebacks from double-digit deficits? And 174 combined points across the three games? Yeah, Thursday was awesome.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:23:30.000Z"
-      },
-      {
         "id": "art-3aeba5acc6f2",
         "title": "US military says it disabled merchant ship trying to breach Iran blockade",
         "source": "Al Jazeera",
@@ -609,34 +680,6 @@
         "section": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--y7o-09AG--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-27T222402Z_1_LYNXNPEMAQ1S2_RTROPTP_3_RUGBY-UNION-NATIONSCHAMP-IRE-AUS.JPG?itok=Au-6pj1s",
         "pubDate": "2026-11-27T22:21:42.000Z"
-      },
-      {
-        "id": "art-545f42e8576a",
-        "title": "Our guide to remaining NFL Week 12 games: Matchup previews, predictions, picks and nuggets",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50587851/week-12-picks-predictions-schedule-fantasy-odds-2026",
-        "video": false,
-        "summary": "Seahawks vs. 49ers? Kirk Cousins against Atlanta? There are 12 more games in Week 12, and we have picks, predictions and more for all of them.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:16:42.000Z"
-      },
-      {
-        "id": "art-909643b7873b",
-        "title": "The 49ers have exceeded expectations -- but can they lock up the NFC West soon?",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nfl/story/_/id/50582755/san-francisco-49ers-nfc-west-playoffs-seeding",
-        "video": false,
-        "summary": "The 49ers are 9-1, and two of their next three games are against the Seahawks (6-4) and Rams (7-4) at home.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:16:42.000Z"
       },
       {
         "id": "art-cd32e699e9fe",
@@ -780,34 +823,6 @@
         "pubDate": "2026-11-27T22:00:00.000Z"
       },
       {
-        "id": "art-686d9df20db3",
-        "title": "‘Activists of rhythm’: Fighting Spain’s far-right through art",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/activists-of-rhythm-fighting-spains-far-right-through-art?traffic_source=rss",
-        "video": false,
-        "summary": "Madrid’s La Parceria and Espacio Afro cultural centres are using the arts to fight racism and boost migrant voices.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795816686.jpg?resize=1920%2C1080&quality=80",
-        "pubDate": "2026-11-27T21:59:11.000Z"
-      },
-      {
-        "id": "art-d679e3ee0ae5",
-        "title": "Tasmania's cave explorers still finding new worlds underground",
-        "source": "ABC News Australia",
-        "feedId": "abc-au",
-        "domain": "abc.net.au",
-        "url": "https://www.abc.net.au/news/2026-11-28/oldest-caving-club-southern-tasmanian-caverneers/107369636",
-        "video": false,
-        "summary": "A community of dedicated explorers is still finding new passages, vast chambers and caves that have remained hidden for millennia.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://live-production.wcms.abc-cdn.net.au/7bbeed873aaf53a271714cfdd49c0bca?impolicy=wcms_crop_resize&cropH=1581&cropW=2811&xPos=213&yPos=798&width=862&height=485",
-        "pubDate": "2026-11-27T21:58:56.000Z"
-      },
-      {
         "id": "art-0310bd7d5f12",
         "title": "‘Abusive and insulting to Canadians’: campaign to oust US ambassador presented to parliament",
         "source": "The Guardian World",
@@ -880,20 +895,6 @@
         "pubDate": "2026-11-27T17:05:37.000Z"
       },
       {
-        "id": "art-257fc92f92fb",
-        "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
-        "source": "The Guardian World",
-        "feedId": "guardian-world",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
-        "video": false,
-        "summary": "Closely watched decision exposes tensions between minority rights and the power of government to override those rights Canada’s top court has largely upheld a controversial secularism law in the province of Quebec barring public sector workers from wearing con",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/ad8c8bb232c8d2eaa7194673e8f1d7308e2a80cb/355_0_2915_2333/master/2915.jpg?width=140&quality=85&auto=format&fit=max&s=21a54fa9df7a17d193ee41b511f90aae",
-        "pubDate": "2026-11-27T16:13:07.000Z"
-      },
-      {
         "id": "art-859e920e0e50",
         "title": "Longtime AP journalist Geir Moulson, the heart of its Berlin bureau, dies at 54 - AP News",
         "source": "AP News",
@@ -925,7 +926,7 @@
     ]
   },
   "briefing": {
-    "updatedAt": "2026-11-28T01:01:34.605Z",
+    "updatedAt": "2026-11-28T01:01:36.288Z",
     "results": [
       {
         "feedId": "reuters",
@@ -959,6 +960,21 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-d7a47608a2eb",
+        "title": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/",
+        "video": false,
+        "summary": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T23:23:59.000Z",
+        "publisherUrl": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/"
+      },
       {
         "id": "art-ce6cf5093238",
         "title": "OpenAI countersues Apple for stealing trade secrets",
@@ -1206,7 +1222,7 @@
         "summary": "Husband of woman detained by ICE at Seattle airport speaks out CNN",
         "doi": "",
         "section": "",
-        "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/husband-ice-thumb-clean0.jpg?c=16x9&q=w_800,c_fill",
+        "imageUrl": "",
         "pubDate": "2026-11-27T17:53:00.000Z",
         "publisherUrl": "https://www.cnn.com/2026/11/27/us/video/ice-seattle-airport-husband-speaks-out-digvid-vrtc"
       },
@@ -1221,7 +1237,7 @@
         "summary": "When and where storms could slow your post-Thanksgiving travel CNN",
         "doi": "",
         "section": "",
-        "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2306454642.jpg?c=16x9&q=w_800,c_fill",
+        "imageUrl": "",
         "pubDate": "2026-11-27T17:27:36.000Z",
         "publisherUrl": "https://www.cnn.com/2026/11/27/weather/storms-post-thanksgiving-travel-climate"
       },
@@ -1239,6 +1255,21 @@
         "imageUrl": "",
         "pubDate": "2026-11-27T17:13:00.000Z",
         "publisherUrl": "https://www.independent.co.uk/arts-entertainment/tv/news/donald-trump-jr-netflix-hunting-wives-thanksgiving-b3092947.html"
+      },
+      {
+        "id": "art-10930f9ab9df",
+        "title": "US goods trade deficit deteriorates further as AI helps to lift imports to record high",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/",
+        "video": false,
+        "summary": "US goods trade deficit deteriorates further as AI helps to lift imports to record high Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T16:52:21.000Z",
+        "publisherUrl": "https://www.reuters.com/business/us-goods-trade-deficit-widens-sharply-october-2026-11-27/"
       },
       {
         "id": "art-61ba9418add0",
@@ -1299,21 +1330,6 @@
         "imageUrl": "",
         "pubDate": "2026-11-27T15:52:28.000Z",
         "publisherUrl": "https://www.cnn.com/2026/11/27/world/putin-lukashenko-ukraine-russia-mongolia-intl"
-      },
-      {
-        "id": "art-d7a47608a2eb",
-        "title": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/",
-        "video": false,
-        "summary": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T15:50:11.000Z",
-        "publisherUrl": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/"
       },
       {
         "id": "art-6ba8cf48dfe1",
@@ -1416,21 +1432,6 @@
         "imageUrl": "",
         "pubDate": "2026-11-27T14:31:00.000Z",
         "publisherUrl": "https://www.independent.co.uk/news/world/americas/us-politics/trump-thanksgiving-calls-veterans-b3092818.html"
-      },
-      {
-        "id": "art-ed390599b587",
-        "title": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/legal/litigation/airline-norse-atlantics-norwegian-operating-unit-declares-bankruptcy-2026-11-27/",
-        "video": false,
-        "summary": "Airline Norse Atlantic's Norwegian operating unit declares bankruptcy Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T13:37:31.000Z",
-        "publisherUrl": "https://www.reuters.com/legal/litigation/airline-norse-atlantics-norwegian-operating-unit-declares-bankruptcy-2026-11-27/"
       },
       {
         "id": "art-71acf9861131",
@@ -1694,7 +1695,7 @@
     ]
   },
   "video": {
-    "updatedAt": "2026-11-28T01:01:34.619Z",
+    "updatedAt": "2026-11-28T01:01:36.302Z",
     "results": [
       {
         "feedId": "yt-abc-news",
@@ -2289,7 +2290,7 @@
     ]
   },
   "chinese": {
-    "updatedAt": "2026-11-28T01:01:34.625Z",
+    "updatedAt": "2026-11-28T01:01:36.308Z",
     "results": [
       {
         "feedId": "bbc-chinese",
@@ -3166,7 +3167,7 @@
     ]
   },
   "world": {
-    "updatedAt": "2026-11-28T01:01:34.710Z",
+    "updatedAt": "2026-11-28T01:01:36.394Z",
     "results": [
       {
         "feedId": "bbc-world",
@@ -3302,6 +3303,77 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-92cf3e6dd70f",
+        "title": "How long does it take to get out of shape? Here's what happens when you take a break from exercise",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/wellness/exercise-fitness-break-6569671",
+        "video": false,
+        "summary": "Everyone misses workouts here and there. We asked experts what to expect after a break.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s---cOnkI0b--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/23/sci_exercise_breaks-0.jpg?itok=zRUbjmg1",
+        "pubDate": "2026-11-28T00:16:44.000Z"
+      },
+      {
+        "id": "art-7f6f9fd40284",
+        "title": "Why I walked over 200km across Spain in 9 days after burning out at work",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/travel/spain-camino-de-santiago-walk-career-burnout-6562446",
+        "video": false,
+        "summary": "A panic attack and a mid-career crisis led this writer to set off on this long, arduous walk. What did he learn in the end?",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--Of34DyXo--/c_crop,h_1123,w_1997,x_2,y_243/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/20/camino_de_santiago_main.jpg?itok=D-utnlzN",
+        "pubDate": "2026-11-28T00:14:40.000Z"
+      },
+      {
+        "id": "art-0e2625e24350",
+        "title": "Victorian election 2026 live: voters head to the polls as Coalition seeks to topple Labor – latest news",
+        "source": "The Guardian World",
+        "feedId": "guardian-world",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/australia-news/live/2026/nov/28/victorian-election-live-results-updates-premier-ben-carroll-jess-wilson-warren-pickering-2026-victoria-polls-votes-latest-news-ntwnfb",
+        "video": false,
+        "summary": "Follow live updates today and results tonight as Labor’s Ben Carroll and Liberal leader Jess Wilson seek victory in Victoria’s state election Victorian election 2026 guide: what you need to know Confused about who to vote for? Check the parties’ key promises a",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://i.guim.co.uk/img/media/bb2db059012c85c6edac6613a79e6cc7f16055f1/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=033aba6c79bd77cdb16e282fc8422b86",
+        "pubDate": "2026-11-28T00:12:10.000Z"
+      },
+      {
+        "id": "art-64e39e968440",
+        "title": "US Black Friday online sales to cross $13 billion, Adobe says",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/business/us-black-friday-online-sales-cross-13-billion-adobe-says-6588836",
+        "video": false,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--5Sl9Q0Zr--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-28T000642Z_1_LYNXNPEMAR006_RTROPTP_3_HOLIDAYSHOPPING-RETAIL-BLACK-FRIDAY-USA.JPG?itok=sTA4CTtu",
+        "pubDate": "2026-11-28T00:06:42.000Z"
+      },
+      {
+        "id": "art-d7a47608a2eb",
+        "title": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space",
+        "source": "Reuters",
+        "feedId": "reuters",
+        "domain": "reuters.com",
+        "url": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/",
+        "video": false,
+        "summary": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space Reuters",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T23:23:59.000Z",
+        "publisherUrl": "https://www.reuters.com/business/environment/million-satellites-what-spacexs-starmind-could-mean-earth-space-2026-11-27/"
+      },
       {
         "id": "art-d0f1193933c8",
         "title": "Will Taiwan vote to revive nuclear power – and why does that matter for AI?",
@@ -3540,7 +3612,7 @@
         "summary": "Madrid’s La Parceria and Espacio Afro cultural centres are using the arts to fight racism and boost migrant voices.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795816686.jpg?resize=1920%2C1080&quality=80",
+        "imageUrl": "",
         "pubDate": "2026-11-27T21:59:11.000Z"
       },
       {
@@ -3671,34 +3743,6 @@
         "pubDate": "2026-11-27T20:39:57.000Z"
       },
       {
-        "id": "art-6b38497d4688",
-        "title": "Capsized tanker carrying 7,000 tonnes of diesel to be towed away from Ibiza",
-        "source": "BBC World",
-        "feedId": "bbc-world",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.co.uk/news/articles/cvrlgz6g0ekgo?at_medium=RSS&at_campaign=rss",
-        "video": false,
-        "summary": "There are fears of a major oil spillage off Ibiza but the ship's fuel tanks are so far intact.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a324/live/235d3bb0-ea97-11f1-99a1-253766e7ad8b.jpg",
-        "pubDate": "2026-11-27T20:34:45.000Z"
-      },
-      {
-        "id": "art-0527ff8c8975",
-        "title": "Hamas chief’s last surviving son escapes Israeli strike in Gaza",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/aje-onl-nf_-hamas-chiefs-son-escapes-israeli-strike-gaza-271126?traffic_source=rss",
-        "video": false,
-        "summary": "Hamas leader Khalil al-Hayya's last surviving son Izzeldeen survived an Israeli assassination attempt on Friday.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T20:18:45.000Z"
-      },
-      {
         "id": "art-46159896dd42",
         "title": "New York City Mayor Zohran Mamdani undergoes surgery after a soccer injury",
         "source": "CNN",
@@ -3714,35 +3758,6 @@
         "publisherUrl": "https://www.cnn.com/2026/11/27/us/mamdani-surgery-achilles-tendon"
       },
       {
-        "id": "art-1c3cdafc4375",
-        "title": "UN Gaza rapporteur Francesca Albanese denied entry into Costa Rica",
-        "source": "Al Jazeera",
-        "feedId": "aljazeera",
-        "domain": "aljazeera.com",
-        "url": "https://www.aljazeera.com/video/newsfeed/2026/11/27/un-gaza-rapporteur-francesca-albanese-denied-entry-into-costa-rica?traffic_source=rss",
-        "video": false,
-        "summary": "Costa Rica has barred UN special rapporteur Francesca Albanese, citing unfounded ‘links to terrorist acts’.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T20:10:30.000Z"
-      },
-      {
-        "id": "art-ec58ea967949",
-        "title": "US disables ship trying to leave Iran, as Tehran vows to confront blockade",
-        "source": "Reuters",
-        "feedId": "reuters",
-        "domain": "reuters.com",
-        "url": "https://www.reuters.com/world/middle-east/us-disables-ship-trying-leave-iran-tehran-vows-confront-blockade-2026-11-27/",
-        "video": false,
-        "summary": "US disables ship trying to leave Iran, as Tehran vows to confront blockade Reuters",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T20:06:57.000Z",
-        "publisherUrl": "https://www.reuters.com/world/middle-east/us-disables-ship-trying-leave-iran-tehran-vows-confront-blockade-2026-11-27/"
-      },
-      {
         "id": "art-6a6143268261",
         "title": "Zelenskyy urges US to pressure Putin and questions Trump’s reference to Putin as a ‘friend’ - AP News",
         "source": "AP News",
@@ -3756,20 +3771,6 @@
         "imageUrl": "",
         "pubDate": "2026-11-27T19:33:00.000Z",
         "publisherUrl": "https://apnews.com/article/russia-ukraine-war-zelenskyy-trump-putin-d891149b4cbd6521b83096a32bd5e53d"
-      },
-      {
-        "id": "art-257fc92f92fb",
-        "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
-        "source": "The Guardian World",
-        "feedId": "guardian-world",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
-        "video": false,
-        "summary": "Closely watched decision exposes tensions between minority rights and the power of government to override those rights Canada’s top court has largely upheld a controversial secularism law in the province of Quebec barring public sector workers from wearing con",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/ad8c8bb232c8d2eaa7194673e8f1d7308e2a80cb/355_0_2915_2333/master/2915.jpg?width=140&quality=85&auto=format&fit=max&s=21a54fa9df7a17d193ee41b511f90aae",
-        "pubDate": "2026-11-27T16:13:07.000Z"
       },
       {
         "id": "art-431eaaf3c08f",
@@ -4172,7 +4173,7 @@
     ]
   },
   "us": {
-    "updatedAt": "2026-11-28T01:01:34.762Z",
+    "updatedAt": "2026-11-28T01:01:36.444Z",
     "results": [
       {
         "feedId": "cbs",
@@ -4283,7 +4284,7 @@
         "summary": "The alleged incident follows a series of breaches and outages that have been reported at federal agencies this month.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/27/ab57e21b-9108-40fe-9017-224dbac67f0e/thumbnail/1200x630/78a9e186a160c453f659218ca573f1b8/gettyimages-1244093990.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-27T23:25:24.000Z"
       },
       {
@@ -4326,7 +4327,7 @@
         "summary": "Heavy rain over flooded East Coast communities began easing Friday, and power was slowly restored to hundreds of thousands of customers.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/11/27/96670235-1b0e-4a8e-8d88-df1fbb2ee4cd/thumbnail/1200x630/d45054afa10c9592993df215dfc5746c/ap26331673311397.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-27T23:04:07.000Z"
       },
       {
@@ -4429,18 +4430,19 @@
         "publisherUrl": "https://www.cnn.com/2026/11/27/uk/kate-princess-of-wales-heal-cancer-documentary-gbr-intl"
       },
       {
-        "id": "art-9b707eafdda8",
+        "id": "art-cfc8f926db21",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-us",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z"
+        "imageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/1bb1/live/dd63ff10-ea99-11f1-a094-5fdc692f3e33.jpg",
+        "pubDate": "2026-11-27T21:55:53.000Z",
+        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
       },
       {
         "id": "art-1b533f4c2f98",
@@ -4453,7 +4455,7 @@
         "summary": "DHS chief Markwayne Mullin regrets leaving Senate as White House aides sour on him: sources New York Post",
         "doi": "",
         "section": "",
-        "imageUrl": "https://nypost.com/wp-content/uploads/sites/2/2026/11/150200580.jpg?quality=75&strip=all&w=1200",
+        "imageUrl": "",
         "pubDate": "2026-11-27T21:45:00.000Z",
         "publisherUrl": "https://nypost.com/2026/11/27/us-news/dhs-chief-markwayne-mullin-expresses-regret-on-leaving-senate-as-white-house-aides-sour-on-him-sources/"
       },
@@ -4769,7 +4771,7 @@
         "summary": "Husband of woman detained by ICE at Seattle airport speaks out CNN",
         "doi": "",
         "section": "",
-        "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/husband-ice-thumb-clean0.jpg?c=16x9&q=w_800,c_fill",
+        "imageUrl": "",
         "pubDate": "2026-11-27T17:53:00.000Z",
         "publisherUrl": "https://www.cnn.com/2026/11/27/us/video/ice-seattle-airport-husband-speaks-out-digvid-vrtc"
       },
@@ -4812,7 +4814,7 @@
         "summary": "When and where storms could slow your post-Thanksgiving travel CNN",
         "doi": "",
         "section": "",
-        "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2306454642.jpg?c=16x9&q=w_800,c_fill",
+        "imageUrl": "",
         "pubDate": "2026-11-27T17:27:36.000Z",
         "publisherUrl": "https://www.cnn.com/2026/11/27/weather/storms-post-thanksgiving-travel-climate"
       },
@@ -5140,7 +5142,7 @@
     ]
   },
   "uk": {
-    "updatedAt": "2026-11-28T01:01:34.771Z",
+    "updatedAt": "2026-11-28T01:01:36.454Z",
     "results": [
       {
         "feedId": "bbc-uk",
@@ -5180,6 +5182,20 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-0e2625e24350",
+        "title": "Victorian election 2026 live: voters head to the polls as Coalition seeks to topple Labor – latest news",
+        "source": "The Guardian World",
+        "feedId": "guardian-world",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/australia-news/live/2026/nov/28/victorian-election-live-results-updates-premier-ben-carroll-jess-wilson-warren-pickering-2026-victoria-polls-votes-latest-news-ntwnfb",
+        "video": false,
+        "summary": "Follow live updates today and results tonight as Labor’s Ben Carroll and Liberal leader Jess Wilson seek victory in Victoria’s state election Victorian election 2026 guide: what you need to know Confused about who to vote for? Check the parties’ key promises a",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://i.guim.co.uk/img/media/bb2db059012c85c6edac6613a79e6cc7f16055f1/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=033aba6c79bd77cdb16e282fc8422b86",
+        "pubDate": "2026-11-28T00:12:10.000Z"
+      },
       {
         "id": "art-0f70a37bd23c",
         "title": "Charity set up by Captain Tom Moore’s family applies to be struck off",
@@ -5237,18 +5253,19 @@
         "pubDate": "2026-11-27T22:00:00.000Z"
       },
       {
-        "id": "art-9b625deb960e",
+        "id": "art-7c9979bc3320",
         "title": "Princess of Wales documentary Heal charts ‘pilgrimage’ after cancer treatment - The Guardian",
         "source": "The Guardian",
         "feedId": "gn-gb",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdTloblNzSjA1S0pYZk5ETFFxTU1wYWYzSGc2WTVUVUdSd3dqX2toZ3V5UUN1RVdhQm5aNnllTlFXOVROcjVYUFRSZ3I5V3FUbkhWcDlTeWpIakxEX2V5TUY3Mk9mRGF6ZDUxSVRid3NwMXV1a2JUTTA0WkJjLUhBZm01c0hkR1lYVHdCQVVDRUNDcGJPVlF1alpPcmYyZm9L?oc=5",
+        "domain": "theguardian.com",
+        "url": "https://www.theguardian.com/uk-news/2026/nov/27/catherine-princess-of-wales-heal-documentary-cancer",
         "video": false,
         "summary": "Princess of Wales documentary Heal charts ‘pilgrimage’ after cancer treatment The Guardian Catherine's emotional cancer documentary strips away the stiff upper lip BBC Kate in tears over her children's voice messages in cancer documentary Sky News Recovering K",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T22:00:00.000Z"
+        "pubDate": "2026-11-27T22:00:00.000Z",
+        "publisherUrl": "https://www.theguardian.com/uk-news/2026/nov/27/catherine-princess-of-wales-heal-documentary-cancer"
       },
       {
         "id": "art-4571de9aa2a8",
@@ -5742,20 +5759,6 @@
         "pubDate": "2026-11-27T14:00:13.000Z"
       },
       {
-        "id": "art-4b30812af725",
-        "title": "NSW Labor is ‘trampling over party principles’ with preselections by captain’s call, members say",
-        "source": "The Guardian World",
-        "feedId": "guardian-world",
-        "domain": "theguardian.com",
-        "url": "https://www.theguardian.com/australia-news/2026/nov/28/nsw-labor-is-trampling-over-party-principles-with-preselections-by-captains-call-members-say",
-        "video": false,
-        "summary": "Exclusive: Ryde councillor Penny Pedersen was asked by Labor head office not to nominate for Lane Cove in March state election Get our breaking news email , free app or daily news podcast Labor’s New South Wales leadership has been accused of alienating member",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://i.guim.co.uk/img/media/f701d4a39eb16fdd66224d12974c7a8be0e18828/682_0_4560_3646/master/4560.jpg?width=140&quality=85&auto=format&fit=max&s=132ea1c04e240d682972cff67a21d9d8",
-        "pubDate": "2026-11-27T14:00:12.000Z"
-      },
-      {
         "id": "art-a852bc57a302",
         "title": "Poundland boss urges staff to feel pride in turnaround efforts",
         "source": "Sky News UK",
@@ -6024,7 +6027,7 @@
     ]
   },
   "australia": {
-    "updatedAt": "2026-11-28T01:01:34.793Z",
+    "updatedAt": "2026-11-28T01:01:36.475Z",
     "results": [
       {
         "feedId": "abc-au",
@@ -6170,7 +6173,7 @@
       },
       {
         "id": "art-a1524421dd08",
-        "title": "Peter Cain resigns from Canberra Liberal Party",
+        "title": "Peter Cain resigns from Canberra Liberals",
         "source": "ABC News Australia",
         "feedId": "abc-au",
         "domain": "abc.net.au",
@@ -6226,7 +6229,7 @@
       },
       {
         "id": "art-47929892532f",
-        "title": "A bomb scare ignites 'terrorist' talk in the Territory, but was it justified?",
+        "title": "Bomb scare email distribution blasted as 'irresponsible' by criminologist",
         "source": "ABC News Australia",
         "feedId": "abc-au",
         "domain": "abc.net.au",
@@ -6916,7 +6919,7 @@
     ]
   },
   "canada": {
-    "updatedAt": "2026-11-28T01:01:34.798Z",
+    "updatedAt": "2026-11-28T01:01:36.479Z",
     "results": [
       {
         "feedId": "cbc-top",
@@ -7230,18 +7233,19 @@
         "pubDate": "2026-11-27T17:41:21.000Z"
       },
       {
-        "id": "art-355fd97bab46",
+        "id": "art-c85ad9980a38",
         "title": "4-day storm dumps 734 mm of rain at Vancouver Island weather station - CHEK News",
         "source": "CHEK News",
         "feedId": "gn-ca",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSGZQd2JOYURweWJRcktScWE2UWxkUHdpSnhEem05R2lfR1FPZGNPMUlFRmFveE9RdElJU3BhWS1iUXVaODE2R3A5MkFwRlRlbmRpRE1WM19rRWZLai15Y3lzeG05R1pPLW5hMzFGZVBsMlJjV2MtU05zWVRmbEE1N0VLYVZ6eVFNSXc2S1ZDeThiSXR2LXBmeFJIRm1FZw?oc=5",
+        "domain": "cheknews.ca",
+        "url": "https://cheknews.ca/4-day-storm-dumps-734-mm-of-rain-at-vancouver-island-weather-station-1364796/",
         "video": false,
         "summary": "4-day storm dumps 734 mm of rain at Vancouver Island weather station CHEK News Flooding risk persists in parts of B.C.'s South Coast despite end of rain and wind warnings CBC District of Squamish asks residents to limit indoor water use after wet B.C. weather ",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T15:49:53.000Z"
+        "pubDate": "2026-11-27T15:49:53.000Z",
+        "publisherUrl": "https://cheknews.ca/4-day-storm-dumps-734-mm-of-rain-at-vancouver-island-weather-station-1364796/"
       },
       {
         "id": "art-9136262b86ef",
@@ -7625,7 +7629,7 @@
     ]
   },
   "singapore": {
-    "updatedAt": "2026-11-28T01:01:34.803Z",
+    "updatedAt": "2026-11-28T01:01:36.483Z",
     "results": [
       {
         "feedId": "cna",
@@ -7653,6 +7657,48 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-92cf3e6dd70f",
+        "title": "How long does it take to get out of shape? Here's what happens when you take a break from exercise",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/wellness/exercise-fitness-break-6569671",
+        "video": false,
+        "summary": "Everyone misses workouts here and there. We asked experts what to expect after a break.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s---cOnkI0b--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/23/sci_exercise_breaks-0.jpg?itok=zRUbjmg1",
+        "pubDate": "2026-11-28T00:16:44.000Z"
+      },
+      {
+        "id": "art-7f6f9fd40284",
+        "title": "Why I walked over 200km across Spain in 9 days after burning out at work",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/travel/spain-camino-de-santiago-walk-career-burnout-6562446",
+        "video": false,
+        "summary": "A panic attack and a mid-career crisis led this writer to set off on this long, arduous walk. What did he learn in the end?",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--Of34DyXo--/c_crop,h_1123,w_1997,x_2,y_243/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/20/camino_de_santiago_main.jpg?itok=D-utnlzN",
+        "pubDate": "2026-11-28T00:14:40.000Z"
+      },
+      {
+        "id": "art-64e39e968440",
+        "title": "US Black Friday online sales to cross $13 billion, Adobe says",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/business/us-black-friday-online-sales-cross-13-billion-adobe-says-6588836",
+        "video": false,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--5Sl9Q0Zr--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-28T000642Z_1_LYNXNPEMAR006_RTROPTP_3_HOLIDAYSHOPPING-RETAIL-BLACK-FRIDAY-USA.JPG?itok=sTA4CTtu",
+        "pubDate": "2026-11-28T00:06:42.000Z"
+      },
       {
         "id": "art-ae9b510d0aff",
         "title": "Lyon dropped from Australia's test squad v New Zealand",
@@ -7874,7 +7920,7 @@
         "summary": "",
         "doi": "",
         "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--d32ewtXq--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-27T184342Z_1_LYNXNPEMAQ1MH_RTROPTP_3_RUGBY-UNION-NATIONSCHAMP-ITA-FJI.JPG?itok=yPToHpZk",
+        "imageUrl": "",
         "pubDate": "2026-11-27T18:43:42.000Z"
       },
       {
@@ -7904,48 +7950,6 @@
         "section": "",
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--Pskm4aJJ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T142945Z_1_LYNXNPEMAQ185_RTROPTP_3_KENYA-RELIGION.JPG?itok=Wqpo0XhS",
         "pubDate": "2026-11-27T18:21:47.000Z"
-      },
-      {
-        "id": "art-086e6d97b607",
-        "title": "Audi lose Italian GP appeal months after the event",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/sport/audi-lose-italian-gp-appeal-months-after-event-6588416",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T17:45:43.000Z"
-      },
-      {
-        "id": "art-1bf288bb337a",
-        "title": "Zelenskyy urges the US to pressure Putin, calling Trump’s 'my friend' remark strange",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/world/zelenskyy-trump-russia-ukraine-putin-us-friend-6588296",
-        "video": false,
-        "summary": "The Ukrainian president’s comments come amid tensions over delayed Patriot missile deliveries, Starlink disruptions and EU leaders’ failure to agree on a US$49 billion loan to Ukraine.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--PAqRjP1f--/fl_relative,g_south_east,l_one-cms:core:watermark:ap_data-1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/Germany_Ukraine_War_15897.jpg?itok=gjsz9W07",
-        "pubDate": "2026-11-27T17:28:50.000Z"
-      },
-      {
-        "id": "art-59190ea50b1c",
-        "title": "Rose says record-breaking Bournemouth must stay focussed",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/sport/rose-says-record-breaking-bournemouth-must-stay-focussed-6588381",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T17:13:03.000Z"
       },
       {
         "id": "art-faf9dbcfb4d4",
@@ -8356,25 +8360,11 @@
         "section": "",
         "imageUrl": "https://static.mothership.sg/1/2026/11/1000_525-3.png",
         "pubDate": "2026-11-27T02:03:47.000Z"
-      },
-      {
-        "id": "art-545e638e0c02",
-        "title": "Civil servants to receive 1.55-month year-end bonus - The Straits Times",
-        "source": "The Straits Times",
-        "feedId": "gn-sg",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTEN0aWZ1YWJNQnRENEhTTVo1OVZFd0VxZTZJUDJUcjRkUTc0cXpoc1R3OWVIdjZOeXhXOXpjS1RLUm5JUlR1ZG56MDdtM1NoUlpHSGw1eDkzMHBrMElXeFdnTTRzT3FvRmxnYzl0N1BZVjRHenNORm9FNUdMdW9Md1NoVVJwWThyTy1MbDhOV05FbHFp?oc=5",
-        "video": false,
-        "summary": "Civil servants to receive 1.55-month year-end bonus The Straits Times See more headlines and perspectives on Google News",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-25T09:12:00.000Z"
       }
     ]
   },
   "malaysia": {
-    "updatedAt": "2026-11-28T01:01:34.814Z",
+    "updatedAt": "2026-11-28T01:01:36.495Z",
     "results": [
       {
         "feedId": "berita-harian",
@@ -9268,7 +9258,7 @@
     ]
   },
   "asia": {
-    "updatedAt": "2026-11-28T01:01:34.904Z",
+    "updatedAt": "2026-11-28T01:15:24.071Z",
     "results": [
       {
         "feedId": "cna",
@@ -9410,6 +9400,48 @@
       }
     ],
     "articles": [
+      {
+        "id": "art-92cf3e6dd70f",
+        "title": "How long does it take to get out of shape? Here's what happens when you take a break from exercise",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/wellness/exercise-fitness-break-6569671",
+        "video": false,
+        "summary": "Everyone misses workouts here and there. We asked experts what to expect after a break.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s---cOnkI0b--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/23/sci_exercise_breaks-0.jpg?itok=zRUbjmg1",
+        "pubDate": "2026-11-28T00:16:44.000Z"
+      },
+      {
+        "id": "art-7f6f9fd40284",
+        "title": "Why I walked over 200km across Spain in 9 days after burning out at work",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/travel/spain-camino-de-santiago-walk-career-burnout-6562446",
+        "video": false,
+        "summary": "A panic attack and a mid-career crisis led this writer to set off on this long, arduous walk. What did he learn in the end?",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--Of34DyXo--/c_crop,h_1123,w_1997,x_2,y_243/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/20/camino_de_santiago_main.jpg?itok=D-utnlzN",
+        "pubDate": "2026-11-28T00:14:40.000Z"
+      },
+      {
+        "id": "art-64e39e968440",
+        "title": "US Black Friday online sales to cross $13 billion, Adobe says",
+        "source": "CNA",
+        "feedId": "cna",
+        "domain": "channelnewsasia.com",
+        "url": "https://www.channelnewsasia.com/business/us-black-friday-online-sales-cross-13-billion-adobe-says-6588836",
+        "video": false,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--5Sl9Q0Zr--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-28T000642Z_1_LYNXNPEMAR006_RTROPTP_3_HOLIDAYSHOPPING-RETAIL-BLACK-FRIDAY-USA.JPG?itok=sTA4CTtu",
+        "pubDate": "2026-11-28T00:06:42.000Z"
+      },
       {
         "id": "art-2974e11dcbd1",
         "title": "Top headlines in major S. Korean newspapers",
@@ -9631,7 +9663,7 @@
         "summary": "",
         "doi": "",
         "section": "",
-        "imageUrl": "https://img.taipeitimes.com/images/2026/11/28/P02-261128-0sfsdfs.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
@@ -9645,7 +9677,7 @@
         "summary": "",
         "doi": "",
         "section": "",
-        "imageUrl": "https://img.taipeitimes.com/images/2026/11/28/P02-261128-009.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
@@ -9655,20 +9687,6 @@
         "feedId": "taipei-times",
         "domain": "taipeitimes.com",
         "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/28/2003868547",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://img.taipeitimes.com/images/2026/11/28/P02-261128-006.jpg",
-        "pubDate": "2026-11-28T00:00:00.000Z"
-      },
-      {
-        "id": "art-ccdf5e5eb714",
-        "title": "Young authors",
-        "source": "Taipei Times",
-        "feedId": "taipei-times",
-        "domain": "taipeitimes.com",
-        "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/11/28/2003868548",
         "video": false,
         "summary": "",
         "doi": "",
@@ -9745,34 +9763,6 @@
         "section": "",
         "imageUrl": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/11/27/575940.jpeg",
         "pubDate": "2026-11-27T23:00:00.000Z"
-      },
-      {
-        "id": "art-ae9b510d0aff",
-        "title": "Lyon dropped from Australia's test squad v New Zealand",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/sport/lyon-dropped-australias-test-squad-v-new-zealand-6588736",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--e8tpcH1g--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-27T225722Z_1_LYNXNPEMAQ1SM_RTROPTP_3_CRICKET-ASHES.JPG?itok=zm0aGIeU",
-        "pubDate": "2026-11-27T22:57:22.000Z"
-      },
-      {
-        "id": "art-be642f9d4ea4",
-        "title": "US government bars bandwidth provider RETN from American networks",
-        "source": "CNA",
-        "feedId": "cna",
-        "domain": "channelnewsasia.com",
-        "url": "https://www.channelnewsasia.com/business/us-government-bars-bandwidth-provider-retn-american-networks-6588721",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--ZdHPGX9S--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/one-cms/images/2021-06/business_1.png?itok=npguKy4y",
-        "pubDate": "2026-11-27T22:41:50.000Z"
       },
       {
         "id": "art-3aeba5acc6f2",
@@ -10278,7 +10268,7 @@
     ]
   },
   "europe": {
-    "updatedAt": "2026-11-28T01:01:35.172Z",
+    "updatedAt": "2026-11-28T01:15:24.340Z",
     "results": [
       {
         "feedId": "bbc-europe",
@@ -11279,7 +11269,7 @@
     ]
   },
   "middle-east": {
-    "updatedAt": "2026-11-28T01:01:35.180Z",
+    "updatedAt": "2026-11-28T01:15:24.349Z",
     "results": [
       {
         "feedId": "bbc-middle-east",
@@ -11332,7 +11322,7 @@
         "summary": "The IDF said it killed the two Hamas terrorists who also worked as security personnel at a Doctors Without Borders clinic, using a precision airstrike to minimize civilian casualties.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/725404",
         "pubDate": "2026-11-28T01:22:32.000Z"
       },
       {
@@ -11346,7 +11336,7 @@
         "summary": "IDF interrogations revealed that Hezbollah terrorists use civilian fishing boats to approach Israeli naval forces off southern Lebanon, photographing troops and monitoring military activity.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748254",
         "pubDate": "2026-11-28T00:54:23.000Z"
       },
       {
@@ -11360,7 +11350,7 @@
         "summary": "The officers were further warned to refrain from dressing immodestly when performing their duties amongst Muslims, as well as to consider having a male officer speak to Muslim men when possible.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748252",
         "pubDate": "2026-11-28T00:49:43.000Z"
       },
       {
@@ -11374,7 +11364,7 @@
         "summary": "Iranian Navy Commander Shahram Irani told state television: \"Breaking through the enemy blockade is underway and our ports are active today.\"",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/734179",
         "pubDate": "2026-11-28T00:42:12.000Z"
       },
       {
@@ -11598,7 +11588,7 @@
         "summary": "Madrid’s La Parceria and Espacio Afro cultural centres are using the arts to fight racism and boost migrant voices.",
         "doi": "",
         "section": "",
-        "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/11/image-1795816686.jpg?resize=1920%2C1080&quality=80",
+        "imageUrl": "",
         "pubDate": "2026-11-27T21:59:11.000Z"
       },
       {
@@ -12150,7 +12140,7 @@
     ]
   },
   "africa": {
-    "updatedAt": "2026-11-28T01:01:35.184Z",
+    "updatedAt": "2026-11-28T01:15:24.353Z",
     "results": [
       {
         "feedId": "bbc-africa",
@@ -12868,7 +12858,7 @@
     ]
   },
   "latin-america": {
-    "updatedAt": "2026-11-28T01:01:35.191Z",
+    "updatedAt": "2026-11-28T01:15:24.362Z",
     "results": [
       {
         "feedId": "bbc-latin-america",
@@ -13676,7 +13666,7 @@
     ]
   },
   "india": {
-    "updatedAt": "2026-11-28T01:01:35.206Z",
+    "updatedAt": "2026-11-28T01:15:24.379Z",
     "results": [
       {
         "feedId": "bbc-india",
@@ -13722,90 +13712,6 @@
       }
     ],
     "articles": [
-      {
-        "id": "art-38159d802289",
-        "title": "Indiana stepdad's adoption overturned after mother blocks birth dad's contact",
-        "source": "The Times of India",
-        "feedId": "times-of-india",
-        "domain": "timesofindia.indiatimes.com",
-        "url": "https://timesofindia.indiatimes.com/world/us/an-indiana-stepfather-adopted-his-wifes-nine-year-old-daughter-after-a-judge-ruled-her-fathers-consent-unnecessary-on-november-25-appeals-judges-reversed-the-adoption-after-finding-the-mother-blocked-contact/articleshow/136190579.cms",
-        "video": false,
-        "summary": "An Indiana stepfather’s adoption of his wife’s daughter has been reversed by an appeals court. The ruling found that the biological father's limited contact was largely a result of the mother's attempts to limit his access. Evidence indicated he sought involve",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://static.toiimg.com/photo/msid-136190812,imgsize-593266.cms",
-        "pubDate": "2026-11-28T00:30:00.000Z"
-      },
-      {
-        "id": "art-18a6ac45bd8a",
-        "title": "Montana widow's estate wins new inheritance review after land valuation dispute",
-        "source": "The Times of India",
-        "feedId": "times-of-india",
-        "domain": "timesofindia.indiatimes.com",
-        "url": "https://timesofindia.indiatimes.com/world/us/a-montana-widows-estate-was-denied-a-share-of-her-late-husbands-property-after-officials-used-tax-assessments-to-value-land-in-two-states-the-supreme-court-has-ordered-a-new-look-at-the-inheritance/articleshow/136195941.cms",
-        "video": false,
-        "summary": "Montana's Supreme Court has mandated that a lower court revisit the distribution of a deceased man's estate to his widow. This legal dispute arose following the death of Jack Raymond Stone, leading his wife Sara Benchoff Stone to file a claim. After Sara's pas",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://static.toiimg.com/photo/msid-136196135,imgsize-89503.cms",
-        "pubDate": "2026-11-28T00:26:00.000Z"
-      },
-      {
-        "id": "art-957fd313a188",
-        "title": "Nick Jonas urges parents to keep phones in another room to be present for kids",
-        "source": "The Times of India",
-        "feedId": "times-of-india",
-        "domain": "timesofindia.indiatimes.com",
-        "url": "https://timesofindia.indiatimes.com/life-style/parenting/moments/put-the-phone-in-another-room-priyanka-chopras-husband-nick-jonas-shares-parenting-advice-for-modern-parents-explains-why-parents-should-be-present-for-their-children/articleshow/136212999.cms",
-        "video": false,
-        "summary": "During an enlightening discussion with Lewis Howes, Nick Jonas disclosed his insights on parenting. He stressed the necessity of putting down phones to engage with children meaningfully, warning that constant distractions could lead to missing irreplaceable mi",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://static.toiimg.com/photo/msid-136213127,imgsize-585312.cms",
-        "pubDate": "2026-11-28T00:25:00.000Z"
-      },
-      {
-        "id": "art-968e7cc45b6e",
-        "title": "At least eight found dead on migrant boat off Spain’s Canary Islands",
-        "source": "The Times of India",
-        "feedId": "times-of-india",
-        "domain": "timesofindia.indiatimes.com",
-        "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-8-migrants-dead-6-airlifted-to-hospital-after-boat-carrying-100-is-rescued-off-spains-canary-islands/articleshow/136235932.cms",
-        "video": false,
-        "summary": "",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://static.toiimg.com/photo/msid-136235943,imgsize-149991.cms",
-        "pubDate": "2026-11-28T00:24:10.000Z"
-      },
-      {
-        "id": "art-c359db1b4808",
-        "title": "MLA Awhad says NCP (SP) will back delimitation bill, Sule seeks draft first",
-        "source": "The Times of India",
-        "feedId": "times-of-india",
-        "domain": "timesofindia.indiatimes.com",
-        "url": "https://timesofindia.indiatimes.com/city/pune/awhad-ncp-sp-will-support-delimitation-bill-supriya-call-hinges-on-draft/articleshow/136232349.cms",
-        "video": false,
-        "summary": "NCP (SP) MLA Jitendra Awhad confirmed the party's support for the delimitation bill after meeting Sharad Pawar. Baramati MP Supriya Sule stated that the party would examine the draft before making a decision. She will miss the INDIA bloc meeting due to her fat",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://static.toiimg.com/photo/msid-136235922,imgsize-73086.cms",
-        "pubDate": "2026-11-28T00:20:36.000Z"
-      },
-      {
-        "id": "art-2c5b5f384ab8",
-        "title": "Alexandria dig uncovers possible royal tomb tunnel, but identity remain unknown",
-        "source": "The Times of India",
-        "feedId": "times-of-india",
-        "domain": "timesofindia.indiatimes.com",
-        "url": "https://timesofindia.indiatimes.com/science/archaeology/archaeologists-digging-in-alexandrias-ancient-royal-quarter-uncovered-massive-limestone-foundations-and-a-hidden-tunnel-that-could-belong-to-a-long-lost-ptolemaic-royal-tomb-but-its-identity-remains-unconfirmed/articleshow/136188231.cms",
-        "video": false,
-        "summary": "Archaeologists have unveiled an impressive limestone foundation in Alexandria that may belong to a royal tomb. The site, located in the ancient Royal Quarter, features a mysterious tunnel and a distinctive square structure. Experts believe this could be linked",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://static.toiimg.com/photo/msid-136188473,imgsize-284228.cms",
-        "pubDate": "2026-11-28T00:20:00.000Z"
-      },
       {
         "id": "art-8a0d55014e90",
         "title": "Bangladesh eyes ICJ route to bring Sheikh Hasina back from India",
@@ -13891,6 +13797,48 @@
         "pubDate": "2026-11-27T22:59:52.000Z"
       },
       {
+        "id": "art-1a8c7f07949d",
+        "title": "Wisconsin wife signs $350k prenup before wedding; court rejects deal 20 years on",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/world/us/a-wisconsin-wife-signed-a-prenup-two-days-before-her-2006-wedding-that-promised-350000-after-15-years-of-marriage-20-years-later-judges-rejected-the-deal-as-her-husbands-income-exceeded-81000-a-month/articleshow/136197083.cms",
+        "video": false,
+        "summary": "In Wisconsin, a marriage contract ignited a lengthy divorce dispute marked by staggering wealth disparities. After almost two decades, Tracy Marie Chernick managed to contest the fairness of their initial agreement. The Wisconsin Court of Appeals determined th",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136197147,imgsize-820561.cms",
+        "pubDate": "2026-11-27T22:27:00.000Z"
+      },
+      {
+        "id": "art-d6aa5859c4ea",
+        "title": "Punjab University women's rafting team wins 2 golds, silver in grade 4 rapids",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/women/life-love-self/five-punjab-university-women-trained-for-rafting-on-an-amritsar-canal-at-their-first-national-white-water-championship-they-conquered-grade-4-rapids-and-returned-with-two-gold-medals-and-overall-silver/articleshow/136211903.cms",
+        "video": false,
+        "summary": "Five brave women from Punjab took on the thrilling challenges of white-water rafting, kicking off their adventure with training sessions on a canal in Amritsar. At the 18th National Rafting Championship held in Uttarakhand, they astounded spectators by earning",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136212005,imgsize-218173.cms",
+        "pubDate": "2026-11-27T22:22:00.000Z"
+      },
+      {
+        "id": "art-d27380291cdc",
+        "title": "Texas rock shelter yields 6,500-year-old kit with boomerang, darts and hide",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/science/archaeology/archaeologists-in-a-west-texas-rock-shelter-found-a-hunting-kit-left-untouched-for-about-6500-years-with-10-dart-shafts-a-broken-boomerang-a-spear-thrower-and-a-folded-pronghorn-hide-with-its-hair-still-intact/articleshow/136187073.cms",
+        "video": false,
+        "summary": "In a remarkable archaeological find in West Texas, researchers uncovered a hunting kit that dates back approximately 6,000 years. The collection features various stone and wooden foreshafts, along with essential hunting tools, including a partial atlatl, which",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136187197,imgsize-174688.cms",
+        "pubDate": "2026-11-27T22:17:00.000Z"
+      },
+      {
         "id": "art-ecaf4d8144bb",
         "title": "Deepam row: SC raps TVK government, orders lamp to be lit at Tamil Nadu site",
         "source": "The Times of India",
@@ -13903,6 +13851,20 @@
         "section": "",
         "imageUrl": "https://static.toiimg.com/photo/msid-136233274,imgsize-51996.cms",
         "pubDate": "2026-11-27T21:42:17.000Z"
+      },
+      {
+        "id": "art-dd9f18f5f463",
+        "title": "Virginia construction worker wins disability benefits fight 7 years after fall",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/world/us/a-virginia-construction-worker-fell-about-20-feet-while-installing-siding-and-later-needed-spinal-surgery-seven-years-on-an-appeals-court-has-rejected-his-employers-bid-to-stop-disability-benefits/articleshow/136189169.cms",
+        "video": false,
+        "summary": "A Virginia appeals court upheld the temporary total disability benefits for construction worker Olegario Felipe Valles. Valles had suffered serious injuries from a 20-foot fall while working in 2019 and underwent spinal fusion surgery. The court supported the ",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136189272,imgsize-1313872.cms",
+        "pubDate": "2026-11-27T21:25:00.000Z"
       },
       {
         "id": "art-c155e3bc3614",
@@ -14228,6 +14190,20 @@
         "pubDate": "2026-11-27T16:50:38.000Z"
       },
       {
+        "id": "art-bcb21ed49e0c",
+        "title": "HC clears Tata Sons’ board meet on Monday, says decisions subject to final orders",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/bombay-hc-denies-relief-to-tata-trusts-says-tata-sons-nov-30-meeting-can-go-ahead-but-decisions-taken-subject-to-its-final-orders/articleshow/136228503.cms",
+        "video": false,
+        "summary": "",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136228617,imgsize-184068.cms",
+        "pubDate": "2026-11-27T16:41:43.000Z"
+      },
+      {
         "id": "art-e517f6d80e61",
         "title": "Adani Group seeks government approval to invest in airlines as expansion gathers pace",
         "source": "Mint",
@@ -14355,21 +14331,6 @@
         "pubDate": "2026-11-27T14:04:07.000Z"
       },
       {
-        "id": "art-7a47fb125ce6",
-        "title": "Kallakurichi TVK MLA Arul Vignesh arrested on charges of harassing IAS officer - The Hindu",
-        "source": "The Hindu",
-        "feedId": "gn-in",
-        "domain": "thehindu.com",
-        "url": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-arul-vignesh-arrested-on-charges-of-harassing-ias-officer/article71751055.ece",
-        "video": false,
-        "summary": "Kallakurichi TVK MLA Arul Vignesh arrested on charges of harassing IAS officer The Hindu தவெக எம்எல்ஏ ஆபாச மெசேஜ் அனுப்பினாரா? இல்லையா? நாளை அறிக்கை அளிக்க உயர்நீதிமன்றம் உத்தரவு..! Polimer News “நீங்க கைது பண்ணல...நாங்க கைது பண்ண வெச்சோம்” - முதல்வர் விஜய்க்க",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T13:54:57.000Z",
-        "publisherUrl": "https://www.thehindu.com/news/national/tamil-nadu/kallakurichi-tvk-mla-arul-vignesh-arrested-on-charges-of-harassing-ias-officer/article71751055.ece"
-      },
-      {
         "id": "art-ea78430e49bb",
         "title": "NCP-SP announces support to delimitation, Congress calls it ‘unfortunate’ - The Hindu",
         "source": "The Hindu",
@@ -14427,6 +14388,20 @@
         "pubDate": "2026-11-27T13:36:54.000Z"
       },
       {
+        "id": "art-39e87e5cf3a6",
+        "title": "Kallakurichi TVK MLA Arul Vignesh arrested on charges of harassing woman IAS officer",
+        "source": "The Times of India",
+        "feedId": "times-of-india",
+        "domain": "timesofindia.indiatimes.com",
+        "url": "https://timesofindia.indiatimes.com/city/chennai/kallakurichi-tvk-mla-arul-vignesh-arrested-on-charges-of-harassing-woman-ias-officer/articleshow/136223753.cms",
+        "video": false,
+        "summary": "A police team led by inspector Bhuvaneshwari took him into custody from his residence after obtaining an arrest warrant from a magistrate's court in Kallakurichi.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://static.toiimg.com/photo/msid-136223768,imgsize-29558.cms",
+        "pubDate": "2026-11-27T13:10:45.000Z"
+      },
+      {
         "id": "art-3797f3fac755",
         "title": "Rohit Sharma to lead Mumbai Indians again in IPL 2027 - ESPN India",
         "source": "ESPN India",
@@ -14468,6 +14443,20 @@
         "section": "",
         "imageUrl": "",
         "pubDate": "2026-11-27T11:32:05.000Z"
+      },
+      {
+        "id": "art-98565cc6013f",
+        "title": "West Bengal consumer commission directs momo outlet to pay ₹50,000 for charging ₹10 extra for packaging",
+        "source": "Mint",
+        "feedId": "mint",
+        "domain": "livemint.com",
+        "url": "https://www.livemint.com/news/india/west-bengal-consumer-commission-directs-momo-outlet-to-pay-rs-50-000-for-charging-rs-10-extra-for-packaging-11795777988121.html",
+        "video": false,
+        "summary": "The customer bought two plates of chicken momos, each priced at ₹109, from the outlet on October 29, 2024. The customer was charged an additional ₹10 on the bill.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-27T11:27:42.000Z"
       },
       {
         "id": "art-1002615d179d",
@@ -14575,7 +14564,7 @@
     ]
   },
   "china": {
-    "updatedAt": "2026-11-28T01:01:35.219Z",
+    "updatedAt": "2026-11-28T01:15:24.393Z",
     "results": [
       {
         "feedId": "bbc-china",
@@ -14661,7 +14650,7 @@
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
-        "imageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/1bb1/live/dd63ff10-ea99-11f1-a094-5fdc692f3e33.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-27T21:55:53.000Z",
         "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
       },
@@ -15486,7 +15475,7 @@
     ]
   },
   "russia": {
-    "updatedAt": "2026-11-28T01:01:35.229Z",
+    "updatedAt": "2026-11-28T01:15:24.404Z",
     "results": [
       {
         "feedId": "moscow-times",
@@ -16370,7 +16359,7 @@
     ]
   },
   "business": {
-    "updatedAt": "2026-11-28T01:01:35.250Z",
+    "updatedAt": "2026-11-28T01:15:24.425Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -17073,19 +17062,18 @@
         "pubDate": "2026-11-27T08:34:54.000Z"
       },
       {
-        "id": "art-4a6cc74044a8",
+        "id": "art-31915e4cdf56",
         "title": "France Q3 GDP revised lower as economic woes deepen",
         "source": "investingLive",
         "feedId": "investinglive",
         "domain": "investinglive.com",
-        "url": "https://investinglive.com/news/france-q3-gdp-revised-lower-as-economic-woes-deepen/",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObHpDTWN6NGNiY0xxcHFONXFWVFdxUmE5U29jSmlrNk9lNUFPWnhsay1FdFhOQ1FVcVpNUndNWjk5eWxwUnRvVkpxVEQtbkdBckE3N2dzYVd1dHVFRG81VHItZzNKNklFczh2UGVhc2p3SGFKUlJRVTZjMHV3MlR4dFZuSUxLOGpJbDlz?oc=5",
         "video": false,
         "summary": "France Q3 GDP revised lower as economic woes deepen investingLive",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T08:00:40.000Z",
-        "publisherUrl": "https://investinglive.com/news/france-q3-gdp-revised-lower-as-economic-woes-deepen/"
+        "pubDate": "2026-11-27T08:00:40.000Z"
       },
       {
         "id": "art-6ebbb6ed649b",
@@ -17293,7 +17281,7 @@
     ]
   },
   "technology": {
-    "updatedAt": "2026-11-28T01:01:35.319Z",
+    "updatedAt": "2026-11-28T01:15:24.494Z",
     "results": [
       {
         "feedId": "verge",
@@ -18248,7 +18236,7 @@
     ]
   },
   "ai": {
-    "updatedAt": "2026-11-28T01:01:35.326Z",
+    "updatedAt": "2026-11-28T01:15:24.501Z",
     "results": [
       {
         "feedId": "verge-ai",
@@ -19125,7 +19113,7 @@
     ]
   },
   "sports": {
-    "updatedAt": "2026-11-28T01:01:35.375Z",
+    "updatedAt": "2026-11-28T01:15:24.550Z",
     "results": [
       {
         "feedId": "espn",
@@ -19214,6 +19202,48 @@
     ],
     "articles": [
       {
+        "id": "art-216a1bf065b8",
+        "title": "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nba/story/_/id/50599642/los-angeles-lakers-luka-doncic-walker-kessler-nba",
+        "video": false,
+        "summary": "Doncic's first request when he became a Laker? Get an 'A-list' big man. It took a year, but Kessler is that man in Los Angeles.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-28T00:16:00.000Z"
+      },
+      {
+        "id": "art-23882f3b94f1",
+        "title": "Power Rankings: One player, coach or exec for whom each team is most thankful",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving",
+        "video": false,
+        "summary": "Here's where all 30 teams rank this week -- and the one person each franchise should be thanking most.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-28T00:16:00.000Z"
+      },
+      {
+        "id": "art-541b4fa9defa",
+        "title": "With World Cup qualification at stake, the USWNT has no excuses",
+        "source": "ESPN",
+        "feedId": "espn",
+        "domain": "espn.com",
+        "url": "https://www.espn.com/soccer/story/_/id/50598543/uswnt-womens-world-cup-qualifiers-concacaf",
+        "video": false,
+        "summary": "If the USWNT win, they are in for the 2027 Women's World Cup, but is an upset plausible during Concacaf qualifiers?",
+        "doi": "",
+        "section": "",
+        "imageUrl": "",
+        "pubDate": "2026-11-28T00:14:37.000Z"
+      },
+      {
         "id": "art-4d04e9118543",
         "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Texas vs. Texas A&M on Black Friday",
         "source": "CBS Sports",
@@ -19253,7 +19283,7 @@
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-28T00:04:14.000Z"
+        "pubDate": "2026-11-28T00:07:37.000Z"
       },
       {
         "id": "art-18250569f69c",
@@ -19775,34 +19805,6 @@
         "pubDate": "2026-11-27T22:35:57.000Z"
       },
       {
-        "id": "art-216a1bf065b8",
-        "title": "'I wanted Walker': Why the new Lakers center is the X factor for the Luka Doncic era",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nba/story/_/id/50599642/los-angeles-lakers-luka-doncic-walker-kessler-nba",
-        "video": false,
-        "summary": "Doncic's first request when he became a Laker? Get an 'A-list' big man. It took a year, but Kessler is that man in Los Angeles.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:34:03.000Z"
-      },
-      {
-        "id": "art-23882f3b94f1",
-        "title": "Power Rankings: One player, coach or exec for whom each team is most thankful",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving",
-        "video": false,
-        "summary": "Here's where all 30 teams rank this week -- and the one person each franchise should be thanking most.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:34:03.000Z"
-      },
-      {
         "id": "art-bd284cb6f4d1",
         "title": "Former lottery pick Rob Dillingham sucker-punched in G League game, leading to scrum, multiple ejections",
         "source": "CBS Sports",
@@ -19857,20 +19859,6 @@
         "section": "",
         "imageUrl": "https://sportshub.cbsistatic.com/i/2026/11/27/1473d206-99da-4d2e-ad3f-344916f0ba40/chambliss.jpg",
         "pubDate": "2026-11-27T22:28:45.000Z"
-      },
-      {
-        "id": "art-6fafc4c97501",
-        "title": "A final regular-season feast with some uncharacteristically weighty rivalries",
-        "source": "ESPN",
-        "feedId": "espn",
-        "domain": "espn.com",
-        "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-        "video": false,
-        "summary": "Among 20 big games, some classic rivalries have fallen down the pecking order.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "",
-        "pubDate": "2026-11-27T22:27:12.000Z"
       },
       {
         "id": "art-c9942513d20e",
@@ -20064,7 +20052,7 @@
     ]
   },
   "sport-football": {
-    "updatedAt": "2026-11-28T01:01:35.377Z",
+    "updatedAt": "2026-11-28T01:15:24.552Z",
     "results": [
       {
         "feedId": "bbc-football",
@@ -20531,7 +20519,7 @@
     ]
   },
   "sport-cricket": {
-    "updatedAt": "2026-11-28T01:01:35.385Z",
+    "updatedAt": "2026-11-28T01:15:24.560Z",
     "results": [
       {
         "feedId": "bbc-cricket",
@@ -21402,7 +21390,7 @@
     ]
   },
   "sport-rugby-league": {
-    "updatedAt": "2026-11-28T01:01:35.387Z",
+    "updatedAt": "2026-11-28T01:15:24.562Z",
     "results": [
       {
         "feedId": "bbc-rugby-league",
@@ -21785,7 +21773,7 @@
     ]
   },
   "sport-afl": {
-    "updatedAt": "2026-11-28T01:01:35.391Z",
+    "updatedAt": "2026-11-28T01:15:24.566Z",
     "results": [
       {
         "feedId": "afl-official",
@@ -22466,7 +22454,7 @@
     ]
   },
   "sport-rugby-union": {
-    "updatedAt": "2026-11-28T01:01:35.393Z",
+    "updatedAt": "2026-11-28T01:15:24.568Z",
     "results": [
       {
         "feedId": "bbc-rugby-union",
@@ -22975,7 +22963,7 @@
     ]
   },
   "sport-boxing": {
-    "updatedAt": "2026-11-28T01:01:35.400Z",
+    "updatedAt": "2026-11-28T01:15:24.575Z",
     "results": [
       {
         "feedId": "bbc-boxing",
@@ -23790,7 +23778,7 @@
     ]
   },
   "sport-mma": {
-    "updatedAt": "2026-11-28T01:01:35.406Z",
+    "updatedAt": "2026-11-28T01:15:24.581Z",
     "results": [
       {
         "feedId": "bbc-mma",
@@ -23829,7 +23817,7 @@
         "summary": "Former City Kickboxing fighter slams team for wanting ‘to talk sh*t and lie,’ compares coach to pig MMA Fighting",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2274143277.jpg?quality=90&strip=all&crop=0%2C4.2612164178891%2C100%2C78.52497641172&w=1200",
         "pubDate": "2026-11-27T21:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523624/former-city-kickboxing-fighter-slams-team-for-wanting-to-talk-sht-and-lie-compares-coach-to-pig"
       },
@@ -23844,7 +23832,7 @@
         "summary": "Cody Garbrandt announces retirement bout to take place at UFC Cleveland MMA Fighting",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2285585292.jpg?quality=90&strip=all&crop=0%2C4.6832583186374%2C100%2C78.524556925567&w=1200",
         "pubDate": "2026-11-27T19:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523641/cody-garbrandt-announces-retirement-bout-to-take-place-at-ufc-cleveland"
       },
@@ -23859,7 +23847,7 @@
         "summary": "‘I bit him one time… and he kicked me in my throat’: Tyron Woodley reacts to Stephen Thompson’s UFC retirement MMA Fighting",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-622940918.jpg?quality=90&strip=all&crop=0%2C12.94988545763%2C100%2C71.902829242866&w=1200",
         "pubDate": "2026-11-27T18:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523330/i-bit-him-one-time-and-he-kicked-me-in-my-throat-tyron-woodley-reacts-to-stephen-thompsons-ufc-retirement"
       },
@@ -23874,7 +23862,7 @@
         "summary": "Report: Tyson Fury cleared for Anthony Joshua fight, wife retracts schizophrenia claim MMA Fighting",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-2297395934.jpg?quality=90&strip=all&crop=0%2C4.9251583357227%2C100%2C78.542163756101&w=1200",
         "pubDate": "2026-11-27T16:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/boxing/523620/report-tyson-fury-cleared-for-anthony-joshua-fight-wife-retracts-schizophrenia-claim"
       },
@@ -23889,7 +23877,7 @@
         "summary": "Artem Lobov open to reconcile with Conor McGregor but ‘he did things while this whole court case was going on that I can’t forgive’ MMA Fighting",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://platform.mmafighting.com/wp-content/uploads/sites/109/2026/11/gettyimages-624421782.jpg?quality=90&strip=all&crop=0%2C4.8678483118356%2C100%2C69.954478331442&w=1200",
         "pubDate": "2026-11-27T15:00:00.000Z",
         "publisherUrl": "https://www.mmafighting.com/ufc/523605/artem-lobov-open-to-reconcile-with-conor-mcgregor-but-he-did-things-while-this-whole-court-case-was-going-on-that-i-cant-forgive"
       },
@@ -23904,7 +23892,7 @@
         "summary": "Ilia Topuria ’s former coach, Jorge Climent, has addressed his first professional defeat.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261127034115_ilia_former_coach_new_team.JPG",
         "pubDate": "2026-11-27T05:20:15.000Z"
       },
       {
@@ -23918,7 +23906,7 @@
         "summary": "Carlos Prates scoffed at Michael Morales ’ prediction for their upcoming title fight.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261127051258_prates_laughs_off_morales_prediction.JPG",
         "pubDate": "2026-11-27T05:12:58.000Z"
       },
       {
@@ -23932,7 +23920,7 @@
         "summary": "Paulo Costa has slammed City Kickboxing fighters for holding up the division.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261127045245_costa_slams_ckb.JPG",
         "pubDate": "2026-11-27T04:52:45.000Z"
       },
       {
@@ -23946,7 +23934,7 @@
         "summary": "Amir Albazi wants to settle “unfinished business” with Brandon Royval .",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://www1-cdn.sherdog.com/_images/headers/20261127042641_albazi_royval_rebook.JPG",
         "pubDate": "2026-11-27T04:26:41.000Z"
       },
       {
@@ -24319,7 +24307,7 @@
     ]
   },
   "sport-tennis": {
-    "updatedAt": "2026-11-28T01:01:35.408Z",
+    "updatedAt": "2026-11-28T01:15:24.583Z",
     "results": [
       {
         "feedId": "bbc-tennis",
@@ -24842,7 +24830,7 @@
     ]
   },
   "sport-f1": {
-    "updatedAt": "2026-11-28T01:01:35.412Z",
+    "updatedAt": "2026-11-28T01:15:24.588Z",
     "results": [
       {
         "feedId": "bbc-f1",
@@ -25525,7 +25513,7 @@
     ]
   },
   "sport-golf": {
-    "updatedAt": "2026-11-28T01:01:35.414Z",
+    "updatedAt": "2026-11-28T01:15:24.590Z",
     "results": [
       {
         "feedId": "bbc-golf",
@@ -25824,7 +25812,7 @@
     ]
   },
   "sport-nba": {
-    "updatedAt": "2026-11-28T01:01:35.415Z",
+    "updatedAt": "2026-11-28T01:15:24.590Z",
     "results": [
       {
         "feedId": "cbs-nba",
@@ -26089,7 +26077,7 @@
     ]
   },
   "sport-nfl": {
-    "updatedAt": "2026-11-28T01:01:35.415Z",
+    "updatedAt": "2026-11-28T01:15:24.591Z",
     "results": [
       {
         "feedId": "cbs-nfl",
@@ -26354,7 +26342,7 @@
     ]
   },
   "health": {
-    "updatedAt": "2026-11-28T01:01:35.422Z",
+    "updatedAt": "2026-11-28T01:15:24.598Z",
     "results": [
       {
         "feedId": "sciencedaily-health",
@@ -26487,6 +26475,20 @@
         "publisherUrl": "https://medicalxpress.com/news/2026-11-antibiotics-pool-drug-candidates.html"
       },
       {
+        "id": "art-8852bb397a39",
+        "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+        "source": "NPR News",
+        "feedId": "npr-news",
+        "domain": "npr.org",
+        "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+        "video": false,
+        "summary": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
+        "doi": "",
+        "section": "",
+        "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5079x3386+0+0/resize/5079x3386!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F22%2F2e%2Fbd2ef7014b16a3b474a9ef7aad59%2Fgettyimages-2301934612.jpg",
+        "pubDate": "2026-11-27T10:00:00.000Z"
+      },
+      {
         "id": "art-19a69e3caaa5",
         "title": "Screen-free tweens try their hand at Dungeons & Dragons",
         "source": "NPR News",
@@ -26512,20 +26514,6 @@
         "doi": "",
         "section": "",
         "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5714x3802+0+0/resize/5714x3802!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2Ffb%2F9c%2F9713cdb545dbb1fb84bae3122894%2Fgettyimages-2272594799.jpg",
-        "pubDate": "2026-11-27T10:00:00.000Z"
-      },
-      {
-        "id": "art-8852bb397a39",
-        "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-        "source": "NPR News",
-        "feedId": "npr-news",
-        "domain": "npr.org",
-        "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
-        "video": false,
-        "summary": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
-        "doi": "",
-        "section": "",
-        "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5079x3386+0+0/resize/5079x3386!/quality/85/format/webp/?url=https%3A%2F%2Fnpr-production-npr.s3.us-east-1.amazonaws.com%2Fbrightspot%2F22%2F2e%2Fbd2ef7014b16a3b474a9ef7aad59%2Fgettyimages-2301934612.jpg",
         "pubDate": "2026-11-27T10:00:00.000Z"
       },
       {
@@ -27230,7 +27218,7 @@
     ]
   },
   "research": {
-    "updatedAt": "2026-11-28T01:01:35.539Z",
+    "updatedAt": "2026-11-28T01:15:24.747Z",
     "results": [
       {
         "feedId": "lancet",
@@ -28033,7 +28021,10 @@
         "doi": "10.1371/journal.pone.0363891",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-25T14:00:00.000Z"
+        "pubDate": "2026-11-25T14:00:00.000Z",
+        "oaUrl": "",
+        "oaPdf": "",
+        "oaStatus": "gold"
       },
       {
         "id": "art-cbcd1dc26746",
@@ -28150,7 +28141,10 @@
         "doi": "10.1016/j.ebiom.2026.106548",
         "section": "Articles",
         "imageUrl": "",
-        "pubDate": "2026-11-18T15:14:01.000Z"
+        "pubDate": "2026-11-18T15:14:01.000Z",
+        "oaUrl": "",
+        "oaPdf": "",
+        "oaStatus": "gold"
       },
       {
         "id": "art-d3d286586bf8",
@@ -28169,7 +28163,7 @@
     ]
   },
   "science": {
-    "updatedAt": "2026-11-28T01:01:35.602Z",
+    "updatedAt": "2026-11-28T01:15:24.816Z",
     "results": [
       {
         "feedId": "sciencedaily",
@@ -29128,7 +29122,7 @@
     ]
   },
   "entertainment": {
-    "updatedAt": "2026-11-28T01:01:35.627Z",
+    "updatedAt": "2026-11-28T01:15:24.844Z",
     "results": [
       {
         "feedId": "guardian-culture",
@@ -30023,7 +30017,7 @@
     ]
   },
   "politics": {
-    "updatedAt": "2026-11-28T01:01:35.660Z",
+    "updatedAt": "2026-11-28T01:15:24.885Z",
     "results": [
       {
         "feedId": "npr-politics",
@@ -30934,7 +30928,7 @@
     ]
   },
   "finance": {
-    "updatedAt": "2026-11-28T01:01:35.672Z",
+    "updatedAt": "2026-11-28T01:15:24.898Z",
     "results": [
       {
         "feedId": "cnbc",
@@ -31832,7 +31826,7 @@
     ]
   },
   "lifestyle": {
-    "updatedAt": "2026-11-28T01:01:35.680Z",
+    "updatedAt": "2026-11-28T01:15:24.906Z",
     "results": [
       {
         "feedId": "guardian-life",
@@ -32689,7 +32683,7 @@
     ]
   },
   "country-nz": {
-    "updatedAt": "2026-11-28T01:01:35.682Z",
+    "updatedAt": "2026-11-28T01:15:24.908Z",
     "results": [
       {
         "feedId": "gn-nz",
@@ -33126,7 +33120,7 @@
     ]
   },
   "country-ie": {
-    "updatedAt": "2026-11-28T01:01:35.683Z",
+    "updatedAt": "2026-11-28T01:15:24.910Z",
     "results": [
       {
         "feedId": "gn-ie",
@@ -33451,7 +33445,7 @@
     ]
   },
   "country-id": {
-    "updatedAt": "2026-11-28T01:01:35.684Z",
+    "updatedAt": "2026-11-28T01:15:24.911Z",
     "results": [
       {
         "feedId": "gn-id",
@@ -33716,7 +33710,7 @@
     ]
   },
   "country-ph": {
-    "updatedAt": "2026-11-28T01:01:35.685Z",
+    "updatedAt": "2026-11-28T01:15:24.912Z",
     "results": [
       {
         "feedId": "gn-ph",
@@ -34056,7 +34050,7 @@
     ]
   },
   "country-th": {
-    "updatedAt": "2026-11-28T01:01:35.686Z",
+    "updatedAt": "2026-11-28T01:15:24.913Z",
     "results": [
       {
         "feedId": "gn-th",
@@ -34396,7 +34390,7 @@
     ]
   },
   "country-vn": {
-    "updatedAt": "2026-11-28T01:01:35.686Z",
+    "updatedAt": "2026-11-28T01:15:24.914Z",
     "results": [
       {
         "feedId": "gn-vn",
@@ -34646,7 +34640,7 @@
     ]
   },
   "country-jp": {
-    "updatedAt": "2026-11-28T01:01:35.689Z",
+    "updatedAt": "2026-11-28T01:15:24.919Z",
     "results": [
       {
         "feedId": "gn-jp",
@@ -35080,7 +35074,7 @@
     ]
   },
   "country-kr": {
-    "updatedAt": "2026-11-28T01:01:35.691Z",
+    "updatedAt": "2026-11-28T01:15:24.921Z",
     "results": [
       {
         "feedId": "gn-kr",
@@ -35509,7 +35503,7 @@
     ]
   },
   "country-hk": {
-    "updatedAt": "2026-11-28T01:01:35.692Z",
+    "updatedAt": "2026-11-28T01:15:24.922Z",
     "results": [
       {
         "feedId": "gn-hk",
@@ -35879,7 +35873,7 @@
     ]
   },
   "country-tw": {
-    "updatedAt": "2026-11-28T01:01:35.693Z",
+    "updatedAt": "2026-11-28T01:15:24.923Z",
     "results": [
       {
         "feedId": "gn-tw",
@@ -36102,7 +36096,7 @@
         "summary": "",
         "doi": "",
         "section": "",
-        "imageUrl": "https://img.taipeitimes.com/images/2026/11/28/P02-261128-0sfsdfs.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
@@ -36116,7 +36110,7 @@
         "summary": "",
         "doi": "",
         "section": "",
-        "imageUrl": "https://img.taipeitimes.com/images/2026/11/28/P02-261128-009.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
@@ -36130,7 +36124,7 @@
         "summary": "",
         "doi": "",
         "section": "",
-        "imageUrl": "https://img.taipeitimes.com/images/2026/11/28/P02-261128-006.jpg",
+        "imageUrl": "",
         "pubDate": "2026-11-28T00:00:00.000Z"
       },
       {
@@ -36255,7 +36249,7 @@
     ]
   },
   "country-pk": {
-    "updatedAt": "2026-11-28T01:01:35.694Z",
+    "updatedAt": "2026-11-28T01:15:24.925Z",
     "results": [
       {
         "feedId": "gn-pk",
@@ -36706,7 +36700,7 @@
     ]
   },
   "country-bd": {
-    "updatedAt": "2026-11-28T01:01:35.694Z",
+    "updatedAt": "2026-11-28T01:15:24.925Z",
     "results": [
       {
         "feedId": "gn-bd",
@@ -36824,7 +36818,7 @@
     ]
   },
   "country-lk": {
-    "updatedAt": "2026-11-28T01:01:35.694Z",
+    "updatedAt": "2026-11-28T01:15:24.925Z",
     "results": [
       {
         "feedId": "gn-lk",
@@ -36942,7 +36936,7 @@
     ]
   },
   "country-np": {
-    "updatedAt": "2026-11-28T01:01:35.694Z",
+    "updatedAt": "2026-11-28T01:15:24.925Z",
     "results": [
       {
         "feedId": "gn-np",
@@ -37060,7 +37054,7 @@
     ]
   },
   "country-za": {
-    "updatedAt": "2026-11-28T01:01:35.695Z",
+    "updatedAt": "2026-11-28T01:15:24.926Z",
     "results": [
       {
         "feedId": "gn-za",
@@ -37400,7 +37394,7 @@
     ]
   },
   "country-ng": {
-    "updatedAt": "2026-11-28T01:01:35.697Z",
+    "updatedAt": "2026-11-28T01:15:24.928Z",
     "results": [
       {
         "feedId": "gn-ng",
@@ -37851,7 +37845,7 @@
     ]
   },
   "country-ke": {
-    "updatedAt": "2026-11-28T01:01:35.697Z",
+    "updatedAt": "2026-11-28T01:15:24.928Z",
     "results": [
       {
         "feedId": "gn-ke",
@@ -37984,7 +37978,7 @@
     ]
   },
   "country-gh": {
-    "updatedAt": "2026-11-28T01:01:35.697Z",
+    "updatedAt": "2026-11-28T01:15:24.929Z",
     "results": [
       {
         "feedId": "gn-gh",
@@ -38117,7 +38111,7 @@
     ]
   },
   "country-eg": {
-    "updatedAt": "2026-11-28T01:01:35.697Z",
+    "updatedAt": "2026-11-28T01:15:24.929Z",
     "results": [
       {
         "feedId": "gn-eg",
@@ -38235,7 +38229,7 @@
     ]
   },
   "country-sa": {
-    "updatedAt": "2026-11-28T01:01:35.698Z",
+    "updatedAt": "2026-11-28T01:15:24.929Z",
     "results": [
       {
         "feedId": "gn-sa",
@@ -38353,7 +38347,7 @@
     ]
   },
   "country-ae": {
-    "updatedAt": "2026-11-28T01:01:35.698Z",
+    "updatedAt": "2026-11-28T01:15:24.929Z",
     "results": [
       {
         "feedId": "gn-ae",
@@ -38471,7 +38465,7 @@
     ]
   },
   "country-il": {
-    "updatedAt": "2026-11-28T01:01:35.699Z",
+    "updatedAt": "2026-11-28T01:15:24.930Z",
     "results": [
       {
         "feedId": "gn-il",
@@ -38512,7 +38506,7 @@
         "summary": "IDF interrogations revealed that Hezbollah terrorists use civilian fishing boats to approach Israeli naval forces off southern Lebanon, photographing troops and monitoring military activity.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748254",
         "pubDate": "2026-11-28T00:54:23.000Z"
       },
       {
@@ -38526,7 +38520,7 @@
         "summary": "The officers were further warned to refrain from dressing immodestly when performing their duties amongst Muslims, as well as to consider having a male officer speak to Muslim men when possible.",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/748252",
         "pubDate": "2026-11-28T00:49:43.000Z"
       },
       {
@@ -38540,7 +38534,7 @@
         "summary": "Iranian Navy Commander Shahram Irani told state television: \"Breaking through the enemy blockade is underway and our ports are active today.\"",
         "doi": "",
         "section": "",
-        "imageUrl": "",
+        "imageUrl": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/734179",
         "pubDate": "2026-11-28T00:42:12.000Z"
       },
       {
@@ -38778,7 +38772,7 @@
     ]
   },
   "country-tr": {
-    "updatedAt": "2026-11-28T01:01:35.699Z",
+    "updatedAt": "2026-11-28T01:15:24.931Z",
     "results": [
       {
         "feedId": "gn-tr",
@@ -38896,7 +38890,7 @@
     ]
   },
   "country-de": {
-    "updatedAt": "2026-11-28T01:01:35.703Z",
+    "updatedAt": "2026-11-28T01:15:24.935Z",
     "results": [
       {
         "feedId": "gn-de",
@@ -39326,7 +39320,7 @@
     ]
   },
   "country-fr": {
-    "updatedAt": "2026-11-28T01:01:35.705Z",
+    "updatedAt": "2026-11-28T01:15:24.937Z",
     "results": [
       {
         "feedId": "gn-fr",
@@ -39753,7 +39747,7 @@
     ]
   },
   "country-es": {
-    "updatedAt": "2026-11-28T01:01:35.709Z",
+    "updatedAt": "2026-11-28T01:15:24.942Z",
     "results": [
       {
         "feedId": "gn-es",
@@ -40177,7 +40171,7 @@
     ]
   },
   "country-it": {
-    "updatedAt": "2026-11-28T01:01:35.713Z",
+    "updatedAt": "2026-11-28T01:15:24.946Z",
     "results": [
       {
         "feedId": "gn-it",
@@ -40559,7 +40553,7 @@
     ]
   },
   "country-nl": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.947Z",
     "results": [
       {
         "feedId": "gn-nl",
@@ -40899,7 +40893,7 @@
     ]
   },
   "country-be": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.947Z",
     "results": [
       {
         "feedId": "gn-be",
@@ -41017,7 +41011,7 @@
     ]
   },
   "country-ch": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.947Z",
     "results": [
       {
         "feedId": "gn-ch",
@@ -41135,7 +41129,7 @@
     ]
   },
   "country-at": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.947Z",
     "results": [
       {
         "feedId": "gn-at",
@@ -41253,7 +41247,7 @@
     ]
   },
   "country-se": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.947Z",
     "results": [
       {
         "feedId": "gn-se",
@@ -41371,7 +41365,7 @@
     ]
   },
   "country-no": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.948Z",
     "results": [
       {
         "feedId": "gn-no",
@@ -41489,7 +41483,7 @@
     ]
   },
   "country-dk": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.948Z",
     "results": [
       {
         "feedId": "gn-dk",
@@ -41607,7 +41601,7 @@
     ]
   },
   "country-fi": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.948Z",
     "results": [
       {
         "feedId": "gn-fi",
@@ -41725,7 +41719,7 @@
     ]
   },
   "country-pl": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.948Z",
     "results": [
       {
         "feedId": "gn-pl",
@@ -41843,7 +41837,7 @@
     ]
   },
   "country-pt": {
-    "updatedAt": "2026-11-28T01:01:35.714Z",
+    "updatedAt": "2026-11-28T01:15:24.948Z",
     "results": [
       {
         "feedId": "gn-pt",
@@ -41961,7 +41955,7 @@
     ]
   },
   "country-gr": {
-    "updatedAt": "2026-11-28T01:01:35.715Z",
+    "updatedAt": "2026-11-28T01:15:24.948Z",
     "results": [
       {
         "feedId": "gn-gr",
@@ -42079,7 +42073,7 @@
     ]
   },
   "country-ua": {
-    "updatedAt": "2026-11-28T01:01:35.715Z",
+    "updatedAt": "2026-11-28T01:15:24.949Z",
     "results": [
       {
         "feedId": "gn-ua",
@@ -42231,34 +42225,32 @@
         "publisherUrl": "https://kyivindependent.com/iihf-to-appeal-ruling-allowing-russias-return-to-international-hockey-in-swiss-court/"
       },
       {
-        "id": "art-e02728b20bc2",
+        "id": "art-4e36d7880792",
         "title": "UK warns companies supplying Ukraine of Russian sabotage threat - The Kyiv Independent",
         "source": "The Kyiv Independent",
         "feedId": "kyiv-independent",
         "domain": "kyivindependent.com",
-        "url": "https://kyivindependent.com/uk-warns-companies-supplying-ukraine-of-russian-sabotage-threat/",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQX085aGVmTUwyOFZzeExrYkZBQ1E5RW9Ua3dWY20yX2I5UVRTakRaaGlENlZsMUtnNExxZlRCVDNtVW15a1B0VGRRM2Y3MzRyOHBIQk9kdzNhUEtNeFZrNktCZk1ZRXUxckRxdHNkXzBLaWF5RHFaYW1XNkxCVEpGUkFFMUxHYkZWS2hfWklhUEhDSWVmVzVz?oc=5",
         "video": false,
         "summary": "UK warns companies supplying Ukraine of Russian sabotage threat The Kyiv Independent",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-24T17:44:42.000Z",
-        "publisherUrl": "https://kyivindependent.com/uk-warns-companies-supplying-ukraine-of-russian-sabotage-threat/"
+        "pubDate": "2026-11-24T17:44:42.000Z"
       },
       {
-        "id": "art-2977074bbe38",
+        "id": "art-17ddfc093015",
         "title": "Ukraine, Norway to expand joint DESNA air defense system as Oslo plans $7 billion in 2027 aid - The Kyiv Independent",
         "source": "The Kyiv Independent",
         "feedId": "kyiv-independent",
         "domain": "kyivindependent.com",
-        "url": "https://kyivindependent.com/norway-to-provide-ukraine-with-at-least-7-billion-of-aid-in-2027-expand-air-defense-cooperation/",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMFdUVS1ZLVhTVzZhRzAtdjRNZ0pvY1BHSHRxdkUtZVIxd3R6NEViZThWZTlPSy05Q3VBZEEtVG16UUtzV0VBT1FPWFpoaGtTc0ZIS3NfUGtIY18zU0RQcDBDSFRHZ092VWxwZVpTeDFENXM1U1BFX29QZW5jTER4U2cwOVMtSGRJenJrOWFwWHRQSTZkRzcycW5zbGp3andhVi13RTVTaG5TbzFTRjJfdE5vUUxadFRDS2tvTmlDVU5hZw?oc=5",
         "video": false,
         "summary": "Ukraine, Norway to expand joint DESNA air defense system as Oslo plans $7 billion in 2027 aid The Kyiv Independent",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-24T16:22:55.000Z",
-        "publisherUrl": "https://kyivindependent.com/norway-to-provide-ukraine-with-at-least-7-billion-of-aid-in-2027-expand-air-defense-cooperation/"
+        "pubDate": "2026-11-24T16:22:55.000Z"
       },
       {
         "id": "art-ba34af377bbb",
@@ -42276,19 +42268,18 @@
         "publisherUrl": "https://kyivindependent.com/evacuation-air-raid-russian-aircraft-approach-south-korean-island-trigger-air-raid-alert-2/"
       },
       {
-        "id": "art-b20c80e06376",
+        "id": "art-a28ed12d3415",
         "title": "Russia preparing to put nuclear weapons in space, German media investigation claims - The Kyiv Independent",
         "source": "The Kyiv Independent",
         "feedId": "kyiv-independent",
         "domain": "kyivindependent.com",
-        "url": "https://kyivindependent.com/russia-preparing-to-put-nuclear-weapons-in-space-german-media-investigation-claims/",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZk5FRXliTUNob3hEOVpKaHVmZFB0MzhFUG5HTjEySVFQLUxGNE12bWMyM0J6bmk1MjZMc3hrOWgwaGZaTzFnWWNLcGJENDRweDhLUnhRUjNPa1RNVVJKbTUtTzdTM2oyNVcwQVItX3hBWEtTcVd6VXg1SGZmV2tBMHB5Z29OZWdKc2ZDS0ZpWVpHNFE3M1dDTmxsVDZuR2UxTWxOcXFCT3NVTVJzN1ZOdw?oc=5",
         "video": false,
         "summary": "Russia preparing to put nuclear weapons in space, German media investigation claims The Kyiv Independent",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-23T15:21:47.000Z",
-        "publisherUrl": "https://kyivindependent.com/russia-preparing-to-put-nuclear-weapons-in-space-german-media-investigation-claims/"
+        "pubDate": "2026-11-23T15:21:47.000Z"
       },
       {
         "id": "art-65f96cc0a0e0",
@@ -42308,7 +42299,7 @@
     ]
   },
   "country-br": {
-    "updatedAt": "2026-11-28T01:01:35.715Z",
+    "updatedAt": "2026-11-28T01:15:24.949Z",
     "results": [
       {
         "feedId": "gn-br",
@@ -42439,7 +42430,7 @@
     ]
   },
   "country-mx": {
-    "updatedAt": "2026-11-28T01:01:35.716Z",
+    "updatedAt": "2026-11-28T01:15:24.949Z",
     "results": [
       {
         "feedId": "gn-mx",
@@ -42683,7 +42674,7 @@
     ]
   },
   "country-ar": {
-    "updatedAt": "2026-11-28T01:01:35.718Z",
+    "updatedAt": "2026-11-28T01:15:24.952Z",
     "results": [
       {
         "feedId": "gn-ar",
@@ -43107,7 +43098,7 @@
     ]
   },
   "country-cl": {
-    "updatedAt": "2026-11-28T01:01:35.718Z",
+    "updatedAt": "2026-11-28T01:15:24.952Z",
     "results": [
       {
         "feedId": "gn-cl",
@@ -43225,7 +43216,7 @@
     ]
   },
   "country-co": {
-    "updatedAt": "2026-11-28T01:01:35.718Z",
+    "updatedAt": "2026-11-28T01:15:24.952Z",
     "results": [
       {
         "feedId": "gn-co",
@@ -43343,7 +43334,7 @@
     ]
   },
   "country-pe": {
-    "updatedAt": "2026-11-28T01:01:35.718Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-pe",
@@ -43461,7 +43452,7 @@
     ]
   },
   "country-af": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-af",
@@ -43579,7 +43570,7 @@
     ]
   },
   "country-al": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-al",
@@ -43697,7 +43688,7 @@
     ]
   },
   "country-dz": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-dz",
@@ -43815,7 +43806,7 @@
     ]
   },
   "country-am": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-am",
@@ -43933,7 +43924,7 @@
     ]
   },
   "country-az": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-az",
@@ -44051,7 +44042,7 @@
     ]
   },
   "country-by": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-by",
@@ -44169,7 +44160,7 @@
     ]
   },
   "country-bo": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-bo",
@@ -44287,7 +44278,7 @@
     ]
   },
   "country-ba": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.953Z",
     "results": [
       {
         "feedId": "gn-ba",
@@ -44405,7 +44396,7 @@
     ]
   },
   "country-kh": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-kh",
@@ -44431,19 +44422,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-kh",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -44523,7 +44513,7 @@
     ]
   },
   "country-cm": {
-    "updatedAt": "2026-11-28T01:01:35.719Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-cm",
@@ -44549,19 +44539,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-cm",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -44641,7 +44630,7 @@
     ]
   },
   "country-hr": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-hr",
@@ -44667,19 +44656,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-hr",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -44759,7 +44747,7 @@
     ]
   },
   "country-cu": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-cu",
@@ -44785,19 +44773,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-cu",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -44877,7 +44864,7 @@
     ]
   },
   "country-cy": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-cy",
@@ -44995,7 +44982,7 @@
     ]
   },
   "country-cz": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-cz",
@@ -45113,7 +45100,7 @@
     ]
   },
   "country-cd": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-cd",
@@ -45231,7 +45218,7 @@
     ]
   },
   "country-do": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-do",
@@ -45349,7 +45336,7 @@
     ]
   },
   "country-ec": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.954Z",
     "results": [
       {
         "feedId": "gn-ec",
@@ -45467,7 +45454,7 @@
     ]
   },
   "country-ee": {
-    "updatedAt": "2026-11-28T01:01:35.720Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-ee",
@@ -45585,7 +45572,7 @@
     ]
   },
   "country-et": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-et",
@@ -45718,7 +45705,7 @@
     ]
   },
   "country-ge": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-ge",
@@ -45744,19 +45731,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-ge",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -45836,7 +45822,7 @@
     ]
   },
   "country-ht": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-ht",
@@ -45862,19 +45848,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-ht",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -45954,7 +45939,7 @@
     ]
   },
   "country-hu": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-hu",
@@ -45980,19 +45965,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-hu",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -46072,7 +46056,7 @@
     ]
   },
   "country-is": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-is",
@@ -46098,19 +46082,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-is",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -46190,7 +46173,7 @@
     ]
   },
   "country-ir": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-ir",
@@ -46308,7 +46291,7 @@
     ]
   },
   "country-iq": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.955Z",
     "results": [
       {
         "feedId": "gn-iq",
@@ -46426,7 +46409,7 @@
     ]
   },
   "country-jm": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-jm",
@@ -46452,19 +46435,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-jm",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -46544,7 +46526,7 @@
     ]
   },
   "country-jo": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-jo",
@@ -46661,7 +46643,7 @@
     ]
   },
   "country-kz": {
-    "updatedAt": "2026-11-28T01:01:35.721Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-kz",
@@ -46687,18 +46669,19 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-9b707eafdda8",
+        "id": "art-cfc8f926db21",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-kz",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z"
+        "pubDate": "2026-11-27T21:55:53.000Z",
+        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -46778,7 +46761,7 @@
     ]
   },
   "country-kg": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-kg",
@@ -46804,18 +46787,19 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-9b707eafdda8",
+        "id": "art-cfc8f926db21",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-kg",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
+        "domain": "bbc.com",
+        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z"
+        "pubDate": "2026-11-27T21:55:53.000Z",
+        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -46895,7 +46879,7 @@
     ]
   },
   "country-lv": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-lv",
@@ -46906,18 +46890,19 @@
     ],
     "articles": [
       {
-        "id": "art-f8608ea09dcd",
+        "id": "art-72840f8c69c7",
         "title": "Princess Kate takes to the mountains to face mortality in film about cancer recovery - Audacy",
         "source": "Audacy",
         "feedId": "gn-lv",
-        "domain": "news.google.com",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOHlRdGdPcUo5Z3NYNEl3ZkJjQ2dGSnRmUGRSNjYxMkVwT1FRdkl3TmZ3QjRtNmR2VEVQcl9xUmtvbWlmSzdkUmV0ZmFEb0d5QWpwYnpsR3paN1hlYjRCSU51Sld4U1AySVZWZUg2bjJqOHZxTUdZcnNYZ0NCWldHdmJXNGRuckQ3M1ctbWMtUkFGSUpTTGtiTzEtNHM5dWV0cHg5cnJmeU1KY0tLM0V4MlZOb09sc0VqbEVHU1cwb2E?oc=5",
+        "domain": "audacy.com",
+        "url": "https://www.audacy.com/wwl/entertainment/britain-princess-catherine-kate-cancer-royal-film-3707f243e752a02b4f30c152cea08146",
         "video": false,
         "summary": "Princess Kate takes to the mountains to face mortality in film about cancer recovery Audacy Catherine's emotional cancer documentary strips away the stiff upper lip BBC Princess of Wales documentary Heal charts ‘pilgrimage’ after cancer treatment The Guardian ",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T22:01:00.000Z"
+        "pubDate": "2026-11-27T22:01:00.000Z",
+        "publisherUrl": "https://www.audacy.com/wwl/entertainment/britain-princess-catherine-kate-cancer-royal-film-3707f243e752a02b4f30c152cea08146"
       },
       {
         "id": "art-0bba9c0df44c",
@@ -47027,7 +47012,7 @@
     ]
   },
   "country-lb": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-lb",
@@ -47053,19 +47038,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-lb",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -47145,7 +47129,7 @@
     ]
   },
   "country-ly": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-ly",
@@ -47263,7 +47247,7 @@
     ]
   },
   "country-mt": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.956Z",
     "results": [
       {
         "feedId": "gn-mt",
@@ -47289,19 +47273,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-mt",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -47381,7 +47364,7 @@
     ]
   },
   "country-ma": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-ma",
@@ -47407,19 +47390,18 @@
         "publisherUrl": "https://apnews.com/article/weather-storm-macys-flooding-thanksgiving-bbf9dad3076a69b9bd18b7c0c80490ad"
       },
       {
-        "id": "art-cfc8f926db21",
+        "id": "art-9b707eafdda8",
         "title": "Spanish PM and rivals rally supporters in final pitch for votes - BBC",
         "source": "BBC",
         "feedId": "gn-ma",
-        "domain": "bbc.com",
-        "url": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo",
+        "domain": "news.google.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BRmFBd1M2LU9Hb2tQTTdrU2xISkctQXZsQXQzSENTdDFUaUstZDRHUXFxMHBVcHUyUDNJd1lrXzlNNmFIOWxkSXdUcEVEWHM0a19SOWxHSncwMFE?oc=5",
         "video": false,
         "summary": "Spanish PM and rivals rally supporters in final pitch for votes BBC Spain election: Sanchez stood up against Trump. His own voters may be about to bring him down CNN Spain’s Far-Right Era Ended in 1975. Will This Man Change That? The New York Times Spain gener",
         "doi": "",
         "section": "",
         "imageUrl": "",
-        "pubDate": "2026-11-27T21:55:53.000Z",
-        "publisherUrl": "https://www.bbc.com/news/articles/c8wy5p4gdnwvo"
+        "pubDate": "2026-11-27T21:55:53.000Z"
       },
       {
         "id": "art-f43443e2d7ba",
@@ -47499,7 +47481,7 @@
     ]
   },
   "country-mm": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-mm",
@@ -47617,7 +47599,7 @@
     ]
   },
   "country-na": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-na",
@@ -47748,7 +47730,7 @@
     ]
   },
   "country-kp": {
-    "updatedAt": "2026-11-28T01:01:35.722Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-kp",
@@ -47865,7 +47847,7 @@
     ]
   },
   "country-ps": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-ps",
@@ -47982,7 +47964,7 @@
     ]
   },
   "country-py": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-py",
@@ -48099,7 +48081,7 @@
     ]
   },
   "country-pr": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-pr",
@@ -48216,7 +48198,7 @@
     ]
   },
   "country-qa": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.957Z",
     "results": [
       {
         "feedId": "gn-qa",
@@ -48333,7 +48315,7 @@
     ]
   },
   "country-ro": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-ro",
@@ -48450,7 +48432,7 @@
     ]
   },
   "country-rw": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-rw",
@@ -48567,7 +48549,7 @@
     ]
   },
   "country-sn": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-sn",
@@ -48684,7 +48666,7 @@
     ]
   },
   "country-rs": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-rs",
@@ -48801,7 +48783,7 @@
     ]
   },
   "country-so": {
-    "updatedAt": "2026-11-28T01:01:35.723Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-so",
@@ -48918,7 +48900,7 @@
     ]
   },
   "country-ss": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-ss",
@@ -49035,7 +49017,7 @@
     ]
   },
   "country-sd": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-sd",
@@ -49152,7 +49134,7 @@
     ]
   },
   "country-sy": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.958Z",
     "results": [
       {
         "feedId": "gn-sy",
@@ -49269,7 +49251,7 @@
     ]
   },
   "country-tz": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-tz",
@@ -49401,7 +49383,7 @@
     ]
   },
   "country-tt": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-tt",
@@ -49518,7 +49500,7 @@
     ]
   },
   "country-tn": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-tn",
@@ -49635,7 +49617,7 @@
     ]
   },
   "country-ug": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-ug",
@@ -49767,7 +49749,7 @@
     ]
   },
   "country-uy": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-uy",
@@ -49884,7 +49866,7 @@
     ]
   },
   "country-uz": {
-    "updatedAt": "2026-11-28T01:01:35.724Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-uz",
@@ -50001,7 +49983,7 @@
     ]
   },
   "country-ve": {
-    "updatedAt": "2026-11-28T01:01:35.725Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-ve",
@@ -50118,7 +50100,7 @@
     ]
   },
   "country-ye": {
-    "updatedAt": "2026-11-28T01:01:35.725Z",
+    "updatedAt": "2026-11-28T01:15:24.959Z",
     "results": [
       {
         "feedId": "gn-ye",
@@ -50235,7 +50217,7 @@
     ]
   },
   "country-zm": {
-    "updatedAt": "2026-11-28T01:01:35.725Z",
+    "updatedAt": "2026-11-28T01:15:24.960Z",
     "results": [
       {
         "feedId": "gn-zm",
@@ -50352,7 +50334,7 @@
     ]
   },
   "country-zw": {
-    "updatedAt": "2026-11-28T01:01:35.725Z",
+    "updatedAt": "2026-11-28T01:15:24.960Z",
     "results": [
       {
         "feedId": "gn-zw",
